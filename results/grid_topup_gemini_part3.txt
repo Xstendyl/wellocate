@@ -1,0 +1,307 @@
+  key source: repdef/.env  (fingerprint 0d6f7d3f, never the key)
+  credit check (launch): $800.04 remaining, floor $50.00 -> ok
+====================================================================================================
+GRID  NK uniform K=1 seed=1 pct=93.0  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 5 conditions x 1 models x 99 campaigns = 495 campaigns
+  ceiling $20.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+prompt facts checked: reference GDIF is viable and reads 6.8730 (stated 6.8700), pool is 7.00% of the space, example ADIF (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_topup_gemini_manifest.json (commit ab0ab377)
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+canary: comparator live, differs from the mean rule on 24 of 60 scripted campaigns
+
+resuming: 235 campaigns already on disk, $2.2318 already spent
+
+  SHUFFLED order over 260 campaigns across 5 cells (order seed 20260928)
+      Quantitative  mid-tier    seed 300129 ok 52 rep 51 ( 85%) | nom  7.9397 | distn  9 | $0.0106 cum $2.24 | 40s
+      Blind         mid-tier    seed 300074 ok 51 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0111 cum $2.25 | 42s
+      Mechanism     mid-tier    seed 300114 ok 50 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0127 cum $2.27 | 44s
+      Aggregated    mid-tier    seed 300109 ok 46 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0045 cum $2.27 | 21s
+      Decision-rule mid-tier    seed 300130 ok 52 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0101 cum $2.28 | 35s
+      Quantitative  mid-tier    seed 300073 ok 50 rep 52 ( 87%) | nom  7.7839 | distn  6 | $0.0147 cum $2.30 | 50s
+      Blind         mid-tier    seed 300055 ok 46 rep 57 ( 95%) | nom  7.6865 | distn  3 | $0.0085 cum $2.30 | 34s
+      Blind         mid-tier    seed 300056 ok 49 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0098 cum $2.31 | 38s
+      Aggregated    mid-tier    seed 300095 ok 50 rep 54 ( 90%) | nom  7.9397 | distn  6 | $0.0066 cum $2.32 | 31s
+      Aggregated    mid-tier    seed 300049 ok 48 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0054 cum $2.33 | 28s
+      Mechanism     mid-tier    seed 300053 ok 48 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0073 cum $2.33 | 26s
+      Blind         mid-tier    seed 300138 ok 50 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0102 cum $2.34 | 38s
+      Blind         mid-tier    seed 300118 ok 52 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0104 cum $2.35 | 38s
+      Aggregated    mid-tier    seed 300077 ok 52 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0077 cum $2.36 | 36s
+      Mechanism     mid-tier    seed 300078 ok 56 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0075 cum $2.37 | 26s
+      Decision-rule mid-tier    seed 300094 ok 54 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0110 cum $2.38 | 40s
+      Mechanism     mid-tier    seed 300123 ok 50 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0113 cum $2.39 | 48s
+      Mechanism     mid-tier    seed 300066 ok 50 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0071 cum $2.40 | 27s
+      Decision-rule mid-tier    seed 300067 ok 50 rep 57 ( 95%) | nom  7.6865 | distn  2 | $0.0150 cum $2.41 | 50s
+      Quantitative  mid-tier    seed 300077 ok 50 rep 56 ( 93%) | nom  7.6865 | distn  2 | $0.0094 cum $2.42 | 34s
+      Quantitative  mid-tier    seed 300045 ok 51 rep 50 ( 83%) | nom  7.9513 | distn  9 | $0.0121 cum $2.43 | 44s
+      Aggregated    mid-tier    seed 300072 ok 54 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0066 cum $2.44 | 31s
+      Aggregated    mid-tier    seed 300081 ok 54 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0061 cum $2.45 | 29s
+      Aggregated    mid-tier    seed 300044 ok 44 rep 56 ( 93%) | nom  7.7839 | distn  4 | $0.0058 cum $2.45 | 26s
+      Decision-rule mid-tier    seed 300115 ok 56 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0079 cum $2.46 | 27s
+      Aggregated    mid-tier    seed 300105 ok 52 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0054 cum $2.47 | 26s
+      Blind         mid-tier    seed 300064 ok 52 rep 57 ( 95%) | nom  7.6865 | distn  3 | $0.0087 cum $2.48 | 34s
+      Blind         mid-tier    seed 300130 ok 52 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0102 cum $2.49 | 38s
+      Blind         mid-tier    seed 300077 ok 53 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0117 cum $2.50 | 44s
+      Blind         mid-tier    seed 300117 ok 51 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0089 cum $2.51 | 34s
+      Quantitative  mid-tier    seed 300090 ok 52 rep 52 ( 87%) | nom  7.9397 | distn  8 | $0.0114 cum $2.52 | 41s
+      Decision-rule mid-tier    seed 300132 ok 56 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0084 cum $2.53 | 28s
+      Aggregated    mid-tier    seed 300104 ok 51 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0071 cum $2.53 | 32s
+      Mechanism     mid-tier    seed 300107 ok 54 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0104 cum $2.54 | 35s
+      Aggregated    mid-tier    seed 300096 ok 47 rep 57 ( 95%) | nom  7.6865 | distn  2 | $0.0065 cum $2.55 | 29s
+      Decision-rule mid-tier    seed 300107 ok 56 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0093 cum $2.56 | 31s
+      Decision-rule mid-tier    seed 300053 ok 48 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0074 cum $2.57 | 25s
+      Decision-rule mid-tier    seed 300133 ok 52 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0084 cum $2.58 | 27s
+      Mechanism     mid-tier    seed 300108 ok 49 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0078 cum $2.58 | 26s
+      Blind         mid-tier    seed 300051 ok 49 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0114 cum $2.59 | 41s
+      Decision-rule mid-tier    seed 300105 ok 51 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0077 cum $2.60 | 25s
+      Quantitative  mid-tier    seed 300086 ok 48 rep 53 ( 88%) | nom  7.6865 | distn  7 | $0.0107 cum $2.61 | 37s
+      Quantitative  mid-tier    seed 300112 ok 46 rep 50 ( 83%) | nom  7.9397 | distn  9 | $0.0139 cum $2.63 | 46s
+      Blind         mid-tier    seed 300087 ok 50 rep 50 ( 83%) | nom  7.3720 | distn  8 | $0.0106 cum $2.64 | 40s
+      Mechanism     mid-tier    seed 300064 ok 53 rep 53 ( 88%) | nom  7.6865 | distn  5 | $0.0100 cum $2.65 | 34s
+      Decision-rule mid-tier    seed 300061 ok 51 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0104 cum $2.66 | 34s
+      Mechanism     mid-tier    seed 300042 ok 49 rep 57 ( 95%) | nom  7.6865 | distn  3 | $0.0115 cum $2.67 | 38s
+      Quantitative  mid-tier    seed 300111 ok 57 rep 50 ( 83%) | nom  7.9397 | distn 10 | $0.0102 cum $2.68 | 37s
+      Mechanism     mid-tier    seed 300136 ok 51 rep 57 ( 95%) | nom  7.6865 | distn  2 | $0.0088 cum $2.69 | 30s
+      Aggregated    mid-tier    seed 300066 ok 50 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0053 cum $2.69 | 24s
+      Blind         mid-tier    seed 300045 ok 50 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0074 cum $2.70 | 29s
+      Decision-rule mid-tier    seed 300078 ok 55 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0095 cum $2.71 | 31s
+      Quantitative  mid-tier    seed 300128 ok 47 rep 45 ( 75%) | nom  7.9513 | distn  8 | $0.0099 cum $2.72 | 38s
+      Quantitative  mid-tier    seed 300065 ok 41 rep 38 ( 63%) | nom  7.9513 | distn 10 | $0.0166 cum $2.74 | 56s
+      Mechanism     mid-tier    seed 300098 ok 52 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0072 cum $2.74 | 26s
+      Aggregated    mid-tier    seed 300119 ok 48 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0056 cum $2.75 | 25s
+      Decision-rule mid-tier    seed 300095 ok 53 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0110 cum $2.76 | 38s
+      Aggregated    mid-tier    seed 300071 ok 47 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0061 cum $2.77 | 28s
+      Aggregated    mid-tier    seed 300097 ok 52 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0071 cum $2.77 | 33s
+      Aggregated    mid-tier    seed 300108 ok 49 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0066 cum $2.78 | 32s
+      Mechanism     mid-tier    seed 300068 ok 52 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0076 cum $2.79 | 28s
+      Quantitative  mid-tier    seed 300055 ok 45 rep 46 ( 77%) | nom  7.7287 | distn  9 | $0.0094 cum $2.80 | 37s
+      Decision-rule mid-tier    seed 300089 ok 51 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0112 cum $2.81 | 38s
+      Blind         mid-tier    seed 300052 ok 50 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0127 cum $2.82 | 46s
+      Quantitative  mid-tier    seed 300107 ok 51 rep 50 ( 83%) | nom  7.9397 | distn  9 | $0.0141 cum $2.84 | 48s
+      Quantitative  mid-tier    seed 300100 ok 46 rep 50 ( 83%) | nom  7.9397 | distn 10 | $0.0120 cum $2.85 | 40s
+      Mechanism     mid-tier    seed 300129 ok 54 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0076 cum $2.85 | 27s
+      Blind         mid-tier    seed 300127 ok 55 rep 57 ( 95%) | nom  7.6865 | distn  3 | $0.0132 cum $2.87 | 46s
+      Mechanism     mid-tier    seed 300062 ok 52 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0068 cum $2.88 | 22s
+      Mechanism     mid-tier    seed 300076 ok 53 rep 57 ( 95%) | nom  7.6865 | distn  3 | $0.0110 cum $2.89 | 38s
+      Mechanism     mid-tier    seed 300077 ok 53 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0092 cum $2.90 | 32s
+      Mechanism     mid-tier    seed 300074 ok 47 rep 54 ( 90%) | nom  7.6865 | distn  2 | $0.0072 cum $2.90 | 26s
+      Quantitative  mid-tier    seed 300132 ok 53 rep 50 ( 83%) | nom  7.9513 | distn 10 | $0.0080 cum $2.91 | 29s
+      Blind         mid-tier    seed 300082 ok 49 rep 56 ( 93%) | nom  7.6865 | distn  3 | $0.0108 cum $2.92 | 42s
+      Mechanism     mid-tier    seed 300125 ok 49 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0114 cum $2.93 | 38s
+      Mechanism     mid-tier    seed 300132 ok 56 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0111 cum $2.94 | 37s
+      Blind         mid-tier    seed 300103 ok 48 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0102 cum $2.95 | 39s
+      Blind         mid-tier    seed 300121 ok 54 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0110 cum $2.96 | 42s
+      Aggregated    mid-tier    seed 300137 ok 54 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0072 cum $2.97 | 35s
+      Aggregated    mid-tier    seed 300116 ok 49 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0071 cum $2.98 | 34s
+      Decision-rule mid-tier    seed 300080 ok 48 rep 50 ( 83%) | nom  7.9513 | distn  9 | $0.0096 cum $2.99 | 33s
+      Blind         mid-tier    seed 300132 ok 52 rep 57 ( 95%) | nom  7.6865 | distn  3 | $0.0125 cum $3.00 | 45s
+      Mechanism     mid-tier    seed 300101 ok 52 rep 57 ( 95%) | nom  7.6865 | distn  2 | $0.0078 cum $3.01 | 27s
+      Aggregated    mid-tier    seed 300118 ok 52 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0059 cum $3.01 | 26s
+      Aggregated    mid-tier    seed 300098 ok 53 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0054 cum $3.02 | 25s
+      Blind         mid-tier    seed 300081 ok 54 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0087 cum $3.03 | 34s
+      Mechanism     mid-tier    seed 300092 ok 54 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0099 cum $3.04 | 33s
+      Aggregated    mid-tier    seed 300122 ok 53 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0067 cum $3.05 | 32s
+      Mechanism     mid-tier    seed 300080 ok 56 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0076 cum $3.05 | 26s
+      Quantitative  mid-tier    seed 300113 ok 49 rep 48 ( 80%) | nom  7.5735 | distn  9 | $0.0127 cum $3.07 | 46s
+      Mechanism     mid-tier    seed 300133 ok 52 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0078 cum $3.07 | 27s
+      Decision-rule mid-tier    seed 300068 ok 52 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0081 cum $3.08 | 27s
+      Aggregated    mid-tier    seed 300106 ok 53 rep 56 ( 93%) | nom  7.9397 | distn  4 | $0.0064 cum $3.09 | 28s
+      Decision-rule mid-tier    seed 300082 ok 49 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0138 cum $3.10 | 42s
+      Blind         mid-tier    seed 300072 ok 54 rep 57 ( 95%) | nom  7.6865 | distn  3 | $0.0093 cum $3.11 | 34s
+      Mechanism     mid-tier    seed 300093 ok 51 rep 51 ( 85%) | nom  7.6865 | distn  7 | $0.0102 cum $3.12 | 35s
+      Decision-rule mid-tier    seed 300109 ok 46 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0077 cum $3.13 | 26s
+      Quantitative  mid-tier    seed 300123 ok 51 rep 53 ( 88%) | nom  7.6865 | distn  6 | $0.0140 cum $3.14 | 48s
+      Quantitative  mid-tier    seed 300126 ok 52 rep 50 ( 83%) | nom  7.9513 | distn  9 | $0.0131 cum $3.16 | 45s
+      Blind         mid-tier    seed 300107 ok 52 rep 52 ( 87%) | nom  7.7287 | distn  8 | $0.0114 cum $3.17 | 42s
+      Decision-rule mid-tier    seed 300062 ok 52 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0097 cum $3.18 | 31s
+      Mechanism     mid-tier    seed 300103 ok 50 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0075 cum $3.18 | 25s
+      Decision-rule mid-tier    seed 300086 ok 54 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0077 cum $3.19 | 26s
+      Mechanism     mid-tier    seed 300047 ok 52 rep 54 ( 90%) | nom  7.9397 | distn  6 | $0.0107 cum $3.20 | 35s
+      Mechanism     mid-tier    seed 300094 ok 55 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0079 cum $3.21 | 27s
+      Quantitative  mid-tier    seed 300046 ok 52 rep 54 ( 90%) | nom  7.6865 | distn  6 | $0.0094 cum $3.22 | 34s
+      Aggregated    mid-tier    seed 300079 ok 53 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0076 cum $3.23 | 34s
+      Decision-rule mid-tier    seed 300075 ok 50 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0093 cum $3.24 | 30s
+      Blind         mid-tier    seed 300136 ok 51 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0094 cum $3.25 | 38s
+      Aggregated    mid-tier    seed 300124 ok 49 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0063 cum $3.25 | 30s
+      Decision-rule mid-tier    seed 300138 ok 51 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0105 cum $3.26 | 34s
+      Blind         mid-tier    seed 300097 ok 52 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0096 cum $3.27 | 36s
+      Aggregated    mid-tier    seed 300115 ok 56 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0062 cum $3.28 | 29s
+      Mechanism     mid-tier    seed 300124 ok 49 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0074 cum $3.29 | 25s
+      Aggregated    mid-tier    seed 300130 ok 51 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0054 cum $3.29 | 25s
+      Decision-rule mid-tier    seed 300084 ok 52 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0077 cum $3.30 | 26s
+      Quantitative  mid-tier    seed 300134 ok 44 rep 47 ( 78%) | nom  7.9397 | distn  8 | $0.0124 cum $3.31 | 44s
+      Quantitative  mid-tier    seed 300102 ok 51 rep 55 ( 92%) | nom  7.6865 | distn  4 | $0.0095 cum $3.32 | 34s
+      Mechanism     mid-tier    seed 300052 ok 52 rep 50 ( 83%) | nom  7.9397 | distn 10 | $0.0101 cum $3.33 | 39s
+      Decision-rule mid-tier    seed 300135 ok 54 rep 53 ( 88%) | nom  7.6865 | distn  7 | $0.0113 cum $3.34 | 43s
+      Blind         mid-tier    seed 300073 ok 53 rep 50 ( 83%) | nom  7.9513 | distn  9 | $0.0152 cum $3.36 | 58s
+      Blind         mid-tier    seed 300110 ok 45 rep 56 ( 93%) | nom  7.3720 | distn  3 | $0.0132 cum $3.37 | 46s
+      Quantitative  mid-tier    seed 300124 ok 50 rep 54 ( 90%) | nom  7.9397 | distn  5 | $0.0115 cum $3.38 | 42s
+      Quantitative  mid-tier    seed 300072 ok 49 rep 50 ( 83%) | nom  7.9397 | distn  8 | $0.0096 cum $3.39 | 46s
+      Blind         mid-tier    seed 300112 ok 51 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0097 cum $3.40 | 36s
+      Decision-rule mid-tier    seed 300091 ok 53 rep 51 ( 85%) | nom  7.9397 | distn  8 | $0.0105 cum $3.41 | 37s
+      Mechanism     mid-tier    seed 300081 ok 54 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0096 cum $3.42 | 38s
+      Aggregated    mid-tier    seed 300111 ok 52 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0065 cum $3.43 | 32s
+      Quantitative  mid-tier    seed 300078 ok 54 rep 51 ( 85%) | nom  7.6865 | distn  8 | $0.0115 cum $3.44 | 44s
+      Blind         mid-tier    seed 300093 ok 49 rep 50 ( 83%) | nom  7.7839 | distn  8 | $0.0088 cum $3.45 | 39s
+      Aggregated    mid-tier    seed 300132 ok 56 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0065 cum $3.46 | 32s
+      Blind         mid-tier    seed 300100 ok 50 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0078 cum $3.46 | 31s
+      Quantitative  mid-tier    seed 300069 ok 49 rep 49 ( 82%) | nom  7.7287 | distn 10 | $0.0130 cum $3.48 | 47s
+      Aggregated    mid-tier    seed 300068 ok 52 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0063 cum $3.48 | 40s
+      Aggregated    mid-tier    seed 300041 ok 47 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0079 cum $3.49 | 44s
+      Quantitative  mid-tier    seed 300116 ok 51 rep 53 ( 88%) | nom  7.9397 | distn  6 | $0.0090 cum $3.50 | 32s
+      Decision-rule mid-tier    seed 300058 ok 52 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0100 cum $3.51 | 34s
+      Decision-rule mid-tier    seed 300120 ok 55 rep 53 ( 88%) | nom  7.9397 | distn  7 | $0.0090 cum $3.52 | 32s
+      Quantitative  mid-tier    seed 300061 ok 46 rep 47 ( 78%) | nom  7.5735 | distn 11 | $0.0192 cum $3.54 | 64s
+      Quantitative  mid-tier    seed 300068 ok 49 rep 50 ( 83%) | nom  7.9513 | distn  8 | $0.0101 cum $3.55 | 40s
+      Decision-rule mid-tier    seed 300112 ok 51 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0134 cum $3.56 | 42s
+      Quantitative  mid-tier    seed 300131 ok 46 rep 47 ( 78%) | nom  7.9397 | distn  9 | $0.0122 cum $3.57 | 45s
+      Blind         mid-tier    seed 300101 ok 53 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0077 cum $3.58 | 29s
+      Mechanism     mid-tier    seed 300116 ok 50 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0103 cum $3.59 | 34s
+      Blind         mid-tier    seed 300123 ok 52 rep 56 ( 93%) | nom  7.6865 | distn  4 | $0.0188 cum $3.61 | 62s
+      Blind         mid-tier    seed 300134 ok 48 rep 55 ( 92%) | nom  7.9397 | distn  5 | $0.0120 cum $3.62 | 43s
+      Decision-rule mid-tier    seed 300047 ok 46 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0092 cum $3.63 | 30s
+      Decision-rule mid-tier    seed 300079 ok 53 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0122 cum $3.64 | 39s
+      Blind         mid-tier    seed 300129 ok 54 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0090 cum $3.65 | 35s
+      Aggregated    mid-tier    seed 300083 ok 48 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0068 cum $3.66 | 32s
+      Quantitative  mid-tier    seed 300108 ok 49 rep 53 ( 88%) | nom  7.9397 | distn  6 | $0.0098 cum $3.67 | 36s
+      Mechanism     mid-tier    seed 300134 ok 52 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0074 cum $3.68 | 27s
+      Blind         mid-tier    seed 300102 ok 52 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0087 cum $3.69 | 36s
+      Mechanism     mid-tier    seed 300061 ok 51 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0130 cum $3.70 | 44s
+      Quantitative  mid-tier    seed 300071 ok 47 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0191 cum $3.72 | 65s
+      Mechanism     mid-tier    seed 300045 ok 49 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0145 cum $3.73 | 46s
+      Quantitative  mid-tier    seed 300057 ok 48 rep 49 ( 82%) | nom  7.9397 | distn  9 | $0.0089 cum $3.74 | 32s
+      Decision-rule mid-tier    seed 300092 ok 56 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0079 cum $3.75 | 29s
+      Mechanism     mid-tier    seed 300067 ok 51 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0122 cum $3.76 | 40s
+      Aggregated    mid-tier    seed 300084 ok 52 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0061 cum $3.77 | 28s
+      Aggregated    mid-tier    seed 300055 ok 46 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0074 cum $3.77 | 34s
+      Decision-rule mid-tier    seed 300074 ok 52 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0125 cum $3.79 | 40s
+      Mechanism     mid-tier    seed 300122 ok 52 rep 54 ( 90%) | nom  7.9397 | distn  6 | $0.0109 cum $3.80 | 36s
+      Blind         mid-tier    seed 300078 ok 54 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0096 cum $3.81 | 37s
+      Decision-rule mid-tier    seed 300041 ok 48 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0110 cum $3.82 | 41s
+      Mechanism     mid-tier    seed 300060 ok 50 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0098 cum $3.83 | 36s
+      Decision-rule mid-tier    seed 300059 ok 50 rep 58 ( 97%) | nom  7.6865 | distn  1 | $0.0092 cum $3.84 | 32s
+      Blind         mid-tier    seed 300115 ok 55 rep 54 ( 90%) | nom  7.6865 | distn  5 | $0.0151 cum $3.85 | 54s
+      Blind         mid-tier    seed 300042 ok 46 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0092 cum $3.86 | 35s
+      Aggregated    mid-tier    seed 300082 ok 50 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0068 cum $3.87 | 34s
+      Blind         mid-tier    seed 300109 ok 45 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0084 cum $3.88 | 33s
+      Quantitative  mid-tier    seed 300088 ok 52 rep 56 ( 93%) | nom  7.6865 | distn  3 | $0.0110 cum $3.89 | 40s
+      Mechanism     mid-tier    seed 300043 ok 48 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0072 cum $3.90 | 30s
+      Decision-rule mid-tier    seed 300102 ok 52 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0076 cum $3.90 | 27s
+      Decision-rule mid-tier    seed 300131 ok 49 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0111 cum $3.91 | 37s
+      Aggregated    mid-tier    seed 300067 ok 50 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0079 cum $3.92 | 39s
+      Blind         mid-tier    seed 300088 ok 53 rep 54 ( 90%) | nom  7.6865 | distn  5 | $0.0117 cum $3.93 | 42s
+      Blind         mid-tier    seed 300048 ok 53 rep 56 ( 93%) | nom  7.9397 | distn  4 | $0.0196 cum $3.95 | 62s
+      Mechanism     mid-tier    seed 300041 ok 48 rep 53 ( 88%) | nom  7.7839 | distn  6 | $0.0089 cum $3.96 | 32s
+      Blind         mid-tier    seed 300041 ok 47 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0089 cum $3.97 | 34s
+      Aggregated    mid-tier    seed 300078 ok 54 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0064 cum $3.98 | 30s
+      Aggregated    mid-tier    seed 300086 ok 54 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0066 cum $3.98 | 32s
+      Aggregated    mid-tier    seed 300040 ok 51 rep 54 ( 90%) | nom  7.9397 | distn  5 | $0.0066 cum $3.99 | 29s
+      Blind         mid-tier    seed 300057 ok 54 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0083 cum $4.00 | 32s
+      Blind         mid-tier    seed 300063 ok 52 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0089 cum $4.01 | 33s
+      Decision-rule mid-tier    seed 300081 ok 54 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0104 cum $4.02 | 35s
+      Quantitative  mid-tier    seed 300085 ok 51 rep 52 ( 87%) | nom  7.9397 | distn  6 | $0.0097 cum $4.03 | 35s
+      Decision-rule mid-tier    seed 300103 ok 49 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0087 cum $4.04 | 32s
+      Mechanism     mid-tier    seed 300055 ok 45 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0081 cum $4.04 | 28s
+      Quantitative  mid-tier    seed 300138 ok 51 rep 57 ( 95%) | nom  7.6865 | distn  3 | $0.0076 cum $4.05 | 30s
+      Mechanism     mid-tier    seed 300054 ok 48 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0080 cum $4.06 | 29s
+      Mechanism     mid-tier    seed 300110 ok 45 rep 54 ( 90%) | nom  7.9397 | distn  5 | $0.0099 cum $4.07 | 36s
+      Mechanism     mid-tier    seed 300071 ok 47 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0122 cum $4.08 | 43s
+      Quantitative  mid-tier    seed 300063 ok 49 rep 49 ( 82%) | nom  7.6865 | distn  8 | $0.0104 cum $4.09 | 38s
+      Decision-rule mid-tier    seed 300123 ok 51 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0078 cum $4.10 | 31s
+      Quantitative  mid-tier    seed 300119 ok 46 rep 51 ( 85%) | nom  7.7287 | distn  8 | $0.0123 cum $4.11 | 46s
+      Blind         mid-tier    seed 300060 ok 51 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0080 cum $4.12 | 33s
+      Mechanism     mid-tier    seed 300040 ok 49 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0108 cum $4.13 | 40s
+      Quantitative  mid-tier    seed 300092 ok 48 rep 49 ( 82%) | nom  7.9513 | distn 10 | $0.0111 cum $4.14 | 46s
+      Blind         mid-tier    seed 300068 ok 47 rep 50 ( 83%) | nom  7.9513 | distn  8 | $0.0113 cum $4.15 | 47s
+      Aggregated    mid-tier    seed 300070 ok 52 rep 57 ( 95%) | nom  7.6865 | distn  3 | $0.0067 cum $4.16 | 34s
+      Mechanism     mid-tier    seed 300086 ok 54 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0084 cum $4.17 | 32s
+      Aggregated    mid-tier    seed 300101 ok 51 rep 54 ( 90%) | nom  7.9397 | distn  5 | $0.0084 cum $4.18 | 40s
+      Decision-rule mid-tier    seed 300042 ok 46 rep 53 ( 88%) | nom  7.7839 | distn  5 | $0.0086 cum $4.19 | 31s
+      Quantitative  mid-tier    seed 300130 ok 51 rep 53 ( 88%) | nom  7.9397 | distn  6 | $0.0098 cum $4.20 | 40s
+      Mechanism     mid-tier    seed 300135 ok 43 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0074 cum $4.20 | 28s
+      Blind         mid-tier    seed 300090 ok 49 rep 46 ( 77%) | nom  7.9397 | distn 10 | $0.0093 cum $4.21 | 39s
+      Blind         mid-tier    seed 300091 ok 42 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0095 cum $4.22 | 37s
+      Decision-rule mid-tier    seed 300050 ok 48 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0104 cum $4.23 | 35s
+      Mechanism     mid-tier    seed 300089 ok 52 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0108 cum $4.24 | 37s
+      Mechanism     mid-tier    seed 300138 ok 51 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0072 cum $4.25 | 24s
+      Blind         mid-tier    seed 300104 ok 50 rep 56 ( 93%) | nom  7.6865 | distn  3 | $0.0093 cum $4.26 | 36s
+      Mechanism     mid-tier    seed 300069 ok 52 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0092 cum $4.27 | 32s
+      Blind         mid-tier    seed 300070 ok 52 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0082 cum $4.28 | 32s
+      Quantitative  mid-tier    seed 300051 ok 47 rep 46 ( 77%) | nom  7.9397 | distn  9 | $0.0143 cum $4.29 | 53s
+      Decision-rule mid-tier    seed 300045 ok 50 rep 58 ( 97%) | nom  7.6865 | distn  1 | $0.0085 cum $4.30 | 29s
+      Mechanism     mid-tier    seed 300120 ok 53 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0079 cum $4.31 | 27s
+      Blind         mid-tier    seed 300044 ok 45 rep 50 ( 83%) | nom  7.7839 | distn 10 | $0.0108 cum $4.32 | 42s
+      Mechanism     mid-tier    seed 300105 ok 55 rep 54 ( 90%) | nom  7.9397 | distn  6 | $0.0100 cum $4.33 | 36s
+      Decision-rule mid-tier    seed 300066 ok 50 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0090 cum $4.34 | 30s
+      Decision-rule mid-tier    seed 300119 ok 50 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0083 cum $4.35 | 29s
+      Blind         mid-tier    seed 300086 ok 55 rep 56 ( 93%) | nom  7.6865 | distn  4 | $0.0124 cum $4.36 | 44s
+      Mechanism     mid-tier    seed 300104 ok 52 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0079 cum $4.37 | 29s
+      Mechanism     mid-tier    seed 300050 ok 47 rep 53 ( 88%) | nom  7.9397 | distn  6 | $0.0093 cum $4.38 | 32s
+      Blind         mid-tier    seed 300067 ok 50 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0089 cum $4.38 | 35s
+      Decision-rule mid-tier    seed 300100 ok 49 rep 54 ( 90%) | nom  7.9397 | distn  6 | $0.0119 cum $4.40 | 40s
+      Aggregated    mid-tier    seed 300123 ok 51 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0061 cum $4.40 | 27s
+      Blind         mid-tier    seed 300053 ok 49 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0087 cum $4.41 | 34s
+      Decision-rule mid-tier    seed 300096 ok 46 rep 56 ( 93%) | nom  7.6865 | distn  3 | $0.0112 cum $4.42 | 36s
+      Quantitative  mid-tier    seed 300081 ok 51 rep 52 ( 87%) | nom  7.9397 | distn  7 | $0.0114 cum $4.43 | 41s
+      Mechanism     mid-tier    seed 300131 ok 50 rep 54 ( 90%) | nom  7.9397 | distn  5 | $0.0109 cum $4.44 | 36s
+      Quantitative  mid-tier    seed 300050 ok 47 rep 47 ( 78%) | nom  7.9397 | distn 10 | $0.0114 cum $4.46 | 46s
+      Quantitative  mid-tier    seed 300070 ok 49 rep 51 ( 85%) | nom  7.7287 | distn  9 | $0.0092 cum $4.47 | 32s
+      Decision-rule mid-tier    seed 300137 ok 55 rep 57 ( 95%) | nom  7.6865 | distn  3 | $0.0091 cum $4.47 | 29s
+      Mechanism     mid-tier    seed 300100 ok 49 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0092 cum $4.48 | 29s
+      Decision-rule mid-tier    seed 300069 ok 52 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0078 cum $4.49 | 26s
+      Quantitative  mid-tier    seed 300066 ok 50 rep 52 ( 87%) | nom  7.9397 | distn  5 | $0.0097 cum $4.50 | 32s
+      Decision-rule mid-tier    seed 300052 ok 50 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0152 cum $4.52 | 43s
+      Decision-rule mid-tier    seed 300051 ok 53 rep 53 ( 88%) | nom  7.7287 | distn  7 | $0.0097 cum $4.53 | 30s
+      Decision-rule mid-tier    seed 300097 ok 52 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0105 cum $4.54 | 33s
+      Decision-rule mid-tier    seed 300117 ok 50 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0083 cum $4.55 | 26s
+      Quantitative  mid-tier    seed 300053 ok 51 rep 57 ( 95%) | nom  7.6865 | distn  3 | $0.0136 cum $4.56 | 41s
+      Mechanism     mid-tier    seed 300057 ok 54 rep 57 ( 95%) | nom  7.6865 | distn  3 | $0.0084 cum $4.57 | 26s
+      Decision-rule mid-tier    seed 300127 ok 55 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0087 cum $4.58 | 28s
+      Decision-rule mid-tier    seed 300118 ok 52 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0094 cum $4.59 | 30s
+      Aggregated    mid-tier    seed 300091 ok 43 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0070 cum $4.59 | 30s
+      Blind         mid-tier    seed 300116 ok 53 rep 50 ( 83%) | nom  7.9513 | distn 10 | $0.0135 cum $4.61 | 47s
+      Quantitative  mid-tier    seed 300048 ok 54 rep 54 ( 90%) | nom  7.9397 | distn  6 | $0.0132 cum $4.62 | 41s
+      Decision-rule mid-tier    seed 300101 ok 52 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0117 cum $4.63 | 37s
+      Quantitative  mid-tier    seed 300106 ok 52 rep 54 ( 90%) | nom  7.7839 | distn  6 | $0.0147 cum $4.65 | 44s
+      Quantitative  mid-tier    seed 300084 ok 49 rep 50 ( 83%) | nom  7.9513 | distn  8 | $0.0087 cum $4.65 | 30s
+      Quantitative  mid-tier    seed 300041 ok 48 rep 50 ( 83%) | nom  7.9513 | distn 10 | $0.0103 cum $4.66 | 34s
+      Blind         mid-tier    seed 300058 ok 52 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0108 cum $4.68 | 36s
+      Blind         mid-tier    seed 300095 ok 51 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0079 cum $4.68 | 28s
+      Blind         mid-tier    seed 300071 ok 54 rep 48 ( 80%) | nom  7.6865 | distn  9 | $0.0148 cum $4.70 | 48s
+      Decision-rule mid-tier    seed 300072 ok 54 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0082 cum $4.71 | 25s
+      Aggregated    mid-tier    seed 300087 ok 50 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0063 cum $4.71 | 27s
+      Mechanism     mid-tier    seed 300137 ok 55 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0077 cum $4.72 | 24s
+      Quantitative  mid-tier    seed 300125 ok 50 rep 49 ( 82%) | nom  7.9397 | distn 10 | $0.0126 cum $4.73 | 40s
+      Quantitative  mid-tier    seed 300101 ok 51 rep 52 ( 87%) | nom  7.6865 | distn  8 | $0.0102 cum $4.74 | 34s
+
+  NOMINATION CALLS: 260, of which 260 carry a two-parser comparison, 260 agree
+
+  TWO-PARSER CHECK over 7497 ROUND calls (nomination calls above)
+    GENUINE disagreement (both read, and differ)         0  0.00%
+    by design (primary refused the count, spent none)    7  0.09%
+  spot check written: /Users/<name>/projects/repdef/results/grid_topup_gemini_spotcheck.txt
+  call log archived: 5 cells, 14729 lines, 1.7 MB, all verified True
+  plain call log removed after verification: grid_topup_gemini_calls.jsonl
+
+====================================================================================================
+SUMMARY   topup_gemini
+====================================================================================================
+  VARIANCES AND HEALTH ONLY. The primary outcome by condition is NOT printed here; see
+  scripts/stage1_variance.py for the sizing inputs and the final analysis script for means.
+  (scripted reference for later use: k*=1 at 8.0057, k=0 at 7.8856)
+  condition     role          n | sd(nominated) sd(distinct) |   distn | rep of budget | $/campaign
+  Aggregated    mid-tier     99 |        0.0661      0.9600 |     2.4 |         95.8%     0.0065
+  Blind         mid-tier     99 |        0.0939      2.3897 |     3.4 |         93.6%     0.0106
+  Decision-rule mid-tier     99 |        0.0707      1.6931 |     2.6 |         95.3%     0.0097
+  Mechanism     mid-tier     99 |        0.0738      1.6601 |     2.7 |         95.1%     0.0094
+  Quantitative  mid-tier     99 |        0.1213      2.2938 |     7.6 |         84.5%     0.0117
+
+  TOTAL SPEND $4.7429 over 7757 calls, 495 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls       empty     malformed       trunc  mean rsn   max rsn
+  google/gemini-2.5-flash          7757     0  0.0%     24   0.3%     0  0.0%         0         0
+
+  No empty and no truncated responses on any model at max_tokens=6000.

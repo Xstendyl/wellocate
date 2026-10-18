@@ -1,0 +1,41 @@
+{
+ "tag": "topup_gemini",
+ "cells": 5,
+ "total_lines": 14729,
+ "source_lines": 14729,
+ "all_verified": true,
+ "empty": false,
+ "unlisted_preexisting_files": [],
+ "files": {
+  "aggregated__google_gemini-2.5-flash.jsonl.gz": {
+   "lines": 2554,
+   "sha256": "bf1cd738141881ef61b9d77118c70a1af92461ef1e248bf0a15872e39e5648a8",
+   "bytes": 249192,
+   "verified": true
+  },
+  "blind__google_gemini-2.5-flash.jsonl.gz": {
+   "lines": 3379,
+   "sha256": "5fcda504f97cb8cf4514672d52da987b1641110b40de6363b6630a934ff9f12f",
+   "bytes": 359455,
+   "verified": true
+  },
+  "decision_rule__google_gemini-2.5-flash.jsonl.gz": {
+   "lines": 2739,
+   "sha256": "429e2a36c86f181db2bd0ffc055ace083390b3688e20d5475bdbba0ea47f53b3",
+   "bytes": 325974,
+   "verified": true
+  },
+  "informed__google_gemini-2.5-flash.jsonl.gz": {
+   "lines": 3398,
+   "sha256": "adc8c21b0cdeae0011a2eb9177d9ae591ee5808e8a4a0339bbcfb46e9e858ed5",
+   "bytes": 415993,
+   "verified": true
+  },
+  "instructed__google_gemini-2.5-flash.jsonl.gz": {
+   "lines": 2659,
+   "sha256": "5627465e8107428d155ad34b6952c84052e097e306cfe1ece6223f93812ac701",
+   "bytes": 316784,
+   "verified": true
+  }
+ }
+}

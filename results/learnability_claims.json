@@ -1,0 +1,295 @@
+{
+ "200": [
+  {
+   "claim": "learner's choice, per scope",
+   "old": {
+    "fair": "k=1 shrinkage",
+    "pool": "k=1 shrinkage"
+   },
+   "new": {
+    "fair": "k=1 shrinkage",
+    "pool": "k=1 shrinkage"
+   },
+   "changed": false
+  },
+  {
+   "claim": "settings where the learner's k is k* or tied with it, of 18",
+   "old": 18,
+   "new": 18,
+   "changed": false
+  },
+  {
+   "claim": "settings with k* = 1",
+   "old": 13,
+   "new": 13,
+   "changed": false
+  },
+  {
+   "claim": "settings with k* = 2",
+   "old": 5,
+   "new": 3,
+   "changed": true
+  },
+  {
+   "claim": "settings with k* = 2 at double noise",
+   "old": 4,
+   "new": 3,
+   "changed": true
+  },
+  {
+   "claim": "settings with k* = 2 within two SEs (ties)",
+   "old": 5,
+   "new": 3,
+   "changed": true
+  },
+  {
+   "claim": "gaps to the runner-up inside two SEs, of 18",
+   "old": 16,
+   "new": 16,
+   "changed": false
+  },
+  {
+   "claim": "raw paired difference, k* shrinkage minus never-replicate, held out",
+   "old": [
+    0.002742852876652435,
+    0.2243496385925745
+   ],
+   "new": [
+    -0.0076952550798008446,
+    0.22309286434690012
+   ],
+   "changed": true
+  },
+  {
+   "claim": "learned score, training endpoints",
+   "old": [
+    0.17896654770047016,
+    6.807881261792095
+   ],
+   "new": [
+    0.1223047166008905,
+    7.764835283705588
+   ],
+   "changed": true
+  },
+  {
+   "claim": "learned score, held-out endpoints",
+   "old": [
+    0.9231624542769603,
+    1.4545124279213706
+   ],
+   "new": [
+    0.7835262354933171,
+    1.0
+   ],
+   "changed": true
+  },
+  {
+   "claim": "cells scoring exactly 1.000 held out",
+   "old": 13,
+   "new": 11,
+   "changed": true
+  },
+  {
+   "claim": "cells whose held-out score is undefined (held-out span zero or negative)",
+   "old": [],
+   "new": [
+    "K=2 cv=0.0365 pool k*=1",
+    "K=2 cv=0.0365 fair k*=0",
+    "K=3 cv=0.0365 pool k*=0",
+    "K=3 cv=0.0365 fair k*=1"
+   ],
+   "changed": true
+  },
+  {
+   "claim": "k* = 1 cells scoring exactly 1.000",
+   "old": 13,
+   "new": 11,
+   "changed": true
+  },
+  {
+   "claim": "settings with k* = 0",
+   "old": 0,
+   "new": 2,
+   "changed": true
+  },
+  {
+   "claim": "learned score held out where k* is not 1 (defined cells)",
+   "old": [
+    0.9231624542769603,
+    1.4545124279213706
+   ],
+   "new": [
+    0.7835262354933171,
+    0.9973069061977603
+   ],
+   "changed": true
+  },
+  {
+   "claim": "collapses at K=3, guessing policy: (k=4, k=3) of n",
+   "old": [
+    [
+     144,
+     16
+    ]
+   ],
+   "new": [
+    [
+     138,
+     12
+    ]
+   ],
+   "changed": true
+  },
+  {
+   "claim": "n per cell",
+   "old": 200,
+   "new": 200,
+   "changed": false
+  }
+ ],
+ "1500": [
+  {
+   "claim": "learner's choice, per scope",
+   "old": {
+    "fair": "k=1 shrinkage",
+    "pool": "k=1 shrinkage"
+   },
+   "new": {
+    "fair": "k=1 shrinkage",
+    "pool": "k=1 shrinkage"
+   },
+   "changed": false
+  },
+  {
+   "claim": "settings where the learner's k is k* or tied with it, of 18",
+   "old": 18,
+   "new": 18,
+   "changed": false
+  },
+  {
+   "claim": "settings with k* = 1",
+   "old": 13,
+   "new": 15,
+   "changed": true
+  },
+  {
+   "claim": "settings with k* = 2",
+   "old": 5,
+   "new": 3,
+   "changed": true
+  },
+  {
+   "claim": "settings with k* = 2 at double noise",
+   "old": 5,
+   "new": 3,
+   "changed": true
+  },
+  {
+   "claim": "settings with k* = 2 within two SEs (ties)",
+   "old": 5,
+   "new": 3,
+   "changed": true
+  },
+  {
+   "claim": "gaps to the runner-up inside two SEs, of 18",
+   "old": 8,
+   "new": 8,
+   "changed": false
+  },
+  {
+   "claim": "raw paired difference, k* shrinkage minus never-replicate, held out",
+   "old": [
+    0.018560329409387677,
+    0.2032839452266142
+   ],
+   "new": [
+    0.016770586966982748,
+    0.22920267682868722
+   ],
+   "changed": true
+  },
+  {
+   "claim": "learned score, training endpoints",
+   "old": [
+    0.40053463921995874,
+    2.3092195038448184
+   ],
+   "new": [
+    -17.756090828532255,
+    1.5165724729803878
+   ],
+   "changed": true
+  },
+  {
+   "claim": "learned score, held-out endpoints",
+   "old": [
+    0.8296175995982493,
+    1.2048276670245512
+   ],
+   "new": [
+    0.8186273764924084,
+    1.0
+   ],
+   "changed": true
+  },
+  {
+   "claim": "cells scoring exactly 1.000 held out",
+   "old": 13,
+   "new": 15,
+   "changed": true
+  },
+  {
+   "claim": "cells whose held-out score is undefined (held-out span zero or negative)",
+   "old": [],
+   "new": [],
+   "changed": false
+  },
+  {
+   "claim": "k* = 1 cells scoring exactly 1.000",
+   "old": 13,
+   "new": 15,
+   "changed": true
+  },
+  {
+   "claim": "settings with k* = 0",
+   "old": 0,
+   "new": 0,
+   "changed": false
+  },
+  {
+   "claim": "learned score held out where k* is not 1 (defined cells)",
+   "old": [
+    0.8296175995982493,
+    1.2048276670245512
+   ],
+   "new": [
+    0.8186273764924084,
+    0.9247331864087096
+   ],
+   "changed": true
+  },
+  {
+   "claim": "collapses at K=3, guessing policy: (k=4, k=3) of n",
+   "old": [
+    [
+     1054,
+     156
+    ]
+   ],
+   "new": [
+    [
+     968,
+     96
+    ]
+   ],
+   "changed": true
+  },
+  {
+   "claim": "n per cell",
+   "old": 1500,
+   "new": 1500,
+   "changed": false
+  }
+ ]
+}

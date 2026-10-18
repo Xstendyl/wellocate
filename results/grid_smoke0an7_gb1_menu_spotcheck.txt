@@ -1,0 +1,301 @@
+SPOT CHECK: raw model output beside the proposals the harness accepted.
+Sampled deterministically, 20 calls per model. Written for a human to read.
+
+====================================================================================================
+openai/gpt-6.1-sol  (frontier-openai)   78 calls, showing 20
+====================================================================================================
+
+--- round 1  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['KLTL', 'CQTL', 'CLTH', 'CLSL']
+SECONDARY: ['KLTL', 'CQTL', 'CLTH', 'CLSL']
+RAW:
+KLTL | Probe first-position variation
+CQTL | Probe second-position variation
+CLTH | Probe fourth-position variation
+CLSL | Probe third-position variation
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['CLTH']
+SECONDARY: ['CLTH']
+RAW:
+CLTH | Test a single-position change near the viable reference.
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['CQTL']
+SECONDARY: ['CQTL']
+RAW:
+CQTL | Test a suggested single-position change from the reference.
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['CQPL']
+SECONDARY: ['CQPL']
+RAW:
+CQPL | Explore a third-position change from the best measured candidate.
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['CCTL']
+SECONDARY: ['CCTL']
+RAW:
+CCTL | Test a new second-position symbol near the best viable candidate.
+
+--- round 2  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['CQTQ', 'CQHL', 'NQTL', 'CQTM']
+SECONDARY: ['CQTQ', 'CQHL', 'NQTL', 'CQTM']
+RAW:
+CQTQ | Explore fourth position around best observed candidate
+CQHL | Explore third position while preserving favorable Q
+NQTL | Test first-position improvement on best background
+CQTM | Probe another fourth-position alternative
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['CQOL']
+SECONDARY: ['CQOL']
+RAW:
+CQOL | Tests a new third-position symbol near the best measured candidate.
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['CQOR']
+SECONDARY: ['CQOR']
+RAW:
+CQOR | Explore a new fourth-position symbol near the highest-scoring candidate.
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['TQOL']
+SECONDARY: ['TQOL']
+RAW:
+TQOL | Test first-position improvement on the highest-scoring viable candidate
+
+--- round 3  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 9  parsers agree True ---
+PARSED   : ['TQON', 'TQOC', 'TQIL', 'TLOL']
+SECONDARY: ['TQON', 'TQOC', 'TQIL', 'TLOL']
+RAW:
+TQON | Explore fourth position around the current best
+TQOC | Test another fourth-position improvement
+TQIL | Explore third position on the best background
+TLOL | Test whether Q remains best with T and O
+
+--- round 4  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['TLOL']
+SECONDARY: ['TLOL']
+RAW:
+TLOL | Recheck the highest score to confirm its advantage
+
+--- round 4  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['TLQL']
+SECONDARY: ['TLQL']
+RAW:
+TLQL | Probe a new third-position symbol on the best-performing TLOL background
+
+--- round 6  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 10  parsers agree True ---
+PARSED   : ['PLOI', 'ALOL', 'SLOL', 'PLON']
+SECONDARY: ['PLOI', 'ALOL', 'SLOL', 'PLON']
+RAW:
+PLOI | Combine best first position with viable fourth-position change
+ALOL | Explore first-position improvement on the strong LOL background
+SLOL | Test another first-position variant near the current best
+PLON | Check whether the best first position improves this viable ending
+
+--- round 8  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['ELOL']
+SECONDARY: ['ELOL']
+RAW:
+ELOL | Explore an untested first-position symbol while retaining the strong LOL background.
+
+--- round 11  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['MLRL']
+SECONDARY: ['MLRL']
+RAW:
+MLRL | Probe an untested third-position change on the highest-scoring background.
+
+--- round 11  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['MLJL']
+SECONDARY: ['MLJL']
+RAW:
+MLJL | Test a new third-position symbol on the highest-scoring background.
+
+--- round 11  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['MLKL']
+SECONDARY: ['MLKL']
+RAW:
+MLKL | Explore a new third-position symbol on the highest-scoring background.
+
+--- round 11  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['MLDL']
+SECONDARY: ['MLDL']
+RAW:
+MLDL | Explore a new third-position variant of the highest-scoring candidate.
+
+--- round 13  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 9  parsers agree True ---
+PARSED   : ['IIOL', 'MPOL', 'MROL', 'MSOL']
+SECONDARY: ['IIOL', 'MPOL', 'MROL', 'MSOL']
+RAW:
+IIOL | Retry failed measurement near the strongest candidates
+MPOL | Explore an untested second position with the best first letter
+MROL | Test another second-position alternative around MLOL
+MSOL | Broaden the search for an improvement over MLOL
+
+--- round 1  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['CNTL', 'KLTL', 'CLFL', 'CLTQ']
+SECONDARY: ['CNTL', 'KLTL', 'CLFL', 'CLTQ']
+RAW:
+CNTL | Probe a change at position 2
+KLTL | Probe a change at position 1
+CLFL | Probe a change at position 3
+CLTQ | Probe a change at position 4
+
+====================================================================================================
+google/gemini-3.1-pro-preview  (frontier-google)   80 calls, showing 20
+====================================================================================================
+
+--- round 1  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['CNTL', 'CLFL', 'KLTL', 'CLGL']
+SECONDARY: ['CNTL', 'CLFL', 'KLTL', 'CLGL']
+RAW:
+CNTL | explore position 2
+CLFL | explore position 3
+KLTL | explore position 1
+CLGL | explore position 3
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['CLTM']
+SECONDARY: ['CLTM']
+RAW:
+CLTM | exploring position 4 from reference CLTL
+
+--- round 2  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 12  parsers agree True ---
+PARSED   : ['DLLL', 'DLIL', 'DLJL', 'DLOL']
+SECONDARY: ['DLLL', 'DLIL', 'DLJL', 'DLOL']
+RAW:
+DLLL | exploit high score of DLTL by changing pos 3
+DLIL | exploit high score of DLTL by changing pos 3
+DLJL | exploit high score of DLTL by changing pos 3
+DLOL | exploit high score of DLTL by changing pos 3
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['DLTR']
+SECONDARY: ['DLTR']
+RAW:
+DLTR | exploring position 4 based on high-scoring DLTL
+
+--- round 4  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 12  parsers agree True ---
+PARSED   : ['DLOD', 'DLOI', 'DLOA', 'DLOT']
+SECONDARY: ['DLOD', 'DLOI', 'DLOA', 'DLOT']
+RAW:
+DLOD | mutate pos 4 of best candidate DLOL
+DLOI | mutate pos 4 of best candidate DLOL
+DLOA | mutate pos 4 of best candidate DLOL
+DLOT | mutate pos 4 of best candidate DLOL
+
+--- round 4  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 5  parsers agree True ---
+PARSED   : ['DKOI']
+SECONDARY: ['DKOI']
+RAW:
+DKOI | combining best mutations from DKOL and DLOI
+
+--- round 5  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['SLOL', 'RLOL', 'KLOL', 'HLOL']
+SECONDARY: ['SLOL', 'RLOL', 'KLOL', 'HLOL']
+RAW:
+SLOL | exploring position 1 with best known suffix LOL
+RLOL | exploring position 1 with best known suffix LOL
+KLOL | exploring position 1 with best known suffix LOL
+HLOL | exploring position 1 with best known suffix LOL
+
+--- round 6  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 12  parsers agree True ---
+PARSED   : ['SROL', 'HROL', 'SEOL', 'HEOL']
+SECONDARY: ['SROL', 'HROL', 'SEOL', 'HEOL']
+RAW:
+SROL | combining best pos 1 S with good pos 2 R
+HROL | combining good pos 1 H with good pos 2 R
+SEOL | combining best pos 1 S with good pos 2 E
+HEOL | combining good pos 1 H with good pos 2 E
+
+--- round 8  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['HLOQ']
+SECONDARY: ['HLOQ']
+RAW:
+HLOQ | exploring 4th position for HLOL
+
+--- round 8  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['HLOF']
+SECONDARY: ['HLOF']
+RAW:
+HLOF | exploring 4th position of HLOL
+
+--- round 9  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['SLOF', 'HLOB', 'HLOC', 'HLOS']
+SECONDARY: ['SLOF', 'HLOB', 'HLOC', 'HLOS']
+RAW:
+SLOF | suggested candidate
+HLOB | suggested candidate
+HLOC | suggested candidate
+HLOS | suggested candidate
+
+--- round 9  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['OLOL']
+SECONDARY: ['OLOL']
+RAW:
+OLOL | exploring first position with LOL base
+
+--- round 10  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['OFOL']
+SECONDARY: ['OFOL']
+RAW:
+OFOL | exploring second position with O in first position
+
+--- round 11  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['MLOL', 'NLOL', 'QLOL', 'TLOL']
+SECONDARY: ['MLOL', 'NLOL', 'QLOL', 'TLOL']
+RAW:
+MLOL | exploring position 1 with LOL
+NLOL | exploring position 1 with LOL
+QLOL | exploring position 1 with LOL
+TLOL | exploring position 1 with LOL
+
+--- round 13  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['BLOL', 'ELOL', 'FLOL', 'GLOL']
+SECONDARY: ['BLOL', 'ELOL', 'FLOL', 'GLOL']
+RAW:
+BLOL | explore 1st position with best suffix
+ELOL | explore 1st position with best suffix
+FLOL | explore 1st position with best suffix
+GLOL | explore 1st position with best suffix
+
+--- round 15  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['LLOL', 'MLOP', 'MLOM', 'MLON']
+SECONDARY: ['LLOL', 'MLOP', 'MLOM', 'MLON']
+RAW:
+LLOL | untested first letter L
+MLOP | testing P at pos 4
+MLOM | testing M at pos 4
+MLON | testing N at pos 4
+
+--- round 1  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['FLTL', 'CCTL', 'CHTL', 'CLTH']
+SECONDARY: ['FLTL', 'CCTL', 'CHTL', 'CLTH']
+RAW:
+FLTL | exploring position 1
+CCTL | exploring position 2
+CHTL | exploring position 2
+CLTH | exploring position 4
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['FLTS']
+SECONDARY: ['FLTS']
+RAW:
+FLTS | exploring position 4 based on best candidate FLTL
+
+--- round 2  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 11  parsers agree True ---
+PARSED   : ['FHTL', 'DHTL', 'KHTL', 'QHTL']
+SECONDARY: ['FHTL', 'DHTL', 'KHTL', 'QHTL']
+RAW:
+FHTL | combines best known letters F at pos 1 and H at pos 2
+DHTL | exploring new letter D at pos 1 with good HTL tail
+KHTL | exploring new letter K at pos 1 with good HTL tail
+QHTL | exploring new letter Q at pos 1 with good HTL tail
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['FHJL']
+SECONDARY: ['FHJL']
+RAW:
+FHJL | testing position 3 variation on FHTL

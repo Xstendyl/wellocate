@@ -1,0 +1,143 @@
+{
+ "gb1": {
+  "variants": 160000,
+  "threshold": 0.1,
+  "rule": "fitness > threshold",
+  "viable": 11522,
+  "viable_pct": 7.20125,
+  "wild_type": "VDGV",
+  "wild_type_fitness": 1.0,
+  "at_least_wild_type": 3644,
+  "at_least_wild_type_pct": 2.2775
+ },
+ "phoq": {
+  "variants": 160000,
+  "threshold": 1.0,
+  "rule": "fitness > threshold",
+  "viable": 11146,
+  "viable_pct": 6.96625,
+  "wild_type": "AVST",
+  "wild_type_fitness": 3.28744733333,
+  "at_least_wild_type": 8351,
+  "at_least_wild_type_pct": 5.219375
+ },
+ "grid_slice": {
+  "best": "IOJO",
+  "fixed_positions": [
+   3,
+   4
+  ],
+  "fixed_letters": [
+   "J",
+   "O"
+  ],
+  "neighbours_shown": 38,
+  "neighbours_viable": 20,
+  "slice_viable": 93,
+  "slice_cells": 400,
+  "slice_viable_pct": 23.25
+ },
+ "clustering": {
+  "grid": {
+   "instance": "nk/K1/seed1",
+   "variants": 160000,
+   "viable": 11199,
+   "viable_pct": 6.999375,
+   "neighbours_per_candidate": 76,
+   "all_viable": {
+    "candidates": 11199,
+    "mean_viable_neighbour_pct": 25.78895672075939,
+    "pooled_viable_neighbour_pct": 25.788956720759842
+   },
+   "top_viable": {
+    "candidates": 1120,
+    "mean_viable_neighbour_pct": 39.37852443609025,
+    "pooled_viable_neighbour_pct": 39.378524436090224,
+    "fraction": 0.1,
+    "value_cutoff": 7.559930166266433
+   },
+   "start": {
+    "seq": "GDIF",
+    "value": 6.872952536863767,
+    "neighbours": 76,
+    "viable_neighbours": 24,
+    "viable_neighbour_pct": 31.57894736842105
+   }
+  },
+  "gb1_scrambled": {
+   "instance": "gb1/scramble:20261003",
+   "variants": 160000,
+   "viable": 11199,
+   "viable_pct": 6.999375,
+   "neighbours_per_candidate": 76,
+   "all_viable": {
+    "candidates": 11199,
+    "mean_viable_neighbour_pct": 45.871576879514194,
+    "pooled_viable_neighbour_pct": 45.87157687951462
+   },
+   "top_viable": {
+    "candidates": 1120,
+    "mean_viable_neighbour_pct": 61.95723684210535,
+    "pooled_viable_neighbour_pct": 61.95723684210526,
+    "fraction": 0.1,
+    "value_cutoff": 2.5527633201210165
+   },
+   "start": {
+    "seq": "CLTL",
+    "value": 0.533893588629302,
+    "neighbours": 76,
+    "viable_neighbours": 32,
+    "viable_neighbour_pct": 42.10526315789474
+   }
+  },
+  "phoq_scrambled": {
+   "instance": "phoq/scramble:20261004",
+   "variants": 160000,
+   "viable": 11199,
+   "viable_pct": 6.999375,
+   "neighbours_per_candidate": 76,
+   "all_viable": {
+    "candidates": 11199,
+    "mean_viable_neighbour_pct": 37.63305934270441,
+    "pooled_viable_neighbour_pct": 37.63305934270447
+   },
+   "top_viable": {
+    "candidates": 1120,
+    "mean_viable_neighbour_pct": 46.437969924812045,
+    "pooled_viable_neighbour_pct": 46.43796992481203,
+    "fraction": 0.1,
+    "value_cutoff": 1.072580578873588
+   },
+   "start": {
+    "seq": "EDQS",
+    "value": 0.43626057516470107,
+    "neighbours": 76,
+    "viable_neighbours": 50,
+    "viable_neighbour_pct": 65.78947368421052
+   }
+  }
+ },
+ "start_slice": {
+  "seq": "GDIF",
+  "fixed_positions": [
+   3,
+   4
+  ],
+  "fixed_letters": [
+   "I",
+   "F"
+  ],
+  "viable_cells": 16,
+  "cells": 400,
+  "viable_pct": 4.0,
+  "row_column_neighbours": 38,
+  "row_column_viable": 4,
+  "best": "MDIF",
+  "best_value": 7.0113950321357565,
+  "best_viable": true,
+  "neighbours": 76,
+  "neighbours_viable": 24,
+  "off_slice_neighbours": 38,
+  "off_slice_viable": 20
+ }
+}

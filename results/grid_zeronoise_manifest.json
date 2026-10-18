@@ -1,0 +1,102 @@
+{
+ "tag": "zeronoise",
+ "started": "2026-09-28T14:40:50+1000",
+ "landscape": "nk_uniform_k1_s1_p93.0",
+ "K": 1,
+ "seed": 1,
+ "pct": 93.0,
+ "cv": 0.073,
+ "noise_floor": 0.0035087719298245615,
+ "gb1_max": 8.762,
+ "rounds": 15,
+ "slots": 4,
+ "fail_pct": 15,
+ "conditions": [
+  "Blind",
+  "Quantitative",
+  "Mechanism",
+  "Aggregated",
+  "Decision-rule"
+ ],
+ "models": [
+  {
+   "role": "frontier",
+   "id": "anthropic/claude-opus-4.7",
+   "released": "2026-02"
+  },
+  {
+   "role": "mid-tier",
+   "id": "google/gemini-2.5-flash",
+   "released": "2025-06"
+  },
+  {
+   "role": "open-weight",
+   "id": "deepseek/deepseek-chat-v3.1",
+   "released": "2025-08"
+  }
+ ],
+ "campaigns_per_cell": 40,
+ "seed0": 300000,
+ "workers": 4,
+ "max_tokens": 6000,
+ "max_reasks": 3,
+ "budget_usd": 110.0,
+ "shuffled": true,
+ "order_seed": 20260927,
+ "stage": "zeronoise",
+ "reasoning_effort": null,
+ "noise": "exact",
+ "temperature": 0.0,
+ "prompt_landscape": "abstract",
+ "anchor": "GDIF",
+ "anchor_reading": 6.872952536863767,
+ "example": "ADIF",
+ "pool": 11199,
+ "space": 160000,
+ "global_best": 8.762,
+ "scripted": {
+  "mean": {
+   "kstar": 1,
+   "mean": 7.964095504618686,
+   "se": 0.009800294930038062,
+   "k0_mean": 7.88556713548877
+  },
+  "max": {
+   "kstar": 1,
+   "mean": 7.971993279527578,
+   "se": 0.009340006688354796,
+   "k0_mean": 7.88556713548877
+  },
+  "shrinkage": {
+   "kstar": 1,
+   "mean": 8.005659149667496,
+   "se": 0.008739972675956834,
+   "k0_mean": 7.88556713548877
+  }
+ },
+ "comparator": "empirical-Bayes prior fitted per campaign from that campaign's own readings",
+ "prior_rel_floor": 0.01,
+ "primary_outcome": "nominated true fitness vs the scripted k* policy",
+ "key_source": "repdef/.env",
+ "key_fingerprint_sha256_8": "0d6f7d3f",
+ "credit_floor_usd": 50.0,
+ "credit_balance_at_launch": 794.845171126,
+ "launched_below_credit_floor": false,
+ "git_commit": "ab0ab37725b5c3994a9cda3f405db61d61f764d3",
+ "git_status_porcelain": [
+  " M results/grid_topup_deepseek_campaigns.jsonl",
+  " M results/grid_topup_deepseek_manifest.json",
+  " M results/grid_topup_gemini_campaigns.jsonl",
+  " M results/grid_topup_gemini_manifest.json",
+  " M results/grid_topup_opus_campaigns.jsonl",
+  " M results/grid_topup_opus_manifest.json",
+  "?? results/grid_topup_deepseek_part3.txt",
+  "?? results/grid_topup_gemini_part3.txt",
+  "?? results/grid_topup_opus_part3.txt",
+  "?? results/grid_zeronoise_part3.txt"
+ ],
+ "code_dirty": false,
+ "code_dirty_paths": [],
+ "code_diff_sha256": null,
+ "git_commit_describes_the_code": true
+}

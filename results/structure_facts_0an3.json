@@ -1,0 +1,43 @@
+{
+ "space": 160000,
+ "viable": 11199,
+ "base_rate": 0.06999375,
+ "interaction": {
+  "1-2": {
+   "mean_abs": 1.051829429414172,
+   "max_abs": 4.112226544460164,
+   "share_below_1e9": 0.0
+  },
+  "1-3": {
+   "mean_abs": 5.716263573596336e-16,
+   "max_abs": 5.329070518200751e-15,
+   "share_below_1e9": 1.0
+  },
+  "1-4": {
+   "mean_abs": 1.0305654230269574,
+   "max_abs": 4.1295920938698245,
+   "share_below_1e9": 0.0
+  },
+  "2-3": {
+   "mean_abs": 1.0482540296355805,
+   "max_abs": 4.194227601779153,
+   "share_below_1e9": 0.0
+  },
+  "2-4": {
+   "mean_abs": 5.241396205946103e-16,
+   "max_abs": 3.552713678800501e-15,
+   "share_below_1e9": 1.0
+  },
+  "3-4": {
+   "mean_abs": 1.076604383462859,
+   "max_abs": 4.189204954647231,
+   "share_below_1e9": 0.0
+  }
+ },
+ "mean_abs_single_change": 1.0491419643643574,
+ "neighbour_correlation_viable_pairs": 0.09188998037578334,
+ "viable_pairs": 219496,
+ "neighbour_correlation_all_pairs": 0.49906673717257216,
+ "viable_rate_among_neighbours_of_viable": 0.2578895672075984,
+ "viable_rate_among_neighbours_of_nonviable": 0.055852411857730155
+}

@@ -1,0 +1,32 @@
+====================================================================================================
+GRID  NK uniform K=1 seed=1 pct=93.0  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 1 conditions x 3 models x 5 campaigns = 15 campaigns
+  ceiling $36.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    frontier     anthropic/claude-opus-4.7        released 2026-02
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+    open-weight  deepseek/deepseek-chat-v3.1      released 2025-08
+prompt facts checked: reference GDIF is viable and reads 6.8730 (stated 6.8700), pool is 7.00% of the space, example ADIF (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_rprobe_manifest.json (commit 30ce9ac6)
+    frontier     anthropic/claude-opus-4.7        released 2026-02
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+    open-weight  deepseek/deepseek-chat-v3.1      released 2025-08
+canary: comparator live, differs from the mean rule on 24 of 60 scripted campaigns
+
+
+  --- Mechanism      frontier     anthropic/claude-opus-4.7   (4 workers) ---
+      seed 300001 ok 51 rep 42 ( 70%) | shortfall  0.0000 | nom=GAJN MEAN | $0.3437 cum $0.34 | 127s
+      seed 300000 ok 46 rep 38 ( 63%) | shortfall  0.0000 | nom=HAJF MEAN | $0.3918 cum $0.74 | 137s
+      seed 300002 ok 54 rep 43 ( 72%) | shortfall  0.0000 | nom=MDNH MEAN | $0.3830 cum $1.12 | 158s
+      seed 300003 ok 46 rep 50 ( 83%) | shortfall  0.1225 | nom=GDBN MEAN | $0.4230 cum $1.54 | 165s
+      seed 300004 ok 44 rep 47 ( 78%) | shortfall  0.0000 | nom=GDKF MEAN | $0.3955 cum $1.94 | 156s
+
+  --- Mechanism      mid-tier     google/gemini-2.5-flash   (4 workers) ---
+      seed 300000 ok 50 rep 52 ( 87%) | shortfall  0.0000 | nom=GAJF MEAN | $0.1649 cum $2.10 | 482s
+      seed 300003 ok 50 rep 53 ( 88%) | shortfall  0.1535 | nom=GDAF MEAN | $0.2263 cum $2.33 | 531s
+      seed 300002 ok 49 rep 50 ( 83%) | shortfall  0.0000 | nom=GDBF MEAN | $0.2136 cum $2.54 | 581s
+      seed 300001 ok 51 rep 50 ( 83%) | shortfall  0.0000 | nom=GDIJ MAX | $0.1989 cum $2.74 | 683s
+      seed 300004 ok 54 rep 53 ( 88%) | shortfall  0.1535 | nom=GDAF MEAN | $0.1903 cum $2.93 | 399s
+
+  --- Mechanism      open-weight  deepseek/deepseek-chat-v3.1   (4 workers) ---

@@ -1,0 +1,11 @@
+{
+ "openai/gpt-6.1-sol": {
+  "calls": 75,
+  "empty": 0,
+  "malformed": 0,
+  "truncated": 0,
+  "mean_reasoning": 69.17333333333333,
+  "max_reasoning": 199,
+  "max_completion": 246
+ }
+}

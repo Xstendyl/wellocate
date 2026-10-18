@@ -1,0 +1,263 @@
+{
+ "references": {
+  "anthropic/claude-opus-4.7": {
+   "grid Blind mean": {
+    "campaigns": 695,
+    "distinct": 11.335251798561151,
+    "rejections": 24.63884892086331,
+    "lost": 1.7683453237410072,
+    "pick": 7.652149476313239
+   }
+  },
+  "deepseek/deepseek-chat-v3.1": {
+   "grid Blind mean": {
+    "campaigns": 181,
+    "distinct": 4.856353591160221,
+    "rejections": 13.569060773480663,
+    "lost": 0.2265193370165746,
+    "pick": 7.7781674447795455
+   },
+   "F0 control smoke, same seeds": [
+    {
+     "seed": 15000001,
+     "capped_attempts": 0,
+     "readings": 52,
+     "distinct": 6,
+     "rejections": 7,
+     "lost": 1,
+     "lost_rounds_slots": 0,
+     "lost_rejection": 1,
+     "lost_cap_bound": 0,
+     "pick": 7.951326909604183,
+     "spend": 0.003954599999999999
+    },
+    {
+     "seed": 15000000,
+     "capped_attempts": 0,
+     "readings": 52,
+     "distinct": 6,
+     "rejections": 7,
+     "lost": 0,
+     "lost_rounds_slots": 0,
+     "lost_rejection": 0,
+     "lost_cap_bound": 0,
+     "pick": 7.951326909604183,
+     "spend": 0.00415873
+    }
+   ]
+  },
+  "google/gemini-2.5-flash": {
+   "grid Blind mean": {
+    "campaigns": 139,
+    "distinct": 3.273381294964029,
+    "rejections": 18.431654676258994,
+    "lost": 0.2949640287769784,
+    "pick": 7.702881836075391
+   },
+   "F0 control smoke, same seeds": [
+    {
+     "seed": 15000001,
+     "capped_attempts": 0,
+     "readings": 51,
+     "distinct": 2,
+     "rejections": 13,
+     "lost": 0,
+     "lost_rounds_slots": 0,
+     "lost_rejection": 0,
+     "lost_cap_bound": 0,
+     "pick": 7.686542013164922,
+     "spend": 0.0085901
+    },
+    {
+     "seed": 15000000,
+     "capped_attempts": 0,
+     "readings": 51,
+     "distinct": 2,
+     "rejections": 9,
+     "lost": 0,
+     "lost_rounds_slots": 0,
+     "lost_rejection": 0,
+     "lost_cap_bound": 0,
+     "pick": 7.686542013164922,
+     "spend": 0.007208600000000001
+    }
+   ]
+  }
+ },
+ "smokes": {
+  "0an": {
+   "google/gemini-2.5-flash": {
+    "campaigns": [
+     {
+      "seed": 15000001,
+      "capped_attempts": 75,
+      "readings": 33,
+      "distinct": 20,
+      "rejections": 114,
+      "lost": 21,
+      "lost_rounds_slots": 0,
+      "lost_rejection": 21,
+      "lost_cap_bound": 0,
+      "pick": 7.730098104558263,
+      "spend": 0.14608493
+     }
+    ],
+    "at_limit_proposals": {
+     "re-proposal": 73
+    },
+    "lost_calls": {
+     "replacement: bad_alphabet": 5
+    }
+   },
+   "anthropic/claude-opus-4.7": {
+    "campaigns": [
+     {
+      "seed": 15000000,
+      "capped_attempts": 53,
+      "readings": 41,
+      "distinct": 27,
+      "rejections": 64,
+      "lost": 13,
+      "lost_rounds_slots": 4,
+      "lost_rejection": 9,
+      "lost_cap_bound": 0,
+      "pick": 8.40119255053439,
+      "spend": 1.8210599999999997
+     }
+    ],
+    "at_limit_proposals": {
+     "re-proposal": 49
+    },
+    "lost_calls": {
+     "round: ambiguous": 1
+    }
+   }
+  },
+  "0an.1": {
+   "anthropic/claude-opus-4.7": {
+    "campaigns": [
+     {
+      "seed": 15000000,
+      "capped_attempts": 0,
+      "readings": 29,
+      "distinct": 20,
+      "rejections": 56,
+      "lost": 26,
+      "lost_rounds_slots": 20,
+      "lost_rejection": 6,
+      "lost_cap_bound": 0,
+      "pick": 8.40119255053439,
+      "spend": 0.7202000000000002
+     },
+     {
+      "seed": 15000001,
+      "capped_attempts": 10,
+      "readings": 17,
+      "distinct": 11,
+      "rejections": 110,
+      "lost": 39,
+      "lost_rounds_slots": 16,
+      "lost_rejection": 23,
+      "lost_cap_bound": 0,
+      "pick": 6.983251072019842,
+      "spend": 1.6179899999999998
+     }
+    ],
+    "at_limit_proposals": {
+     "re-proposal": 9
+    },
+    "lost_calls": {
+     "round: ambiguous": 7,
+     "round: alphabet_then_wrong_count": 1,
+     "round: wrong_count": 1
+    }
+   },
+   "deepseek/deepseek-chat-v3.1": {
+    "campaigns": [
+     {
+      "seed": 15000001,
+      "capped_attempts": 198,
+      "readings": 22,
+      "distinct": 14,
+      "rejections": 149,
+      "lost": 33,
+      "lost_rounds_slots": 0,
+      "lost_rejection": 26,
+      "lost_cap_bound": 7,
+      "pick": 7.951326909604183,
+      "spend": 0.12924309999999997
+     },
+     {
+      "seed": 15000000,
+      "capped_attempts": 117,
+      "readings": 17,
+      "distinct": 10,
+      "rejections": 175,
+      "lost": 38,
+      "lost_rounds_slots": 0,
+      "lost_rejection": 35,
+      "lost_cap_bound": 3,
+      "pick": 7.939702193330109,
+      "spend": 0.12144161000000003
+     }
+    ],
+    "at_limit_proposals": {
+     "copy of the refusal": 10,
+     "re-proposal": 304
+    },
+    "lost_calls": {
+     "replacement: bad_alphabet": 1
+    }
+   },
+   "google/gemini-2.5-flash": {
+    "campaigns": [
+     {
+      "seed": 15000001,
+      "capped_attempts": 885,
+      "readings": 3,
+      "distinct": 2,
+      "rejections": 120,
+      "lost": 56,
+      "lost_rounds_slots": 0,
+      "lost_rejection": 14,
+      "lost_cap_bound": 42,
+      "pick": 7.686542013164922,
+      "spend": 0.41647775999999964
+     },
+     {
+      "seed": 15000000,
+      "capped_attempts": 108,
+      "readings": 9,
+      "distinct": 7,
+      "rejections": 193,
+      "lost": 47,
+      "lost_rounds_slots": 0,
+      "lost_rejection": 43,
+      "lost_cap_bound": 4,
+      "pick": 7.939702193330109,
+      "spend": 0.17600454999999998
+     }
+    ],
+    "at_limit_proposals": {
+     "re-proposal": 850,
+     "copy of the refusal": 143
+    },
+    "lost_calls": {}
+   }
+  }
+ },
+ "over_grid_blind": {
+  "rejections": {
+   "min": 2.2728334501284744,
+   "max": 12.89698697068404,
+   "campaigns": 8,
+   "above_one": 8
+  },
+  "distinct": {
+   "min": 0.6109890109890109,
+   "max": 6.1098901098901095,
+   "campaigns": 8,
+   "above_one": 6
+  }
+ }
+}

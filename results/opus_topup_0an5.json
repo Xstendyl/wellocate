@@ -1,0 +1,176 @@
+{
+ "30": {
+  "pairs": 30,
+  "share": 55.666666666666664,
+  "share_ci": [
+   52.5,
+   59.05555555555556
+  ],
+  "partner_share": 75.38888888888889,
+  "d_share": -19.72222222222222,
+  "d_share_ci": [
+   -23.333333333333332,
+   -15.944444444444445
+  ],
+  "share_non_lost": 61.168602529383904,
+  "lost_slots": 5.466666666666667,
+  "lost_rejection": 5.466666666666667,
+  "lost_cap_bound": 0,
+  "lost_rounds": 0,
+  "distinct": 17.7,
+  "partner_distinct": 11.233333333333333,
+  "rejections": 50.7,
+  "partner_rejections": 24.9,
+  "capped": 0,
+  "capped_ci": [
+   0,
+   0
+  ],
+  "repeat_cap_hits": 0,
+  "pick": 7.690766561826198,
+  "partner_pick": 7.593231243600018,
+  "d_pick": 0.09753531822618079,
+  "d_pick_ci": [
+   -0.06660195701403564,
+   0.2652873274810918
+  ],
+  "delta": 0.31,
+  "pick_powered": false,
+  "pick_label": "no change beyond delta (descriptive)",
+  "share_label": "reduces",
+  "exploration_part": 0.18407165647420104,
+  "exploration_ci": [
+   0.03157181143158774,
+   0.33423774854323984
+  ],
+  "selection_part": 0.08653633824802025,
+  "selection_ci": [
+   -0.0006676077089189825,
+   0.18240686024555272
+  ],
+  "viability": {
+   "list": {
+    "names": 1712,
+    "viable": 522,
+    "rate": 0.30490654205607476,
+    "ci": [
+     0.2776101388050694,
+     0.3333333333333333
+    ]
+   },
+   "earlier list": {
+    "names": 39,
+    "viable": 16,
+    "rate": 0.41025641025641024,
+    "ci": [
+     0.2653061224489796,
+     0.5686274509803921
+    ]
+   },
+   "own": {
+    "names": 217,
+    "viable": 84,
+    "rate": 0.3870967741935484,
+    "ci": [
+     0.31718061674008813,
+     0.46153846153846156
+    ]
+   },
+   "own_std_minus_list": {
+    "diff": 0.10777404463813384,
+    "ci": [
+     -0.00364627021037478,
+     0.23168148315832143
+    ]
+   }
+  }
+ },
+ "60": {
+  "pairs": 60,
+  "share": 56.72222222222222,
+  "share_ci": [
+   54.22222222222222,
+   59.19444444444444
+  ],
+  "partner_share": 74.91666666666667,
+  "d_share": -18.194444444444443,
+  "d_share_ci": [
+   -20.805555555555554,
+   -15.499999999999998
+  ],
+  "share_non_lost": 62.13914834178473,
+  "lost_slots": 5.2,
+  "lost_rejection": 5.2,
+  "lost_cap_bound": 0,
+  "lost_rounds": 0,
+  "distinct": 17.9,
+  "partner_distinct": 11.35,
+  "rejections": 47.666666666666664,
+  "partner_rejections": 25.216666666666665,
+  "capped": 0,
+  "capped_ci": [
+   0,
+   0
+  ],
+  "repeat_cap_hits": 0,
+  "pick": 7.703782536373661,
+  "partner_pick": 7.62119689719785,
+  "d_pick": 0.08258563917581214,
+  "d_pick_ci": [
+   -0.030409979232218495,
+   0.19778133852464824
+  ],
+  "delta": 0.22,
+  "pick_powered": false,
+  "pick_label": "no change beyond delta (descriptive)",
+  "share_label": "reduces",
+  "exploration_part": 0.17376909681223585,
+  "exploration_ci": [
+   0.07432736754679956,
+   0.27375904464032447
+  ],
+  "selection_part": 0.0911834576364237,
+  "selection_ci": [
+   0.029964696358099032,
+   0.15593404097332889
+  ],
+  "viability": {
+   "list": {
+    "names": 3237,
+    "viable": 995,
+    "rate": 0.3073833796725363,
+    "ci": [
+     0.2826288182659673,
+     0.3315632260205775
+    ]
+   },
+   "earlier list": {
+    "names": 89,
+    "viable": 39,
+    "rate": 0.43820224719101125,
+    "ci": [
+     0.3389830508474576,
+     0.5362318840579711
+    ]
+   },
+   "own": {
+    "names": 441,
+    "viable": 190,
+    "rate": 0.4308390022675737,
+    "ci": [
+     0.3863080684596577,
+     0.47380410022779046
+    ]
+   },
+   "own_std_minus_list": {
+    "diff": 0.16804312006339245,
+    "ci": [
+     0.08742189327265143,
+     0.23649300481287638
+    ]
+   }
+  }
+ },
+ "share_label_registered": "reduces",
+ "share_label_note": "n = 60 agrees"
+}

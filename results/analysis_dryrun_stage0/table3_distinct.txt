@@ -1,0 +1,22 @@
+*** PILOT (stage 0). Ran on the pre-2026-09-28 environment, which misreported the
+*** budget. NO NUMBER BELOW IS QUOTABLE. It exists to exercise this script.
+
+TABLE 3. Distinct variants measured per campaign, the headline behavioural metric.
+Scripted k*=1 reference: 39.2 distinct per campaign. Counts, with medians.
+
+condition      model                             n     mean       SE   median               95% CI      vs k*
+Blind          claude-opus-4.7                  40    11.22    0.448     11.0  [  10.35,   12.10]     -27.98
+Blind          deepseek-chat-v3.1               40     5.83    0.260      6.0  [   5.33,    6.33]     -33.38
+Blind          gemini-2.5-flash                 40     7.55    0.353      9.0  [   6.85,    8.20]     -31.65
+Quantitative   claude-opus-4.7                  40    10.50    0.480     10.0  [   9.60,   11.47]     -28.70
+Quantitative   deepseek-chat-v3.1               40     4.15    0.132      4.0  [   3.90,    4.40]     -35.05
+Quantitative   gemini-2.5-flash                 40     5.53    0.353      6.0  [   4.85,    6.22]     -33.68
+Mechanism      claude-opus-4.7                  40    10.20    0.329     10.0  [   9.57,   10.82]     -29.00
+Mechanism      deepseek-chat-v3.1               40     3.65    0.188      4.0  [   3.27,    4.00]     -35.55
+Mechanism      gemini-2.5-flash                 40     1.45    0.209      1.0  [   1.15,    1.90]     -37.75
+Aggregated     claude-opus-4.7                  40     8.12    0.304      8.0  [   7.55,    8.72]     -31.08
+Aggregated     deepseek-chat-v3.1               40     3.58    0.094      4.0  [   3.40,    3.75]     -35.62
+Aggregated     gemini-2.5-flash                 40     2.12    0.109      2.0  [   1.93,    2.35]     -37.08
+Decision-rule  claude-opus-4.7                  40     9.07    0.285      9.0  [   8.53,    9.62]     -30.13
+Decision-rule  deepseek-chat-v3.1               40     4.25    0.138      4.0  [   4.00,    4.53]     -34.95
+Decision-rule  gemini-2.5-flash                 40     4.08    0.264      4.5  [   3.58,    4.58]     -35.12

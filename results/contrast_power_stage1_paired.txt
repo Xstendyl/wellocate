@@ -1,0 +1,48 @@
+====================================================================================================
+(a) THE Z FOR THE CONFIRMATORY FAMILY
+====================================================================================================
+  unadjusted  alpha 0.0500  ->  z(1-a/2) 1.9600 + z(0.80) 0.8416 = 2.8016   (section 0e used 2.8)
+  Holm step 1 alpha 0.008333 ->  z(1-a/2) 2.6383 + z(0.80) 0.8416 = 3.4799
+  the required N scales as z^2, so the ratio is (3.4799/2.8016)^2 = 1.543x
+
+====================================================================================================
+(c) THE POOLING DIVISOR, per model over its five conditions
+====================================================================================================
+  model                            sd (N-1)   sd (N-k) N/cell shift
+  anthropic/claude-opus-4.7          0.2763     0.2791 514 -> 525
+  deepseek/deepseek-chat-v3.1        0.1813     0.1832 222 -> 226
+  google/gemini-2.5-flash            0.1117     0.1128 84 -> 86
+  (k = 5 cells, n = 200 values, so the divisor is 195 and not 199)
+
+====================================================================================================
+(b) CONTRAST-SPECIFIC N, PAIRED BY SEED, from each contrast's own difference, at z = 3.4799
+====================================================================================================
+  PAIRED BY SEED (amendment 0s). The sizing variance is the variance of the per-seed
+  DIFFERENCE. The unpaired column is kept beside it because pairing is NOT automatically
+  cheaper: a negative within-seed correlation makes the paired requirement LARGER.
+  model                      contrast                    sd pair  sd unpr    corr N paired   N unpr power@374
+  claude-opus-4.7            Aggregated vs Mechanism      0.4542   0.4135  -0.209      695      576     0.47
+  claude-opus-4.7            Decision-rule vs Mechanism   0.3949   0.3964  +0.008      525      529     0.62
+  deepseek-chat-v3.1         Aggregated vs Mechanism      0.2316   0.2474  +0.124      181      206     0.99
+  deepseek-chat-v3.1         Decision-rule vs Mechanism   0.2033   0.2121  +0.085      140      152     1.00
+  gemini-2.5-flash           Aggregated vs Mechanism      0.1531   0.1830  +0.346       79      113     1.00
+  gemini-2.5-flash           Decision-rule vs Mechanism   0.2031   0.1725  -0.529      139      101     1.00
+
+  WORST CONTRAST PER MODEL, which is what each model's cells must be sized to:
+    anthropic/claude-opus-4.7      N/cell  695    3475 campaigns   $  696.04
+    deepseek/deepseek-chat-v3.1    N/cell  181     905 campaigns   $    3.98
+    google/gemini-2.5-flash        N/cell  139     695 campaigns   $    4.10
+    TOTAL, per-model sizing                        5075 campaigns   $  704.12
+    ALTERNATIVE: uniform at the max N/cell  695   10425 campaigns   $  731.84
+
+  The uniform option now costs $28 more, not eleven dollars, because the model driving the
+  maximum is no longer the cheap one. That premise is withdrawn.
+
+====================================================================================================
+POWER AT THE CURRENTLY CHOSEN N = 374, on the first Holm step
+====================================================================================================
+  anthropic/claude-opus-4.7      power 0.57 to 0.61
+  deepseek/deepseek-chat-v3.1    power 0.98 to 1.00
+  google/gemini-2.5-flash        power 1.00 to 1.00
+
+saved results/step10_contrast_power_stage1.json

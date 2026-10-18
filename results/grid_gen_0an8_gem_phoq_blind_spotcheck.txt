@@ -1,0 +1,153 @@
+SPOT CHECK: raw model output beside the proposals the harness accepted.
+Sampled deterministically, 20 calls per model. Written for a human to read.
+
+====================================================================================================
+google/gemini-3.1-pro-preview  (frontier-google)   38 calls, showing 20
+====================================================================================================
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['CDQS']
+SECONDARY: ['CDQS']
+RAW:
+CDQS | testing another mutation at position 1
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['BDQS']
+SECONDARY: ['BDQS']
+RAW:
+BDQS | testing another variant at position 1
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['GDQS']
+SECONDARY: ['GDQS']
+RAW:
+GDQS | testing another variant at position 1
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['HDQS']
+SECONDARY: ['HDQS']
+RAW:
+HDQS | testing another variant at the first position
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['IDQS']
+SECONDARY: ['IDQS']
+RAW:
+IDQS | testing another symbol in the first position
+
+--- round 2  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['ECQS', 'EEQS', 'EDAS', 'EDQA']
+SECONDARY: ['ECQS', 'EEQS', 'EDAS', 'EDQA']
+RAW:
+ECQS | exploring second position
+EEQS | exploring second position
+EDAS | exploring third position
+EDQA | exploring fourth position
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['EDBS']
+SECONDARY: ['EDBS']
+RAW:
+EDBS | exploring the third position after EDAS was rejected
+
+--- round 3  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['JDQS', 'KDQS', 'EFQS', 'EGQS']
+SECONDARY: ['JDQS', 'KDQS', 'EFQS', 'EGQS']
+RAW:
+JDQS | explore pos 1
+KDQS | explore pos 1
+EFQS | explore pos 2
+EGQS | explore pos 2
+
+--- round 4  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 5  parsers agree True ---
+PARSED   : ['ICQS', 'EDES', 'EDFS', 'EDQB']
+SECONDARY: ['ICQS', 'EDES', 'EDFS', 'EDQB']
+RAW:
+ICQS | combine best pos 1 and pos 2
+EDES | explore pos 3
+EDFS | explore pos 3
+EDQB | explore pos 4
+
+--- round 5  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 6  parsers agree True ---
+PARSED   : ['IDES', 'ECES', 'EDQC', 'EDGS']
+SECONDARY: ['IDES', 'ECES', 'EDQC', 'EDGS']
+RAW:
+IDES | combine best pos 1 and pos 3
+ECES | combine best pos 2 and pos 3
+EDQC | explore pos 4
+EDGS | explore pos 3
+
+--- round 6  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['ICES', 'IDGS', 'IBQS', 'IDFS']
+SECONDARY: ['ICES', 'IDGS', 'IBQS', 'IDFS']
+RAW:
+ICES | combine best mutations I, C, E
+IDGS | combine best mutations I and G
+IBQS | combine best mutations I and B
+IDFS | retry F in pos 3 with I in pos 1
+
+--- round 7  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 11  parsers agree True ---
+PARSED   : ['ICES', 'IDEC', 'IDEB', 'IDEA']
+SECONDARY: ['ICES', 'IDEC', 'IDEB', 'IDEA']
+RAW:
+ICES | retry failed order from round 6
+IDEC | mutate pos 4 of best candidate IDES
+IDEB | mutate pos 4 of best candidate IDES
+IDEA | mutate pos 4 of best candidate IDES
+
+--- round 7  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['IDED']
+SECONDARY: ['IDED']
+RAW:
+IDED | exploring position 4 variations of IDES
+
+--- round 8  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['IDEE', 'IDEF', 'LDES', 'MDES']
+SECONDARY: ['IDEE', 'IDEF', 'LDES', 'MDES']
+RAW:
+IDEE | explore pos 4
+IDEF | explore pos 4
+LDES | explore pos 1
+MDES | explore pos 1
+
+--- round 8  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['IDEG']
+SECONDARY: ['IDEG']
+RAW:
+IDEG | exploring pos 4 with G based on IDE prefix
+
+--- round 8  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['NDES']
+SECONDARY: ['NDES']
+RAW:
+NDES | exploring position 1 with best known suffix DES
+
+--- round 9  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 5  parsers agree True ---
+PARSED   : ['ICEF', 'IBES', 'ICGS', 'IDGF']
+SECONDARY: ['ICEF', 'IBES', 'ICGS', 'IDGF']
+RAW:
+ICEF | combining best known mutations I, C, E, F
+IBES | combining strong mutations I, B, E
+ICGS | combining strong mutations I, C, G
+IDGF | combining strong mutations I, G, F
+
+--- round 10  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['ICEF', 'IDQF', 'ICGF', 'ECEF']
+SECONDARY: ['ICEF', 'IDQF', 'ICGF', 'ECEF']
+RAW:
+ICEF | retry failed order
+IDQF | combine IDQS and F
+ICGF | combine ICGS and F
+ECEF | combine ECES and F
+
+--- round 10  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['IDCS']
+SECONDARY: ['IDCS']
+RAW:
+IDCS | combining high-scoring IDES and ECQS features
+
+--- round 10  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['ICGF']
+SECONDARY: ['ICGF']
+RAW:
+ICGF | combining I at pos 1, C at pos 2, G at pos 3, F at pos 4

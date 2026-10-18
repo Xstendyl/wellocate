@@ -1,0 +1,328 @@
+{
+ "old_commit": "e325069",
+ "redirect": {
+  "fair_reference_curve.json": "reference_curve_alphabet.json",
+  "riskfree_reference.json": "riskfree_reference_alphabet.json"
+ },
+ "rewritten": [
+  "loss_vs_guessing.json",
+  "lab_protocols.json",
+  "learnability_fresh_n1500_rescored.json",
+  "reference_percentile.json",
+  "landscape_summary.json"
+ ],
+ "rows": [
+  {
+   "printed_old": "0.39",
+   "label": "DeepSeek V3.1 exploration deficit, Mechanism",
+   "old": 0.38756452036902334,
+   "new": 0.38109903550037716,
+   "change": -0.006465484868646176,
+   "printed_new": "0.38",
+   "text_changes": true
+  },
+  {
+   "printed_old": "0.16",
+   "label": "DeepSeek V3.1 selection gain, Decision-rule",
+   "old": 0.15871140855078308,
+   "new": 0.1773302994930439,
+   "change": 0.018618890942260824,
+   "printed_new": "0.18",
+   "text_changes": true
+  },
+  {
+   "printed_old": "25.65",
+   "label": "fair distinct at k*",
+   "old": 25.653333333333332,
+   "new": 28.938,
+   "change": 3.2846666666666664,
+   "printed_new": "28.94",
+   "text_changes": true
+  },
+  {
+   "printed_old": "7.8909",
+   "label": "fair k*",
+   "old": 7.890949290704384,
+   "new": 7.865864914893477,
+   "change": -0.02508437581090739,
+   "printed_new": "7.8659",
+   "text_changes": true
+  },
+  {
+   "printed_old": "3.3",
+   "label": "fair k* mean, top share of viable candidates",
+   "old": 3.303866416644343,
+   "new": 3.6253236896151444,
+   "change": 0.3214572729708012,
+   "printed_new": "3.6",
+   "text_changes": true
+  },
+  {
+   "printed_old": "7.89",
+   "label": "fair k*, two decimals",
+   "old": 7.890949290704384,
+   "new": 7.865864914893477,
+   "change": -0.02508437581090739,
+   "printed_new": "7.87",
+   "text_changes": true
+  },
+  {
+   "printed_old": "7.7325",
+   "label": "fair k=0",
+   "old": 7.732477729660538,
+   "new": 7.709765114017187,
+   "change": -0.02271261564335081,
+   "printed_new": "7.7098",
+   "text_changes": true
+  },
+  {
+   "printed_old": "15.64",
+   "label": "fair lost slots at k=1",
+   "old": 15.640666666666666,
+   "new": 11.704666666666666,
+   "change": -3.936,
+   "printed_new": "11.70",
+   "text_changes": true
+  },
+  {
+   "printed_old": "97.62",
+   "label": "fair rejections at k=1",
+   "old": 97.61933333333333,
+   "new": 83.024,
+   "change": -14.595333333333329,
+   "printed_new": "83.02",
+   "text_changes": true
+  },
+  {
+   "printed_old": "0.66",
+   "label": "guessing policy's exploration shortfall",
+   "old": 0.661158437988247,
+   "new": 0.6676239228568932,
+   "change": 0.006465484868646176,
+   "printed_new": "0.67",
+   "text_changes": true
+  },
+  {
+   "printed_old": "0.21",
+   "label": "guessing policy's selection shortfall",
+   "old": 0.20989227130736934,
+   "new": 0.22851116224963017,
+   "change": 0.018618890942260824,
+   "printed_new": "0.23",
+   "text_changes": true
+  },
+  {
+   "printed_old": "0.26",
+   "label": "largest net deficit vs guessing",
+   "old": 0.26010506695071234,
+   "new": 0.23502069113980534,
+   "change": -0.025084375810907,
+   "printed_new": "0.24",
+   "text_changes": true
+  },
+  {
+   "printed_old": "0.20",
+   "label": "largest selection gain vs guessing",
+   "old": 0.20123498953794808,
+   "new": 0.2198538804802089,
+   "change": 0.018618890942260824,
+   "printed_new": "0.22",
+   "text_changes": true
+  },
+  {
+   "printed_old": "44.2",
+   "label": "most exploratory cell vs fair",
+   "old": 44.18627260353879,
+   "new": 39.17081967848902,
+   "change": -5.015452925049772,
+   "printed_new": "39.2",
+   "text_changes": true
+  },
+  {
+   "printed_old": "1.205",
+   "label": "n=1500 rescored, highest learned score",
+   "old": 1.2048276670245512,
+   "new": 1.0,
+   "change": -0.20482766702455124,
+   "printed_new": "1.000",
+   "text_changes": true
+  },
+  {
+   "printed_old": "0.830",
+   "label": "n=1500 rescored, lowest learned score",
+   "old": 0.8296175995982493,
+   "new": 0.8186273764924084,
+   "change": -0.010990223105840968,
+   "printed_new": "0.819",
+   "text_changes": true
+  },
+  {
+   "printed_old": "39.13",
+   "label": "pool distinct at k*",
+   "old": 39.12533333333333,
+   "new": 39.136,
+   "change": 0.010666666666672597,
+   "printed_new": "39.14",
+   "text_changes": true
+  },
+  {
+   "printed_old": "8.0057",
+   "label": "pool k*",
+   "old": 8.005659149667496,
+   "new": 7.999298589044483,
+   "change": -0.006360560623012823,
+   "printed_new": "7.9993",
+   "text_changes": true
+  },
+  {
+   "printed_old": "7.8856",
+   "label": "pool k=0",
+   "old": 7.88556713548877,
+   "new": 7.886230417105319,
+   "change": 0.0006632816165481614,
+   "printed_new": "7.8862",
+   "text_changes": true
+  },
+  {
+   "printed_old": "23.97",
+   "label": "risk-free scripted yardstick share at k*",
+   "old": 23.965555555555554,
+   "new": 23.964444444444442,
+   "change": -0.0011111111111112848,
+   "printed_new": "23.96",
+   "text_changes": true
+  },
+  {
+   "printed_old": "758",
+   "label": "risk-free yardstick, campaigns reaching the cap at k*",
+   "old": 758,
+   "new": 353,
+   "change": -405,
+   "printed_new": "353",
+   "text_changes": true
+  },
+  {
+   "printed_old": "2.23",
+   "label": "risk-free yardstick, slots still lost per campaign at k*",
+   "old": 2.2346666666666666,
+   "new": 0.8606666666666667,
+   "change": -1.3739999999999999,
+   "printed_new": "0.86",
+   "text_changes": true
+  },
+  {
+   "printed_old": "0.04",
+   "label": "smallest net deficit vs guessing",
+   "old": 0.04081926459885121,
+   "new": 0.015734888787944212,
+   "change": -0.025084375810907,
+   "printed_new": "0.02",
+   "text_changes": true
+  },
+  {
+   "printed_old": "0.10",
+   "label": "smallest selection gain vs guessing",
+   "old": 0.09512535490784338,
+   "new": 0.1137442458501042,
+   "change": 0.018618890942260824,
+   "printed_new": "0.11",
+   "text_changes": true
+  },
+  {
+   "printed_old": "0.31",
+   "label": "DeepSeek V3.1 exploration deficit, Decision-rule",
+   "old": 0.31408770736065883,
+   "new": 0.30762222249201265,
+   "change": -0.006465484868646176,
+   "printed_new": "0.31",
+   "text_changes": false
+  },
+  {
+   "printed_old": "0.43",
+   "label": "largest exploration deficit vs guessing",
+   "old": 0.4316221036962592,
+   "new": 0.425156618827613,
+   "change": -0.006465484868646176,
+   "printed_new": "0.43",
+   "text_changes": false
+  },
+  {
+   "printed_old": "0.18",
+   "label": "smallest exploration deficit vs guessing",
+   "old": 0.1816226088058588,
+   "new": 0.1751571239372126,
+   "change": -0.006465484868646176,
+   "printed_new": "0.18",
+   "text_changes": false
+  }
+ ],
+ "table_cells_changed_lines": [
+  {
+   "old": "\\caption{Results for each cell, one model under one prompt condition. \\emph{Share} is the replication share, the fraction of used slots spent re-testing a candidate already ordered. \\emph{Excl.\\ ref.} leaves out re-orders of the reference candidate, whose score the agent is given in advance. \\emph{Distinct} is the mean number of different candidates measured per campaign, and \\emph{fitness} the mean true fitness of the final pick. The last three columns compare each cell with the guessing policy at its best setting, which measures 25.65 distinct candidates and reaches 7.89. \\emph{Tested} is how much further the best candidate the agents measured falls short of the global best. \\emph{Picked} is the change in how far their pick falls short of the best they measured, negative where they picked better. \\emph{Net} is the sum, the agents' deficit in final-pick fitness; rounded parts may not add to it exactly. Figure~\\ref{fig:ladder} gives 95\\% intervals on fitness.}",
+   "new": "\\caption{Results for each cell, one model under one prompt condition. \\emph{Share} is the replication share, the fraction of used slots spent re-testing a candidate already ordered. \\emph{Excl.\\ ref.} leaves out re-orders of the reference candidate, whose score the agent is given in advance. \\emph{Distinct} is the mean number of different candidates measured per campaign, and \\emph{fitness} the mean true fitness of the final pick. The last three columns compare each cell with the guessing policy at its best setting, which measures 28.94 distinct candidates and reaches 7.87. \\emph{Tested} is how much further the best candidate the agents measured falls short of the global best. \\emph{Picked} is the change in how far their pick falls short of the best they measured, negative where they picked better. \\emph{Net} is the sum, the agents' deficit in final-pick fitness; rounded parts may not add to it exactly. Figure~\\ref{fig:ladder} gives 95\\% intervals on fitness.}"
+  },
+  {
+   "old": "Opus 4.7 & Blind & 75.4 & 62.8 & 11.3 & 7.65 & $+0.34$ & $-0.10$ & $+0.24$ \\\\",
+   "new": "Opus 4.7 & Blind & 75.4 & 62.8 & 11.3 & 7.65 & $+0.33$ & $-0.12$ & $+0.21$ \\\\"
+  },
+  {
+   "old": " & Quantitative & 78.4 & 65.5 & 10.4 & 7.73 & $+0.26$ & $-0.10$ & $+0.17$ \\\\",
+   "new": " & Quantitative & 78.4 & 65.5 & 10.4 & 7.73 & $+0.25$ & $-0.11$ & $+0.14$ \\\\"
+  },
+  {
+   "old": " & Mechanism & 81.6 & 68.1 & 9.0 & 7.69 & $+0.32$ & $-0.12$ & $+0.20$ \\\\",
+   "new": " & Mechanism & 81.6 & 68.1 & 9.0 & 7.69 & $+0.31$ & $-0.14$ & $+0.17$ \\\\"
+  },
+  {
+   "old": " & Aggregated & 85.8 & 70.4 & 7.0 & 7.66 & $+0.38$ & $-0.15$ & $+0.23$ \\\\",
+   "new": " & Aggregated & 85.8 & 70.4 & 7.0 & 7.66 & $+0.37$ & $-0.17$ & $+0.20$ \\\\"
+  },
+  {
+   "old": " & Decision-rule & 85.3 & 70.8 & 7.3 & 7.66 & $+0.37$ & $-0.14$ & $+0.23$ \\\\",
+   "new": " & Decision-rule & 85.3 & 70.8 & 7.3 & 7.66 & $+0.36$ & $-0.16$ & $+0.20$ \\\\"
+  },
+  {
+   "old": "Gemini 2.5 Flash & Blind & 93.8 & 69.5 & 3.3 & 7.70 & $+0.38$ & $-0.19$ & $+0.19$ \\\\",
+   "new": "Gemini 2.5 Flash & Blind & 93.8 & 69.5 & 3.3 & 7.70 & $+0.37$ & $-0.21$ & $+0.16$ \\\\"
+  },
+  {
+   "old": " & Quantitative & 84.4 & 67.3 & 7.7 & 7.85 & $+0.18$ & $-0.14$ & $+0.04$ \\\\",
+   "new": " & Quantitative & 84.4 & 67.3 & 7.7 & 7.85 & $+0.18$ & $-0.16$ & $+0.02$ \\\\"
+  },
+  {
+   "old": " & Mechanism & 95.2 & 73.3 & 2.7 & 7.71 & $+0.38$ & $-0.20$ & $+0.18$ \\\\",
+   "new": " & Mechanism & 95.2 & 73.3 & 2.7 & 7.71 & $+0.38$ & $-0.22$ & $+0.16$ \\\\"
+  },
+  {
+   "old": " & Aggregated & 95.6 & 74.6 & 2.6 & 7.71 & $+0.37$ & $-0.20$ & $+0.18$ \\\\",
+   "new": " & Aggregated & 95.6 & 74.6 & 2.6 & 7.71 & $+0.37$ & $-0.22$ & $+0.15$ \\\\"
+  },
+  {
+   "old": " & Decision-rule & 95.5 & 73.8 & 2.6 & 7.70 & $+0.38$ & $-0.20$ & $+0.19$ \\\\",
+   "new": " & Decision-rule & 95.5 & 73.8 & 2.6 & 7.70 & $+0.38$ & $-0.21$ & $+0.16$ \\\\"
+  },
+  {
+   "old": "DeepSeek V3.1 & Blind & 91.0 & 68.6 & 4.9 & 7.78 & $+0.26$ & $-0.15$ & $+0.11$ \\\\",
+   "new": "DeepSeek V3.1 & Blind & 91.0 & 68.6 & 4.9 & 7.78 & $+0.26$ & $-0.17$ & $+0.09$ \\\\"
+  },
+  {
+   "old": " & Quantitative & 93.1 & 63.1 & 3.9 & 7.63 & $+0.42$ & $-0.16$ & $+0.26$ \\\\",
+   "new": " & Quantitative & 93.1 & 63.1 & 3.9 & 7.63 & $+0.41$ & $-0.18$ & $+0.23$ \\\\"
+  },
+  {
+   "old": " & Mechanism & 93.7 & 56.9 & 3.7 & 7.66 & $+0.39$ & $-0.16$ & $+0.23$ \\\\",
+   "new": " & Mechanism & 93.7 & 56.9 & 3.7 & 7.66 & $+0.38$ & $-0.18$ & $+0.20$ \\\\"
+  },
+  {
+   "old": " & Aggregated & 94.3 & 57.0 & 3.4 & 7.63 & $+0.43$ & $-0.17$ & $+0.26$ \\\\",
+   "new": " & Aggregated & 94.3 & 57.0 & 3.4 & 7.63 & $+0.43$ & $-0.19$ & $+0.24$ \\\\"
+  },
+  {
+   "old": " & Decision-rule & 93.4 & 58.8 & 3.8 & 7.74 & $+0.31$ & $-0.16$ & $+0.16$ \\\\",
+   "new": " & Decision-rule & 93.4 & 58.8 & 3.8 & 7.74 & $+0.31$ & $-0.18$ & $+0.13$ \\\\"
+  }
+ ],
+ "new_results_break_a_claim": [
+  "MISMATCH: DeepSeek V3.1's selection gain no longer stays at 0.16 under both conditions"
+ ]
+}

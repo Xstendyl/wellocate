@@ -1,0 +1,687 @@
+====================================================================================================
+GRID  NK uniform K=1 seed=1 pct=93.0  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 5 conditions x 3 models x 40 campaigns = 600 campaigns
+  ceiling $120.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    frontier     anthropic/claude-opus-4.7        released 2026-02
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+    open-weight  deepseek/deepseek-chat-v3.1      released 2025-08
+prompt facts checked: reference GDIF is viable and reads 6.8730 (stated 6.8700), pool is 7.00% of the space, example ADIF (not viable, as on GB1)
+manifest saved: results/grid_stage1_manifest.json (commit 1048126e)
+    frontier     anthropic/claude-opus-4.7        released 2026-02
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+    open-weight  deepseek/deepseek-chat-v3.1      released 2025-08
+canary: comparator live, differs from the mean rule on 24 of 60 scripted campaigns
+
+
+  --- Blind          frontier     anthropic/claude-opus-4.7   (8 workers) ---
+      seed 300001 ok 53 rep 44 ( 79%) | shortfall  0.1429 | nom=GABF MEAN | $0.1681 cum $0.17 | 65s
+      seed 300004 ok 50 rep 41 ( 73%) | shortfall  0.2226 | nom=GDIJ MEAN | $0.1640 cum $0.33 | 66s
+      seed 300000 ok 47 rep 35 ( 66%) | shortfall  0.0000 | nom=GDIS MEAN | $0.1989 cum $0.53 | 74s
+      seed 300007 ok 45 rep 38 ( 75%) | shortfall  0.0909 | nom=GHBF MEAN | $0.2095 cum $0.74 | 76s
+      seed 300006 ok 44 rep 42 ( 82%) | shortfall  0.0000 | nom=GDBF MEAN | $0.2009 cum $0.94 | 77s
+      seed 300005 ok 37 rep 35 ( 80%) | shortfall  0.0947 | nom=GDAN MEAN | $0.2318 cum $1.17 | 88s
+      seed 300002 ok 33 rep 36 ( 82%) | shortfall  0.3316 | nom=GDAS MAX | $0.2367 cum $1.41 | 91s
+      seed 300003 ok 36 rep 33 ( 75%) | shortfall  0.0009 | nom=GKAF MEAN | $0.2789 cum $1.69 | 94s
+      seed 300009 ok 43 rep 43 ( 78%) | shortfall  0.2226 | nom=GDIJ MAX | $0.1702 cum $1.86 | 71s
+      seed 300008 ok 50 rep 43 ( 78%) | shortfall  0.0116 | nom=GDIM MEAN | $0.1997 cum $2.06 | 77s
+      seed 300011 ok 45 rep 42 ( 78%) | shortfall  0.0893 | nom=GDIS MEAN | $0.1805 cum $2.24 | 74s
+      seed 300014 ok 41 rep 41 ( 76%) | shortfall  0.2226 | nom=GDIJ MAX | $0.1846 cum $2.42 | 72s
+      seed 300010 ok 36 rep 36 ( 84%) | shortfall  0.1709 | nom=FDBL MAX | $0.2872 cum $2.71 | 91s
+      seed 300013 ok 46 rep 33 ( 65%) | shortfall  0.1675 | nom=GDIL MAX | $0.2135 cum $2.92 | 78s
+      seed 300012 ok 41 rep 33 ( 69%) | shortfall  0.2048 | nom=GDAF MAX | $0.2324 cum $3.16 | 93s
+      seed 300015 ok 43 rep 32 ( 67%) | shortfall  0.2110 | nom=GDIJ MAX | $0.2609 cum $3.42 | 99s
+      seed 300016 ok 51 rep 44 ( 77%) | shortfall  0.0000 | nom=GDIS MAX | $0.1565 cum $3.57 | 64s
+      seed 300017 ok 44 rep 38 ( 72%) | shortfall  0.0000 | nom=GDIS MEAN | $0.1721 cum $3.75 | 73s
+      seed 300018 ok 39 rep 42 ( 76%) | shortfall  0.3778 | nom=GDIR MAX | $0.1887 cum $3.94 | 69s
+      seed 300019 ok 43 rep 43 ( 81%) | shortfall  0.0000 | nom=GDIS MEAN | $0.2036 cum $4.14 | 74s
+      seed 300021 ok 46 rep 37 ( 70%) | shortfall  0.0116 | nom=GDIM MEAN | $0.1941 cum $4.33 | 79s
+      seed 300020 ok 40 rep 31 ( 66%) | shortfall  0.0009 | nom=GKAF MEAN | $0.2579 cum $4.59 | 94s
+      seed 300022 ok 40 rep 32 ( 68%) | shortfall  0.0000 | nom=GPBF OTHER | $0.2763 cum $4.87 | 94s
+      seed 300023 ok 50 rep 38 ( 69%) | shortfall  0.2986 | nom=FDIM MAX | $0.1970 cum $5.06 | 72s
+      seed 300024 ok 43 rep 38 ( 75%) | shortfall  0.2110 | nom=GDIJ MEAN | $0.2120 cum $5.28 | 77s
+      seed 300027 ok 48 rep 42 ( 74%) | shortfall  0.0000 | nom=GDIM MEAN | $0.1460 cum $5.42 | 60s
+      seed 300026 ok 42 rep 39 ( 80%) | shortfall  0.1277 | nom=GDAS OTHER | $0.2222 cum $5.64 | 79s
+      seed 300025 ok 44 rep 38 ( 78%) | shortfall  0.2485 | nom=GHAF MEAN | $0.2729 cum $5.92 | 91s
+      seed 300028 ok 42 rep 38 ( 79%) | shortfall  0.1535 | nom=GDAF MAX | $0.2486 cum $6.17 | 84s
+      seed 300029 ok 43 rep 42 ( 75%) | shortfall  0.0000 | nom=GDIS MEAN | $0.1751 cum $6.34 | 72s
+      seed 300031 ok 48 rep 42 ( 74%) | shortfall  0.1704 | nom=GHIM MEAN | $0.1673 cum $6.51 | 66s
+      seed 300030 ok 46 rep 45 ( 85%) | shortfall  0.0000 | nom=GDBF MAX | $0.2116 cum $6.72 | 78s
+      seed 300034 ok 46 rep 48 ( 84%) | shortfall  0.5794 | nom=GDIH MEAN | $0.1746 cum $6.89 | 66s
+      seed 300035 ok 46 rep 41 ( 77%) | shortfall  0.1429 | nom=GABF MEAN | $0.1731 cum $7.07 | 69s
+      seed 300032 ok 41 rep 31 ( 69%) | shortfall  0.1708 | nom=GHDF MAX | $0.2684 cum $7.34 | 99s
+      seed 300033 ok 42 rep 34 ( 71%) | shortfall  0.0000 | nom=GDIS MEAN | $0.2484 cum $7.58 | 98s
+      seed 300037 ok 42 rep 41 ( 82%) | shortfall  0.0000 | nom=GDAF MEAN | $0.1835 cum $7.77 | 70s
+      seed 300036 ok 35 rep 41 ( 80%) | shortfall  0.0652 | nom=GDBL OTHER | $0.2419 cum $8.01 | 84s
+      seed 300039 ok 45 rep 41 ( 76%) | shortfall  0.0000 | nom=MFAF MEAN | $0.2183 cum $8.23 | 79s
+      seed 300038 ok 35 rep 27 ( 64%) | shortfall  0.1738 | nom=GDBN MAX | $0.2992 cum $8.53 | 106s
+
+  --- Blind          mid-tier     google/gemini-2.5-flash   (8 workers) ---
+      seed 300007 ok 44 rep 54 ( 95%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0069 cum $8.53 | 28s
+      seed 300005 ok 51 rep 54 ( 90%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0073 cum $8.54 | 31s
+      seed 300003 ok 43 rep 44 ( 81%) | shortfall  0.0973 | nom=GDIC MEAN | $0.0068 cum $8.55 | 32s
+      seed 300000 ok 45 rep 42 ( 81%) | shortfall  0.0000 | nom=GDIS MEAN | $0.0074 cum $8.56 | 35s
+      seed 300004 ok 54 rep 49 ( 83%) | shortfall  0.0116 | nom=GDIM MEAN | $0.0088 cum $8.56 | 36s
+      seed 300006 ok 50 rep 48 ( 87%) | shortfall  0.2532 | nom=GDIC MAX | $0.0086 cum $8.57 | 36s
+      seed 300001 ok 49 rep 53 ( 91%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0092 cum $8.58 | 38s
+      seed 300002 ok 50 rep 52 ( 90%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0101 cum $8.59 | 42s
+      seed 300009 ok 45 rep 49 ( 88%) | shortfall  0.2110 | nom=GDIJ MEAN | $0.0070 cum $8.60 | 30s
+      seed 300010 ok 52 rep 47 ( 82%) | shortfall  0.2226 | nom=GDIJ MAX | $0.0070 cum $8.61 | 30s
+      seed 300008 ok 38 rep 36 ( 78%) | shortfall  0.3778 | nom=GDIR MAX | $0.0066 cum $8.61 | 34s
+      seed 300011 ok 50 rep 49 ( 84%) | shortfall  0.2110 | nom=GDIJ MAX | $0.0077 cum $8.62 | 32s
+      seed 300012 ok 54 rep 52 ( 90%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0073 cum $8.63 | 31s
+      seed 300014 ok 45 rep 46 ( 82%) | shortfall  0.2226 | nom=GDIJ MAX | $0.0072 cum $8.64 | 31s
+      seed 300015 ok 50 rep 49 ( 83%) | shortfall  0.0116 | nom=GDIM MAX | $0.0070 cum $8.64 | 29s
+      seed 300013 ok 51 rep 47 ( 82%) | shortfall  0.0116 | nom=GDIM MEAN | $0.0104 cum $8.65 | 41s
+      seed 300017 ok 55 rep 51 ( 86%) | shortfall  0.1558 | nom=GDIL MEAN | $0.0078 cum $8.66 | 33s
+      seed 300016 ok 53 rep 49 ( 83%) | shortfall  0.0000 | nom=GDIS MEAN | $0.0082 cum $8.67 | 34s
+      seed 300019 ok 52 rep 53 ( 90%) | shortfall  0.2110 | nom=GDIJ MEAN | $0.0072 cum $8.68 | 30s
+      seed 300020 ok 45 rep 45 ( 82%) | shortfall  0.0116 | nom=GDIM MEAN | $0.0074 cum $8.68 | 30s
+      seed 300021 ok 49 rep 42 ( 81%) | shortfall  0.0000 | nom=GDIS OTHER | $0.0082 cum $8.69 | 36s
+      seed 300022 ok 50 rep 51 ( 86%) | shortfall  0.0973 | nom=GDIC MEAN | $0.0095 cum $8.70 | 37s
+      seed 300018 ok 23 rep 19 ( 66%) | shortfall  0.3778 | nom=GDIR MAX | $0.0099 cum $8.71 | 50s
+      seed 300023 ok 50 rep 46 ( 82%) | shortfall  0.0116 | nom=GDIM MEAN | $0.0105 cum $8.72 | 42s
+      seed 300025 ok 53 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0060 cum $8.73 | 25s
+      seed 300024 ok 54 rep 53 ( 90%) | shortfall  0.2110 | nom=GDIJ MEAN | $0.0062 cum $8.73 | 26s
+      seed 300027 ok 51 rep 48 ( 83%) | shortfall  0.0116 | nom=GDIM MAX | $0.0082 cum $8.74 | 33s
+      seed 300026 ok 49 rep 50 ( 85%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0099 cum $8.75 | 37s
+      seed 300030 ok 51 rep 49 ( 83%) | shortfall  0.0000 | nom=GDIM MAX | $0.0065 cum $8.76 | 27s
+      seed 300028 ok 52 rep 54 ( 90%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0078 cum $8.77 | 34s
+      seed 300029 ok 42 rep 43 ( 81%) | shortfall  0.0000 | nom=GDIS MEAN | $0.0074 cum $8.77 | 32s
+      seed 300033 ok 52 rep 56 ( 95%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0062 cum $8.78 | 27s
+      seed 300031 ok 45 rep 45 ( 82%) | shortfall  0.0116 | nom=GDIM MEAN | $0.0076 cum $8.79 | 30s
+      seed 300032 ok 46 rep 46 ( 82%) | shortfall  0.0000 | nom=GDIS MAX | $0.0079 cum $8.79 | 33s
+      seed 300034 ok 47 rep 45 ( 82%) | shortfall  0.0116 | nom=GDIM MEAN | $0.0090 cum $8.80 | 34s
+      seed 300037 ok 51 rep 46 ( 82%) | shortfall  0.0000 | nom=GDIS MEAN | $0.0067 cum $8.81 | 28s
+      seed 300035 ok 47 rep 46 ( 82%) | shortfall  0.0116 | nom=GDIM MAX | $0.0095 cum $8.82 | 36s
+      seed 300038 ok 48 rep 51 ( 89%) | shortfall  0.1558 | nom=GDIL MAX | $0.0085 cum $8.83 | 34s
+      seed 300039 ok 47 rep 46 ( 82%) | shortfall  0.0000 | nom=GDIS MEAN | $0.0065 cum $8.84 | 28s
+      seed 300036 ok 45 rep 51 ( 89%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0107 cum $8.85 | 41s
+
+  --- Blind          open-weight  deepseek/deepseek-chat-v3.1   (8 workers) ---
+      seed 300007 ok 52 rep 54 ( 90%) | shortfall  0.0000 | nom=GDIS MEAN | $0.0045 cum $8.85 | 59s
+      seed 300006 ok 52 rep 54 ( 90%) | shortfall  0.0000 | nom=GDIS MEAN | $0.0043 cum $8.85 | 66s
+      seed 300000 ok 48 rep 55 ( 93%) | shortfall  0.0421 | nom=GDIC MEAN | $0.0072 cum $8.86 | 84s
+      seed 300002 ok 49 rep 53 ( 91%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0062 cum $8.87 | 94s
+      seed 300005 ok 46 rep 47 ( 85%) | shortfall  0.2226 | nom=GDIJ MEAN | $0.0041 cum $8.87 | 95s
+      seed 300004 ok 53 rep 48 ( 89%) | shortfall  0.2226 | nom=GDIJ MAX | $0.0053 cum $8.88 | 97s
+      seed 300003 ok 49 rep 52 ( 93%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0071 cum $8.88 | 107s
+      seed 300001 ok 49 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0085 cum $8.89 | 118s
+      seed 300008 ok 48 rep 55 ( 93%) | shortfall  0.0421 | nom=GDIC MEAN | $0.0062 cum $8.90 | 84s
+      seed 300010 ok 49 rep 47 ( 82%) | shortfall  0.0000 | nom=GDIS MEAN | $0.0048 cum $8.90 | 68s
+      seed 300009 ok 48 rep 51 ( 88%) | shortfall  0.0000 | nom=GDIS MAX | $0.0043 cum $8.91 | 99s
+      seed 300012 ok 48 rep 52 ( 88%) | shortfall  0.0000 | nom=GDIS MEAN | $0.0056 cum $8.91 | 89s
+      seed 300015 ok 49 rep 52 ( 90%) | shortfall  0.0116 | nom=GDIM MEAN | $0.0050 cum $8.92 | 67s
+      seed 300016 ok 53 rep 53 ( 91%) | shortfall  0.0000 | nom=GDIS MEAN | $0.0043 cum $8.92 | 48s
+      seed 300011 ok 53 rep 54 ( 92%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0049 cum $8.93 | 99s
+      seed 300014 ok 43 rep 48 ( 84%) | shortfall  0.2226 | nom=GDIJ MAX | $0.0040 cum $8.93 | 86s
+      seed 300013 ok 29 rep 24 ( 75%) | shortfall  0.1675 | nom=GDIL MAX | $0.0035 cum $8.94 | 120s
+      seed 300017 ok 51 rep 55 ( 93%) | shortfall  0.0000 | nom=GDIQ MEAN | $0.0052 cum $8.94 | 74s
+      seed 300018 ok 51 rep 55 ( 92%) | shortfall  0.0421 | nom=GDIC MEAN | $0.0045 cum $8.95 | 77s
+      seed 300020 ok 48 rep 54 ( 92%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0044 cum $8.95 | 72s
+      seed 300019 ok 50 rep 54 ( 90%) | shortfall  0.0000 | nom=GDIS MEAN | $0.0057 cum $8.96 | 82s
+      seed 300021 ok 47 rep 50 ( 91%) | shortfall  0.1558 | nom=GDIL MAX | $0.0081 cum $8.96 | 84s
+      seed 300024 ok 56 rep 56 ( 93%) | shortfall  0.0000 | nom=GDKF MEAN | $0.0045 cum $8.97 | 61s
+      seed 300026 ok 47 rep 51 ( 89%) | shortfall  0.0000 | nom=GDIS MEAN | $0.0048 cum $8.97 | 61s
+      seed 300022 ok 52 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0089 cum $8.98 | 111s
+      seed 300023 ok 50 rep 55 ( 93%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0082 cum $8.99 | 115s
+      seed 300025 ok 53 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIC MAX | $0.0053 cum $9.00 | 86s
+      seed 300027 ok 51 rep 50 ( 85%) | shortfall  0.0116 | nom=GDIM MAX | $0.0053 cum $9.00 | 67s
+      seed 300030 ok 51 rep 53 ( 90%) | shortfall  0.0116 | nom=GDIM MAX | $0.0045 cum $9.00 | 70s
+      seed 300028 ok 49 rep 52 ( 88%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0069 cum $9.01 | 97s
+      seed 300032 ok 47 rep 52 ( 88%) | shortfall  0.0000 | nom=GDIS MEAN | $0.0045 cum $9.02 | 64s
+      seed 300031 ok 52 rep 50 ( 86%) | shortfall  0.0000 | nom=GDIS MEAN | $0.0056 cum $9.02 | 68s
+      seed 300029 ok 47 rep 53 ( 90%) | shortfall  0.0000 | nom=GDIS MEAN | $0.0048 cum $9.03 | 98s
+      seed 300033 ok 48 rep 54 ( 92%) | shortfall  0.0421 | nom=GDIC MEAN | $0.0062 cum $9.03 | 94s
+      seed 300035 ok 48 rep 47 ( 81%) | shortfall  0.2648 | nom=GDIC MEAN | $0.0049 cum $9.04 | 80s
+      seed 300034 ok 43 rep 52 ( 91%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0057 cum $9.04 | 107s
+      seed 300036 ok 48 rep 49 ( 89%) | shortfall  0.0000 | nom=GDIS MEAN | $0.0037 cum $9.05 | 82s
+      seed 300039 ok 46 rep 49 ( 86%) | shortfall  0.0116 | nom=GDIM OTHER | $0.0055 cum $9.05 | 63s
+      seed 300037 ok 51 rep 50 ( 88%) | shortfall  0.0000 | nom=GDIS MEAN | $0.0045 cum $9.06 | 78s
+      seed 300038 ok 49 rep 48 ( 86%) | shortfall  0.0116 | nom=GDIM MEAN | $0.0045 cum $9.06 | 78s
+
+  --- Quantitative   frontier     anthropic/claude-opus-4.7   (8 workers) ---
+      seed 300006 ok 52 rep 47 ( 82%) | shortfall  0.2110 | nom=GDIJ MAX | $0.1806 cum $9.24 | 64s
+      seed 300000 ok 49 rep 44 ( 77%) | shortfall  0.3778 | nom=GDIR MEAN | $0.1810 cum $9.42 | 66s
+      seed 300007 ok 50 rep 44 ( 75%) | shortfall  0.2937 | nom=GAIS MEAN | $0.1961 cum $9.62 | 70s
+      seed 300004 ok 42 rep 42 ( 86%) | shortfall  0.0000 | nom=GCJN MEAN | $0.2397 cum $9.86 | 74s
+      seed 300002 ok 44 rep 44 ( 80%) | shortfall  0.1236 | nom=GDPF MEAN | $0.2088 cum $10.07 | 74s
+      seed 300001 ok 42 rep 42 ( 84%) | shortfall  0.0000 | nom=HCJF MEAN | $0.2091 cum $10.28 | 74s
+      seed 300003 ok 41 rep 38 ( 76%) | shortfall  0.0000 | nom=GDIS MEAN | $0.2014 cum $10.48 | 78s
+      seed 300005 ok 36 rep 28 ( 67%) | shortfall  0.0000 | nom=GHAN OTHER | $0.2890 cum $10.77 | 90s
+      seed 300009 ok 46 rep 43 ( 78%) | shortfall  0.2226 | nom=GDIJ MAX | $0.1520 cum $10.92 | 53s
+      seed 300010 ok 48 rep 42 ( 71%) | shortfall  0.0166 | nom=MDOI MAX | $0.2001 cum $11.12 | 72s
+      seed 300008 ok 41 rep 28 ( 60%) | shortfall  0.1774 | nom=HEKF MAX | $0.2802 cum $11.40 | 81s
+      seed 300014 ok 51 rep 40 ( 71%) | shortfall  0.0000 | nom=GDIC MEAN | $0.1936 cum $11.59 | 69s
+      seed 300012 ok 51 rep 34 ( 62%) | shortfall  0.0000 | nom=GAJN MEAN | $0.1995 cum $11.79 | 75s
+      seed 300013 ok 47 rep 45 ( 85%) | shortfall  0.0421 | nom=GDIC MEAN | $0.2446 cum $12.04 | 77s
+      seed 300011 ok 42 rep 37 ( 74%) | shortfall  0.2048 | nom=GDAF MAX | $0.2334 cum $12.27 | 81s
+      seed 300015 ok 37 rep 34 ( 77%) | shortfall  0.0000 | nom=GDBF MEAN | $0.3100 cum $12.58 | 97s
+      seed 300016 ok 46 rep 39 ( 75%) | shortfall  0.0000 | nom=GDIS MEAN | $0.2012 cum $12.78 | 70s
+      seed 300018 ok 39 rep 44 ( 79%) | shortfall  0.0116 | nom=GDIM MEAN | $0.1738 cum $12.96 | 62s
+      seed 300017 ok 48 rep 42 ( 72%) | shortfall  0.0893 | nom=GDIS MEAN | $0.2012 cum $13.16 | 72s
+      seed 300019 ok 43 rep 44 ( 81%) | shortfall  0.0000 | nom=GDKF MEAN | $0.1990 cum $13.36 | 70s
+      seed 300021 ok 52 rep 43 ( 75%) | shortfall  0.0116 | nom=GDIM MEAN | $0.1964 cum $13.55 | 66s
+      seed 300022 ok 40 rep 46 ( 87%) | shortfall  0.0000 | nom=GHAF MEAN | $0.2057 cum $13.76 | 69s
+      seed 300020 ok 47 rep 44 ( 86%) | shortfall  0.0000 | nom=GDKF MAX | $0.2079 cum $13.97 | 75s
+      seed 300023 ok 48 rep 39 ( 72%) | shortfall  0.1704 | nom=GHIM MAX | $0.2339 cum $14.20 | 79s
+      seed 300024 ok 43 rep 41 ( 85%) | shortfall  0.4533 | nom=GDAF MEAN | $0.2350 cum $14.43 | 78s
+      seed 300027 ok 50 rep 43 ( 78%) | shortfall  0.0116 | nom=GDIM MAX | $0.1950 cum $14.63 | 65s
+      seed 300029 ok 48 rep 47 ( 82%) | shortfall  0.0000 | nom=GDIS MEAN | $0.1800 cum $14.81 | 62s
+      seed 300026 ok 42 rep 38 ( 79%) | shortfall  0.0000 | nom=GDIS MEAN | $0.1814 cum $14.99 | 76s
+      seed 300028 ok 35 rep 30 ( 70%) | shortfall  0.1009 | nom=GDIM MAX | $0.2069 cum $15.20 | 79s
+      seed 300025 ok 42 rep 39 ( 81%) | shortfall  0.3015 | nom=TNDF MAX | $0.2683 cum $15.47 | 98s
+      seed 300030 ok 41 rep 37 ( 80%) | shortfall  0.0637 | nom=GKAN MEAN | $0.2387 cum $15.70 | 91s
+      seed 300031 ok 44 rep 38 ( 69%) | shortfall  0.1820 | nom=GHIM MEAN | $0.1605 cum $15.87 | 57s
+      seed 300032 ok 41 rep 36 ( 75%) | shortfall  0.0000 | nom=GDIS MAX | $0.2055 cum $16.07 | 74s
+      seed 300033 ok 46 rep 36 ( 72%) | shortfall  0.0000 | nom=GDIS MEAN | $0.1714 cum $16.24 | 69s
+      seed 300036 ok 46 rep 43 ( 78%) | shortfall  0.2110 | nom=GDIJ MEAN | $0.1639 cum $16.41 | 63s
+      seed 300034 ok 47 rep 44 ( 80%) | shortfall  0.0116 | nom=GDIM MEAN | $0.2029 cum $16.61 | 79s
+      seed 300035 ok 42 rep 37 ( 76%) | shortfall  0.0116 | nom=GDIM MAX | $0.2607 cum $16.87 | 84s
+      seed 300038 ok 42 rep 42 ( 81%) | shortfall  0.0000 | nom=GDKF MAX | $0.2163 cum $17.09 | 70s
+      seed 300037 ok 36 rep 35 ( 78%) | shortfall  0.0513 | nom=GDBF MEAN | $0.2558 cum $17.34 | 81s
+      seed 300039 ok 48 rep 45 ( 83%) | shortfall  0.0009 | nom=GKAF MEAN | $0.2526 cum $17.59 | 81s
+
+  --- Quantitative   mid-tier     google/gemini-2.5-flash   (8 workers) ---
+      seed 300005 ok 56 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0069 cum $17.60 | 26s
+      seed 300007 ok 50 rep 54 ( 90%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0066 cum $17.61 | 27s
+      seed 300001 ok 57 rep 54 ( 90%) | shortfall  0.2110 | nom=GDIJ MEAN | $0.0070 cum $17.62 | 27s
+      seed 300006 ok 51 rep 53 ( 90%) | shortfall  0.2110 | nom=GDIJ MAX | $0.0074 cum $17.62 | 28s
+      seed 300000 ok 52 rep 52 ( 88%) | shortfall  0.2110 | nom=GDIJ MEAN | $0.0074 cum $17.63 | 28s
+      seed 300003 ok 52 rep 51 ( 85%) | shortfall  0.0973 | nom=GDIC MAX | $0.0076 cum $17.64 | 30s
+      seed 300002 ok 52 rep 54 ( 90%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0096 cum $17.65 | 36s
+      seed 300004 ok 55 rep 54 ( 90%) | shortfall  0.0000 | nom=GDIM MAX | $0.0104 cum $17.66 | 37s
+      seed 300009 ok 48 rep 54 ( 90%) | shortfall  0.0000 | nom=GDIM MAX | $0.0071 cum $17.66 | 27s
+      seed 300011 ok 51 rep 55 ( 92%) | shortfall  0.0000 | nom=GDIJ MAX | $0.0075 cum $17.67 | 27s
+      seed 300010 ok 48 rep 45 ( 82%) | shortfall  0.1675 | nom=GDIL MAX | $0.0071 cum $17.68 | 29s
+      seed 300012 ok 51 rep 51 ( 85%) | shortfall  0.2110 | nom=GDIJ MEAN | $0.0078 cum $17.69 | 29s
+      seed 300008 ok 47 rep 52 ( 90%) | shortfall  0.2110 | nom=GDIJ OTHER | $0.0098 cum $17.70 | 34s
+      seed 300013 ok 52 rep 54 ( 90%) | shortfall  0.0000 | nom=GDIM MAX | $0.0079 cum $17.70 | 30s
+      seed 300015 ok 48 rep 51 ( 88%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0065 cum $17.71 | 25s
+      seed 300014 ok 50 rep 54 ( 90%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0068 cum $17.72 | 31s
+      seed 300017 ok 54 rep 51 ( 88%) | shortfall  0.1558 | nom=GDIL MEAN | $0.0072 cum $17.73 | 27s
+      seed 300022 ok 52 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0062 cum $17.73 | 22s
+      seed 300018 ok 42 rep 46 ( 82%) | shortfall  0.2648 | nom=GDIC MAX | $0.0079 cum $17.74 | 29s
+      seed 300019 ok 52 rep 54 ( 90%) | shortfall  0.2532 | nom=GDIC MEAN | $0.0082 cum $17.75 | 30s
+      seed 300023 ok 56 rep 57 ( 95%) | shortfall  0.4990 | nom=GDIF MAX | $0.0062 cum $17.75 | 23s
+      seed 300021 ok 52 rep 49 ( 84%) | shortfall  0.0116 | nom=GDIM MEAN | $0.0076 cum $17.76 | 30s
+      seed 300020 ok 49 rep 53 ( 90%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0098 cum $17.77 | 34s
+      seed 300016 ok 53 rep 53 ( 88%) | shortfall  0.2532 | nom=GDIC MEAN | $0.0129 cum $17.78 | 42s
+      seed 300024 ok 52 rep 58 ( 97%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0072 cum $17.79 | 26s
+      seed 300025 ok 51 rep 56 ( 93%) | shortfall  0.8557 | nom=GDIF MAX | $0.0066 cum $17.80 | 25s
+      seed 300028 ok 51 rep 53 ( 88%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0070 cum $17.80 | 26s
+      seed 300029 ok 49 rep 53 ( 90%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0077 cum $17.81 | 28s
+      seed 300027 ok 48 rep 58 ( 97%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0081 cum $17.82 | 30s
+      seed 300026 ok 50 rep 57 ( 97%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0091 cum $17.83 | 34s
+      seed 300031 ok 48 rep 52 ( 87%) | shortfall  0.0000 | nom=GDIM OTHER | $0.0073 cum $17.84 | 27s
+      seed 300030 ok 48 rep 48 ( 83%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0069 cum $17.84 | 30s
+      seed 300032 ok 53 rep 57 ( 95%) | shortfall  0.4990 | nom=GDIF MAX | $0.0063 cum $17.85 | 23s
+      seed 300033 ok 54 rep 54 ( 90%) | shortfall  0.0000 | nom=GDIM MAX | $0.0069 cum $17.86 | 27s
+      seed 300036 ok 50 rep 57 ( 97%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0065 cum $17.86 | 25s
+      seed 300034 ok 47 rep 52 ( 88%) | shortfall  0.7682 | nom=GDIQ MAX | $0.0082 cum $17.87 | 29s
+      seed 300035 ok 47 rep 50 ( 88%) | shortfall  0.0000 | nom=GDIM MAX | $0.0077 cum $17.88 | 28s
+      seed 300038 ok 48 rep 54 ( 90%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0067 cum $17.89 | 25s
+      seed 300037 ok 50 rep 45 ( 82%) | shortfall  0.0000 | nom=GDIS MAX | $0.0078 cum $17.89 | 29s
+      seed 300039 ok 51 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0114 cum $17.91 | 40s
+
+  --- Quantitative   open-weight  deepseek/deepseek-chat-v3.1   (8 workers) ---
+      seed 300001 ok 53 rep 55 ( 92%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0040 cum $17.91 | 66s
+      seed 300002 ok 48 rep 55 ( 93%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0053 cum $17.91 | 73s
+      seed 300004 ok 55 rep 55 ( 93%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0039 cum $17.92 | 73s
+      seed 300005 ok 51 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIH MEAN | $0.0043 cum $17.92 | 77s
+      seed 300006 ok 54 rep 55 ( 93%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0044 cum $17.93 | 82s
+      seed 300003 ok 51 rep 56 ( 95%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0078 cum $17.93 | 84s
+      seed 300000 ok 49 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0075 cum $17.94 | 86s
+      seed 300007 ok 55 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0035 cum $17.95 | 88s
+      seed 300010 ok 53 rep 55 ( 92%) | shortfall  0.0000 | nom=GDIJ MAX | $0.0036 cum $17.95 | 62s
+      seed 300009 ok 45 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0070 cum $17.96 | 75s
+      seed 300015 ok 50 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0034 cum $17.96 | 62s
+      seed 300014 ok 50 rep 56 ( 95%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0071 cum $17.97 | 65s
+      seed 300008 ok 53 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0076 cum $17.97 | 87s
+      seed 300011 ok 49 rep 54 ( 93%) | shortfall  0.0421 | nom=GDIC MEAN | $0.0042 cum $17.98 | 77s
+      seed 300012 ok 53 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0064 cum $17.99 | 84s
+      seed 300013 ok 50 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0051 cum $17.99 | 93s
+      seed 300019 ok 50 rep 54 ( 93%) | shortfall  0.2110 | nom=GDIJ MEAN | $0.0041 cum $17.99 | 38s
+      seed 300016 ok 55 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0069 cum $18.00 | 84s
+      seed 300017 ok 52 rep 54 ( 93%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0049 cum $18.01 | 71s
+      seed 300020 ok 46 rep 52 ( 91%) | shortfall  0.0000 | nom=GDIS MEAN | $0.0048 cum $18.01 | 66s
+      seed 300018 ok 53 rep 56 ( 95%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0070 cum $18.02 | 80s
+      seed 300021 ok 52 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0069 cum $18.02 | 103s
+      seed 300022 ok 47 rep 55 ( 93%) | shortfall  0.0000 | nom=GDIH MEAN | $0.0060 cum $18.03 | 95s
+      seed 300024 ok 55 rep 55 ( 93%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0071 cum $18.04 | 74s
+      seed 300023 ok 51 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0086 cum $18.05 | 95s
+      seed 300027 ok 51 rep 54 ( 92%) | shortfall  0.0000 | nom=GDIJ MAX | $0.0072 cum $18.05 | 64s
+      seed 300025 ok 53 rep 54 ( 92%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0056 cum $18.06 | 71s
+      seed 300026 ok 52 rep 55 ( 92%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0044 cum $18.06 | 75s
+      seed 300031 ok 48 rep 55 ( 92%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0053 cum $18.07 | 50s
+      seed 300028 ok 53 rep 54 ( 90%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0068 cum $18.08 | 84s
+      seed 300029 ok 50 rep 54 ( 90%) | shortfall  0.0000 | nom=GDIS MEAN | $0.0035 cum $18.08 | 57s
+      seed 300030 ok 51 rep 53 ( 91%) | shortfall  0.1558 | nom=GDIL MAX | $0.0056 cum $18.09 | 75s
+      seed 300035 ok 51 rep 54 ( 92%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0038 cum $18.09 | 52s
+      seed 300033 ok 46 rep 55 ( 93%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0069 cum $18.10 | 66s
+      seed 300032 ok 52 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0071 cum $18.10 | 77s
+      seed 300034 ok 48 rep 55 ( 92%) | shortfall  0.3567 | nom=GDIH MEAN | $0.0054 cum $18.11 | 64s
+      seed 300038 ok 50 rep 55 ( 93%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0053 cum $18.11 | 63s
+      seed 300037 ok 55 rep 55 ( 92%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0048 cum $18.12 | 66s
+      seed 300036 ok 53 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0051 cum $18.12 | 68s
+      seed 300039 ok 50 rep 54 ( 93%) | shortfall  0.0000 | nom=GDIS MEAN | $0.0062 cum $18.13 | 84s
+
+  --- Mechanism      frontier     anthropic/claude-opus-4.7   (8 workers) ---
+      seed 300001 ok 50 rep 41 ( 75%) | shortfall  0.0000 | nom=HAJF MEAN | $0.2013 cum $18.33 | 66s
+      seed 300003 ok 40 rep 42 ( 79%) | shortfall  0.0000 | nom=GDIL MEAN | $0.2375 cum $18.57 | 73s
+      seed 300002 ok 42 rep 42 ( 78%) | shortfall  0.1754 | nom=GDPF MEAN | $0.2428 cum $18.81 | 74s
+      seed 300000 ok 45 rep 41 ( 79%) | shortfall  0.0000 | nom=GDIM MEAN | $0.2225 cum $19.03 | 76s
+      seed 300006 ok 54 rep 48 ( 83%) | shortfall  0.2110 | nom=GDIJ MEAN | $0.2292 cum $19.26 | 78s
+      seed 300005 ok 47 rep 39 ( 74%) | shortfall  0.0949 | nom=EHIJ MEAN | $0.2705 cum $19.53 | 81s
+      seed 300007 ok 47 rep 42 ( 79%) | shortfall  0.0000 | nom=GDIS MEAN | $0.2443 cum $19.78 | 84s
+      seed 300004 ok 45 rep 36 ( 75%) | shortfall  0.0116 | nom=GDIM MEAN | $0.2407 cum $20.02 | 100s
+      seed 300008 ok 45 rep 45 ( 80%) | shortfall  0.1675 | nom=GDIL MEAN | $0.2009 cum $20.22 | 64s
+      seed 300010 ok 38 rep 44 ( 85%) | shortfall  0.3567 | nom=GDIH OTHER | $0.2140 cum $20.43 | 69s
+      seed 300013 ok 45 rep 40 ( 77%) | shortfall  0.0116 | nom=GDIM MAX | $0.2092 cum $20.64 | 67s
+      seed 300012 ok 43 rep 41 ( 80%) | shortfall  0.0552 | nom=GDIJ MEAN | $0.2324 cum $20.87 | 77s
+      seed 300011 ok 42 rep 45 ( 87%) | shortfall  0.1225 | nom=GDBN OTHER | $0.2569 cum $21.13 | 81s
+      seed 300014 ok 42 rep 40 ( 74%) | shortfall  0.0116 | nom=GDIM MEAN | $0.2384 cum $21.37 | 84s
+      seed 300015 ok 47 rep 44 ( 77%) | shortfall  0.2226 | nom=GDIJ MAX | $0.2030 cum $21.57 | 81s
+      seed 300009 ok 41 rep 36 ( 75%) | shortfall  0.0000 | nom=MDIT MEAN | $0.2300 cum $21.80 | 111s
+      seed 300016 ok 47 rep 46 ( 85%) | shortfall  0.0000 | nom=GHIS MEAN | $0.2034 cum $22.01 | 78s
+      seed 300017 ok 47 rep 42 ( 78%) | shortfall  0.0000 | nom=GDIS MEAN | $0.2046 cum $22.21 | 67s
+      seed 300019 ok 43 rep 43 ( 80%) | shortfall  0.0000 | nom=GDKF MEAN | $0.2795 cum $22.49 | 85s
+      seed 300018 ok 46 rep 45 ( 82%) | shortfall  0.4119 | nom=GDIH MAX | $0.2721 cum $22.76 | 92s
+      seed 300021 ok 44 rep 41 ( 79%) | shortfall  0.0000 | nom=GDIH MEAN | $0.2189 cum $22.98 | 74s
+      seed 300020 ok 45 rep 41 ( 79%) | shortfall  0.0009 | nom=GKAF MAX | $0.2659 cum $23.25 | 91s
+      seed 300022 ok 48 rep 39 ( 71%) | shortfall  0.1704 | nom=GHIL OTHER | $0.2144 cum $23.46 | 79s
+      seed 300023 ok 52 rep 41 ( 72%) | shortfall  0.1820 | nom=GHIM MEAN | $0.2122 cum $23.67 | 76s
+      seed 300025 ok 50 rep 46 ( 81%) | shortfall  0.0000 | nom=GDIS MEAN | $0.1595 cum $23.83 | 57s
+      seed 300024 ok 46 rep 43 ( 83%) | shortfall  0.3813 | nom=HHIF MEAN | $0.2459 cum $24.08 | 83s
+      seed 300027 ok 46 rep 45 ( 80%) | shortfall  0.0116 | nom=GDIM MEAN | $0.2149 cum $24.29 | 72s
+      seed 300026 ok 44 rep 44 ( 79%) | shortfall  0.1675 | nom=GDIL OTHER | $0.2164 cum $24.51 | 73s
+      seed 300028 ok 45 rep 46 ( 85%) | shortfall  0.0000 | nom=GDKF MAX | $0.2223 cum $24.73 | 76s
+      seed 300030 ok 49 rep 43 ( 77%) | shortfall  0.2869 | nom=FDIM OTHER | $0.2069 cum $24.94 | 73s
+      seed 300029 ok 39 rep 42 ( 76%) | shortfall  0.5794 | nom=GDIH OTHER | $0.2782 cum $25.22 | 92s
+      seed 300031 ok 44 rep 44 ( 81%) | shortfall  0.0000 | nom=GDIM MEAN | $0.2486 cum $25.47 | 84s
+      seed 300032 ok 51 rep 43 ( 78%) | shortfall  0.5321 | nom=GDPF MEAN | $0.2297 cum $25.70 | 78s
+      seed 300033 ok 50 rep 46 ( 79%) | shortfall  0.2255 | nom=GHIJ MEAN | $0.1867 cum $25.88 | 68s
+      seed 300035 ok 45 rep 43 ( 80%) | shortfall  0.0116 | nom=GDIM MAX | $0.2068 cum $26.09 | 66s
+      seed 300036 ok 45 rep 44 ( 83%) | shortfall  0.0000 | nom=GDIM MEAN | $0.1910 cum $26.28 | 64s
+      seed 300034 ok 51 rep 43 ( 72%) | shortfall  0.0116 | nom=GDIM OTHER | $0.2299 cum $26.51 | 84s
+      seed 300037 ok 52 rep 48 ( 80%) | shortfall  0.0000 | nom=GHIS MEAN | $0.2133 cum $26.72 | 71s
+      seed 300038 ok 44 rep 44 ( 80%) | shortfall  0.1704 | nom=GHIS MAX | $0.2054 cum $26.93 | 77s
+      seed 300039 ok 45 rep 46 ( 81%) | shortfall  0.0000 | nom=GDIM MEAN | $0.2042 cum $27.13 | 78s
+
+  --- Mechanism      mid-tier     google/gemini-2.5-flash   (8 workers) ---
+      seed 300002 ok 46 rep 59 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0052 cum $27.14 | 17s
+      seed 300000 ok 45 rep 59 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0052 cum $27.14 | 18s
+      seed 300007 ok 52 rep 59 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0052 cum $27.15 | 18s
+      seed 300001 ok 49 rep 58 ( 97%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0058 cum $27.16 | 20s
+      seed 300005 ok 54 rep 59 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0052 cum $27.16 | 20s
+      seed 300006 ok 52 rep 55 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0052 cum $27.17 | 21s
+      seed 300003 ok 53 rep 58 ( 97%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0062 cum $27.17 | 22s
+      seed 300004 ok 53 rep 58 ( 97%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0076 cum $27.18 | 28s
+      seed 300008 ok 42 rep 51 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0050 cum $27.18 | 20s
+      seed 300012 ok 49 rep 55 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0052 cum $27.19 | 19s
+      seed 300013 ok 46 rep 59 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0053 cum $27.19 | 18s
+      seed 300011 ok 48 rep 55 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0052 cum $27.20 | 20s
+      seed 300014 ok 54 rep 58 ( 97%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0061 cum $27.21 | 21s
+      seed 300009 ok 48 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0068 cum $27.21 | 25s
+      seed 300010 ok 52 rep 50 ( 83%) | shortfall  0.0000 | nom=GDIS MEAN | $0.0071 cum $27.22 | 26s
+      seed 300015 ok 43 rep 51 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0050 cum $27.23 | 20s
+      seed 300019 ok 45 rep 55 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0052 cum $27.23 | 18s
+      seed 300017 ok 53 rep 55 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0053 cum $27.24 | 19s
+      seed 300018 ok 49 rep 55 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0052 cum $27.24 | 19s
+      seed 300020 ok 53 rep 59 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0054 cum $27.25 | 18s
+      seed 300021 ok 47 rep 59 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0053 cum $27.25 | 18s
+      seed 300022 ok 51 rep 55 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0051 cum $27.26 | 19s
+      seed 300016 ok 51 rep 57 ( 97%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0078 cum $27.26 | 27s
+      seed 300023 ok 51 rep 58 ( 97%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0066 cum $27.27 | 23s
+      seed 300025 ok 51 rep 59 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0053 cum $27.28 | 17s
+      seed 300027 ok 54 rep 59 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0052 cum $27.28 | 18s
+      seed 300026 ok 43 rep 51 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0050 cum $27.29 | 20s
+      seed 300028 ok 47 rep 59 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0055 cum $27.29 | 18s
+      seed 300024 ok 53 rep 58 ( 97%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0068 cum $27.30 | 23s
+      seed 300029 ok 42 rep 55 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0052 cum $27.30 | 18s
+      seed 300030 ok 53 rep 59 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0054 cum $27.31 | 19s
+      seed 300031 ok 51 rep 59 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0063 cum $27.32 | 23s
+      seed 300032 ok 51 rep 55 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0052 cum $27.32 | 20s
+      seed 300033 ok 41 rep 55 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0052 cum $27.33 | 18s
+      seed 300034 ok 44 rep 55 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0052 cum $27.33 | 20s
+      seed 300037 ok 52 rep 59 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0053 cum $27.34 | 19s
+      seed 300035 ok 51 rep 58 ( 97%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0064 cum $27.34 | 22s
+      seed 300038 ok 47 rep 59 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0053 cum $27.35 | 20s
+      seed 300036 ok 52 rep 59 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0065 cum $27.35 | 22s
+      seed 300039 ok 51 rep 59 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0055 cum $27.36 | 19s
+
+  --- Mechanism      open-weight  deepseek/deepseek-chat-v3.1   (8 workers) ---
+      seed 300006 ok 55 rep 59 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0041 cum $27.36 | 46s
+      seed 300004 ok 51 rep 59 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0044 cum $27.37 | 56s
+      seed 300007 ok 50 rep 56 ( 93%) | shortfall  0.3146 | nom=GDIH MAX | $0.0050 cum $27.37 | 65s
+      seed 300002 ok 49 rep 55 ( 92%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0057 cum $27.38 | 68s
+      seed 300003 ok 50 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0069 cum $27.39 | 68s
+      seed 300000 ok 48 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0068 cum $27.39 | 70s
+      seed 300005 ok 53 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0057 cum $27.40 | 70s
+      seed 300009 ok 45 rep 59 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0041 cum $27.40 | 50s
+      seed 300008 ok 51 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0069 cum $27.41 | 62s
+      seed 300001 ok 53 rep 54 ( 90%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0065 cum $27.42 | 114s
+      seed 300011 ok 52 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0056 cum $27.42 | 56s
+      seed 300014 ok 45 rep 55 ( 92%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0052 cum $27.43 | 56s
+      seed 300013 ok 51 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0063 cum $27.43 | 59s
+      seed 300012 ok 52 rep 55 ( 92%) | shortfall  0.0000 | nom=GDIS MEAN | $0.0065 cum $27.44 | 63s
+      seed 300010 ok 52 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0055 cum $27.45 | 73s
+      seed 300017 ok 38 rep 38 ( 95%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0030 cum $27.45 | 54s
+      seed 300020 ok 49 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0043 cum $27.45 | 48s
+      seed 300021 ok 50 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0044 cum $27.46 | 48s
+      seed 300019 ok 52 rep 55 ( 92%) | shortfall  0.2110 | nom=GDIJ MEAN | $0.0053 cum $27.46 | 66s
+      seed 300018 ok 52 rep 54 ( 90%) | shortfall  0.4119 | nom=GDIH MEAN | $0.0048 cum $27.47 | 73s
+      seed 300022 ok 51 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0070 cum $27.47 | 64s
+      seed 300016 ok 54 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0061 cum $27.48 | 98s
+      seed 300023 ok 55 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0041 cum $27.48 | 40s
+      seed 300015 ok 52 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0064 cum $27.49 | 103s
+      seed 300027 ok 54 rep 59 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0031 cum $27.49 | 38s
+      seed 300025 ok 53 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0055 cum $27.50 | 67s
+      seed 300031 ok 49 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0050 cum $27.50 | 53s
+      seed 300026 ok 54 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0073 cum $27.51 | 72s
+      seed 300028 ok 51 rep 56 ( 93%) | shortfall  0.1535 | nom=GDAF MAX | $0.0066 cum $27.52 | 66s
+      seed 300024 ok 55 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0093 cum $27.53 | 92s
+      seed 300030 ok 53 rep 55 ( 93%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0059 cum $27.53 | 61s
+      seed 300033 ok 49 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0038 cum $27.54 | 42s
+      seed 300032 ok 48 rep 56 ( 93%) | shortfall  0.0421 | nom=GDIC MEAN | $0.0041 cum $27.54 | 62s
+      seed 300035 ok 53 rep 56 ( 93%) | shortfall  0.1558 | nom=GDIL MEAN | $0.0042 cum $27.55 | 42s
+      seed 300034 ok 47 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0044 cum $27.55 | 50s
+      seed 300037 ok 55 rep 56 ( 93%) | shortfall  0.2110 | nom=GDIJ OTHER | $0.0047 cum $27.55 | 64s
+      seed 300038 ok 50 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0051 cum $27.56 | 67s
+      seed 300039 ok 50 rep 55 ( 93%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0055 cum $27.57 | 60s
+      seed 300036 ok 49 rep 55 ( 92%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0052 cum $27.57 | 84s
+      seed 300029 ok 38 rep 44 ( 92%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0087 cum $27.58 | 173s
+
+  --- Aggregated     frontier     anthropic/claude-opus-4.7   (8 workers) ---
+      seed 300007 ok 47 rep 44 ( 80%) | shortfall  0.0116 | nom=GDIM MEAN | $0.1667 cum $27.75 | 63s
+      seed 300002 ok 48 rep 47 ( 84%) | shortfall  0.1558 | nom=GDIL MEAN | $0.1707 cum $27.92 | 64s
+      seed 300005 ok 47 rep 48 ( 86%) | shortfall  0.0000 | nom=GDIM MEAN | $0.1665 cum $28.08 | 65s
+      seed 300001 ok 48 rep 49 ( 84%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.1615 cum $28.24 | 66s
+      seed 300000 ok 48 rep 46 ( 82%) | shortfall  0.0000 | nom=GDIS MEAN | $0.1730 cum $28.42 | 66s
+      seed 300004 ok 53 rep 51 ( 88%) | shortfall  0.1558 | nom=GDIL MEAN | $0.1668 cum $28.58 | 67s
+      seed 300006 ok 55 rep 51 ( 88%) | shortfall  0.2110 | nom=GDIJ MEAN | $0.1986 cum $28.78 | 75s
+      seed 300003 ok 49 rep 49 ( 83%) | shortfall  0.0000 | nom=GDIM MEAN | $0.2051 cum $28.99 | 81s
+      seed 300011 ok 47 rep 48 ( 83%) | shortfall  0.0000 | nom=GDIM MEAN | $0.1627 cum $29.15 | 64s
+      seed 300008 ok 46 rep 46 ( 81%) | shortfall  0.1675 | nom=GDIL MEAN | $0.1713 cum $29.32 | 69s
+      seed 300010 ok 49 rep 46 ( 82%) | shortfall  0.0000 | nom=GDIS MEAN | $0.1633 cum $29.49 | 68s
+      seed 300009 ok 50 rep 48 ( 83%) | shortfall  0.2110 | nom=GDIJ MEAN | $0.1731 cum $29.66 | 69s
+      seed 300012 ok 47 rep 45 ( 80%) | shortfall  0.0552 | nom=GDIJ MEAN | $0.1735 cum $29.83 | 70s
+      seed 300013 ok 50 rep 46 ( 79%) | shortfall  0.0000 | nom=GDKF MEAN | $0.1944 cum $30.03 | 70s
+      seed 300014 ok 47 rep 49 ( 88%) | shortfall  0.0000 | nom=GDIM MEAN | $0.1767 cum $30.20 | 70s
+      seed 300015 ok 48 rep 46 ( 81%) | shortfall  0.0000 | nom=GDBF MEAN | $0.1865 cum $30.39 | 73s
+      seed 300016 ok 51 rep 47 ( 85%) | shortfall  0.0421 | nom=GDIC MEAN | $0.1804 cum $30.57 | 72s
+      seed 300018 ok 43 rep 50 ( 89%) | shortfall  0.3567 | nom=GDIH MEAN | $0.1868 cum $30.76 | 72s
+      seed 300017 ok 50 rep 47 ( 82%) | shortfall  0.3664 | nom=GDKF MEAN | $0.2037 cum $30.96 | 77s
+      seed 300020 ok 45 rep 44 ( 81%) | shortfall  0.0000 | nom=GDBF MEAN | $0.1953 cum $31.16 | 74s
+      seed 300022 ok 47 rep 47 ( 84%) | shortfall  0.0552 | nom=GDIJ MAX | $0.1738 cum $31.33 | 67s
+      seed 300021 ok 47 rep 48 ( 87%) | shortfall  0.0000 | nom=GDKF MEAN | $0.2096 cum $31.54 | 77s
+      seed 300019 ok 44 rep 50 ( 91%) | shortfall  0.0000 | nom=GDIC MEAN | $0.2224 cum $31.76 | 85s
+      seed 300023 ok 49 rep 46 ( 82%) | shortfall  0.1558 | nom=GDIL MEAN | $0.1756 cum $31.94 | 68s
+      seed 300025 ok 46 rep 45 ( 82%) | shortfall  0.0000 | nom=GDKF MEAN | $0.1667 cum $32.10 | 64s
+      seed 300024 ok 49 rep 50 ( 91%) | shortfall  0.1535 | nom=GDAF MEAN | $0.2002 cum $32.30 | 76s
+      seed 300027 ok 46 rep 47 ( 82%) | shortfall  0.0000 | nom=GDIM MEAN | $0.1654 cum $32.47 | 69s
+      seed 300030 ok 50 rep 44 ( 75%) | shortfall  0.0000 | nom=GDIM MEAN | $0.1686 cum $32.64 | 66s
+      seed 300028 ok 46 rep 44 ( 85%) | shortfall  0.0000 | nom=GDBF MEAN | $0.1831 cum $32.82 | 72s
+      seed 300026 ok 42 rep 45 ( 90%) | shortfall  0.0637 | nom=GDAN MEAN | $0.2012 cum $33.02 | 76s
+      seed 300029 ok 45 rep 49 ( 86%) | shortfall  0.0866 | nom=MDIH MEAN | $0.2069 cum $33.23 | 79s
+      seed 300031 ok 51 rep 51 ( 88%) | shortfall  0.0300 | nom=GDIC MEAN | $0.2131 cum $33.44 | 81s
+      seed 300032 ok 46 rep 46 ( 82%) | shortfall  0.0000 | nom=GDIM MEAN | $0.1788 cum $33.62 | 70s
+      seed 300035 ok 53 rep 48 ( 80%) | shortfall  0.1675 | nom=GDIL MEAN | $0.1708 cum $33.79 | 70s
+      seed 300033 ok 42 rep 48 ( 89%) | shortfall  0.3567 | nom=GDIH MEAN | $0.1766 cum $33.97 | 77s
+      seed 300034 ok 40 rep 45 ( 83%) | shortfall  0.0000 | nom=GCJN MEAN | $0.2054 cum $34.17 | 78s
+      seed 300036 ok 48 rep 49 ( 86%) | shortfall  0.0000 | nom=GDKF MEAN | $0.1815 cum $34.36 | 73s
+      seed 300037 ok 45 rep 47 ( 85%) | shortfall  0.0000 | nom=GDBF MEAN | $0.1932 cum $34.55 | 78s
+      seed 300038 ok 45 rep 48 ( 87%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.1733 cum $34.72 | 80s
+      seed 300039 ok 45 rep 46 ( 79%) | shortfall  0.0518 | nom=GDKF MEAN | $0.1950 cum $34.92 | 73s
+
+  --- Aggregated     mid-tier     google/gemini-2.5-flash   (8 workers) ---
+      seed 300006 ok 56 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIH MEAN | $0.0045 cum $34.92 | 25s
+      seed 300002 ok 46 rep 59 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0045 cum $34.93 | 30s
+      seed 300003 ok 54 rep 58 ( 97%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0054 cum $34.93 | 30s
+      seed 300001 ok 48 rep 58 ( 97%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0050 cum $34.94 | 31s
+      seed 300000 ok 45 rep 59 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0057 cum $34.94 | 32s
+      seed 300004 ok 47 rep 55 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0054 cum $34.95 | 33s
+      seed 300005 ok 54 rep 57 ( 97%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0061 cum $34.95 | 36s
+      seed 300007 ok 49 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0059 cum $34.96 | 36s
+      seed 300009 ok 45 rep 59 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0039 cum $34.96 | 19s
+      seed 300008 ok 49 rep 58 ( 97%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0053 cum $34.97 | 26s
+      seed 300011 ok 50 rep 58 ( 97%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0048 cum $34.97 | 23s
+      seed 300010 ok 53 rep 58 ( 97%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0050 cum $34.98 | 24s
+      seed 300012 ok 45 rep 56 ( 95%) | shortfall  0.0000 | nom=FDIC MEAN | $0.0050 cum $34.98 | 25s
+      seed 300014 ok 48 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIQ MEAN | $0.0047 cum $34.99 | 22s
+      seed 300013 ok 51 rep 58 ( 97%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0051 cum $34.99 | 26s
+      seed 300015 ok 53 rep 58 ( 97%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0056 cum $35.00 | 28s
+      seed 300016 ok 48 rep 59 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0051 cum $35.00 | 25s
+      seed 300019 ok 50 rep 58 ( 97%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0049 cum $35.01 | 25s
+      seed 300017 ok 51 rep 52 ( 95%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0063 cum $35.01 | 30s
+      seed 300018 ok 55 rep 57 ( 95%) | shortfall  0.0421 | nom=GDIC MEAN | $0.0058 cum $35.02 | 28s
+      seed 300021 ok 52 rep 58 ( 97%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0055 cum $35.03 | 26s
+      seed 300020 ok 52 rep 58 ( 97%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0057 cum $35.03 | 28s
+      seed 300022 ok 52 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0057 cum $35.04 | 28s
+      seed 300023 ok 52 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0063 cum $35.04 | 32s
+      seed 300024 ok 54 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0054 cum $35.05 | 27s
+      seed 300029 ok 45 rep 58 ( 97%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0045 cum $35.05 | 22s
+      seed 300025 ok 52 rep 58 ( 97%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0058 cum $35.06 | 30s
+      seed 300028 ok 48 rep 58 ( 97%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0053 cum $35.06 | 27s
+      seed 300027 ok 48 rep 58 ( 97%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0059 cum $35.07 | 29s
+      seed 300026 ok 49 rep 56 ( 95%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0064 cum $35.08 | 32s
+      seed 300030 ok 51 rep 58 ( 97%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0058 cum $35.08 | 27s
+      seed 300031 ok 48 rep 58 ( 97%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0057 cum $35.09 | 28s
+      seed 300032 ok 49 rep 58 ( 97%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0057 cum $35.09 | 28s
+      seed 300033 ok 49 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0050 cum $35.10 | 23s
+      seed 300036 ok 52 rep 58 ( 97%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0048 cum $35.10 | 24s
+      seed 300035 ok 52 rep 58 ( 97%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0054 cum $35.11 | 27s
+      seed 300034 ok 48 rep 57 ( 97%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0067 cum $35.12 | 34s
+      seed 300038 ok 50 rep 58 ( 97%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0062 cum $35.12 | 30s
+      seed 300037 ok 51 rep 58 ( 97%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0071 cum $35.13 | 36s
+      seed 300039 ok 50 rep 58 ( 97%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0054 cum $35.13 | 27s
+
+  --- Aggregated     open-weight  deepseek/deepseek-chat-v3.1   (8 workers) ---
+      seed 300003 ok 52 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0026 cum $35.14 | 45s
+      seed 300004 ok 55 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0025 cum $35.14 | 46s
+      seed 300001 ok 51 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0024 cum $35.14 | 49s
+      seed 300000 ok 49 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0026 cum $35.14 | 53s
+      seed 300007 ok 54 rep 57 ( 95%) | shortfall  0.0552 | nom=GDIJ MEAN | $0.0031 cum $35.15 | 76s
+      seed 300005 ok 51 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0037 cum $35.15 | 76s
+      seed 300002 ok 49 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0030 cum $35.15 | 78s
+      seed 300006 ok 56 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIH MEAN | $0.0022 cum $35.16 | 82s
+      seed 300010 ok 51 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIH MEAN | $0.0024 cum $35.16 | 41s
+      seed 300009 ok 52 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIH MEAN | $0.0024 cum $35.16 | 60s
+      seed 300011 ok 54 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0029 cum $35.16 | 66s
+      seed 300008 ok 52 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIH MEAN | $0.0032 cum $35.17 | 83s
+      seed 300014 ok 45 rep 56 ( 93%) | shortfall  0.0552 | nom=GDIJ MEAN | $0.0027 cum $35.17 | 55s
+      seed 300012 ok 53 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0023 cum $35.17 | 64s
+      seed 300013 ok 55 rep 56 ( 93%) | shortfall  0.1558 | nom=GDIL OTHER | $0.0024 cum $35.18 | 64s
+      seed 300015 ok 53 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0029 cum $35.18 | 62s
+      seed 300017 ok 58 rep 56 ( 93%) | shortfall  0.1558 | nom=GDIL MEAN | $0.0027 cum $35.18 | 47s
+      seed 300016 ok 51 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0028 cum $35.18 | 67s
+      seed 300018 ok 52 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIS MEAN | $0.0025 cum $35.19 | 43s
+      seed 300019 ok 53 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0027 cum $35.19 | 48s
+      seed 300023 ok 52 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0025 cum $35.19 | 44s
+      seed 300020 ok 51 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0028 cum $35.19 | 66s
+      seed 300021 ok 47 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0024 cum $35.20 | 61s
+      seed 300022 ok 51 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0036 cum $35.20 | 64s
+      seed 300024 ok 55 rep 56 ( 93%) | shortfall  0.2110 | nom=GDIJ MEAN | $0.0028 cum $35.20 | 56s
+      seed 300026 ok 52 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0021 cum $35.21 | 48s
+      seed 300025 ok 54 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0023 cum $35.21 | 62s
+      seed 300028 ok 51 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0025 cum $35.21 | 42s
+      seed 300027 ok 53 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0023 cum $35.21 | 59s
+      seed 300029 ok 49 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0023 cum $35.21 | 45s
+      seed 300030 ok 53 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0025 cum $35.22 | 46s
+      seed 300032 ok 52 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0023 cum $35.22 | 40s
+      seed 300031 ok 52 rep 55 ( 92%) | shortfall  0.2110 | nom=GDIJ MEAN | $0.0027 cum $35.22 | 46s
+      seed 300034 ok 48 rep 58 ( 97%) | shortfall  0.0000 | nom=GDAF MEAN | $0.0022 cum $35.22 | 39s
+      seed 300035 ok 56 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0024 cum $35.23 | 39s
+      seed 300033 ok 47 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0035 cum $35.23 | 62s
+      seed 300036 ok 55 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0030 cum $35.23 | 52s
+      seed 300037 ok 53 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0027 cum $35.24 | 48s
+      seed 300038 ok 47 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0025 cum $35.24 | 48s
+      seed 300039 ok 51 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIH MEAN | $0.0032 cum $35.24 | 66s
+
+  --- Decision-rule  frontier     anthropic/claude-opus-4.7   (8 workers) ---
+      seed 300005 ok 51 rep 46 ( 82%) | shortfall  0.0552 | nom=GDIJ MEAN | $0.1837 cum $35.43 | 62s
+      seed 300004 ok 50 rep 46 ( 82%) | shortfall  0.0000 | nom=GDIM MAX | $0.1775 cum $35.60 | 63s
+      seed 300006 ok 51 rep 49 ( 84%) | shortfall  0.3567 | nom=GDIH MEAN | $0.1886 cum $35.79 | 72s
+      seed 300002 ok 43 rep 41 ( 76%) | shortfall  0.1754 | nom=GDPF MEAN | $0.1965 cum $35.99 | 73s
+      seed 300001 ok 49 rep 46 ( 81%) | shortfall  0.0116 | nom=GDIM MEAN | $0.2243 cum $36.21 | 84s
+      seed 300000 ok 45 rep 42 ( 79%) | shortfall  0.2226 | nom=GDIJ OTHER | $0.2412 cum $36.45 | 88s
+      seed 300007 ok 49 rep 46 ( 84%) | shortfall  0.0552 | nom=GHIJ MEAN | $0.2517 cum $36.71 | 92s
+      seed 300003 ok 46 rep 47 ( 81%) | shortfall  0.0000 | nom=GDIL MEAN | $0.2674 cum $36.97 | 96s
+      seed 300008 ok 45 rep 43 ( 78%) | shortfall  0.0000 | nom=HAJF MEAN | $0.1814 cum $37.15 | 60s
+      seed 300009 ok 42 rep 43 ( 81%) | shortfall  0.0116 | nom=GDIM MEAN | $0.2040 cum $37.36 | 70s
+      seed 300010 ok 47 rep 47 ( 82%) | shortfall  0.0000 | nom=GDIS MEAN | $0.1936 cum $37.55 | 67s
+      seed 300011 ok 45 rep 40 ( 75%) | shortfall  0.0000 | nom=GDIS OTHER | $0.1961 cum $37.75 | 69s
+      seed 300012 ok 54 rep 47 ( 82%) | shortfall  0.0552 | nom=GDIJ MEAN | $0.1876 cum $37.94 | 71s
+      seed 300013 ok 47 rep 47 ( 82%) | shortfall  0.0116 | nom=GDIM MEAN | $0.1963 cum $38.13 | 72s
+      seed 300015 ok 49 rep 50 ( 88%) | shortfall  0.0000 | nom=GDIM MEAN | $0.1928 cum $38.32 | 70s
+      seed 300014 ok 41 rep 44 ( 85%) | shortfall  0.0000 | nom=GDIM MEAN | $0.2318 cum $38.56 | 78s
+      seed 300016 ok 49 rep 45 ( 87%) | shortfall  0.0518 | nom=GDKF MEAN | $0.2172 cum $38.77 | 76s
+      seed 300017 ok 44 rep 38 ( 75%) | shortfall  0.0000 | nom=GDIS MEAN | $0.2183 cum $38.99 | 73s
+      seed 300019 ok 41 rep 43 ( 84%) | shortfall  0.0518 | nom=GDKF MEAN | $0.2223 cum $39.21 | 74s
+      seed 300018 ok 43 rep 47 ( 84%) | shortfall  0.0000 | nom=GDIS MEAN | $0.2291 cum $39.44 | 82s
+      seed 300020 ok 49 rep 46 ( 84%) | shortfall  0.4085 | nom=GDKF MEAN | $0.2221 cum $39.66 | 73s
+      seed 300022 ok 47 rep 44 ( 79%) | shortfall  0.0000 | nom=GDIL MEAN | $0.1962 cum $39.86 | 67s
+      seed 300023 ok 51 rep 46 ( 79%) | shortfall  0.0116 | nom=GDIM MEAN | $0.1767 cum $40.04 | 63s
+      seed 300021 ok 50 rep 44 ( 79%) | shortfall  0.0116 | nom=GDIM MEAN | $0.2142 cum $40.25 | 92s
+      seed 300024 ok 42 rep 41 ( 82%) | shortfall  0.2110 | nom=GDIJ MEAN | $0.2257 cum $40.48 | 74s
+      seed 300026 ok 52 rep 47 ( 80%) | shortfall  0.1675 | nom=GDIL MEAN | $0.1830 cum $40.66 | 62s
+      seed 300025 ok 45 rep 41 ( 75%) | shortfall  0.5047 | nom=GAIJ MEAN | $0.2161 cum $40.88 | 75s
+      seed 300027 ok 48 rep 46 ( 84%) | shortfall  0.0000 | nom=GDIM MAX | $0.1847 cum $41.06 | 65s
+      seed 300029 ok 46 rep 45 ( 82%) | shortfall  0.0116 | nom=GDIM MAX | $0.1968 cum $41.26 | 68s
+      seed 300028 ok 48 rep 48 ( 86%) | shortfall  0.0000 | nom=GDIL MEAN | $0.2284 cum $41.49 | 82s
+      seed 300031 ok 46 rep 44 ( 83%) | shortfall  0.0000 | nom=GDIS MEAN | $0.1999 cum $41.69 | 73s
+      seed 300030 ok 49 rep 45 ( 82%) | shortfall  0.1225 | nom=GDBN OTHER | $0.2470 cum $41.93 | 92s
+      seed 300033 ok 52 rep 47 ( 82%) | shortfall  0.0000 | nom=GDIS MEAN | $0.1839 cum $42.12 | 62s
+      seed 300035 ok 47 rep 44 ( 80%) | shortfall  0.0116 | nom=GDIM MAX | $0.2082 cum $42.33 | 71s
+      seed 300034 ok 47 rep 47 ( 82%) | shortfall  0.0116 | nom=GDIM MEAN | $0.2240 cum $42.55 | 87s
+      seed 300036 ok 45 rep 40 ( 74%) | shortfall  0.0116 | nom=GDIM MEAN | $0.1984 cum $42.75 | 69s
+      seed 300037 ok 49 rep 47 ( 84%) | shortfall  0.1704 | nom=GHIC OTHER | $0.1701 cum $42.92 | 64s
+      seed 300032 ok 47 rep 43 ( 80%) | shortfall  0.0116 | nom=GDIM MEAN | $0.2298 cum $43.15 | 118s
+      seed 300039 ok 47 rep 45 ( 82%) | shortfall  0.0000 | nom=GDIS MEAN | $0.2164 cum $43.36 | 75s
+      seed 300038 ok 44 rep 49 ( 89%) | shortfall  0.1535 | nom=GDAF MAX | $0.2434 cum $43.61 | 84s
+
+  --- Decision-rule  mid-tier     google/gemini-2.5-flash   (8 workers) ---
+      seed 300005 ok 56 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0064 cum $43.61 | 24s
+      seed 300000 ok 50 rep 54 ( 90%) | shortfall  0.0000 | nom=GDIM OTHER | $0.0064 cum $43.62 | 25s
+      seed 300004 ok 55 rep 54 ( 90%) | shortfall  0.0000 | nom=GDIM MAX | $0.0075 cum $43.63 | 26s
+      seed 300007 ok 49 rep 54 ( 90%) | shortfall  0.2110 | nom=GDIJ OTHER | $0.0073 cum $43.64 | 28s
+      seed 300001 ok 51 rep 54 ( 90%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0072 cum $43.64 | 28s
+      seed 300006 ok 52 rep 53 ( 88%) | shortfall  0.0000 | nom=GDIM MAX | $0.0079 cum $43.65 | 29s
+      seed 300003 ok 50 rep 54 ( 90%) | shortfall  0.0973 | nom=GDIC MAX | $0.0081 cum $43.66 | 30s
+      seed 300002 ok 51 rep 54 ( 90%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0083 cum $43.67 | 32s
+      seed 300009 ok 45 rep 59 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0054 cum $43.67 | 19s
+      seed 300011 ok 52 rep 59 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0053 cum $43.68 | 19s
+      seed 300008 ok 50 rep 53 ( 90%) | shortfall  0.2110 | nom=GDIJ MAX | $0.0067 cum $43.68 | 24s
+      seed 300010 ok 51 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIJ MAX | $0.0063 cum $43.69 | 22s
+      seed 300015 ok 51 rep 59 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0054 cum $43.70 | 19s
+      seed 300013 ok 49 rep 58 ( 97%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0064 cum $43.70 | 23s
+      seed 300012 ok 48 rep 58 ( 97%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0067 cum $43.71 | 24s
+      seed 300014 ok 54 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0064 cum $43.72 | 24s
+      seed 300016 ok 49 rep 57 ( 95%) | shortfall  0.8136 | nom=GDIF MAX | $0.0066 cum $43.72 | 23s
+      seed 300022 ok 52 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0059 cum $43.73 | 20s
+      seed 300017 ok 57 rep 54 ( 90%) | shortfall  0.1558 | nom=GDIL MEAN | $0.0070 cum $43.73 | 25s
+      seed 300020 ok 52 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0064 cum $43.74 | 22s
+      seed 300018 ok 48 rep 54 ( 90%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0078 cum $43.75 | 27s
+      seed 300019 ok 51 rep 53 ( 88%) | shortfall  0.0973 | nom=GDIC MEAN | $0.0080 cum $43.76 | 28s
+      seed 300021 ok 52 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0083 cum $43.77 | 29s
+      seed 300023 ok 50 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0077 cum $43.77 | 27s
+      seed 300024 ok 51 rep 54 ( 90%) | shortfall  0.2110 | nom=GDIJ MEAN | $0.0074 cum $43.78 | 27s
+      seed 300027 ok 46 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0074 cum $43.79 | 26s
+      seed 300026 ok 53 rep 54 ( 90%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0078 cum $43.80 | 27s
+      seed 300028 ok 50 rep 54 ( 90%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0068 cum $43.80 | 24s
+      seed 300029 ok 45 rep 56 ( 93%) | shortfall  0.3567 | nom=GDIH MEAN | $0.0078 cum $43.81 | 27s
+      seed 300025 ok 54 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0097 cum $43.82 | 33s
+      seed 300030 ok 51 rep 55 ( 92%) | shortfall  0.0552 | nom=GDIJ MEAN | $0.0069 cum $43.83 | 24s
+      seed 300031 ok 51 rep 54 ( 90%) | shortfall  0.0000 | nom=GDIM OTHER | $0.0084 cum $43.84 | 30s
+      seed 300032 ok 52 rep 57 ( 97%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0060 cum $43.84 | 20s
+      seed 300033 ok 53 rep 54 ( 90%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0069 cum $43.85 | 25s
+      seed 300035 ok 49 rep 53 ( 90%) | shortfall  0.0000 | nom=GDIM MAX | $0.0064 cum $43.85 | 24s
+      seed 300034 ok 44 rep 50 ( 89%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0070 cum $43.86 | 27s
+      seed 300038 ok 51 rep 54 ( 90%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0062 cum $43.87 | 23s
+      seed 300037 ok 52 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0070 cum $43.88 | 25s
+      seed 300036 ok 51 rep 54 ( 90%) | shortfall  0.2110 | nom=GDIJ MAX | $0.0081 cum $43.88 | 30s
+      seed 300039 ok 50 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0074 cum $43.89 | 27s
+
+  --- Decision-rule  open-weight  deepseek/deepseek-chat-v3.1   (8 workers) ---
+      seed 300005 ok 52 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0041 cum $43.89 | 49s
+      seed 300007 ok 50 rep 56 ( 95%) | shortfall  0.4990 | nom=GDIF OTHER | $0.0042 cum $43.90 | 50s
+      seed 300000 ok 48 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0043 cum $43.90 | 53s
+      seed 300006 ok 54 rep 56 ( 93%) | shortfall  0.2110 | nom=GDIJ MEAN | $0.0044 cum $43.91 | 55s
+      seed 300003 ok 51 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0053 cum $43.91 | 63s
+      seed 300001 ok 53 rep 55 ( 92%) | shortfall  0.0000 | nom=GDIL MEAN | $0.0067 cum $43.92 | 67s
+      seed 300004 ok 55 rep 56 ( 93%) | shortfall  0.2110 | nom=GDIJ OTHER | $0.0050 cum $43.92 | 70s
+      seed 300002 ok 50 rep 55 ( 92%) | shortfall  0.0552 | nom=GDIJ OTHER | $0.0077 cum $43.93 | 88s
+      seed 300008 ok 52 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0041 cum $43.94 | 45s
+      seed 300010 ok 53 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0043 cum $43.94 | 43s
+      seed 300011 ok 54 rep 56 ( 93%) | shortfall  0.3567 | nom=GDIH OTHER | $0.0050 cum $43.95 | 50s
+      seed 300009 ok 52 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0046 cum $43.95 | 67s
+      seed 300014 ok 56 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0046 cum $43.96 | 50s
+      seed 300012 ok 53 rep 54 ( 90%) | shortfall  0.2110 | nom=GDIJ MEAN | $0.0068 cum $43.96 | 72s
+      seed 300013 ok 53 rep 53 ( 88%) | shortfall  0.0000 | nom=GDIS OTHER | $0.0059 cum $43.97 | 82s
+      seed 300015 ok 52 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0059 cum $43.97 | 64s
+      seed 300017 ok 57 rep 54 ( 90%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0049 cum $43.98 | 61s
+      seed 300016 ok 54 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0068 cum $43.99 | 67s
+      seed 300020 ok 52 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0041 cum $43.99 | 48s
+      seed 300021 ok 51 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0044 cum $43.99 | 42s
+      seed 300019 ok 53 rep 55 ( 92%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0048 cum $44.00 | 67s
+      seed 300023 ok 55 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0040 cum $44.00 | 40s
+      seed 300024 ok 53 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0038 cum $44.01 | 45s
+      seed 300018 ok 50 rep 54 ( 90%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0075 cum $44.01 | 108s
+      seed 300026 ok 49 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0039 cum $44.02 | 49s
+      seed 300025 ok 56 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0058 cum $44.02 | 57s
+      seed 300022 ok 54 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0075 cum $44.03 | 81s
+      seed 300029 ok 48 rep 55 ( 92%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0042 cum $44.04 | 52s
+      seed 300027 ok 56 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0084 cum $44.04 | 76s
+      seed 300028 ok 53 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0046 cum $44.05 | 78s
+      seed 300031 ok 50 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0049 cum $44.05 | 56s
+      seed 300030 ok 52 rep 55 ( 92%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0068 cum $44.06 | 76s
+      seed 300033 ok 50 rep 55 ( 92%) | shortfall  0.0973 | nom=GDIC MEAN | $0.0070 cum $44.07 | 73s
+      seed 300036 ok 52 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0043 cum $44.07 | 51s
+      seed 300037 ok 50 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0044 cum $44.08 | 56s
+      seed 300035 ok 53 rep 55 ( 92%) | shortfall  0.0000 | nom=GDIH MEAN | $0.0086 cum $44.08 | 82s
+      seed 300032 ok 52 rep 55 ( 92%) | shortfall  0.0552 | nom=GDIJ MEAN | $0.0063 cum $44.09 | 114s
+      seed 300034 ok 48 rep 57 ( 95%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0077 cum $44.10 | 102s
+      seed 300039 ok 50 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIJ MEAN | $0.0043 cum $44.10 | 65s
+      seed 300038 ok 45 rep 56 ( 93%) | shortfall  0.0000 | nom=GDIH MEAN | $0.0066 cum $44.11 | 78s
+
+  TWO-PARSER CHECK: 68 of 14879 calls disagree (0.46%)
+  DISAGREEING CALLS, first 5:
+    round 9 status ambiguous tier pipe | primary [] | secondary ['GDAN', 'GDAN', 'GDFN', 'GDIN']
+    round 10 status alphabet_then_wrong_count tier pipe | primary [] | secondary ['GDAS', 'GDAF', 'GKAS']
+    round 9 status ambiguous tier pipe | primary [] | secondary ['GHAS', 'GHAF', 'GHAI', 'GRAF']
+    round 2 status ambiguous tier pipe | primary [] | secondary ['GDIB']
+    round 5 status ok tier pipe | primary ['GDIC', 'GDCC', 'GDLC', 'GDMC'] | secondary ['GDCC', 'GDLC', 'GDMC']
+  spot check written: /Users/<name>/projects/repdef/results/grid_stage1_spotcheck.txt
+
+====================================================================================================
+SUMMARY   stage1
+====================================================================================================
+  PRIMARY OUTCOME is nominated true fitness against the scripted k*=1 policy (8.0057);
+  scripted k=0 is 7.8856. Selection shortfall is SECONDARY and sits beside n_distinct.
+  condition     role          n | NOMINATED (primary)    vs k* | explor + select | distn | rep of budget
+  Aggregated    frontier     40 |  7.6385 +- 0.0399  -0.3671 | 1.0521 + 0.0714 |   8.1 |   78.8% $0.1834
+  Aggregated    mid-tier     40 |  7.5456 +- 0.0477  -0.4601 | 1.2154 + 0.0011 |   2.1 |   95.8% $0.0054
+  Aggregated    open-weight  40 |  7.6990 +- 0.0264  -0.3066 | 1.0419 + 0.0211 |   3.6 |   94.0% $0.0027
+  Blind         frontier     40 |  7.5719 +- 0.0462  -0.4337 | 1.0672 + 0.1229 |  11.2 |   64.2% $0.2132
+  Blind         mid-tier     40 |  7.8460 +- 0.0199  -0.1597 | 0.8433 + 0.0727 |   7.5 |   79.7% $0.0080
+  Blind         open-weight  40 |  7.8198 +- 0.0278  -0.1859 | 0.9052 + 0.0371 |   5.8 |   85.8% $0.0054
+  Decision-rule frontier     40 |  7.7642 +- 0.0413  -0.2414 | 0.9258 + 0.0720 |   9.1 |   74.8% $0.2092
+  Decision-rule mid-tier     40 |  7.6680 +- 0.0522  -0.3376 | 1.0335 + 0.0605 |   4.1 |   92.3% $0.0071
+  Decision-rule open-weight  40 |  7.7181 +- 0.0314  -0.2876 | 1.0015 + 0.0424 |   4.2 |   92.8% $0.0055
+  Mechanism     frontier     40 |  7.6778 +- 0.0453  -0.3278 | 0.9696 + 0.1146 |  10.2 |   71.4% $0.2251
+  Mechanism     mid-tier     40 |  7.0830 +- 0.0586  -0.9227 | 1.6790 + 0.0000 |   1.4 |   94.7% $0.0057
+  Mechanism     open-weight  40 |  7.6607 +- 0.0541  -0.3450 | 1.0638 + 0.0375 |   3.6 |   92.4% $0.0055
+  Quantitative  frontier     40 |  7.6613 +- 0.0495  -0.3443 | 1.0169 + 0.0838 |  10.5 |   66.8% $0.2133
+  Quantitative  mid-tier     40 |  7.7317 +- 0.0460  -0.2739 | 0.9083 + 0.1220 |   5.5 |   88.5% $0.0078
+  Quantitative  open-weight  40 |  7.7633 +- 0.0239  -0.2424 | 0.9796 + 0.0191 |   4.2 |   92.0% $0.0056
+
+  TOTAL SPEND $44.1093 over 15479 calls, 600 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls     empty malformed     trunc  mean rsn    max rsn
+  anthropic/claude-opus-4.7        6188        0%        0%        0%         0          0
+  google/gemini-2.5-flash          4618        0%        1%        0%         0          0
+  deepseek/deepseek-chat-v3.1      4673        0%        0%        0%         0          0
+
+  DO NOT LAUNCH on deepseek/deepseek-chat-v3.1: empty or truncated responses present. Raise max_tokens above
+    deepseek/deepseek-chat-v3.1    observed reasoning+completion peak 3000, so max_tokens >= 4500

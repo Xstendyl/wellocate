@@ -1,0 +1,56 @@
+{
+ "tag": "gen_r_gb1real",
+ "cells": 6,
+ "total_lines": 14197,
+ "source_lines": 14197,
+ "carried_forward_lines": 0,
+ "untouched_cell_lines": 0,
+ "replaced_lines": 0,
+ "expected_total_lines": 14197,
+ "all_verified": true,
+ "empty": false,
+ "files": {
+  "blind__anthropic_claude-opus-4.7.jsonl.gz": {
+   "lines": 866,
+   "sha256": "2d2bbb7945f887728ff68c99e7a8be342d8a6fc38178090753e0a8705ab84ca4",
+   "bytes": 137288,
+   "verified": true,
+   "written_by_this_run": true
+  },
+  "blind__deepseek_deepseek-chat-v3.1.jsonl.gz": {
+   "lines": 2355,
+   "sha256": "34d251cc65c0550ca32d77740de57b3170a71d5c55357215e3265810486f3ace",
+   "bytes": 303368,
+   "verified": true,
+   "written_by_this_run": true
+  },
+  "blind__google_gemini-2.5-flash.jsonl.gz": {
+   "lines": 6791,
+   "sha256": "21824ddfbe4b57838fb709bee8888a6dc156b869af0cb48b22139d7d4599e52e",
+   "bytes": 1024010,
+   "verified": true,
+   "written_by_this_run": true
+  },
+  "instructed__anthropic_claude-opus-4.7.jsonl.gz": {
+   "lines": 809,
+   "sha256": "f2af9a9f1bd05e5bf32c8dc3297be079e5d0bc9494a340e4751961cd706e2873",
+   "bytes": 125753,
+   "verified": true,
+   "written_by_this_run": true
+  },
+  "instructed__deepseek_deepseek-chat-v3.1.jsonl.gz": {
+   "lines": 1827,
+   "sha256": "57232ccb2b5a8032ffb48fba1a9fc0030998b2f07978852fc5bcfc72a5b0f556",
+   "bytes": 251496,
+   "verified": true,
+   "written_by_this_run": true
+  },
+  "instructed__google_gemini-2.5-flash.jsonl.gz": {
+   "lines": 1549,
+   "sha256": "17c118c00397c7039aa014aef3c0c5aa0d972f65291c6a1e08a29956ec19255a",
+   "bytes": 182984,
+   "verified": true,
+   "written_by_this_run": true
+  }
+ }
+}

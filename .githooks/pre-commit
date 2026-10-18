@@ -1,0 +1,24 @@
+#!/bin/sh
+# REFUSE A COMMIT WHEN THE SUITE FAILS.
+#
+# WHY. On 2026-09-29 f82bf58 was committed with two tests failing, because the command chained
+# `git commit` behind a `grep -E "^(Ran|OK|FAILED)"` and grep exits 0 when it matches FAILED. The commit
+# message claimed "300 tests pass, exit 0", which was false when it was written. That is the fourth time
+# this shell trap has produced a wrong claim in a commit message. A rule in a person's head is not a
+# control; this is.
+#
+# Bypass with `git commit --no-verify` only when the commit's purpose is to record a failing state, and
+# say so in the message.
+set -e
+root=$(git rev-parse --show-toplevel)
+cd "$root"
+echo "pre-commit: running the suite..."
+if ! python3 -B -m unittest discover -s tests -q > /tmp/precommit_suite.txt 2>&1; then
+    echo "pre-commit: REFUSED. The suite is failing:"
+    grep -E "^(FAIL|ERROR):" /tmp/precommit_suite.txt | head -20
+    tail -3 /tmp/precommit_suite.txt
+    echo "pre-commit: full output in /tmp/precommit_suite.txt"
+    exit 1
+fi
+tail -2 /tmp/precommit_suite.txt | head -1
+echo "pre-commit: ok"

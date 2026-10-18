@@ -1,0 +1,35 @@
+{
+ "tag": "gen_k2",
+ "cells": 3,
+ "total_lines": 7657,
+ "source_lines": 7657,
+ "carried_forward_lines": 0,
+ "untouched_cell_lines": 0,
+ "replaced_lines": 0,
+ "expected_total_lines": 7657,
+ "all_verified": true,
+ "empty": false,
+ "files": {
+  "blind__anthropic_claude-opus-4.7.jsonl.gz": {
+   "lines": 887,
+   "sha256": "284b51ed34bf1960a05053ba6f17da4a472c9385acab5fed2277a00216ebc001",
+   "bytes": 119493,
+   "verified": true,
+   "written_by_this_run": true
+  },
+  "blind__deepseek_deepseek-chat-v3.1.jsonl.gz": {
+   "lines": 2995,
+   "sha256": "29e5f39f1fdd2bda78e5f16197e78b5e04578dcb8f40f64ba134afdfdccdaeb3",
+   "bytes": 363227,
+   "verified": true,
+   "written_by_this_run": true
+  },
+  "blind__google_gemini-2.5-flash.jsonl.gz": {
+   "lines": 3775,
+   "sha256": "8fc2ba5ce7524720dfad8044ceaa4e4c5cf8571cd53e06a5eb3fda4f50339308",
+   "bytes": 488569,
+   "verified": true,
+   "written_by_this_run": true
+  }
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "tag": "smoke0an6_gb1_menu",
+ "cells": 3,
+ "total_lines": 230,
+ "source_lines": 230,
+ "carried_forward_lines": 0,
+ "untouched_cell_lines": 0,
+ "replaced_lines": 0,
+ "expected_total_lines": 230,
+ "all_verified": true,
+ "empty": false,
+ "files": {
+  "blind__anthropic_claude-opus-4.7.jsonl.gz": {
+   "lines": 88,
+   "sha256": "b46bc00b56493225c19eb87277946450076ca4341d7eff952cc83e7607a718f5",
+   "bytes": 17266,
+   "verified": true,
+   "written_by_this_run": true
+  },
+  "blind__deepseek_deepseek-chat-v3.1.jsonl.gz": {
+   "lines": 57,
+   "sha256": "7237e30d575acd2dc0eb4ad9dfb0b41c159c1d9d358fd43ab9e3f0ca7fd9b25f",
+   "bytes": 12962,
+   "verified": true,
+   "written_by_this_run": true
+  },
+  "blind__google_gemini-2.5-flash.jsonl.gz": {
+   "lines": 85,
+   "sha256": "dd4eed46eccd9d6170f56dc859986e10b1ea23c230660859470c8cf410f84b60",
+   "bytes": 15037,
+   "verified": true,
+   "written_by_this_run": true
+  }
+ }
+}

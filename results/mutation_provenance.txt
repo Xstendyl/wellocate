@@ -1,0 +1,9 @@
+BASELINE green=True
+  records HEAD and calls it provenance, the original bug   CAUGHT
+  never refuses, only warns                                CAUGHT
+  misses untracked files, so a new module launches unnotic CAUGHT
+  blocks on a spec edit too, which teaches --allow-dirty b CAUGHT
+  lets an earlier manifest key shadow the provenance       CAUGHT
+  saves the diff but not the untracked file contents       CAUGHT
+
+CAUGHT 6/6

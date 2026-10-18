@@ -1,0 +1,144 @@
+SPOT CHECK: raw model output beside the proposals the harness accepted.
+Sampled deterministically, 20 calls per model. Written for a human to read.
+
+====================================================================================================
+google/gemini-3.1-pro-preview  (frontier-google)   1382 calls, showing 20
+====================================================================================================
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['CHTM']
+SECONDARY: ['CHTM']
+RAW:
+CHTM | exploring around high-scoring CHTL
+
+--- round 5  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['CHTP', 'JHTP', 'LHTP', 'DFTP']
+SECONDARY: ['CHTP', 'JHTP', 'LHTP', 'DFTP']
+RAW:
+CHTP | combine C and HTP
+JHTP | combine J and HTP
+LHTP | combine L and HTP
+DFTP | explore pos 2 with D and TP
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['IHTL']
+SECONDARY: ['IHTL']
+RAW:
+IHTL | continuing exploration of the first position with HTL base
+
+--- round 3  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['CITL']
+SECONDARY: ['CITL']
+RAW:
+CITL | exploring first position variation of DITL
+
+--- round 6  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['DCTL']
+SECONDARY: ['DCTL']
+RAW:
+DCTL | exploring 2nd position around D_TL with C
+
+--- round 8  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['DGTD']
+SECONDARY: ['DGTD']
+RAW:
+DGTD | exploring second position variation of DETD
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['CHAL']
+SECONDARY: ['CHAL']
+RAW:
+CHAL | exploring position 3 variation of high-scoring CHTL
+
+--- round 3  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['CHTG']
+SECONDARY: ['CHTG']
+RAW:
+CHTG | exploring 4th position based on high score of CHTD
+
+--- round 4  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['DHRL']
+SECONDARY: ['DHRL']
+RAW:
+DHRL | exploring position 3 around the best candidate DHTL
+
+--- round 11  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 5  parsers agree True ---
+PARSED   : ['DETD', 'JEAD', 'JEBD', 'JECD']
+SECONDARY: ['DETD', 'JEAD', 'JEBD', 'JECD']
+RAW:
+DETD | retry failed order from round 10
+JEAD | explore position 3
+JEBD | explore position 3
+JECD | explore position 3
+
+--- round 15  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['JEHK']
+SECONDARY: ['JEHK']
+RAW:
+JEHK | exploring 4th position of JEH_ based on high scores of JEHB and JEHD
+
+--- round 8  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['DHTD']
+SECONDARY: ['DHTD']
+RAW:
+DHTD | exploring position 2 with H based on DETD
+
+--- round 13  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['OITD', 'PITD', 'QITD', 'RITD']
+SECONDARY: ['OITD', 'PITD', 'QITD', 'RITD']
+RAW:
+OITD | exploring first position with ITD
+PITD | exploring first position with ITD
+QITD | exploring first position with ITD
+RITD | exploring first position with ITD
+
+--- round 4  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['DHTH']
+SECONDARY: ['DHTH']
+RAW:
+DHTH | exploring the fourth position near J based on high score of DHTJ
+
+--- round 10  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['AITJ']
+SECONDARY: ['AITJ']
+RAW:
+AITJ | exploring pos 1 around ITJ
+
+--- round 15  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['CSTG']
+SECONDARY: ['CSTG']
+RAW:
+CSTG | exploring last position around best CSTJ
+
+--- round 9  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['CIHD', 'EIHD', 'GIHD', 'HIHD']
+SECONDARY: ['CIHD', 'EIHD', 'GIHD', 'HIHD']
+RAW:
+CIHD | explore pos 1 of FIHD
+EIHD | explore pos 1 of FIHD
+GIHD | explore pos 1 of FIHD
+HIHD | explore pos 1 of FIHD
+
+--- round 12  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['FKED']
+SECONDARY: ['FKED']
+RAW:
+FKED | exploring position 3 variations of the best candidate FKHD
+
+--- round 6  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 12  parsers agree True ---
+PARSED   : ['EKTP', 'GKTP', 'FJTP', 'FMTP']
+SECONDARY: ['EKTP', 'GKTP', 'FJTP', 'FMTP']
+RAW:
+EKTP | vary pos 1 of best FKTP
+GKTP | vary pos 1 of best FKTP
+FJTP | vary pos 2 of best FKTP
+FMTP | vary pos 2 of best FKTP
+
+--- round 7  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 6  parsers agree True ---
+PARSED   : ['DKTP', 'FITP', 'HKTP', 'FKTL']
+SECONDARY: ['DKTP', 'FITP', 'HKTP', 'FKTL']
+RAW:
+DKTP | retry previously failed order
+FITP | retry previously failed order
+HKTP | explore position 1 variation on best
+FKTL | explore position 4 variation on best

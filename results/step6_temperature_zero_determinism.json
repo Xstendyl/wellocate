@@ -1,0 +1,53 @@
+{
+ "parsed_calls": 368,
+ "distinct_prompts": 349,
+ "repeated_groups": 4,
+ "repeated_calls": 23,
+ "groups_all_identical": 1,
+ "pairwise_agreement": 0.2647058823529412,
+ "cells_with_within_cell_variation": 4,
+ "cells": 4,
+ "verdict": "NOT deterministic",
+ "groups": [
+  {
+   "calls": 10,
+   "distinct_ordered": 7,
+   "distinct_sets": 6,
+   "modal_share": 0.4,
+   "rung": "blind",
+   "sigma": 1.114,
+   "temperature": 0.0,
+   "n_slots": 4
+  },
+  {
+   "calls": 5,
+   "distinct_ordered": 4,
+   "distinct_sets": 3,
+   "modal_share": 0.4,
+   "rung": "instructed",
+   "sigma": 1.114,
+   "temperature": 0.0,
+   "n_slots": 4
+  },
+  {
+   "calls": 5,
+   "distinct_ordered": 3,
+   "distinct_sets": 3,
+   "modal_share": 0.4,
+   "rung": "instructed",
+   "sigma": 4.456,
+   "temperature": 0.0,
+   "n_slots": 4
+  },
+  {
+   "calls": 3,
+   "distinct_ordered": 1,
+   "distinct_sets": 1,
+   "modal_share": 1.0,
+   "rung": "instructed",
+   "sigma": 1.114,
+   "temperature": 0.0,
+   "n_slots": 1
+  }
+ ]
+}

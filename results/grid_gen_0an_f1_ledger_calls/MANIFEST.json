@@ -1,0 +1,35 @@
+{
+ "tag": "gen_0an_f1_ledger",
+ "cells": 3,
+ "total_lines": 10548,
+ "source_lines": 10548,
+ "carried_forward_lines": 0,
+ "untouched_cell_lines": 0,
+ "replaced_lines": 0,
+ "expected_total_lines": 10548,
+ "all_verified": true,
+ "empty": false,
+ "files": {
+  "blind__anthropic_claude-opus-4.7.jsonl.gz": {
+   "lines": 2375,
+   "sha256": "7fd44fc85690366e9da8724ab17efa8deac1357b1e78b5e594cec6f5b8afe814",
+   "bytes": 345719,
+   "verified": true,
+   "written_by_this_run": true
+  },
+  "blind__deepseek_deepseek-chat-v3.1.jsonl.gz": {
+   "lines": 3750,
+   "sha256": "55d40a2e70e87f41921fce621a871a66405f12a12a2acbdc1aec4bb20d76ecf2",
+   "bytes": 564809,
+   "verified": true,
+   "written_by_this_run": true
+  },
+  "blind__google_gemini-2.5-flash.jsonl.gz": {
+   "lines": 4423,
+   "sha256": "42c40142dc21e662a116a771edab2fafdb2bf95bc550a0b4e32ca6941ab84214",
+   "bytes": 524998,
+   "verified": true,
+   "written_by_this_run": true
+  }
+ }
+}

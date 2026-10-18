@@ -1,0 +1,455 @@
+SPOT CHECK: raw model output beside the proposals the harness accepted.
+Sampled deterministically, 20 calls per model. Written for a human to read.
+
+====================================================================================================
+anthropic/claude-opus-4.7  (frontier)   1615 calls, showing 20
+====================================================================================================
+
+--- round 6  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 5  parsers agree True ---
+PARSED   : ['FWAA', 'FHAA', 'FWAD', 'IWAA']
+SECONDARY: ['FWAA', 'FHAA', 'FWAD', 'IWAA']
+RAW:
+FWAA | best confirmed hit, replicate to anchor
+FHAA | explore position 2 variants near W
+FWAD | explore position 4 small polar
+IWAA | explore position 1 hydrophobic branched
+
+--- round 6  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['FWAT']
+SECONDARY: ['FWAT']
+RAW:
+FWAT | small polar at pos4 to probe tolerance near strong FWA_ motif
+
+--- round 7  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['FWAK']
+SECONDARY: ['FWAK']
+RAW:
+FWAK | try basic residue at P4 since small/polar failed
+
+--- round 11  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['FWAA', 'FYAA', 'FWAG', 'FWCA']
+SECONDARY: ['FWAA', 'FYAA', 'FWAG', 'FWCA']
+RAW:
+FWAA | best performer, replicate for noise estimate
+FYAA | second best, replicate
+FWAG | position 4 G variant retest, was 5.998
+FWCA | explore pos3 C, was 8.152
+
+--- round 13  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['FWAA', 'FYAA', 'FWAA', 'FYAA']
+SECONDARY: ['FWAA', 'FYAA', 'FWAA', 'FYAA']
+RAW:
+FWAA | best confirmed variant, replicate for noise reduction
+FYAA | second best, replicate to confirm
+FWAA | replicate top candidate again
+FYAA | replicate second-best again
+
+--- round 4  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 5  parsers agree True ---
+PARSED   : ['WYCA', 'WYCV', 'WYCI', 'WWCA']
+SECONDARY: ['WYCA', 'WYCV', 'WYCI', 'WWCA']
+RAW:
+WYCA | best so far, replicate to reduce error
+WYCV | explore position 4 with top WYC_ scaffold
+WYCI | explore position 4 hydrophobic
+WWCA | explore W at position 2
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['YWCL']
+SECONDARY: ['YWCL']
+RAW:
+YWCL | combine best Y1 and W2 with L4 variant to probe position 4
+
+--- round 6  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 6  parsers agree True ---
+PARSED   : ['WWCA', 'WWCS', 'WWCC', 'WWCP']
+SECONDARY: ['WWCA', 'WWCS', 'WWCC', 'WWCP']
+RAW:
+WWCA | best so far (5.73), replicate to confirm
+WWCS | small polar at pos4, near A/G optimum
+WWCC | small residue at pos4, unexplored
+WWCP | test proline at pos4, small residue series
+
+--- round 12  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 5  parsers agree True ---
+PARSED   : ['WWCA', 'LWCA', 'LWCA', 'MWCA']
+SECONDARY: ['WWCA', 'LWCA', 'LWCA', 'MWCA']
+RAW:
+WWCA | best average performer, replicate for confidence
+LWCA | top single reading 7.592, replicate
+LWCA | replicate top candidate for confidence
+MWCA | explore position 1 M variant near top region
+
+--- round 2  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['FFAA', 'WWCA', 'FFCL', 'FFCG']
+SECONDARY: ['FFAA', 'WWCA', 'FFCL', 'FFCG']
+RAW:
+FFAA | combine A at pos3 with A at pos4, both improvements
+WWCA | combine best pos1,2 (WW) with best pos4 (A)
+FFCL | try hydrophobic L at pos4 like A worked
+FFCG | small residue at pos4, similar to A
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['WWAA']
+SECONDARY: ['WWAA']
+RAW:
+WWAA | combine best mutations W1W2 and A3A4 for potential synergy
+
+--- round 10  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['FWAP']
+SECONDARY: ['FWAP']
+RAW:
+FWAP | try proline at position 4 to explore remaining viable options near best FWAA
+
+--- round 11  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['FWAA', 'FWCA', 'VWAA', 'FWAL']
+SECONDARY: ['FWAA', 'FWCA', 'VWAA', 'FWAL']
+RAW:
+FWAA | best confirmed hit, replicate to reduce noise
+FWCA | strong second variant, replicate
+VWAA | explore position 1 small hydrophobic
+FWAL | explore position 4 hydrophobic alternative
+
+--- round 3  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 9  parsers agree True ---
+PARSED   : ['WWCI', 'WWCA', 'WWCC', 'WFCI']
+SECONDARY: ['WWCI', 'WWCA', 'WWCC', 'WFCI']
+RAW:
+WWCI | best so far (3.10), replicate to reduce noise
+WWCA | explore small aliphatic at pos4, near WWCI/WWCV
+WWCC | explore cysteine at pos4
+WFCI | test F at pos2 with best pos4=I
+
+--- round 6  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['WWCD']
+SECONDARY: ['WWCD']
+RAW:
+WWCD | explore remaining P4 options near best WWCI
+
+--- round 13  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['WWCA', 'WWCA', 'WWLA', 'WWCA']
+SECONDARY: ['WWCA', 'WWCA', 'WWLA', 'WWCA']
+RAW:
+WWCA | best variant, keep averaging to reduce SE
+WWCA | best variant, keep averaging to reduce SE
+WWLA | second best, confirm mean
+WWCA | best variant, keep averaging to reduce SE
+
+--- round 1  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 5  parsers agree True ---
+PARSED   : ['WFCM', 'FWCM', 'YFCM', 'FYCM']
+SECONDARY: ['WFCM', 'FWCM', 'YFCM', 'FYCM']
+RAW:
+WFCM | aromatic swap at pos1, often improves GB1 binding
+FWCM | try Trp at pos2, known beneficial in GB1 studies
+YFCM | tyrosine at pos1, aromatic variant
+FYCM | tyrosine at pos2, aromatic variant
+
+--- round 6  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['WWFI']
+SECONDARY: ['WWFI']
+RAW:
+WWFI | explore large hydrophobic at pos4 near top hit WWFV
+
+--- round 13  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 6  parsers agree True ---
+PARSED   : ['WWFG', 'WWFG', 'WWFV', 'WWMG']
+SECONDARY: ['WWFG', 'WWFG', 'WWFV', 'WWMG']
+RAW:
+WWFG | best mean so far, replicate for confidence
+WWFG | best mean so far, replicate for confidence
+WWFV | strong second, replicate
+WWMG | explore alternate top variant
+
+--- round 8  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['FWAA', 'FYCA', 'FWSA', 'FWGA']
+SECONDARY: ['FWAA', 'FYCA', 'FWSA', 'FWGA']
+RAW:
+FWAA | best observed (~9.3-9.4), replicate to confirm top
+FYCA | combine strong F_W at p2 variants and C at p3 which boosted FWCA
+FWSA | explore small polar at p3 near strong FWAA
+FWGA | small residue at p3, FWAG was 6.8, try G at p3
+
+====================================================================================================
+google/gemini-2.5-flash  (mid-tier)   8220 calls, showing 20
+====================================================================================================
+
+--- round 6  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['AFCM', 'AFCM', 'AFCM', 'AFCM']
+SECONDARY: ['AFCM', 'AFCM', 'AFCM', 'AFCM']
+RAW:
+AFCM | Re-measure the best candidate to reduce uncertainty
+AFCM | Re-measure the best candidate to reduce uncertainty
+AFCM | Re-measure the best candidate to reduce uncertainty
+AFCM | Re-measure the best candidate to reduce uncertainty
+
+--- round 8  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['AFCM']
+SECONDARY: ['AFCM']
+RAW:
+AFCM | Re-evaluate AFCM due to previous rejections and high activity.
+
+--- round 8  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['AAAY']
+SECONDARY: ['AAAY']
+RAW:
+AAAY | Exploring viability of AAAY again, as it was rejected in round 2, 3, and 4, but not in round 5, 6, or 7.
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['FFMM']
+SECONDARY: ['FFMM']
+RAW:
+FFMM | Exploring a single amino acid change from the reference point to understand its impact.
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['AAAI']
+SECONDARY: ['AAAI']
+RAW:
+AAAI | Exploring single amino acid changes from AAAA
+
+--- round 10  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['AAMK']
+SECONDARY: ['AAMK']
+RAW:
+AAMK | Exploring viability of K at 4th position with AAM prefix
+
+--- round 12  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['AAMK']
+SECONDARY: ['AAMK']
+RAW:
+AAMK | Exploring similar viable candidates to AAMG
+
+--- round 13  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['AAMY']
+SECONDARY: ['AAMY']
+RAW:
+AAMY | Exploring other amino acids at position 4 with AAM as the prefix.
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['AAMF']
+SECONDARY: ['AAMF']
+RAW:
+AAMF | Exploring the effect of F at the last position, given AAAA's high activity.
+
+--- round 11  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['AAAF']
+SECONDARY: ['AAAF']
+RAW:
+AAAF | Exploring single amino acid changes from AAAA
+
+--- round 12  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['AAAS']
+SECONDARY: ['AAAS']
+RAW:
+AAAS | Exploring single amino acid changes from AAAA
+
+--- round 12  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['AAAM']
+SECONDARY: ['AAAM']
+RAW:
+AAAM | Exploring the effect of M at the last position, given AAAA's high activity.
+
+--- round 7  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 12  parsers agree True ---
+PARSED   : ['AAAD', 'AAAE', 'AAAF', 'AAAG']
+SECONDARY: ['AAAD', 'AAAE', 'AAAF', 'AAAG']
+RAW:
+AAAD | Exploring single amino acid changes from AAAA
+AAAE | Exploring single amino acid changes from AAAA
+AAAF | Exploring single amino acid changes from AAAA
+AAAG | Exploring single amino acid changes from AAAA
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['FFCP']
+SECONDARY: ['FFCP']
+RAW:
+FFCP | Explore the effect of P at the last position
+
+--- round 5  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['AAAC']
+SECONDARY: ['AAAC']
+RAW:
+AAAC | Exploring single amino acid changes from AAAA
+
+--- round 5  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['AAAW']
+SECONDARY: ['AAAW']
+RAW:
+AAAW | exploring the 'A' background further
+
+--- round 3  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['FFCM', 'AFCM', 'FSCM', 'FFAM']
+SECONDARY: ['FFCM', 'AFCM', 'FSCM', 'FFAM']
+RAW:
+FFCM | Re-measure reference point to reduce uncertainty
+AFCM | Re-measure to get a reading
+FSCM | Re-measure to reduce uncertainty
+FFAM | Re-measure to get a reading
+
+--- round 4  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['FFCM', 'AFCM', 'FSCM', 'FFAM']
+SECONDARY: ['FFCM', 'AFCM', 'FSCM', 'FFAM']
+RAW:
+FFCM | Re-measure reference to improve precision
+AFCM | Re-measure AFCM to improve precision
+FSCM | Re-measure FSCM to improve precision
+FFAM | Re-measure FFAM to improve precision
+
+--- round 10  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['FFCL']
+SECONDARY: ['FFCL']
+RAW:
+FFCL | Exploring similar amino acids to K
+
+--- round 5  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['AFCM']
+SECONDARY: ['AFCM']
+RAW:
+AFCM | Re-evaluate AFCM to reduce uncertainty
+
+====================================================================================================
+deepseek/deepseek-chat-v3.1  (open-weight)   4062 calls, showing 20
+====================================================================================================
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['FFCF']
+SECONDARY: ['FFCF']
+RAW:
+FFCF | explore F at pos3, C at pos4 showed high activity in FFCC
+
+--- round 9  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 5  parsers agree True ---
+PARSED   : ['FFCA', 'FFCA', 'FFCA', 'FFCA']
+SECONDARY: ['FFCA', 'FFCA', 'FFCA', 'FFCA']
+RAW:
+FFCA | Continue averaging to reduce measurement error  
+FFCA | Further refine estimate of mean binding activity  
+FFCA | Maximize precision for highest observed variant  
+FFCA | Confirm stability of performance before exploring neighbors
+
+--- round 3  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['FFKM']
+SECONDARY: ['FFKM']
+RAW:
+FFKM | Test viability of K at position 4, explore beyond M
+
+--- round 8  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['FFCM']
+SECONDARY: ['FFCM']
+RAW:
+FFCM | continue measuring reference to reduce error
+
+--- round 1  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['FFCM', 'FACM', 'FFAM', 'FFCA']
+SECONDARY: ['FFCM', 'FACM', 'FFAM', 'FFCA']
+RAW:
+FFCM | reference point baseline  
+FACM | single mutation A at pos2 to explore  
+FFAM | single mutation A at pos3 to explore  
+FFCA | single mutation A at pos4 to explore
+
+--- round 9  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 6  parsers agree True ---
+PARSED   : ['FFCA', 'FFCC', 'FFCM', 'FFCD']
+SECONDARY: ['FFCA', 'FFCC', 'FFCM', 'FFCD']
+RAW:
+FFCA | High activity observed in multiple measurements  
+FFCC | Moderate activity, but high variability suggests potential  
+FFCM | Baseline reference, but lower activity  
+FFCD | Not viable previously, but worth retrying for potential improvement
+
+--- round 13  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 5  parsers agree True ---
+PARSED   : ['FFCA', 'FFCD', 'FFCE', 'FFCF']
+SECONDARY: ['FFCA', 'FFCD', 'FFCE', 'FFCF']
+RAW:
+FFCA | high activity observed repeatedly  
+FFCD | explore mutation at position 4 from M to D  
+FFCE | explore mutation at position 4 from M to E  
+FFCF | explore mutation at position 4 from M to F
+
+--- round 14  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 5  parsers agree True ---
+PARSED   : ['FFCG']
+SECONDARY: ['FFCG']
+RAW:
+FFCG | explore viable variants near FFCA with high activity
+
+--- round 2  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 6  parsers agree True ---
+PARSED   : ['FFCM', 'FFAM', 'FFCY', 'FFCL']
+SECONDARY: ['FFCM', 'FFAM', 'FFCY', 'FFCL']
+RAW:
+FFCM | measure reference again for error calibration
+FFAM | measure again to confirm low activity
+FFCY | test viability after previous rejections
+FFCL | test viability after previous rejections
+
+--- round 3  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['FFCM']
+SECONDARY: ['FFCM']
+RAW:
+FFCM | Repeated measurement to reduce error on reference
+
+--- round 10  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['FCCL']
+SECONDARY: ['FCCL']
+RAW:
+FCCL | Continue testing the best performer so far (0.359 last round) to confirm stability and activity.
+
+--- round 5  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 6  parsers agree True ---
+PARSED   : ['FFCC', 'FCCC', 'FFCM', 'FFCD']
+SECONDARY: ['FFCC', 'FCCC', 'FFCM', 'FFCD']
+RAW:
+FFCC | High readings in history, promising candidate
+FCCC | Moderate activity, potential stability
+FFCM | Reference point, consistent readings
+FFCD | Test viability after repeated rejections
+
+--- round 5  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 6  parsers agree True ---
+PARSED   : ['FFCC', 'FFCM', 'FCCM', 'FFCL']
+SECONDARY: ['FFCC', 'FFCM', 'FCCM', 'FFCL']
+RAW:
+FFCC | High activity observed (~0.8), promising variant
+FFCM | Reference point, consistent readings (~0.55)
+FCCM | Low activity control, but viable and measurable
+FFCL | Test viability after previous rejection, potential new variant
+
+--- round 14  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['FFCC']
+SECONDARY: ['FFCC']
+RAW:
+FFCC | Continue measuring the highest performer so far to refine estimate and reduce error
+
+--- round 13  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 6  parsers agree True ---
+PARSED   : ['FFCC', 'FFCM', 'FFMC', 'FCCM']
+SECONDARY: ['FFCC', 'FFCM', 'FFMC', 'FCCM']
+RAW:
+FFCC | High activity observed, needs more replicates for precision  
+FFCM | Reference point, consistent baseline measurement  
+FFMC | Moderate activity, explore stability of this variant  
+FCCM | Low activity but consistent, confirm as negative control
+
+--- round 4  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['FFCC']
+SECONDARY: ['FFCC']
+RAW:
+FFCC | Building on the high reading (0.935) from the last round.
+
+--- round 6  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['FFCM']
+SECONDARY: ['FFCM']
+RAW:
+FFCM | continue measuring reference to reduce error and establish baseline
+
+--- round 9  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['FFCA', 'FFCC', 'FFAM', 'FFCM']
+SECONDARY: ['FFCA', 'FFCC', 'FFAM', 'FFCM']
+RAW:
+FFCA | high activity observed, confirm with additional measurement  
+FFCC | moderate activity, but consistent, needs more data for precision  
+FFAM | low activity baseline, but check for variability  
+FFCM | reference point, monitor for stability and measurement error
+
+--- round 8  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['FFLY']
+SECONDARY: ['FFLY']
+RAW:
+FFLY | Trying a different aromatic residue at position 4
+
+--- round 1  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['FFCM', 'FCCM', 'FCFM', 'FFCF']
+SECONDARY: ['FFCM', 'FCCM', 'FCFM', 'FFCF']
+RAW:
+FFCM | reference point baseline
+FCCM | single mutation from F to C at position 2
+FCFM | single mutation from M to F at position 4
+FFCF | single mutation from M to C at position 4

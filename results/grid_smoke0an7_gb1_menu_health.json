@@ -1,0 +1,20 @@
+{
+ "openai/gpt-6.1-sol": {
+  "calls": 80,
+  "empty": 0,
+  "malformed": 0,
+  "truncated": 0,
+  "mean_reasoning": 25.725,
+  "max_reasoning": 157,
+  "max_completion": 214
+ },
+ "google/gemini-3.1-pro-preview": {
+  "calls": 82,
+  "empty": 0,
+  "malformed": 0,
+  "truncated": 0,
+  "mean_reasoning": 254.9268292682927,
+  "max_reasoning": 903,
+  "max_completion": 940
+ }
+}

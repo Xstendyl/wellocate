@@ -1,0 +1,444 @@
+{
+ "tag": "zeronoise",
+ "campaigns": 600,
+ "cells": 15,
+ "cells_detail": [
+  {
+   "condition": "Blind",
+   "model": "claude-opus-4.7",
+   "model_id": "anthropic/claude-opus-4.7",
+   "n": 40,
+   "mean": 7.885574957685185,
+   "median": 7.951326909604183,
+   "lo": 7.78590287089408,
+   "hi": 7.981797176435737,
+   "distinct": 20.25,
+   "exploration_shortfall": 0.8764250423148162,
+   "selection_shortfall": 0.0,
+   "replication": {
+    "over slots used": 0.52625,
+    "over all 60 slots": 0.52625,
+    "excl anchor, slots used": 0.43583333333333335,
+    "excl anchor, all 60": 0.43583333333333335
+   }
+  },
+  {
+   "condition": "Blind",
+   "model": "deepseek-chat-v3.1",
+   "model_id": "deepseek/deepseek-chat-v3.1",
+   "n": 40,
+   "mean": 7.884034684712703,
+   "median": 7.951326909604183,
+   "lo": 7.8410179112429494,
+   "hi": 7.920117946641391,
+   "distinct": 6.25,
+   "exploration_shortfall": 0.877965315287297,
+   "selection_shortfall": 0.0,
+   "replication": {
+    "over slots used": 0.8804166666666666,
+    "over all 60 slots": 0.8804166666666666,
+    "excl anchor, slots used": 0.72,
+    "excl anchor, all 60": 0.72
+   }
+  },
+  {
+   "condition": "Blind",
+   "model": "gemini-2.5-flash",
+   "model_id": "google/gemini-2.5-flash",
+   "n": 40,
+   "mean": 7.7374646671048115,
+   "median": 7.686542013164922,
+   "lo": 7.705819644584163,
+   "hi": 7.769400307532312,
+   "distinct": 3.5,
+   "exploration_shortfall": 1.0245353328951894,
+   "selection_shortfall": 0.0,
+   "replication": {
+    "over slots used": 0.9291666666666667,
+    "over all 60 slots": 0.9291666666666667,
+    "excl anchor, slots used": 0.715,
+    "excl anchor, all 60": 0.715
+   }
+  },
+  {
+   "condition": "Quantitative",
+   "model": "claude-opus-4.7",
+   "model_id": "anthropic/claude-opus-4.7",
+   "n": 40,
+   "mean": 7.799115694451689,
+   "median": 7.79421210076436,
+   "lo": 7.709513943456441,
+   "hi": 7.891264256028315,
+   "distinct": 23.2,
+   "exploration_shortfall": 0.9628843055483116,
+   "selection_shortfall": 0.0,
+   "replication": {
+    "over slots used": 0.4195833333333333,
+    "over all 60 slots": 0.4195833333333333,
+    "excl anchor, slots used": 0.3358333333333333,
+    "excl anchor, all 60": 0.3358333333333333
+   }
+  },
+  {
+   "condition": "Quantitative",
+   "model": "deepseek-chat-v3.1",
+   "model_id": "deepseek/deepseek-chat-v3.1",
+   "n": 40,
+   "mean": 7.903528597209319,
+   "median": 7.951326909604183,
+   "lo": 7.872828149234729,
+   "hi": 7.931250145289889,
+   "distinct": 5.975,
+   "exploration_shortfall": 0.8584714027906813,
+   "selection_shortfall": 0.0,
+   "replication": {
+    "over slots used": 0.8879166666666667,
+    "over all 60 slots": 0.8879166666666667,
+    "excl anchor, slots used": 0.7075,
+    "excl anchor, all 60": 0.7075
+   }
+  },
+  {
+   "condition": "Quantitative",
+   "model": "gemini-2.5-flash",
+   "model_id": "google/gemini-2.5-flash",
+   "n": 40,
+   "mean": 7.979905504368386,
+   "median": 7.951326909604183,
+   "lo": 7.956277179678924,
+   "hi": 8.018527468299691,
+   "distinct": 12.4,
+   "exploration_shortfall": 0.782094495631615,
+   "selection_shortfall": 0.0,
+   "replication": {
+    "over slots used": 0.6670833333333334,
+    "over all 60 slots": 0.6670833333333334,
+    "excl anchor, slots used": 0.5416666666666666,
+    "excl anchor, all 60": 0.5416666666666666
+   }
+  },
+  {
+   "condition": "Mechanism",
+   "model": "claude-opus-4.7",
+   "model_id": "anthropic/claude-opus-4.7",
+   "n": 40,
+   "mean": 7.765030253391688,
+   "median": 7.763182334921698,
+   "lo": 7.684202472679463,
+   "hi": 7.849350081957726,
+   "distinct": 23.475,
+   "exploration_shortfall": 0.9969697466083124,
+   "selection_shortfall": 0.0,
+   "replication": {
+    "over slots used": 0.47541666666666665,
+    "over all 60 slots": 0.47541666666666665,
+    "excl anchor, slots used": 0.38375,
+    "excl anchor, all 60": 0.38375
+   }
+  },
+  {
+   "condition": "Mechanism",
+   "model": "deepseek-chat-v3.1",
+   "model_id": "deepseek/deepseek-chat-v3.1",
+   "n": 40,
+   "mean": 7.927718371313603,
+   "median": 7.951326909604183,
+   "lo": 7.904109833023023,
+   "hi": 7.945760810279934,
+   "distinct": 6.2,
+   "exploration_shortfall": 0.8342816286863975,
+   "selection_shortfall": 0.0,
+   "replication": {
+    "over slots used": 0.8808333333333334,
+    "over all 60 slots": 0.8808333333333334,
+    "excl anchor, slots used": 0.6983333333333334,
+    "excl anchor, all 60": 0.6983333333333334
+   }
+  },
+  {
+   "condition": "Mechanism",
+   "model": "gemini-2.5-flash",
+   "model_id": "google/gemini-2.5-flash",
+   "n": 40,
+   "mean": 7.976556112717135,
+   "median": 7.951326909604183,
+   "lo": 7.963074540269233,
+   "hi": 7.990815921469395,
+   "distinct": 12.325,
+   "exploration_shortfall": 0.7854438872828658,
+   "selection_shortfall": 0.0,
+   "replication": {
+    "over slots used": 0.7183333333333334,
+    "over all 60 slots": 0.7183333333333334,
+    "excl anchor, slots used": 0.5908333333333333,
+    "excl anchor, all 60": 0.5908333333333333
+   }
+  },
+  {
+   "condition": "Aggregated",
+   "model": "claude-opus-4.7",
+   "model_id": "anthropic/claude-opus-4.7",
+   "n": 40,
+   "mean": 7.710525984300394,
+   "median": 7.739839531503493,
+   "lo": 7.608721372658931,
+   "hi": 7.8184295141488676,
+   "distinct": 15.475,
+   "exploration_shortfall": 1.0514740156996065,
+   "selection_shortfall": 0.0,
+   "replication": {
+    "over slots used": 0.56,
+    "over all 60 slots": 0.56,
+    "excl anchor, slots used": 0.4658333333333333,
+    "excl anchor, all 60": 0.4658333333333333
+   }
+  },
+  {
+   "condition": "Aggregated",
+   "model": "deepseek-chat-v3.1",
+   "model_id": "deepseek/deepseek-chat-v3.1",
+   "n": 40,
+   "mean": 7.796798973115825,
+   "median": 7.728682936634227,
+   "lo": 7.747545969876164,
+   "hi": 7.8411468989989075,
+   "distinct": 4.8,
+   "exploration_shortfall": 0.9131799555033786,
+   "selection_shortfall": 0.052021071380797146,
+   "replication": {
+    "over slots used": 0.9145833333333333,
+    "over all 60 slots": 0.9145833333333333,
+    "excl anchor, slots used": 0.6404166666666666,
+    "excl anchor, all 60": 0.6404166666666666
+   }
+  },
+  {
+   "condition": "Aggregated",
+   "model": "gemini-2.5-flash",
+   "model_id": "google/gemini-2.5-flash",
+   "n": 40,
+   "mean": 7.93460424053651,
+   "median": 7.939702193330109,
+   "lo": 7.91923127792864,
+   "hi": 7.947243492360124,
+   "distinct": 8.3,
+   "exploration_shortfall": 0.8273957594634903,
+   "selection_shortfall": 0.0,
+   "replication": {
+    "over slots used": 0.8429166666666666,
+    "over all 60 slots": 0.8429166666666666,
+    "excl anchor, slots used": 0.705,
+    "excl anchor, all 60": 0.705
+   }
+  },
+  {
+   "condition": "Decision-rule",
+   "model": "claude-opus-4.7",
+   "model_id": "anthropic/claude-opus-4.7",
+   "n": 40,
+   "mean": 7.794714328715996,
+   "median": 7.773518615892611,
+   "lo": 7.698440220682333,
+   "hi": 7.89297048689643,
+   "distinct": 18.125,
+   "exploration_shortfall": 0.9672856712840044,
+   "selection_shortfall": 0.0,
+   "replication": {
+    "over slots used": 0.5870833333333333,
+    "over all 60 slots": 0.5870833333333333,
+    "excl anchor, slots used": 0.48791666666666667,
+    "excl anchor, all 60": 0.48791666666666667
+   }
+  },
+  {
+   "condition": "Decision-rule",
+   "model": "deepseek-chat-v3.1",
+   "model_id": "deepseek/deepseek-chat-v3.1",
+   "n": 40,
+   "mean": 7.850554038304166,
+   "median": 7.939702193330109,
+   "lo": 7.807392203485698,
+   "hi": 7.888646727503186,
+   "distinct": 4.75,
+   "exploration_shortfall": 0.9114459616958347,
+   "selection_shortfall": 0.0,
+   "replication": {
+    "over slots used": 0.9175,
+    "over all 60 slots": 0.9175,
+    "excl anchor, slots used": 0.6625,
+    "excl anchor, all 60": 0.6625
+   }
+  },
+  {
+   "condition": "Decision-rule",
+   "model": "gemini-2.5-flash",
+   "model_id": "google/gemini-2.5-flash",
+   "n": 40,
+   "mean": 7.757323534337756,
+   "median": 7.686542013164922,
+   "lo": 7.7248066580965515,
+   "hi": 7.7955881792693855,
+   "distinct": 3.925,
+   "exploration_shortfall": 1.0046764656622449,
+   "selection_shortfall": 0.0,
+   "replication": {
+    "over slots used": 0.9220833333333334,
+    "over all 60 slots": 0.9220833333333334,
+    "excl anchor, slots used": 0.7112499999999999,
+    "excl anchor, all 60": 0.7112499999999999
+   }
+  }
+ ],
+ "scripted_kstar_mean": 8.005659149667496,
+ "scripted_k0_mean": 7.88556713548877,
+ "paired_by_seed": true,
+ "undefined_comparator": {
+  "Quantitative|deepseek/deepseek-chat-v3.1|no noise: undefined by design": 40,
+  "Mechanism|deepseek/deepseek-chat-v3.1|no noise: undefined by design": 40,
+  "Quantitative|google/gemini-2.5-flash|no noise: undefined by design": 40,
+  "Blind|anthropic/claude-opus-4.7|no noise: undefined by design": 40,
+  "Decision-rule|google/gemini-2.5-flash|no noise: undefined by design": 40,
+  "Mechanism|anthropic/claude-opus-4.7|no noise: undefined by design": 40,
+  "Blind|deepseek/deepseek-chat-v3.1|no noise: undefined by design": 40,
+  "Aggregated|google/gemini-2.5-flash|no noise: undefined by design": 40,
+  "Aggregated|deepseek/deepseek-chat-v3.1|no noise: undefined by design": 40,
+  "Decision-rule|anthropic/claude-opus-4.7|no noise: undefined by design": 40,
+  "Decision-rule|deepseek/deepseek-chat-v3.1|no noise: undefined by design": 40,
+  "Quantitative|anthropic/claude-opus-4.7|no noise: undefined by design": 40,
+  "Mechanism|google/gemini-2.5-flash|no noise: undefined by design": 40,
+  "Aggregated|anthropic/claude-opus-4.7|no noise: undefined by design": 40,
+  "Blind|google/gemini-2.5-flash|no noise: undefined by design": 40
+ },
+ "fallbacks_excluded": 0,
+ "fallbacks_by_cell": {},
+ "contrasts_with_fallbacks": [
+  {
+   "model": "anthropic/claude-opus-4.7",
+   "contrast": "Aggregated vs Mechanism",
+   "seeds": 40,
+   "diff": -0.05450426909129413,
+   "se": 0.06538736694681055,
+   "wild_p": 0.4057297135143243
+  },
+  {
+   "model": "anthropic/claude-opus-4.7",
+   "contrast": "Decision-rule vs Mechanism",
+   "seeds": 40,
+   "diff": 0.029684075324307925,
+   "se": 0.0610861604882067,
+   "wild_p": 0.6342682865856707
+  },
+  {
+   "model": "deepseek/deepseek-chat-v3.1",
+   "contrast": "Aggregated vs Mechanism",
+   "seeds": 40,
+   "diff": -0.13091939819777815,
+   "se": 0.028385018759700106,
+   "wild_p": 4.999750012499375e-05
+  },
+  {
+   "model": "deepseek/deepseek-chat-v3.1",
+   "contrast": "Decision-rule vs Mechanism",
+   "seeds": 40,
+   "diff": -0.07716433300943715,
+   "se": 0.023467556236166146,
+   "wild_p": 0.002049897505124744
+  },
+  {
+   "model": "google/gemini-2.5-flash",
+   "contrast": "Aggregated vs Mechanism",
+   "seeds": 40,
+   "diff": -0.04195187218062437,
+   "se": 0.009306062477632698,
+   "wild_p": 0.00014999250037498125
+  },
+  {
+   "model": "google/gemini-2.5-flash",
+   "contrast": "Decision-rule vs Mechanism",
+   "seeds": 40,
+   "diff": -0.2192325783793789,
+   "se": 0.020461647724954415,
+   "wild_p": 4.999750012499375e-05
+  }
+ ],
+ "contrasts": [
+  {
+   "model": "anthropic/claude-opus-4.7",
+   "contrast": "Aggregated vs Mechanism",
+   "seeds": 40,
+   "seeds_dropped": 0,
+   "diff": -0.05450426909129413,
+   "se_paired": 0.06538736694681055,
+   "se_welch": 0.06894216699191014,
+   "corr": 0.10326137934118305,
+   "wild_p": 0.4057297135143243,
+   "paired_t_p": 0.409605492208194,
+   "welch_p": 0.4317142389982076
+  },
+  {
+   "model": "anthropic/claude-opus-4.7",
+   "contrast": "Decision-rule vs Mechanism",
+   "seeds": 40,
+   "seeds_dropped": 0,
+   "diff": 0.029684075324307925,
+   "se_paired": 0.0610861604882067,
+   "se_welch": 0.06604938462602261,
+   "corr": 0.14658517383302683,
+   "wild_p": 0.6342682865856707,
+   "paired_t_p": 0.6297304829511059,
+   "welch_p": 0.6544060756653534
+  },
+  {
+   "model": "deepseek/deepseek-chat-v3.1",
+   "contrast": "Aggregated vs Mechanism",
+   "seeds": 40,
+   "seeds_dropped": 0,
+   "diff": -0.13091939819777815,
+   "se_paired": 0.028385018759700106,
+   "se_welch": 0.026473382987992213,
+   "corr": -0.1947919515846215,
+   "wild_p": 4.999750012499375e-05,
+   "paired_t_p": 4.221212641277042e-05,
+   "welch_p": 7.443766305521249e-06
+  },
+  {
+   "model": "deepseek/deepseek-chat-v3.1",
+   "contrast": "Decision-rule vs Mechanism",
+   "seeds": 40,
+   "seeds_dropped": 0,
+   "diff": -0.07716433300943715,
+   "se_paired": 0.023467556236166146,
+   "se_welch": 0.023899192617412083,
+   "corr": 0.04315503099433267,
+   "wild_p": 0.002049897505124744,
+   "paired_t_p": 0.0021418128056447314,
+   "welch_p": 0.002025873161313533
+  },
+  {
+   "model": "google/gemini-2.5-flash",
+   "contrast": "Aggregated vs Mechanism",
+   "seeds": 40,
+   "seeds_dropped": 0,
+   "diff": -0.04195187218062437,
+   "se_paired": 0.009306062477632698,
+   "se_welch": 0.010245366622835091,
+   "corr": 0.17500958600739563,
+   "wild_p": 0.00014999250037498125,
+   "paired_t_p": 5.8320549967896504e-05,
+   "welch_p": 0.00010245232071536984
+  },
+  {
+   "model": "google/gemini-2.5-flash",
+   "contrast": "Decision-rule vs Mechanism",
+   "seeds": 40,
+   "seeds_dropped": 0,
+   "diff": -0.2192325783793789,
+   "se_paired": 0.020461647724954415,
+   "se_welch": 0.019750516715702084,
+   "corr": -0.10855632727568851,
+   "wild_p": 4.999750012499375e-05,
+   "paired_t_p": 3.49865813183217e-13,
+   "welch_p": 3.7117263737367654e-15
+  }
+ ]
+}

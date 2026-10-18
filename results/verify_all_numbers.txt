@@ -1,0 +1,164 @@
+====================================================================================
+1. LANDSCAPE PROVENANCE, recomputed from data/*.csv
+====================================================================================
+  GB1 rows                                                         160000        OK
+  GB1 pool                                                          11522        OK
+  GB1 max                                                         8.76197        OK
+  GB1 exact zeros                                                   40116        OK
+  GB1 measured-zero share vs published 19.7%                      19.7354 %      OK
+  PhoQ pool                                                         11146        OK
+  PhoQ max                                                        133.594        OK
+  PhoQ 1659th value vs published functional call                  14.1832        OK
+
+====================================================================================
+2. THE NOISE CONSTANTS, recomputed from the published read depth
+====================================================================================
+  input reads per variant                                          556.72        OK
+  selected reads per variant                                       284.92        OK
+  CV from Var(log w) = 1/n_sel + 1/n_in                           7.28423 %      OK
+  Poisson noise floor                                          0.00350976        OK
+  floor ratio for beat one to survive (1.0 / floor)                284.92 x      OK
+
+====================================================================================
+3. CONTAMINATION ENRICHMENT, recomputed from the pilot log
+====================================================================================
+  GB1 argmax is FWAA                                                    1        OK
+  campaigns                                                            20        OK
+  campaigns proposing FWAA at round 1                                  11        OK
+  observed round-1 rate                                                55 %      OK
+  chance rate for 4 draws from the pool                         0.0347162 %      OK
+  ENRICHMENT (round-1, 4-draw baseline)                           1584.28 x      OK
+  round-1 in-pool proposals                                            78        OK
+  of those, in the pool's top 10                                       11        OK
+  ENRICHMENT (top-10)                                              162.49 x      OK
+
+====================================================================================
+4. THE CLOCK, recomputed from the length logs
+====================================================================================
+  length 10: n crossed                                                  5        OK
+  length 10: mean crossing round                                      6.2        OK
+  length 15: n crossed                                                  5        OK
+  length 15: mean crossing round                                      6.2        OK
+  length 30: n crossed                                                  5        OK
+  length 30: mean crossing round                                      6.4        OK
+  Sxx                                                             1083.33        OK
+  regression slope of crossing round on length                  0.0107692        OK
+  pooled within-group sd                                          2.84019        OK
+  SE of the slope                                               0.0862911        OK
+  budget-fraction (L15 fit 0.41) distance                         4.62656 SE     OK
+  rounds-remaining (1.0) distance                                 11.4639 SE     OK
+
+====================================================================================
+5. BATCH SIZE, recomputed from the slots logs
+====================================================================================
+  slots 2: crossing round (>=0.5 threshold)                           4.5        OK
+  slots 2: measurements at crossing                                   9.5        OK
+  slots 4: crossing round (>=0.5 threshold)                           4.6        OK
+  slots 4: measurements at crossing                                  15.5        OK
+  slots 8: crossing round (>=0.5 threshold)                           2.3        OK
+  slots 8: measurements at crossing                                  17.3        OK
+
+====================================================================================
+6. MARGINS: skipped. set VERIFY_SLOW=1 to re-simulate them.
+
+====================================================================================
+7. PHOQ ROUND-1 CONTAMINATION, and TEMPERATURE-0 DETERMINISM
+====================================================================================
+  PhoQ pool size                                                    11146        OK
+  PhoQ argmax is TEMH                                                   1        OK
+  PhoQ argmax fitness                                             133.594        OK
+  PhoQ reference AVST fitness                                     3.28745        OK
+  PhoQ pool median fitness                                        6.68877        OK
+  PhoQ round-1 campaigns                                               20        OK
+  PhoQ campaigns naming TEMH                                            0        OK
+  PhoQ sigma unit (random-calibrated)                             5.80705        OK
+  GB1 one-ask rate equals the published rate                           11        OK
+  GB1 one-ask enrichment                                          1584.28 x      OK
+  [superseded] GB1 percentile, anchor included                   0.714247        OK
+  [superseded] PhoQ percentile, anchor included                  0.414185        OK
+  [superseded] difference vs 0.5 baseline                        0.300061        OK
+  [superseded] that difference in SE                              5.29626 SE     OK
+  PhoQ 95% upper bound on enrichment                              387.625 x      OK
+  mean Hamming difference (must stay small)                      0.132561        OK
+  distance-4 difference in SE (suggestive only)                   1.93127 SE     OK
+  NK confirm: campaigns per cell                                     1500        OK
+  GB1 reference margin (fixed estimator)                         0.014425        OK
+  GB1 reference SE ratio                                          4.55695 SE     OK
+  GB1 reference gap/sigma                                         1.02459        OK
+  uniform NK selection margin                                    0.031729        OK
+  uniform NK selection SE ratio                                   5.65805 SE     OK
+  uniform NK HELD-OUT margin                                    0.0329065        OK
+  uniform NK HELD-OUT SE ratio                                    5.72733 SE     OK
+  held-out ratio after 1.25x overdispersion                       4.58186 SE     OK
+  uniform NK effect size (margin/sigma)                         0.0547781        OK
+  GB1 effect size (margin/sigma)                                 0.036023        OK
+  uniform NK gap/sigma (OUTSIDE the 0.5-1.5 band)                0.217213        OK
+  replicating baselines passing neutrality                              3        OK
+  replicating baselines tested                                          3        OK
+  non-replicating baselines show EXACTLY zero margin                    0        OK
+  exponential now FAILS (was the chosen winner)                   1.15069 SE     OK
+  GB1 percentile, anchor EXCLUDED                                0.729111        OK
+  PhoQ percentile, anchor EXCLUDED (ABOVE 0.5)                   0.535239        OK
+  GB1 distance-matched null                                       0.55801        OK
+  PhoQ distance-matched null                                      0.56133        OK
+  GB1 excess over its own neighbourhood                          0.171101        OK
+  GB1 excess in SE                                                3.92977 SE     OK
+  PhoQ excess over its own neighbourhood                       -0.0260909        OK
+  PhoQ excess in SE (no excess)                                  0.895279 SE     OK
+  difference of excesses                                         0.197192        OK
+  difference of excesses in SE                                    3.76372 SE     OK
+  PhoQ n=1 posterior turning point                                108.927        OK
+  PhoQ turning point is inside the fitness range                        1        OK
+  NK uniform is monotone (no turning point)                             1        OK
+  campaigns nominating past the peak                                    0        OK
+  clock definition is >=50%                                             1        OK
+  clock slope (n=20, reparsed)                                 -0.0238462        OK
+  clock slope SE                                                 0.024763        OK
+  campaigns in the regression                                          60        OK
+  absolute clock distance                                        0.962975 SE     OK
+  pacing distance                                                 15.3662 SE     OK
+  rounds-remaining distance                                       41.3458 SE     OK
+  pacing fraction from the length-15 cell                        0.356667        OK
+  quoted estimator is campaign-level OLS                                1        OK
+  WLS on 3 cell means, slope                                   -0.0272509        OK
+  WLS on 3 cell means, SE                                       0.0265668        OK
+  re-parse audit: all crossing rounds hold                              1        OK
+  experiments audited                                                  12        OK
+  largest crossing-round shift                                        0.1        OK
+  opus47 replication, OLD parser                                  74.5505 %      OK
+  opus47 replication, NEW parser                                  73.4808 %      OK
+  opus47 old-vs-new disagreement                                  3.53261 %      OK
+  sd of nominated fitness, k=0 arm (conservative)                0.393683        OK
+  N per cell, unpaired, 2.8 SE, effect 0.06                           676        OK
+  total grid campaigns                                              10140        OK
+  projected grid cost                                             711.828 USD    OK
+  scripted k* distinct variants per campaign                      39.1575        OK
+  temperature-0 pairwise agreement                               0.264706        OK
+  repeated-prompt groups                                                4        OK
+  groups whose replies were all identical                               1        OK
+  cells with within-cell variation                                      4        OK
+  claude-opus-4.7 round-1 distinct, min                                16        OK
+  claude-opus-4.7 round-1 distinct, max                                23        OK
+  claude-opus-4.7 modal reply share                                 0.225        OK
+  deepseek-chat-v3.1 round-1 distinct, min                             21        OK
+  deepseek-chat-v3.1 round-1 distinct, max                             29        OK
+  deepseek-chat-v3.1 modal reply share                           0.175879        OK
+  gemini-2.5-flash round-1 distinct, min                                1        OK
+  gemini-2.5-flash round-1 distinct, max                                4        OK
+  gemini-2.5-flash modal reply share                                0.965        OK
+  PILOT gemini round-1 distinct, min                                    1        OK
+  PILOT gemini round-1 distinct, max                                    5        OK
+  PILOT gemini Aggregated, paired sd                             0.539243        OK
+  PILOT gemini Aggregated, unpaired sd                           0.477694        OK
+  PILOT gemini Aggregated, correlation                          -0.280165        OK
+  stage-1 N per cell, opus                                            695        OK
+  stage-1 N per cell, deepseek                                        181        OK
+  stage-1 N per cell, gemini                                          139        OK
+  pairing moves N, opus                                           20.6597 %      OK
+  pairing moves N, deepseek                                      -12.1359 %      OK
+  pairing moves N, gemini                                         23.0088 %      OK
+  reference true score, GDIF                                        6.873        OK
+  reference as stated to the agent                                   6.87        OK
+====================================================================================
+
+135 checks, 0 failures.

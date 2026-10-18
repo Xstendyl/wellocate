@@ -1,0 +1,95 @@
+{
+ "convention": "new-name orders = rejected orders + distinct candidates measured, the given starting candidate not counted; rate = rejected orders / new-name orders, a ratio of sums",
+ "agents": {
+  "campaigns": 5075,
+  "rejections_per_campaign": 16.745615763546798,
+  "distinct_per_campaign": 7.37871921182266,
+  "reference_measured_share": 0.9361576354679803,
+  "rate": 72.21617946974847,
+  "rate_counting_the_reference": 69.41379225849663
+ },
+ "policy": {
+  "campaigns": 1500,
+  "rejections_per_campaign": 83.024,
+  "distinct_per_campaign": 28.938,
+  "reference_measured_share": 0.384,
+  "rate": 74.4089336607575,
+  "rate_counting_the_reference": 74.15373073006913
+ },
+ "cells": {
+  "Aggregated|claude-opus-4.7": {
+   "campaigns": 695,
+   "rate": 73.0622781542433
+  },
+  "Aggregated|deepseek-chat-v3.1": {
+   "campaigns": 181,
+   "rate": 79.07090464547677
+  },
+  "Aggregated|gemini-2.5-flash": {
+   "campaigns": 139,
+   "rate": 85.94249201277955
+  },
+  "Blind|claude-opus-4.7": {
+   "campaigns": 695,
+   "rate": 70.23789991796555
+  },
+  "Blind|deepseek-chat-v3.1": {
+   "campaigns": 181,
+   "rate": 77.64780271893771
+  },
+  "Blind|gemini-2.5-flash": {
+   "campaigns": 139,
+   "rate": 89.02015288394719
+  },
+  "Decision-rule|claude-opus-4.7": {
+   "campaigns": 695,
+   "rate": 70.01088287307849
+  },
+  "Decision-rule|deepseek-chat-v3.1": {
+   "campaigns": 181,
+   "rate": 72.61587639850826
+  },
+  "Decision-rule|gemini-2.5-flash": {
+   "campaigns": 139,
+   "rate": 88.20704375667023
+  },
+  "Mechanism|claude-opus-4.7": {
+   "campaigns": 695,
+   "rate": 68.96001759885607
+  },
+  "Mechanism|deepseek-chat-v3.1": {
+   "campaigns": 181,
+   "rate": 75.74572127139365
+  },
+  "Mechanism|gemini-2.5-flash": {
+   "campaigns": 139,
+   "rate": 86.34285714285714
+  },
+  "Quantitative|claude-opus-4.7": {
+   "campaigns": 695,
+   "rate": 68.45544743369587
+  },
+  "Quantitative|deepseek-chat-v3.1": {
+   "campaigns": 181,
+   "rate": 83.89385991977785
+  },
+  "Quantitative|gemini-2.5-flash": {
+   "campaigns": 139,
+   "rate": 73.36554860716316
+  }
+ },
+ "cell_rate_min": 68.45544743369587,
+ "cell_rate_max": 89.02015288394719,
+ "cells_above_policy": [
+  "Aggregated|deepseek-chat-v3.1",
+  "Aggregated|gemini-2.5-flash",
+  "Blind|deepseek-chat-v3.1",
+  "Blind|gemini-2.5-flash",
+  "Decision-rule|gemini-2.5-flash",
+  "Mechanism|deepseek-chat-v3.1",
+  "Mechanism|gemini-2.5-flash",
+  "Quantitative|deepseek-chat-v3.1"
+ ],
+ "viable_hit_ratio": 1.0856843619543342,
+ "viable_hit_ratio_counting_the_reference": 1.1833896575970007
+}

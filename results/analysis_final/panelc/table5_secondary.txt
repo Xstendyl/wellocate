@@ -1,0 +1,15 @@
+TABLE 5. Secondary outcomes: the shortfall decomposition, lost slots, proposal viability.
+global best minus nominated = exploration shortfall + selection shortfall (an identity).
+Lost slots measure PROPOSAL VIABILITY and are not a simple function of exploration:
+within model, r(lost, distinct) was +0.016 opus, +0.260 deepseek, +0.331 gemini on stage 0.
+
+condition      model                     n    explor    select      lost  abandon rnd lost rej/order
+Blind          claude-opus-4.7          40    1.1367    0.1096      2.73     2.73     0.00      0.55
+Blind          gemini-2.5-flash         35    1.2318    0.1041      0.51     0.29     0.23      0.28
+Mechanism      claude-opus-4.7          40    1.2178    0.0889      2.38     2.38     0.00      0.45
+Mechanism      gemini-2.5-flash         36    1.2313    0.0698      0.69     0.25     0.44      0.19
+
+0ag NOMINATION FALLBACKS EXCLUDED from these primary figures: 9 campaign(s) -> Blind/gemini-2.5-flash 5, Mechanism/gemini-2.5-flash 4.
+A fallback is a nomination that did not parse, where campaign.py substituted best_by_mean(),
+which is exactly the Decision-rule instruction. The sensitivity keeping them is in
+summary.json under contrasts_with_fallbacks.

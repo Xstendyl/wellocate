@@ -1,0 +1,450 @@
+SPOT CHECK: raw model output beside the proposals the harness accepted.
+Sampled deterministically, 20 calls per model. Written for a human to read.
+
+====================================================================================================
+anthropic/claude-opus-4.7  (frontier)   1410 calls, showing 20
+====================================================================================================
+
+--- round 7  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['GDAR']
+SECONDARY: ['GDAR']
+RAW:
+GDAR | explore position 4 variants near best GDAN
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['GDIK']
+SECONDARY: ['GDIK']
+RAW:
+GDIK | explore position 4 neighbor to find viable improvements
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['GDHF']
+SECONDARY: ['GDHF']
+RAW:
+GDHF | vary position 3 to explore neighborhood of viable GDIF
+
+--- round 4  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['GDKF']
+SECONDARY: ['GDKF']
+RAW:
+GDKF | best score so far, re-measure to confirm and explore position 1 next
+
+--- round 5  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 9  parsers agree True ---
+PARSED   : ['GDHS', 'GDHQ', 'GHHS', 'GDHT']
+SECONDARY: ['GDHS', 'GDHQ', 'GHHS', 'GDHT']
+RAW:
+GDHS | replicate best (9.183)
+GDHQ | combine best P3=H with promising P4=Q
+GHHS | test P2=H with best P3=H, P4=S
+GDHT | explore P4=T with best P1-3
+
+--- round 9  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['GHHS', 'GDHS', 'GHIS', 'GHHP']
+SECONDARY: ['GHHS', 'GDHS', 'GHIS', 'GHHP']
+RAW:
+GHHS | best mean ~8.1, replicate for noise reduction
+GDHS | second best, replicate to confirm
+GHIS | explore pos3 I with GHH context
+GHHP | try new pos4 near S
+
+--- round 10  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['GDHS', 'GHHS', 'GDIS', 'GDHR']
+SECONDARY: ['GDHS', 'GHHS', 'GDIS', 'GDHR']
+RAW:
+GDHS | best observed mean ~8.4, resample to confirm
+GHHS | strong candidate, average many readings
+GDIS | second best region, confirm
+GDHR | try neighbor of GDHS at pos4
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['GDJE']
+SECONDARY: ['GDJE']
+RAW:
+GDJE | explore position 4 near best GDJF
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['GDAI']
+SECONDARY: ['GDAI']
+RAW:
+GDAI | explore position 4 with new letter, keeping best known GDA_ prefix
+
+--- round 3  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['GDAQ']
+SECONDARY: ['GDAQ']
+RAW:
+GDAQ | explore position 4 variants around best GDAF
+
+--- round 4  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['GDAR']
+SECONDARY: ['GDAR']
+RAW:
+GDAR | try position 4 variant, A at pos 3 looks promising
+
+--- round 6  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['GDBE']
+SECONDARY: ['GDBE']
+RAW:
+GDBE | retry promising neighbor to reduce noise
+
+--- round 10  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['GDAN']
+SECONDARY: ['GDAN']
+RAW:
+GDAN | explore pos2=D, pos3=A/B neighborhood with N at pos4
+
+--- round 10  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['GDBN']
+SECONDARY: ['GDBN']
+RAW:
+GDBN | best average so far, resample to reduce noise
+
+--- round 11  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['GDBL']
+SECONDARY: ['GDBL']
+RAW:
+GDBL | best average so far, resample to confirm
+
+--- round 7  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['GDNE']
+SECONDARY: ['GDNE']
+RAW:
+GDNE | try new pos4 letter near viable GDNF
+
+--- round 7  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['GDNG']
+SECONDARY: ['GDNG']
+RAW:
+GDNG | try new pos4 letter with strong GDN_ base
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['GDJF']
+SECONDARY: ['GDJF']
+RAW:
+GDJF | try neighbor change at position 3
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['GDAE']
+SECONDARY: ['GDAE']
+RAW:
+GDAE | explore position 4 near strong GDAF
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['GDAJ']
+SECONDARY: ['GDAJ']
+RAW:
+GDAJ | explore position 4 near best GDAF
+
+====================================================================================================
+google/gemini-2.5-flash  (mid-tier)   5584 calls, showing 20
+====================================================================================================
+
+--- round 5  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['GDIC', 'GDID', 'GDIE', 'GDIF']
+SECONDARY: ['GDIC', 'GDID', 'GDIE', 'GDIF']
+RAW:
+GDIC | Best performing candidate so far
+GDID | Explore neighbor of best
+GDIE | Explore neighbor of best
+GDIF | Explore neighbor of best
+
+--- round 3  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['GDIC']
+SECONDARY: ['GDIC']
+RAW:
+GDIC | Explore local neighborhood around GDIC, which has shown good scores
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['GDIE']
+SECONDARY: ['GDIE']
+RAW:
+GDIE | Exploring viability around GDIC, which has shown promising scores.
+
+--- round 5  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['GDIC']
+SECONDARY: ['GDIC']
+RAW:
+GDIC | explore viability of similar candidates
+
+--- round 4  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['GDIG']
+SECONDARY: ['GDIG']
+RAW:
+GDIG | Exploring a different neighbor of GDIC, hoping for viability and a higher score.
+
+--- round 9  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['GDIC', 'GDOC', 'GDNC', 'GDQC']
+SECONDARY: ['GDIC', 'GDOC', 'GDNC', 'GDQC']
+RAW:
+GDIC | Baseline exploration
+GDOC | Explore around known good
+GDNC | Explore around known good
+GDQC | Explore around known good
+
+--- round 15  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['GDIC', 'GDOC', 'GDNC', 'GDID']
+SECONDARY: ['GDIC', 'GDOC', 'GDNC', 'GDID']
+RAW:
+GDIC | Best performing candidate so far
+GDOC | Second best performing candidate
+GDNC | Third best performing candidate
+GDID | Explore a neighbor of GDIC
+
+--- round 5  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['GDIC', 'GDIE', 'GDIF', 'GDIG']
+SECONDARY: ['GDIC', 'GDIE', 'GDIF', 'GDIG']
+RAW:
+GDIC | Baseline re-evaluation
+GDIE | Explore neighbor of GDIC
+GDIF | Explore neighbor of GDIC
+GDIG | Explore neighbor of GDIC
+
+--- round 4  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['GDIC']
+SECONDARY: ['GDIC']
+RAW:
+GDIC | explore local optima around GDIC
+
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['GDIC']
+SECONDARY: ['GDIC']
+RAW:
+GDIC | Exploring a different neighbor of GDIF
+
+--- round 4  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 14  parsers agree True ---
+PARSED   : ['GDIC', 'GDJC', 'GDKC', 'GDLC']
+SECONDARY: ['GDIC', 'GDJC', 'GDKC', 'GDLC']
+RAW:
+GDIC | Best performing candidate so far, re-evaluate
+GDJC | Test a single-letter change from GDIC
+GDKC | Test a single-letter change from GDIC
+GDLC | Test a single-letter change from GDIC
+
+--- round 8  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['GDIC']
+SECONDARY: ['GDIC']
+RAW:
+GDIC | Continue exploring the most promising candidate
+
+--- round 13  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['GDIC', 'GDIC', 'GDIC', 'GDIC']
+SECONDARY: ['GDIC', 'GDIC', 'GDIC', 'GDIC']
+RAW:
+GDIC | Baseline for comparison
+GDIC | Baseline for comparison
+GDIC | Baseline for comparison
+GDIC | Baseline for comparison
+
+--- round 15  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['GDIC', 'GDIC', 'GDIC', 'GDIC']
+SECONDARY: ['GDIC', 'GDIC', 'GDIC', 'GDIC']
+RAW:
+GDIC | Best performing candidate so far
+GDIC | Best performing candidate so far
+GDIC | Best performing candidate so far
+GDIC | Best performing candidate so far
+
+--- round 4  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['GDIC']
+SECONDARY: ['GDIC']
+RAW:
+GDIC | explore around best known viable candidate
+
+--- round 9  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['GDIC', 'GDIC', 'GDIC', 'GDIC']
+SECONDARY: ['GDIC', 'GDIC', 'GDIC', 'GDIC']
+RAW:
+GDIC | Best performing candidate so far
+GDIC | Best performing candidate so far
+GDIC | Best performing candidate so far
+GDIC | Best performing candidate so far
+
+--- round 7  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['GDIC', 'GDIF', 'GDIE', 'GDID']
+SECONDARY: ['GDIC', 'GDIF', 'GDIE', 'GDID']
+RAW:
+GDIC | Best performing candidate so far
+GDIF | Reference point, good for comparison
+GDIE | Exploring a neighbor of GDIC
+GDID | Exploring another neighbor of GDIC
+
+--- round 9  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['GDIC']
+SECONDARY: ['GDIC']
+RAW:
+GDIC | explore around best known viable candidate
+
+--- round 2  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 11  parsers agree True ---
+PARSED   : ['GDIC', 'GDID', 'GDIB', 'GDIE']
+SECONDARY: ['GDIC', 'GDID', 'GDIB', 'GDIE']
+RAW:
+GDIC | Best score so far, re-evaluate
+GDID | Test D in last position
+GDIB | Test B in last position
+GDIE | Test E in last position
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['GDIF']
+SECONDARY: ['GDIF']
+RAW:
+GDIF | Re-evaluating the reference point due to previous rejections and high score
+
+====================================================================================================
+deepseek/deepseek-chat-v3.1  (open-weight)   3893 calls, showing 20
+====================================================================================================
+
+--- round 13  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['GDIJ', 'GDIH', 'GDJF', 'GDIF']
+SECONDARY: ['GDIJ', 'GDIH', 'GDJF', 'GDIF']
+RAW:
+GDIJ | Continue exploring high-scoring variant
+GDIH | Another high performer from history
+GDJF | Baseline comparison
+GDIF | Reference point for stability
+
+--- round 7  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 11  parsers agree True ---
+PARSED   : ['GDIJ', 'GDIM', 'GDIH', 'GDIN']
+SECONDARY: ['GDIJ', 'GDIM', 'GDIH', 'GDIN']
+RAW:
+GDIJ | baseline reference  
+GDIM | best so far, explore further  
+GDIH | neighbor of GDIJ, check consistency  
+GDIN | step from GDIJ in same direction as GDIM
+
+--- round 10  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['GDIJ', 'GDIF', 'GDJH', 'GDIH']
+SECONDARY: ['GDIJ', 'GDIF', 'GDJH', 'GDIH']
+RAW:
+GDIJ | Current best, need repeated measurement  
+GDIF | Baseline reference for comparison  
+GDJH | Test neighbor change at position 4  
+GDIH | Test neighbor change at position 3
+
+--- round 11  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['GDIJ', 'GDIF', 'GDJH', 'GDIH']
+SECONDARY: ['GDIJ', 'GDIF', 'GDJH', 'GDIH']
+RAW:
+GDIJ | Current best, consistent high readings  
+GDIF | Baseline reference, stable performance  
+GDJH | Explore viability after repeated rejections  
+GDIH | Alternative neighbor variation to GDIJ
+
+--- round 3  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['GDJF', 'GDIF', 'GDIJ', 'GDII']
+SECONDARY: ['GDJF', 'GDIF', 'GDIJ', 'GDII']
+RAW:
+GDJF | baseline, consistent performer  
+GDIF | reference point, stable reading  
+GDIJ | previously viable, similar to GDIF  
+GDII | test viability near GDIJ, check position 4
+
+--- round 11  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['GDIM', 'GDIC', 'GDIJ', 'GDJF']
+SECONDARY: ['GDIM', 'GDIC', 'GDIJ', 'GDJF']
+RAW:
+GDIM | continue testing current best  
+GDIC | check consistency of high performer  
+GDIJ | baseline for position 3 variation  
+GDJF | explore neighbor pair 2-3 impact
+
+--- round 15  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 9  parsers agree True ---
+PARSED   : ['GDIM', 'GDIL', 'GDIJ', 'GDIH']
+SECONDARY: ['GDIM', 'GDIL', 'GDIJ', 'GDIH']
+RAW:
+GDIM | Continue exploring position 3 with M, which has shown high readings (8.632, 8.297)
+GDIL | Further test L at position 3, as it has yielded good results (8.502, 8.277)
+GDIJ | J at position 3 has been consistently viable and often high-scoring (up to 8.836)
+GDIH | H at position 3 has shown promise (7.630, 7.662, 8.197) and warrants another measurement
+
+--- round 8  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['GDIL']
+SECONDARY: ['GDIL']
+RAW:
+GDIL | continuing exploration from the high score of 9.031 in round 7
+
+--- round 3  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['GDIC', 'GDIJ', 'GDJF', 'GDIF']
+SECONDARY: ['GDIC', 'GDIJ', 'GDJF', 'GDIF']
+RAW:
+GDIC | build on recent high score from round 2
+GDIJ | continue testing this consistent performer
+GDJF | further explore this variable candidate
+GDIF | baseline reference point for comparison
+
+--- round 8  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 6  parsers agree True ---
+PARSED   : ['GDIJ', 'GDIF', 'GDIH', 'GDJJ']
+SECONDARY: ['GDIJ', 'GDIF', 'GDIH', 'GDJJ']
+RAW:
+GDIJ | baseline high performer  
+GDIF | reference point for comparison  
+GDIH | explore neighbor of position 4  
+GDJJ | test viability and neighbor interaction
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['GDIF']
+SECONDARY: ['GDIF']
+RAW:
+GDIF | Continue exploring variations around the high-scoring baseline (7.499, 7.194)
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['GDJF']
+SECONDARY: ['GDJF']
+RAW:
+GDJF | test neighbor change from GDIF at position 4
+
+--- round 3  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['GDJF']
+SECONDARY: ['GDJF']
+RAW:
+GDJF | baseline reference to confirm stability after last round's high reading
+
+--- round 11  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['GDJF']
+SECONDARY: ['GDJF']
+RAW:
+GDJF | Continue exploring around this baseline
+
+--- round 5  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['GDIJ']
+SECONDARY: ['GDIJ']
+RAW:
+GDIJ | testing variation at position 3 after promising result of 7.700
+
+--- round 9  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 6  parsers agree True ---
+PARSED   : ['GDIJ', 'GDIH', 'GDJF', 'GDIF']
+SECONDARY: ['GDIJ', 'GDIH', 'GDJF', 'GDIF']
+RAW:
+GDIJ | Current best candidate, explore further  
+GDIH | Second best, neighbor variation  
+GDJF | Baseline for comparison  
+GDIF | Reference point stability check
+
+--- round 11  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['GDIC']
+SECONDARY: ['GDIC']
+RAW:
+GDIC | Continue testing the consistently high-scoring candidate
+
+--- round 10  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 6  parsers agree True ---
+PARSED   : ['GDKF', 'GEKF', 'GDIF', 'GDJF']
+SECONDARY: ['GDKF', 'GEKF', 'GDIF', 'GDJF']
+RAW:
+GDKF | baseline, consistently high readings  
+GEKF | explore interaction between pos2=E and pos3=K  
+GDIF | reference point, check consistency  
+GDJF | test pos3=J vs pos3=K
+
+--- round 10  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 6  parsers agree True ---
+PARSED   : ['GDIS', 'GDIQ', 'GDIT', 'GDJF']
+SECONDARY: ['GDIS', 'GDIQ', 'GDIT', 'GDJF']
+RAW:
+GDIS | continue exploring best known candidate  
+GDIQ | check consistency of high reading  
+GDIT | explore variation at position 4  
+GDJF | explore variation at position 3
+
+--- round 12  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['GDIH']
+SECONDARY: ['GDIH']
+RAW:
+GDIH | Continue with the best-performing candidate so far.

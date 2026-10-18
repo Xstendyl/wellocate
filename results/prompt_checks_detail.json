@@ -1,0 +1,117 @@
+{
+ "deepseek_provider_shares": {
+  "A": {
+   "blind": {
+    "AtlasCloud": 58.72011251758087,
+    "CoreWeave": 0.6329113924050633,
+    "DeepInfra": 39.029535864978904,
+    "SambaNova": 0.35161744022503516,
+    "SiliconFlow": 1.2658227848101267
+   },
+   "instructed": {
+    "AtlasCloud": 59.5536959553696,
+    "CoreWeave": 0.1394700139470014,
+    "DeepInfra": 39.33054393305439,
+    "Mara": 0.1394700139470014,
+    "SambaNova": 0.1394700139470014,
+    "SiliconFlow": 0.697350069735007
+   }
+  },
+  "A0": {
+   "blind": {
+    "AtlasCloud": 93.66427171783148,
+    "CoreWeave": 0.1959503592423253,
+    "DeepInfra": 5.486610058785108,
+    "Mara": 0.06531678641410843,
+    "SambaNova": 0.06531678641410843,
+    "SiliconFlow": 0.5225342913128674
+   },
+   "instructed": {
+    "AtlasCloud": 94.06332453825857,
+    "CoreWeave": 0.13192612137203166,
+    "DeepInfra": 5.211081794195251,
+    "Mara": 0.13192612137203166,
+    "SambaNova": 0.06596306068601583,
+    "SiliconFlow": 0.39577836411609496
+   }
+  },
+  "B": {
+   "blind": {
+    "AtlasCloud": 71.26436781609195,
+    "CoreWeave": 0.28735632183908044,
+    "DeepInfra": 26.724137931034484,
+    "Mara": 0.21551724137931033,
+    "SambaNova": 0.21551724137931033,
+    "SiliconFlow": 1.293103448275862
+   },
+   "instructed": {
+    "AtlasCloud": 70.99391480730223,
+    "CoreWeave": 0.2028397565922921,
+    "DeepInfra": 27.653820148749155,
+    "Mara": 0.2028397565922921,
+    "SiliconFlow": 0.9465855307640297
+   }
+  },
+  "grid": {
+   "blind": {
+    "AtlasCloud": 93.369259606373,
+    "CoreWeave": 0.09372071227741331,
+    "DeepInfra": 5.646672914714152,
+    "Novita": 0.46860356138706655,
+    "SiliconFlow": 0.4217432052483599
+   },
+   "instructed": {
+    "AtlasCloud": 95.09096159399364,
+    "CoreWeave": 0.08663008951775916,
+    "DeepInfra": 4.504764654923477,
+    "Novita": 0.23101357204735778,
+    "SiliconFlow": 0.08663008951775916
+   }
+  }
+ },
+ "panel_b_segments": {
+  "ceiling1": 40.0,
+  "ceiling2": 55.0,
+  "commit1": "3405e28",
+  "commit2": "3405e28",
+  "opus_mean_spend": 0.33006625,
+  "segment1_campaigns": 335,
+  "segment2_campaigns": 25,
+  "total": 360,
+  "unrecorded_bound": 0.6601325,
+  "workers": 3
+ },
+ "precision": {
+  "Blind|claude-opus-4.7": {
+   "half_width": 0.106774926747896,
+   "pairs": 60,
+   "sd": 0.4219770541705287
+  },
+  "Blind|deepseek-chat-v3.1": {
+   "half_width": 0.05780033634847913,
+   "pairs": 60,
+   "sd": 0.22842830620698665
+  },
+  "Blind|gemini-2.5-flash": {
+   "half_width": 0.08770439392804567,
+   "pairs": 60,
+   "sd": 0.34660985415564877
+  },
+  "Mechanism|claude-opus-4.7": {
+   "half_width": 0.11992228906706442,
+   "pairs": 60,
+   "sd": 0.473935743261033
+  },
+  "Mechanism|deepseek-chat-v3.1": {
+   "half_width": 0.05566860483835991,
+   "pairs": 60,
+   "sd": 0.22000365249547915
+  },
+  "Mechanism|gemini-2.5-flash": {
+   "half_width": 0.09521970719380762,
+   "pairs": 60,
+   "sd": 0.3763105512166975
+  }
+ },
+ "riskfree_cap": 20
+}

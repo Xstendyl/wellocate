@@ -1,0 +1,484 @@
+  key source: repdef/.env  (fingerprint 0d6f7d3f, never the key)
+  credit (launch): account $428.37, key $128.33 -> BINDING $128.33 (key), key expires 2026-10-28
+  credit check (launch): $128.33 spendable, floor $50.00 -> ok
+====================================================================================================
+GRID  NK uniform K=1 seed=1 pct=93.0  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 3 conditions x 3 models x 40 campaigns = 360 campaigns
+  ceiling $40.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    frontier     anthropic/claude-opus-4.7        released 2026-02
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+    open-weight  deepseek/deepseek-chat-v3.1      released 2025-08
+prompt facts checked: reference GDIF is viable and reads 6.8730 (stated 6.8700), pool is 7.00% of the space, example ADIF (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_bioframing_manifest.json (commit 7b0057ba)
+    frontier     anthropic/claude-opus-4.7        released 2026-02
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+    open-weight  deepseek/deepseek-chat-v3.1      released 2025-08
+canary: comparator live, differs from the mean rule on 24 of 60 scripted campaigns
+
+
+  SHUFFLED order over 360 campaigns across 9 cells (order seed 20260929)
+      BioRoleNoisy  mid-tier    seed 300001 ok 51 rep 56 ( 93%) | nom  7.7839 | distn  4 | $0.0143 cum $0.01 | 48s
+      BioRoleNoisy  mid-tier    seed 300030 ok 47 rep 48 ( 80%) | nom  7.6865 | distn  6 | $0.0194 cum $0.03 | 58s
+      BioRole       mid-tier    seed 300037 ok 51 rep 47 ( 78%) | nom  7.9397 | distn  8 | $0.0124 cum $0.05 | 43s
+      BioRole       mid-tier    seed 300036 ok 46 rep 44 ( 73%) | nom  7.7287 | distn  9 | $0.0129 cum $0.06 | 43s
+      BioRoleNoisy  frontier    seed 300001 ok 53 rep 44 ( 73%) | nom  7.3487 | distn 11 | $0.3626 cum $0.42 | 104s
+      BioRole       open-weight seed 300036 ok 50 rep 56 ( 93%) | nom  7.6865 | distn  3 | $0.0063 cum $0.43 | 166s
+      BioRoleExact  mid-tier    seed 300030 ok 45 rep 47 ( 78%) | nom  7.9397 | distn  9 | $0.0145 cum $0.44 | 54s
+      BioRoleNoisy  mid-tier    seed 300023 ok 49 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0224 cum $0.46 | 63s
+      BioRole       open-weight seed 300039 ok 50 rep 48 ( 80%) | nom  7.6865 | distn  7 | $0.0039 cum $0.47 | 132s
+      BioRoleExact  mid-tier    seed 300004 ok 51 rep 49 ( 82%) | nom  7.9513 | distn  9 | $0.0121 cum $0.48 | 45s
+      BioRole       frontier    seed 300038 ok 46 rep 39 ( 65%) | nom  7.9513 | distn 16 | $0.4066 cum $0.89 | 129s
+      BioRoleNoisy  open-weight seed 300010 ok 56 rep 55 ( 92%) | nom  7.6865 | distn  5 | $0.0116 cum $0.90 | 174s
+      BioRoleExact  mid-tier    seed 300007 ok 49 rep 43 ( 72%) | nom  7.9513 | distn 14 | $0.0154 cum $0.91 | 52s
+      BioRoleExact  mid-tier    seed 300031 ok 52 rep 44 ( 73%) | nom  8.0406 | distn 13 | $0.0219 cum $0.94 | 61s
+      BioRoleNoisy  open-weight seed 300038 ok 50 rep 54 ( 90%) | nom  7.9397 | distn  6 | $0.0050 cum $0.94 | 71s
+      BioRoleExact  mid-tier    seed 300018 ok 49 rep 55 ( 92%) | nom  7.6865 | distn  2 | $0.0164 cum $0.96 | 51s
+      BioRoleNoisy  mid-tier    seed 300021 ok 53 rep 56 ( 93%) | nom  7.6865 | distn  4 | $0.0192 cum $0.98 | 59s
+      BioRoleExact  frontier    seed 300020 ok 42 rep 34 ( 57%) | nom  7.4380 | distn 13 | $0.5580 cum $1.54 | 139s
+      BioRole       open-weight seed 300032 ok 49 rep 56 ( 93%) | nom  7.9513 | distn  4 | $0.0064 cum $1.54 | 148s
+      BioRoleExact  open-weight seed 300005 ok 46 rep 48 ( 80%) | nom  7.9513 | distn  6 | $0.0045 cum $1.55 | 129s
+      BioRoleExact  mid-tier    seed 300013 ok 54 rep 48 ( 80%) | nom  7.9513 | distn 10 | $0.0139 cum $1.56 | 54s
+      BioRoleNoisy  frontier    seed 300009 ok 47 rep 45 ( 75%) | nom  7.7287 | distn 12 | $0.2457 cum $1.81 | 77s
+      BioRole       open-weight seed 300017 ok 45 rep 47 ( 78%) | nom  7.9513 | distn  8 | $0.0040 cum $1.81 | 181s
+      BioRoleExact  frontier    seed 300013 ok 53 rep 23 ( 38%) | nom  7.7632 | distn 32 | $0.5814 cum $2.39 | 152s
+      BioRole       open-weight seed 300026 ok 49 rep 54 ( 90%) | nom  7.6865 | distn  6 | $0.0061 cum $2.40 | 120s
+      BioRole       mid-tier    seed 300015 ok 42 rep 37 ( 62%) | nom  7.9397 | distn 12 | $0.0397 cum $2.44 | 100s
+      BioRoleExact  mid-tier    seed 300020 ok 47 rep 45 ( 75%) | nom  7.9513 | distn 10 | $0.0133 cum $2.45 | 49s
+      BioRoleNoisy  open-weight seed 300005 ok 46 rep 50 ( 83%) | nom  7.6865 | distn  5 | $0.0041 cum $2.45 | 105s
+      BioRoleNoisy  frontier    seed 300022 ok 48 rep 47 ( 78%) | nom  7.1506 | distn  9 | $0.3405 cum $2.79 | 101s
+      BioRoleExact  frontier    seed 300029 ok 46 rep 26 ( 43%) | nom  8.1209 | distn 27 | $0.4024 cum $3.20 | 130s
+      BioRole       open-weight seed 300029 ok 46 rep 47 ( 78%) | nom  7.9513 | distn  8 | $0.0043 cum $3.20 | 85s
+      BioRoleNoisy  frontier    seed 300017 ok 48 rep 43 ( 72%) | nom  7.9513 | distn 15 | $0.2824 cum $3.48 | 93s
+      BioRoleNoisy  mid-tier    seed 300032 ok 51 rep 56 ( 93%) | nom  7.9397 | distn  4 | $0.0202 cum $3.50 | 57s
+      BioRoleNoisy  open-weight seed 300039 ok 50 rep 54 ( 90%) | nom  7.9513 | distn  5 | $0.0051 cum $3.51 | 82s
+      BioRoleExact  mid-tier    seed 300008 ok 50 rep 49 ( 82%) | nom  7.9513 | distn  9 | $0.0151 cum $3.52 | 58s
+      BioRoleNoisy  mid-tier    seed 300039 ok 51 rep 59 ( 98%) | nom  6.8730 | distn  1 | $0.0069 cum $3.53 | 26s
+      BioRoleExact  open-weight seed 300033 ok 48 rep 51 ( 85%) | nom  7.9513 | distn  8 | $0.0034 cum $3.53 | 116s
+      BioRoleNoisy  frontier    seed 300028 ok 40 rep 40 ( 67%) | nom  7.4380 | distn 12 | $0.4052 cum $3.94 | 111s
+      BioRoleNoisy  mid-tier    seed 300013 ok 50 rep 52 ( 87%) | nom  7.6865 | distn  4 | $0.0174 cum $3.96 | 58s
+      BioRole       frontier    seed 300015 ok 46 rep 43 ( 72%) | nom  7.3867 | distn  8 | $0.4490 cum $4.41 | 131s
+      BioRole       mid-tier    seed 300009 ok 48 rep 54 ( 90%) | nom  7.7287 | distn  6 | $0.0132 cum $4.42 | 44s
+      BioRoleExact  open-weight seed 300018 ok 44 rep 49 ( 82%) | nom  7.9513 | distn  4 | $0.0037 cum $4.42 | 109s
+      BioRoleNoisy  open-weight seed 300002 ok 53 rep 54 ( 90%) | nom  7.9513 | distn  4 | $0.0044 cum $4.43 | 72s
+      BioRoleNoisy  open-weight seed 300029 ok 53 rep 54 ( 90%) | nom  7.9397 | distn  4 | $0.0110 cum $4.44 | 142s
+      BioRole       mid-tier    seed 300026 ok 49 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0207 cum $4.46 | 66s
+      BioRoleNoisy  frontier    seed 300032 ok 50 rep 45 ( 75%) | nom  7.2642 | distn 10 | $0.3043 cum $4.76 | 92s
+      BioRoleExact  open-weight seed 300010 ok 47 rep 47 ( 78%) | nom  7.9513 | distn  5 | $0.0039 cum $4.77 | 77s
+      BioRoleExact  mid-tier    seed 300005 ok 42 rep 40 ( 67%) | nom  7.9513 | distn  9 | $0.0229 cum $4.79 | 69s
+      BioRoleExact  frontier    seed 300007 ok 51 rep 29 ( 48%) | nom  7.5251 | distn 25 | $0.4447 cum $5.23 | 134s
+      BioRoleNoisy  open-weight seed 300006 ok 50 rep 52 ( 87%) | nom  7.9397 | distn  4 | $0.0131 cum $5.25 | 138s
+      BioRoleNoisy  open-weight seed 300020 ok 49 rep 56 ( 93%) | nom  7.6865 | distn  4 | $0.0068 cum $5.25 | 108s
+      BioRoleExact  open-weight seed 300038 ok 49 rep 53 ( 88%) | nom  7.9513 | distn  7 | $0.0049 cum $5.26 | 82s
+      BioRole       frontier    seed 300008 ok 43 rep 42 ( 70%) | nom  7.2262 | distn 11 | $0.3570 cum $5.62 | 119s
+      BioRole       open-weight seed 300025 ok 48 rep 55 ( 92%) | nom  7.9513 | distn  5 | $0.0036 cum $5.62 | 102s
+      BioRoleNoisy  open-weight seed 300032 ok 48 rep 50 ( 83%) | nom  7.9513 | distn  5 | $0.0060 cum $5.63 | 85s
+      BioRoleExact  open-weight seed 300006 ok 50 rep 51 ( 85%) | nom  7.9513 | distn  7 | $0.0038 cum $5.63 | 109s
+      BioRoleNoisy  open-weight seed 300004 ok 51 rep 56 ( 93%) | nom  7.6865 | distn  4 | $0.0116 cum $5.64 | 98s
+      BioRoleExact  open-weight seed 300001 ok 48 rep 49 ( 82%) | nom  7.9513 | distn  6 | $0.0042 cum $5.65 | 87s
+      BioRoleExact  open-weight seed 300011 ok 52 rep 52 ( 87%) | nom  7.9513 | distn  8 | $0.0044 cum $5.65 | 80s
+      BioRole       mid-tier    seed 300039 ok 48 rep 54 ( 90%) | nom  7.6865 | distn  4 | $0.0197 cum $5.67 | 65s
+      BioRoleNoisy  open-weight seed 300030 ok 45 rep 55 ( 92%) | nom  7.9513 | distn  5 | $0.0089 cum $5.68 | 79s
+      BioRoleExact  frontier    seed 300011 ok 45 rep 35 ( 58%) | nom  7.7215 | distn 16 | $0.7476 cum $6.43 | 199s
+      BioRole       open-weight seed 300000 ok 46 rep 46 ( 77%) | nom  7.9513 | distn  6 | $0.0040 cum $6.43 | 56s
+      BioRoleExact  frontier    seed 300018 ok 46 rep 35 ( 58%) | nom  7.3867 | distn 18 | $0.4188 cum $6.85 | 159s
+      BioRole       open-weight seed 300028 ok 48 rep 50 ( 83%) | nom  7.9513 | distn  6 | $0.0075 cum $6.86 | 69s
+      BioRoleExact  frontier    seed 300019 ok 47 rep 36 ( 60%) | nom  7.7839 | distn 15 | $0.4402 cum $7.30 | 129s
+      BioRoleExact  frontier    seed 300026 ok 48 rep 34 ( 57%) | nom  7.6610 | distn 22 | $0.4560 cum $7.75 | 125s
+      BioRoleExact  mid-tier    seed 300025 ok 46 rep 47 ( 78%) | nom  7.9513 | distn  8 | $0.0103 cum $7.76 | 41s
+      BioRoleExact  frontier    seed 300028 ok 50 rep 28 ( 47%) | nom  7.7632 | distn 25 | $0.4490 cum $8.21 | 114s
+      BioRole       frontier    seed 300001 ok 49 rep 40 ( 67%) | nom  7.3487 | distn 12 | $0.4000 cum $8.61 | 107s
+      BioRoleExact  mid-tier    seed 300003 ok 42 rep 42 ( 70%) | nom  7.9397 | distn  9 | $0.0298 cum $8.64 | 90s
+      BioRole       open-weight seed 300009 ok 45 rep 55 ( 92%) | nom  7.9513 | distn  5 | $0.0079 cum $8.65 | 70s
+      BioRole       mid-tier    seed 300020 ok 45 rep 43 ( 72%) | nom  7.9397 | distn  8 | $0.0206 cum $8.67 | 61s
+      BioRole       frontier    seed 300033 ok 53 rep 45 ( 75%) | nom  7.6865 | distn 13 | $0.2354 cum $8.91 | 81s
+      BioRoleExact  open-weight seed 300023 ok 46 rep 49 ( 82%) | nom  7.9513 | distn  5 | $0.0041 cum $8.91 | 72s
+      BioRoleNoisy  frontier    seed 300005 ok 47 rep 42 ( 70%) | nom  7.3867 | distn 11 | $0.3746 cum $9.28 | 92s
+      BioRoleExact  mid-tier    seed 300001 ok 45 rep 41 ( 68%) | nom  7.9513 | distn 10 | $0.0116 cum $9.30 | 42s
+      BioRoleNoisy  frontier    seed 300008 ok 45 rep 40 ( 67%) | nom  6.9234 | distn 14 | $0.5130 cum $9.81 | 122s
+      BioRoleNoisy  frontier    seed 300000 ok 50 rep 48 ( 80%) | nom  8.0254 | distn 11 | $0.2212 cum $10.03 | 66s
+      BioRoleExact  mid-tier    seed 300021 ok 49 rep 55 ( 92%) | nom  7.6865 | distn  2 | $0.0304 cum $10.06 | 77s
+      BioRoleExact  mid-tier    seed 300011 ok 50 rep 47 ( 78%) | nom  7.9513 | distn  9 | $0.0088 cum $10.07 | 32s
+      BioRoleExact  frontier    seed 300035 ok 48 rep 34 ( 57%) | nom  7.3867 | distn 19 | $0.5149 cum $10.58 | 132s
+      BioRoleNoisy  frontier    seed 300036 ok 42 rep 39 ( 65%) | nom  8.5319 | distn 15 | $0.3748 cum $10.96 | 104s
+      BioRole       frontier    seed 300021 ok 46 rep 46 ( 77%) | nom  7.7165 | distn  8 | $0.3401 cum $11.30 | 89s
+      BioRoleNoisy  mid-tier    seed 300027 ok 45 rep 51 ( 85%) | nom  7.6865 | distn  3 | $0.0161 cum $11.32 | 56s
+      BioRoleExact  frontier    seed 300004 ok 53 rep 29 ( 48%) | nom  8.6171 | distn 27 | $0.3668 cum $11.68 | 96s
+      BioRoleNoisy  open-weight seed 300011 ok 53 rep 53 ( 88%) | nom  7.9513 | distn  7 | $0.0047 cum $11.69 | 57s
+      BioRoleExact  open-weight seed 300013 ok 53 rep 52 ( 87%) | nom  7.9513 | distn  7 | $0.0051 cum $11.69 | 64s
+      BioRole       frontier    seed 300028 ok 46 rep 44 ( 73%) | nom  7.2332 | distn 10 | $0.3635 cum $12.06 | 102s
+      BioRole       open-weight seed 300007 ok 48 rep 55 ( 92%) | nom  7.9513 | distn  5 | $0.0083 cum $12.06 | 114s
+      BioRoleExact  mid-tier    seed 300024 ok 52 rep 46 ( 77%) | nom  7.9513 | distn 11 | $0.0190 cum $12.08 | 60s
+      BioRole       mid-tier    seed 300023 ok 50 rep 49 ( 82%) | nom  7.9397 | distn 10 | $0.0111 cum $12.09 | 53s
+      BioRole       frontier    seed 300023 ok 48 rep 36 ( 60%) | nom  8.0406 | distn 15 | $0.5057 cum $12.60 | 121s
+      BioRoleNoisy  mid-tier    seed 300005 ok 50 rep 53 ( 88%) | nom  7.9397 | distn  6 | $0.0126 cum $12.61 | 43s
+      BioRole       frontier    seed 300027 ok 49 rep 45 ( 75%) | nom  7.9397 | distn 13 | $0.2049 cum $12.82 | 68s
+      BioRole       mid-tier    seed 300018 ok 50 rep 55 ( 92%) | nom  7.6865 | distn  2 | $0.0275 cum $12.84 | 74s
+      BioRole       frontier    seed 300009 ok 47 rep 46 ( 77%) | nom  7.7287 | distn 11 | $0.2588 cum $13.10 | 76s
+      BioRoleNoisy  mid-tier    seed 300018 ok 52 rep 59 ( 98%) | nom  6.8730 | distn  1 | $0.0066 cum $13.11 | 23s
+      BioRole       frontier    seed 300005 ok 46 rep 37 ( 62%) | nom  7.3103 | distn 14 | $0.5869 cum $13.70 | 154s
+      BioRoleExact  mid-tier    seed 300019 ok 48 rep 46 ( 77%) | nom  7.9397 | distn 11 | $0.0249 cum $13.72 | 69s
+      BioRoleExact  mid-tier    seed 300036 ok 50 rep 43 ( 72%) | nom  8.0406 | distn 14 | $0.0163 cum $13.74 | 52s
+      BioRoleNoisy  mid-tier    seed 300024 ok 51 rep 56 ( 93%) | nom  7.9397 | distn  4 | $0.0157 cum $13.75 | 51s
+      BioRoleNoisy  frontier    seed 300020 ok 50 rep 42 ( 70%) | nom  7.4371 | distn 14 | $0.4421 cum $14.20 | 108s
+      BioRole       open-weight seed 300010 ok 52 rep 54 ( 90%) | nom  7.9513 | distn  6 | $0.0063 cum $14.20 | 66s
+      BioRole       mid-tier    seed 300002 ok 50 rep 56 ( 93%) | nom  7.6865 | distn  2 | $0.0103 cum $14.21 | 38s
+      BioRoleNoisy  frontier    seed 300029 ok 44 rep 41 ( 68%) | nom  7.9513 | distn 10 | $0.2915 cum $14.50 | 82s
+      BioRoleExact  mid-tier    seed 300026 ok 48 rep 42 ( 70%) | nom  7.9513 | distn 13 | $0.0216 cum $14.53 | 64s
+      BioRoleExact  mid-tier    seed 300037 ok 44 rep 32 ( 53%) | nom  7.9513 | distn 16 | $0.0219 cum $14.55 | 73s
+      BioRoleNoisy  frontier    seed 300015 ok 45 rep 47 ( 78%) | nom  7.3670 | distn  8 | $0.4939 cum $15.04 | 113s
+      BioRoleExact  mid-tier    seed 300017 ok 42 rep 34 ( 57%) | nom  8.0406 | distn 18 | $0.0214 cum $15.06 | 66s
+      BioRoleExact  mid-tier    seed 300032 ok 41 rep 44 ( 73%) | nom  7.9513 | distn  8 | $0.0134 cum $15.08 | 46s
+      BioRoleNoisy  frontier    seed 300019 ok 45 rep 44 ( 73%) | nom  7.9513 | distn 11 | $0.3508 cum $15.43 | 97s
+      BioRoleNoisy  frontier    seed 300004 ok 53 rep 40 ( 67%) | nom  7.9397 | distn 15 | $0.3494 cum $15.78 | 88s
+      BioRoleNoisy  frontier    seed 300038 ok 46 rep 44 ( 73%) | nom  7.4371 | distn 11 | $0.4530 cum $16.23 | 108s
+      BioRoleNoisy  frontier    seed 300033 ok 51 rep 39 ( 65%) | nom  7.9513 | distn 17 | $0.3205 cum $16.55 | 93s
+      BioRoleExact  mid-tier    seed 300022 ok 51 rep 46 ( 77%) | nom  7.9397 | distn  9 | $0.0168 cum $16.57 | 54s
+      BioRoleExact  open-weight seed 300024 ok 49 rep 49 ( 82%) | nom  7.9513 | distn  7 | $0.0045 cum $16.57 | 69s
+      BioRoleNoisy  mid-tier    seed 300002 ok 46 rep 59 ( 98%) | nom  6.8730 | distn  1 | $0.0075 cum $16.58 | 28s
+      BioRole       open-weight seed 300015 ok 55 rep 55 ( 92%) | nom  7.9513 | distn  5 | $0.0075 cum $16.59 | 73s
+      BioRoleNoisy  mid-tier    seed 300038 ok 50 rep 56 ( 93%) | nom  7.6865 | distn  4 | $0.0201 cum $16.61 | 60s
+      BioRole       frontier    seed 300002 ok 46 rep 35 ( 58%) | nom  7.6372 | distn 15 | $0.4538 cum $17.06 | 117s
+      BioRoleNoisy  open-weight seed 300023 ok 50 rep 54 ( 90%) | nom  7.9513 | distn  3 | $0.0129 cum $17.07 | 92s
+      BioRole       open-weight seed 300021 ok 52 rep 57 ( 95%) | nom  7.6865 | distn  2 | $0.0151 cum $17.09 | 116s
+      BioRoleExact  mid-tier    seed 300009 ok 43 rep 43 ( 72%) | nom  7.9513 | distn 11 | $0.0244 cum $17.11 | 78s
+      BioRole       mid-tier    seed 300031 ok 39 rep 41 ( 68%) | nom  7.6865 | distn  5 | $0.0188 cum $17.13 | 64s
+      BioRole       open-weight seed 300020 ok 46 rep 56 ( 93%) | nom  7.6865 | distn  4 | $0.0070 cum $17.14 | 71s
+      BioRole       frontier    seed 300000 ok 47 rep 39 ( 65%) | nom  7.6865 | distn 16 | $0.3013 cum $17.44 | 90s
+      BioRole       frontier    seed 300019 ok 47 rep 41 ( 68%) | nom  7.1695 | distn 11 | $0.3942 cum $17.83 | 103s
+      BioRoleNoisy  mid-tier    seed 300026 ok 45 rep 49 ( 82%) | nom  7.6865 | distn  4 | $0.0215 cum $17.86 | 89s
+      BioRoleNoisy  mid-tier    seed 300010 ok 52 rep 57 ( 95%) | nom  7.9397 | distn  3 | $0.0118 cum $17.87 | 51s
+      BioRoleExact  open-weight seed 300030 ok 47 rep 50 ( 83%) | nom  7.2332 | distn  3 | $0.0103 cum $17.88 | 103s
+      BioRole       frontier    seed 300016 ok 46 rep 38 ( 63%) | nom  7.2642 | distn 15 | $0.4603 cum $18.34 | 132s
+      BioRoleExact  frontier    seed 300027 ok 50 rep 26 ( 43%) | nom  7.7632 | distn 25 | $0.5094 cum $18.85 | 132s
+      BioRoleNoisy  mid-tier    seed 300011 ok 37 rep 42 ( 70%) | nom  7.6865 | distn  4 | $0.0166 cum $18.86 | 85s
+      BioRole       open-weight seed 300022 ok 53 rep 51 ( 85%) | nom  7.4869 | distn  7 | $0.0056 cum $18.87 | 70s
+      BioRole       open-weight seed 300031 ok 54 rep 55 ( 92%) | nom  7.9513 | distn  5 | $0.0074 cum $18.88 | 76s
+      BioRole       frontier    seed 300010 ok 45 rep 43 ( 72%) | nom  7.2157 | distn  9 | $0.5916 cum $19.47 | 143s
+      BioRole       mid-tier    seed 300010 ok 53 rep 53 ( 88%) | nom  7.6865 | distn  5 | $0.0154 cum $19.48 | 54s
+      BioRole       mid-tier    seed 300021 ok 54 rep 50 ( 83%) | nom  7.9397 | distn  8 | $0.0114 cum $19.50 | 46s
+      BioRole       open-weight seed 300016 ok 53 rep 57 ( 95%) | nom  7.6865 | distn  3 | $0.0124 cum $19.51 | 96s
+      BioRoleExact  mid-tier    seed 300035 ok 48 rep 49 ( 82%) | nom  7.9513 | distn 10 | $0.0134 cum $19.52 | 48s
+      BioRole       frontier    seed 300034 ok 44 rep 42 ( 70%) | nom  7.2332 | distn  8 | $0.4465 cum $19.97 | 131s
+      BioRoleExact  open-weight seed 300029 ok 47 rep 54 ( 90%) | nom  7.9513 | distn  4 | $0.0049 cum $19.97 | 63s
+      BioRoleExact  frontier    seed 300005 ok 46 rep 27 ( 45%) | nom  7.5251 | distn 22 | $0.6539 cum $20.63 | 195s
+      BioRoleExact  frontier    seed 300016 ok 47 rep 30 ( 50%) | nom  7.7632 | distn 24 | $0.4882 cum $21.11 | 122s
+      BioRoleExact google/gemini-2.5-flash seed 300010 FAILED: transport failure on the round call to google/gemini-2.5-flash, campaign abandoned unwritten: provider reported finish_reason=error with HTTP 200 after 0 completion tokens; the call did not complete
+      BioRoleExact  open-weight seed 300035 ok 47 rep 51 ( 85%) | nom  7.9513 | distn  8 | $0.0043 cum $21.12 | 48s
+      BioRole       mid-tier    seed 300033 ok 47 rep 53 ( 88%) | nom  7.6865 | distn  4 | $0.0218 cum $21.14 | 90s
+      BioRole       mid-tier    seed 300014 ok 48 rep 50 ( 83%) | nom  7.9397 | distn  9 | $0.0107 cum $21.15 | 40s
+      BioRoleNoisy  mid-tier    seed 300000 ok 51 rep 56 ( 93%) | nom  7.6865 | distn  4 | $0.0195 cum $21.17 | 78s
+      BioRoleExact  frontier    seed 300012 ok 34 rep 26 ( 43%) | nom  7.4387 | distn 12 | $0.5768 cum $21.75 | 141s
+      BioRoleNoisy  mid-tier    seed 300003 ok 53 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0149 cum $21.76 | 65s
+      BioRoleNoisy  open-weight seed 300036 ok 54 rep 57 ( 95%) | nom  7.6865 | distn  3 | $0.0123 cum $21.78 | 92s
+      BioRoleExact  frontier    seed 300010 ok 46 rep 40 ( 67%) | nom  7.3867 | distn 12 | $0.4239 cum $22.20 | 108s
+      BioRole       open-weight seed 300004 ok 45 rep 50 ( 83%) | nom  7.6865 | distn  5 | $0.0038 cum $22.20 | 56s
+      BioRoleNoisy  mid-tier    seed 300017 ok 55 rep 55 ( 92%) | nom  7.9397 | distn  4 | $0.0166 cum $22.22 | 77s
+      BioRoleExact  frontier    seed 300030 ok 47 rep 28 ( 47%) | nom  7.6192 | distn 24 | $0.5697 cum $22.79 | 134s
+      BioRole       mid-tier    seed 300006 ok 55 rep 57 ( 95%) | nom  7.6865 | distn  2 | $0.0130 cum $22.80 | 54s
+      BioRole       mid-tier    seed 300032 ok 51 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0142 cum $22.82 | 49s
+      BioRoleNoisy  mid-tier    seed 300037 ok 52 rep 55 ( 92%) | nom  7.7839 | distn  4 | $0.0145 cum $22.83 | 48s
+      BioRoleNoisy  frontier    seed 300027 ok 49 rep 47 ( 78%) | nom  7.3867 | distn  9 | $0.3218 cum $23.15 | 100s
+      BioRoleExact  open-weight seed 300002 ok 54 rep 54 ( 90%) | nom  7.9513 | distn  6 | $0.0043 cum $23.16 | 66s
+      BioRoleNoisy  mid-tier    seed 300035 ok 52 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0183 cum $23.18 | 55s
+      BioRoleExact  mid-tier    seed 300033 ok 52 rep 44 ( 73%) | nom  7.9513 | distn 14 | $0.0158 cum $23.19 | 52s
+      BioRoleNoisy  open-weight seed 300021 ok 58 rep 54 ( 90%) | nom  7.9397 | distn  6 | $0.0052 cum $23.20 | 58s
+      BioRoleExact  open-weight seed 300036 ok 54 rep 52 ( 87%) | nom  7.9513 | distn  8 | $0.0047 cum $23.20 | 54s
+      BioRoleNoisy  frontier    seed 300003 ok 42 rep 46 ( 77%) | nom  7.3717 | distn  7 | $0.3883 cum $23.59 | 101s
+      BioRoleExact  frontier    seed 300023 ok 39 rep 27 ( 45%) | nom  7.5251 | distn 18 | $0.6783 cum $24.27 | 150s
+      BioRoleExact  frontier    seed 300036 ok 47 rep 29 ( 48%) | nom  7.5854 | distn 20 | $0.4944 cum $24.76 | 129s
+      BioRole       frontier    seed 300014 ok 48 rep 41 ( 68%) | nom  7.9397 | distn 15 | $0.2857 cum $25.05 | 85s
+      BioRoleExact google/gemini-2.5-flash seed 300015 FAILED: transport failure on the round call to google/gemini-2.5-flash, campaign abandoned unwritten: provider reported finish_reason=error with HTTP 200 after 0 completion tokens; the call did not complete
+      BioRole       mid-tier    seed 300004 ok 55 rep 48 ( 80%) | nom  7.9397 | distn 10 | $0.0174 cum $25.06 | 70s
+      BioRoleNoisy  open-weight seed 300034 ok 48 rep 52 ( 87%) | nom  7.1715 | distn  6 | $0.0048 cum $25.07 | 57s
+      BioRole       frontier    seed 300006 ok 49 rep 47 ( 78%) | nom  7.2332 | distn  9 | $0.3206 cum $25.39 | 92s
+      BioRole       frontier    seed 300022 ok 45 rep 46 ( 77%) | nom  7.2788 | distn  9 | $0.3627 cum $25.75 | 97s
+      BioRole       open-weight seed 300038 ok 46 rep 54 ( 90%) | nom  7.2332 | distn  5 | $0.0043 cum $25.76 | 53s
+      BioRole       frontier    seed 300007 ok 42 rep 36 ( 60%) | nom  7.1695 | distn 13 | $0.4270 cum $26.18 | 124s
+      BioRoleExact  open-weight seed 300014 ok 52 rep 54 ( 90%) | nom  7.9513 | distn  5 | $0.0098 cum $26.19 | 89s
+      BioRole       mid-tier    seed 300027 ok 46 rep 56 ( 93%) | nom  7.6865 | distn  2 | $0.0227 cum $26.22 | 66s
+      BioRoleExact  open-weight seed 300017 ok 54 rep 55 ( 92%) | nom  7.9397 | distn  4 | $0.0143 cum $26.23 | 111s
+      BioRoleNoisy  frontier    seed 300016 ok 45 rep 42 ( 70%) | nom  7.4380 | distn 13 | $0.4248 cum $26.66 | 106s
+      BioRoleNoisy  mid-tier    seed 300036 ok 47 rep 56 ( 93%) | nom  7.9397 | distn  4 | $0.0163 cum $26.67 | 53s
+      BioRole       mid-tier    seed 300016 ok 52 rep 54 ( 90%) | nom  7.9397 | distn  5 | $0.0136 cum $26.69 | 45s
+      BioRoleNoisy  open-weight seed 300026 ok 46 rep 56 ( 93%) | nom  7.6865 | distn  4 | $0.0113 cum $26.70 | 92s
+      BioRole       frontier    seed 300039 ok 48 rep 43 ( 72%) | nom  7.3867 | distn 11 | $0.3594 cum $27.06 | 104s
+      BioRoleNoisy  frontier    seed 300037 ok 46 rep 31 ( 52%) | nom  8.5319 | distn 21 | $0.3340 cum $27.39 | 90s
+      BioRoleNoisy  frontier    seed 300030 ok 43 rep 44 ( 73%) | nom  7.2332 | distn 11 | $0.4081 cum $27.80 | 126s
+      BioRoleExact  frontier    seed 300002 ok 50 rep 30 ( 50%) | nom  7.5251 | distn 24 | $0.4469 cum $28.25 | 113s
+      BioRoleExact  open-weight seed 300015 ok 52 rep 57 ( 95%) | nom  7.6865 | distn  3 | $0.0147 cum $28.26 | 118s
+      BioRoleNoisy  frontier    seed 300031 ok 42 rep 33 ( 55%) | nom  7.9397 | distn 12 | $0.3557 cum $28.62 | 105s
+      BioRole       open-weight seed 300034 ok 47 rep 51 ( 85%) | nom  7.1715 | distn  6 | $0.0041 cum $28.62 | 46s
+      BioRoleNoisy  open-weight seed 300008 ok 45 rep 55 ( 92%) | nom  7.9397 | distn  5 | $0.0077 cum $28.63 | 88s
+      BioRoleNoisy  frontier    seed 300024 ok 48 rep 43 ( 72%) | nom  7.5854 | distn 11 | $0.4308 cum $29.06 | 107s
+      BioRoleExact  frontier    seed 300017 ok 49 rep 30 ( 50%) | nom  7.7632 | distn 23 | $0.4842 cum $29.54 | 119s
+      BioRoleNoisy  frontier    seed 300007 ok 51 rep 48 ( 80%) | nom  7.4380 | distn  8 | $0.3457 cum $29.89 | 90s
+      BioRole       mid-tier    seed 300012 ok 48 rep 45 ( 75%) | nom  7.9513 | distn 10 | $0.0224 cum $29.91 | 77s
+      BioRoleNoisy  frontier    seed 300025 ok 47 rep 43 ( 72%) | nom  7.4586 | distn 12 | $0.4170 cum $30.33 | 109s
+      BioRole       mid-tier    seed 300008 ok 47 rep 49 ( 82%) | nom  7.6865 | distn  9 | $0.0140 cum $30.34 | 60s
+      BioRole google/gemini-2.5-flash seed 300019 FAILED: transport failure on the round call to google/gemini-2.5-flash, campaign abandoned unwritten: provider reported finish_reason=error with HTTP 200 after 0 completion tokens; the call did not complete
+      BioRoleExact  open-weight seed 300004 ok 45 rep 50 ( 83%) | nom  7.9513 | distn  5 | $0.0040 cum $30.35 | 45s
+      BioRoleExact  open-weight seed 300022 ok 50 rep 53 ( 88%) | nom  7.9513 | distn  5 | $0.0089 cum $30.35 | 83s
+      BioRoleExact  frontier    seed 300001 ok 43 rep 29 ( 48%) | nom  7.7908 | distn 23 | $0.6264 cum $30.98 | 138s
+      BioRoleExact  mid-tier    seed 300006 ok 49 rep 47 ( 78%) | nom  7.9513 | distn  9 | $0.0129 cum $30.99 | 54s
+      BioRoleNoisy  frontier    seed 300021 ok 48 rep 39 ( 65%) | nom  7.3214 | distn 15 | $0.3107 cum $31.30 | 88s
+      BioRoleNoisy  frontier    seed 300013 ok 51 rep 42 ( 70%) | nom  7.9397 | distn 13 | $0.3398 cum $31.64 | 91s
+      BioRoleExact  frontier    seed 300021 ok 48 rep 32 ( 53%) | nom  8.1209 | distn 21 | $0.3846 cum $32.03 | 105s
+      BioRole       mid-tier    seed 300000 ok 50 rep 48 ( 80%) | nom  7.9513 | distn 10 | $0.0149 cum $32.04 | 56s
+      BioRole       frontier    seed 300020 ok 44 rep 38 ( 63%) | nom  7.3867 | distn 13 | $0.5289 cum $32.57 | 126s
+      BioRoleNoisy  mid-tier    seed 300034 ok 50 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0162 cum $32.59 | 51s
+      BioRoleExact google/gemini-2.5-flash seed 300012 FAILED: transport failure on the round call to google/gemini-2.5-flash, campaign abandoned unwritten: provider reported finish_reason=error with HTTP 200 after 0 completion tokens; the call did not complete
+      BioRole google/gemini-2.5-flash seed 300038 FAILED: transport failure on the round call to google/gemini-2.5-flash, campaign abandoned unwritten: provider reported finish_reason=error with HTTP 200 after 0 completion tokens; the call did not complete
+      BioRoleNoisy  frontier    seed 300011 ok 47 rep 47 ( 78%) | nom  7.4380 | distn  8 | $0.3482 cum $32.94 | 91s
+      BioRoleExact  frontier    seed 300024 ok 50 rep 18 ( 30%) | nom  8.3969 | distn 32 | $0.4783 cum $33.42 | 130s
+      BioRole       open-weight seed 300011 ok 46 rep 46 ( 77%) | nom  7.9513 | distn  6 | $0.0063 cum $33.42 | 74s
+      BioRoleNoisy  open-weight seed 300000 ok 51 rep 53 ( 88%) | nom  7.9513 | distn  5 | $0.0115 cum $33.43 | 136s
+      BioRole       mid-tier    seed 300029 ok 50 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0135 cum $33.45 | 46s
+      BioRoleNoisy  open-weight seed 300016 ok 53 rep 57 ( 95%) | nom  7.6865 | distn  3 | $0.0133 cum $33.46 | 127s
+      BioRoleExact  frontier    seed 300000 ok 50 rep 34 ( 57%) | nom  7.4380 | distn 20 | $0.4547 cum $33.91 | 127s
+      BioRole       frontier    seed 300017 ok 49 rep 41 ( 68%) | nom  7.9513 | distn 18 | $0.2603 cum $34.18 | 99s
+      BioRole       frontier    seed 300026 ok 48 rep 40 ( 67%) | nom  7.3743 | distn 13 | $0.4237 cum $34.60 | 114s
+      BioRoleExact  mid-tier    seed 300038 ok 34 rep 37 ( 62%) | nom  7.2100 | distn  5 | $0.0196 cum $34.62 | 77s
+      BioRoleExact  mid-tier    seed 300002 ok 47 rep 44 ( 73%) | nom  7.9513 | distn 10 | $0.0266 cum $34.65 | 88s
+      BioRoleExact  open-weight seed 300019 ok 47 rep 52 ( 87%) | nom  7.6865 | distn  5 | $0.0109 cum $34.66 | 172s
+      BioRoleExact  open-weight seed 300003 ok 47 rep 51 ( 85%) | nom  7.6865 | distn  4 | $0.0079 cum $34.66 | 139s
+      BioRoleNoisy  mid-tier    seed 300031 ok 51 rep 59 ( 98%) | nom  6.8730 | distn  1 | $0.0066 cum $34.67 | 25s
+      BioRoleExact  open-weight seed 300000 ok 49 rep 54 ( 90%) | nom  7.9513 | distn  5 | $0.0079 cum $34.68 | 133s
+      BioRoleExact  mid-tier    seed 300028 ok 44 rep 44 ( 73%) | nom  7.9513 | distn  8 | $0.0176 cum $34.70 | 57s
+      BioRoleNoisy  open-weight seed 300007 ok 47 rep 54 ( 90%) | nom  7.5162 | distn  5 | $0.0116 cum $34.71 | 98s
+      BioRoleNoisy  frontier    seed 300010 ok 49 rep 44 ( 73%) | nom  7.9513 | distn 12 | $0.3185 cum $35.03 | 90s
+      BioRoleNoisy  mid-tier    seed 300016 ok 34 rep 37 ( 62%) | nom  7.6865 | distn  2 | $0.0165 cum $35.04 | 81s
+      BioRoleNoisy  open-weight seed 300012 ok 52 rep 57 ( 95%) | nom  7.6865 | distn  3 | $0.0129 cum $35.06 | 97s
+      BioRoleExact  open-weight seed 300034 ok 43 rep 51 ( 85%) | nom  7.9513 | distn  7 | $0.0055 cum $35.06 | 193s
+      BioRole       frontier    seed 300031 ok 48 rep 32 ( 53%) | nom  8.6171 | distn 21 | $0.3211 cum $35.38 | 92s
+      BioRoleExact  mid-tier    seed 300034 ok 50 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0105 cum $35.39 | 38s
+      BioRole       frontier    seed 300029 ok 45 rep 41 ( 68%) | nom  7.3202 | distn 11 | $0.4806 cum $35.87 | 124s
+      BioRoleExact  open-weight seed 300028 ok 47 rep 52 ( 87%) | nom  7.9513 | distn  7 | $0.0038 cum $35.88 | 100s
+      BioRoleNoisy  open-weight seed 300024 ok 52 rep 56 ( 93%) | nom  7.9397 | distn  4 | $0.0125 cum $35.89 | 96s
+      BioRoleNoisy  open-weight seed 300035 ok 52 rep 57 ( 95%) | nom  7.6865 | distn  3 | $0.0128 cum $35.90 | 92s
+      BioRoleExact google/gemini-2.5-flash seed 300023 FAILED: transport failure on the round call to google/gemini-2.5-flash, campaign abandoned unwritten: provider reported finish_reason=error with HTTP 200 after 0 completion tokens; the call did not complete
+      BioRole       frontier    seed 300037 ok 46 rep 45 ( 75%) | nom  7.2332 | distn 10 | $0.3708 cum $36.27 | 103s
+      BioRoleNoisy  mid-tier    seed 300020 ok 43 rep 47 ( 78%) | nom  7.2100 | distn  4 | $0.0191 cum $36.29 | 57s
+      BioRole       open-weight seed 300001 ok 49 rep 56 ( 93%) | nom  7.6865 | distn  4 | $0.0113 cum $36.30 | 163s
+      BioRoleExact  open-weight seed 300016 ok 50 rep 53 ( 88%) | nom  7.9513 | distn  5 | $0.0094 cum $36.31 | 136s
+      BioRole       open-weight seed 300030 ok 45 rep 54 ( 90%) | nom  7.9513 | distn  6 | $0.0083 cum $36.32 | 137s
+      BioRoleNoisy  open-weight seed 300018 ok 52 rep 54 ( 90%) | nom  7.9513 | distn  6 | $0.0053 cum $36.33 | 53s
+      BioRole       mid-tier    seed 300003 ok 49 rep 53 ( 88%) | nom  7.6865 | distn  4 | $0.0240 cum $36.35 | 68s
+      BioRoleNoisy  open-weight seed 300003 ok 52 rep 57 ( 95%) | nom  7.6865 | distn  3 | $0.0133 cum $36.36 | 122s
+      BioRole       mid-tier    seed 300028 ok 47 rep 47 ( 78%) | nom  7.9513 | distn  8 | $0.0121 cum $36.38 | 48s
+      BioRoleExact  frontier    seed 300014 ok 44 rep 24 ( 40%) | nom  7.6610 | distn 25 | $0.5494 cum $36.93 | 149s
+      BioRoleExact  open-weight seed 300009 ok 48 rep 56 ( 93%) | nom  7.6865 | distn  3 | $0.0212 cum $36.95 | 236s
+      BioRole       frontier    seed 300036 ok 44 rep 36 ( 60%) | nom  7.6610 | distn 15 | $0.4336 cum $37.38 | 117s
+      BioRoleNoisy  open-weight seed 300031 ok 50 rep 56 ( 93%) | nom  7.9397 | distn  4 | $0.0111 cum $37.39 | 87s
+      BioRole       mid-tier    seed 300017 ok 48 rep 47 ( 78%) | nom  7.9513 | distn  8 | $0.0114 cum $37.40 | 44s
+      BioRoleNoisy  mid-tier    seed 300019 ok 35 rep 41 ( 68%) | nom  7.6865 | distn  3 | $0.0149 cum $37.42 | 55s
+      BioRoleNoisy  mid-tier    seed 300014 ok 50 rep 51 ( 85%) | nom  7.9397 | distn  8 | $0.0153 cum $37.43 | 49s
+      BioRoleExact  mid-tier    seed 300016 ok 48 rep 35 ( 58%) | nom  7.9513 | distn 17 | $0.0320 cum $37.46 | 88s
+      BioRoleNoisy  mid-tier    seed 300033 ok 54 rep 50 ( 83%) | nom  7.9397 | distn 10 | $0.0140 cum $37.48 | 46s
+      BioRoleExact  mid-tier    seed 300039 ok 47 rep 42 ( 70%) | nom  7.9513 | distn 15 | $0.0154 cum $37.49 | 52s
+      BioRoleNoisy  open-weight seed 300025 ok 46 rep 53 ( 88%) | nom  7.9513 | distn  3 | $0.0101 cum $37.50 | 76s
+      BioRoleNoisy  open-weight seed 300014 ok 51 rep 53 ( 88%) | nom  7.9513 | distn  6 | $0.0043 cum $37.51 | 46s
+      BioRole       open-weight seed 300003 ok 47 rep 50 ( 83%) | nom  7.9513 | distn  6 | $0.0045 cum $37.51 | 87s
+      BioRoleNoisy  open-weight seed 300013 ok 54 rep 57 ( 95%) | nom  7.6865 | distn  3 | $0.0117 cum $37.52 | 105s
+      BioRole       open-weight seed 300033 ok 52 rep 55 ( 92%) | nom  7.9513 | distn  5 | $0.0033 cum $37.53 | 77s
+      BioRole       open-weight seed 300019 ok 49 rep 56 ( 93%) | nom  7.9513 | distn  4 | $0.0108 cum $37.54 | 133s
+      BioRoleExact  open-weight seed 300012 ok 44 rep 44 ( 73%) | nom  7.9513 | distn  8 | $0.0035 cum $37.54 | 80s
+      BioRoleExact  open-weight seed 300026 ok 51 rep 55 ( 92%) | nom  7.9513 | distn  5 | $0.0031 cum $37.55 | 71s
+      BioRole       frontier    seed 300018 ok 43 rep 40 ( 67%) | nom  7.3743 | distn 13 | $0.4491 cum $37.99 | 122s
+      BioRoleExact  frontier    seed 300008 ok 45 rep 28 ( 47%) | nom  7.5854 | distn 22 | $0.6845 cum $38.68 | 164s
+      BioRoleExact  open-weight seed 300032 ok 50 rep 52 ( 87%) | nom  7.9513 | distn  8 | $0.0033 cum $38.68 | 66s
+      BioRoleNoisy  frontier    seed 300035 ok 45 rep 48 ( 80%) | nom  7.6865 | distn  8 | $0.4040 cum $39.09 | 106s
+      BioRole       open-weight seed 300012 ok 50 rep 55 ( 92%) | nom  7.9513 | distn  5 | $0.0079 cum $39.09 | 98s
+      BioRole       open-weight seed 300037 ok 50 rep 48 ( 80%) | nom  7.9513 | distn  7 | $0.0041 cum $39.10 | 80s
+      BioRoleNoisy  open-weight seed 300001 ok 49 rep 56 ( 93%) | nom  7.5162 | distn  4 | $0.0098 cum $39.11 | 87s
+      BioRoleExact  open-weight seed 300021 ok 54 rep 54 ( 90%) | nom  7.9513 | distn  5 | $0.0031 cum $39.11 | 65s
+      BioRoleExact  open-weight seed 300008 ok 50 rep 53 ( 88%) | nom  7.9513 | distn  6 | $0.0041 cum $39.12 | 58s
+      BioRoleExact  frontier    seed 300003 ok 36 rep 25 ( 42%) | nom  7.4173 | distn 19 | $0.7565 cum $39.87 | 184s
+      BioRoleNoisy  frontier    seed 300006 ok 42 rep 42 ( 70%) | nom  7.3743 | distn  9 | $0.4290 cum $40.30 | 126s
+      CEILING STOP at $40.30
+
+  NOMINATION CALLS: 271, of which 271 carry a two-parser comparison, 271 agree
+
+  TWO-PARSER CHECK over 11198 ROUND calls (nomination calls above)
+    GENUINE disagreement (both read, and differ)         1  0.01%
+    by design (primary refused the count, spent none)   71  0.63%
+  DISAGREEING CALLS, first 5:
+    round 5 status ok tier pipe | primary ['GDAM', 'GDAI', 'GEAN', 'GFAN'] | secondary ['GDAI', 'GEAN', 'GFAN']
+  spot check written: /Users/<name>/projects/repdef/results/grid_bioframing_spotcheck.txt
+  call log archived: 3 cells, 11469 lines (11469 new, 0 carried, 0 untouched, 0 replaced), 1.5 MB, all verified True
+  plain call log removed after verification: grid_bioframing_calls.jsonl
+
+====================================================================================================
+SUMMARY   bioframing
+====================================================================================================
+  VARIANCES AND HEALTH ONLY. The primary outcome by condition is NOT printed here; see
+  scripts/stage1_variance.py for the sizing inputs and the final analysis script for means.
+  (scripted reference for later use: k*=1 at 8.0057, k=0 at 7.8856)
+  condition     role          n | sd(nominated) sd(distinct) |   distn | rep of budget | $/campaign
+  BioRole       frontier     30 |        0.3452      3.1265 |    12.5 |         68.2%     0.3926
+  BioRole       mid-tier     27 |        0.1278      3.2428 |     6.1 |         84.2%     0.0170
+  BioRole       open-weight  29 |        0.2176      1.4168 |     5.3 |         87.9%     0.0066
+  BioRoleExact  frontier     28 |        0.3015      5.1664 |    21.6 |         49.2%     0.5229
+  BioRoleExact  mid-tier     32 |        0.1535      3.9329 |    10.1 |         74.4%     0.0181
+  BioRoleExact  open-weight  33 |        0.1478      1.5865 |     5.7 |         86.2%     0.0064
+  BioRoleNoisy  frontier     32 |        0.3753      3.0079 |    11.7 |         71.3%     0.3657
+  BioRoleNoisy  mid-tier     29 |        0.3447      2.0251 |     3.6 |         89.0%     0.0156
+  BioRoleNoisy  open-weight  31 |        0.1883      1.1482 |     4.4 |         90.9%     0.0092
+
+  TOTAL SPEND $40.3009 over 11469 calls, 271 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls       empty     malformed       trunc  mean rsn   max rsn
+  anthropic/claude-opus-4.7        4433     0  0.0%     13   0.3%     0  0.0%         0         0
+  google/gemini-2.5-flash          4070     0  0.0%     89   2.2%     0  0.0%         0         0
+  deepseek/deepseek-chat-v3.1      2966     0  0.0%     52   1.8%     0  0.0%         0         0
+
+  No empty and no truncated responses on any model at max_tokens=6000.
+  key source: repdef/.env  (fingerprint 0d6f7d3f, never the key)
+  credit (launch): account $386.56, key $86.64 -> BINDING $86.64 (key), key expires 2026-10-28
+  credit check (launch): $86.64 spendable, floor $50.00 -> ok
+====================================================================================================
+GRID  NK uniform K=1 seed=1 pct=93.0  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 3 conditions x 3 models x 40 campaigns = 360 campaigns
+  ceiling $58.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    frontier     anthropic/claude-opus-4.7        released 2026-02
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+    open-weight  deepseek/deepseek-chat-v3.1      released 2025-08
+prompt facts checked: reference GDIF is viable and reads 6.8730 (stated 6.8700), pool is 7.00% of the space, example ADIF (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_bioframing_manifest.json (commit 58e7bafa)
+    frontier     anthropic/claude-opus-4.7        released 2026-02
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+    open-weight  deepseek/deepseek-chat-v3.1      released 2025-08
+canary: comparator live, differs from the mean rule on 24 of 60 scripted campaigns
+
+resuming: 271 campaigns already on disk, $40.3009 already spent
+
+  SHUFFLED order over 89 campaigns across 9 cells (order seed 20260929)
+      BioRoleExact  mid-tier    seed 300010 ok 46 rep 39 ( 65%) | nom  7.9513 | distn 12 | $0.0186 cum $40.32 | 61s
+      BioRoleExact  mid-tier    seed 300015 ok 47 rep 48 ( 80%) | nom  7.9513 | distn  9 | $0.0203 cum $40.34 | 62s
+      BioRole       mid-tier    seed 300019 ok 41 rep 42 ( 70%) | nom  7.6865 | distn  6 | $0.0273 cum $40.37 | 76s
+      BioRoleExact  mid-tier    seed 300023 ok 49 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0098 cum $40.38 | 36s
+      BioRole       mid-tier    seed 300038 ok 43 rep 50 ( 83%) | nom  7.6865 | distn  3 | $0.0254 cum $40.40 | 72s
+      BioRoleExact  mid-tier    seed 300012 ok 46 rep 41 ( 68%) | nom  7.9397 | distn 11 | $0.0295 cum $40.43 | 75s
+      BioRoleNoisy  mid-tier    seed 300006 ok 42 rep 41 ( 68%) | nom  7.6865 | distn  5 | $0.0199 cum $40.45 | 62s
+      BioRole       open-weight seed 300014 ok 49 rep 51 ( 85%) | nom  7.9513 | distn  5 | $0.0066 cum $40.46 | 78s
+      BioRoleExact  open-weight seed 300027 ok 53 rep 54 ( 90%) | nom  7.9513 | distn  4 | $0.0114 cum $40.47 | 94s
+      BioRoleNoisy  open-weight seed 300033 ok 52 rep 56 ( 93%) | nom  7.9397 | distn  4 | $0.0090 cum $40.48 | 103s
+      BioRoleExact  mid-tier    seed 300000 ok 48 rep 47 ( 78%) | nom  7.9513 | distn  9 | $0.0152 cum $40.49 | 50s
+      BioRoleExact  frontier    seed 300009 ok 41 rep 27 ( 45%) | nom  7.4380 | distn 20 | $0.7916 cum $41.29 | 198s
+      BioRoleNoisy  open-weight seed 300037 ok 55 rep 52 ( 87%) | nom  7.9513 | distn  7 | $0.0046 cum $41.29 | 68s
+      BioRoleNoisy  open-weight seed 300009 ok 49 rep 56 ( 93%) | nom  7.9397 | distn  4 | $0.0131 cum $41.30 | 112s
+      BioRole       frontier    seed 300012 ok 48 rep 36 ( 60%) | nom  7.9513 | distn 20 | $0.2824 cum $41.59 | 99s
+      BioRole       mid-tier    seed 300030 ok 49 rep 51 ( 85%) | nom  7.9397 | distn  8 | $0.0106 cum $41.60 | 37s
+      BioRole       mid-tier    seed 300025 ok 52 rep 55 ( 92%) | nom  7.6865 | distn  4 | $0.0187 cum $41.61 | 59s
+      BioRole       mid-tier    seed 300035 ok 52 rep 55 ( 92%) | nom  7.6865 | distn  5 | $0.0099 cum $41.62 | 34s
+      BioRoleExact  frontier    seed 300006 ok 45 rep 26 ( 43%) | nom  7.7139 | distn 22 | $0.6018 cum $42.23 | 161s
+      BioRole       open-weight seed 300023 ok 46 rep 53 ( 88%) | nom  7.6865 | distn  5 | $0.0041 cum $42.23 | 47s
+      BioRoleNoisy  mid-tier    seed 300015 ok 50 rep 50 ( 83%) | nom  7.9397 | distn 10 | $0.0119 cum $42.24 | 42s
+      BioRoleExact  frontier    seed 300033 ok 48 rep 33 ( 55%) | nom  7.3867 | distn 20 | $0.4988 cum $42.74 | 144s
+      BioRoleExact  mid-tier    seed 300014 ok 46 rep 46 ( 77%) | nom  7.9513 | distn 10 | $0.0137 cum $42.76 | 53s
+      BioRole       frontier    seed 300025 ok 48 rep 46 ( 77%) | nom  7.4380 | distn  9 | $0.4189 cum $43.17 | 145s
+      BioRoleNoisy  frontier    seed 300023 ok 47 rep 46 ( 77%) | nom  7.2642 | distn  9 | $0.5172 cum $43.69 | 138s
+      BioRoleExact  frontier    seed 300038 ok 47 rep 30 ( 50%) | nom  7.7215 | distn 22 | $0.6114 cum $44.30 | 176s
+      BioRoleExact  frontier    seed 300032 ok 43 rep 27 ( 45%) | nom  7.6828 | distn 23 | $0.5954 cum $44.90 | 164s
+      BioRole       frontier    seed 300032 ok 53 rep 44 ( 73%) | nom  7.2642 | distn 12 | $0.3368 cum $45.23 | 106s
+      BioRole       mid-tier    seed 300034 ok 49 rep 54 ( 90%) | nom  7.9397 | distn  4 | $0.0131 cum $45.25 | 44s
+      BioRole       mid-tier    seed 300022 ok 49 rep 45 ( 75%) | nom  7.7287 | distn  9 | $0.0207 cum $45.27 | 69s
+      BioRoleExact  frontier    seed 300022 ok 44 rep 31 ( 52%) | nom  7.7908 | distn 22 | $0.5714 cum $45.84 | 149s
+      BioRoleNoisy  mid-tier    seed 300022 ok 55 rep 59 ( 98%) | nom  6.8730 | distn  1 | $0.0057 cum $45.85 | 22s
+      BioRoleExact  frontier    seed 300025 ok 43 rep 25 ( 42%) | nom  7.8783 | distn 25 | $0.8800 cum $46.73 | 201s
+      BioRoleNoisy  frontier    seed 300014 ok 46 rep 43 ( 72%) | nom  7.9397 | distn 12 | $0.2569 cum $46.98 | 92s
+      BioRole       frontier    seed 300011 ok 49 rep 47 ( 78%) | nom  7.3743 | distn  9 | $0.3306 cum $47.31 | 109s
+      BioRoleNoisy  frontier    seed 300034 ok 43 rep 38 ( 63%) | nom  7.3670 | distn 11 | $0.4260 cum $47.74 | 119s
+      BioRole       mid-tier    seed 300013 ok 48 rep 48 ( 80%) | nom  7.9397 | distn  8 | $0.0097 cum $47.75 | 38s
+      BioRoleExact  open-weight seed 300007 ok 48 rep 55 ( 92%) | nom  7.9513 | distn  5 | $0.0045 cum $47.75 | 42s
+      BioRoleNoisy  mid-tier    seed 300009 ok 45 rep 56 ( 93%) | nom  7.9397 | distn  4 | $0.0134 cum $47.77 | 43s
+      BioRole       frontier    seed 300004 ok 52 rep 37 ( 62%) | nom  7.6528 | distn 20 | $0.3375 cum $48.10 | 108s
+      BioRoleNoisy  open-weight seed 300015 ok 51 rep 53 ( 88%) | nom  8.0406 | distn  7 | $0.0051 cum $48.11 | 48s
+      BioRoleNoisy  mid-tier    seed 300012 ok 56 rep 55 ( 92%) | nom  7.7839 | distn  5 | $0.0223 cum $48.13 | 67s
+      BioRole       frontier    seed 300035 ok 50 rep 42 ( 70%) | nom  7.3487 | distn 13 | $0.3302 cum $48.46 | 110s
+      BioRoleNoisy  mid-tier    seed 300008 ok 47 rep 56 ( 93%) | nom  7.9397 | distn  4 | $0.0132 cum $48.48 | 52s
+      BioRoleNoisy  frontier    seed 300018 ok 43 rep 43 ( 72%) | nom  7.9397 | distn 14 | $0.2816 cum $48.76 | 95s
+      BioRoleNoisy  open-weight seed 300017 ok 50 rep 56 ( 93%) | nom  7.2788 | distn  3 | $0.0088 cum $48.77 | 69s
+      BioRoleExact  open-weight seed 300020 ok 47 rep 51 ( 85%) | nom  7.9513 | distn  5 | $0.0038 cum $48.77 | 59s
+      BioRoleNoisy  open-weight seed 300022 ok 54 rep 54 ( 90%) | nom  7.9513 | distn  5 | $0.0048 cum $48.77 | 46s
+      BioRoleNoisy  mid-tier    seed 300004 ok 51 rep 55 ( 92%) | nom  7.6865 | distn  4 | $0.0125 cum $48.79 | 44s
+      BioRoleExact  mid-tier    seed 300029 ok 52 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0084 cum $48.80 | 36s
+      BioRoleNoisy  mid-tier    seed 300007 ok 48 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0189 cum $48.81 | 55s
+      BioRoleExact  open-weight seed 300025 ok 49 rep 57 ( 95%) | nom  7.6865 | distn  3 | $0.0135 cum $48.83 | 96s
+      BioRoleExact  open-weight seed 300031 ok 51 rep 50 ( 83%) | nom  7.9513 | distn  8 | $0.0065 cum $48.83 | 61s
+      BioRoleExact  frontier    seed 300031 ok 49 rep 37 ( 62%) | nom  7.7165 | distn 17 | $0.4797 cum $49.31 | 135s
+      BioRole       mid-tier    seed 300024 ok 43 rep 41 ( 68%) | nom  7.7287 | distn  8 | $0.0106 cum $49.32 | 44s
+      BioRole       open-weight seed 300002 ok 53 rep 54 ( 90%) | nom  7.9397 | distn  6 | $0.0042 cum $49.33 | 42s
+      BioRoleExact  frontier    seed 300039 ok 43 rep 34 ( 57%) | nom  7.6743 | distn 13 | $0.7087 cum $50.04 | 163s
+      BioRole       open-weight seed 300024 ok 51 rep 54 ( 90%) | nom  7.2332 | distn  2 | $0.0110 cum $50.05 | 86s
+      BioRoleNoisy  frontier    seed 300039 ok 46 rep 46 ( 77%) | nom  7.1695 | distn  6 | $0.3537 cum $50.40 | 118s
+      BioRoleExact  frontier    seed 300037 ok 44 rep 32 ( 53%) | nom  7.5251 | distn 20 | $0.5606 cum $50.96 | 150s
+      BioRoleExact  open-weight seed 300037 ok 52 rep 53 ( 88%) | nom  7.9513 | distn  6 | $0.0036 cum $50.97 | 54s
+      BioRoleNoisy  open-weight seed 300028 ok 52 rep 56 ( 93%) | nom  7.9397 | distn  4 | $0.0087 cum $50.97 | 84s
+      BioRole       open-weight seed 300005 ok 51 rep 53 ( 88%) | nom  7.6865 | distn  6 | $0.0039 cum $50.98 | 47s
+      BioRoleNoisy  mid-tier    seed 300028 ok 43 rep 55 ( 92%) | nom  7.6865 | distn  3 | $0.0178 cum $51.00 | 58s
+      BioRole       mid-tier    seed 300005 ok 48 rep 50 ( 83%) | nom  7.6865 | distn  2 | $0.0115 cum $51.01 | 42s
+      BioRole       open-weight seed 300013 ok 53 rep 53 ( 88%) | nom  7.9513 | distn  7 | $0.0041 cum $51.01 | 43s
+      BioRoleNoisy  frontier    seed 300012 ok 50 rep 46 ( 77%) | nom  7.2870 | distn 13 | $0.2348 cum $51.25 | 78s
+      BioRole       open-weight seed 300008 ok 49 rep 56 ( 93%) | nom  7.2332 | distn  3 | $0.0081 cum $51.26 | 86s
+      BioRole       frontier    seed 300030 ok 49 rep 42 ( 70%) | nom  7.2262 | distn 14 | $0.3521 cum $51.61 | 115s
+      BioRoleExact  open-weight seed 300039 ok 43 rep 47 ( 78%) | nom  7.9513 | distn  4 | $0.0041 cum $51.61 | 52s
+      BioRoleExact  mid-tier    seed 300027 ok 43 rep 51 ( 85%) | nom  7.6865 | distn  2 | $0.0338 cum $51.65 | 82s
+      BioRole       mid-tier    seed 300007 ok 50 rep 49 ( 82%) | nom  7.9397 | distn 11 | $0.0154 cum $51.66 | 50s
+      BioRoleNoisy  frontier    seed 300026 ok 46 rep 46 ( 77%) | nom  7.3214 | distn  8 | $0.3867 cum $52.05 | 102s
+      BioRole       open-weight seed 300006 ok 51 rep 52 ( 87%) | nom  7.6865 | distn  8 | $0.0079 cum $52.06 | 68s
+      BioRoleNoisy  mid-tier    seed 300025 ok 51 rep 59 ( 98%) | nom  6.8730 | distn  1 | $0.0076 cum $52.06 | 28s
+      BioRoleNoisy  frontier    seed 300002 ok 45 rep 49 ( 82%) | nom  7.1055 | distn  7 | $0.3321 cum $52.39 | 101s
+      BioRole       open-weight seed 300035 ok 48 rep 49 ( 82%) | nom  7.6865 | distn  7 | $0.0047 cum $52.40 | 57s
+      BioRole       frontier    seed 300013 ok 51 rep 41 ( 68%) | nom  7.7839 | distn 17 | $0.2671 cum $52.67 | 90s
+      BioRole       open-weight seed 300027 ok 54 rep 56 ( 93%) | nom  7.9397 | distn  4 | $0.0073 cum $52.67 | 60s
+      BioRoleNoisy  mid-tier    seed 300029 ok 52 rep 53 ( 88%) | nom  7.9397 | distn  7 | $0.0129 cum $52.69 | 46s
+      BioRole       mid-tier    seed 300011 ok 51 rep 57 ( 95%) | nom  6.8730 | distn  2 | $0.0056 cum $52.69 | 20s
+      BioRoleNoisy  open-weight seed 300027 ok 48 rep 56 ( 93%) | nom  7.6865 | distn  4 | $0.0153 cum $52.71 | 100s
+      BioRole       frontier    seed 300003 ok 39 rep 47 ( 78%) | nom  7.1695 | distn  4 | $0.4068 cum $53.11 | 122s
+      BioRole       open-weight seed 300018 ok 48 rep 56 ( 93%) | nom  7.9397 | distn  4 | $0.0096 cum $53.12 | 81s
+      BioRole       mid-tier    seed 300001 ok 50 rep 55 ( 92%) | nom  7.7839 | distn  5 | $0.0096 cum $53.13 | 34s
+      BioRoleNoisy  open-weight seed 300019 ok 51 rep 57 ( 95%) | nom  7.6865 | distn  3 | $0.0177 cum $53.15 | 117s
+      BioRole       frontier    seed 300024 ok 47 rep 46 ( 77%) | nom  7.2332 | distn  8 | $0.4248 cum $53.58 | 124s
+      BioRoleExact  frontier    seed 300015 ok 45 rep 25 ( 42%) | nom  7.4380 | distn 22 | $0.8675 cum $54.44 | 209s
+      BioRoleExact  frontier    seed 300034 ok 45 rep 26 ( 43%) | nom  8.4911 | distn 25 | $0.6625 cum $55.11 | 177s
+
+  NOMINATION CALLS: 89, of which 89 carry a two-parser comparison, 89 agree
+
+  TWO-PARSER CHECK over 3709 ROUND calls (nomination calls above)
+    GENUINE disagreement (both read, and differ)         0  0.00%
+    by design (primary refused the count, spent none)   19  0.51%
+  spot check written: /Users/<name>/projects/repdef/results/grid_bioframing_spotcheck.txt
+  call log archived: 3 cells, 9505 lines (3798 new, 5707 carried, 0 untouched, 5762 replaced), 1.3 MB, all verified True
+  plain call log removed after verification: grid_bioframing_calls.jsonl
+
+====================================================================================================
+SUMMARY   bioframing
+====================================================================================================
+  VARIANCES AND HEALTH ONLY. The primary outcome by condition is NOT printed here; see
+  scripts/stage1_variance.py for the sizing inputs and the final analysis script for means.
+  (scripted reference for later use: k*=1 at 8.0057, k=0 at 7.8856)
+  condition     role          n | sd(nominated) sd(distinct) |   distn | rep of budget | $/campaign
+  BioRole       frontier     40 |        0.3255      3.7069 |    12.6 |         69.0%     0.3817
+  BioRole       mid-tier     40 |        0.1903      3.0842 |     6.0 |         84.0%     0.0162
+  BioRole       open-weight  40 |        0.2332      1.5189 |     5.3 |         88.2%     0.0066
+  BioRoleExact  frontier     40 |        0.2948      4.6619 |    21.4 |         49.1%     0.5617
+  BioRoleExact  mid-tier     40 |        0.1504      4.1447 |     9.5 |         75.7%     0.0182
+  BioRoleExact  open-weight  40 |        0.1397      1.5981 |     5.6 |         86.4%     0.0065
+  BioRoleNoisy  frontier     40 |        0.3711      3.0356 |    11.4 |         71.9%     0.3623
+  BioRoleNoisy  mid-tier     40 |        0.3542      2.1896 |     3.8 |         89.4%     0.0152
+  BioRoleNoisy  open-weight  40 |        0.1975      1.2184 |     4.5 |         91.1%     0.0093
+
+  TOTAL SPEND $55.1061 over 3798 calls, 360 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls       empty     malformed       trunc  mean rsn   max rsn
+  anthropic/claude-opus-4.7        1568     0  0.0%      3   0.2%     0  0.0%         0         0
+  google/gemini-2.5-flash          1359     0  0.0%     19   1.4%     0  0.0%         0         0
+  deepseek/deepseek-chat-v3.1       871     0  0.0%     14   1.6%     0  0.0%         0         0
+
+  No empty and no truncated responses on any model at max_tokens=6000.

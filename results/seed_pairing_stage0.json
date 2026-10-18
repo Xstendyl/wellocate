@@ -1,0 +1,81 @@
+{
+ "tag": "stage0",
+ "aligned": true,
+ "z": 3.4798785070496656,
+ "mei": 0.06,
+ "contrasts": [
+  {
+   "model": "anthropic/claude-opus-4.7",
+   "contrast": "Aggregated vs Mechanism",
+   "n": 40,
+   "sd_paired": 0.36927839421834585,
+   "sd_unpaired": 0.3818452667806108,
+   "corr": 0.06527561466421475,
+   "z_corr": 0.39705606302167046,
+   "cov": 0.0047196376631378914,
+   "n_unpaired": 491,
+   "n_paired": 459
+  },
+  {
+   "model": "anthropic/claude-opus-4.7",
+   "contrast": "Decision-rule vs Mechanism",
+   "n": 40,
+   "sd_paired": 0.35773916950159934,
+   "sd_unpaired": 0.38780273708034096,
+   "corr": 0.1496931643689052,
+   "z_corr": 0.910547971264949,
+   "cov": 0.011206824745655012,
+   "n_unpaired": 506,
+   "n_paired": 431
+  },
+  {
+   "model": "deepseek/deepseek-chat-v3.1",
+   "contrast": "Aggregated vs Mechanism",
+   "n": 40,
+   "sd_paired": 0.37048174198742834,
+   "sd_unpaired": 0.38058942389032957,
+   "corr": 0.06654951758259227,
+   "z_corr": 0.4048049119608148,
+   "cov": 0.0037957942155667722,
+   "n_unpaired": 488,
+   "n_paired": 462
+  },
+  {
+   "model": "deepseek/deepseek-chat-v3.1",
+   "contrast": "Decision-rule vs Mechanism",
+   "n": 40,
+   "sd_paired": 0.39790788111903713,
+   "sd_unpaired": 0.39558843090388685,
+   "corr": -0.013544639271578167,
+   "z_corr": -0.08238882424756144,
+   "cov": -0.0009202375958212581,
+   "n_unpaired": 527,
+   "n_paired": 533
+  },
+  {
+   "model": "google/gemini-2.5-flash",
+   "contrast": "Aggregated vs Mechanism",
+   "n": 40,
+   "sd_paired": 0.5392429428486734,
+   "sd_unpaired": 0.47769396755525323,
+   "corr": -0.2801650180751676,
+   "z_corr": -1.7041772742479526,
+   "cov": -0.03129571238670922,
+   "n_unpaired": 768,
+   "n_paired": 979
+  },
+  {
+   "model": "google/gemini-2.5-flash",
+   "contrast": "Decision-rule vs Mechanism",
+   "n": 40,
+   "sd_paired": 0.5199899260864482,
+   "sd_unpaired": 0.4962452626740006,
+   "corr": -0.09864520423869298,
+   "z_corr": -0.6000353521367368,
+   "cov": -0.012065081252501041,
+   "n_unpaired": 829,
+   "n_paired": 910
+  }
+ ],
+ "identity_max_abs_diff": 3.469446951953614e-16
+}

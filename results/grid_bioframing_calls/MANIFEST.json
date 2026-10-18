@@ -1,0 +1,35 @@
+{
+ "tag": "bioframing",
+ "cells": 3,
+ "total_lines": 9505,
+ "source_lines": 3798,
+ "carried_forward_lines": 5707,
+ "untouched_cell_lines": 0,
+ "replaced_lines": 5762,
+ "expected_total_lines": 9505,
+ "all_verified": true,
+ "empty": false,
+ "files": {
+  "blind__anthropic_claude-opus-4.7.jsonl.gz": {
+   "lines": 3781,
+   "sha256": "0e79c75cc4b113ae504784427b78dd87677d4dd6954b1402b24eb5ab7a14ee51",
+   "bytes": 542926,
+   "verified": true,
+   "written_by_this_run": true
+  },
+  "blind__deepseek_deepseek-chat-v3.1.jsonl.gz": {
+   "lines": 2380,
+   "sha256": "af27521c2663036aa0628df790ad173853ff2854a38c4a85ee1a3036aa93225a",
+   "bytes": 317214,
+   "verified": true,
+   "written_by_this_run": true
+  },
+  "blind__google_gemini-2.5-flash.jsonl.gz": {
+   "lines": 3344,
+   "sha256": "ec62648968f3868a56184d83e1f39386060822f8b9b2593a101ff06b3aaeee40",
+   "bytes": 408351,
+   "verified": true,
+   "written_by_this_run": true
+  }
+ }
+}

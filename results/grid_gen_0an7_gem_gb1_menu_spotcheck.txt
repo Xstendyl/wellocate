@@ -1,0 +1,147 @@
+SPOT CHECK: raw model output beside the proposals the harness accepted.
+Sampled deterministically, 20 calls per model. Written for a human to read.
+
+====================================================================================================
+google/gemini-3.1-pro-preview  (frontier-google)   1418 calls, showing 20
+====================================================================================================
+
+--- round 5  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['FSHR']
+SECONDARY: ['FSHR']
+RAW:
+FSHR | exploring variations of the best candidate FSTR
+
+--- round 6  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['FNIC']
+SECONDARY: ['FNIC']
+RAW:
+FNIC | testing C at position 4 based on additive model predictions
+
+--- round 3  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['ALRD', 'OLRD', 'KLRD', 'FLRD']
+SECONDARY: ['ALRD', 'OLRD', 'KLRD', 'FLRD']
+RAW:
+ALRD | explore first position of BLRD
+OLRD | explore first position of BLRD
+KLRD | explore first position of BLRD
+FLRD | explore first position of BLRD
+
+--- round 5  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['FPRR']
+SECONDARY: ['FPRR']
+RAW:
+FPRR | testing another variant at the fourth position based on FPRD
+
+--- round 14  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['FNRH']
+SECONDARY: ['FNRH']
+RAW:
+FNRH | exploring the fourth position of the best candidate FNRJ
+
+--- round 14  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['FGHB', 'FGHP', 'FPHJ', 'FRHJ']
+SECONDARY: ['FGHB', 'FGHP', 'FPHJ', 'FRHJ']
+RAW:
+FGHB | suggested candidate
+FGHP | suggested candidate
+FPHJ | suggested candidate
+FRHJ | suggested candidate
+
+--- round 6  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['LKOT']
+SECONDARY: ['LKOT']
+RAW:
+LKOT | mutating the last position of the best candidate LKOP
+
+--- round 4  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['FLBR']
+SECONDARY: ['FLBR']
+RAW:
+FLBR | testing position 3 variation on FLTR based on additive model prediction
+
+--- round 8  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['TSTR']
+SECONDARY: ['TSTR']
+RAW:
+TSTR | try T at position 1 based on additive model
+
+--- round 11  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['LQOM']
+SECONDARY: ['LQOM']
+RAW:
+LQOM | testing suggested candidate based on additive model
+
+--- round 1  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['CKTL', 'CHTL', 'PLTL', 'CLDL']
+SECONDARY: ['CKTL', 'CHTL', 'PLTL', 'CLDL']
+RAW:
+CKTL | exploring position 2
+CHTL | exploring position 2
+PLTL | exploring position 1
+CLDL | exploring position 3
+
+--- round 4  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['DIAL']
+SECONDARY: ['DIAL']
+RAW:
+DIAL | exploring position 3 from DITL
+
+--- round 13  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['CING', 'CIRG', 'CIPG', 'CIQG']
+SECONDARY: ['CING', 'CIRG', 'CIPG', 'CIQG']
+RAW:
+CING | exploring 3rd position of CIOG
+CIRG | exploring 3rd position of CIOG
+CIPG | exploring 3rd position of CIOG
+CIQG | exploring 3rd position of CIOG
+
+--- round 3  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 12  parsers agree True ---
+PARSED   : ['DSOP', 'DSOC', 'PSOP', 'PSOC']
+SECONDARY: ['DSOP', 'DSOC', 'PSOP', 'PSOC']
+RAW:
+DSOP | first position D from DLTL applied to best candidate CSOP
+DSOC | first position D applied to second best CSOC
+PSOP | exploring first position P on best candidate
+PSOC | exploring first position P on second best candidate
+
+--- round 13  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 14  parsers agree True ---
+PARSED   : ['NLOP', 'JLOP', 'GLOP', 'NSOC']
+SECONDARY: ['NLOP', 'JLOP', 'GLOP', 'NSOC']
+RAW:
+NLOP | retry failed order from round 12
+JLOP | combine J from JSOP with L from LLOP
+GLOP | combine G from GSOP with L from LLOP
+NSOC | retry failed order from round 12
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['CLTA']
+SECONDARY: ['CLTA']
+RAW:
+CLTA | exploring the fourth position from the reference point
+
+--- round 3  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['QETL']
+SECONDARY: ['QETL']
+RAW:
+QETL | exploring variations of the high-scoring CETL
+
+--- round 5  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['CETA']
+SECONDARY: ['CETA']
+RAW:
+CETA | exploring the fourth position of the best candidate CETL
+
+--- round 9  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 11  parsers agree True ---
+PARSED   : ['TITG', 'THMG', 'CETG', 'THJG']
+SECONDARY: ['TITG', 'THMG', 'CETG', 'THJG']
+RAW:
+TITG | variation of best candidate THTG
+THMG | variation of best candidate THTG
+CETG | combining best prefixes and suffixes
+THJG | variation of best candidate THTG
+
+--- round 10  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['TELG']
+SECONDARY: ['TELG']
+RAW:
+TELG | exploring variations of TETG

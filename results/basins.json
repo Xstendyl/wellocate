@@ -1,0 +1,554 @@
+{
+ "wu2016": {
+  "peaks_complete_space": 30,
+  "source": "Wu et al. 2016, eLife 5:e16965 (PMC4985287), Results",
+  "sentence": "In the complete sequence space, we identified a total of 30 fitness peaks (i.e. local maxima); among them 15 peaks had fitness larger than WT and their combined basins of attraction covered 99% of the sequence space"
+ },
+ "landscapes": {
+  "grid": {
+   "viable": 11199,
+   "peaks": 99,
+   "global_peak": "IOJO",
+   "global_peak_value": 8.762,
+   "global_peak_basin": 233,
+   "largest_basins": [
+    [
+     "AGBF",
+     506,
+     8.557022450818458
+    ],
+    [
+     "ICHE",
+     468,
+     8.443910558236631
+    ],
+    [
+     "TNBF",
+     450,
+     8.465783606833988
+    ],
+    [
+     "CRPN",
+     416,
+     8.554582741019148
+    ],
+    [
+     "ONRS",
+     409,
+     8.377050774444605
+    ]
+   ],
+   "peaks_above_median_viable": 99,
+   "start": "GDIF",
+   "start_value": 6.872952536863767,
+   "start_basin_peak": "PCHS",
+   "start_basin_peak_value": 8.34798037824625,
+   "start_basin_peak_rank": 30,
+   "start_basin_size": 216,
+   "start_basin_share": 0.01928743637824806,
+   "start_to_peak_changes": 4,
+   "start_in_global_basin": false
+  },
+  "GB1": {
+   "viable": 11199,
+   "peaks": 20,
+   "global_peak": "CSQJ",
+   "global_peak_value": 8.762,
+   "global_peak_basin": 3723,
+   "largest_basins": [
+    [
+     "CSQJ",
+     3723,
+     8.762
+    ],
+    [
+     "CSHD",
+     3180,
+     7.312685060250311
+    ],
+    [
+     "LSOF",
+     1115,
+     5.7720548339833595
+    ],
+    [
+     "NRQJ",
+     710,
+     6.20115975669998
+    ],
+    [
+     "CIOI",
+     517,
+     5.494897069901912
+    ]
+   ],
+   "peaks_above_median_viable": 15,
+   "start": "CLTL",
+   "start_value": 0.533893588629302,
+   "start_basin_peak": "CSQJ",
+   "start_basin_peak_value": 8.762,
+   "start_basin_peak_rank": 1,
+   "start_basin_size": 3723,
+   "start_basin_share": 0.33244039646397,
+   "start_to_peak_changes": 3,
+   "start_in_global_basin": true
+  },
+  "PhoQ": {
+   "viable": 11199,
+   "peaks": 452,
+   "global_peak": "NGQC",
+   "global_peak_value": 8.762,
+   "global_peak_basin": 443,
+   "largest_basins": [
+    [
+     "NGQC",
+     443,
+     8.762
+    ],
+    [
+     "IIEF",
+     332,
+     4.133656910482573
+    ],
+    [
+     "NBQT",
+     311,
+     3.912924509187408
+    ],
+    [
+     "NGMT",
+     297,
+     3.9898114055340854
+    ],
+    [
+     "IGGK",
+     285,
+     3.0901987440030183
+    ]
+   ],
+   "peaks_above_median_viable": 251,
+   "start": "EDQS",
+   "start_value": 0.43626057516470107,
+   "start_basin_peak": "EDQJ",
+   "start_basin_peak_value": 2.1839784465783945,
+   "start_basin_peak_rank": 74,
+   "start_basin_size": 113,
+   "start_basin_share": 0.010090186623805697,
+   "start_to_peak_changes": 1,
+   "start_in_global_basin": false
+  }
+ },
+ "arms": {
+  "grid Blind": {
+   "Opus 4.7": {
+    "n": 60,
+    "nominee_value": 7.62119689719785,
+    "nominee_in_start_basin": 0.3,
+    "nominee_in_start_basin_ci": [
+     0.18333333333333332,
+     0.4166666666666667
+    ],
+    "nominee_basin_peak": 8.481484371552407,
+    "nominee_basin_peak_ci": [
+     8.453277916158276,
+     8.509842013952849
+    ],
+    "nominee_basin_peak_is_global": 0.0,
+    "distinct_basins": 4.85,
+    "distinct_basins_ci": [
+     4.483333333333333,
+     5.216666666666667
+    ],
+    "campaigns_without_a_nomination_prompt": 0
+   },
+   "Gemini 2.5 Flash": {
+    "n": 120,
+    "nominee_value": 7.701341594622921,
+    "nominee_in_start_basin": 0.075,
+    "nominee_in_start_basin_ci": [
+     0.03333333333333333,
+     0.125
+    ],
+    "nominee_basin_peak": 8.389319051826545,
+    "nominee_basin_peak_ci": [
+     8.380880316777583,
+     8.399734690216421
+    ],
+    "nominee_basin_peak_is_global": 0.0,
+    "distinct_basins": 2.175,
+    "distinct_basins_ci": [
+     2.1,
+     2.2583333333333333
+    ],
+    "campaigns_without_a_nomination_prompt": 0
+   },
+   "DeepSeek V3.1": {
+    "n": 120,
+    "nominee_value": 7.760026260434459,
+    "nominee_in_start_basin": 0.65,
+    "nominee_in_start_basin_ci": [
+     0.5666666666666667,
+     0.7333333333333333
+    ],
+    "nominee_basin_peak": 8.396459163017308,
+    "nominee_basin_peak_ci": [
+     8.380201165302195,
+     8.414369249741036
+    ],
+    "nominee_basin_peak_is_global": 0.0,
+    "distinct_basins": 2.825,
+    "distinct_basins_ci": [
+     2.691666666666667,
+     2.9583333333333335
+    ],
+    "campaigns_without_a_nomination_prompt": 0
+   },
+   "GPT-6.1 Sol": {
+    "n": 60,
+    "nominee_value": 7.672178161220893,
+    "nominee_in_start_basin": 0.11666666666666667,
+    "nominee_in_start_basin_ci": [
+     0.05,
+     0.2
+    ],
+    "nominee_basin_peak": 8.436384184170688,
+    "nominee_basin_peak_ci": [
+     8.40404521777659,
+     8.467155585386742
+    ],
+    "nominee_basin_peak_is_global": 0.0,
+    "distinct_basins": 8.333333333333334,
+    "distinct_basins_ci": [
+     7.883333333333334,
+     8.8
+    ],
+    "campaigns_without_a_nomination_prompt": 0
+   },
+   "Gemini 3.1 Pro": {
+    "n": 60,
+    "nominee_value": 7.688163469286484,
+    "nominee_in_start_basin": 0.08333333333333333,
+    "nominee_in_start_basin_ci": [
+     0.016666666666666666,
+     0.16666666666666666
+    ],
+    "nominee_basin_peak": 8.460591892338174,
+    "nominee_basin_peak_ci": [
+     8.420206624524775,
+     8.496877919211556
+    ],
+    "nominee_basin_peak_is_global": 0.0,
+    "distinct_basins": 9.883333333333333,
+    "distinct_basins_ci": [
+     9.366666666666667,
+     10.383333333333333
+    ],
+    "campaigns_without_a_nomination_prompt": 0
+   }
+  },
+  "GB1 Blind": {
+   "Opus 4.7": {
+    "n": 60,
+    "nominee_value": 4.775322704844743,
+    "nominee_in_start_basin": 0.7333333333333333,
+    "nominee_in_start_basin_ci": [
+     0.6166666666666667,
+     0.8333333333333334
+    ],
+    "nominee_basin_peak": 8.383656471026113,
+    "nominee_basin_peak_ci": [
+     8.218639955534995,
+     8.532658192480762
+    ],
+    "nominee_basin_peak_is_global": 0.7333333333333333,
+    "distinct_basins": 3.25,
+    "distinct_basins_ci": [
+     3.05,
+     3.45
+    ],
+    "campaigns_without_a_nomination_prompt": 0
+   },
+   "Gemini 2.5 Flash": {
+    "n": 60,
+    "nominee_value": 1.1150320031139602,
+    "nominee_in_start_basin": 0.9833333333333333,
+    "nominee_in_start_basin_ci": [
+     0.95,
+     1.0
+    ],
+    "nominee_basin_peak": 8.707548284498365,
+    "nominee_basin_peak_ci": [
+     8.598644853495095,
+     8.762
+    ],
+    "nominee_basin_peak_is_global": 0.9833333333333333,
+    "distinct_basins": 1.0833333333333333,
+    "distinct_basins_ci": [
+     1.0166666666666666,
+     1.1833333333333333
+    ],
+    "campaigns_without_a_nomination_prompt": 0
+   },
+   "DeepSeek V3.1": {
+    "n": 60,
+    "nominee_value": 0.8397401828313098,
+    "nominee_in_start_basin": 0.7333333333333333,
+    "nominee_in_start_basin_ci": [
+     0.6166666666666667,
+     0.8333333333333334
+    ],
+    "nominee_basin_peak": 7.959505939944819,
+    "nominee_basin_peak_ci": [
+     7.598428952949522,
+     8.286216232954628
+    ],
+    "nominee_basin_peak_is_global": 0.7333333333333333,
+    "distinct_basins": 1.3,
+    "distinct_basins_ci": [
+     1.1833333333333333,
+     1.4166666666666667
+    ],
+    "campaigns_without_a_nomination_prompt": 0
+   },
+   "GPT-6.1 Sol": {
+    "n": 30,
+    "nominee_value": 6.3624120153632235,
+    "nominee_in_start_basin": 0.5,
+    "nominee_in_start_basin_ci": [
+     0.3333333333333333,
+     0.6666666666666666
+    ],
+    "nominee_basin_peak": 8.053623440043879,
+    "nominee_basin_peak_ci": [
+     7.803930495126235,
+     8.295175930002161
+    ],
+    "nominee_basin_peak_is_global": 0.5,
+    "distinct_basins": 3.533333333333333,
+    "distinct_basins_ci": [
+     3.3,
+     3.7666666666666666
+    ],
+    "campaigns_without_a_nomination_prompt": 0
+   },
+   "Gemini 3.1 Pro": {
+    "n": 30,
+    "nominee_value": 4.903924702411044,
+    "nominee_in_start_basin": 0.5333333333333333,
+    "nominee_in_start_basin_ci": [
+     0.36666666666666664,
+     0.7
+    ],
+    "nominee_basin_peak": 7.902269015607706,
+    "nominee_basin_peak_ci": [
+     7.467848675014649,
+     8.287567706807314
+    ],
+    "nominee_basin_peak_is_global": 0.5333333333333333,
+    "distinct_basins": 4.533333333333333,
+    "distinct_basins_ci": [
+     4.133333333333334,
+     5
+    ],
+    "campaigns_without_a_nomination_prompt": 0
+   }
+  },
+  "GB1 Menu": {
+   "Opus 4.7": {
+    "n": 30,
+    "nominee_value": 5.0350813059971,
+    "nominee_in_start_basin": 0.26666666666666666,
+    "nominee_in_start_basin_ci": [
+     0.13333333333333333,
+     0.43333333333333335
+    ],
+    "nominee_basin_peak": 7.324242632941702,
+    "nominee_basin_peak_ci": [
+     6.88715020030655,
+     7.736985188989314
+    ],
+    "nominee_basin_peak_is_global": 0.26666666666666666,
+    "distinct_basins": 3.7333333333333334,
+    "distinct_basins_ci": [
+     3.2,
+     4.266666666666667
+    ],
+    "campaigns_without_a_nomination_prompt": 0
+   },
+   "Gemini 2.5 Flash": {
+    "n": 60,
+    "nominee_value": 4.830745543515375,
+    "nominee_in_start_basin": 0.5166666666666667,
+    "nominee_in_start_basin_ci": [
+     0.38333333333333336,
+     0.65
+    ],
+    "nominee_basin_peak": 7.635563844190307,
+    "nominee_basin_peak_ci": [
+     7.296988942063288,
+     7.957630473461411
+    ],
+    "nominee_basin_peak_is_global": 0.5166666666666667,
+    "distinct_basins": 3.466666666666667,
+    "distinct_basins_ci": [
+     3.1666666666666665,
+     3.783333333333333
+    ],
+    "campaigns_without_a_nomination_prompt": 0
+   },
+   "DeepSeek V3.1": {
+    "n": 60,
+    "nominee_value": 4.49037658384188,
+    "nominee_in_start_basin": 0.23333333333333334,
+    "nominee_in_start_basin_ci": [
+     0.13333333333333333,
+     0.35
+    ],
+    "nominee_basin_peak": 7.073269244927624,
+    "nominee_basin_peak_ci": [
+     6.750516763087193,
+     7.395171098390192
+    ],
+    "nominee_basin_peak_is_global": 0.23333333333333334,
+    "distinct_basins": 3.8,
+    "distinct_basins_ci": [
+     3.4166666666666665,
+     4.2
+    ],
+    "campaigns_without_a_nomination_prompt": 0
+   },
+   "GPT-6.1 Sol": {
+    "n": 30,
+    "nominee_value": 6.116617017117974,
+    "nominee_in_start_basin": 0.4666666666666667,
+    "nominee_in_start_basin_ci": [
+     0.3,
+     0.6333333333333333
+    ],
+    "nominee_basin_peak": 7.756467654684798,
+    "nominee_basin_peak_ci": [
+     7.342003296005593,
+     8.136016295300013
+    ],
+    "nominee_basin_peak_is_global": 0.4666666666666667,
+    "distinct_basins": 3.9,
+    "distinct_basins_ci": [
+     3.4,
+     4.466666666666667
+    ],
+    "campaigns_without_a_nomination_prompt": 0
+   },
+   "Gemini 3.1 Pro": {
+    "n": 30,
+    "nominee_value": 5.3107919407479205,
+    "nominee_in_start_basin": 0.23333333333333334,
+    "nominee_in_start_basin_ci": [
+     0.1,
+     0.4
+    ],
+    "nominee_basin_peak": 6.907956103429827,
+    "nominee_basin_peak_ci": [
+     6.407689028679239,
+     7.39772474371118
+    ],
+    "nominee_basin_peak_is_global": 0.23333333333333334,
+    "distinct_basins": 4.766666666666667,
+    "distinct_basins_ci": [
+     4.2,
+     5.333333333333333
+    ],
+    "campaigns_without_a_nomination_prompt": 0
+   }
+  }
+ },
+ "scripted": {
+  "grid": {
+   "guessing rule": {
+    "n": 1500,
+    "nominee_value": 7.865864914893477,
+    "nominee_in_start_basin": 0.204,
+    "nominee_in_start_basin_ci": [
+     0.184,
+     0.22466666666666665
+    ],
+    "nominee_basin_peak": 8.41543579496732,
+    "nominee_basin_peak_ci": [
+     8.405372962807151,
+     8.425180900336526
+    ],
+    "nominee_basin_peak_is_global": 0.0026666666666666666,
+    "distinct_basins": 8.048666666666668,
+    "distinct_basins_ci": [
+     7.928,
+     8.168666666666667
+    ],
+    "k": 1
+   },
+   "informed rule": {
+    "n": 1500,
+    "nominee_value": 7.999298589044483,
+    "nominee_in_start_basin": 0.014666666666666666,
+    "nominee_in_start_basin_ci": [
+     0.008666666666666666,
+     0.021333333333333333
+    ],
+    "nominee_basin_peak": 8.363958669046685,
+    "nominee_basin_peak_ci": [
+     8.352474130430151,
+     8.375216839357794
+    ],
+    "nominee_basin_peak_is_global": 0.02,
+    "distinct_basins": 10.874,
+    "distinct_basins_ci": [
+     10.698666666666666,
+     11.048
+    ],
+    "k": 1
+   }
+  },
+  "GB1": {
+   "guessing rule": {
+    "n": 1500,
+    "nominee_value": 6.086764857732206,
+    "nominee_in_start_basin": 0.5146666666666667,
+    "nominee_in_start_basin_ci": [
+     0.48933333333333334,
+     0.54
+    ],
+    "nominee_basin_peak": 7.689839397443642,
+    "nominee_basin_peak_ci": [
+     7.6246432091568455,
+     7.75426268172859
+    ],
+    "nominee_basin_peak_is_global": 0.5146666666666667,
+    "distinct_basins": 4.028666666666667,
+    "distinct_basins_ci": [
+     3.9546666666666668,
+     4.102666666666667
+    ],
+    "k": 0
+   },
+   "informed rule": {
+    "n": 1500,
+    "nominee_value": 6.018240655379692,
+    "nominee_in_start_basin": 0.3506666666666667,
+    "nominee_in_start_basin_ci": [
+     0.32666666666666666,
+     0.37466666666666665
+    ],
+    "nominee_basin_peak": 7.308057793427691,
+    "nominee_basin_peak_ci": [
+     7.242704730525549,
+     7.374121861617204
+    ],
+    "nominee_basin_peak_is_global": 0.3506666666666667,
+    "distinct_basins": 4.799333333333333,
+    "distinct_basins_ci": [
+     4.712666666666666,
+     4.887333333333333
+    ],
+    "k": 0
+   }
+  }
+ }
+}

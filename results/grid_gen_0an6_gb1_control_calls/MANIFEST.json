@@ -1,0 +1,28 @@
+{
+ "tag": "gen_0an6_gb1_control",
+ "cells": 2,
+ "total_lines": 3691,
+ "source_lines": 3691,
+ "carried_forward_lines": 0,
+ "untouched_cell_lines": 0,
+ "replaced_lines": 0,
+ "expected_total_lines": 3691,
+ "all_verified": true,
+ "empty": false,
+ "files": {
+  "blind__deepseek_deepseek-chat-v3.1.jsonl.gz": {
+   "lines": 2587,
+   "sha256": "6cf6aa22548655525b88d973692b22a9682202ba6c83ebe7e494a2e1add3c1dc",
+   "bytes": 288738,
+   "verified": true,
+   "written_by_this_run": true
+  },
+  "blind__google_gemini-2.5-flash.jsonl.gz": {
+   "lines": 1104,
+   "sha256": "4704b6f75df4d5df7177e76f9eba78d92a655dcdb07e597bffd230ef1908676e",
+   "bytes": 115682,
+   "verified": true,
+   "written_by_this_run": true
+  }
+ }
+}

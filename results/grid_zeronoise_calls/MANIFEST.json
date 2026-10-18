@@ -1,0 +1,101 @@
+{
+ "tag": "zeronoise",
+ "cells": 15,
+ "total_lines": 23426,
+ "source_lines": 23426,
+ "all_verified": true,
+ "empty": false,
+ "unlisted_preexisting_files": [],
+ "files": {
+  "aggregated__anthropic_claude-opus-4.7.jsonl.gz": {
+   "lines": 1883,
+   "sha256": "c433340b7a62bf046d685e954c81ef5a10cf492084c335d6ae2f928df555f2f2",
+   "bytes": 268913,
+   "verified": true
+  },
+  "aggregated__deepseek_deepseek-chat-v3.1.jsonl.gz": {
+   "lines": 889,
+   "sha256": "8f2bf12c80895da3e58bea0f398a0316c4d4af7afadf8c04a5c7eb631b04a4d3",
+   "bytes": 114852,
+   "verified": true
+  },
+  "aggregated__google_gemini-2.5-flash.jsonl.gz": {
+   "lines": 1176,
+   "sha256": "cc502f8d12c9fb8570b3e7d666b3f6f1b7b57e835e6c07697eba331303f01e7f",
+   "bytes": 126796,
+   "verified": true
+  },
+  "blind__anthropic_claude-opus-4.7.jsonl.gz": {
+   "lines": 2062,
+   "sha256": "d8d97217cbd3c8b822c6f762290678ee6e10da8be6ffdac1b87aace22d6abbe1",
+   "bytes": 280150,
+   "verified": true
+  },
+  "blind__deepseek_deepseek-chat-v3.1.jsonl.gz": {
+   "lines": 1169,
+   "sha256": "2b2f89783fc96eafbf18c0d5c9a9694c050057b9945e8e8cad989cb298e567d1",
+   "bytes": 146576,
+   "verified": true
+  },
+  "blind__google_gemini-2.5-flash.jsonl.gz": {
+   "lines": 1315,
+   "sha256": "0a82d35bfd8a4b9b1c5dd3f7609415900ec558ccc10306eb1088d273ee4729a0",
+   "bytes": 133612,
+   "verified": true
+  },
+  "decision_rule__anthropic_claude-opus-4.7.jsonl.gz": {
+   "lines": 1918,
+   "sha256": "7f87bb2e0ca06f97ccdbc3c8f7f6596448a47dfb4852fd1a69cc43be3cda5f3b",
+   "bytes": 258009,
+   "verified": true
+  },
+  "decision_rule__deepseek_deepseek-chat-v3.1.jsonl.gz": {
+   "lines": 999,
+   "sha256": "d1ddcd541c1109dddada0ea62b8f9b5cdbb005a25a434cfc8e0adb501538e884",
+   "bytes": 133683,
+   "verified": true
+  },
+  "decision_rule__google_gemini-2.5-flash.jsonl.gz": {
+   "lines": 1373,
+   "sha256": "b11d0df7ec53fb60ddcc43b7eac8cdd7af3f56aa20676a4c4b4fcff95fa0d908",
+   "bytes": 148531,
+   "verified": true
+  },
+  "informed__anthropic_claude-opus-4.7.jsonl.gz": {
+   "lines": 2339,
+   "sha256": "9ded55e77cfffdada31cdf7b1aca6ecb4f8b465ccc03bbebcf3ef91df83d0740",
+   "bytes": 344314,
+   "verified": true
+  },
+  "informed__deepseek_deepseek-chat-v3.1.jsonl.gz": {
+   "lines": 1084,
+   "sha256": "55bea504c833e53995c3b0ba7b18c4999cec0f01295d33d297ceae2805f056db",
+   "bytes": 140161,
+   "verified": true
+  },
+  "informed__google_gemini-2.5-flash.jsonl.gz": {
+   "lines": 2259,
+   "sha256": "2b7d61008a6f03f1cda8f972ad1808782c7ff8e2b98f032ca009ab0d495281bb",
+   "bytes": 287552,
+   "verified": true
+  },
+  "instructed__anthropic_claude-opus-4.7.jsonl.gz": {
+   "lines": 2199,
+   "sha256": "30dfa9ca7739a868d6b2b7f8ee285ed02976539d69ebf727e7fdea79d3e99ed3",
+   "bytes": 320935,
+   "verified": true
+  },
+  "instructed__deepseek_deepseek-chat-v3.1.jsonl.gz": {
+   "lines": 917,
+   "sha256": "20a7f750808d41ffe0f691a4a124895638352faa2f25a2c680e4cfa62f9456be",
+   "bytes": 120287,
+   "verified": true
+  },
+  "instructed__google_gemini-2.5-flash.jsonl.gz": {
+   "lines": 1844,
+   "sha256": "a1d4b6403b2fc7f74201501516d444599910e69ac155d8b936cdaaa9dbc8ab3f",
+   "bytes": 228511,
+   "verified": true
+  }
+ }
+}

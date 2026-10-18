@@ -1,0 +1,60 @@
+  key source: repdef/.env  (fingerprint 0d6f7d3f, never the key)
+  credit (launch): account $756.40, key $756.36 -> BINDING $756.36 (key), key expires 2026-10-28
+  credit check (launch): $756.36 spendable, floor $50.00 -> ok
+====================================================================================================
+GRID  0am landscape gb1_scrambled (1 landscape)  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 2 conditions x 3 models, campaigns per model frontier 1, mid-tier 1, open-weight 1 = 6 campaigns
+  ceiling $0.75 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    frontier     anthropic/claude-opus-4.7        released 2026-02
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+    open-weight  deepseek/deepseek-chat-v3.1      released 2025-08
+prompt facts checked: reference CLTL is viable and reads 0.5339 (stated 0.5300), pool is 7.00% of the space, example BLTL (viable)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_smoke0am_gb1scr_manifest.json (commit 3700a60d)
+    frontier     anthropic/claude-opus-4.7        released 2026-02
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+    open-weight  deepseek/deepseek-chat-v3.1      released 2025-08
+canary: comparator live, differs from the mean rule on 6 of 60 scripted campaigns
+
+
+  SHUFFLED order over 6 campaigns across 6 cells (order seed 20261003)
+      Mechanism     frontier    seed 13000000 ok 42 rep 35 ( 58%) | nom  6.0443 | distn 14 | $0.2387 cum $0.24 | 77s
+      Blind         frontier    seed 13000000 ok 47 rep 39 ( 65%) | nom  4.7645 | distn 16 | $0.2805 cum $0.52 | 92s
+      Mechanism     mid-tier    seed 13000000 ok 47 rep 55 ( 92%) | nom  0.6118 | distn  5 | $0.0099 cum $0.53 | 37s
+      Blind         mid-tier    seed 13000000 ok 47 rep 56 ( 93%) | nom  0.9909 | distn  2 | $0.0050 cum $0.53 | 20s
+      Blind         open-weight seed 13000000 ok 56 rep 58 ( 97%) | nom  0.5339 | distn  2 | $0.0116 cum $0.55 | 164s
+      Mechanism     open-weight seed 13000000 ok 48 rep 57 ( 95%) | nom  0.8802 | distn  3 | $0.0047 cum $0.55 | 100s
+
+  NOMINATION CALLS: 6, of which 6 carry a two-parser comparison, 6 agree
+
+  TWO-PARSER CHECK over 176 ROUND calls (nomination calls above)
+    GENUINE disagreement (both read, and differ)         0  0.00%
+    by design (primary refused the count, spent none)    2  1.14%
+  spot check written: /Users/<name>/projects/repdef/results/grid_smoke0am_gb1scr_spotcheck.txt
+  call log archived: 6 cells, 182 lines (182 new, 0 carried, 0 untouched, 0 replaced), 0.0 MB, all verified True
+  plain call log removed after verification: grid_smoke0am_gb1scr_calls.jsonl
+
+====================================================================================================
+SUMMARY   smoke0am_gb1scr
+====================================================================================================
+  VARIANCES AND HEALTH ONLY. The primary outcome by condition is NOT printed here; see
+  scripts/stage1_variance.py for the sizing inputs and the final analysis script for means.
+  (scripted reference for later use: k*=1 at 8.0057, k=0 at 7.8856)
+  condition     role          n | sd(nominated) sd(distinct) |   distn | rep of budget | $/campaign
+  Blind         frontier      1 |           nan         nan |    16.0 |         65.0%     0.2805
+  Blind         mid-tier      1 |           nan         nan |     2.0 |         93.3%     0.0050
+  Blind         open-weight   1 |           nan         nan |     2.0 |         96.7%     0.0116
+  Mechanism     frontier      1 |           nan         nan |    14.0 |         58.3%     0.2387
+  Mechanism     mid-tier      1 |           nan         nan |     5.0 |         91.7%     0.0099
+  Mechanism     open-weight   1 |           nan         nan |     3.0 |         95.0%     0.0047
+
+  TOTAL SPEND $0.5504 over 182 calls, 6 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls       empty     malformed       trunc  mean rsn   max rsn
+  anthropic/claude-opus-4.7          70     0  0.0%      2   2.9%     0  0.0%         0         0
+  google/gemini-2.5-flash            43     0  0.0%      0   0.0%     0  0.0%         0         0
+  deepseek/deepseek-chat-v3.1        69     0  0.0%      0   0.0%     0  0.0%         0         0
+
+  No empty and no truncated responses on any model at max_tokens=6000.

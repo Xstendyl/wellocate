@@ -1,0 +1,1444 @@
+{
+ "smoke": false,
+ "references": {
+  "best_scripted": {
+   "policy": "informed k=0",
+   "pick": 2.62619878168794,
+   "pick_se": 0.03615481411367739,
+   "share_budget": 0.0,
+   "share_budget_ci": [
+    0.0,
+    0.0
+   ],
+   "share_nonlost": 0.0
+  },
+  "guessing_kstar": 0,
+  "guessing_at_kstar": {
+   "n": 1500,
+   "collapsed": 0,
+   "pick": 2.0500042464604817,
+   "pick_se": 0.022866490390623526,
+   "pick_ci": [
+    2.00518592529486,
+    2.0948225676261036
+   ],
+   "share_budget": 1.0333333333333334,
+   "share_budget_se": 0.032998091826512366,
+   "share_budget_ci": [
+    0.9686570733533693,
+    1.0980095933132976
+   ],
+   "share_nonlost": 1.2195886319867726,
+   "share_nonlost_se": 0.03937454681524389,
+   "share_nonlost_ci": [
+    1.1424145202288947,
+    1.2967627437446505
+   ],
+   "exploration_shortfall": 6.692098749613926,
+   "exploration_shortfall_se": 0.022698771581069886,
+   "exploration_shortfall_ci": [
+    6.6476091573150295,
+    6.736588341912823
+   ],
+   "selection_shortfall": 0.019897003925592432,
+   "selection_shortfall_se": 0.0016028121144508163,
+   "selection_shortfall_ci": [
+    0.016755492181268834,
+    0.02303851566991603
+   ],
+   "distinct": 42.46066666666667,
+   "distinct_se": 0.19312013810054818,
+   "distinct_ci": [
+    42.082151195989596,
+    42.83918213734374
+   ],
+   "lost_slots": 9.517333333333333,
+   "lost_slots_se": 0.21747182737273718,
+   "lost_slots_ci": [
+    9.091088551682768,
+    9.943578114983898
+   ],
+   "nominee_one_reading": 99.4,
+   "top_nominee": "EDQJ",
+   "top_nominee_count": 269,
+   "distinct_nominees": 220
+  },
+  "informed_kstar": 0,
+  "informed_at_kstar": {
+   "n": 1500,
+   "collapsed": 0,
+   "pick": 2.62619878168794,
+   "pick_se": 0.03615481411367739,
+   "pick_ci": [
+    2.5553353460251325,
+    2.697062217350748
+   ],
+   "share_budget": 0.0,
+   "share_budget_se": 0.0,
+   "share_budget_ci": [
+    0.0,
+    0.0
+   ],
+   "share_nonlost": 0.0,
+   "share_nonlost_se": 0.0,
+   "share_nonlost_ci": [
+    0.0,
+    0.0
+   ],
+   "exploration_shortfall": 6.116480596230652,
+   "exploration_shortfall_se": 0.03591252972705629,
+   "exploration_shortfall_ci": [
+    6.046092037965622,
+    6.186869154495682
+   ],
+   "selection_shortfall": 0.01932062208140834,
+   "selection_shortfall_se": 0.0015098832227843431,
+   "selection_shortfall_ci": [
+    0.01636125096475103,
+    0.022279993198065652
+   ],
+   "distinct": 51.092666666666666,
+   "distinct_se": 0.07204290265936052,
+   "distinct_ci": [
+    50.95146257745432,
+    51.23387075587901
+   ],
+   "lost_slots": 0,
+   "lost_slots_se": 0.0,
+   "lost_slots_ci": [
+    0.0,
+    0.0
+   ],
+   "nominee_one_reading": 100.0,
+   "top_nominee": "NGKI",
+   "top_nominee_count": 32,
+   "distinct_nominees": 414
+  },
+  "model_guided": {
+   "n": 1500,
+   "collapsed": 0,
+   "pick": 1.8509453071453839,
+   "pick_se": 0.013122824724261446,
+   "pick_ci": [
+    1.8252245706858314,
+    1.8766660436049363
+   ],
+   "share_budget": 36.617777777777775,
+   "share_budget_se": 0.0558922714259825,
+   "share_budget_ci": [
+    36.50822892578285,
+    36.7273266297727
+   ],
+   "share_nonlost": 38.28463777477138,
+   "share_nonlost_se": 0.07620913005725645,
+   "share_nonlost_ci": [
+    38.13526787985916,
+    38.43400766968361
+   ],
+   "exploration_shortfall": 6.90854737675697,
+   "exploration_shortfall_se": 0.01308352096007034,
+   "exploration_shortfall_ci": [
+    6.882903675675232,
+    6.934191077838708
+   ],
+   "selection_shortfall": 0.0025073160976467885,
+   "selection_shortfall_se": 0.0004019763988076108,
+   "selection_shortfall_ci": [
+    0.0017194423559838713,
+    0.0032951898393097055
+   ],
+   "distinct": 30.382,
+   "distinct_se": 0.08040954211395136,
+   "distinct_ci": [
+    30.224397297456658,
+    30.539602702543345
+   ],
+   "lost_slots": 2.486666666666667,
+   "lost_slots_se": 0.0649343533071584,
+   "lost_slots_ci": [
+    2.3593953341846365,
+    2.613937999148697
+   ],
+   "nominee_one_reading": 0.0,
+   "top_nominee": "EDQJ",
+   "top_nominee_count": 287,
+   "distinct_nominees": 159
+  },
+  "guessing_curve": {
+   "0": {
+    "n": 1500,
+    "collapsed": 0,
+    "pick": 2.0500042464604817,
+    "pick_se": 0.022866490390623526,
+    "pick_ci": [
+     2.00518592529486,
+     2.0948225676261036
+    ],
+    "share_budget": 1.0333333333333334,
+    "share_budget_se": 0.032998091826512366,
+    "share_budget_ci": [
+     0.9686570733533693,
+     1.0980095933132976
+    ],
+    "share_nonlost": 1.2195886319867726,
+    "share_nonlost_se": 0.03937454681524389,
+    "share_nonlost_ci": [
+     1.1424145202288947,
+     1.2967627437446505
+    ],
+    "exploration_shortfall": 6.692098749613926,
+    "exploration_shortfall_se": 0.022698771581069886,
+    "exploration_shortfall_ci": [
+     6.6476091573150295,
+     6.736588341912823
+    ],
+    "selection_shortfall": 0.019897003925592432,
+    "selection_shortfall_se": 0.0016028121144508163,
+    "selection_shortfall_ci": [
+     0.016755492181268834,
+     0.02303851566991603
+    ],
+    "distinct": 42.46066666666667,
+    "distinct_se": 0.19312013810054818,
+    "distinct_ci": [
+     42.082151195989596,
+     42.83918213734374
+    ],
+    "lost_slots": 9.517333333333333,
+    "lost_slots_se": 0.21747182737273718,
+    "lost_slots_ci": [
+     9.091088551682768,
+     9.943578114983898
+    ],
+    "nominee_one_reading": 99.4,
+    "top_nominee": "EDQJ",
+    "top_nominee_count": 269,
+    "distinct_nominees": 220
+   },
+   "1": {
+    "n": 1500,
+    "collapsed": 0,
+    "pick": 1.9841689559287403,
+    "pick_se": 0.023181865531900492,
+    "pick_ci": [
+     1.9387324994862154,
+     2.0296054123712652
+    ],
+    "share_budget": 23.806666666666665,
+    "share_budget_se": 0.02258841415266357,
+    "share_budget_ci": [
+     23.762393374927445,
+     23.850939958405885
+    ],
+    "share_nonlost": 26.49160416209709,
+    "share_nonlost_se": 0.10069565183049202,
+    "share_nonlost_ci": [
+     26.294240684509326,
+     26.688967639684854
+    ],
+    "exploration_shortfall": 6.770622100869388,
+    "exploration_shortfall_se": 0.0231202305601095,
+    "exploration_shortfall_ci": [
+     6.7253064489715735,
+     6.815937752767202
+    ],
+    "selection_shortfall": 0.007208943201872551,
+    "selection_shortfall_se": 0.0008200660154938275,
+    "selection_shortfall_ci": [
+     0.005601613811504648,
+     0.008816272592240453
+    ],
+    "distinct": 34.36066666666667,
+    "distinct_se": 0.13336426036694168,
+    "distinct_ci": [
+     34.099272716347464,
+     34.62206061698587
+    ],
+    "lost_slots": 5.330666666666667,
+    "lost_slots_se": 0.1423647754924493,
+    "lost_slots_ci": [
+     5.051631706701466,
+     5.6097016266318676
+    ],
+    "nominee_one_reading": 7.133333333333333,
+    "top_nominee": "EDQJ",
+    "top_nominee_count": 263,
+    "distinct_nominees": 225
+   },
+   "2": {
+    "n": 1500,
+    "collapsed": 0,
+    "pick": 1.792340956481885,
+    "pick_se": 0.01690489526689735,
+    "pick_ci": [
+     1.7592073617587662,
+     1.825474551205004
+    ],
+    "share_budget": 46.84888888888889,
+    "share_budget_se": 0.014149879013330157,
+    "share_budget_ci": [
+     46.82115512602276,
+     46.876622651755014
+    ],
+    "share_nonlost": 49.22350588429354,
+    "share_nonlost_se": 0.08613234641805263,
+    "share_nonlost_ci": [
+     49.05468648531416,
+     49.39232528327292
+    ],
+    "exploration_shortfall": 6.965044479525778,
+    "exploration_shortfall_se": 0.016855670704709492,
+    "exploration_shortfall_ci": [
+     6.932007364944547,
+     6.998081594107009
+    ],
+    "selection_shortfall": 0.0046145639923375744,
+    "selection_shortfall_se": 0.0006008969570813662,
+    "selection_shortfall_ci": [
+     0.003436805956458097,
+     0.005792322028217052
+    ],
+    "distinct": 24.822,
+    "distinct_se": 0.08527701853980632,
+    "distinct_ci": [
+     24.65485704366198,
+     24.989142956338018
+    ],
+    "lost_slots": 2.6866666666666665,
+    "lost_slots_se": 0.08155900697112356,
+    "lost_slots_ci": [
+     2.526811013003264,
+     2.846522320330069
+    ],
+    "nominee_one_reading": 6.133333333333333,
+    "top_nominee": "EDQJ",
+    "top_nominee_count": 231,
+    "distinct_nominees": 240
+   },
+   "3": {
+    "n": 1500,
+    "collapsed": 0,
+    "pick": 1.580992605636572,
+    "pick_se": 0.01591663283390136,
+    "pick_ci": [
+     1.5497960052821254,
+     1.6121892059910186
+    ],
+    "share_budget": 70.03,
+    "share_budget_se": 0.005723213268209488,
+    "share_budget_ci": [
+     70.01878250199431,
+     70.0412174980057
+    ],
+    "share_nonlost": 71.38906697538837,
+    "share_nonlost_se": 0.05238393129021312,
+    "share_nonlost_ci": [
+     71.28639447005956,
+     71.49173948071719
+    ],
+    "exploration_shortfall": 7.177802875681133,
+    "exploration_shortfall_se": 0.015886036108348354,
+    "exploration_shortfall_ci": [
+     7.14666624490877,
+     7.208939506453495
+    ],
+    "selection_shortfall": 0.0032045186822960863,
+    "selection_shortfall_se": 0.0005132668912519621,
+    "selection_shortfall_ci": [
+     0.0021985155754422406,
+     0.004210521789149932
+    ],
+    "distinct": 14.308,
+    "distinct_se": 0.04921308268364257,
+    "distinct_ci": [
+     14.211542357940061,
+     14.404457642059938
+    ],
+    "lost_slots": 1.0986666666666667,
+    "lost_slots_se": 0.03996550287693204,
+    "lost_slots_ci": [
+     1.02033428102788,
+     1.1769990523054534
+    ],
+    "nominee_one_reading": 4.8,
+    "top_nominee": "EDQJ",
+    "top_nominee_count": 161,
+    "distinct_nominees": 242
+   },
+   "4": {
+    "n": 1476,
+    "collapsed": 24,
+    "pick": 1.0692021160665803,
+    "pick_se": 0.011853289905226357,
+    "pick_ci": [
+     1.0459696678523367,
+     1.092434564280824
+    ],
+    "share_budget": 93.36156278229448,
+    "share_budget_se": 0.005599768749055586,
+    "share_budget_ci": [
+     93.35058723554634,
+     93.37253832904263
+    ],
+    "share_nonlost": 93.52264189893019,
+    "share_nonlost_se": 0.014219567857360817,
+    "share_nonlost_ci": [
+     93.49477154592977,
+     93.55051225193061
+    ],
+    "exploration_shortfall": 7.691736245705303,
+    "exploration_shortfall_se": 0.011844153626002855,
+    "exploration_shortfall_ci": [
+     7.668521704598337,
+     7.714950786812269
+    ],
+    "selection_shortfall": 0.0010616382281176198,
+    "selection_shortfall_se": 0.00021862051175332588,
+    "selection_shortfall_ci": [
+     0.0006331420250811011,
+     0.0014901344311541386
+    ],
+    "distinct": 3.3292682926829267,
+    "distinct_se": 0.01815999215902085,
+    "distinct_ci": [
+     3.293674708051246,
+     3.3648618773146075
+    ],
+    "lost_slots": 0.1016260162601626,
+    "lost_slots_se": 0.008321435562279912,
+    "lost_slots_ci": [
+     0.08531600255809398,
+     0.11793602996223122
+    ],
+    "nominee_one_reading": 0.0,
+    "top_nominee": "ECQS",
+    "top_nominee_count": 85,
+    "distinct_nominees": 163
+   }
+  }
+ },
+ "models": {
+  "Opus 4.7": {
+   "n": 30,
+   "share_budget": 62.77777777777778,
+   "share_budget_ci": [
+    61.0,
+    64.55555555555556
+   ],
+   "share_nonlost": 64.10259107409897,
+   "share_nonlost_ci": [
+    62.23841727465339,
+    65.84910256637316
+   ],
+   "pick": 1.892534325883252,
+   "pick_ci": [
+    1.752662760093831,
+    2.025032116670434
+   ],
+   "exploration_shortfall": 6.8687777649442285,
+   "selection_shortfall": 0.0006879091725198924,
+   "distinct": 18.6,
+   "lost_rejection": 0.26666666666666666,
+   "lost_rounds": 0.9333333333333333,
+   "lost_cap": 0,
+   "campaigns_over_lost_round_limit": 0,
+   "nominee_one_reading": 0.0,
+   "nominee_highest_single": 93.33333333333333,
+   "top_nominee": "EDQJ",
+   "top_nominee_count": 18,
+   "distinct_nominees": 8,
+   "exploration_shortfall_ci": [
+    6.741648517976927,
+    7.010968160069244
+   ],
+   "selection_shortfall_ci": [
+    4.8281487380356465e-05,
+    0.0016049865859176855
+   ],
+   "distinct_ci": [
+    17.6,
+    19.633333333333333
+   ],
+   "nominees_without_history": 0,
+   "primary": {
+    "best_scripted_policy": "informed k=0",
+    "best_scripted_share": 0.0,
+    "share_minus_best": 62.77777777777778,
+    "interval_above_best": true
+   },
+   "named_test": {
+    "claim": "re-tests more than the best scripted policy, as on GB1",
+    "extends_to_phoq": true,
+    "sensitivity_vs_guessing_kstar": {
+     "guessing_share": 1.0333333333333334,
+     "interval_above": true
+    }
+   },
+   "secondary": {
+    "pick_minus_guessing": -0.15746992057722964,
+    "pick_minus_guessing_ci": [
+     -0.30434652466545475,
+     -0.017597312552682126
+    ],
+    "pick_half_width": 0.1361846782883016,
+    "guessing_pick": 2.0500042464604817,
+    "guessing_pick_se": 0.022866490390623526,
+    "guessing_exploration_shortfall": 6.692098749613926,
+    "guessing_selection_shortfall": 0.019897003925592432
+   },
+   "paired_vs_guessing_same_seeds": {
+    "pairs": 30,
+    "diff": -0.25609879626631105,
+    "ci": [
+     -0.5962766609642867,
+     0.06764901374648093
+    ]
+   },
+   "basin": {
+    "n": 30,
+    "nominee_value": 1.892534325883252,
+    "nominee_in_start_basin": 0.6,
+    "nominee_in_start_basin_ci": [
+     0.43333333333333335,
+     0.7666666666666667
+    ],
+    "nominee_basin_peak": 2.139418500539813,
+    "nominee_basin_peak_ci": [
+     2.042475328023903,
+     2.2279816536524746
+    ],
+    "nominee_basin_peak_is_global": 0.0,
+    "distinct_basins": 6.3,
+    "distinct_basins_ci": [
+     5.733333333333333,
+     6.833333333333333
+    ],
+    "campaigns_without_a_nomination_prompt": 0
+   },
+   "out_of_alphabet_proposals": 69,
+   "campaigns_with_out_of_alphabet": 30,
+   "calls": {
+    "calls": 852,
+    "providers": {
+     "Claude Platform on AWS": 100.0
+    },
+    "median_reasoning_tokens": 0.0,
+    "max_reasoning_tokens": 0,
+    "empty_answers": 0,
+    "truncated": 0,
+    "genuine_parser_disagreements": 4,
+    "bare_token_agreements": 0,
+    "transport_retries": 0,
+    "transport_retry_wait_s": 0,
+    "campaigns_with_transport_retries": 0
+   },
+   "counts": {
+    "written": 30,
+    "abandoned": [],
+    "rerun_written": [],
+    "dropped": [],
+    "continuation_written": [],
+    "continuation_abandoned": [],
+    "continuation_rerun_written": [],
+    "rerun_abandoned": [],
+    "finish_written": [],
+    "finish_dropped": [],
+    "stopped": null
+   },
+   "spend": {
+    "recorded": {
+     "smoke0an8_opus": 0.41132,
+     "gen_0an8_opus_phoq_blind": 5.722845,
+     "gen_0an8_opus_phoq_blind_rerun": 0,
+     "gen_0an8_opus_phoq_blind_cont": 0,
+     "gen_0an8_opus_phoq_blind_cont_rerun": 0,
+     "gen_0an8_opus_phoq_blind_fin": 0
+    },
+    "recorded_total": 6.134165,
+    "main_by_balance": 5.883005000000139,
+    "start_balance": 437.2980831100001,
+    "end_balance": 431.41507810999997,
+    "continuation_by_balance": null,
+    "finish_by_balance": null,
+    "by_balance_total": 5.883005000000139
+   },
+   "gb1_blind": {
+    "tags": "gen_r_gb1scr+gen_r_gb1scr_top",
+    "n": 60,
+    "share_budget": 63.30555555555556,
+    "share_budget_ci": [
+     61.19444444444444,
+     65.38888888888889
+    ],
+    "pick": 4.775322704844743,
+    "pick_ci": [
+     4.410286409138532,
+     5.124091667629114
+    ]
+   },
+   "gb1_blind_first_tag_only": {
+    "tags": "gen_r_gb1scr",
+    "n": 30,
+    "share_budget": 61.666666666666664,
+    "share_budget_ci": [
+     58.333333333333336,
+     65.05555555555556
+    ],
+    "pick": 4.748839458489229,
+    "pick_ci": [
+     4.193172730096386,
+     5.272918912296536
+    ]
+   },
+   "oam_phoq_blind": {
+    "tags": "gen_r_phoqscr",
+    "n": 30,
+    "share_budget": 65.27777777777777,
+    "share_budget_ci": [
+     63.0,
+     67.61111111111111
+    ],
+    "pick": 1.8900090261818758,
+    "pick_ci": [
+     1.7144970418956762,
+     2.055883087697578
+    ]
+   }
+  },
+  "Gemini 2.5 Flash": {
+   "n": 30,
+   "share_budget": 63.666666666666664,
+   "share_budget_ci": [
+    60.611111111111114,
+    66.61111111111111
+   ],
+   "share_nonlost": 67.80805759544543,
+   "share_nonlost_ci": [
+    66.28138998477982,
+    69.43738558992797
+   ],
+   "pick": 2.1298067415147157,
+   "pick_ci": [
+    2.0504996760946383,
+    2.1839784465783945
+   ],
+   "exploration_shortfall": 6.632193258485285,
+   "selection_shortfall": 0.0,
+   "distinct": 16.066666666666666,
+   "lost_rejection": 0.13333333333333333,
+   "lost_rounds": 3.7333333333333334,
+   "lost_cap": 0,
+   "campaigns_over_lost_round_limit": 2,
+   "nominee_one_reading": 0.0,
+   "nominee_highest_single": 100.0,
+   "top_nominee": "EDQJ",
+   "top_nominee_count": 27,
+   "distinct_nominees": 3,
+   "exploration_shortfall_ci": [
+    6.578021553421606,
+    6.717278121123574
+   ],
+   "selection_shortfall_ci": [
+    0.0,
+    0.0
+   ],
+   "distinct_ci": [
+    15.2,
+    16.966666666666665
+   ],
+   "nominees_without_history": 0,
+   "primary": {
+    "best_scripted_policy": "informed k=0",
+    "best_scripted_share": 0.0,
+    "share_minus_best": 63.666666666666664,
+    "interval_above_best": true
+   },
+   "named_test": {
+    "claim": "re-tests more than the best scripted policy, as on GB1",
+    "extends_to_phoq": true,
+    "sensitivity_vs_guessing_kstar": {
+     "guessing_share": 1.0333333333333334,
+     "interval_above": true
+    }
+   },
+   "secondary": {
+    "pick_minus_guessing": 0.07980249505423398,
+    "pick_minus_guessing_ci": [
+     -0.01129246933814769,
+     0.15011078433516478
+    ],
+    "pick_half_width": 0.06673938524187806,
+    "guessing_pick": 2.0500042464604817,
+    "guessing_pick_se": 0.022866490390623526,
+    "guessing_exploration_shortfall": 6.692098749613926,
+    "guessing_selection_shortfall": 0.019897003925592432
+   },
+   "paired_vs_guessing_same_seeds": {
+    "pairs": 30,
+    "diff": -0.018826380634847286,
+    "ci": [
+     -0.34635653554736684,
+     0.2837857984616627
+    ]
+   },
+   "basin": {
+    "n": 30,
+    "nominee_value": 2.1298067415147157,
+    "nominee_in_start_basin": 1.0,
+    "nominee_in_start_basin_ci": [
+     1.0,
+     1.0
+    ],
+    "nominee_basin_peak": 2.1839784465783945,
+    "nominee_basin_peak_ci": [
+     2.1839784465783945,
+     2.1839784465783945
+    ],
+    "nominee_basin_peak_is_global": 0.0,
+    "distinct_basins": 2.933333333333333,
+    "distinct_basins_ci": [
+     2.566666666666667,
+     3.3666666666666667
+    ],
+    "campaigns_without_a_nomination_prompt": 0
+   },
+   "out_of_alphabet_proposals": 287,
+   "campaigns_with_out_of_alphabet": 29,
+   "calls": {
+    "calls": 635,
+    "providers": {
+     "Google": 100.0
+    },
+    "median_reasoning_tokens": 0,
+    "max_reasoning_tokens": 0,
+    "empty_answers": 0,
+    "truncated": 0,
+    "genuine_parser_disagreements": 0,
+    "bare_token_agreements": 0,
+    "transport_retries": 0,
+    "transport_retry_wait_s": 0,
+    "campaigns_with_transport_retries": 0
+   },
+   "counts": {
+    "written": 30,
+    "abandoned": [],
+    "rerun_written": [],
+    "dropped": [],
+    "continuation_written": [],
+    "continuation_abandoned": [],
+    "continuation_rerun_written": [],
+    "rerun_abandoned": [],
+    "finish_written": [],
+    "finish_dropped": [],
+    "stopped": null
+   },
+   "spend": {
+    "recorded": {
+     "smoke0an8_flash": 0.012416799999999999,
+     "gen_0an8_flash_phoq_blind": 0.196932,
+     "gen_0an8_flash_phoq_blind_rerun": 0,
+     "gen_0an8_flash_phoq_blind_cont": 0,
+     "gen_0an8_flash_phoq_blind_cont_rerun": 0,
+     "gen_0an8_flash_phoq_blind_fin": 0
+    },
+    "recorded_total": 0.2093488,
+    "main_by_balance": 0.5086277000000337,
+    "start_balance": 431.41507810999997,
+    "end_balance": 430.90645040999993,
+    "continuation_by_balance": null,
+    "finish_by_balance": null,
+    "by_balance_total": 0.5086277000000337
+   },
+   "gb1_blind": {
+    "tags": "gen_0an6_gb1_control",
+    "n": 60,
+    "share_budget": 91.94444444444444,
+    "share_budget_ci": [
+     90.08333333333333,
+     93.1111111111111
+    ],
+    "pick": 1.1150320031139602,
+    "pick_ci": [
+     0.9938335953020236,
+     1.2875376049803278
+    ]
+   },
+   "oam_phoq_blind": {
+    "tags": "gen_r_phoqscr",
+    "n": 60,
+    "share_budget": 61.72222222222222,
+    "share_budget_ci": [
+     58.666666666666664,
+     64.5
+    ],
+    "pick": 2.120045625442084,
+    "pick_ci": [
+     2.056836168105438,
+     2.164620883440208
+    ]
+   }
+  },
+  "DeepSeek V3.1": {
+   "n": 30,
+   "share_budget": 89.94444444444444,
+   "share_budget_ci": [
+    87.5,
+    91.94444444444444
+   ],
+   "share_nonlost": 91.4132850366649,
+   "share_nonlost_ci": [
+    89.21629663678517,
+    92.94378408785188
+   ],
+   "pick": 0.8293989294204305,
+   "pick_ci": [
+    0.757118401794788,
+    0.941578334821607
+   ],
+   "exploration_shortfall": 7.93260107057957,
+   "selection_shortfall": 0.0,
+   "distinct": 4.933333333333334,
+   "lost_rejection": 0.16666666666666666,
+   "lost_rounds": 0.8,
+   "lost_cap": 0,
+   "campaigns_over_lost_round_limit": 0,
+   "nominee_one_reading": 0.0,
+   "nominee_highest_single": 96.66666666666667,
+   "top_nominee": "EDQT",
+   "top_nominee_count": 19,
+   "distinct_nominees": 6,
+   "exploration_shortfall_ci": [
+    7.820141967286192,
+    8.005165034536631
+   ],
+   "selection_shortfall_ci": [
+    0.0,
+    0.0
+   ],
+   "distinct_ci": [
+    4.133333333333334,
+    6.066666666666666
+   ],
+   "nominees_without_history": 0,
+   "primary": {
+    "best_scripted_policy": "informed k=0",
+    "best_scripted_share": 0.0,
+    "share_minus_best": 89.94444444444444,
+    "interval_above_best": true
+   },
+   "named_test": {
+    "claim": "re-tests more than the best scripted policy, as on GB1",
+    "extends_to_phoq": true,
+    "sensitivity_vs_guessing_kstar": {
+     "guessing_share": 1.0333333333333334,
+     "interval_above": true
+    }
+   },
+   "secondary": {
+    "pick_minus_guessing": -1.2206053170400513,
+    "pick_minus_guessing_ci": [
+     -1.3056532834234171,
+     -1.0998042371265573
+    ],
+    "pick_half_width": 0.09222996651340953,
+    "guessing_pick": 2.0500042464604817,
+    "guessing_pick_se": 0.022866490390623526,
+    "guessing_exploration_shortfall": 6.692098749613926,
+    "guessing_selection_shortfall": 0.019897003925592432
+   },
+   "paired_vs_guessing_same_seeds": {
+    "pairs": 30,
+    "diff": -1.3192341927291327,
+    "ci": [
+     -1.6861891607992192,
+     -0.9805073624971349
+    ]
+   },
+   "basin": {
+    "n": 30,
+    "nominee_value": 0.8293989294204305,
+    "nominee_in_start_basin": 0.9666666666666667,
+    "nominee_in_start_basin_ci": [
+     0.9,
+     1.0
+    ],
+    "nominee_basin_peak": 2.1848546550099948,
+    "nominee_basin_peak_ci": [
+     2.1839784465783945,
+     2.186607071873196
+    ],
+    "nominee_basin_peak_is_global": 0.0,
+    "distinct_basins": 2.4,
+    "distinct_basins_ci": [
+     2.033333333333333,
+     2.8
+    ],
+    "campaigns_without_a_nomination_prompt": 0
+   },
+   "out_of_alphabet_proposals": 73,
+   "campaigns_with_out_of_alphabet": 23,
+   "calls": {
+    "calls": 598,
+    "providers": {
+     "DeepInfra": 51.0,
+     "AtlasCloud": 44.8,
+     "SiliconFlow": 2.3,
+     "CoreWeave": 1.2,
+     "Mara": 0.5,
+     "SambaNova": 0.2
+    },
+    "median_reasoning_tokens": 0.0,
+    "max_reasoning_tokens": 0,
+    "empty_answers": 0,
+    "truncated": 0,
+    "genuine_parser_disagreements": 0,
+    "bare_token_agreements": 0,
+    "transport_retries": 0,
+    "transport_retry_wait_s": 0,
+    "campaigns_with_transport_retries": 0
+   },
+   "counts": {
+    "written": 30,
+    "abandoned": [],
+    "rerun_written": [],
+    "dropped": [],
+    "continuation_written": [],
+    "continuation_abandoned": [],
+    "continuation_rerun_written": [],
+    "rerun_abandoned": [],
+    "finish_written": [],
+    "finish_dropped": [],
+    "stopped": null
+   },
+   "spend": {
+    "recorded": {
+     "smoke0an8_deepseek": 0.0061836700000000005,
+     "gen_0an8_deepseek_phoq_blind": 0.12140353,
+     "gen_0an8_deepseek_phoq_blind_rerun": 0,
+     "gen_0an8_deepseek_phoq_blind_cont": 0,
+     "gen_0an8_deepseek_phoq_blind_cont_rerun": 0,
+     "gen_0an8_deepseek_phoq_blind_fin": 0
+    },
+    "recorded_total": 0.12758719999999998,
+    "main_by_balance": 0.1251313800000844,
+    "start_balance": 430.90459521,
+    "end_balance": 430.77946382999994,
+    "continuation_by_balance": null,
+    "finish_by_balance": null,
+    "by_balance_total": 0.1251313800000844
+   },
+   "gb1_blind": {
+    "tags": "gen_0an6_gb1_control",
+    "n": 60,
+    "share_budget": 95.97222222222223,
+    "share_budget_ci": [
+     95.52777777777779,
+     96.38888888888889
+    ],
+    "pick": 0.8397401828313098,
+    "pick_ci": [
+     0.694435076049596,
+     1.02288130780269
+    ]
+   },
+   "oam_phoq_blind": {
+    "tags": "gen_r_phoqscr",
+    "n": 60,
+    "share_budget": 91.38888888888889,
+    "share_budget_ci": [
+     90.27777777777777,
+     92.33333333333333
+    ],
+    "pick": 0.814663944216538,
+    "pick_ci": [
+     0.7653867117880188,
+     0.8785817446100356
+    ]
+   }
+  },
+  "GPT-6.1 Sol": {
+   "n": 30,
+   "share_budget": 23.944444444444443,
+   "share_budget_ci": [
+    20.77777777777778,
+    27.333333333333332
+   ],
+   "share_nonlost": 25.103074990576488,
+   "share_nonlost_ci": [
+    21.686385144229668,
+    28.717100775307202
+   ],
+   "pick": 2.3679339783357016,
+   "pick_ci": [
+    2.154776900997227,
+    2.5823768847698645
+   ],
+   "exploration_shortfall": 6.3925469948786,
+   "selection_shortfall": 0.0015190267856983668,
+   "distinct": 41.233333333333334,
+   "lost_rejection": 2.7666666666666666,
+   "lost_rounds": 0,
+   "lost_cap": 0,
+   "campaigns_over_lost_round_limit": 0,
+   "nominee_one_reading": 13.333333333333334,
+   "nominee_highest_single": 100.0,
+   "top_nominee": "IAQT",
+   "top_nominee_count": 14,
+   "distinct_nominees": 13,
+   "exploration_shortfall_ci": [
+    6.182916284819733,
+    6.598841577777282
+   ],
+   "selection_shortfall_ci": [
+    0.0,
+    0.0045570803570951
+   ],
+   "distinct_ci": [
+    39.2,
+    43.2
+   ],
+   "nominees_without_history": 0,
+   "primary": {
+    "best_scripted_policy": "informed k=0",
+    "best_scripted_share": 0.0,
+    "share_minus_best": 23.944444444444443,
+    "interval_above_best": true
+   },
+   "named_test": {
+    "claim": "re-tests more than the best scripted policy, as on GB1",
+    "extends_to_phoq": true,
+    "sensitivity_vs_guessing_kstar": {
+     "guessing_share": 1.0333333333333334,
+     "interval_above": true
+    }
+   },
+   "secondary": {
+    "pick_minus_guessing": 0.3179297318752199,
+    "pick_minus_guessing_ci": [
+     0.10011186866931734,
+     0.5370060702416349
+    ],
+    "pick_half_width": 0.2137999918863187,
+    "guessing_pick": 2.0500042464604817,
+    "guessing_pick_se": 0.022866490390623526,
+    "guessing_exploration_shortfall": 6.692098749613926,
+    "guessing_selection_shortfall": 0.019897003925592432
+   },
+   "paired_vs_guessing_same_seeds": {
+    "pairs": 30,
+    "diff": 0.21930085618613843,
+    "ci": [
+     -0.21471482750358142,
+     0.6167816693601025
+    ]
+   },
+   "basin": {
+    "n": 30,
+    "nominee_value": 2.3679339783357016,
+    "nominee_in_start_basin": 0.0,
+    "nominee_in_start_basin_ci": [
+     0.0,
+     0.0
+    ],
+    "nominee_basin_peak": 2.879150197149484,
+    "nominee_basin_peak_ci": [
+     2.6208114827261046,
+     3.1425239044366076
+    ],
+    "nominee_basin_peak_is_global": 0.0,
+    "distinct_basins": 11.333333333333334,
+    "distinct_basins_ci": [
+     10.333333333333334,
+     12.366666666666667
+    ],
+    "campaigns_without_a_nomination_prompt": 0
+   },
+   "out_of_alphabet_proposals": 4,
+   "campaigns_with_out_of_alphabet": 4,
+   "calls": {
+    "calls": 1737,
+    "providers": {
+     "OpenAI": 99.7,
+     "Azure": 0.3
+    },
+    "median_reasoning_tokens": 60,
+    "max_reasoning_tokens": 395,
+    "empty_answers": 0,
+    "truncated": 0,
+    "genuine_parser_disagreements": 0,
+    "bare_token_agreements": 0,
+    "transport_retries": 0,
+    "transport_retry_wait_s": 0,
+    "campaigns_with_transport_retries": 0
+   },
+   "counts": {
+    "written": 15,
+    "abandoned": [
+     17000015,
+     17000016
+    ],
+    "rerun_written": [
+     17000015,
+     17000016
+    ],
+    "dropped": [],
+    "continuation_written": [
+     17000017,
+     17000018,
+     17000019,
+     17000020,
+     17000021
+    ],
+    "continuation_abandoned": [
+     17000022,
+     17000023,
+     17000024
+    ],
+    "continuation_rerun_written": [],
+    "rerun_abandoned": [],
+    "finish_written": [
+     17000022,
+     17000023,
+     17000024,
+     17000025,
+     17000026,
+     17000027,
+     17000028,
+     17000029
+    ],
+    "finish_dropped": [],
+    "stopped": "2 first-pass campaigns abandoned, above the limit of 1: [17000015, 17000016]"
+   },
+   "spend": {
+    "recorded": {
+     "smoke0an8_sol": 0.4827045,
+     "gen_0an8_sol_phoq_blind": 2.913410500000001,
+     "gen_0an8_sol_phoq_blind_rerun": 0.22143300000000005,
+     "gen_0an8_sol_phoq_blind_cont": 1.1648654999999999,
+     "gen_0an8_sol_phoq_blind_cont_rerun": 0,
+     "gen_0an8_sol_phoq_blind_fin": 2.2104090000000003
+    },
+    "recorded_total": 6.992822500000001,
+    "main_by_balance": 2.9496746800000437,
+    "start_balance": 430.77946382999994,
+    "end_balance": 427.8297891499999,
+    "continuation_by_balance": 1.4287985000000845,
+    "finish_by_balance": 2.160017499999867,
+    "by_balance_total": 6.538490679999995
+   },
+   "gb1_blind": {
+    "tags": "gen_0an7_sol_gb1_blind+gen_0an7_sol_gb1_blind_rerun+gen_0an7_sol_gb1_blind_cont",
+    "n": 30,
+    "share_budget": 19.444444444444443,
+    "share_budget_ci": [
+     17.5,
+     21.555555555555554
+    ],
+    "pick": 6.3624120153632235,
+    "pick_ci": [
+     6.1596439062042085,
+     6.610113453241784
+    ]
+   },
+   "gb1_blind_first_tag_only": {
+    "tags": "gen_0an7_sol_gb1_blind",
+    "n": 30,
+    "share_budget": 19.444444444444443,
+    "share_budget_ci": [
+     17.5,
+     21.555555555555557
+    ],
+    "pick": 6.3624120153632235,
+    "pick_ci": [
+     6.158713199813465,
+     6.608029689418418
+    ]
+   }
+  },
+  "Gemini 3.1 Pro": {
+   "n": 30,
+   "share_budget": 14.722222222222221,
+   "share_budget_ci": [
+    13.11111111111111,
+    16.27777777777778
+   ],
+   "share_nonlost": 15.047822267312139,
+   "share_nonlost_ci": [
+    13.396649133060588,
+    16.666758561876723
+   ],
+   "pick": 1.7245181268472227,
+   "pick_ci": [
+    1.6012043687755053,
+    1.8565960740326024
+   ],
+   "exploration_shortfall": 6.982367057597918,
+   "selection_shortfall": 0.05511481555485899,
+   "distinct": 44.86666666666667,
+   "lost_rejection": 1.2666666666666666,
+   "lost_rounds": 0,
+   "lost_cap": 0,
+   "campaigns_over_lost_round_limit": 0,
+   "nominee_one_reading": 96.66666666666667,
+   "nominee_highest_single": 100.0,
+   "top_nominee": "EDQJ",
+   "top_nominee_count": 5,
+   "distinct_nominees": 15,
+   "exploration_shortfall_ci": [
+    6.853786598802609,
+    7.099468759053649
+   ],
+   "selection_shortfall_ci": [
+    0.02223576565833709,
+    0.09342261941764037
+   ],
+   "distinct_ci": [
+    43.733333333333334,
+    46
+   ],
+   "nominees_without_history": 0,
+   "primary": {
+    "best_scripted_policy": "informed k=0",
+    "best_scripted_share": 0.0,
+    "share_minus_best": 14.722222222222221,
+    "interval_above_best": true
+   },
+   "named_test": {
+    "claim": "re-tests more than the best scripted policy, as on GB1",
+    "extends_to_phoq": true,
+    "sensitivity_vs_guessing_kstar": {
+     "guessing_share": 1.0333333333333334,
+     "interval_above": true
+    }
+   },
+   "secondary": {
+    "pick_minus_guessing": -0.325486119613259,
+    "pick_minus_guessing_ci": [
+     -0.45669193061976476,
+     -0.18601115395702092
+    ],
+    "pick_half_width": 0.12769585262854855,
+    "guessing_pick": 2.0500042464604817,
+    "guessing_pick_se": 0.022866490390623526,
+    "guessing_exploration_shortfall": 6.692098749613926,
+    "guessing_selection_shortfall": 0.019897003925592432
+   },
+   "paired_vs_guessing_same_seeds": {
+    "pairs": 30,
+    "diff": -0.4241149953023404,
+    "ci": [
+     -0.7753252369953197,
+     -0.0992739432817546
+    ]
+   },
+   "basin": {
+    "n": 30,
+    "nominee_value": 1.7245181268472227,
+    "nominee_in_start_basin": 0.26666666666666666,
+    "nominee_in_start_basin_ci": [
+     0.13333333333333333,
+     0.43333333333333335
+    ],
+    "nominee_basin_peak": 2.731259002405645,
+    "nominee_basin_peak_ci": [
+     2.177439434779507,
+     3.4245638366842552
+    ],
+    "nominee_basin_peak_is_global": 0.06666666666666667,
+    "distinct_basins": 13.566666666666666,
+    "distinct_basins_ci": [
+     12.6,
+     14.533333333333333
+    ],
+    "campaigns_without_a_nomination_prompt": 0
+   },
+   "out_of_alphabet_proposals": 0,
+   "campaigns_with_out_of_alphabet": 0,
+   "calls": {
+    "calls": 1041,
+    "providers": {
+     "Google": 99.8,
+     "Google AI Studio": 0.2
+    },
+    "median_reasoning_tokens": 234,
+    "max_reasoning_tokens": 30721,
+    "empty_answers": 0,
+    "truncated": 0,
+    "genuine_parser_disagreements": 0,
+    "bare_token_agreements": 0,
+    "transport_retries": 0,
+    "transport_retry_wait_s": 0,
+    "campaigns_with_transport_retries": 0
+   },
+   "counts": {
+    "written": 30,
+    "abandoned": [],
+    "rerun_written": [],
+    "dropped": [],
+    "continuation_written": [],
+    "continuation_abandoned": [],
+    "continuation_rerun_written": [],
+    "rerun_abandoned": [],
+    "finish_written": [],
+    "finish_dropped": [],
+    "stopped": null
+   },
+   "spend": {
+    "recorded": {
+     "smoke0an8_gem": 0.34720399999999996,
+     "gen_0an8_gem_phoq_blind": 6.398890000000001,
+     "gen_0an8_gem_phoq_blind_rerun": 0,
+     "gen_0an8_gem_phoq_blind_cont": 0,
+     "gen_0an8_gem_phoq_blind_cont_rerun": 0,
+     "gen_0an8_gem_phoq_blind_fin": 0
+    },
+    "recorded_total": 6.746094,
+    "main_by_balance": 5.932463999999982,
+    "start_balance": 427.77053015,
+    "end_balance": 421.83806615000003,
+    "continuation_by_balance": null,
+    "finish_by_balance": null,
+    "by_balance_total": 5.932463999999982
+   },
+   "gb1_blind": {
+    "tags": "gen_0an7_gem_gb1_blind+gen_0an7_gem_gb1_blind_rerun+gen_0an7_gem_gb1_blind_cont",
+    "n": 30,
+    "share_budget": 11.11111111111111,
+    "share_budget_ci": [
+     9.5,
+     12.722222222222223
+    ],
+    "pick": 4.903924702411044,
+    "pick_ci": [
+     4.354760269081157,
+     5.455177036793848
+    ]
+   },
+   "gb1_blind_first_tag_only": {
+    "tags": "gen_0an7_gem_gb1_blind",
+    "n": 30,
+    "share_budget": 11.11111111111111,
+    "share_budget_ci": [
+     9.5,
+     12.777777777777779
+    ],
+    "pick": 4.903924702411044,
+    "pick_ci": [
+     4.3557715579930925,
+     5.453766852626035
+    ]
+   }
+  }
+ },
+ "named_test_all_models": {
+  "models": 5,
+  "extends": 5,
+  "holds_for_all_five": true
+ },
+ "panel_spend": {
+  "recorded": 20.2100175,
+  "balance_rows": [
+   {
+    "t": "2026-10-05T18:15:44+1100",
+    "event": "before smoke",
+    "balance": 438.5925659300001
+   },
+   {
+    "t": "2026-10-05T18:23:35+1100",
+    "event": "after smoke",
+    "balance": 437.36504661000004
+   },
+   {
+    "t": "2026-10-05T18:52:31+1100",
+    "event": "start opus",
+    "balance": 437.2980831100001,
+    "model": "anthropic/claude-opus-4.7"
+   },
+   {
+    "t": "2026-10-05T19:33:47+1100",
+    "event": "end opus",
+    "balance": 431.41507810999997,
+    "model": "anthropic/claude-opus-4.7"
+   },
+   {
+    "t": "2026-10-05T19:34:17+1100",
+    "event": "start flash",
+    "balance": 431.41507810999997,
+    "model": "google/gemini-2.5-flash"
+   },
+   {
+    "t": "2026-10-05T19:51:00+1100",
+    "event": "end flash",
+    "balance": 430.90645040999993,
+    "model": "google/gemini-2.5-flash"
+   },
+   {
+    "t": "2026-10-05T19:51:31+1100",
+    "event": "start deepseek",
+    "balance": 430.90459521,
+    "model": "deepseek/deepseek-chat-v3.1"
+   },
+   {
+    "t": "2026-10-05T20:35:42+1100",
+    "event": "end deepseek",
+    "balance": 430.77946382999994,
+    "model": "deepseek/deepseek-chat-v3.1"
+   },
+   {
+    "t": "2026-10-05T20:36:13+1100",
+    "event": "start sol",
+    "balance": 430.77946382999994,
+    "model": "openai/gpt-6.1-sol"
+   },
+   {
+    "t": "2026-10-05T21:50:05+1100",
+    "event": "end sol",
+    "balance": 427.8297891499999,
+    "model": "openai/gpt-6.1-sol"
+   },
+   {
+    "t": "2026-10-05T21:50:35+1100",
+    "event": "start gem",
+    "balance": 427.77053015,
+    "model": "google/gemini-3.1-pro-preview"
+   },
+   {
+    "t": "2026-10-05T23:15:13+1100",
+    "event": "end gem",
+    "balance": 421.83806615000003,
+    "model": "google/gemini-3.1-pro-preview"
+   },
+   {
+    "t": "2026-10-05T23:15:13+1100",
+    "event": "end of main run",
+    "balance": 421.83806615000003
+   },
+   {
+    "t": "2026-10-05T23:36:22+1100",
+    "event": "start sol continuation",
+    "balance": 421.35633615000006,
+    "model": "openai/gpt-6.1-sol"
+   },
+   {
+    "t": "2026-10-06T00:16:25+1100",
+    "event": "after sol continuation stop",
+    "balance": 419.92753765,
+    "model": "openai/gpt-6.1-sol"
+   },
+   {
+    "t": "2026-10-06T04:56:05+1100",
+    "event": "start sol finish",
+    "balance": 419.8649736499999,
+    "model": "openai/gpt-6.1-sol"
+   },
+   {
+    "t": "2026-10-06T05:43:19+1100",
+    "event": "end sol finish",
+    "balance": 417.70495615000004,
+    "model": "openai/gpt-6.1-sol"
+   }
+  ],
+  "by_balance": 20.887609780000048,
+  "last_balance_event": "end sol finish"
+ }
+}

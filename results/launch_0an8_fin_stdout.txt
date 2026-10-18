@@ -1,0 +1,21 @@
+== finishing sol under the transport amendment: [17000022, 17000023, 17000024, 17000025, 17000026, 17000027, 17000028, 17000029]; ceiling $15
+health gate, try 1 of 5: ok
+balance start sol finish: $419.8650
+before gen_0an8_sol_phoq_blind_fin seed 17000022: balance $419.8650, sol by balance $4.3785 of $15, panel $18.7276 of $100, largest campaign $0.3417
+gen_0an8_sol_phoq_blind_fin seed 17000022: written
+before gen_0an8_sol_phoq_blind_fin seed 17000023: balance $419.7820, sol by balance $4.4615 of $15, panel $18.8106 of $100, largest campaign $0.3417
+gen_0an8_sol_phoq_blind_fin seed 17000023: written
+before gen_0an8_sol_phoq_blind_fin seed 17000024: balance $419.5130, sol by balance $4.7305 of $15, panel $19.0796 of $100, largest campaign $0.3417
+gen_0an8_sol_phoq_blind_fin seed 17000024: written
+before gen_0an8_sol_phoq_blind_fin seed 17000025: balance $419.1964, sol by balance $5.0471 of $15, panel $19.3962 of $100, largest campaign $0.3417
+gen_0an8_sol_phoq_blind_fin seed 17000025: written
+before gen_0an8_sol_phoq_blind_fin seed 17000026: balance $418.9183, sol by balance $5.3252 of $15, panel $19.6743 of $100, largest campaign $0.3417
+gen_0an8_sol_phoq_blind_fin seed 17000026: written
+before gen_0an8_sol_phoq_blind_fin seed 17000027: balance $418.5522, sol by balance $5.6912 of $15, panel $20.0403 of $100, largest campaign $0.3417
+gen_0an8_sol_phoq_blind_fin seed 17000027: written
+before gen_0an8_sol_phoq_blind_fin seed 17000028: balance $418.4156, sol by balance $5.8278 of $15, panel $20.1770 of $100, largest campaign $0.3417
+gen_0an8_sol_phoq_blind_fin seed 17000028: written
+before gen_0an8_sol_phoq_blind_fin seed 17000029: balance $418.0309, sol by balance $6.2126 of $15, panel $20.5617 of $100, largest campaign $0.3449
+gen_0an8_sol_phoq_blind_fin seed 17000029: written
+balance end sol finish: $417.7050
+finishing sol done: dropped []

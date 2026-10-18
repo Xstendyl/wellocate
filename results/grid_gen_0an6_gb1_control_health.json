@@ -1,0 +1,20 @@
+{
+ "google/gemini-2.5-flash": {
+  "calls": 1104,
+  "empty": 0,
+  "malformed": 9,
+  "truncated": 0,
+  "mean_reasoning": 0,
+  "max_reasoning": 0,
+  "max_completion": 87
+ },
+ "deepseek/deepseek-chat-v3.1": {
+  "calls": 2587,
+  "empty": 0,
+  "malformed": 0,
+  "truncated": 0,
+  "mean_reasoning": 0,
+  "max_reasoning": 0,
+  "max_completion": 81
+ }
+}

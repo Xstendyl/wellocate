@@ -1,0 +1,454 @@
+[
+ {
+  "arxiv": "2403.15371",
+  "title": "Can large language models explore in-context?",
+  "authors": [
+   "Akshay Krishnamurthy",
+   "Keegan Harris",
+   "Dylan J. Foster",
+   "Cyril Zhang",
+   "Aleksandrs Slivkins"
+  ],
+  "published": "2024-03-22",
+  "updated": "2024-10-28",
+  "comment": "Accepted to NeurIPS 2024. This version: added references to related and concurrent work",
+  "journal_ref": "",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ],
+  "claim_ok": true,
+  "abstract": "We investigate the extent to which contemporary Large Language Models (LLMs) can engage in exploration, a core capability in reinforcement learning and decision making. We focus on native performance of existing LLMs, without training interventions. We deploy LLMs as agents in simple multi-armed bandit environments, specifying the environment description and interaction history entirely in-context, i.e., within the LLM prompt. We experiment with GPT-3.5, GPT-4, and Llama2, using a variety of prompt designs, and find that the models do not robustly engage in exploration without substantial interventions: i) Across all of our experiments, only one configuration resulted in satisfactory exploratory behavior: GPT-4 with chain-of-thought reasoning and an externally summarized interaction history, presented as sufficient statistics; ii) All other configurations did not result in robust exploratory behavior, including those with chain-of-thought reasoning but unsummarized history. Although these findings can be interpreted positively, they suggest that external summarization -- which may not be possible in more complex settings -- is important for obtaining desirable behavior from LLM agents. We conclude that non-trivial algorithmic interventions, such as fine-tuning or dataset curation, may be required to empower LLM-based decision making agents in complex settings."
+ },
+ {
+  "arxiv": "2509.21403",
+  "title": "LLMs for Bayesian Optimization in Scientific Domains: Are We There Yet?",
+  "authors": [
+   "Rushil Gupta",
+   "Jason Hartford",
+   "Bang Liu"
+  ],
+  "published": "2025-09-24",
+  "updated": "2025-09-24",
+  "comment": "Accepted to EMNLP 2025",
+  "journal_ref": "",
+  "categories": [
+   "cs.LG",
+   "cs.CL"
+  ],
+  "claim_ok": true,
+  "abstract": "Large language models (LLMs) have recently been proposed as general-purpose agents for experimental design, with claims that they can perform in-context experimental design. We evaluate this hypothesis using both open- and closed-source instruction-tuned LLMs applied to genetic perturbation and molecular property discovery tasks. We find that LLM-based agents show no sensitivity to experimental feedback: replacing true outcomes with randomly permuted labels has no impact on performance. Across benchmarks, classical methods such as linear bandits and Gaussian process optimization consistently outperform LLM agents. We further propose a simple hybrid method, LLM-guided Nearest Neighbour (LLMNN) sampling, that combines LLM prior knowledge with nearest-neighbor sampling to guide the design of experiments. LLMNN achieves competitive or superior performance across domains without requiring significant in-context adaptation. These results suggest that current open- and closed-source LLMs do not perform in-context experimental design in practice and highlight the need for hybrid frameworks that decouple prior-based reasoning from batch acquisition with updated posteriors."
+ },
+ {
+  "arxiv": "2603.26177",
+  "title": "Can AI Scientist Agents Learn from Lab-in-the-Loop Feedback? Evidence from Iterative Perturbation Discovery",
+  "authors": [
+   "Gilles Wainrib",
+   "Barbara Bodinier",
+   "Haitem Dakhli",
+   "Josep Monserrat",
+   "Almudena Espin Perez",
+   "Sabrina Carpentier",
+   "Roberta Codato",
+   "John Klein"
+  ],
+  "published": "2026-03-27",
+  "updated": "2026-03-27",
+  "comment": "",
+  "journal_ref": "",
+  "categories": [
+   "cs.LG"
+  ],
+  "claim_ok": true,
+  "abstract": "Recent work has questioned whether large language models (LLMs) can perform genuine in-context learning (ICL) for scientific experimental design, with prior studies suggesting that LLM-based agents exhibit no sensitivity to experimental feedback. We shed new light on this question by carrying out 800 independently replicated experiments on iterative perturbation discovery in Cell Painting high-content screening. We compare an LLM agent that iteratively updates its hypotheses using experimental feedback to a zero-shot baseline that relies solely on pretraining knowledge retrieval. Access to feedback yields a $+53.4\\%$ increase in discoveries per feature on average ($p = 0.003$). To test whether this improvement arises from genuine feedback-driven learning rather than prompt-induced recall of pretraining knowledge, we introduce a random feedback control in which hit/miss labels are permuted. Under this control, the performance gain disappears, indicating that the observed improvement depends on the structure of the feedback signal ($+13.0$ hits, $p = 0.003$). We further examine how model capability affects feedback utilization. Upgrading from Claude Sonnet 4.5 to 4.6 reduces gene hallucination rates from ${\\sim}33\\%$--$45\\%$ to ${\\sim}3$--$9\\%$, converting a non-significant ICL effect ($+0.8$, $p = 0.32$) into a large and highly significant improvement ($+11.0$, $p=0.003$) for the best ICL strategy. These results suggest that effective in-context learning from experimental feedback emerges only once models reach a sufficient capability threshold."
+ },
+ {
+  "arxiv": "2602.11348",
+  "title": "AgentNoiseBench: Benchmarking Robustness of Tool-Using LLM Agents Under Noisy Condition",
+  "authors": [
+   "Ruipeng Wang",
+   "Yuxin Chen",
+   "Yukai Wang",
+   "Chang Wu",
+   "Junfeng Fang",
+   "Xiaodong Cai",
+   "Qi Gu",
+   "Hui Su",
+   "An Zhang",
+   "Xiang Wang",
+   "Xunliang Cai",
+   "Tat-Seng Chua"
+  ],
+  "published": "2026-02-11",
+  "updated": "2026-02-18",
+  "comment": "",
+  "journal_ref": "",
+  "categories": [
+   "cs.AI"
+  ],
+  "claim_ok": true,
+  "abstract": "Recent advances in large language models have enabled LLM-based agents to achieve strong performance on a variety of benchmarks. However, their performance in real-world deployments often that observed on benchmark settings, especially in complex and imperfect environments. This discrepancy largely arises because prevailing training and evaluation paradigms are typically built on idealized assumptions, overlooking the inherent stochasticity and noise present in real-world interactions. To bridge this gap, we introduce AgentNoiseBench, a framework for systematically evaluating the robustness of agentic models under noisy environments. We first conduct an in-depth analysis of biases and uncertainties in real-world scenarios and categorize environmental noise into two primary types: user-noise and tool-noise. Building on this analysis, we develop an automated pipeline that injects controllable noise into existing agent-centric benchmarks while preserving task solvability. Leveraging this pipeline, we perform extensive evaluations across a wide range of models with diverse architectures and parameter scales. Our results reveal consistent performance variations under different noise conditions, highlighting the sensitivity of current agentic models to realistic environmental perturbations."
+ },
+ {
+  "arxiv": "2311.01195",
+  "title": "Batch Bayesian Optimization for Replicable Experimental Design",
+  "authors": [
+   "Zhongxiang Dai",
+   "Quoc Phong Nguyen",
+   "Sebastian Shenghong Tay",
+   "Daisuke Urano",
+   "Richalynn Leong",
+   "Bryan Kian Hsiang Low",
+   "Patrick Jaillet"
+  ],
+  "published": "2023-11-02",
+  "updated": "2023-11-02",
+  "comment": "Accepted to NeurIPS 2023",
+  "journal_ref": "",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ],
+  "claim_ok": true,
+  "abstract": "Many real-world experimental design problems (a) evaluate multiple experimental conditions in parallel and (b) replicate each condition multiple times due to large and heteroscedastic observation noise. Given a fixed total budget, this naturally induces a trade-off between evaluating more unique conditions while replicating each of them fewer times vs. evaluating fewer unique conditions and replicating each more times. Moreover, in these problems, practitioners may be risk-averse and hence prefer an input with both good average performance and small variability. To tackle both challenges, we propose the Batch Thompson Sampling for Replicable Experimental Design (BTS-RED) framework, which encompasses three algorithms. Our BTS-RED-Known and BTS-RED-Unknown algorithms, for, respectively, known and unknown noise variance, choose the number of replications adaptively rather than deterministically such that an input with a larger noise variance is replicated more times. As a result, despite the noise heteroscedasticity, both algorithms enjoy a theoretical guarantee and are asymptotically no-regret. Our Mean-Var-BTS-RED algorithm aims at risk-averse optimization and is also asymptotically no-regret. We also show the effectiveness of our algorithms in two practical real-world applications: precision agriculture and AutoML."
+ },
+ {
+  "arxiv": "1710.03206",
+  "title": "Replication or exploration? Sequential design for stochastic simulation experiments",
+  "authors": [
+   "Mickael Binois",
+   "Jiangeng Huang",
+   "Robert B Gramacy",
+   "Mike Ludkovski"
+  ],
+  "published": "2017-10-09",
+  "updated": "2019-01-25",
+  "comment": "34 pages, 9 figures",
+  "journal_ref": "",
+  "categories": [
+   "stat.ME",
+   "stat.CO"
+  ],
+  "claim_ok": true,
+  "abstract": "We investigate the merits of replication, and provide methods for optimal design (including replicates), with the goal of obtaining globally accurate emulation of noisy computer simulation experiments. We first show that replication can be beneficial from both design and computational perspectives, in the context of Gaussian process surrogate modeling. We then develop a lookahead based sequential design scheme that can determine if a new run should be at an existing input location (i.e., replicate) or at a new one (explore). When paired with a newly developed heteroskedastic Gaussian process model, our dynamic design scheme facilitates learning of signal and noise relationships which can vary throughout the input space. We show that it does so efficiently, on both computational and statistical grounds. In addition to illustrative synthetic examples, we demonstrate performance on two challenging real-data simulation experiments, from inventory management and epidemiology."
+ },
+ {
+  "arxiv": "2501.01540",
+  "title": "BoxingGym: Benchmarking Progress in Automated Experimental Design and Model Discovery",
+  "authors": [
+   "Kanishk Gandhi",
+   "Michael Y. Li",
+   "Lyle Goodyear",
+   "Agam Bhatia",
+   "Louise Li",
+   "Aditi Bhaskar",
+   "Mohammed Zaman",
+   "Noah D. Goodman"
+  ],
+  "published": "2025-01-02",
+  "updated": "2025-10-14",
+  "comment": "KG and MYL contributed equally",
+  "journal_ref": "",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ],
+  "claim_ok": true,
+  "abstract": "Understanding the world and explaining it with scientific theories is a central aspiration of artificial intelligence research. Proposing theories, designing experiments to test them, and then revising them based on data are fundamental to scientific discovery. Despite the significant promise of LLM-based scientific agents, no benchmarks systematically test LLM's ability to propose scientific models, collect experimental data, and revise them in light of new data. We introduce BoxingGym, a benchmark with 10 environments for systematically evaluating both experimental design (e.g. collecting data to test a scientific theory) and model discovery (e.g. proposing and revising scientific theories). To enable tractable and quantitative evaluation, we implement each environment as a generative probabilistic model with which a scientific agent can run interactive experiments. These probabilistic models are drawn from various real-world scientific domains ranging from psychology to ecology. To quantitatively evaluate a scientific agent's ability to collect informative experimental data, we compute the expected information gain (EIG), an information-theoretic quantity which measures how much an experiment reduces uncertainty about the parameters of a generative model. A good scientific theory is a concise and predictive explanation. Therefore, to quantitatively evaluate model discovery, we ask a scientific agent to explain their model and then assess whether this explanation enables another scientific agent to make reliable predictions about this environment. In addition to this explanation-based evaluation, we compute standard model evaluation metrics such as prediction errors. We find that current LLMs, such as GPT-4o, struggle with both experimental design and model discovery. We find that augmenting the LLM-based agent with an explicit statistical model does not reliably improve these results."
+ },
+ {
+  "arxiv": "2604.13151",
+  "title": "Exploration and Exploitation Errors Are Measurable for Language Model Agents",
+  "authors": [
+   "Jaden Park",
+   "Jungtaek Kim",
+   "Jongwon Jeong",
+   "Robert D. Nowak",
+   "Kangwook Lee",
+   "Yong Jae Lee"
+  ],
+  "published": "2026-04-14",
+  "updated": "2026-04-14",
+  "comment": "",
+  "journal_ref": "",
+  "categories": [
+   "cs.AI"
+  ],
+  "claim_ok": true,
+  "abstract": "Language Model (LM) agents are increasingly used in complex open-ended decision-making tasks, from AI coding to physical AI. A core requirement in these settings is the ability to both explore the problem space and exploit acquired knowledge effectively. However, systematically distinguishing and quantifying exploration and exploitation from observed actions without access to the agent's internal policy remains challenging. To address this, we design controllable environments inspired by practical embodied AI scenarios. Each environment consists of a partially observable 2D grid map and an unknown task Directed Acyclic Graph (DAG). The map generation can be programmatically adjusted to emphasize exploration or exploitation difficulty. To enable policy-agnostic evaluation, we design a metric to quantify exploration and exploitation errors from agent's actions. We evaluate a variety of frontier LM agents and find that even state-of-the-art models struggle on our task, with different models exhibiting distinct failure modes. We further observe that reasoning models solve the task more effectively and show both exploration and exploitation can be significantly improved through minimal harness engineering. We release our code \\href{https://github.com/jjj-madison/measurable-explore-exploit}{here}."
+ },
+ {
+  "arxiv": "2607.23332v1",
+  "title": "AlloBench: Measuring Online Tool Allocation Capability in LLM Agents",
+  "authors": [
+   "Daniel Wang",
+   "Andrew Xu"
+  ],
+  "published": "2026-07-25",
+  "updated": "2026-07-25",
+  "comment": "24 pages, 6 figures, 8 tables",
+  "journal_ref": "",
+  "categories": [
+   "cs.LG"
+  ],
+  "claim_ok": true,
+  "abstract": "Creating a reusable tool is an investment: an agent pays a fixed cost now in exchange for the potential of future reuse. Therefore, a user should prefer an agent that creates a small number of highly reusable tools, rather than many one-offs. We introduce a paired benchmark that tests whether LLM agents exhibit conscious allocation behavior under a fixed budget in two contexts: an abstract text-based formulation and a code-construction task. We find that every frontier model we test---Claude Haiku, Claude Opus, GPT-5.4-mini, and GPT-5.6 Sol---acts near-optimally in the abstract framing but fails to transfer this ability to script-writing. Through further experiments, we identify the particular failure modes for each model. Notably, the first three models fail even when the scripts are not evaluated, while GPT-5.6 Sol stays selective under that weaker manipulation and collapses only at full construction. Furthermore, an open-source Qwen model policy-trained for abstract allocation generalizes this ability across held-out lexical variations, but sees no improvement at script allocation. Together, these results establish online tool allocation as a significant capability boundary, even for modern frontier models."
+ },
+ {
+  "arxiv": "2607.23332v2",
+  "title": "AllocBench: Measuring Online Tool Allocation Capability in LLM Agents",
+  "authors": [
+   "Daniel Wang",
+   "Andrew Xu"
+  ],
+  "published": "2026-07-25",
+  "updated": "2026-07-31",
+  "comment": "24 pages, 6 figures, 8 tables",
+  "journal_ref": "",
+  "categories": [
+   "cs.LG"
+  ],
+  "claim_ok": true,
+  "abstract": "Creating a reusable tool is an investment: an agent pays a fixed cost now in exchange for the potential of future reuse. Therefore, a user should prefer an agent that creates a small number of highly reusable tools, rather than many one-offs. We introduce a paired benchmark that tests whether LLM agents exhibit conscious allocation behavior under a fixed budget in two contexts: an abstract text-based formulation and a code-construction task. We find that every frontier model we test---Claude Haiku, Claude Opus, GPT-5.4-mini, and GPT-5.6 Sol---acts near-optimally in the abstract framing but fails to transfer this ability to script-writing. Through further experiments, we identify the particular failure modes for each model. Notably, the first three models fail even when the scripts are not evaluated, while GPT-5.6 Sol stays selective under that weaker manipulation and collapses only at full construction. Furthermore, an open-source Qwen model policy-trained for abstract allocation generalizes this ability across held-out lexical variations, but sees no improvement at script allocation. Together, these results establish online tool allocation as a significant capability boundary, even for modern frontier models."
+ },
+ {
+  "arxiv": "2607.29626",
+  "title": "AgentHPOBench: A Benchmark For Evaluating LLM Agents as Sequential Hyperparameter Optimizers",
+  "authors": [
+   "Tianyu Huai",
+   "Tingshuo Fan",
+   "Xinchi Chen",
+   "Yining Zheng",
+   "Yuxin Wang",
+   "Shuang Chen",
+   "Jie Zhou",
+   "Xuanjing Huang"
+  ],
+  "published": "2026-07-31",
+  "updated": "2026-07-31",
+  "comment": "",
+  "journal_ref": "",
+  "categories": [
+   "cs.AI"
+  ],
+  "claim_ok": true,
+  "abstract": "As LLMs evolve from code completion systems into autonomous scientific agents, evaluating their ability to conduct experiments has become increasingly important. Existing benchmarks typically focus on static code generation, paper replication, or final answer correctness, but do not directly assess whether agents can interpret experimental evidence and use it to guide subsequent hyperparameter decisions. To address this gap, we introduce AgentHPOBench, a sequential benchmark comprising 30 executable machine learning tasks across seven research categories. Each task begins with a validated baseline run, after which an agent performs several sequential interventions. At each step, the agent observes the accumulated configurations, metrics, and logs before proposing the next valid configuration. We evaluate 12 widely used agents and conventional HPO baselines under a unified protocol. The results show that current agents exhibit measurable experimental optimization ability across domains, but still face clear limitations in sustained iterative refinement, complex log diagnosis, and consistent progress toward reported reference performance."
+ },
+ {
+  "arxiv": "2405.17631",
+  "title": "BioDiscoveryAgent: An AI Agent for Designing Genetic Perturbation Experiments",
+  "authors": [
+   "Yusuf Roohani",
+   "Andrew Lee",
+   "Qian Huang",
+   "Jian Vora",
+   "Zachary Steinhart",
+   "Kexin Huang",
+   "Alexander Marson",
+   "Percy Liang",
+   "Jure Leskovec"
+  ],
+  "published": "2024-05-27",
+  "updated": "2025-03-09",
+  "comment": "",
+  "journal_ref": "",
+  "categories": [
+   "cs.AI",
+   "cs.CE",
+   "cs.MA"
+  ],
+  "claim_ok": true,
+  "abstract": "Agents based on large language models have shown great potential in accelerating scientific discovery by leveraging their rich background knowledge and reasoning capabilities. In this paper, we introduce BioDiscoveryAgent, an agent that designs new experiments, reasons about their outcomes, and efficiently navigates the hypothesis space to reach desired solutions. We demonstrate our agent on the problem of designing genetic perturbation experiments, where the aim is to find a small subset out of many possible genes that, when perturbed, result in a specific phenotype (e.g., cell growth). Utilizing its biological knowledge, BioDiscoveryAgent can uniquely design new experiments without the need to train a machine learning model or explicitly design an acquisition function as in Bayesian optimization. Moreover, BioDiscoveryAgent, using Claude 3.5 Sonnet, achieves an average of 21% improvement in predicting relevant genetic perturbations across six datasets, and a 46% improvement in the harder task of non-essential gene perturbation, compared to existing Bayesian optimization baselines specifically trained for this task. Our evaluation includes one dataset that is unpublished, ensuring it is not part of the language model's training data. Additionally, BioDiscoveryAgent predicts gene combinations to perturb more than twice as accurately as a random baseline, a task so far not explored in the context of closed-loop experiment design. The agent also has access to tools for searching the biomedical literature, executing code to analyze biological datasets, and prompting another agent to critically evaluate its predictions. Overall, BioDiscoveryAgent is interpretable at every stage, representing an accessible new paradigm in the computational design of biological experiments with the potential to augment scientists' efficacy."
+ },
+ {
+  "arxiv": "2402.03921",
+  "title": "Large Language Models to Enhance Bayesian Optimization",
+  "authors": [
+   "Tennison Liu",
+   "Nicol\u00e1s Astorga",
+   "Nabeel Seedat",
+   "Mihaela van der Schaar"
+  ],
+  "published": "2024-02-06",
+  "updated": "2024-03-08",
+  "comment": "Accepted as Poster at ICLR2024",
+  "journal_ref": "",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ],
+  "claim_ok": true,
+  "abstract": "Bayesian optimization (BO) is a powerful approach for optimizing complex and expensive-to-evaluate black-box functions. Its importance is underscored in many applications, notably including hyperparameter tuning, but its efficacy depends on efficiently balancing exploration and exploitation. While there has been substantial progress in BO methods, striking this balance remains a delicate process. In this light, we present LLAMBO, a novel approach that integrates the capabilities of Large Language Models (LLM) within BO. At a high level, we frame the BO problem in natural language, enabling LLMs to iteratively propose and evaluate promising solutions conditioned on historical evaluations. More specifically, we explore how combining contextual understanding, few-shot learning proficiency, and domain knowledge of LLMs can improve model-based BO. Our findings illustrate that LLAMBO is effective at zero-shot warmstarting, and enhances surrogate modeling and candidate sampling, especially in the early stages of search when observations are sparse. Our approach is performed in context and does not require LLM finetuning. Additionally, it is modular by design, allowing individual components to be integrated into existing BO frameworks, or function cohesively as an end-to-end method. We empirically validate LLAMBO's efficacy on the problem of hyperparameter tuning, highlighting strong empirical performance across a range of diverse benchmarks, proprietary, and synthetic tasks."
+ },
+ {
+  "arxiv": null,
+  "doi": "10.1101/2026.05.06.723381",
+  "pmc": "PMC13174699",
+  "title": "Benchmarking and behavioral characterization of LLM agents for protein design",
+  "note": "NOT on arXiv; abstract only, fetched for quote verification",
+  "claim_ok": true,
+  "abstract": "Abstract Large language models (LLMs) are increasingly deployed as agents for scientific discovery, but standardized frameworks for evaluating their performance and behavior in scientific workflows are lacking. Protein design provides a demanding test case because modern workflows combine stochastic generative models, structure prediction systems, and physics-based evaluation tools that require extensive candidate exploration and filtering. Here we introduce BioDesignBench, a benchmark of 76 expert-curated protein design tasks spanning antibodies, enzymes, fluorescent proteins, binders, and scaffolds, together with human and non-LLM baselines and behavioral metrics derived from tool-use traces. We evaluate four frontier LLM agents across diverse protein design workflows and find that the strongest agents surpass deterministic hardcoded pipelines but consistently underperform expert practice. Decomposing agent behavior along orthogonal axes of tool coverage and evaluation depth, we localize the gap to evaluation rather than tool selection: agents generally pick appropriate tools but score each candidate against only a narrow set of metrics, rarely compare alternatives, and terminate exploration prematurely. Guided workflows improve tool coverage but not evaluation depth. A compute-matched forced-depth intervention that requires agents to evaluate every candidate across multiple complementary metric categories (structure, interface, physics, and learned affinity) substantially improves performance and rules out generic scaffolding effects, demonstrating that the gap is behavioral rather than a fundamental capability constraint. All evaluations are performed in silico. We release BioDesignBench, open-source reference agents, and a public leaderboard as a community resource for evaluating and improving AI agents for protein engineering. Keywords: LLM agents, protein design, benchmark, tool use, computational biology 1."
+ },
+ {
+  "doi": "10.1016/S0022-5193(89)80019-0",
+  "title": "The NK model of rugged fitness landscapes and its application to maturation of the immune response",
+  "authors": [
+   "Stuart A. Kauffman",
+   "Edward D. Weinberger"
+  ],
+  "container": "Journal of Theoretical Biology",
+  "year": 1989,
+  "volume": "141",
+  "issue": "2",
+  "page": "211-245",
+  "publisher": "Elsevier BV",
+  "claim_ok": true
+ },
+ {
+  "doi": "10.7554/eLife.16965",
+  "title": "Adaptation in protein fitness landscapes is facilitated by indirect paths",
+  "authors": [
+   "Nicholas C Wu",
+   "Lei Dai",
+   "C Anders Olson",
+   "James O Lloyd-Smith",
+   "Ren Sun"
+  ],
+  "container": "eLife",
+  "year": 2016,
+  "volume": "5",
+  "issue": null,
+  "page": null,
+  "publisher": "eLife Sciences Publications, Ltd",
+  "claim_ok": true
+ },
+ {
+  "doi": "10.1038/s44286-023-00002-4",
+  "title": "Self-driving laboratories to autonomously navigate the protein fitness landscape",
+  "authors": [
+   "Jacob T. Rapp",
+   "Bennett J. Bremer",
+   "Philip A. Romero"
+  ],
+  "container": "Nature Chemical Engineering",
+  "year": 2024,
+  "volume": "1",
+  "issue": "1",
+  "page": "97-107",
+  "publisher": "Springer Science and Business Media LLC",
+  "claim_ok": true
+ },
+ {
+  "doi": "10.1021/acs.chemrev.4c00055",
+  "title": "Self-Driving Laboratories for Chemistry and Materials Science",
+  "authors": [
+   "Gary Tom",
+   "Stefan P. Schmid",
+   "Sterling G. Baird",
+   "Yang Cao",
+   "Kourosh Darvish",
+   "Han Hao",
+   "Stanley Lo",
+   "Sergio Pablo-Garc\u00eda",
+   "Ella M. Rajaonson",
+   "Marta Skreta",
+   "Naruki Yoshikawa",
+   "Samantha Corapi",
+   "Gun Deniz Akkoc",
+   "Felix Strieth-Kalthoff",
+   "Martin Seifrid",
+   "Al\u00e1n Aspuru-Guzik"
+  ],
+  "container": "Chemical Reviews",
+  "year": 2024,
+  "volume": "124",
+  "issue": "16",
+  "page": "9633-9732",
+  "publisher": "American Chemical Society (ACS)",
+  "claim_ok": true
+ },
+ {
+  "doi": "10.1126/science.1257360",
+  "title": "Pervasive degeneracy and epistasis in a protein-protein interface",
+  "authors": [
+   "Anna I. Podgornaia",
+   "Michael T. Laub"
+  ],
+  "container": "Science",
+  "year": 2015,
+  "volume": "347",
+  "issue": "6222",
+  "page": "673-677",
+  "publisher": "American Association for the Advancement of Science (AAAS)",
+  "claim_ok": true
+ },
+ {
+  "doi": "10.1023/A:1008349927281",
+  "title": "Simulation Budget Allocation for Further Enhancing the Efficiency of Ordinal Optimization",
+  "authors": [
+   "Chun-Hung Chen",
+   "Jianwu Lin",
+   "Enver Y\u00fccesan",
+   "Stephen E. Chick"
+  ],
+  "container": "Discrete Event Dynamic Systems",
+  "year": 2000,
+  "volume": "10",
+  "issue": "3",
+  "page": "251-270",
+  "publisher": "Springer Science and Business Media LLC",
+  "claim_ok": true
+ },
+ {
+  "doi": "10.1038/s41586-023-06792-0",
+  "title": "Autonomous chemical research with large language models",
+  "authors": [
+   "Daniil A. Boiko",
+   "Robert MacKnight",
+   "Ben Kline",
+   "Gabe Gomes"
+  ],
+  "container": "Nature",
+  "year": 2023,
+  "volume": "624",
+  "issue": "7992",
+  "page": "570-578",
+  "publisher": "Springer Science and Business Media LLC",
+  "claim_ok": true
+ },
+ {
+  "doi": "10.1073/pnas.1901979116",
+  "title": "Machine learning-assisted directed protein evolution with combinatorial libraries",
+  "authors": [
+   "Zachary Wu",
+   "S. B. Jennifer Kan",
+   "Russell D. Lewis",
+   "Bruce J. Wittmann",
+   "Frances H. Arnold"
+  ],
+  "container": "Proceedings of the National Academy of Sciences",
+  "year": 2019,
+  "volume": "116",
+  "issue": "18",
+  "page": "8852-8858",
+  "publisher": "National Academy of Sciences",
+  "claim_ok": true
+ },
+ {
+  "doi": "10.1371/journal.pcbi.1002302",
+  "title": "Predictability of Evolutionary Trajectories in Fitness Landscapes",
+  "authors": [
+   "Alexander E. Lobkovsky",
+   "Yuri I. Wolf",
+   "Eugene V. Koonin"
+  ],
+  "container": "PLoS Computational Biology",
+  "year": 2011,
+  "volume": "7",
+  "issue": "12",
+  "page": "e1002302",
+  "publisher": "Public Library of Science (PLoS)",
+  "claim_ok": true
+ }
+]

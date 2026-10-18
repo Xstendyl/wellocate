@@ -1,0 +1,94 @@
+
+====================================================================================================
+F6  SIGMA CALIBRATION CIRCULARITY  --  PHOQ   (inherited unit = 4.24)
+====================================================================================================
+  random from pool           median gap   5.8070   mean  10.6266   (n=400)   ratio to inherited: 1.37x
+  greedy k=0, pool           median gap   4.8648   mean  10.1069   (n=400)   ratio to inherited: 1.15x
+  greedy k=1, pool           median gap   5.5811   mean  10.9584   (n=400)   ratio to inherited: 1.32x
+  greedy k=0, unrestricted   median gap   4.1561   mean   9.1959   (n=400)   ratio to inherited: 0.98x
+  VERDICT: inherited 4.24 vs random-calibrated 5.8070 -> CIRCULAR, and the unit moves 1.37x
+
+====================================================================================================
+F1  EXPLORATION CONFOUND  --  PHOQ   champion-replication vs random-replication
+====================================================================================================
+  Both arms spend k slots re-measuring and 4-k exploring the CHAMPION's
+  neighbourhood. They differ only in WHICH sequence gets re-measured.
+   ratio 1.0  k=0  37.836 | champion-rep  -1.677+-0.502 ( -4.4%) | random-rep  -3.043+-0.481 ( -8.0%) | control captures 181.5% of the gain
+   ratio 2.0  k=0  32.994 | champion-rep  +0.127+-0.552 ( +0.4%) | random-rep  -2.586+-0.527 ( -7.8%) | control captures -2029.8% of the gain
+   ratio 4.0  k=0  24.387 | champion-rep  +1.151+-0.621 ( +4.7%) | random-rep  -2.172+-0.528 ( -8.9%) | control captures -188.8% of the gain
+
+====================================================================================================
+F3  NOMINATION-RULE SENSITIVITY  --  PHOQ
+====================================================================================================
+  mean        r1: best k=0  +0.00%+-0.00 n.s.  |  r2: best k=1  +0.39%+-1.67 n.s.  |  r4: best k=1  +4.72%+-2.55 n.s.
+  max         r1: best k=0  +0.00%+-0.00 n.s.  |  r2: best k=0  +0.00%+-0.00 n.s.  |  r4: best k=1  +3.76%+-2.50 n.s.
+  shrinkage   r1: best k=0  +0.00%+-0.00 n.s.  |  r2: best k=1  +0.87%+-1.65 n.s.  |  r4: best k=1  +9.04%+-2.47 SIG
+
+====================================================================================================
+F4  DENOMINATOR SENSITIVITY  --  PHOQ   (global pool max = 133.594)
+====================================================================================================
+   ratio 1.0  vs MAX MEASURED :    1.481    0.725    0.574    0.502   (spread 0.979)
+             vs GLOBAL POOL MAX:   95.759   97.435  102.695  108.275   (spread 12.517)
+   ratio 2.0  vs MAX MEASURED :    4.911    2.698    2.261    1.906   (spread 3.005)
+             vs GLOBAL POOL MAX:  100.600  100.473  104.281  109.666   (spread 9.193)
+   ratio 4.0  vs MAX MEASURED :   11.961    8.647    7.333    4.935   (spread 7.026)
+             vs GLOBAL POOL MAX:  109.207  108.056  109.614  112.306   (spread 4.250)
+
+====================================================================================================
+F5  POWER  --  PHOQ
+====================================================================================================
+   ratio 1.0  observed diff -1.6767+-0.5022  rho=0.462 | sd_paired  22.459 sd_unpaired  30.607
+             n for OBSERVED effect (-1.6767): paired    1,409  unpaired    2,616
+   ratio 2.0  observed diff +0.1274+-0.5519  rho=0.387 | sd_paired  24.682 sd_unpaired  31.473
+             n for CLAIMED effect  (+3.5634): paired      377  unpaired      613
+             n for OBSERVED effect (+0.1274): paired  294,579  unpaired  478,968
+   ratio 4.0  observed diff +1.1507+-0.6215  rho=0.255 | sd_paired  27.794 sd_unpaired  32.194
+             n for CLAIMED effect  (+6.1456): paired      161  unpaired      216
+             n for OBSERVED effect (+1.1507): paired    4,580  unpaired    6,144
+
+====================================================================================================
+F6  SIGMA CALIBRATION CIRCULARITY  --  GB1   (inherited unit = 0.42)
+====================================================================================================
+  random from pool           median gap   0.5568   mean   0.8156   (n=400)   ratio to inherited: 1.33x
+  greedy k=0, pool           median gap   0.4283   mean   0.5268   (n=400)   ratio to inherited: 1.02x
+  greedy k=1, pool           median gap   0.3879   mean   0.5274   (n=400)   ratio to inherited: 0.92x
+  greedy k=0, unrestricted   median gap   0.4347   mean   0.6250   (n=400)   ratio to inherited: 1.04x
+  VERDICT: inherited 0.42 vs random-calibrated 0.5568 -> CIRCULAR, and the unit moves 1.33x
+
+====================================================================================================
+F1  EXPLORATION CONFOUND  --  GB1   champion-replication vs random-replication
+====================================================================================================
+  Both arms spend k slots re-measuring and 4-k exploring the CHAMPION's
+  neighbourhood. They differ only in WHICH sequence gets re-measured.
+   ratio 1.0  k=0   5.890 | champion-rep  -0.277+-0.033 ( -4.7%) | random-rep  -0.353+-0.033 ( -6.0%) | control captures 127.6% of the gain
+   ratio 2.0  k=0   5.298 | champion-rep  +0.010+-0.041 ( +0.2%) | random-rep  -0.308+-0.041 ( -5.8%) | control captures -2963.1% of the gain
+   ratio 4.0  k=0   3.896 | champion-rep  +0.456+-0.051 (+11.7%) | random-rep  -0.114+-0.048 ( -2.9%) | control captures -24.9% of the gain
+
+====================================================================================================
+F3  NOMINATION-RULE SENSITIVITY  --  GB1
+====================================================================================================
+  mean        r1: best k=0  +0.00%+-0.00 n.s.  |  r2: best k=1  +0.20%+-0.77 n.s.  |  r4: best k=1 +11.71%+-1.32 SIG
+  max         r1: best k=0  +0.00%+-0.00 n.s.  |  r2: best k=0  +0.00%+-0.00 n.s.  |  r4: best k=1  +9.14%+-1.30 SIG
+  shrinkage   r1: best k=0  +0.00%+-0.00 n.s.  |  r2: best k=0  +0.00%+-0.00 n.s.  |  r4: best k=1 +13.06%+-1.27 SIG
+
+====================================================================================================
+F4  DENOMINATOR SENSITIVITY  --  GB1   (global pool max = 8.762)
+====================================================================================================
+   ratio 1.0  vs MAX MEASURED :    0.149    0.072    0.056    0.037   (spread 0.112)
+             vs GLOBAL POOL MAX:    2.871    3.148    3.701    4.564   (spread 1.692)
+   ratio 2.0  vs MAX MEASURED :    0.495    0.242    0.194    0.128   (spread 0.368)
+             vs GLOBAL POOL MAX:    3.464    3.454    3.956    4.735   (spread 1.282)
+   ratio 4.0  vs MAX MEASURED :    1.416    0.814    0.625    0.456   (spread 0.960)
+             vs GLOBAL POOL MAX:    4.866    4.410    4.654    5.205   (spread 0.795)
+
+====================================================================================================
+F5  POWER  --  GB1
+====================================================================================================
+   ratio 1.0  observed diff -0.2767+-0.0331  rho=0.425 | sd_paired   1.481 sd_unpaired   1.953
+             n for OBSERVED effect (-0.2767): paired      225  unpaired      391
+   ratio 2.0  observed diff +0.0104+-0.0407  rho=0.321 | sd_paired   1.820 sd_unpaired   2.207
+             n for CLAIMED effect  (+0.1324): paired    1,482  unpaired    2,179
+             n for OBSERVED effect (+0.0104): paired  241,305  unpaired  354,868
+   ratio 4.0  observed diff +0.4562+-0.0513  rho=0.236 | sd_paired   2.294 sd_unpaired   2.622
+             n for CLAIMED effect  (+0.6000): paired      115  unpaired      150
+             n for OBSERVED effect (+0.4562): paired      199  unpaired      260

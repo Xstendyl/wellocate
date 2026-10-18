@@ -1,0 +1,15 @@
+{
+ "counts": {
+  "claude-opus-4.7": {
+   "push": 49
+  },
+  "gemini-2.5-flash": {
+   "push": 73
+  }
+ },
+ "examples": {
+  "claude-opus-4.7|push": "GDJF | re-measure best candidate so far (7.419) to confirm and average noise",
+  "gemini-2.5-flash|push": "GDIF | Re-ordering the reference point to get a reliable reading."
+ },
+ "disagreements": []
+}

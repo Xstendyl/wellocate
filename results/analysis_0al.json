@@ -1,0 +1,623 @@
+{
+ "panel_A": {
+  "cells": {
+   "Blind|claude-opus-4.7": {
+    "campaigns": 60,
+    "campaigns_hitting_cap": 0,
+    "cap_hits": 0,
+    "d_fit": 0.0738023279135994,
+    "d_fit_ci": [
+     -0.03283662133371475,
+     0.17903994971887735
+    ],
+    "d_share": 0.5833333333333321,
+    "d_share_ci": [
+     -1.361111111111112,
+     2.6111111111111085
+    ],
+    "distinct": 10.483333333333333,
+    "fallbacks": 0,
+    "fit_new": 7.720651798406424,
+    "fit_old_paired": 7.646849470492825,
+    "lost_slots": 1.9,
+    "n_nocap": 60,
+    "pairs": 60,
+    "providers": {
+     "Claude Platform on AWS": 2301
+    },
+    "rejections": 24.116666666666667,
+    "share_new": 76.61111111111111,
+    "share_new_ci": [
+     75.11111111111111,
+     78.05555555555556
+    ],
+    "share_new_nocap": 76.61111111111111,
+    "share_old_paired": 76.02777777777777,
+    "spend": 16.748905
+   },
+   "Blind|deepseek-chat-v3.1": {
+    "campaigns": 60,
+    "campaigns_hitting_cap": 0,
+    "cap_hits": 0,
+    "d_fit": 0.03843994471627208,
+    "d_fit_ci": [
+     -0.018832292855658055,
+     0.09380506045004554
+    ],
+    "d_share": -0.38888888888888906,
+    "d_share_ci": [
+     -1.6111111111111103,
+     0.805555555555555
+    ],
+    "distinct": 5.016666666666667,
+    "fallbacks": 0,
+    "fit_new": 7.852039207443231,
+    "fit_old_paired": 7.813599262726959,
+    "lost_slots": 0.45,
+    "n_nocap": 60,
+    "pairs": 60,
+    "providers": {
+     "AtlasCloud": 835,
+     "CoreWeave": 9,
+     "DeepInfra": 555,
+     "SambaNova": 5,
+     "SiliconFlow": 18
+    },
+    "rejections": 7.783333333333333,
+    "share_new": 90.36111111111111,
+    "share_new_ci": [
+     89.30555555555556,
+     91.27777777777777
+    ],
+    "share_new_nocap": 90.36111111111111,
+    "share_old_paired": 90.75,
+    "spend": 0.29046386
+   },
+   "Blind|gemini-2.5-flash": {
+    "campaigns": 60,
+    "campaigns_hitting_cap": 0,
+    "cap_hits": 0,
+    "d_fit": -0.07782961684840041,
+    "d_fit_ci": [
+     -0.16688284860857655,
+     0.005969024180529411
+    ],
+    "d_share": -4.638888888888891,
+    "d_share_ci": [
+     -6.638888888888892,
+     -2.611111111111113
+    ],
+    "distinct": 5.066666666666666,
+    "fallbacks": 0,
+    "fit_new": 7.620267243112152,
+    "fit_old_paired": 7.698096859960552,
+    "lost_slots": 0.5666666666666667,
+    "n_nocap": 60,
+    "pairs": 60,
+    "providers": {
+     "Google": 2152
+    },
+    "rejections": 20.25,
+    "share_new": 89.75,
+    "share_new_ci": [
+     88.0,
+     91.47222222222223
+    ],
+    "share_new_nocap": 89.75,
+    "share_old_paired": 94.38888888888889,
+    "spend": 0.683466
+   },
+   "Mechanism|claude-opus-4.7": {
+    "campaigns": 60,
+    "campaigns_hitting_cap": 0,
+    "cap_hits": 0,
+    "d_fit": 0.024127455922710764,
+    "d_fit_ci": [
+     -0.09390114864113679,
+     0.14409579198754088
+    ],
+    "d_share": -0.9999999999999986,
+    "d_share_ci": [
+     -2.4444444444444438,
+     0.500000000000001
+    ],
+    "distinct": 8.95,
+    "fallbacks": 0,
+    "fit_new": 7.687471025453268,
+    "fit_old_paired": 7.663343569530557,
+    "lost_slots": 0.95,
+    "n_nocap": 60,
+    "pairs": 60,
+    "providers": {
+     "Claude Platform on AWS": 2022
+    },
+    "rejections": 18.516666666666666,
+    "share_new": 81.13888888888889,
+    "share_new_ci": [
+     79.97222222222223,
+     82.25
+    ],
+    "share_new_nocap": 81.13888888888889,
+    "share_old_paired": 82.13888888888889,
+    "spend": 16.193749999999994
+   },
+   "Mechanism|deepseek-chat-v3.1": {
+    "campaigns": 60,
+    "campaigns_hitting_cap": 0,
+    "cap_hits": 0,
+    "d_fit": -0.005631579230886693,
+    "d_fit_ci": [
+     -0.060780359004023496,
+     0.048266305426150985
+    ],
+    "d_share": 0.02777777777777762,
+    "d_share_ci": [
+     -0.30555555555555597,
+     0.36111111111111094
+    ],
+    "distinct": 3.8,
+    "fallbacks": 0,
+    "fit_new": 7.693565143657767,
+    "fit_old_paired": 7.699196722888654,
+    "lost_slots": 0.016666666666666666,
+    "n_nocap": 60,
+    "pairs": 60,
+    "providers": {
+     "AtlasCloud": 854,
+     "CoreWeave": 2,
+     "DeepInfra": 564,
+     "Mara": 2,
+     "SambaNova": 2,
+     "SiliconFlow": 10
+    },
+    "rejections": 7.916666666666667,
+    "share_new": 93.61111111111111,
+    "share_new_ci": [
+     93.41666666666666,
+     93.80555555555556
+    ],
+    "share_new_nocap": 93.61111111111111,
+    "share_old_paired": 93.58333333333333,
+    "spend": 0.31772637999999986
+   },
+   "Mechanism|gemini-2.5-flash": {
+    "campaigns": 60,
+    "campaigns_hitting_cap": 0,
+    "cap_hits": 0,
+    "d_fit": -0.15977209950516255,
+    "d_fit_ci": [
+     -0.2556174295502976,
+     -0.07024067888500672
+    ],
+    "d_share": -0.11111111111111403,
+    "d_share_ci": [
+     -1.2777777777777821,
+     1.1111111111111094
+    ],
+    "distinct": 2.55,
+    "fallbacks": 0,
+    "fit_new": 7.548586661138408,
+    "fit_old_paired": 7.708358760643571,
+    "lost_slots": 0.2833333333333333,
+    "n_nocap": 60,
+    "pairs": 60,
+    "providers": {
+     "Google": 1732
+    },
+    "rejections": 13.15,
+    "share_new": 95.05555555555556,
+    "share_new_ci": [
+     94.19444444444444,
+     95.83333333333333
+    ],
+    "share_new_nocap": 95.05555555555556,
+    "share_old_paired": 95.16666666666667,
+    "spend": 0.6096573
+   }
+  },
+  "label": "the wording moves the results",
+  "spend": 34.843968539999985,
+  "tag": "panelA_wording",
+  "transport_errors": 0
+ },
+ "panel_A0": {
+  "campaigns": 360,
+  "drift_vs_grid": {
+   "cells": {
+    "Blind|claude-opus-4.7": {
+     "d_fit": -0.025652573294975188,
+     "d_fit_ci": [
+      -0.12789188140385863,
+      0.07791841823280277
+     ],
+     "d_share": -1.1111111111111112,
+     "d_share_ci": [
+      -3.1111111111111107,
+      0.8611111111111119
+     ],
+     "pairs": 60
+    },
+    "Blind|deepseek-chat-v3.1": {
+     "d_fit": -0.048253331864227846,
+     "d_fit_ci": [
+      -0.12196825784857362,
+      0.023920171962925247
+     ],
+     "d_share": -0.944444444444445,
+     "d_share_ci": [
+      -2.111111111111112,
+      0.24999999999999928
+     ],
+     "pairs": 60
+    },
+    "Blind|gemini-2.5-flash": {
+     "d_fit": 0.006623046005961619,
+     "d_fit_ci": [
+      -0.00974569588513033,
+      0.024613669292030283
+     ],
+     "d_share": -0.11111111111111142,
+     "d_share_ci": [
+      -1.666666666666667,
+      1.5277777777777775
+     ],
+     "pairs": 60
+    },
+    "Mechanism|claude-opus-4.7": {
+     "d_fit": 0.03635185564745854,
+     "d_fit_ci": [
+      -0.05233078464766428,
+      0.12500410778579088
+     ],
+     "d_share": 0.2222222222222231,
+     "d_share_ci": [
+      -1.277777777777777,
+      1.6944444444444458
+     ],
+     "pairs": 60
+    },
+    "Mechanism|deepseek-chat-v3.1": {
+     "d_fit": -0.02185909639450694,
+     "d_fit_ci": [
+      -0.08529614223046106,
+      0.039560898012048804
+     ],
+     "d_share": 0.1111111111111119,
+     "d_share_ci": [
+      -0.2777777777777774,
+      0.5000000000000007
+     ],
+     "pairs": 60
+    },
+    "Mechanism|gemini-2.5-flash": {
+     "d_fit": 0.020103391060570828,
+     "d_fit_ci": [
+      -0.007736323947684479,
+      0.05566171294278221
+     ],
+     "d_share": -0.8611111111111112,
+     "d_share_ci": [
+      -1.5833333333333337,
+      -0.22222222222222215
+     ],
+     "pairs": 60
+    }
+   },
+   "label": "drift beyond the bands"
+  },
+  "fallbacks": 0,
+  "spend": 35.236386749999966,
+  "tag": "panelA0_original",
+  "wording_vs_A0": {
+   "cells": {
+    "Blind|claude-opus-4.7": {
+     "d_fit": 0.0994549012085746,
+     "d_fit_ci": [
+      0.0031727607866871123,
+      0.19710864873847184
+     ],
+     "d_share": 1.6944444444444433,
+     "d_share_ci": [
+      -0.22222222222222238,
+      3.5833333333333326
+     ],
+     "pairs": 60
+    },
+    "Blind|deepseek-chat-v3.1": {
+     "d_fit": 0.08669327658049993,
+     "d_fit_ci": [
+      0.010203093070812692,
+      0.16638077562504325
+     ],
+     "d_share": 0.5555555555555559,
+     "d_share_ci": [
+      -0.6666666666666662,
+      1.7222222222222237
+     ],
+     "pairs": 60
+    },
+    "Blind|gemini-2.5-flash": {
+     "d_fit": -0.08445266285436202,
+     "d_fit_ci": [
+      -0.1767021019426117,
+      0.0014738145311594378
+     ],
+     "d_share": -4.52777777777778,
+     "d_share_ci": [
+      -6.722222222222226,
+      -2.305555555555558
+     ],
+     "pairs": 60
+    },
+    "Mechanism|claude-opus-4.7": {
+     "d_fit": -0.012224399724747774,
+     "d_fit_ci": [
+      -0.10723679097554446,
+      0.08072042533632791
+     ],
+     "d_share": -1.2222222222222217,
+     "d_share_ci": [
+      -2.6388888888888884,
+      0.22222222222222332
+     ],
+     "pairs": 60
+    },
+    "Mechanism|deepseek-chat-v3.1": {
+     "d_fit": 0.016227517163620246,
+     "d_fit_ci": [
+      -0.05262126935954625,
+      0.08348120090190933
+     ],
+     "d_share": -0.08333333333333429,
+     "d_share_ci": [
+      -0.41666666666666785,
+      0.2777777777777762
+     ],
+     "pairs": 60
+    },
+    "Mechanism|gemini-2.5-flash": {
+     "d_fit": -0.17987549056573338,
+     "d_fit_ci": [
+      -0.2724700326814029,
+      -0.09589067898656348
+     ],
+     "d_share": 0.7499999999999971,
+     "d_share_ci": [
+      -0.5277777777777807,
+      2.027777777777776
+     ],
+     "pairs": 60
+    }
+   },
+   "label": "the wording moves the results, against a same-day control"
+  }
+ },
+ "panel_B": {
+  "cells": {
+   "Blind|claude-opus-4.7": {
+    "campaigns": 60,
+    "campaigns_hitting_cap": 0,
+    "cap_hits": 0,
+    "d_fit": 0.04929735248608572,
+    "d_fit_ci": [
+     -0.058729304449063796,
+     0.1566442917494397
+    ],
+    "d_share": -1.194444444444445,
+    "d_share_ci": [
+     -3.1388888888888897,
+     0.6666666666666662
+    ],
+    "distinct": 12.733333333333333,
+    "fallbacks": 0,
+    "fit_new": 7.6961468229789105,
+    "fit_old_paired": 7.646849470492825,
+    "lost_slots": 0.38333333333333336,
+    "n_nocap": 60,
+    "pairs": 60,
+    "providers": {
+     "Claude Platform on AWS": 2668
+    },
+    "rejections": 28.466666666666665,
+    "share_new": 74.83333333333333,
+    "share_new_ci": [
+     73.47222222222223,
+     76.16666666666667
+    ],
+    "share_new_nocap": 74.83333333333333,
+    "share_old_paired": 76.02777777777777,
+    "spend": 19.727744999999995
+   },
+   "Blind|deepseek-chat-v3.1": {
+    "campaigns": 60,
+    "campaigns_hitting_cap": 0,
+    "cap_hits": 0,
+    "d_fit": 0.027699019773400037,
+    "d_fit_ci": [
+     -0.009563081390127499,
+     0.065305102739577
+    ],
+    "d_share": -0.7777777777777783,
+    "d_share_ci": [
+     -1.694444444444445,
+     0.16666666666666524
+    ],
+    "distinct": 5.6,
+    "fallbacks": 0,
+    "fit_new": 7.841298282500359,
+    "fit_old_paired": 7.813599262726959,
+    "lost_slots": 0.1,
+    "n_nocap": 60,
+    "pairs": 60,
+    "providers": {
+     "AtlasCloud": 992,
+     "CoreWeave": 4,
+     "DeepInfra": 372,
+     "Mara": 3,
+     "SambaNova": 3,
+     "SiliconFlow": 18
+    },
+    "rejections": 7.2,
+    "share_new": 89.97222222222223,
+    "share_new_ci": [
+     89.25,
+     90.66666666666667
+    ],
+    "share_new_nocap": 89.97222222222223,
+    "share_old_paired": 90.75,
+    "spend": 0.27817158999999997
+   },
+   "Blind|gemini-2.5-flash": {
+    "campaigns": 60,
+    "campaigns_hitting_cap": 0,
+    "cap_hits": 0,
+    "d_fit": 0.16531976718785152,
+    "d_fit_ci": [
+     0.13515725187499156,
+     0.19422010442831492
+    ],
+    "d_share": -11.055555555555559,
+    "d_share_ci": [
+     -12.888888888888891,
+     -9.194444444444446
+    ],
+    "distinct": 8,
+    "fallbacks": 0,
+    "fit_new": 7.863416627148403,
+    "fit_old_paired": 7.698096859960552,
+    "lost_slots": 1.2,
+    "n_nocap": 60,
+    "pairs": 60,
+    "providers": {
+     "Google": 2024
+    },
+    "rejections": 17.733333333333334,
+    "share_new": 83.33333333333333,
+    "share_new_ci": [
+     81.80555555555556,
+     84.83333333333333
+    ],
+    "share_new_nocap": 83.33333333333333,
+    "share_old_paired": 94.38888888888889,
+    "spend": 0.6456244000000001
+   },
+   "Mechanism|claude-opus-4.7": {
+    "campaigns": 60,
+    "campaigns_hitting_cap": 0,
+    "cap_hits": 0,
+    "d_fit": -0.1340350962500046,
+    "d_fit_ci": [
+     -0.23243297882045091,
+     -0.0347110731244198
+    ],
+    "d_share": -1.25,
+    "d_share_ci": [
+     -2.694444444444445,
+     0.13888888888889048
+    ],
+    "distinct": 9.816666666666666,
+    "fallbacks": 0,
+    "fit_new": 7.529308473280553,
+    "fit_old_paired": 7.663343569530557,
+    "lost_slots": 0,
+    "n_nocap": 60,
+    "pairs": 60,
+    "providers": {
+     "Claude Platform on AWS": 2413
+    },
+    "rejections": 24.216666666666665,
+    "share_new": 80.88888888888889,
+    "share_new_ci": [
+     79.72222222222221,
+     82.02777777777777
+    ],
+    "share_new_nocap": 80.88888888888889,
+    "share_old_paired": 82.13888888888889,
+    "spend": 19.880205000000007
+   },
+   "Mechanism|deepseek-chat-v3.1": {
+    "campaigns": 60,
+    "campaigns_hitting_cap": 0,
+    "cap_hits": 0,
+    "d_fit": 0.04169268300089136,
+    "d_fit_ci": [
+     -0.01220537805659383,
+     0.0990195176016159
+    ],
+    "d_share": -0.08333333333333239,
+    "d_share_ci": [
+     -0.47222222222222143,
+     0.3055555555555562
+    ],
+    "distinct": 3.8333333333333335,
+    "fallbacks": 0,
+    "fit_new": 7.740889405889545,
+    "fit_old_paired": 7.699196722888654,
+    "lost_slots": 0,
+    "n_nocap": 60,
+    "pairs": 60,
+    "providers": {
+     "AtlasCloud": 1050,
+     "CoreWeave": 3,
+     "DeepInfra": 409,
+     "Mara": 3,
+     "SiliconFlow": 14
+    },
+    "rejections": 8.65,
+    "share_new": 93.5,
+    "share_new_ci": [
+     93.19444444444444,
+     93.77777777777777
+    ],
+    "share_new_nocap": 93.5,
+    "share_old_paired": 93.58333333333333,
+    "spend": 0.34299223
+   },
+   "Mechanism|gemini-2.5-flash": {
+    "campaigns": 60,
+    "campaigns_hitting_cap": 0,
+    "cap_hits": 0,
+    "d_fit": 0.1228119170792164,
+    "d_fit_ci": [
+     0.0668535406400243,
+     0.17762240735582308
+    ],
+    "d_share": -6.1666666666666705,
+    "d_share_ci": [
+     -7.444444444444449,
+     -4.861111111111114
+    ],
+    "distinct": 5.983333333333333,
+    "fallbacks": 0,
+    "fit_new": 7.831170677722787,
+    "fit_old_paired": 7.708358760643571,
+    "lost_slots": 0.06666666666666667,
+    "n_nocap": 60,
+    "pairs": 60,
+    "providers": {
+     "Google": 1486
+    },
+    "rejections": 8.766666666666667,
+    "share_new": 89.0,
+    "share_new_ci": [
+     88.02777777777777,
+     89.97222222222223
+    ],
+    "share_new_nocap": 89.0,
+    "share_old_paired": 95.16666666666667,
+    "spend": 0.5104268
+   }
+  },
+  "label": "rejection risk does not produce the habit",
+  "label_without_capped_campaigns": "rejection risk does not produce the habit",
+  "spend": 41.385165019999995,
+  "tag": "panelB_riskfree",
+  "transport_errors": 0
+ },
+ "yardstick": {
+  "kstar": 1,
+  "mean": 7.993487388368354,
+  "share": 23.965555555555554,
+  "twice": 47.93111111111111
+ }
+}

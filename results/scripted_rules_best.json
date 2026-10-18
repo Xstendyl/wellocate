@@ -1,0 +1,257 @@
+{
+ "grid": {
+  "rules": {
+   "guessing": {
+    "k": 1,
+    "pick": 7.865864914893477,
+    "share_budget": 23.778888888888886,
+    "source": "references_0an7.json",
+    "sweep": {
+     "0": {
+      "pick": 7.709765114017187,
+      "share_budget": 0.8722222222222222
+     },
+     "1": {
+      "pick": 7.865864914893477,
+      "share_budget": 23.778888888888886
+     },
+     "2": {
+      "pick": 7.818622455108223,
+      "share_budget": 46.81777777777778
+     },
+     "3": {
+      "pick": 7.704924531700167,
+      "share_budget": 70.03
+     },
+     "4": {
+      "pick": 7.427129983397115,
+      "share_budget": 93.3370288248337
+     }
+    }
+   },
+   "informed": {
+    "k": 1,
+    "pick": 7.999298589044483,
+    "share_budget": 23.33111111111111,
+    "source": "references_0an7.json",
+    "sweep": {
+     "0": {
+      "pick": 7.886230417105319,
+      "share_budget": 0.0
+     },
+     "1": {
+      "pick": 7.999298589044483,
+      "share_budget": 23.33111111111111
+     },
+     "2": {
+      "pick": 7.963969052313889,
+      "share_budget": 46.66222222222222
+     },
+     "3": {
+      "pick": 7.842411311158904,
+      "share_budget": 69.99333333333334
+     },
+     "4": {
+      "pick": 7.336681846601713,
+      "share_budget": 93.32434860736747
+     }
+    }
+   },
+   "model-guided": {
+    "k": 1,
+    "pick": 7.928157045385749,
+    "share_budget": 37.607777777777784,
+    "source": "model_guided_0an4.json (registered)",
+    "sweep": {
+     "0": {
+      "pick": 7.919715428125056,
+      "share_budget": 28.19111111111111
+     },
+     "1": {
+      "pick": 7.928157045385749,
+      "share_budget": 37.607777777777784
+     },
+     "2": {
+      "pick": 7.893718208450404,
+      "share_budget": 48.69777777777777
+     },
+     "3": {
+      "pick": 7.859022181773333,
+      "share_budget": 60.0
+     }
+    }
+   }
+  },
+  "best_rule": "informed"
+ },
+ "GB1": {
+  "rules": {
+   "guessing": {
+    "k": 0,
+    "pick": 6.086764857732206,
+    "share_budget": 0.888888888888889,
+    "source": "references_0an7.json",
+    "sweep": {
+     "0": {
+      "pick": 6.086764857732206,
+      "share_budget": 0.888888888888889
+     },
+     "1": {
+      "pick": 5.722005870834338,
+      "share_budget": 23.763333333333332
+     },
+     "2": {
+      "pick": 4.996696942602382,
+      "share_budget": 46.86
+     },
+     "3": {
+      "pick": 3.8507009203398557,
+      "share_budget": 70.04888888888888
+     },
+     "4": {
+      "pick": 1.4791311430818075,
+      "share_budget": 93.37694483734087
+     }
+    }
+   },
+   "informed": {
+    "k": 0,
+    "pick": 6.018240655379692,
+    "share_budget": 0.0,
+    "source": "references_0an7.json",
+    "sweep": {
+     "0": {
+      "pick": 6.018240655379692,
+      "share_budget": 0.0
+     },
+     "1": {
+      "pick": 5.7226324917845695,
+      "share_budget": 23.333333333333332
+     },
+     "2": {
+      "pick": 5.247332986878399,
+      "share_budget": 46.666666666666664
+     },
+     "3": {
+      "pick": 4.258263066835075,
+      "share_budget": 70.0
+     },
+     "4": {
+      "pick": 2.0142212211769652,
+      "share_budget": 93.33333333333333
+     }
+    }
+   },
+   "model-guided": {
+    "k": 0,
+    "pick": 5.605797500783148,
+    "share_budget": 22.581111111111113,
+    "source": "start_robustness.json, the paper's own start (post-hoc)",
+    "sweep": {
+     "0": {
+      "pick": 5.605797500783148,
+      "share_budget": 22.581111111111113
+     },
+     "1": {
+      "pick": 5.390901780581331,
+      "share_budget": 35.26888888888889
+     },
+     "2": {
+      "pick": 5.053934496036227,
+      "share_budget": 47.81666666666667
+     },
+     "3": {
+      "pick": 4.461410029709235,
+      "share_budget": 60.0
+     }
+    }
+   }
+  },
+  "best_rule": "guessing"
+ },
+ "PhoQ": {
+  "rules": {
+   "guessing": {
+    "k": 0,
+    "pick": 2.0500042464604817,
+    "share_budget": 1.0333333333333334,
+    "source": "references_0an8.json",
+    "sweep": {
+     "0": {
+      "pick": 2.0500042464604817,
+      "share_budget": 1.0333333333333334
+     },
+     "1": {
+      "pick": 1.9841689559287403,
+      "share_budget": 23.806666666666665
+     },
+     "2": {
+      "pick": 1.792340956481885,
+      "share_budget": 46.84888888888889
+     },
+     "3": {
+      "pick": 1.580992605636572,
+      "share_budget": 70.03
+     },
+     "4": {
+      "pick": 1.0692021160665803,
+      "share_budget": 93.36156278229448
+     }
+    }
+   },
+   "informed": {
+    "k": 0,
+    "pick": 2.62619878168794,
+    "share_budget": 0.0,
+    "source": "references_0an8.json",
+    "sweep": {
+     "0": {
+      "pick": 2.62619878168794,
+      "share_budget": 0.0
+     },
+     "1": {
+      "pick": 2.4082670656113296,
+      "share_budget": 23.333333333333332
+     },
+     "2": {
+      "pick": 2.147275986315684,
+      "share_budget": 46.666666666666664
+     },
+     "3": {
+      "pick": 1.731699365844682,
+      "share_budget": 70.0
+     },
+     "4": {
+      "pick": 0.9700151659539855,
+      "share_budget": 93.33333333333333
+     }
+    }
+   },
+   "model-guided": {
+    "k": 0,
+    "pick": 1.88570968426342,
+    "share_budget": 25.276666666666667,
+    "source": "start_robustness.json, the paper's own start (post-hoc)",
+    "sweep": {
+     "0": {
+      "pick": 1.88570968426342,
+      "share_budget": 25.276666666666667
+     },
+     "1": {
+      "pick": 1.8509453071453839,
+      "share_budget": 36.61777777777778
+     },
+     "2": {
+      "pick": 1.763779655556768,
+      "share_budget": 48.403333333333336
+     },
+     "3": {
+      "pick": 1.6695554516042919,
+      "share_budget": 60.0
+     }
+    }
+   }
+  },
+  "best_rule": "informed"
+ }
+}

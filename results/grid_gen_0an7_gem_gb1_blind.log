@@ -1,0 +1,74 @@
+  key source: repdef/.env  (fingerprint 0d6f7d3f, never the key)
+  credit (launch): account $530.80, key $530.76 -> BINDING $530.76 (key), key expires 2026-10-28
+  credit check (launch): $530.76 spendable, floor $50.00 -> ok
+====================================================================================================
+GRID  0am landscape gb1_scrambled (1 landscape)  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 1 conditions x 1 models, campaigns per model frontier-google 30 = 30 campaigns
+  ceiling $15.71 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    frontier-google google/gemini-3.1-pro-preview    released 2026-02
+prompt facts checked: reference CLTL is viable and reads 0.5339 (stated 0.5300), pool is 7.00% of the space, example BLTL (viable)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_gen_0an7_gem_gb1_blind_manifest.json (commit 3d502f1e)
+    frontier-google google/gemini-3.1-pro-preview    released 2026-02
+canary: comparator live, differs from the mean rule on 26 of 60 scripted campaigns
+
+comparator liveness per landscape (of 60 scripted campaigns): {'gb1_scrambled_s20261003_p93.0': 5}
+
+  SHUFFLED order over 30 campaigns across 1 cells (order seed 20261004)
+      Blind         frontier-google seed 11000028 ok 52 rep  6 ( 10%) | nom  2.5903 | distn 49 | $0.2293 cum $0.23 | 184s
+      Blind         frontier-google seed 11000021 ok 46 rep  5 (  8%) | nom  3.6086 | distn 44 | $0.2425 cum $0.47 | 198s
+      Blind         frontier-google seed 11000010 ok 50 rep  4 (  7%) | nom  5.0813 | distn 47 | $0.3199 cum $0.79 | 267s
+      Blind         frontier-google seed 11000014 ok 50 rep  3 (  5%) | nom  6.4958 | distn 48 | $0.2359 cum $1.03 | 185s
+      Blind         frontier-google seed 11000026 ok 51 rep  4 (  7%) | nom  4.0282 | distn 50 | $0.3271 cum $1.35 | 253s
+      Blind         frontier-google seed 11000020 ok 49 rep  5 (  8%) | nom  4.4637 | distn 46 | $0.2798 cum $1.63 | 218s
+      Blind         frontier-google seed 11000008 ok 50 rep  6 ( 10%) | nom  7.5547 | distn 49 | $0.2649 cum $1.90 | 218s
+      Blind         frontier-google seed 11000006 ok 49 rep  7 ( 12%) | nom  5.1441 | distn 46 | $0.3253 cum $2.22 | 264s
+      Blind         frontier-google seed 11000019 ok 48 rep  7 ( 12%) | nom  2.8584 | distn 47 | $0.2195 cum $2.44 | 185s
+      Blind         frontier-google seed 11000023 ok 54 rep 13 ( 22%) | nom  7.2824 | distn 46 | $0.6688 cum $3.11 | 405s
+      Blind         frontier-google seed 11000015 ok 49 rep  7 ( 12%) | nom  6.0443 | distn 47 | $0.3128 cum $3.43 | 252s
+      Blind         frontier-google seed 11000003 ok 50 rep  6 ( 10%) | nom  7.2287 | distn 48 | $0.2720 cum $3.70 | 234s
+      Blind         frontier-google seed 11000024 ok 51 rep  7 ( 12%) | nom  5.5157 | distn 50 | $0.2368 cum $3.93 | 193s
+      Blind         frontier-google seed 11000007 ok 54 rep  6 ( 10%) | nom  2.3982 | distn 52 | $0.2680 cum $4.20 | 211s
+      Blind         frontier-google seed 11000004 ok 49 rep  5 (  8%) | nom  7.2824 | distn 48 | $0.3773 cum $4.58 | 289s
+      Blind         frontier-google seed 11000018 ok 48 rep 11 ( 18%) | nom  6.4958 | distn 43 | $0.6647 cum $5.24 | 390s
+      Blind         frontier-google seed 11000009 ok 48 rep 10 ( 17%) | nom  5.1836 | distn 43 | $0.2574 cum $5.50 | 228s
+      Blind         frontier-google seed 11000029 ok 49 rep  0 (  0%) | nom  4.6622 | distn 49 | $0.3664 cum $5.87 | 292s
+      Blind         frontier-google seed 11000027 ok 55 rep  3 (  5%) | nom  2.8584 | distn 53 | $0.2553 cum $6.12 | 204s
+      Blind         frontier-google seed 11000017 ok 52 rep  9 ( 15%) | nom  3.0226 | distn 46 | $0.3379 cum $6.46 | 259s
+      Blind         frontier-google seed 11000025 ok 47 rep 10 ( 17%) | nom  5.2427 | distn 47 | $0.2390 cum $6.70 | 186s
+      Blind         frontier-google seed 11000012 ok 44 rep  8 ( 13%) | nom  3.7748 | distn 41 | $0.2327 cum $6.93 | 198s
+      Blind         frontier-google seed 11000005 ok 50 rep 10 ( 17%) | nom  3.9079 | distn 46 | $0.3264 cum $7.26 | 265s
+      Blind         frontier-google seed 11000013 ok 49 rep  8 ( 13%) | nom  6.8576 | distn 48 | $0.2824 cum $7.54 | 223s
+      Blind         frontier-google seed 11000001 ok 50 rep  4 (  7%) | nom  5.0412 | distn 48 | $0.3595 cum $7.90 | 281s
+      Blind         frontier-google seed 11000022 ok 50 rep  7 ( 12%) | nom  3.8844 | distn 49 | $0.2573 cum $8.16 | 208s
+      Blind         frontier-google seed 11000000 ok 49 rep  4 (  7%) | nom  5.1836 | distn 47 | $0.2875 cum $8.45 | 242s
+      Blind         frontier-google seed 11000016 ok 40 rep  9 ( 15%) | nom  6.4958 | distn 37 | $0.6655 cum $9.11 | 408s
+      Blind         frontier-google seed 11000002 ok 47 rep  9 ( 15%) | nom  3.9079 | distn 46 | $0.2738 cum $9.39 | 229s
+      Blind         frontier-google seed 11000011 ok 50 rep  7 ( 12%) | nom  3.0226 | distn 46 | $0.7773 cum $10.16 | 488s
+
+  NOMINATION CALLS: 30, of which 30 carry a two-parser comparison, 30 agree
+
+  TWO-PARSER CHECK over 1382 ROUND calls (nomination calls above)
+    GENUINE disagreement (both read, and differ)         0  0.00%
+    by design (primary refused the count, spent none)    0  0.00%
+  spot check written: results/grid_gen_0an7_gem_gb1_blind_spotcheck.txt
+  call log archived: 1 cells, 1412 lines (1412 new, 0 carried, 0 untouched, 0 replaced), 0.3 MB, all verified True
+  plain call log removed after verification: grid_gen_0an7_gem_gb1_blind_calls.jsonl
+
+====================================================================================================
+SUMMARY   gen_0an7_gem_gb1_blind
+====================================================================================================
+  VARIANCES AND HEALTH ONLY. The primary outcome by condition is NOT printed here; see
+  scripts/stage1_variance.py for the sizing inputs and the final analysis script for means.
+  (scripted reference for later use: k*=1 at 8.0057, k=0 at 7.8856)
+  condition     role          n | sd(nominated) sd(distinct) |   distn | rep of budget | $/campaign
+  Blind         frontier-google  30 |        1.5679      3.1265 |    46.9 |         11.1%     0.3388
+
+  TOTAL SPEND $10.1631 over 1412 calls, 30 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls       empty     malformed       trunc  mean rsn   max rsn
+  google/gemini-3.1-pro-preview    1412     0  0.0%      0   0.0%     0  0.0%       410     30721
+
+  No empty and no truncated responses on any model at max_tokens=32000.

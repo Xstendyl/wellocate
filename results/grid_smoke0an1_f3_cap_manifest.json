@@ -1,0 +1,120 @@
+{
+ "tag": "smoke0an1_f3_cap",
+ "started": "2026-10-03T09:42:04+1000",
+ "landscape": "nk_uniform_k1_s1_p93.0",
+ "K": 1,
+ "seed": 1,
+ "pct": 93.0,
+ "cv": 0.073,
+ "noise_floor": 0.0035087719298245615,
+ "gb1_max": 8.762,
+ "rounds": 15,
+ "slots": 4,
+ "fail_pct": 15,
+ "conditions": [
+  "Blind"
+ ],
+ "models": [
+  {
+   "role": "frontier",
+   "id": "anthropic/claude-opus-4.7",
+   "released": "2026-02"
+  },
+  {
+   "role": "mid-tier",
+   "id": "google/gemini-2.5-flash",
+   "released": "2025-06"
+  },
+  {
+   "role": "open-weight",
+   "id": "deepseek/deepseek-chat-v3.1",
+   "released": "2025-08"
+  }
+ ],
+ "campaigns_per_cell": 2,
+ "seed0": 15000000,
+ "workers": 3,
+ "campaigns_by_model": {
+  "anthropic/claude-opus-4.7": 2,
+  "google/gemini-2.5-flash": 2,
+  "deepseek/deepseek-chat-v3.1": 2
+ },
+ "max_tokens": 6000,
+ "max_reasks": 3,
+ "budget_usd": 5.0,
+ "shuffled": true,
+ "order_seed": 20261004,
+ "stage": "0an_resmoke_f3",
+ "reasoning_effort": null,
+ "noise": "multiplicative",
+ "temperature": 0.0,
+ "prompt_options": {
+  "goal_true_value": false,
+  "fix_replacement_budget": false,
+  "riskfree_rejection": false,
+  "truthful_reask": true,
+  "ledger": false,
+  "menu": false,
+  "repeat_cap": true
+ },
+ "riskfree_cap": null,
+ "prompt_landscape": "abstract",
+ "anchor": "GDIF",
+ "anchor_reading": 6.872952536863767,
+ "example": "ADIF",
+ "pool": 11199,
+ "space": 160000,
+ "global_best": 8.762,
+ "scripted": {
+  "mean": {
+   "kstar": 1,
+   "mean": 7.964095504618686,
+   "se": 0.009800294930038062,
+   "k0_mean": 7.88556713548877
+  },
+  "max": {
+   "kstar": 1,
+   "mean": 7.971993279527578,
+   "se": 0.009340006688354796,
+   "k0_mean": 7.88556713548877
+  },
+  "shrinkage": {
+   "kstar": 1,
+   "mean": 8.005659149667496,
+   "se": 0.008739972675956834,
+   "k0_mean": 7.88556713548877
+  }
+ },
+ "comparator": "empirical-Bayes prior fitted per campaign from that campaign's own readings",
+ "prior_rel_floor": 0.01,
+ "primary_outcome": "nominated true fitness vs the scripted k* policy",
+ "key_source": "repdef/.env",
+ "key_fingerprint_sha256_8": "0d6f7d3f",
+ "credit_floor_usd": 50.0,
+ "credit_balance_at_launch": 636.0649223800001,
+ "credit_detail_at_launch": {
+  "account": 636.107573236,
+  "key_remaining": 636.1143176600001,
+  "binding": 636.107573236,
+  "key_expires_at": "2026-10-28T04:16:20.217Z",
+  "bound_by": "account"
+ },
+ "launched_below_credit_floor": false,
+ "git_commit": "9bc8ef4f5faea1928fdc3c3bcc50fc0bea6a0f87",
+ "git_status_porcelain": [
+  "?? results/grid_gen_0an_f0_control.log",
+  "?? results/grid_gen_0an_f0_control_campaigns.jsonl",
+  "?? results/grid_gen_0an_f0_control_manifest.json",
+  "?? results/grid_gen_0an_f1_ledger.log",
+  "?? results/grid_gen_0an_f1_ledger_campaigns.jsonl",
+  "?? results/grid_gen_0an_f1_ledger_manifest.json",
+  "?? results/grid_gen_0an_f2_menu.log",
+  "?? results/grid_gen_0an_f2_menu_campaigns.jsonl",
+  "?? results/grid_gen_0an_f2_menu_manifest.json",
+  "?? results/grid_smoke0an1_f3_cap.log"
+ ],
+ "code_dirty": false,
+ "code_dirty_paths": [],
+ "code_diff_sha256": null,
+ "git_commit_describes_the_code": true
+}

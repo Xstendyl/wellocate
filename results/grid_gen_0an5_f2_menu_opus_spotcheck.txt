@@ -1,0 +1,141 @@
+SPOT CHECK: raw model output beside the proposals the harness accepted.
+Sampled deterministically, 20 calls per model. Written for a human to read.
+
+====================================================================================================
+anthropic/claude-opus-4.7  (frontier)   1641 calls, showing 20
+====================================================================================================
+
+--- round 10  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['GDIQ', 'GDIR', 'LDJS', 'LDQS']
+SECONDARY: ['GDIQ', 'GDIR', 'LDJS', 'LDQS']
+RAW:
+GDIQ | best observed mean (~7.6), replicate for noise reduction
+GDIR | high prior reading (8.219), re-confirm
+LDJS | top additive-model suggestion, explore pos3
+LDQS | second additive-model suggestion, explore pos3
+
+--- round 8  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['IAQL']
+SECONDARY: ['IAQL']
+RAW:
+IAQL | explore position 1 variant of best-performing GAQL
+
+--- round 12  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['GAQL', 'GDQF', 'PAQL', 'MAQL']
+SECONDARY: ['GAQL', 'GDQF', 'PAQL', 'MAQL']
+RAW:
+GAQL | best mean reading, replicate to reduce noise
+GDQF | second-best anchor, replicate for noise averaging
+PAQL | top additive-model suggestion exploring position 1
+MAQL | second additive-model suggestion exploring position 1
+
+--- round 12  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['GAQL']
+SECONDARY: ['GAQL']
+RAW:
+GAQL | best performer, resample to confirm high mean
+
+--- round 5  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['ONRR', 'ONRF', 'ANRR', 'ONIR']
+SECONDARY: ['ONRR', 'ONRF', 'ANRR', 'ONIR']
+RAW:
+ONRR | best so far, replicate to confirm
+ONRF | explore pos4 variation on top hit
+ANRR | explore pos1 variation on top hit
+ONIR | combine ON prefix with IR suffix from GAIR
+
+--- round 13  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['ONRR']
+SECONDARY: ['ONRR']
+RAW:
+ONRR | best performer, retry for high reading
+
+--- round 14  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['SNRR']
+SECONDARY: ['SNRR']
+RAW:
+SNRR | high additive model score, position 1 variant untested
+
+--- round 15  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['ONRR']
+SECONDARY: ['ONRR']
+RAW:
+ONRR | highest observed readings (9.264, 9.099), best repeatable candidate
+
+--- round 3  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 6  parsers agree True ---
+PARSED   : ['GDIC', 'GDIA', 'GDIH', 'GDIE']
+SECONDARY: ['GDIC', 'GDIA', 'GDIH', 'GDIE']
+RAW:
+GDIC | best mean so far, replicate for noise reduction
+GDIA | explore position 4 variant of top candidate
+GDIH | explore position 4 variant
+GDIE | explore position 4 variant
+
+--- round 8  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['CHTC']
+SECONDARY: ['CHTC']
+RAW:
+CHTC | explore position 3 variant on strong CHIC backbone
+
+--- round 8  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['CHAC']
+SECONDARY: ['CHAC']
+RAW:
+CHAC | top-ranked additive model suggestion, explores position 3
+
+--- round 9  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['CHIG']
+SECONDARY: ['CHIG']
+RAW:
+CHIG | explore position 4 variant of strong CHIC base
+
+--- round 10  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['IHIC']
+SECONDARY: ['IHIC']
+RAW:
+IHIC | top-ranked additive model suggestion, explores position 1
+
+--- round 3  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['GDIS']
+SECONDARY: ['GDIS']
+RAW:
+GDIS | best performer, re-measure to reduce noise
+
+--- round 5  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 5  parsers agree True ---
+PARSED   : ['GDCL', 'GDFL', 'GDRL', 'GDIN']
+SECONDARY: ['GDCL', 'GDFL', 'GDRL', 'GDIN']
+RAW:
+GDCL | explore position 3 letter C with strong GD_L frame
+GDFL | explore position 3 letter F with strong GD_L frame
+GDRL | explore position 3 letter R with strong GD_L frame
+GDIN | try new position 4 letter N keeping best GDI_ frame
+
+--- round 5  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['GDGL']
+SECONDARY: ['GDGL']
+RAW:
+GDGL | top-ranked suggestion, explores new letter at position 3
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['GNNF']
+SECONDARY: ['GNNF']
+RAW:
+GNNF | explore position 2 variant near best candidate
+
+--- round 5  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['GLTF']
+SECONDARY: ['GLTF']
+RAW:
+GLTF | explore position 2 variant of best-performing GDTF stem
+
+--- round 13  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['MDQD']
+SECONDARY: ['MDQD']
+RAW:
+MDQD | explore position 4 variant of best MDQ_ stem
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['GDBO']
+SECONDARY: ['GDBO']
+RAW:
+GDBO | explore position 4 variant of best candidate GDBF

@@ -1,0 +1,21 @@
+{
+ "tag": "gen_0an7_gem_gb1_menu",
+ "cells": 1,
+ "total_lines": 1445,
+ "source_lines": 1445,
+ "carried_forward_lines": 0,
+ "untouched_cell_lines": 0,
+ "replaced_lines": 0,
+ "expected_total_lines": 1445,
+ "all_verified": true,
+ "empty": false,
+ "files": {
+  "blind__google_gemini-3.1-pro-preview.jsonl.gz": {
+   "lines": 1445,
+   "sha256": "5fd000ade5ae275138cc67d4fed4971f9899be74bb96c4702da6b683f14cba71",
+   "bytes": 357866,
+   "verified": true,
+   "written_by_this_run": true
+  }
+ }
+}

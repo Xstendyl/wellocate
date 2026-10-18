@@ -1,0 +1,14 @@
+============================================================================================================
+SCRIPTED LAB PROTOCOLS (0aj)   n=1500 per cell   seeds 8200000..8201499   anchor=GDIF
+These are scripted protocols. Nobody ran them. A real human study is future work.
+============================================================================================================
+  protocol                   scope       mean               95% CI   repl %  distinct   rejects     lost
+  (a) triplicate-everything  pool      7.7932 [  7.7729,  7.8141]     66.7     19.94      0.00     0.00
+  (a) triplicate-everything  fair      7.6923 [  7.6713,  7.7146]     23.0     24.75    117.35    17.98
+  (b) duplicate-everything   pool      7.7948 [  7.7735,  7.8151]     50.0     29.31      0.00     0.00
+  (b) duplicate-everything   fair      7.7039 [  7.6816,  7.7259]     17.8     26.82    121.00    19.02
+  (c) screen-then-confirm    pool      7.9395 [  7.9200,  7.9601]     20.0     40.88      0.00     0.00
+  (c) screen-then-confirm    fair      7.8503 [  7.8295,  7.8716]     31.6     23.92     92.79    13.92
+
+  wrote results/lab_protocols.json
+python3 -B scripts/lab_protocols.py  42.38s user 0.08s system 99% cpu 42.488 total

@@ -1,0 +1,367 @@
+{
+ "GPT-6.1 Sol": {
+  "campaigns": 60,
+  "skipped": {},
+  "k": {
+   "1": {
+    "pick": 7.63121668540779,
+    "d_vs_agent": -0.040961475813102353,
+    "d_vs_agent_ci": [
+     -0.10007921619253181,
+     0.010820452530571067
+    ],
+    "d_vs_shrinkage_repick": -0.03067458216525362,
+    "d_vs_shrinkage_repick_ci": [
+     -0.08427696608736174,
+     0.01469394818402104
+    ],
+    "recovered_share_of_selection_shortfall": -0.25628421555686465,
+    "share_after": 46.25,
+    "exploration_given_up": 0.03934347070764499,
+    "campaigns_losing_their_best": 6,
+    "nominee_one_reading": 0,
+    "recovered_share_of_selection_loss_vs_f0": -0.28728524693313157
+   },
+   "2": {
+    "pick": 7.671232563214617,
+    "d_vs_agent": -0.0009455980062755387,
+    "d_vs_agent_ci": [
+     -0.060389558820286945,
+     0.056288955286160576
+    ],
+    "d_vs_shrinkage_repick": 0.009341295641573192,
+    "d_vs_shrinkage_repick_ci": [
+     -0.045322989755260355,
+     0.059865807604656394
+    ],
+    "recovered_share_of_selection_shortfall": -0.005916335738883306,
+    "share_after": 46.25,
+    "exploration_given_up": 0.03934347070764499,
+    "campaigns_losing_their_best": 6,
+    "nominee_one_reading": 0,
+    "recovered_share_of_selection_loss_vs_f0": -0.006631996317023574
+   },
+   "3": {
+    "pick": 7.641971382156646,
+    "d_vs_agent": -0.030206779064247218,
+    "d_vs_agent_ci": [
+     -0.07656702549214335,
+     0.008822218484626158
+    ],
+    "d_vs_shrinkage_repick": -0.019919885416398487,
+    "d_vs_shrinkage_repick_ci": [
+     -0.060395921211718516,
+     0.010671274185140911
+    ],
+    "recovered_share_of_selection_shortfall": -0.18899516004508407,
+    "share_after": 46.25,
+    "exploration_given_up": 0.03934347070764499,
+    "campaigns_losing_their_best": 6,
+    "nominee_one_reading": 0,
+    "recovered_share_of_selection_loss_vs_f0": -0.21185667289241053
+   },
+   "4": {
+    "pick": 7.618699336254259,
+    "d_vs_agent": -0.0534788249666336,
+    "d_vs_agent_ci": [
+     -0.11492539513206361,
+     0.005588932599060955
+    ],
+    "d_vs_shrinkage_repick": -0.04319193131878487,
+    "d_vs_shrinkage_repick_ci": [
+     -0.09959431805407554,
+     0.009760678868637311
+    ],
+    "recovered_share_of_selection_shortfall": -0.3346016820295447,
+    "share_after": 46.25,
+    "exploration_given_up": 0.03934347070764499,
+    "campaigns_losing_their_best": 6,
+    "nominee_one_reading": 0,
+    "recovered_share_of_selection_loss_vs_f0": -0.3750762669375959
+   }
+  },
+  "selection_loss_vs_f0": 0.14258120196000365,
+  "share_before": 44.111111111111114,
+  "repick_minus_agent_ci": [
+   -0.03894007870999063,
+   0.014325292670132243
+  ],
+  "agent_pick": 7.672178161220893,
+  "shrinkage_repick": 7.661891267573044,
+  "selection_shortfall": 0.1598283207730902,
+  "repick_minus_agent": -0.010286893647848731,
+  "best_k": 2
+ },
+ "Gemini 3.1 Pro": {
+  "campaigns": 60,
+  "skipped": {},
+  "k": {
+   "1": {
+    "pick": 7.728834897856004,
+    "d_vs_agent": 0.040671428569519934,
+    "d_vs_agent_ci": [
+     -0.022330597257670302,
+     0.11115715486682945
+    ],
+    "d_vs_shrinkage_repick": 0.0365127511653434,
+    "d_vs_shrinkage_repick_ci": [
+     -0.02855311060693442,
+     0.10926172853778048
+    ],
+    "recovered_share_of_selection_shortfall": 0.1082301181568911,
+    "share_after": 24.02777777777778,
+    "exploration_given_up": 0.07811400102136053,
+    "campaigns_losing_their_best": 17,
+    "nominee_one_reading": 0.11666666666666667,
+    "recovered_share_of_selection_loss_vs_f0": 0.1134364002633763
+   },
+   "2": {
+    "pick": 7.78349539522706,
+    "d_vs_agent": 0.09533192594057653,
+    "d_vs_agent_ci": [
+     0.012975538189259695,
+     0.18154601332752715
+    ],
+    "d_vs_shrinkage_repick": 0.0911732485364,
+    "d_vs_shrinkage_repick_ci": [
+     0.008627533079537475,
+     0.1780091158753842
+    ],
+    "recovered_share_of_selection_shortfall": 0.25368633390972073,
+    "share_after": 24.02777777777778,
+    "exploration_given_up": 0.07811400102136053,
+    "campaigns_losing_their_best": 17,
+    "nominee_one_reading": 0,
+    "recovered_share_of_selection_loss_vs_f0": 0.2658896156152754
+   },
+   "3": {
+    "pick": 7.7877981972753805,
+    "d_vs_agent": 0.09963472798889707,
+    "d_vs_agent_ci": [
+     0.013405672097396189,
+     0.19134806670048982
+    ],
+    "d_vs_shrinkage_repick": 0.09547605058472053,
+    "d_vs_shrinkage_repick_ci": [
+     0.008721075557080927,
+     0.18926734700756737
+    ],
+    "recovered_share_of_selection_shortfall": 0.265136454804772,
+    "share_after": 24.02777777777778,
+    "exploration_given_up": 0.07811400102136053,
+    "campaigns_losing_their_best": 17,
+    "nominee_one_reading": 0.016666666666666666,
+    "recovered_share_of_selection_loss_vs_f0": 0.277890531063157
+   },
+   "4": {
+    "pick": 7.7868144102256345,
+    "d_vs_agent": 0.09865094093915068,
+    "d_vs_agent_ci": [
+     0.0017340997401175044,
+     0.20062258981534795
+    ],
+    "d_vs_shrinkage_repick": 0.09449226353497414,
+    "d_vs_shrinkage_repick_ci": [
+     -0.00035499305490556133,
+     0.19295389713975603
+    ],
+    "recovered_share_of_selection_shortfall": 0.26251851409356064,
+    "share_after": 24.02777777777778,
+    "exploration_given_up": 0.07811400102136053,
+    "campaigns_losing_their_best": 17,
+    "nominee_one_reading": 0,
+    "recovered_share_of_selection_loss_vs_f0": 0.27514665740358774
+   }
+  },
+  "selection_loss_vs_f0": 0.3585394853423516,
+  "share_before": 13.972222222222221,
+  "repick_minus_agent_ci": [
+   -0.02809072690443529,
+   0.03571919148420683
+  ],
+  "agent_pick": 7.688163469286484,
+  "shrinkage_repick": 7.69232214669066,
+  "selection_shortfall": 0.37578660415543813,
+  "repick_minus_agent": 0.004158677404176533,
+  "best_k": 3
+ },
+ "Gemini 2.5 Flash (F0)": {
+  "campaigns": 120,
+  "skipped": {},
+  "k": {
+   "1": {
+    "pick": 7.7155470121693535,
+    "d_vs_agent": 0.014205417546432697,
+    "d_vs_agent_ci": [
+     0.0024037096698751683,
+     0.03170953367920273
+    ],
+    "d_vs_shrinkage_repick": 0.00677991230250962,
+    "d_vs_shrinkage_repick_ci": [
+     0.0,
+     0.02033973690752886
+    ],
+    "recovered_share_of_selection_shortfall": 0.8554541180771023,
+    "share_after": 94.0,
+    "exploration_given_up": 0.0,
+    "campaigns_losing_their_best": 0,
+    "nominee_one_reading": 0
+   },
+   "2": {
+    "pick": 7.717305505975152,
+    "d_vs_agent": 0.01596391135223171,
+    "d_vs_agent_ci": [
+     0.003408395638598094,
+     0.033903739262202796
+    ],
+    "d_vs_shrinkage_repick": 0.008538406108308635,
+    "d_vs_shrinkage_repick_ci": [
+     0.0,
+     0.02385672451912689
+    ],
+    "recovered_share_of_selection_shortfall": 0.9613510945557422,
+    "share_after": 94.0,
+    "exploration_given_up": 0.0,
+    "campaigns_losing_their_best": 0,
+    "nominee_one_reading": 0
+   },
+   "3": {
+    "pick": 7.7155470121693535,
+    "d_vs_agent": 0.014205417546432697,
+    "d_vs_agent_ci": [
+     0.00220654080366051,
+     0.03140083844099108
+    ],
+    "d_vs_shrinkage_repick": 0.00677991230250962,
+    "d_vs_shrinkage_repick_ci": [
+     0.0,
+     0.02033973690752886
+    ],
+    "recovered_share_of_selection_shortfall": 0.8554541180771023,
+    "share_after": 94.0,
+    "exploration_given_up": 0.0,
+    "campaigns_losing_their_best": 0,
+    "nominee_one_reading": 0
+   },
+   "4": {
+    "pick": 7.715643884804971,
+    "d_vs_agent": 0.014302290182049981,
+    "d_vs_agent_ci": [
+     0.0024002860748950786,
+     0.03214144478408639
+    ],
+    "d_vs_shrinkage_repick": 0.006876784938126905,
+    "d_vs_shrinkage_repick_ci": [
+     0.0,
+     0.02053348217876343
+    ],
+    "recovered_share_of_selection_shortfall": 0.8612878146085076,
+    "share_after": 94.0,
+    "exploration_given_up": 0.0,
+    "campaigns_losing_their_best": 0,
+    "nominee_one_reading": 0
+   }
+  },
+  "selection_loss_vs_f0": null,
+  "share_before": 94.0,
+  "repick_minus_agent_ci": [
+   0.0012018548349375842,
+   0.015980047245209548
+  ],
+  "agent_pick": 7.701341594622921,
+  "shrinkage_repick": 7.708767099866844,
+  "selection_shortfall": 0.016605703621327777,
+  "repick_minus_agent": 0.007425505243923077,
+  "best_k": 2
+ },
+ "DeepSeek V3.1 (F0)": {
+  "campaigns": 120,
+  "skipped": {},
+  "k": {
+   "1": {
+    "pick": 7.79610351346021,
+    "d_vs_agent": 0.03607725302575128,
+    "d_vs_agent_ci": [
+     0.017920969487871617,
+     0.05498734440070704
+    ],
+    "d_vs_shrinkage_repick": 0.007397484806100711,
+    "d_vs_shrinkage_repick_ci": [
+     -0.005009460353387466,
+     0.021845319534315802
+    ],
+    "recovered_share_of_selection_shortfall": 0.5717169044607784,
+    "share_after": 91.04166666666667,
+    "exploration_given_up": 0.001855366441416299,
+    "campaigns_losing_their_best": 2,
+    "nominee_one_reading": 0
+   },
+   "2": {
+    "pick": 7.790379985044951,
+    "d_vs_agent": 0.030353724610492742,
+    "d_vs_agent_ci": [
+     0.01029666110816716,
+     0.05083529445796228
+    ],
+    "d_vs_shrinkage_repick": 0.001673956390842172,
+    "d_vs_shrinkage_repick_ci": [
+     -0.011543929466134362,
+     0.016407753664373446
+    ],
+    "recovered_share_of_selection_shortfall": 0.4810160424569763,
+    "share_after": 91.04166666666667,
+    "exploration_given_up": 0.001855366441416299,
+    "campaigns_losing_their_best": 2,
+    "nominee_one_reading": 0
+   },
+   "3": {
+    "pick": 7.789580763684846,
+    "d_vs_agent": 0.029554503250387037,
+    "d_vs_agent_ci": [
+     0.010633392160498523,
+     0.0490451308165966
+    ],
+    "d_vs_shrinkage_repick": 0.0008747350307364657,
+    "d_vs_shrinkage_repick_ci": [
+     -0.010016298712196973,
+     0.014059542585343825
+    ],
+    "recovered_share_of_selection_shortfall": 0.46835076659319536,
+    "share_after": 91.04166666666667,
+    "exploration_given_up": 0.001855366441416299,
+    "campaigns_losing_their_best": 2,
+    "nominee_one_reading": 0
+   },
+   "4": {
+    "pick": 7.7895746298899775,
+    "d_vs_agent": 0.029548369455518603,
+    "d_vs_agent_ci": [
+     0.009892105261207214,
+     0.0497119563518696
+    ],
+    "d_vs_shrinkage_repick": 0.0008686012358680347,
+    "d_vs_shrinkage_repick_ci": [
+     -0.009688563024718063,
+     0.013950402359989678
+    ],
+    "recovered_share_of_selection_shortfall": 0.46825356423102343,
+    "share_after": 91.04166666666667,
+    "exploration_given_up": 0.001855366441416299,
+    "campaigns_losing_their_best": 2,
+    "nominee_one_reading": 0
+   }
+  },
+  "selection_loss_vs_f0": null,
+  "share_before": 90.97222222222223,
+  "repick_minus_agent_ci": [
+   0.00951021486808407,
+   0.04825220922828678
+  ],
+  "agent_pick": 7.760026260434459,
+  "shrinkage_repick": 7.788706028654109,
+  "selection_shortfall": 0.06310335192865772,
+  "repick_minus_agent": 0.02867976821965057,
+  "best_k": 1
+ },
+ "_label": "EXPLORATORY, it gates nothing. A simulation on the agents' own traces with the last 2 rounds replaced by confirmation re-measurements"
+}

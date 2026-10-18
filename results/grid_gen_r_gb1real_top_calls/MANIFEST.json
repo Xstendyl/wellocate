@@ -1,0 +1,28 @@
+{
+ "tag": "gen_r_gb1real_top",
+ "cells": 2,
+ "total_lines": 1585,
+ "source_lines": 1585,
+ "carried_forward_lines": 0,
+ "untouched_cell_lines": 0,
+ "replaced_lines": 0,
+ "expected_total_lines": 1585,
+ "all_verified": true,
+ "empty": false,
+ "files": {
+  "blind__anthropic_claude-opus-4.7.jsonl.gz": {
+   "lines": 837,
+   "sha256": "ff6af0f2c97cdc686cd610d82fb2aecd558151e67c64abbf997446a64fad3de7",
+   "bytes": 136478,
+   "verified": true,
+   "written_by_this_run": true
+  },
+  "instructed__anthropic_claude-opus-4.7.jsonl.gz": {
+   "lines": 748,
+   "sha256": "5ece086c0f20bbc6a986054b5f5a4db28dbcbd832f88e0015985314ece441bbf",
+   "bytes": 120360,
+   "verified": true,
+   "written_by_this_run": true
+  }
+ }
+}

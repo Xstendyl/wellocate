@@ -1,0 +1,14 @@
+TABLE 4. Replication fraction under all FOUR definitions. Secondary.
+The scripted optimum k*=1 is 25% of slots. A claim must hold under every definition or be
+reported as definition dependent.
+
+condition      model                     n over slots used         over all 60 slots       excl anchor, slots used  excl anchor, all 60   
+Blind          claude-opus-4.7          40   69.0%                   69.0%                   56.0%                   56.0%               
+Blind          gemini-2.5-flash         35   81.8%                   81.8%                   61.6%                   61.6%               
+Mechanism      claude-opus-4.7          40   72.7%                   72.7%                   59.0%                   59.0%               
+Mechanism      gemini-2.5-flash         36   86.0%                   86.0%                   64.1%                   64.1%               
+
+0ag NOMINATION FALLBACKS EXCLUDED from these primary figures: 9 campaign(s) -> Blind/gemini-2.5-flash 5, Mechanism/gemini-2.5-flash 4.
+A fallback is a nomination that did not parse, where campaign.py substituted best_by_mean(),
+which is exactly the Decision-rule instruction. The sensitivity keeping them is in
+summary.json under contrasts_with_fallbacks.

@@ -1,0 +1,27 @@
+PER-SETTING k* TABLE, n=1500 (for independent recomputation)
+  K   cv      scope k*    k0 mean   k* mean      span
+  1   0.036   pool  1      8.1215    8.1697    0.0482
+  1   0.036   fair  1      7.9535    8.0311    0.0777
+  1   0.073   pool  1      7.8946    8.0054    0.1108
+  1   0.073   fair  1      7.7162    7.8824    0.1661
+  1   0.146   pool  1      7.5683    7.7427    0.1744
+  1   0.146   fair  2      7.4861    7.6422    0.1561
+  2   0.036   pool  1      8.0544    8.0982    0.0438
+  2   0.036   fair  1      7.2841    7.3109    0.0268
+  2   0.073   pool  1      7.8690    7.9899    0.1209
+  2   0.073   fair  1      7.1735    7.2735    0.1001
+  2   0.146   pool  1      7.5592    7.7169    0.1577
+  2   0.146   fair  1      7.0478    7.1472    0.0994
+  3   0.036   pool  1      8.0338    8.0507    0.0169
+  3   0.036   fair  1      7.1535    7.1845    0.0310
+  3   0.073   pool  1      7.8289    7.9165    0.0876
+  3   0.073   fair  1      7.0905    7.1477    0.0572
+  3   0.146   pool  2      7.5245    7.6724    0.1479
+  3   0.146   fair  2      7.0279    7.0838    0.0560
+
+LEARNER'S HELD-OUT SCORES, n=1500
+  pool  trained k=1 selector=shrinkage | held-out seeds 0.7524 | held-out settings 0.9785 (5 of 5 usable)
+  fair  trained k=1 selector=shrinkage | held-out seeds 0.9275 | held-out settings 0.8991 (5 of 5 usable)
+
+  training settings (K, cv multiplier): [[1, 0.5], [1, 1.0], [2, 0.5], [2, 1.0]]
+  training seeds 9100000..9101499 | held-out seeds 9300000..9301499

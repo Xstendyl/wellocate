@@ -1,0 +1,230 @@
+  key source: repdef/.env  (fingerprint 0d6f7d3f, never the key)
+  credit (launch): account $752.04, key $751.99 -> BINDING $751.99 (key), key expires 2026-10-28
+  credit check (launch): $751.99 spendable, floor $50.00 -> ok
+====================================================================================================
+GRID  0am landscape nk K=3 (20 landscapes)  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 1 conditions x 3 models, campaigns per model frontier 20, mid-tier 60, open-weight 60 = 140 campaigns
+  ceiling $9.50 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    frontier     anthropic/claude-opus-4.7        released 2026-02
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+    open-weight  deepseek/deepseek-chat-v3.1      released 2025-08
+prompt facts checked: reference IMLE is viable and reads 6.8311 (stated 6.8300), pool is 7.00% of the space, example AMLE (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+prompt facts checked: reference ONCQ is viable and reads 6.8603 (stated 6.8600), pool is 7.00% of the space, example ANCQ (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+prompt facts checked: reference HLCE is viable and reads 6.8312 (stated 6.8300), pool is 7.00% of the space, example ALCE (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+prompt facts checked: reference MNLP is viable and reads 6.8755 (stated 6.8800), pool is 7.00% of the space, example ANLP (viable)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+prompt facts checked: reference JBBP is viable and reads 6.7938 (stated 6.7900), pool is 7.00% of the space, example ABBP (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+prompt facts checked: reference PLTD is viable and reads 6.8897 (stated 6.8900), pool is 7.00% of the space, example ALTD (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+prompt facts checked: reference HPDH is viable and reads 6.8519 (stated 6.8500), pool is 7.00% of the space, example APDH (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+prompt facts checked: reference DFON is viable and reads 6.7564 (stated 6.7600), pool is 7.00% of the space, example AFON (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+prompt facts checked: reference KGQD is viable and reads 6.9416 (stated 6.9400), pool is 7.00% of the space, example AGQD (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+prompt facts checked: reference RISC is viable and reads 6.7729 (stated 6.7700), pool is 7.00% of the space, example AISC (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+prompt facts checked: reference RDHK is viable and reads 6.7861 (stated 6.7900), pool is 7.00% of the space, example ADHK (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+prompt facts checked: reference RANK is viable and reads 6.7868 (stated 6.7900), pool is 7.00% of the space, example AANK (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+prompt facts checked: reference DQJS is viable and reads 6.8402 (stated 6.8400), pool is 7.00% of the space, example AQJS (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+prompt facts checked: reference DROC is viable and reads 6.8066 (stated 6.8100), pool is 7.00% of the space, example AROC (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+prompt facts checked: reference BSBR is viable and reads 6.8069 (stated 6.8100), pool is 7.00% of the space, example ASBR (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+prompt facts checked: reference IOEM is viable and reads 6.8977 (stated 6.9000), pool is 7.00% of the space, example AOEM (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+prompt facts checked: reference GPNI is viable and reads 6.7168 (stated 6.7200), pool is 7.00% of the space, example APNI (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+prompt facts checked: reference NPEC is viable and reads 6.8939 (stated 6.8900), pool is 7.00% of the space, example APEC (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+prompt facts checked: reference CBAR is viable and reads 6.8590 (stated 6.8600), pool is 7.00% of the space, example ABAR (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+prompt facts checked: reference QJDJ is viable and reads 6.8157 (stated 6.8200), pool is 7.00% of the space, example AJDJ (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_gen_k3_manifest.json (commit e3250690)
+    frontier     anthropic/claude-opus-4.7        released 2026-02
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+    open-weight  deepseek/deepseek-chat-v3.1      released 2025-08
+canary: comparator live, differs from the mean rule on 24 of 60 scripted campaigns
+
+comparator liveness per landscape (of 60 scripted campaigns): {'nk_uniform_k3_s7300_p93.0': 25, 'nk_uniform_k3_s7301_p93.0': 18, 'nk_uniform_k3_s7302_p93.0': 24, 'nk_uniform_k3_s7303_p93.0': 27, 'nk_uniform_k3_s7304_p93.0': 24, 'nk_uniform_k3_s7305_p93.0': 25, 'nk_uniform_k3_s7306_p93.0': 21, 'nk_uniform_k3_s7307_p93.0': 24, 'nk_uniform_k3_s7308_p93.0': 22, 'nk_uniform_k3_s7309_p93.0': 27, 'nk_uniform_k3_s7310_p93.0': 24, 'nk_uniform_k3_s7311_p93.0': 24, 'nk_uniform_k3_s7312_p93.0': 21, 'nk_uniform_k3_s7313_p93.0': 30, 'nk_uniform_k3_s7314_p93.0': 27, 'nk_uniform_k3_s7315_p93.0': 27, 'nk_uniform_k3_s7316_p93.0': 29, 'nk_uniform_k3_s7317_p93.0': 27, 'nk_uniform_k3_s7318_p93.0': 29, 'nk_uniform_k3_s7319_p93.0': 29}
+
+  SHUFFLED order over 140 campaigns across 3 cells (order seed 20261003)
+      Blind         mid-tier    seed 12000050 ok 51 rep 56 ( 93%) | nom  6.7861 | distn  1 | $0.0138 cum $0.01 | 49s
+      Blind         mid-tier    seed 12000040 ok 53 rep 59 ( 98%) | nom  6.8311 | distn  1 | $0.0052 cum $0.02 | 22s
+      Blind         mid-tier    seed 12000004 ok 49 rep 53 ( 88%) | nom  6.7938 | distn  2 | $0.0357 cum $0.05 | 93s
+      Blind         mid-tier    seed 12000002 ok 51 rep 58 ( 97%) | nom  6.8312 | distn  1 | $0.0057 cum $0.06 | 22s
+      Blind         mid-tier    seed 12000006 ok 51 rep 52 ( 87%) | nom  6.8519 | distn  2 | $0.0183 cum $0.08 | 57s
+      Blind         open-weight seed 12000050 ok 48 rep 53 ( 88%) | nom  6.7861 | distn  1 | $0.0276 cum $0.11 | 170s
+      Blind         mid-tier    seed 12000012 ok 49 rep 58 ( 97%) | nom  6.8402 | distn  1 | $0.0062 cum $0.11 | 28s
+      Blind         open-weight seed 12000028 ok 54 rep 58 ( 97%) | nom  7.3618 | distn  2 | $0.0101 cum $0.12 | 127s
+      Blind         open-weight seed 12000018 ok 53 rep 56 ( 93%) | nom  7.0391 | distn  3 | $0.0090 cum $0.13 | 145s
+      Blind         frontier    seed 12000016 ok 51 rep 54 ( 90%) | nom  7.0514 | distn  6 | $0.2365 cum $0.37 | 79s
+      Blind         mid-tier    seed 12000026 ok 47 rep 53 ( 88%) | nom  6.8519 | distn  2 | $0.0203 cum $0.39 | 66s
+      Blind         mid-tier    seed 12000025 ok 45 rep 46 ( 77%) | nom  7.6177 | distn  5 | $0.0210 cum $0.41 | 69s
+      Blind         mid-tier    seed 12000003 ok 50 rep 56 ( 93%) | nom  6.8755 | distn  1 | $0.0073 cum $0.42 | 28s
+      Blind         open-weight seed 12000030 ok 48 rep 55 ( 92%) | nom  6.7861 | distn  1 | $0.0286 cum $0.45 | 199s
+      Blind         open-weight seed 12000040 ok 47 rep 52 ( 87%) | nom  6.8311 | distn  1 | $0.0355 cum $0.48 | 209s
+      Blind         open-weight seed 12000023 ok 54 rep 59 ( 98%) | nom  6.8755 | distn  1 | $0.0177 cum $0.50 | 144s
+      Blind         mid-tier    seed 12000009 ok 46 rep 51 ( 85%) | nom  6.7729 | distn  1 | $0.0178 cum $0.52 | 61s
+      Blind         open-weight seed 12000009 ok 50 rep 57 ( 95%) | nom  6.7729 | distn  1 | $0.0213 cum $0.54 | 173s
+      Blind         open-weight seed 12000010 ok 47 rep 53 ( 88%) | nom  6.7861 | distn  1 | $0.0266 cum $0.56 | 170s
+      Blind         open-weight seed 12000036 ok 54 rep 55 ( 92%) | nom  7.0514 | distn  3 | $0.0115 cum $0.58 | 70s
+      Blind         mid-tier    seed 12000036 ok 52 rep 51 ( 85%) | nom  7.0514 | distn  5 | $0.0122 cum $0.59 | 45s
+      Blind         mid-tier    seed 12000016 ok 50 rep 50 ( 83%) | nom  7.0514 | distn  5 | $0.0139 cum $0.60 | 46s
+      Blind         mid-tier    seed 12000052 ok 53 rep 58 ( 97%) | nom  6.8402 | distn  1 | $0.0077 cum $0.61 | 34s
+      Blind         frontier    seed 12000017 ok 46 rep 51 ( 85%) | nom  7.1507 | distn  3 | $0.3798 cum $0.99 | 104s
+      Blind         open-weight seed 12000042 ok 53 rep 58 ( 97%) | nom  6.8312 | distn  1 | $0.0167 cum $1.01 | 148s
+      Blind         open-weight seed 12000027 ok 54 rep 59 ( 98%) | nom  6.7564 | distn  1 | $0.0173 cum $1.02 | 117s
+      Blind         open-weight seed 12000021 ok 48 rep 55 ( 92%) | nom  6.8603 | distn  3 | $0.0125 cum $1.04 | 102s
+      Blind         mid-tier    seed 12000031 ok 43 rep 49 ( 82%) | nom  6.9708 | distn  3 | $0.0286 cum $1.06 | 81s
+      Blind         mid-tier    seed 12000046 ok 49 rep 56 ( 93%) | nom  6.8519 | distn  1 | $0.0114 cum $1.08 | 41s
+      Blind         mid-tier    seed 12000000 ok 54 rep 59 ( 98%) | nom  6.8311 | distn  1 | $0.0051 cum $1.08 | 21s
+      Blind         mid-tier    seed 12000030 ok 49 rep 57 ( 95%) | nom  6.7861 | distn  1 | $0.0102 cum $1.09 | 40s
+      Blind         open-weight seed 12000035 ok 51 rep 56 ( 93%) | nom  6.8977 | distn  1 | $0.0119 cum $1.10 | 176s
+      Blind         mid-tier    seed 12000037 ok 47 rep 51 ( 85%) | nom  7.4508 | distn  3 | $0.0220 cum $1.12 | 67s
+      Blind         open-weight seed 12000011 ok 53 rep 58 ( 97%) | nom  6.7868 | distn  1 | $0.0144 cum $1.14 | 184s
+      Blind         open-weight seed 12000039 ok 52 rep 54 ( 90%) | nom  7.1342 | distn  3 | $0.0117 cum $1.15 | 140s
+      Blind         open-weight seed 12000019 ok 55 rep 56 ( 93%) | nom  7.1342 | distn  4 | $0.0083 cum $1.16 | 128s
+      Blind         frontier    seed 12000012 ok 51 rep 56 ( 93%) | nom  6.9539 | distn  2 | $0.1923 cum $1.35 | 64s
+      Blind         mid-tier    seed 12000042 ok 36 rep 45 ( 75%) | nom  7.3542 | distn  4 | $0.0285 cum $1.38 | 77s
+      Blind         open-weight seed 12000024 ok 48 rep 57 ( 95%) | nom  7.4197 | distn  2 | $0.0065 cum $1.39 | 113s
+      Blind         mid-tier    seed 12000023 ok 52 rep 56 ( 93%) | nom  6.8755 | distn  2 | $0.0089 cum $1.40 | 34s
+      Blind         open-weight seed 12000054 ok 52 rep 56 ( 93%) | nom  6.8069 | distn  1 | $0.0177 cum $1.41 | 242s
+      Blind         open-weight seed 12000001 ok 51 rep 57 ( 95%) | nom  6.5290 | distn  1 | $0.0186 cum $1.43 | 116s
+      Blind         frontier    seed 12000019 ok 54 rep 55 ( 92%) | nom  7.5339 | distn  5 | $0.2935 cum $1.73 | 91s
+      Blind         mid-tier    seed 12000018 ok 40 rep 42 ( 70%) | nom  6.8590 | distn  1 | $0.0387 cum $1.76 | 108s
+      Blind         open-weight seed 12000044 ok 52 rep 56 ( 93%) | nom  7.4197 | distn  3 | $0.0084 cum $1.77 | 130s
+      Blind         open-weight seed 12000048 ok 55 rep 58 ( 97%) | nom  6.9416 | distn  2 | $0.0184 cum $1.79 | 182s
+      Blind         mid-tier    seed 12000044 ok 50 rep 57 ( 95%) | nom  6.7938 | distn  2 | $0.0126 cum $1.80 | 46s
+      Blind         mid-tier    seed 12000047 ok 47 rep 57 ( 95%) | nom  6.7564 | distn  1 | $0.0218 cum $1.83 | 68s
+      Blind         mid-tier    seed 12000039 ok 49 rep 59 ( 98%) | nom  6.8157 | distn  1 | $0.0060 cum $1.83 | 22s
+      Blind         mid-tier    seed 12000035 ok 50 rep 55 ( 92%) | nom  6.8977 | distn  1 | $0.0114 cum $1.84 | 43s
+      Blind         open-weight seed 12000029 ok 50 rep 58 ( 97%) | nom  6.7470 | distn  2 | $0.0098 cum $1.85 | 85s
+      Blind         open-weight seed 12000013 ok 48 rep 57 ( 95%) | nom  6.8066 | distn  3 | $0.0082 cum $1.86 | 121s
+      Blind         open-weight seed 12000020 ok 45 rep 56 ( 93%) | nom  6.8311 | distn  1 | $0.0285 cum $1.89 | 175s
+      Blind         open-weight seed 12000037 ok 49 rep 58 ( 97%) | nom  6.8939 | distn  1 | $0.0151 cum $1.90 | 95s
+      Blind         mid-tier    seed 12000055 ok 53 rep 57 ( 95%) | nom  6.8977 | distn  1 | $0.0087 cum $1.91 | 34s
+      Blind         frontier    seed 12000014 ok 43 rep 53 ( 88%) | nom  7.4299 | distn  2 | $0.3887 cum $2.30 | 101s
+      Blind         mid-tier    seed 12000041 ok 44 rep 51 ( 85%) | nom  6.8603 | distn  3 | $0.0250 cum $2.33 | 71s
+      Blind         mid-tier    seed 12000015 ok 49 rep 56 ( 93%) | nom  6.8977 | distn  1 | $0.0099 cum $2.34 | 36s
+      Blind         mid-tier    seed 12000010 ok 51 rep 58 ( 97%) | nom  6.7861 | distn  1 | $0.0073 cum $2.34 | 30s
+      Blind         mid-tier    seed 12000020 ok 44 rep 52 ( 87%) | nom  8.7620 | distn  3 | $0.0248 cum $2.37 | 72s
+      Blind         open-weight seed 12000034 ok 51 rep 55 ( 92%) | nom  6.8069 | distn  1 | $0.0207 cum $2.39 | 263s
+      Blind         frontier    seed 12000008 ok 50 rep 50 ( 83%) | nom  7.3618 | distn  5 | $0.4073 cum $2.80 | 109s
+      Blind         mid-tier    seed 12000038 ok 30 rep 36 ( 60%) | nom  6.8590 | distn  1 | $0.0484 cum $2.85 | 116s
+      Blind         open-weight seed 12000038 ok 47 rep 59 ( 98%) | nom  6.8590 | distn  1 | $0.0182 cum $2.86 | 189s
+      Blind         frontier    seed 12000002 ok 48 rep 54 ( 90%) | nom  7.2057 | distn  2 | $0.2359 cum $3.10 | 70s
+      Blind         mid-tier    seed 12000007 ok 47 rep 55 ( 92%) | nom  6.7564 | distn  1 | $0.0127 cum $3.11 | 45s
+      Blind         open-weight seed 12000043 ok 48 rep 59 ( 98%) | nom  6.8755 | distn  1 | $0.0185 cum $3.13 | 120s
+      Blind         mid-tier    seed 12000049 ok 45 rep 54 ( 90%) | nom  6.7729 | distn  1 | $0.0130 cum $3.14 | 45s
+      Blind         open-weight seed 12000006 ok 52 rep 54 ( 90%) | nom  6.8519 | distn  1 | $0.0148 cum $3.16 | 208s
+      Blind         open-weight seed 12000008 ok 53 rep 58 ( 97%) | nom  7.3618 | distn  2 | $0.0120 cum $3.17 | 144s
+      Blind         open-weight seed 12000012 ok 52 rep 58 ( 97%) | nom  6.9539 | distn  2 | $0.0133 cum $3.18 | 150s
+      Blind         mid-tier    seed 12000051 ok 39 rep 45 ( 75%) | nom  6.7868 | distn  3 | $0.0285 cum $3.21 | 73s
+      Blind         mid-tier    seed 12000058 ok 38 rep 46 ( 77%) | nom  6.8590 | distn  1 | $0.0283 cum $3.24 | 88s
+      Blind         open-weight seed 12000002 ok 44 rep 50 ( 83%) | nom  7.4152 | distn  2 | $0.0291 cum $3.27 | 256s
+      Blind         open-weight seed 12000000 ok 47 rep 52 ( 87%) | nom  6.8311 | distn  1 | $0.0307 cum $3.30 | 200s
+      Blind         mid-tier    seed 12000056 ok 50 rep 53 ( 88%) | nom  7.1309 | distn  5 | $0.0091 cum $3.31 | 34s
+      Blind         mid-tier    seed 12000053 ok 44 rep 46 ( 77%) | nom  6.9322 | distn  6 | $0.0236 cum $3.33 | 68s
+      Blind         open-weight seed 12000022 ok 51 rep 55 ( 92%) | nom  6.8312 | distn  1 | $0.0215 cum $3.35 | 188s
+      Blind         frontier    seed 12000001 ok 51 rep 56 ( 93%) | nom  6.8603 | distn  2 | $0.2668 cum $3.62 | 91s
+      Blind         open-weight seed 12000025 ok 53 rep 58 ( 97%) | nom  7.6177 | distn  2 | $0.0128 cum $3.63 | 138s
+      Blind         open-weight seed 12000033 ok 53 rep 58 ( 97%) | nom  6.8066 | distn  2 | $0.0066 cum $3.64 | 133s
+      Blind         mid-tier    seed 12000001 ok 43 rep 43 ( 72%) | nom  6.8603 | distn  5 | $0.0227 cum $3.66 | 66s
+      Blind         mid-tier    seed 12000027 ok 53 rep 58 ( 97%) | nom  6.7564 | distn  1 | $0.0068 cum $3.67 | 28s
+      Blind         mid-tier    seed 12000045 ok 43 rep 47 ( 78%) | nom  7.6177 | distn  5 | $0.0189 cum $3.69 | 60s
+      Blind         open-weight seed 12000055 ok 52 rep 55 ( 92%) | nom  6.8977 | distn  1 | $0.0171 cum $3.71 | 152s
+      Blind         open-weight seed 12000016 ok 49 rep 56 ( 93%) | nom  7.0514 | distn  3 | $0.0092 cum $3.72 | 63s
+      Blind         frontier    seed 12000018 ok 51 rep 56 ( 93%) | nom  6.8590 | distn  2 | $0.2329 cum $3.95 | 79s
+      Blind         frontier    seed 12000004 ok 44 rep 46 ( 77%) | nom  6.4582 | distn  2 | $0.6041 cum $4.55 | 149s
+      Blind         open-weight seed 12000049 ok 48 rep 58 ( 97%) | nom  6.7729 | distn  1 | $0.0176 cum $4.57 | 156s
+      Blind         open-weight seed 12000014 ok 45 rep 55 ( 92%) | nom  6.8069 | distn  1 | $0.0142 cum $4.58 | 210s
+      Blind         open-weight seed 12000053 ok 50 rep 59 ( 98%) | nom  6.8066 | distn  1 | $0.0119 cum $4.60 | 134s
+      Blind         frontier    seed 12000000 ok 54 rep 59 ( 98%) | nom  6.8311 | distn  1 | $0.2134 cum $4.81 | 69s
+      Blind         frontier    seed 12000005 ok 45 rep 48 ( 80%) | nom  7.6177 | distn  5 | $0.4129 cum $5.22 | 111s
+      Blind         mid-tier    seed 12000029 ok 44 rep 57 ( 95%) | nom  6.7729 | distn  1 | $0.0100 cum $5.23 | 37s
+      Blind         mid-tier    seed 12000054 ok 45 rep 46 ( 77%) | nom  7.4299 | distn  3 | $0.0267 cum $5.26 | 74s
+      Blind         mid-tier    seed 12000024 ok 52 rep 54 ( 90%) | nom  6.7938 | distn  2 | $0.0214 cum $5.28 | 68s
+      Blind         mid-tier    seed 12000013 ok 49 rep 56 ( 93%) | nom  6.8066 | distn  1 | $0.0121 cum $5.29 | 43s
+      Blind         open-weight seed 12000031 ok 47 rep 58 ( 97%) | nom  6.7513 | distn  2 | $0.0115 cum $5.30 | 180s
+      Blind         mid-tier    seed 12000048 ok 37 rep 39 ( 65%) | nom  6.9416 | distn  2 | $0.0447 cum $5.35 | 96s
+      Blind         open-weight seed 12000003 ok 52 rep 58 ( 97%) | nom  6.8755 | distn  1 | $0.0179 cum $5.37 | 119s
+      Blind         mid-tier    seed 12000032 ok 48 rep 57 ( 95%) | nom  6.8402 | distn  1 | $0.0072 cum $5.37 | 30s
+      Blind         open-weight seed 12000051 ok 50 rep 58 ( 97%) | nom  6.7868 | distn  1 | $0.0165 cum $5.39 | 222s
+      Blind         mid-tier    seed 12000028 ok 36 rep 37 ( 62%) | nom  7.3618 | distn  2 | $0.0491 cum $5.44 | 104s
+      Blind         open-weight seed 12000058 ok 48 rep 59 ( 98%) | nom  6.8590 | distn  1 | $0.0138 cum $5.45 | 190s
+      Blind         open-weight seed 12000007 ok 54 rep 57 ( 95%) | nom  6.7564 | distn  2 | $0.0114 cum $5.46 | 95s
+      Blind         mid-tier    seed 12000034 ok 39 rep 38 ( 63%) | nom  7.4299 | distn  4 | $0.0481 cum $5.51 | 113s
+      Blind         frontier    seed 12000010 ok 46 rep 52 ( 87%) | nom  6.7861 | distn  1 | $0.5409 cum $6.05 | 124s
+      Blind         mid-tier    seed 12000043 ok 46 rep 55 ( 92%) | nom  6.8755 | distn  2 | $0.0087 cum $6.06 | 40s
+      Blind         mid-tier    seed 12000059 ok 47 rep 59 ( 98%) | nom  6.8157 | distn  1 | $0.0060 cum $6.07 | 24s
+      Blind         open-weight seed 12000047 ok 47 rep 57 ( 95%) | nom  6.7564 | distn  1 | $0.0195 cum $6.09 | 155s
+      Blind         open-weight seed 12000026 ok 50 rep 59 ( 98%) | nom  6.8519 | distn  1 | $0.0080 cum $6.10 | 104s
+      Blind         open-weight seed 12000045 ok 52 rep 57 ( 95%) | nom  6.6573 | distn  3 | $0.0071 cum $6.10 | 135s
+      Blind         mid-tier    seed 12000011 ok 44 rep 45 ( 75%) | nom  6.9708 | distn  3 | $0.0330 cum $6.14 | 88s
+      Blind         open-weight seed 12000052 ok 52 rep 57 ( 95%) | nom  6.9539 | distn  2 | $0.0151 cum $6.15 | 169s
+      Blind         mid-tier    seed 12000008 ok 32 rep 32 ( 53%) | nom  7.3618 | distn  2 | $0.0572 cum $6.21 | 121s
+      Blind         open-weight seed 12000059 ok 53 rep 53 ( 88%) | nom  7.1342 | distn  4 | $0.0084 cum $6.22 | 64s
+      Blind         mid-tier    seed 12000021 ok 34 rep 37 ( 62%) | nom  6.9941 | distn  6 | $0.0432 cum $6.26 | 102s
+      Blind         open-weight seed 12000057 ok 52 rep 54 ( 90%) | nom  7.4508 | distn  3 | $0.0115 cum $6.27 | 122s
+      Blind         open-weight seed 12000017 ok 53 rep 59 ( 98%) | nom  6.8939 | distn  1 | $0.0181 cum $6.29 | 129s
+      Blind         open-weight seed 12000032 ok 43 rep 56 ( 93%) | nom  6.9539 | distn  2 | $0.0129 cum $6.30 | 163s
+      Blind         frontier    seed 12000006 ok 54 rep 56 ( 93%) | nom  6.8519 | distn  1 | $0.3059 cum $6.61 | 83s
+      Blind         mid-tier    seed 12000019 ok 50 rep 59 ( 98%) | nom  6.8157 | distn  1 | $0.0056 cum $6.61 | 21s
+      Blind         frontier    seed 12000015 ok 40 rep 43 ( 72%) | nom  7.6456 | distn  5 | $0.5573 cum $7.17 | 133s
+      Blind         open-weight seed 12000056 ok 46 rep 49 ( 82%) | nom  7.8123 | distn  3 | $0.0291 cum $7.20 | 162s
+      Blind         frontier    seed 12000011 ok 50 rep 51 ( 85%) | nom  6.7513 | distn  4 | $0.2911 cum $7.49 | 96s
+      Blind         frontier    seed 12000007 ok 46 rep 49 ( 82%) | nom  6.7083 | distn  3 | $0.4653 cum $7.96 | 133s
+      Blind         open-weight seed 12000015 ok 52 rep 59 ( 98%) | nom  6.8977 | distn  1 | $0.0179 cum $7.97 | 171s
+      Blind         frontier    seed 12000009 ok 46 rep 52 ( 87%) | nom  6.7729 | distn  1 | $0.4080 cum $8.38 | 139s
+      Blind         open-weight seed 12000004 ok 55 rep 57 ( 95%) | nom  7.4197 | distn  2 | $0.0051 cum $8.39 | 130s
+      Blind         mid-tier    seed 12000033 ok 45 rep 52 ( 87%) | nom  6.8066 | distn  1 | $0.0144 cum $8.40 | 49s
+      Blind         mid-tier    seed 12000017 ok 47 rep 52 ( 87%) | nom  7.4508 | distn  3 | $0.0175 cum $8.42 | 54s
+      Blind         frontier    seed 12000003 ok 51 rep 57 ( 95%) | nom  6.8755 | distn  1 | $0.2151 cum $8.63 | 68s
+      Blind         open-weight seed 12000041 ok 48 rep 57 ( 95%) | nom  6.8603 | distn  2 | $0.0165 cum $8.65 | 126s
+      Blind         mid-tier    seed 12000022 ok 54 rep 59 ( 98%) | nom  6.8312 | distn  1 | $0.0061 cum $8.66 | 27s
+      Blind         frontier    seed 12000013 ok 39 rep 41 ( 68%) | nom  7.7333 | distn  7 | $0.5063 cum $9.16 | 122s
+      Blind         open-weight seed 12000046 ok 51 rep 59 ( 98%) | nom  6.8519 | distn  1 | $0.0161 cum $9.18 | 158s
+      Blind         mid-tier    seed 12000057 ok 51 rep 54 ( 90%) | nom  7.4508 | distn  3 | $0.0192 cum $9.20 | 63s
+      Blind         mid-tier    seed 12000005 ok 45 rep 51 ( 85%) | nom  7.6177 | distn  5 | $0.0232 cum $9.22 | 76s
+      Blind         mid-tier    seed 12000014 ok 40 rep 45 ( 75%) | nom  7.4473 | distn  2 | $0.0285 cum $9.25 | 86s
+      Blind         open-weight seed 12000005 ok 49 rep 58 ( 97%) | nom  7.6177 | distn  2 | $0.0127 cum $9.26 | 155s
+
+  NOMINATION CALLS: 140, of which 140 carry a two-parser comparison, 140 agree
+
+  TWO-PARSER CHECK over 7048 ROUND calls (nomination calls above)
+    GENUINE disagreement (both read, and differ)         0  0.00%
+    by design (primary refused the count, spent none)    2  0.03%
+  spot check written: results/grid_gen_k3_spotcheck.txt
+  call log archived: 3 cells, 7188 lines (7188 new, 0 carried, 0 untouched, 0 replaced), 0.9 MB, all verified True
+  plain call log removed after verification: grid_gen_k3_calls.jsonl
+
+====================================================================================================
+SUMMARY   gen_k3
+====================================================================================================
+  VARIANCES AND HEALTH ONLY. The primary outcome by condition is NOT printed here; see
+  scripts/stage1_variance.py for the sizing inputs and the final analysis script for means.
+  (scripted reference for later use: k*=1 at 8.0057, k=0 at 7.8856)
+  condition     role          n | sd(nominated) sd(distinct) |   distn | rep of budget | $/campaign
+  Blind         frontier     20 |        0.3661      1.8918 |     3.0 |         86.6%     0.3577
+  Blind         mid-tier     60 |        0.3468      1.5304 |     2.2 |         85.7%     0.0193
+  Blind         open-weight  60 |        0.2656      0.8694 |     1.7 |         94.1%     0.0158
+
+  TOTAL SPEND $9.2631 over 7188 calls, 140 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls       empty     malformed       trunc  mean rsn   max rsn
+  anthropic/claude-opus-4.7         899     0  0.0%      0   0.0%     0  0.0%         0         0
+  google/gemini-2.5-flash          2951     0  0.0%     15   0.5%     0  0.0%         0         0
+  deepseek/deepseek-chat-v3.1      3338     0  0.0%     15   0.4%     0  0.0%         0         0
+
+  No empty and no truncated responses on any model at max_tokens=6000.

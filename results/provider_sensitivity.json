@@ -1,0 +1,70 @@
+{
+ "tags": [
+  "topup_deepseek"
+ ],
+ "majority": "AtlasCloud",
+ "calls": 1584,
+ "campaigns": 61,
+ "provider_share": {
+  "AtlasCloud": 1437,
+  "DeepInfra": 145,
+  "CoreWeave": 1,
+  "SiliconFlow": 1
+ },
+ "calls_without_provider": {},
+ "balance": [
+  {
+   "condition": "Blind",
+   "calls": 248,
+   "majority": 226,
+   "pct": 91.12903225806451
+  },
+  {
+   "condition": "Quantitative",
+   "calls": 348,
+   "majority": 316,
+   "pct": 90.80459770114942
+  },
+  {
+   "condition": "Mechanism",
+   "calls": 260,
+   "majority": 235,
+   "pct": 90.38461538461539
+  },
+  {
+   "condition": "Aggregated",
+   "calls": 377,
+   "majority": 345,
+   "pct": 91.51193633952255
+  },
+  {
+   "condition": "Decision-rule",
+   "calls": 351,
+   "majority": 315,
+   "pct": 89.74358974358974
+  }
+ ],
+ "sensitivity": [
+  {
+   "contrast": "Aggregated vs Mechanism",
+   "pairs": 1,
+   "kept": 1,
+   "diff_all": NaN,
+   "diff_kept": NaN
+  },
+  {
+   "contrast": "Decision-rule vs Mechanism",
+   "pairs": 1,
+   "kept": 1,
+   "diff_all": NaN,
+   "diff_kept": NaN
+  }
+ ],
+ "all_calls_pure": 5,
+ "modal_majority": 61,
+ "providers_per_campaign": {
+  "2": 54,
+  "1": 5,
+  "3": 2
+ }
+}

@@ -1,0 +1,8289 @@
+{
+ "label": "POST-HOC (spec/B11_ROBUSTNESS_2.md)",
+ "spec": "spec/B11_ROBUSTNESS_2.md",
+ "code_sha256": "054e00cb9c6c3b7eea367195e9dfd0fdc19b16be11250251df92cf297e370ea3",
+ "draws": 10000,
+ "method": "two-level bootstrap: landscapes with replacement, then each chosen landscape's episodes with replacement; Run A's seeds kept as registered; seed level: per-seed means, range, t-interval (t quantile at seeds minus one degrees of freedom)",
+ "rows": [
+  {
+   "source": "b11_test_A.json",
+   "comparison": "nk:test, trained minus initialisation, pick",
+   "mean": 0.859877328193602,
+   "old_interval": [
+    0.8420344203158581,
+    0.8777594147453941
+   ],
+   "cluster_interval": [
+    0.8270018909008837,
+    0.8921758543722711
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     0.8840917154883722,
+     0.8554535736717185,
+     0.8400866954207152
+    ],
+    "mean": 0.859877328193602,
+    "range": [
+     0.8400866954207152,
+     0.8840917154883722
+    ],
+    "t_interval": [
+     0.804397703541159,
+     0.9153569528460449
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_test_A.json",
+   "comparison": "nk:test, trained minus random, pick",
+   "mean": 0.4003625384112985,
+   "old_interval": [
+    0.37530243544493963,
+    0.42620244512407196
+   ],
+   "cluster_interval": [
+    0.3577315385420287,
+    0.4432393918643269
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     0.42267185625803644,
+     0.39364588843359083,
+     0.38476987054226813
+    ],
+    "mean": 0.4003625384112985,
+    "range": [
+     0.38476987054226813,
+     0.42267185625803644
+    ],
+    "t_interval": [
+     0.3511179827126971,
+     0.44960709410989985
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_test_A.json",
+   "comparison": "nk:test, trained minus guessing, pick",
+   "mean": -0.028392573587550096,
+   "old_interval": [
+    -0.04954531222960281,
+    -0.007493301919543705
+   ],
+   "cluster_interval": [
+    -0.06169795387875876,
+    0.006422543590319953
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.006083255740812057,
+     -0.035109223565257745,
+     -0.04398524145658049
+    ],
+    "mean": -0.028392573587550096,
+    "range": [
+     -0.04398524145658049,
+     -0.006083255740812057
+    ],
+    "t_interval": [
+     -0.07763712928615166,
+     0.020851982111051458
+    ]
+   },
+   "now_crosses_zero": true,
+   "old_excludes_zero": true,
+   "new_excludes_zero": false
+  },
+  {
+   "source": "b11_test_A.json",
+   "comparison": "nk:test, trained minus informed, pick",
+   "mean": -0.050031463278653876,
+   "old_interval": [
+    -0.07207241887501908,
+    -0.028138493679092155
+   ],
+   "cluster_interval": [
+    -0.09738078396735761,
+    -0.0018980609290764696
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.027722145431915843,
+     -0.05674811325636153,
+     -0.06562413114768427
+    ],
+    "mean": -0.050031463278653876,
+    "range": [
+     -0.06562413114768427,
+     -0.027722145431915843
+    ],
+    "t_interval": [
+     -0.09927601897725542,
+     -0.000786907580052329
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_test_A.json",
+   "comparison": "nk:test, trained minus model-guided, pick",
+   "mean": -0.05872287062729085,
+   "old_interval": [
+    -0.07831249928573644,
+    -0.038616047827622
+   ],
+   "cluster_interval": [
+    -0.1051714039936904,
+    -0.01213460266836644
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.03641355278055281,
+     -0.06543952060499851,
+     -0.07431553849632123
+    ],
+    "mean": -0.05872287062729085,
+    "range": [
+     -0.07431553849632123,
+     -0.03641355278055281
+    ],
+    "t_interval": [
+     -0.1079674263258924,
+     -0.0094783149286893
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_test_A.json",
+   "comparison": "gb1:test, trained minus initialisation, pick",
+   "mean": 3.3242471607436634,
+   "old_interval": [
+    3.26611333323738,
+    3.382946916990264
+   ],
+   "cluster_interval": [
+    3.244081058729213,
+    3.4028535666374657
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     2.8504009175123355,
+     3.4429871996893513,
+     3.679353365029304
+    ],
+    "mean": 3.3242471607436634,
+    "range": [
+     2.8504009175123355,
+     3.679353365029304
+    ],
+    "t_interval": [
+     2.2634158264145685,
+     4.385078495072758
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_test_A.json",
+   "comparison": "gb1:test, trained minus random, pick",
+   "mean": 1.432227699081358,
+   "old_interval": [
+    1.3568305728155525,
+    1.5099644238395624
+   ],
+   "cluster_interval": [
+    1.337316197192189,
+    1.5276266799284233
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     0.8710414994886178,
+     1.5475132511522633,
+     1.8781283466031922
+    ],
+    "mean": 1.432227699081358,
+    "range": [
+     0.8710414994886178,
+     1.8781283466031922
+    ],
+    "t_interval": [
+     0.15700570438600647,
+     2.7074496937767094
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_test_A.json",
+   "comparison": "gb1:test, trained minus guessing, pick",
+   "mean": -1.324836659207195,
+   "old_interval": [
+    -1.4100515683558303,
+    -1.2388073432018174
+   ],
+   "cluster_interval": [
+    -1.452876674212572,
+    -1.1969529391124267
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -1.8860228587999348,
+     -1.2095511071362892,
+     -0.8789360116853604
+    ],
+    "mean": -1.324836659207195,
+    "range": [
+     -1.8860228587999348,
+     -0.8789360116853604
+    ],
+    "t_interval": [
+     -2.6000586539025465,
+     -0.049614664511843376
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_test_A.json",
+   "comparison": "gb1:test, trained minus informed, pick",
+   "mean": -1.1648191812928037,
+   "old_interval": [
+    -1.239662398038803,
+    -1.0913120773575458
+   ],
+   "cluster_interval": [
+    -1.262684024238024,
+    -1.0653174949626891
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -1.726005380885544,
+     -1.0495336292218982,
+     -0.7189185337709693
+    ],
+    "mean": -1.1648191812928037,
+    "range": [
+     -1.726005380885544,
+     -0.7189185337709693
+    ],
+    "t_interval": [
+     -2.4400411759881555,
+     0.11040281340254832
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_test_A.json",
+   "comparison": "gb1:test, trained minus model-guided, pick",
+   "mean": -0.5622080933535717,
+   "old_interval": [
+    -0.6454322205008759,
+    -0.47753451926351653
+   ],
+   "cluster_interval": [
+    -0.6686271178426987,
+    -0.45424126840919943
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -1.1233942929463117,
+     -0.446922541282666,
+     -0.11630744583173726
+    ],
+    "mean": -0.5622080933535717,
+    "range": [
+     -1.1233942929463117,
+     -0.11630744583173726
+    ],
+    "t_interval": [
+     -1.8374300880489232,
+     0.7130139013417799
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_test_A.json",
+   "comparison": "phoq:test, trained minus initialisation, pick",
+   "mean": 1.4929689112515163,
+   "old_interval": [
+    1.4582377996811065,
+    1.5273820475478803
+   ],
+   "cluster_interval": [
+    1.4437620882247233,
+    1.5440182631501453
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     1.3687696346068587,
+     1.5468887987736832,
+     1.5632483003740072
+    ],
+    "mean": 1.4929689112515163,
+    "range": [
+     1.3687696346068587,
+     1.5632483003740072
+    ],
+    "t_interval": [
+     1.2250042086914683,
+     1.7609336138115643
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_test_A.json",
+   "comparison": "phoq:test, trained minus random, pick",
+   "mean": 0.6520444481798181,
+   "old_interval": [
+    0.6011164454547541,
+    0.7035890992904278
+   ],
+   "cluster_interval": [
+    0.5762822156702567,
+    0.7261295300878121
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     0.519038473125052,
+     0.6925985317051159,
+     0.7444963397092862
+    ],
+    "mean": 0.6520444481798181,
+    "range": [
+     0.519038473125052,
+     0.7444963397092862
+    ],
+    "t_interval": [
+     0.35873428449907896,
+     0.9453546118605572
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_test_A.json",
+   "comparison": "phoq:test, trained minus guessing, pick",
+   "mean": 0.06912219980946836,
+   "old_interval": [
+    0.013848908958602598,
+    0.12439830033382587
+   ],
+   "cluster_interval": [
+    -0.010453882807513387,
+    0.14610115713675628
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.06388377524529769,
+     0.10967628333476621,
+     0.16157409133893658
+    ],
+    "mean": 0.06912219980946836,
+    "range": [
+     -0.06388377524529769,
+     0.16157409133893658
+    ],
+    "t_interval": [
+     -0.22418796387127088,
+     0.36243236349020763
+    ]
+   },
+   "now_crosses_zero": true,
+   "old_excludes_zero": true,
+   "new_excludes_zero": false
+  },
+  {
+   "source": "b11_test_A.json",
+   "comparison": "phoq:test, trained minus informed, pick",
+   "mean": -0.5199990513121849,
+   "old_interval": [
+    -0.6049275815482251,
+    -0.4365048888843867
+   ],
+   "cluster_interval": [
+    -0.6273921797295393,
+    -0.41332861857979103
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.653005026366951,
+     -0.47944496778688717,
+     -0.4275471597827168
+    ],
+    "mean": -0.5199990513121849,
+    "range": [
+     -0.653005026366951,
+     -0.4275471597827168
+    ],
+    "t_interval": [
+     -0.8133092149929242,
+     -0.22668888763144573
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_test_A.json",
+   "comparison": "phoq:test, trained minus model-guided, pick",
+   "mean": 0.2687111801796755,
+   "old_interval": [
+    0.22696855510925343,
+    0.3098322271823511
+   ],
+   "cluster_interval": [
+    0.20945331704948225,
+    0.32843338125354116
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     0.13570520512490944,
+     0.3092652637049733,
+     0.36116307170914375
+    ],
+    "mean": 0.2687111801796755,
+    "range": [
+     0.13570520512490944,
+     0.36116307170914375
+    ],
+    "t_interval": [
+     -0.024598983501063765,
+     0.5620213438604147
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_test_B.json",
+   "comparison": "phoq:test, trained minus initialisation, pick",
+   "mean": 0.8741781271039484,
+   "old_interval": [
+    0.8530602809557605,
+    0.8952628438911298
+   ],
+   "cluster_interval": [
+    0.8438489803755714,
+    0.9051624957032516
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     0.9837737823553978,
+     0.9104056373789535,
+     0.7283549615774938
+    ],
+    "mean": 0.8741781271039484,
+    "range": [
+     0.7283549615774938,
+     0.9837737823553978
+    ],
+    "t_interval": [
+     0.5474973201304344,
+     1.2008589340774622
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_test_B.json",
+   "comparison": "phoq:test, trained minus random, pick",
+   "mean": 0.03325366403225013,
+   "old_interval": [
+    -0.008343445940750621,
+    0.07426780500505797
+   ],
+   "cluster_interval": [
+    -0.03364145882195784,
+    0.09308569158129576
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     0.13404262087359126,
+     0.05611537031038637,
+     -0.09039699908722726
+    ],
+    "mean": 0.03325366403225013,
+    "range": [
+     -0.09039699908722726,
+     0.13404262087359126
+    ],
+    "t_interval": [
+     -0.24982120165981822,
+     0.31632852972431846
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": false,
+   "new_excludes_zero": false
+  },
+  {
+   "source": "b11_test_B.json",
+   "comparison": "phoq:test, trained minus guessing, pick",
+   "mean": -0.5496685843380996,
+   "old_interval": [
+    -0.5980396669796811,
+    -0.5021105466551974
+   ],
+   "cluster_interval": [
+    -0.6217036312483802,
+    -0.4814878646787977
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.44887962749675847,
+     -0.5268068780599633,
+     -0.6733192474575769
+    ],
+    "mean": -0.5496685843380996,
+    "range": [
+     -0.6733192474575769,
+     -0.44887962749675847
+    ],
+    "t_interval": [
+     -0.8327434500301678,
+     -0.2665937186460314
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_test_B.json",
+   "comparison": "phoq:test, trained minus informed, pick",
+   "mean": -1.1387898354597528,
+   "old_interval": [
+    -1.2177106716267592,
+    -1.0605547068164902
+   ],
+   "cluster_interval": [
+    -1.2473798729454897,
+    -1.0317707870795898
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -1.0380008786184118,
+     -1.1159281291816165,
+     -1.2624404985792301
+    ],
+    "mean": -1.1387898354597528,
+    "range": [
+     -1.2624404985792301,
+     -1.0380008786184118
+    ],
+    "t_interval": [
+     -1.4218647011518208,
+     -0.8557149697676847
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_test_B.json",
+   "comparison": "phoq:test, trained minus model-guided, pick",
+   "mean": -0.3500796039678924,
+   "old_interval": [
+    -0.3820023895532061,
+    -0.3184995672463142
+   ],
+   "cluster_interval": [
+    -0.3941010042309078,
+    -0.3077461093563167
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.2492906471265513,
+     -0.3272178976897562,
+     -0.4737302670873698
+    ],
+    "mean": -0.3500796039678924,
+    "range": [
+     -0.4737302670873698,
+     -0.2492906471265513
+    ],
+    "t_interval": [
+     -0.6331544696599607,
+     -0.06700473827582404
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_noise.json",
+   "comparison": "low, Run A minus random, pick",
+   "mean": 0.44628603344044443,
+   "old_interval": [
+    0.42431837061620875,
+    0.4680266140452834
+   ],
+   "cluster_interval": [
+    0.39841421346711114,
+    0.49224102562066663
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     0.46632549274133334,
+     0.44639614127666666,
+     0.4261364663033333
+    ],
+    "mean": 0.44628603344044443,
+    "range": [
+     0.4261364663033333,
+     0.46632549274133334
+    ],
+    "t_interval": [
+     0.39636793331686,
+     0.49620413356402887
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_noise.json",
+   "comparison": "low, Run A minus random, share",
+   "mean": 9.224814814832444,
+   "old_interval": [
+    9.09592592592592,
+    9.349629629629634
+   ],
+   "cluster_interval": [
+    9.02000000001689,
+    9.433333333343779
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     11.934444444446,
+     13.564444444449332,
+     2.175555555602
+    ],
+    "mean": 9.224814814832444,
+    "range": [
+     2.175555555602,
+     13.564444444449332
+    ],
+    "t_interval": [
+     -6.0749865447781985,
+     24.524616174443086
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_noise.json",
+   "comparison": "low, Run A minus best scripted (informed k=1), pick",
+   "mean": -0.04128281637822224,
+   "old_interval": [
+    -0.05877289662835646,
+    -0.024105820030804453
+   ],
+   "cluster_interval": [
+    -0.0807992975028889,
+    -0.0026305948008889433
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.021243357077333356,
+     -0.04117270854200002,
+     -0.06143238351533336
+    ],
+    "mean": -0.04128281637822224,
+    "range": [
+     -0.06143238351533336,
+     -0.021243357077333356
+    ],
+    "t_interval": [
+     -0.09120091650180662,
+     0.00863528374536214
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_noise.json",
+   "comparison": "low, Run A minus best scripted (informed k=1), share",
+   "mean": -14.108518518167552,
+   "old_interval": [
+    -14.234074074074073,
+    -13.982592592592589
+   ],
+   "cluster_interval": [
+    -14.313333332983111,
+    -13.899999999656222
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -11.398888888553998,
+     -9.768888888550665,
+     -21.157777777398
+    ],
+    "mean": -14.108518518167552,
+    "range": [
+     -21.157777777398,
+     -9.768888888550665
+    ],
+    "t_interval": [
+     -29.408319877778197,
+     1.191282841443094
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_noise.json",
+   "comparison": "low, guessing k=0 minus guessing k=1, pick",
+   "mean": -0.07984402632599999,
+   "old_interval": [
+    -0.09945366261536606,
+    -0.060114888989487844
+   ],
+   "cluster_interval": [
+    -0.10644706536799994,
+    -0.05302259565666665
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.07984402632599999
+    ],
+    "mean": -0.07984402632599999,
+    "range": [
+     -0.07984402632599999,
+     -0.07984402632599999
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_noise.json",
+   "comparison": "low, guessing k=2 minus guessing k=1, pick",
+   "mean": -0.09353263734666666,
+   "old_interval": [
+    -0.11242139302805597,
+    -0.07501706989490403
+   ],
+   "cluster_interval": [
+    -0.12067747592200002,
+    -0.06723810682666664
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.09353263734666666
+    ],
+    "mean": -0.09353263734666666,
+    "range": [
+     -0.09353263734666666,
+     -0.09353263734666666
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_noise.json",
+   "comparison": "low, guessing k=3 minus guessing k=1, pick",
+   "mean": -0.2628811502626666,
+   "old_interval": [
+    -0.2851600257516433,
+    -0.2412940789550085
+   ],
+   "cluster_interval": [
+    -0.29739866352933336,
+    -0.22806094226466667
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.2628811502626666
+    ],
+    "mean": -0.2628811502626666,
+    "range": [
+     -0.2628811502626666,
+     -0.2628811502626666
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_noise.json",
+   "comparison": "low, guessing k=4 minus guessing k=1, pick",
+   "mean": -0.7173690767857733,
+   "old_interval": [
+    -0.7453224409643733,
+    -0.688812358113976
+   ],
+   "cluster_interval": [
+    -0.7835499402050632,
+    -0.6541663526980198
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.7173690767857733
+    ],
+    "mean": -0.7173690767857733,
+    "range": [
+     -0.7173690767857733,
+     -0.7173690767857733
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_noise.json",
+   "comparison": "low, informed k=0 minus informed k=1, pick",
+   "mean": -0.03696260893400001,
+   "old_interval": [
+    -0.053852504202066595,
+    -0.020120003830121944
+   ],
+   "cluster_interval": [
+    -0.05935981848600001,
+    -0.013929590517333345
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.03696260893400001
+    ],
+    "mean": -0.03696260893400001,
+    "range": [
+     -0.03696260893400001,
+     -0.03696260893400001
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_noise.json",
+   "comparison": "low, informed k=2 minus informed k=1, pick",
+   "mean": -0.058918774558666676,
+   "old_interval": [
+    -0.07517020816952044,
+    -0.042204348372760166
+   ],
+   "cluster_interval": [
+    -0.08183847296199998,
+    -0.037215433366
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.058918774558666676
+    ],
+    "mean": -0.058918774558666676,
+    "range": [
+     -0.058918774558666676,
+     -0.058918774558666676
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_noise.json",
+   "comparison": "low, informed k=3 minus informed k=1, pick",
+   "mean": -0.22194633850933337,
+   "old_interval": [
+    -0.24200300604972183,
+    -0.2024963406168982
+   ],
+   "cluster_interval": [
+    -0.2494424957426667,
+    -0.19626497048066668
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.22194633850933337
+    ],
+    "mean": -0.22194633850933337,
+    "range": [
+     -0.22194633850933337,
+     -0.22194633850933337
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_noise.json",
+   "comparison": "low, informed k=4 minus informed k=1, pick",
+   "mean": -0.8163200683333334,
+   "old_interval": [
+    -0.8399731936040037,
+    -0.7920062634737087
+   ],
+   "cluster_interval": [
+    -0.8506857129574323,
+    -0.7822817337904312
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.8163200683333334
+    ],
+    "mean": -0.8163200683333334,
+    "range": [
+     -0.8163200683333334,
+     -0.8163200683333334
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_noise.json",
+   "comparison": "assay, Run A minus random, pick",
+   "mean": 0.400362538404,
+   "old_interval": [
+    0.37525105251398755,
+    0.42584557368967785
+   ],
+   "cluster_interval": [
+    0.356761976546,
+    0.44291125209177773
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     0.42267185624533327,
+     0.3936458884286667,
+     0.384769870538
+    ],
+    "mean": 0.400362538404,
+    "range": [
+     0.384769870538,
+     0.42267185624533327
+    ],
+    "t_interval": [
+     0.35111798271691314,
+     0.44960709409108685
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_noise.json",
+   "comparison": "assay, Run A minus random, share",
+   "mean": 9.318518518540888,
+   "old_interval": [
+    9.189259259259254,
+    9.445925925925922
+   ],
+   "cluster_interval": [
+    9.120740740762223,
+    9.519259259280668
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     11.975555555563332,
+     13.783333333347999,
+     2.1966666667113333
+    ],
+    "mean": 9.318518518540888,
+    "range": [
+     2.1966666667113333,
+     13.783333333347999
+    ],
+    "t_interval": [
+     -6.166567754019294,
+     24.80360479110107
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_noise.json",
+   "comparison": "assay, Run A minus best scripted (informed k=1), pick",
+   "mean": -0.09811060900600005,
+   "old_interval": [
+    -0.11908173258927217,
+    -0.0772098776270446
+   ],
+   "cluster_interval": [
+    -0.14182281592155557,
+    -0.05474119628488894
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.07580129116466672,
+     -0.10482725898133335,
+     -0.11370327687200006
+    ],
+    "mean": -0.09811060900600005,
+    "range": [
+     -0.11370327687200006,
+     -0.07580129116466672
+    ],
+    "t_interval": [
+     -0.14735516469308702,
+     -0.0488660533189131
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_noise.json",
+   "comparison": "assay, Run A minus best scripted (informed k=1), share",
+   "mean": -14.01481481445911,
+   "old_interval": [
+    -14.142962962962969,
+    -13.88555555555556
+   ],
+   "cluster_interval": [
+    -14.212592592237776,
+    -13.81407407371933
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -11.357777777436665,
+     -9.549999999651998,
+     -21.136666666288665
+    ],
+    "mean": -14.01481481445911,
+    "range": [
+     -21.136666666288665,
+     -9.549999999651998
+    ],
+    "t_interval": [
+     -29.499901087019296,
+     1.4702714581010756
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_noise.json",
+   "comparison": "assay, guessing k=0 minus guessing k=1, pick",
+   "mean": -0.15910382679399998,
+   "old_interval": [
+    -0.18509691910547008,
+    -0.13423236449906528
+   ],
+   "cluster_interval": [
+    -0.2002923803833333,
+    -0.12002217859066665
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.15910382679399998
+    ],
+    "mean": -0.15910382679399998,
+    "range": [
+     -0.15910382679399998,
+     -0.15910382679399998
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_noise.json",
+   "comparison": "assay, guessing k=2 minus guessing k=1, pick",
+   "mean": -0.04260044198466665,
+   "old_interval": [
+    -0.06453530305866798,
+    -0.020239032288919795
+   ],
+   "cluster_interval": [
+    -0.07861576371133332,
+    -0.007700202880666625
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.04260044198466665
+    ],
+    "mean": -0.04260044198466665,
+    "range": [
+     -0.04260044198466665,
+     -0.04260044198466665
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_noise.json",
+   "comparison": "assay, guessing k=3 minus guessing k=1, pick",
+   "mean": -0.18901351922333334,
+   "old_interval": [
+    -0.21382835171902362,
+    -0.16483572216480416
+   ],
+   "cluster_interval": [
+    -0.2267295164393333,
+    -0.152797572114
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.18901351922333334
+    ],
+    "mean": -0.18901351922333334,
+    "range": [
+     -0.18901351922333334,
+     -0.18901351922333334
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_noise.json",
+   "comparison": "assay, guessing k=4 minus guessing k=1, pick",
+   "mean": -0.5863023969735318,
+   "old_interval": [
+    -0.6155731369935863,
+    -0.5575972579081493
+   ],
+   "cluster_interval": [
+    -0.6427883796354514,
+    -0.5314760373085107
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.5863023969735318
+    ],
+    "mean": -0.5863023969735318,
+    "range": [
+     -0.5863023969735318,
+     -0.5863023969735318
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_noise.json",
+   "comparison": "assay, informed k=0 minus informed k=1, pick",
+   "mean": -0.09662827554333334,
+   "old_interval": [
+    -0.11975632324300002,
+    -0.0735938343939246
+   ],
+   "cluster_interval": [
+    -0.12699676742000005,
+    -0.06610998981000002
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.09662827554333334
+    ],
+    "mean": -0.09662827554333334,
+    "range": [
+     -0.09662827554333334,
+     -0.09662827554333334
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_noise.json",
+   "comparison": "assay, informed k=2 minus informed k=1, pick",
+   "mean": -0.048079145726000014,
+   "old_interval": [
+    -0.06900324210299676,
+    -0.027101453800127576
+   ],
+   "cluster_interval": [
+    -0.076536647352,
+    -0.019939768311333372
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.048079145726000014
+    ],
+    "mean": -0.048079145726000014,
+    "range": [
+     -0.048079145726000014,
+     -0.048079145726000014
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_noise.json",
+   "comparison": "assay, informed k=3 minus informed k=1, pick",
+   "mean": -0.16732420885200003,
+   "old_interval": [
+    -0.1898613142818135,
+    -0.1446883445737296
+   ],
+   "cluster_interval": [
+    -0.20111570160000003,
+    -0.13517603925399999
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.16732420885200003
+    ],
+    "mean": -0.16732420885200003,
+    "range": [
+     -0.16732420885200003,
+     -0.16732420885200003
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_noise.json",
+   "comparison": "assay, informed k=4 minus informed k=1, pick",
+   "mean": -0.7141794983759296,
+   "old_interval": [
+    -0.7397113177516358,
+    -0.6882082069765346
+   ],
+   "cluster_interval": [
+    -0.7546461454222972,
+    -0.6743928779145764
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.7141794983759296
+    ],
+    "mean": -0.7141794983759296,
+    "range": [
+     -0.7141794983759296,
+     -0.7141794983759296
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_noise.json",
+   "comparison": "high, Run A minus random, pick",
+   "mean": 0.3534415255748889,
+   "old_interval": [
+    0.3246451192097484,
+    0.38248705048493953
+   ],
+   "cluster_interval": [
+    0.3051108498833333,
+    0.40081069848999995
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     0.37058667392066674,
+     0.36289052884066664,
+     0.3268473739633333
+    ],
+    "mean": 0.3534415255748889,
+    "range": [
+     0.3268473739633333,
+     0.37058667392066674
+    ],
+    "t_interval": [
+     0.29543574841584863,
+     0.41144730273392915
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_noise.json",
+   "comparison": "high, Run A minus random, share",
+   "mean": 9.044814814821555,
+   "old_interval": [
+    8.912222222222226,
+    9.177407407407399
+   ],
+   "cluster_interval": [
+    8.850000000007332,
+    9.236296296292888
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     11.962222222215331,
+     12.934444444436,
+     2.2377777778133336
+    ],
+    "mean": 9.044814814821555,
+    "range": [
+     2.2377777778133336,
+     12.934444444436
+    ],
+    "t_interval": [
+     -5.649047462518682,
+     23.738677092161794
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_noise.json",
+   "comparison": "high, Run A minus best scripted (informed k=1), pick",
+   "mean": -0.09388933517177778,
+   "old_interval": [
+    -0.12065657902288306,
+    -0.06710220483645622
+   ],
+   "cluster_interval": [
+    -0.14280886908555557,
+    -0.04542469759088887
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.076744186826,
+     -0.08444033190600002,
+     -0.12048348678333334
+    ],
+    "mean": -0.09388933517177778,
+    "range": [
+     -0.12048348678333334,
+     -0.076744186826
+    ],
+    "t_interval": [
+     -0.15189511233081793,
+     -0.03588355801273761
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_noise.json",
+   "comparison": "high, Run A minus best scripted (informed k=1), share",
+   "mean": -14.288518518178444,
+   "old_interval": [
+    -14.420740740740749,
+    -14.161481481481466
+   ],
+   "cluster_interval": [
+    -14.483333332992663,
+    -14.097037036707109
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -11.371111110784666,
+     -10.398888888563999,
+     -21.095555555186667
+    ],
+    "mean": -14.288518518178444,
+    "range": [
+     -21.095555555186667,
+     -10.398888888563999
+    ],
+    "t_interval": [
+     -28.982380795518683,
+     0.405343759161795
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_noise.json",
+   "comparison": "high, guessing k=0 minus guessing k=2, pick",
+   "mean": -0.19573539837333337,
+   "old_interval": [
+    -0.22718582654144268,
+    -0.16438958085907715
+   ],
+   "cluster_interval": [
+    -0.23969543226733328,
+    -0.15108066559333336
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.19573539837333337
+    ],
+    "mean": -0.19573539837333337,
+    "range": [
+     -0.19573539837333337,
+     -0.19573539837333337
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_noise.json",
+   "comparison": "high, guessing k=1 minus guessing k=2, pick",
+   "mean": -0.00932513713466667,
+   "old_interval": [
+    -0.037378698129047136,
+    0.018791329168247307
+   ],
+   "cluster_interval": [
+    -0.04482124197400001,
+    0.027053315469333324
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.00932513713466667
+    ],
+    "mean": -0.00932513713466667,
+    "range": [
+     -0.00932513713466667,
+     -0.00932513713466667
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": false,
+   "new_excludes_zero": false
+  },
+  {
+   "source": "b11_robustness_noise.json",
+   "comparison": "high, guessing k=3 minus guessing k=2, pick",
+   "mean": -0.08243366751333332,
+   "old_interval": [
+    -0.1083805327592785,
+    -0.05545466512379251
+   ],
+   "cluster_interval": [
+    -0.12017680134866669,
+    -0.046857776294
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.08243366751333332
+    ],
+    "mean": -0.08243366751333332,
+    "range": [
+     -0.08243366751333332,
+     -0.08243366751333332
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_noise.json",
+   "comparison": "high, guessing k=4 minus guessing k=2, pick",
+   "mean": -0.38872123929280394,
+   "old_interval": [
+    -0.42029499741535986,
+    -0.3581423313574913
+   ],
+   "cluster_interval": [
+    -0.44610640387848105,
+    -0.3389238742921614
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.38872123929280394
+    ],
+    "mean": -0.38872123929280394,
+    "range": [
+     -0.38872123929280394,
+     -0.38872123929280394
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_noise.json",
+   "comparison": "high, informed k=0 minus informed k=1, pick",
+   "mean": -0.15319671095066667,
+   "old_interval": [
+    -0.18481062573609225,
+    -0.12193765888335463
+   ],
+   "cluster_interval": [
+    -0.1902892384846667,
+    -0.11637338961066666
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.15319671095066667
+    ],
+    "mean": -0.15319671095066667,
+    "range": [
+     -0.15319671095066667,
+     -0.15319671095066667
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_noise.json",
+   "comparison": "high, informed k=2 minus informed k=1, pick",
+   "mean": -0.0019560464526666753,
+   "old_interval": [
+    -0.02848916435356532,
+    0.02519054353658223
+   ],
+   "cluster_interval": [
+    -0.040114708838,
+    0.03635201816200001
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.0019560464526666753
+    ],
+    "mean": -0.0019560464526666753,
+    "range": [
+     -0.0019560464526666753,
+     -0.0019560464526666753
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": false,
+   "new_excludes_zero": false
+  },
+  {
+   "source": "b11_robustness_noise.json",
+   "comparison": "high, informed k=3 minus informed k=1, pick",
+   "mean": -0.07984652550266666,
+   "old_interval": [
+    -0.10826432694244777,
+    -0.05102582573891925
+   ],
+   "cluster_interval": [
+    -0.122860777414,
+    -0.03818230888933333
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.07984652550266666
+    ],
+    "mean": -0.07984652550266666,
+    "range": [
+     -0.07984652550266666,
+     -0.07984652550266666
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_noise.json",
+   "comparison": "high, informed k=4 minus informed k=1, pick",
+   "mean": -0.5208276741034483,
+   "old_interval": [
+    -0.5516635684345563,
+    -0.49026524277654904
+   ],
+   "cluster_interval": [
+    -0.5675512524582486,
+    -0.4728985553896016
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.5208276741034483
+    ],
+    "mean": -0.5208276741034483,
+    "range": [
+     -0.5208276741034483,
+     -0.5208276741034483
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_noise.json",
+   "comparison": "share change, Run A, low minus assay",
+   "mean": -0.09370370370844444,
+   "old_interval": [
+    -0.23444444444444448,
+    0.046296296296296315
+   ],
+   "cluster_interval": [
+    -0.2874074074071111,
+    0.09407407408066669
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.04111111111733329,
+     -0.21888888889866673,
+     -0.02111111110933334
+    ],
+    "mean": -0.09370370370844444,
+    "range": [
+     -0.21888888889866673,
+     -0.02111111110933334
+    ],
+    "t_interval": [
+     -0.3641611433004508,
+     0.1767537358835619
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": false,
+   "new_excludes_zero": false
+  },
+  {
+   "source": "b11_robustness_noise.json",
+   "comparison": "share change, informed k=1, low minus assay",
+   "mean": 0.0,
+   "old_interval": [
+    0.0,
+    0.0
+   ],
+   "cluster_interval": [
+    0.0,
+    0.0
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     0.0
+    ],
+    "mean": 0.0,
+    "range": [
+     0.0,
+     0.0
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": false,
+   "new_excludes_zero": false
+  },
+  {
+   "source": "b11_robustness_noise.json",
+   "comparison": "share change, Run A, high minus assay",
+   "mean": -0.27370370371933334,
+   "old_interval": [
+    -0.41185185185185125,
+    -0.13407407407407443
+   ],
+   "cluster_interval": [
+    -0.4648148148184444,
+    -0.09000000000666673
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.013333333348000029,
+     -0.848888888912,
+     0.041111111102000004
+    ],
+    "mean": -0.27370370371933334,
+    "range": [
+     -0.848888888912,
+     0.041111111102000004
+    ],
+    "t_interval": [
+     -1.512961177801475,
+     0.9655537703628085
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_noise.json",
+   "comparison": "share change, informed k=1, high minus assay",
+   "mean": 0.0,
+   "old_interval": [
+    0.0,
+    0.0
+   ],
+   "cluster_interval": [
+    0.0,
+    0.0
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     0.0
+    ],
+    "mean": 0.0,
+    "range": [
+     0.0,
+     0.0
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": false,
+   "new_excludes_zero": false
+  },
+  {
+   "source": "b11_robustness_llm.json",
+   "comparison": "grid, Opus 4.7, Run A minus the LLM, pick",
+   "mean": 0.24587879680000002,
+   "old_interval": [
+    0.14240988283879663,
+    0.35427574774273435
+   ],
+   "cluster_interval": [
+    0.13867656158888889,
+    0.3548341129388888
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     0.24408605376666662,
+     0.3043331449166667,
+     0.18921719171666668
+    ],
+    "mean": 0.24587879680000002,
+    "range": [
+     0.18921719171666668,
+     0.3043331449166667
+    ],
+    "t_interval": [
+     0.10284484990252551,
+     0.38891274369747453
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_llm.json",
+   "comparison": "grid, Opus 4.7, Run A minus the LLM, share",
+   "mean": -65.34259259257222,
+   "old_interval": [
+    -66.88888888888889,
+    -63.80555555555554
+   ],
+   "cluster_interval": [
+    -66.87962962963888,
+    -63.787037036988885
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -62.0,
+     -61.38888888888333,
+     -72.63888888883335
+    ],
+    "mean": -65.34259259257222,
+    "range": [
+     -72.63888888883335,
+     -61.38888888888333
+    ],
+    "t_interval": [
+     -81.05764886849559,
+     -49.62753631664884
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_llm.json",
+   "comparison": "grid, Gemini 2.5 Flash, Run A minus the LLM, pick",
+   "mean": 0.1557458860944441,
+   "old_interval": [
+    0.1070044829151612,
+    0.20635672443387287
+   ],
+   "cluster_interval": [
+    0.10666030334166632,
+    0.20513654153333294
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     0.16908615039999966,
+     0.20466536068333296,
+     0.09348614719999968
+    ],
+    "mean": 0.1557458860944441,
+    "range": [
+     0.09348614719999968,
+     0.20466536068333296
+    ],
+    "t_interval": [
+     0.014702935226136749,
+     0.29678883696275143
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_llm.json",
+   "comparison": "grid, Gemini 2.5 Flash, Run A minus the LLM, share",
+   "mean": -84.61111111125834,
+   "old_interval": [
+    -85.625,
+    -83.52314814814817
+   ],
+   "cluster_interval": [
+    -85.60185185202222,
+    -83.50462962977223
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -81.40277777794167,
+     -80.66666666683334,
+     -91.76388888900001
+    ],
+    "mean": -84.61111111125834,
+    "range": [
+     -91.76388888900001,
+     -80.66666666683334
+    ],
+    "t_interval": [
+     -100.02620892897708,
+     -69.1960132935396
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_llm.json",
+   "comparison": "grid, DeepSeek V3.1, Run A minus the LLM, pick",
+   "mean": 0.09706121999444435,
+   "old_interval": [
+    0.04360913881120715,
+    0.15255835887639488
+   ],
+   "cluster_interval": [
+    0.04263945364166662,
+    0.15070034488333325
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     0.11040148429999991,
+     0.14598069458333324,
+     0.03480148109999994
+    ],
+    "mean": 0.09706121999444435,
+    "range": [
+     0.03480148109999994,
+     0.14598069458333324
+    ],
+    "t_interval": [
+     -0.04398173087386299,
+     0.2381041708627517
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_llm.json",
+   "comparison": "grid, DeepSeek V3.1, Run A minus the LLM, share",
+   "mean": -81.58333333326665,
+   "old_interval": [
+    -82.39814814814814,
+    -80.75
+   ],
+   "cluster_interval": [
+    -82.40740740734722,
+    -80.74537037024443
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -78.37499999994999,
+     -77.63888888884166,
+     -88.73611111100833
+    ],
+    "mean": -81.58333333326665,
+    "range": [
+     -88.73611111100833,
+     -77.63888888884166
+    ],
+    "t_interval": [
+     -96.99843115098538,
+     -66.16823551554792
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_llm.json",
+   "comparison": "grid, GPT-6.1 Sol, Run A minus the LLM, pick",
+   "mean": 0.1948975328,
+   "old_interval": [
+    0.07245953502045553,
+    0.31368791025262116
+   ],
+   "cluster_interval": [
+    0.0739387272833333,
+    0.314049067611111
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     0.1931047897666666,
+     0.25335188091666666,
+     0.13823592771666668
+    ],
+    "mean": 0.1948975328,
+    "range": [
+     0.13823592771666668,
+     0.25335188091666666
+    ],
+    "t_interval": [
+     0.051863585902525516,
+     0.3379314796974745
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_llm.json",
+   "comparison": "grid, GPT-6.1 Sol, Run A minus the LLM, share",
+   "mean": -34.537037037038886,
+   "old_interval": [
+    -37.16666666666666,
+    -31.925925925925934
+   ],
+   "cluster_interval": [
+    -37.22222222227222,
+    -31.898148148111115
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -31.19444444446667,
+     -30.58333333335,
+     -41.8333333333
+    ],
+    "mean": -34.537037037038886,
+    "range": [
+     -41.8333333333,
+     -30.58333333335
+    ],
+    "t_interval": [
+     -50.252093312962224,
+     -18.821980761115547
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_llm.json",
+   "comparison": "grid, Gemini 3.1 Pro, Run A minus the LLM, pick",
+   "mean": 0.17891222478333335,
+   "old_interval": [
+    0.06339611344789176,
+    0.2909691684458708
+   ],
+   "cluster_interval": [
+    0.06743483062222229,
+    0.28957819823333325
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     0.17711948174999997,
+     0.2373665729,
+     0.12225061970000002
+    ],
+    "mean": 0.17891222478333335,
+    "range": [
+     0.12225061970000002,
+     0.2373665729
+    ],
+    "t_interval": [
+     0.0358782778858589,
+     0.3219461716808078
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_llm.json",
+   "comparison": "grid, Gemini 3.1 Pro, Run A minus the LLM, share",
+   "mean": -4.398148148122221,
+   "old_interval": [
+    -5.777777777777779,
+    -3.027777777777778
+   ],
+   "cluster_interval": [
+    -5.768518518538889,
+    -3.055555555466666
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -1.0555555555499998,
+     -0.4444444444333333,
+     -11.69444444438333
+    ],
+    "mean": -4.398148148122221,
+    "range": [
+     -11.69444444438333,
+     -0.4444444444333333
+    ],
+    "t_interval": [
+     -20.113204424045563,
+     11.316908127801119
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_llm.json",
+   "comparison": "gb1_scrambled, Opus 4.7, Run A minus the LLM, pick",
+   "mean": 0.01599377469999989,
+   "old_interval": [
+    -0.36828188996031025,
+    0.4147270079400404
+   ],
+   "cluster_interval": [
+    -0.36755240514444454,
+    0.4153739758222221
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -0.45845171226666676,
+     0.025302285783333246,
+     0.48113075058333316
+    ],
+    "mean": 0.01599377469999989,
+    "range": [
+     -0.45845171226666676,
+     0.48113075058333316
+    ],
+    "t_interval": [
+     -1.1512041428815734,
+     1.183191692281573
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": false,
+   "new_excludes_zero": false
+  },
+  {
+   "source": "b11_robustness_llm.json",
+   "comparison": "gb1_scrambled, Opus 4.7, Run A minus the LLM, share",
+   "mean": -61.36111111097778,
+   "old_interval": [
+    -63.47222222222223,
+    -59.20370370370372
+   ],
+   "cluster_interval": [
+    -63.453703703500004,
+    -59.212962962805555
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -61.41666666655001,
+     -60.444444444316666,
+     -62.22222222206666
+    ],
+    "mean": -61.36111111097778,
+    "range": [
+     -62.22222222206666,
+     -60.444444444316666
+    ],
+    "t_interval": [
+     -63.57246571019097,
+     -59.14975651176459
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_llm.json",
+   "comparison": "gb1_scrambled, Gemini 2.5 Flash, Run A minus the LLM, pick",
+   "mean": 3.6762844764666665,
+   "old_interval": [
+    3.4130098993968487,
+    3.92180059924276
+   ],
+   "cluster_interval": [
+    3.4151066688222222,
+    3.923568451961111
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     3.2018389894999997,
+     3.6855929875500006,
+     4.1414214523499995
+    ],
+    "mean": 3.6762844764666665,
+    "range": [
+     3.2018389894999997,
+     4.1414214523499995
+    ],
+    "t_interval": [
+     2.5090865588850932,
+     4.843482394048239
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_llm.json",
+   "comparison": "gb1_scrambled, Gemini 2.5 Flash, Run A minus the LLM, share",
+   "mean": -89.99999999962779,
+   "old_interval": [
+    -91.22222222222224,
+    -88.10185185185189
+   ],
+   "cluster_interval": [
+    -91.24074074035555,
+    -88.08333333296112
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -90.0555555552,
+     -89.08333333296669,
+     -90.86111111071666
+    ],
+    "mean": -89.99999999962779,
+    "range": [
+     -90.86111111071666,
+     -89.08333333296669
+    ],
+    "t_interval": [
+     -92.21135459884094,
+     -87.78864540041464
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_llm.json",
+   "comparison": "gb1_scrambled, DeepSeek V3.1, Run A minus the LLM, pick",
+   "mean": 3.9515762965499994,
+   "old_interval": [
+    3.678131172564124,
+    4.213051909143462
+   ],
+   "cluster_interval": [
+    3.6724893409555555,
+    4.2156276677388895
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     3.477130809583332,
+     3.9608848076333336,
+     4.416713272433333
+    ],
+    "mean": 3.9515762965499994,
+    "range": [
+     3.477130809583332,
+     4.416713272433333
+    ],
+    "t_interval": [
+     2.784378378968425,
+     5.118774214131574
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_llm.json",
+   "comparison": "gb1_scrambled, DeepSeek V3.1, Run A minus the LLM, share",
+   "mean": -94.0277777777611,
+   "old_interval": [
+    -94.63888888888891,
+    -93.37037037037038
+   ],
+   "cluster_interval": [
+    -94.63888888884445,
+    -93.37962962963888
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -94.08333333333331,
+     -93.11111111109999,
+     -94.88888888884999
+    ],
+    "mean": -94.0277777777611,
+    "range": [
+     -94.88888888884999,
+     -93.11111111109999
+    ],
+    "t_interval": [
+     -96.2391323769743,
+     -91.81642317854791
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_llm.json",
+   "comparison": "gb1_scrambled, GPT-6.1 Sol, Run A minus the LLM, pick",
+   "mean": -1.6936448176333334,
+   "old_interval": [
+    -2.0783737037908323,
+    -1.352722404034931
+   ],
+   "cluster_interval": [
+    -2.0860552437,
+    -1.3526696269000003
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -2.1834390229666667,
+     -1.7702701425666667,
+     -1.1272252873666668
+    ],
+    "mean": -1.6936448176333334,
+    "range": [
+     -2.1834390229666667,
+     -1.1272252873666668
+    ],
+    "t_interval": [
+     -3.0158513413199186,
+     -0.37143829394674843
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_llm.json",
+   "comparison": "gb1_scrambled, GPT-6.1 Sol, Run A minus the LLM, share",
+   "mean": -17.3148148147,
+   "old_interval": [
+    -19.61111111111111,
+    -15.148148148148147
+   ],
+   "cluster_interval": [
+    -19.55555555546667,
+    -15.166666666433334
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -17.111111111,
+     -16.444444444333335,
+     -18.388888888766665
+    ],
+    "mean": -17.3148148147,
+    "range": [
+     -18.388888888766665,
+     -16.444444444333335
+    ],
+    "t_interval": [
+     -19.76938605670737,
+     -14.86024357269263
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_llm.json",
+   "comparison": "gb1_scrambled, Gemini 3.1 Pro, Run A minus the LLM, pick",
+   "mean": -0.2351575048333334,
+   "old_interval": [
+    -0.8227587608002261,
+    0.3702819220670308
+   ],
+   "cluster_interval": [
+    -0.8205598420666665,
+    0.36840196994444446
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -0.7249517101666668,
+     -0.31178282976666666,
+     0.3312620254333333
+    ],
+    "mean": -0.2351575048333334,
+    "range": [
+     -0.7249517101666668,
+     0.3312620254333333
+    ],
+    "t_interval": [
+     -1.5573640285199186,
+     1.0870490188532518
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": false,
+   "new_excludes_zero": false
+  },
+  {
+   "source": "b11_robustness_llm.json",
+   "comparison": "gb1_scrambled, Gemini 3.1 Pro, Run A minus the LLM, share",
+   "mean": -8.981481481466668,
+   "old_interval": [
+    -10.666666666666666,
+    -7.314814814814814
+   ],
+   "cluster_interval": [
+    -10.72222222221111,
+    -7.277777777733334
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -8.777777777766666,
+     -8.1111111111,
+     -10.055555555533335
+    ],
+    "mean": -8.981481481466668,
+    "range": [
+     -10.055555555533335,
+     -8.1111111111
+    ],
+    "t_interval": [
+     -11.436052723474045,
+     -6.526910239459291
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_llm.json",
+   "comparison": "gb1_real, Opus 4.7, Run A minus the LLM, pick",
+   "mean": -2.8438583013944445,
+   "old_interval": [
+    -3.203542113665082,
+    -2.463454388641869
+   ],
+   "cluster_interval": [
+    -3.212431298555556,
+    -2.464948367594445
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -3.468348911416667,
+     -2.8135564278166663,
+     -2.24966956495
+    ],
+    "mean": -2.8438583013944445,
+    "range": [
+     -3.468348911416667,
+     -2.24966956495
+    ],
+    "t_interval": [
+     -4.358945051961184,
+     -1.3287715508277054
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_llm.json",
+   "comparison": "gb1_real, Opus 4.7, Run A minus the LLM, share",
+   "mean": -49.342592592572224,
+   "old_interval": [
+    -51.47222222222223,
+    -47.25925925925926
+   ],
+   "cluster_interval": [
+    -51.54629629627778,
+    -47.15740740736111
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -49.05555555555,
+     -48.50000000001667,
+     -50.472222222149995
+    ],
+    "mean": -49.342592592572224,
+    "range": [
+     -50.472222222149995,
+     -48.50000000001667
+    ],
+    "t_interval": [
+     -51.86886149647685,
+     -46.816323688667595
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_llm.json",
+   "comparison": "gb1_real, Gemini 2.5 Flash, Run A minus the LLM, pick",
+   "mean": 2.3385217440055555,
+   "old_interval": [
+    1.9387172600577607,
+    2.7211325763004903
+   ],
+   "cluster_interval": [
+    1.9322138753888891,
+    2.7395725558499997
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     1.7140311339833334,
+     2.368823617583333,
+     2.93271048045
+    ],
+    "mean": 2.3385217440055555,
+    "range": [
+     1.7140311339833334,
+     2.93271048045
+    ],
+    "t_interval": [
+     0.823434993438817,
+     3.8536084945722937
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_llm.json",
+   "comparison": "gb1_real, Gemini 2.5 Flash, Run A minus the LLM, share",
+   "mean": -43.203703703722226,
+   "old_interval": [
+    -50.31481481481482,
+    -36.388888888888886
+   ],
+   "cluster_interval": [
+    -50.20370370371666,
+    -36.4444444444
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -42.91666666670001,
+     -42.361111111166665,
+     -44.3333333333
+    ],
+    "mean": -43.203703703722226,
+    "range": [
+     -44.3333333333,
+     -42.361111111166665
+    ],
+    "t_interval": [
+     -45.72997260762686,
+     -40.67743479981759
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_llm.json",
+   "comparison": "gb1_real, DeepSeek V3.1, Run A minus the LLM, pick",
+   "mean": 3.4799991633555556,
+   "old_interval": [
+    3.0992558308482394,
+    3.847727659686552
+   ],
+   "cluster_interval": [
+    3.113389736255556,
+    3.841184330661111
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     2.855508553333333,
+     3.510301036933333,
+     4.0741878998
+    ],
+    "mean": 3.4799991633555556,
+    "range": [
+     2.855508553333333,
+     4.0741878998
+    ],
+    "t_interval": [
+     1.964912412788816,
+     4.995085913922296
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_llm.json",
+   "comparison": "gb1_real, DeepSeek V3.1, Run A minus the LLM, share",
+   "mean": -89.92592592580557,
+   "old_interval": [
+    -90.96296296296295,
+    -88.76851851851853
+   ],
+   "cluster_interval": [
+    -90.9814814813222,
+    -88.7962962961389
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -89.63888888878336,
+     -89.08333333325001,
+     -91.05555555538335
+    ],
+    "mean": -89.92592592580557,
+    "range": [
+     -91.05555555538335,
+     -89.08333333325001
+    ],
+    "t_interval": [
+     -92.45219482971022,
+     -87.39965702190092
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_llm.json",
+   "comparison": "phoq_scrambled, Opus 4.7, Run A minus the LLM, pick",
+   "mean": 0.3079555113777778,
+   "old_interval": [
+    0.05493540554050195,
+    0.5841824043035598
+   ],
+   "cluster_interval": [
+    0.05580845036666676,
+    0.5818302663777779
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     0.23134958843333336,
+     0.1556215947000001,
+     0.536895351
+    ],
+    "mean": 0.3079555113777778,
+    "range": [
+     0.1556215947000001,
+     0.536895351
+    ],
+    "t_interval": [
+     -0.19346982335109347,
+     0.8093808461066492
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_llm.json",
+   "comparison": "phoq_scrambled, Opus 4.7, Run A minus the LLM, share",
+   "mean": -60.38888888884444,
+   "old_interval": [
+    -62.2037037037037,
+    -58.5
+   ],
+   "cluster_interval": [
+    -62.22222222210001,
+    -58.57407407407778
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -60.27777777776667,
+     -59.0,
+     -61.88888888876667
+    ],
+    "mean": -60.38888888884444,
+    "range": [
+     -61.88888888876667,
+     -59.0
+    ],
+    "t_interval": [
+     -63.98504097163087,
+     -56.79273680605801
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_llm.json",
+   "comparison": "phoq_scrambled, Gemini 2.5 Flash, Run A minus the LLM, pick",
+   "mean": 0.07068309554444456,
+   "old_interval": [
+    -0.16325403685866016,
+    0.3340493678166074
+   ],
+   "cluster_interval": [
+    -0.16127141362222208,
+    0.32665980296666675
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -0.005922827399999912,
+     -0.08165082113333323,
+     0.2996229351666668
+    ],
+    "mean": 0.07068309554444456,
+    "range": [
+     -0.08165082113333323,
+     0.2996229351666668
+    ],
+    "t_interval": [
+     -0.43074223918442694,
+     0.572108430273316
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": false,
+   "new_excludes_zero": false
+  },
+  {
+   "source": "b11_robustness_llm.json",
+   "comparison": "phoq_scrambled, Gemini 2.5 Flash, Run A minus the LLM, share",
+   "mean": -61.27777777777777,
+   "old_interval": [
+    -64.35185185185186,
+    -58.05555555555554
+   ],
+   "cluster_interval": [
+    -64.27777777764443,
+    -58.2037037037
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -61.1666666667,
+     -59.88888888893334,
+     -62.777777777699995
+    ],
+    "mean": -61.27777777777777,
+    "range": [
+     -62.777777777699995,
+     -59.88888888893334
+    ],
+    "t_interval": [
+     -64.87392986056419,
+     -57.681625694991354
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_llm.json",
+   "comparison": "phoq_scrambled, DeepSeek V3.1, Run A minus the LLM, pick",
+   "mean": 1.3710909080444444,
+   "old_interval": [
+    1.1695081023999714,
+    1.6071632429662672
+   ],
+   "cluster_interval": [
+    1.1672629407888888,
+    1.5963888344666668
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     1.2944849850999998,
+     1.2187569913666667,
+     1.6000307476666664
+    ],
+    "mean": 1.3710909080444444,
+    "range": [
+     1.2187569913666667,
+     1.6000307476666664
+    ],
+    "t_interval": [
+     0.8696655733155733,
+     1.8725162427733157
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_llm.json",
+   "comparison": "phoq_scrambled, DeepSeek V3.1, Run A minus the LLM, share",
+   "mean": -87.55555555547778,
+   "old_interval": [
+    -89.48148148148148,
+    -85.24074074074073
+   ],
+   "cluster_interval": [
+    -89.46296296290001,
+    -85.24074074078888
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -87.4444444444,
+     -86.16666666663333,
+     -89.05555555539999
+    ],
+    "mean": -87.55555555547778,
+    "range": [
+     -89.05555555539999,
+     -86.16666666663333
+    ],
+    "t_interval": [
+     -91.1517076382642,
+     -83.95940347269136
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_llm.json",
+   "comparison": "phoq_scrambled, GPT-6.1 Sol, Run A minus the LLM, pick",
+   "mean": -0.1674441408555556,
+   "old_interval": [
+    -0.4452129094562684,
+    0.11105434173805089
+   ],
+   "cluster_interval": [
+    -0.4370601361666666,
+    0.11669124026666662
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -0.24405006380000008,
+     -0.3197780575333333,
+     0.061495698766666634
+    ],
+    "mean": -0.1674441408555556,
+    "range": [
+     -0.3197780575333333,
+     0.061495698766666634
+    ],
+    "t_interval": [
+     -0.668869475584427,
+     0.3339811938733158
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": false,
+   "new_excludes_zero": false
+  },
+  {
+   "source": "b11_robustness_llm.json",
+   "comparison": "phoq_scrambled, GPT-6.1 Sol, Run A minus the LLM, share",
+   "mean": -21.55555555554444,
+   "old_interval": [
+    -24.962962962962962,
+    -18.259259259259256
+   ],
+   "cluster_interval": [
+    -24.870370370455557,
+    -18.29629629626667
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -21.44444444446666,
+     -20.1666666667,
+     -23.055555555466658
+    ],
+    "mean": -21.55555555554444,
+    "range": [
+     -23.055555555466658,
+     -20.1666666667
+    ],
+    "t_interval": [
+     -25.151707638330855,
+     -17.959403472758027
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_llm.json",
+   "comparison": "phoq_scrambled, Gemini 3.1 Pro, Run A minus the LLM, pick",
+   "mean": 0.4759717105777778,
+   "old_interval": [
+    0.2385062164378184,
+    0.7288910860606664
+   ],
+   "cluster_interval": [
+    0.2397323758444445,
+    0.7249920096111113
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     0.39936578763333336,
+     0.3236377938999999,
+     0.7049115502000001
+    ],
+    "mean": 0.4759717105777778,
+    "range": [
+     0.3236377938999999,
+     0.7049115502000001
+    ],
+    "t_interval": [
+     -0.0254536241510937,
+     0.9773970453066494
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_robustness_llm.json",
+   "comparison": "phoq_scrambled, Gemini 3.1 Pro, Run A minus the LLM, share",
+   "mean": -12.333333333411112,
+   "old_interval": [
+    -13.870370370370372,
+    -10.75925925925926
+   ],
+   "cluster_interval": [
+    -13.888888888922223,
+    -10.759259259377778
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -12.222222222333333,
+     -10.944444444566669,
+     -13.833333333333334
+    ],
+    "mean": -12.333333333411112,
+    "range": [
+     -13.833333333333334,
+     -10.944444444566669
+    ],
+    "t_interval": [
+     -15.929485416197537,
+     -8.737181250624687
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_replication_A.json",
+   "comparison": "nk:test, trained minus initialisation, pick",
+   "mean": 0.8715114248604958,
+   "old_interval": [
+    0.857572523897748,
+    0.8853052299541195
+   ],
+   "cluster_interval": [
+    0.8341018378129184,
+    0.9073052760144303
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     0.8657773273481468,
+     0.8723255747417142,
+     0.8664115332008538,
+     0.8914160809716568,
+     0.8616266080401075
+    ],
+    "mean": 0.8715114248604958,
+    "range": [
+     0.8616266080401075,
+     0.8914160809716568
+    ],
+    "t_interval": [
+     0.8569059440571829,
+     0.8861169056638087
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_replication_A.json",
+   "comparison": "nk:test, trained minus random, pick",
+   "mean": 0.41583662765270135,
+   "old_interval": [
+    0.3910746564062813,
+    0.44081623647284884
+   ],
+   "cluster_interval": [
+    0.3717303934835895,
+    0.4583245395080122
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     0.4022031159460983,
+     0.42216587401538874,
+     0.4075973697850169,
+     0.4151814561380376,
+     0.4320353223789651
+    ],
+    "mean": 0.41583662765270135,
+    "range": [
+     0.4022031159460983,
+     0.4320353223789651
+    ],
+    "t_interval": [
+     0.4011891451166533,
+     0.4304841101887494
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_replication_A.json",
+   "comparison": "nk:test, trained minus guessing, pick",
+   "mean": -0.012918484346147166,
+   "old_interval": [
+    -0.032646561718039147,
+    0.0069736116010167565
+   ],
+   "cluster_interval": [
+    -0.04508071509863386,
+    0.02020085114941382
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.026551996052750194,
+     -0.006589237983459736,
+     -0.02115774221383161,
+     -0.013573655860810904,
+     0.003280210380116611
+    ],
+    "mean": -0.012918484346147166,
+    "range": [
+     -0.026551996052750194,
+     0.003280210380116611
+    ],
+    "t_interval": [
+     -0.027565966882195224,
+     0.0017289981899008926
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": false,
+   "new_excludes_zero": false
+  },
+  {
+   "source": "b11_replication_A.json",
+   "comparison": "nk:test, trained minus informed, pick",
+   "mean": -0.03455737403725095,
+   "old_interval": [
+    -0.054678430392085586,
+    -0.014262831632218826
+   ],
+   "cluster_interval": [
+    -0.07935489095370593,
+    0.012465430444070993
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.048190885743853974,
+     -0.02822812767456352,
+     -0.04279663190493539,
+     -0.035212545551914685,
+     -0.01835867931098717
+    ],
+    "mean": -0.03455737403725095,
+    "range": [
+     -0.048190885743853974,
+     -0.01835867931098717
+    ],
+    "t_interval": [
+     -0.049204856573299004,
+     -0.01990989150120289
+    ]
+   },
+   "now_crosses_zero": true,
+   "old_excludes_zero": true,
+   "new_excludes_zero": false
+  },
+  {
+   "source": "b11_replication_A.json",
+   "comparison": "nk:test, trained minus model-guided, pick",
+   "mean": -0.043248781385887926,
+   "old_interval": [
+    -0.06219521513755781,
+    -0.02465379747290649
+   ],
+   "cluster_interval": [
+    -0.09159380470651118,
+    0.0037368898594543655
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.05688229309249093,
+     -0.03691953502320049,
+     -0.05148803925357236,
+     -0.04390395290055166,
+     -0.027050086659624148
+    ],
+    "mean": -0.043248781385887926,
+    "range": [
+     -0.05688229309249093,
+     -0.027050086659624148
+    ],
+    "t_interval": [
+     -0.057896263921935975,
+     -0.02860129884983988
+    ]
+   },
+   "now_crosses_zero": true,
+   "old_excludes_zero": true,
+   "new_excludes_zero": false
+  },
+  {
+   "source": "b11_replication_A.json",
+   "comparison": "gb1:test, trained minus initialisation, pick",
+   "mean": 3.5333010562682303,
+   "old_interval": [
+    3.4878287797434266,
+    3.578949398206037
+   ],
+   "cluster_interval": [
+    3.469223276896116,
+    3.598664682018587
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     3.7496090371446185,
+     4.003750659084715,
+     3.237324172865967,
+     3.480397237588596,
+     3.1954241746572563
+    ],
+    "mean": 3.5333010562682303,
+    "range": [
+     3.1954241746572563,
+     4.003750659084715
+    ],
+    "t_interval": [
+     3.106471093131375,
+     3.9601310194050856
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_replication_A.json",
+   "comparison": "gb1:test, trained minus random, pick",
+   "mean": 1.6271400388539141,
+   "old_interval": [
+    1.556217853819795,
+    1.7003465232649713
+   ],
+   "cluster_interval": [
+    1.5312104627978242,
+    1.7213533680324002
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     1.879422693871407,
+     2.12188271598153,
+     1.3636825844008458,
+     1.528621892787701,
+     1.2420903072280884
+    ],
+    "mean": 1.6271400388539141,
+    "range": [
+     1.2420903072280884,
+     2.12188271598153
+    ],
+    "t_interval": [
+     1.172702971845305,
+     2.081577105862523
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_replication_A.json",
+   "comparison": "gb1:test, trained minus guessing, pick",
+   "mean": -1.1299243194346382,
+   "old_interval": [
+    -1.211106778733442,
+    -1.048491939979543
+   ],
+   "cluster_interval": [
+    -1.246232586178277,
+    -1.0157427282237756
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.8776416644171453,
+     -0.6351816423070227,
+     -1.3933817738877066,
+     -1.2284424655008517,
+     -1.5149740510604643
+    ],
+    "mean": -1.1299243194346382,
+    "range": [
+     -1.5149740510604643,
+     -0.6351816423070227
+    ],
+    "t_interval": [
+     -1.5843613864432475,
+     -0.675487252426029
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_replication_A.json",
+   "comparison": "gb1:test, trained minus informed, pick",
+   "mean": -0.9699068415202469,
+   "old_interval": [
+    -1.0421290348637897,
+    -0.8988742568676569
+   ],
+   "cluster_interval": [
+    -1.0609394714581413,
+    -0.8755912624711651
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.7176241865027542,
+     -0.47516416439263154,
+     -1.2333642959733155,
+     -1.0684249875864604,
+     -1.3549565731460729
+    ],
+    "mean": -0.9699068415202469,
+    "range": [
+     -1.3549565731460729,
+     -0.47516416439263154
+    ],
+    "t_interval": [
+     -1.4243439085288558,
+     -0.5154697745116379
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_replication_A.json",
+   "comparison": "gb1:test, trained minus model-guided, pick",
+   "mean": -0.36729575358101496,
+   "old_interval": [
+    -0.4487813651641789,
+    -0.28554947604853165
+   ],
+   "cluster_interval": [
+    -0.47039211197542113,
+    -0.2658482751341379
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.11501309856352217,
+     0.12744692354660048,
+     -0.6307532080340835,
+     -0.4658138996472284,
+     -0.7523454852068411
+    ],
+    "mean": -0.36729575358101496,
+    "range": [
+     -0.7523454852068411,
+     0.12744692354660048
+    ],
+    "t_interval": [
+     -0.8217328205896242,
+     0.08714131342759424
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_replication_A.json",
+   "comparison": "phoq:test, trained minus initialisation, pick",
+   "mean": 1.5004343949872825,
+   "old_interval": [
+    1.4741350040289787,
+    1.526227809734639
+   ],
+   "cluster_interval": [
+    1.4645125802811656,
+    1.5381526709844056
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     1.4692524305750998,
+     1.478280942653487,
+     1.564526610364006,
+     1.5385890456144602,
+     1.4515229457293592
+    ],
+    "mean": 1.5004343949872825,
+    "range": [
+     1.4515229457293592,
+     1.564526610364006
+    ],
+    "t_interval": [
+     1.4401816670268601,
+     1.5606871229477048
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_replication_A.json",
+   "comparison": "phoq:test, trained minus random, pick",
+   "mean": 0.6586719647847559,
+   "old_interval": [
+    0.6142531798724205,
+    0.7029555524691513
+   ],
+   "cluster_interval": [
+    0.5925865731351129,
+    0.7211065233879965
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     0.6362902877406035,
+     0.6320858572008143,
+     0.7256721852587664,
+     0.6978308531764527,
+     0.6014806405471423
+    ],
+    "mean": 0.6586719647847559,
+    "range": [
+     0.6014806405471423,
+     0.7256721852587664
+    ],
+    "t_interval": [
+     0.5950524158710572,
+     0.7222915136984546
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_replication_A.json",
+   "comparison": "phoq:test, trained minus guessing, pick",
+   "mean": 0.07574971641440617,
+   "old_interval": [
+    0.023806182562908722,
+    0.12620973121244602
+   ],
+   "cluster_interval": [
+    0.0029635663386505654,
+    0.1432789645751692
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     0.05336803937025377,
+     0.0491636088304647,
+     0.14274993688841686,
+     0.11490860480610293,
+     0.01855839217679262
+    ],
+    "mean": 0.07574971641440617,
+    "range": [
+     0.01855839217679262,
+     0.14274993688841686
+    ],
+    "t_interval": [
+     0.012130167500707376,
+     0.13936926532810495
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_replication_A.json",
+   "comparison": "phoq:test, trained minus informed, pick",
+   "mean": -0.5133715347072471,
+   "old_interval": [
+    -0.5957085340789676,
+    -0.4331235022768838
+   ],
+   "cluster_interval": [
+    -0.6293174652897375,
+    -0.39846411429913753
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.5357532117513996,
+     -0.5399576422911886,
+     -0.4463713142332364,
+     -0.4742126463155503,
+     -0.5705628589448607
+    ],
+    "mean": -0.5133715347072471,
+    "range": [
+     -0.5705628589448607,
+     -0.4463713142332364
+    ],
+    "t_interval": [
+     -0.5769910836209459,
+     -0.44975198579354825
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_replication_A.json",
+   "comparison": "phoq:test, trained minus model-guided, pick",
+   "mean": 0.2753386967846133,
+   "old_interval": [
+    0.23825321111528633,
+    0.3130354303766635
+   ],
+   "cluster_interval": [
+    0.2244026053817417,
+    0.32530174085385777
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     0.25295701974046086,
+     0.24875258920067184,
+     0.342338917258624,
+     0.31449758517631005,
+     0.21814737254699973
+    ],
+    "mean": 0.2753386967846133,
+    "range": [
+     0.21814737254699973,
+     0.342338917258624
+    ],
+    "t_interval": [
+     0.2117191478709145,
+     0.3389582456983121
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_B_ent05.json",
+   "comparison": "phoq:test, trained minus initialisation, pick",
+   "mean": 1.339599439708472,
+   "old_interval": [
+    1.3096753266858785,
+    1.3700602669217234
+   ],
+   "cluster_interval": [
+    1.2966855820604513,
+    1.384398570473511
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     1.2042804500605617,
+     1.426542154255636,
+     1.3879757148092182
+    ],
+    "mean": 1.339599439708472,
+    "range": [
+     1.2042804500605617,
+     1.426542154255636
+    ],
+    "t_interval": [
+     1.0445693700740581,
+     1.634629509342886
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_B_ent05.json",
+   "comparison": "phoq:test, trained minus random, pick",
+   "mean": 0.4986749766367738,
+   "old_interval": [
+    0.45054388974393184,
+    0.5452911310387581
+   ],
+   "cluster_interval": [
+    0.4347881156469115,
+    0.5605280406463488
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     0.35454928857875523,
+     0.572251887187069,
+     0.5692237541444973
+    ],
+    "mean": 0.4986749766367738,
+    "range": [
+     0.35454928857875523,
+     0.572251887187069
+    ],
+    "t_interval": [
+     0.18859077287894155,
+     0.808759180394606
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_B_ent05.json",
+   "comparison": "phoq:test, trained minus guessing, pick",
+   "mean": -0.08424727173357588,
+   "old_interval": [
+    -0.1377571222339176,
+    -0.031227377857492175
+   ],
+   "cluster_interval": [
+    -0.16074299922148497,
+    -0.011860769778798796
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.22837295979159444,
+     -0.010670361183280762,
+     -0.013698494225852443
+    ],
+    "mean": -0.08424727173357588,
+    "range": [
+     -0.22837295979159444,
+     -0.010670361183280762
+    ],
+    "t_interval": [
+     -0.39433147549140807,
+     0.2258369320242563
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_B_ent05.json",
+   "comparison": "phoq:test, trained minus informed, pick",
+   "mean": -0.6733685228552293,
+   "old_interval": [
+    -0.7560713524452513,
+    -0.5912954975952522
+   ],
+   "cluster_interval": [
+    -0.7858071215745747,
+    -0.5668618892961261
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.8174942109132479,
+     -0.5997916123049342,
+     -0.6028197453475057
+    ],
+    "mean": -0.6733685228552293,
+    "range": [
+     -0.8174942109132479,
+     -0.5997916123049342
+    ],
+    "t_interval": [
+     -0.9834527266130617,
+     -0.3632843190973969
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_B_ent05.json",
+   "comparison": "phoq:test, trained minus model-guided, pick",
+   "mean": 0.11534170863663122,
+   "old_interval": [
+    0.0758888089459302,
+    0.15476308367328814
+   ],
+   "cluster_interval": [
+    0.056067257821991075,
+    0.17245425709300366
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.028783979421387357,
+     0.18891861918692635,
+     0.18589048614435466
+    ],
+    "mean": 0.11534170863663122,
+    "range": [
+     -0.028783979421387357,
+     0.18891861918692635
+    ],
+    "t_interval": [
+     -0.19474249512120095,
+     0.4254259123944634
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_B_ent05.json",
+   "comparison": "gb1:test, trained minus initialisation, pick",
+   "mean": 3.552535255241358,
+   "old_interval": [
+    3.494003347751048,
+    3.612196627183756
+   ],
+   "cluster_interval": [
+    3.4714825397949673,
+    3.6316480139721734
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     3.5956210902919485,
+     3.5825081047009237,
+     3.4794765707312036
+    ],
+    "mean": 3.552535255241358,
+    "range": [
+     3.4794765707312036,
+     3.5956210902919485
+    ],
+    "t_interval": [
+     3.3945205434584693,
+     3.7105499670242468
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_B_ent05.json",
+   "comparison": "gb1:test, trained minus random, pick",
+   "mean": 1.6605157935790522,
+   "old_interval": [
+    1.583690984167193,
+    1.736509382019807
+   ],
+   "cluster_interval": [
+    1.555987432021567,
+    1.7642969797581538
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     1.6162616722682306,
+     1.687034156163835,
+     1.678251552305091
+    ],
+    "mean": 1.6605157935790522,
+    "range": [
+     1.6162616722682306,
+     1.687034156163835
+    ],
+    "t_interval": [
+     1.5646878196758984,
+     1.756343767482206
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_B_ent05.json",
+   "comparison": "gb1:test, trained minus guessing, pick",
+   "mean": -1.0965485647095006,
+   "old_interval": [
+    -1.1808171868530124,
+    -1.011708639277709
+   ],
+   "cluster_interval": [
+    -1.2324598794246866,
+    -0.9661139360082135
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -1.1408026860203222,
+     -1.0700302021247177,
+     -1.0788128059834616
+    ],
+    "mean": -1.0965485647095006,
+    "range": [
+     -1.1408026860203222,
+     -1.0700302021247177
+    ],
+    "t_interval": [
+     -1.1923765386126548,
+     -1.0007205908063463
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_B_ent05.json",
+   "comparison": "gb1:test, trained minus informed, pick",
+   "mean": -0.9365310867951093,
+   "old_interval": [
+    -1.0117233945936122,
+    -0.8609411754888271
+   ],
+   "cluster_interval": [
+    -1.0380551216804423,
+    -0.8303752691483974
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.9807852081059311,
+     -0.9100127242103265,
+     -0.9187953280690705
+    ],
+    "mean": -0.9365310867951093,
+    "range": [
+     -0.9807852081059311,
+     -0.9100127242103265
+    ],
+    "t_interval": [
+     -1.0323590606982636,
+     -0.8407031128919551
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_B_ent05.json",
+   "comparison": "gb1:test, trained minus model-guided, pick",
+   "mean": -0.33391999885587736,
+   "old_interval": [
+    -0.4200306707093396,
+    -0.2477993219272487
+   ],
+   "cluster_interval": [
+    -0.44177085313164105,
+    -0.22460050825572472
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.37817412016669905,
+     -0.3074016362710945,
+     -0.3161842401298384
+    ],
+    "mean": -0.33391999885587736,
+    "range": [
+     -0.37817412016669905,
+     -0.3074016362710945
+    ],
+    "t_interval": [
+     -0.4297479727590316,
+     -0.23809202495272314
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_B_ent05.json",
+   "comparison": "nk:test, trained minus initialisation, pick",
+   "mean": 0.7789459184616953,
+   "old_interval": [
+    0.760643702716632,
+    0.7970038879314293
+   ],
+   "cluster_interval": [
+    0.7437100319316304,
+    0.8145069069889143
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     0.7823939534896158,
+     0.7735535863661318,
+     0.7808902155293379
+    ],
+    "mean": 0.7789459184616953,
+    "range": [
+     0.7735535863661318,
+     0.7823939534896158
+    ],
+    "t_interval": [
+     0.7671958575313449,
+     0.7906959793920456
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_B_ent05.json",
+   "comparison": "nk:test, trained minus random, pick",
+   "mean": 0.31943112867939166,
+   "old_interval": [
+    0.29345067850842105,
+    0.3457007020414609
+   ],
+   "cluster_interval": [
+    0.2755444018136855,
+    0.3652651509947944
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     0.32097409425928014,
+     0.31174590112800404,
+     0.3255733906508909
+    ],
+    "mean": 0.31943112867939166,
+    "range": [
+     0.31174590112800404,
+     0.3255733906508909
+    ],
+    "t_interval": [
+     0.301938596469902,
+     0.3369236608888813
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_B_ent05.json",
+   "comparison": "nk:test, trained minus guessing, pick",
+   "mean": -0.10932398331945682,
+   "old_interval": [
+    -0.13071890902202835,
+    -0.08795239656279467
+   ],
+   "cluster_interval": [
+    -0.14403420944541293,
+    -0.0739746552125116
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.10778101773956837,
+     -0.11700921087084448,
+     -0.10318172134795761
+    ],
+    "mean": -0.10932398331945682,
+    "range": [
+     -0.11700921087084448,
+     -0.10318172134795761
+    ],
+    "t_interval": [
+     -0.12681651552894652,
+     -0.09183145110996714
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_B_ent05.json",
+   "comparison": "nk:test, trained minus informed, pick",
+   "mean": -0.13096287301056062,
+   "old_interval": [
+    -0.15273814272965303,
+    -0.10926815057417051
+   ],
+   "cluster_interval": [
+    -0.17807316230888395,
+    -0.08177615996439558
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.12941990743067217,
+     -0.1386481005619483,
+     -0.12482061103906138
+    ],
+    "mean": -0.13096287301056062,
+    "range": [
+     -0.1386481005619483,
+     -0.12482061103906138
+    ],
+    "t_interval": [
+     -0.14845540522005035,
+     -0.11347034080107088
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  {
+   "source": "b11_B_ent05.json",
+   "comparison": "nk:test, trained minus model-guided, pick",
+   "mean": -0.13965428035919755,
+   "old_interval": [
+    -0.15939633450118676,
+    -0.11936296763612357
+   ],
+   "cluster_interval": [
+    -0.18834833681330662,
+    -0.0921705370984276
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.13811131477930913,
+     -0.1473395079105852,
+     -0.13351201838769836
+    ],
+    "mean": -0.13965428035919755,
+    "range": [
+     -0.1473395079105852,
+     -0.13351201838769836
+    ],
+    "t_interval": [
+     -0.1571468125686872,
+     -0.12216174814970791
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  }
+ ],
+ "now_cross_zero": [
+  "b11_test_A.json: nk:test, trained minus guessing, pick",
+  "b11_test_A.json: phoq:test, trained minus guessing, pick",
+  "b11_replication_A.json: nk:test, trained minus informed, pick",
+  "b11_replication_A.json: nk:test, trained minus model-guided, pick"
+ ],
+ "by_name": {
+  "b11_test_A.json | nk:test, trained minus initialisation, pick": {
+   "source": "b11_test_A.json",
+   "comparison": "nk:test, trained minus initialisation, pick",
+   "mean": 0.859877328193602,
+   "old_interval": [
+    0.8420344203158581,
+    0.8777594147453941
+   ],
+   "cluster_interval": [
+    0.8270018909008837,
+    0.8921758543722711
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     0.8840917154883722,
+     0.8554535736717185,
+     0.8400866954207152
+    ],
+    "mean": 0.859877328193602,
+    "range": [
+     0.8400866954207152,
+     0.8840917154883722
+    ],
+    "t_interval": [
+     0.804397703541159,
+     0.9153569528460449
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_test_A.json | nk:test, trained minus random, pick": {
+   "source": "b11_test_A.json",
+   "comparison": "nk:test, trained minus random, pick",
+   "mean": 0.4003625384112985,
+   "old_interval": [
+    0.37530243544493963,
+    0.42620244512407196
+   ],
+   "cluster_interval": [
+    0.3577315385420287,
+    0.4432393918643269
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     0.42267185625803644,
+     0.39364588843359083,
+     0.38476987054226813
+    ],
+    "mean": 0.4003625384112985,
+    "range": [
+     0.38476987054226813,
+     0.42267185625803644
+    ],
+    "t_interval": [
+     0.3511179827126971,
+     0.44960709410989985
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_test_A.json | nk:test, trained minus guessing, pick": {
+   "source": "b11_test_A.json",
+   "comparison": "nk:test, trained minus guessing, pick",
+   "mean": -0.028392573587550096,
+   "old_interval": [
+    -0.04954531222960281,
+    -0.007493301919543705
+   ],
+   "cluster_interval": [
+    -0.06169795387875876,
+    0.006422543590319953
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.006083255740812057,
+     -0.035109223565257745,
+     -0.04398524145658049
+    ],
+    "mean": -0.028392573587550096,
+    "range": [
+     -0.04398524145658049,
+     -0.006083255740812057
+    ],
+    "t_interval": [
+     -0.07763712928615166,
+     0.020851982111051458
+    ]
+   },
+   "now_crosses_zero": true,
+   "old_excludes_zero": true,
+   "new_excludes_zero": false
+  },
+  "b11_test_A.json | nk:test, trained minus informed, pick": {
+   "source": "b11_test_A.json",
+   "comparison": "nk:test, trained minus informed, pick",
+   "mean": -0.050031463278653876,
+   "old_interval": [
+    -0.07207241887501908,
+    -0.028138493679092155
+   ],
+   "cluster_interval": [
+    -0.09738078396735761,
+    -0.0018980609290764696
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.027722145431915843,
+     -0.05674811325636153,
+     -0.06562413114768427
+    ],
+    "mean": -0.050031463278653876,
+    "range": [
+     -0.06562413114768427,
+     -0.027722145431915843
+    ],
+    "t_interval": [
+     -0.09927601897725542,
+     -0.000786907580052329
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_test_A.json | nk:test, trained minus model-guided, pick": {
+   "source": "b11_test_A.json",
+   "comparison": "nk:test, trained minus model-guided, pick",
+   "mean": -0.05872287062729085,
+   "old_interval": [
+    -0.07831249928573644,
+    -0.038616047827622
+   ],
+   "cluster_interval": [
+    -0.1051714039936904,
+    -0.01213460266836644
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.03641355278055281,
+     -0.06543952060499851,
+     -0.07431553849632123
+    ],
+    "mean": -0.05872287062729085,
+    "range": [
+     -0.07431553849632123,
+     -0.03641355278055281
+    ],
+    "t_interval": [
+     -0.1079674263258924,
+     -0.0094783149286893
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_test_A.json | gb1:test, trained minus initialisation, pick": {
+   "source": "b11_test_A.json",
+   "comparison": "gb1:test, trained minus initialisation, pick",
+   "mean": 3.3242471607436634,
+   "old_interval": [
+    3.26611333323738,
+    3.382946916990264
+   ],
+   "cluster_interval": [
+    3.244081058729213,
+    3.4028535666374657
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     2.8504009175123355,
+     3.4429871996893513,
+     3.679353365029304
+    ],
+    "mean": 3.3242471607436634,
+    "range": [
+     2.8504009175123355,
+     3.679353365029304
+    ],
+    "t_interval": [
+     2.2634158264145685,
+     4.385078495072758
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_test_A.json | gb1:test, trained minus random, pick": {
+   "source": "b11_test_A.json",
+   "comparison": "gb1:test, trained minus random, pick",
+   "mean": 1.432227699081358,
+   "old_interval": [
+    1.3568305728155525,
+    1.5099644238395624
+   ],
+   "cluster_interval": [
+    1.337316197192189,
+    1.5276266799284233
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     0.8710414994886178,
+     1.5475132511522633,
+     1.8781283466031922
+    ],
+    "mean": 1.432227699081358,
+    "range": [
+     0.8710414994886178,
+     1.8781283466031922
+    ],
+    "t_interval": [
+     0.15700570438600647,
+     2.7074496937767094
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_test_A.json | gb1:test, trained minus guessing, pick": {
+   "source": "b11_test_A.json",
+   "comparison": "gb1:test, trained minus guessing, pick",
+   "mean": -1.324836659207195,
+   "old_interval": [
+    -1.4100515683558303,
+    -1.2388073432018174
+   ],
+   "cluster_interval": [
+    -1.452876674212572,
+    -1.1969529391124267
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -1.8860228587999348,
+     -1.2095511071362892,
+     -0.8789360116853604
+    ],
+    "mean": -1.324836659207195,
+    "range": [
+     -1.8860228587999348,
+     -0.8789360116853604
+    ],
+    "t_interval": [
+     -2.6000586539025465,
+     -0.049614664511843376
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_test_A.json | gb1:test, trained minus informed, pick": {
+   "source": "b11_test_A.json",
+   "comparison": "gb1:test, trained minus informed, pick",
+   "mean": -1.1648191812928037,
+   "old_interval": [
+    -1.239662398038803,
+    -1.0913120773575458
+   ],
+   "cluster_interval": [
+    -1.262684024238024,
+    -1.0653174949626891
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -1.726005380885544,
+     -1.0495336292218982,
+     -0.7189185337709693
+    ],
+    "mean": -1.1648191812928037,
+    "range": [
+     -1.726005380885544,
+     -0.7189185337709693
+    ],
+    "t_interval": [
+     -2.4400411759881555,
+     0.11040281340254832
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_test_A.json | gb1:test, trained minus model-guided, pick": {
+   "source": "b11_test_A.json",
+   "comparison": "gb1:test, trained minus model-guided, pick",
+   "mean": -0.5622080933535717,
+   "old_interval": [
+    -0.6454322205008759,
+    -0.47753451926351653
+   ],
+   "cluster_interval": [
+    -0.6686271178426987,
+    -0.45424126840919943
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -1.1233942929463117,
+     -0.446922541282666,
+     -0.11630744583173726
+    ],
+    "mean": -0.5622080933535717,
+    "range": [
+     -1.1233942929463117,
+     -0.11630744583173726
+    ],
+    "t_interval": [
+     -1.8374300880489232,
+     0.7130139013417799
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_test_A.json | phoq:test, trained minus initialisation, pick": {
+   "source": "b11_test_A.json",
+   "comparison": "phoq:test, trained minus initialisation, pick",
+   "mean": 1.4929689112515163,
+   "old_interval": [
+    1.4582377996811065,
+    1.5273820475478803
+   ],
+   "cluster_interval": [
+    1.4437620882247233,
+    1.5440182631501453
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     1.3687696346068587,
+     1.5468887987736832,
+     1.5632483003740072
+    ],
+    "mean": 1.4929689112515163,
+    "range": [
+     1.3687696346068587,
+     1.5632483003740072
+    ],
+    "t_interval": [
+     1.2250042086914683,
+     1.7609336138115643
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_test_A.json | phoq:test, trained minus random, pick": {
+   "source": "b11_test_A.json",
+   "comparison": "phoq:test, trained minus random, pick",
+   "mean": 0.6520444481798181,
+   "old_interval": [
+    0.6011164454547541,
+    0.7035890992904278
+   ],
+   "cluster_interval": [
+    0.5762822156702567,
+    0.7261295300878121
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     0.519038473125052,
+     0.6925985317051159,
+     0.7444963397092862
+    ],
+    "mean": 0.6520444481798181,
+    "range": [
+     0.519038473125052,
+     0.7444963397092862
+    ],
+    "t_interval": [
+     0.35873428449907896,
+     0.9453546118605572
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_test_A.json | phoq:test, trained minus guessing, pick": {
+   "source": "b11_test_A.json",
+   "comparison": "phoq:test, trained minus guessing, pick",
+   "mean": 0.06912219980946836,
+   "old_interval": [
+    0.013848908958602598,
+    0.12439830033382587
+   ],
+   "cluster_interval": [
+    -0.010453882807513387,
+    0.14610115713675628
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.06388377524529769,
+     0.10967628333476621,
+     0.16157409133893658
+    ],
+    "mean": 0.06912219980946836,
+    "range": [
+     -0.06388377524529769,
+     0.16157409133893658
+    ],
+    "t_interval": [
+     -0.22418796387127088,
+     0.36243236349020763
+    ]
+   },
+   "now_crosses_zero": true,
+   "old_excludes_zero": true,
+   "new_excludes_zero": false
+  },
+  "b11_test_A.json | phoq:test, trained minus informed, pick": {
+   "source": "b11_test_A.json",
+   "comparison": "phoq:test, trained minus informed, pick",
+   "mean": -0.5199990513121849,
+   "old_interval": [
+    -0.6049275815482251,
+    -0.4365048888843867
+   ],
+   "cluster_interval": [
+    -0.6273921797295393,
+    -0.41332861857979103
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.653005026366951,
+     -0.47944496778688717,
+     -0.4275471597827168
+    ],
+    "mean": -0.5199990513121849,
+    "range": [
+     -0.653005026366951,
+     -0.4275471597827168
+    ],
+    "t_interval": [
+     -0.8133092149929242,
+     -0.22668888763144573
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_test_A.json | phoq:test, trained minus model-guided, pick": {
+   "source": "b11_test_A.json",
+   "comparison": "phoq:test, trained minus model-guided, pick",
+   "mean": 0.2687111801796755,
+   "old_interval": [
+    0.22696855510925343,
+    0.3098322271823511
+   ],
+   "cluster_interval": [
+    0.20945331704948225,
+    0.32843338125354116
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     0.13570520512490944,
+     0.3092652637049733,
+     0.36116307170914375
+    ],
+    "mean": 0.2687111801796755,
+    "range": [
+     0.13570520512490944,
+     0.36116307170914375
+    ],
+    "t_interval": [
+     -0.024598983501063765,
+     0.5620213438604147
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_test_B.json | phoq:test, trained minus initialisation, pick": {
+   "source": "b11_test_B.json",
+   "comparison": "phoq:test, trained minus initialisation, pick",
+   "mean": 0.8741781271039484,
+   "old_interval": [
+    0.8530602809557605,
+    0.8952628438911298
+   ],
+   "cluster_interval": [
+    0.8438489803755714,
+    0.9051624957032516
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     0.9837737823553978,
+     0.9104056373789535,
+     0.7283549615774938
+    ],
+    "mean": 0.8741781271039484,
+    "range": [
+     0.7283549615774938,
+     0.9837737823553978
+    ],
+    "t_interval": [
+     0.5474973201304344,
+     1.2008589340774622
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_test_B.json | phoq:test, trained minus random, pick": {
+   "source": "b11_test_B.json",
+   "comparison": "phoq:test, trained minus random, pick",
+   "mean": 0.03325366403225013,
+   "old_interval": [
+    -0.008343445940750621,
+    0.07426780500505797
+   ],
+   "cluster_interval": [
+    -0.03364145882195784,
+    0.09308569158129576
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     0.13404262087359126,
+     0.05611537031038637,
+     -0.09039699908722726
+    ],
+    "mean": 0.03325366403225013,
+    "range": [
+     -0.09039699908722726,
+     0.13404262087359126
+    ],
+    "t_interval": [
+     -0.24982120165981822,
+     0.31632852972431846
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": false,
+   "new_excludes_zero": false
+  },
+  "b11_test_B.json | phoq:test, trained minus guessing, pick": {
+   "source": "b11_test_B.json",
+   "comparison": "phoq:test, trained minus guessing, pick",
+   "mean": -0.5496685843380996,
+   "old_interval": [
+    -0.5980396669796811,
+    -0.5021105466551974
+   ],
+   "cluster_interval": [
+    -0.6217036312483802,
+    -0.4814878646787977
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.44887962749675847,
+     -0.5268068780599633,
+     -0.6733192474575769
+    ],
+    "mean": -0.5496685843380996,
+    "range": [
+     -0.6733192474575769,
+     -0.44887962749675847
+    ],
+    "t_interval": [
+     -0.8327434500301678,
+     -0.2665937186460314
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_test_B.json | phoq:test, trained minus informed, pick": {
+   "source": "b11_test_B.json",
+   "comparison": "phoq:test, trained minus informed, pick",
+   "mean": -1.1387898354597528,
+   "old_interval": [
+    -1.2177106716267592,
+    -1.0605547068164902
+   ],
+   "cluster_interval": [
+    -1.2473798729454897,
+    -1.0317707870795898
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -1.0380008786184118,
+     -1.1159281291816165,
+     -1.2624404985792301
+    ],
+    "mean": -1.1387898354597528,
+    "range": [
+     -1.2624404985792301,
+     -1.0380008786184118
+    ],
+    "t_interval": [
+     -1.4218647011518208,
+     -0.8557149697676847
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_test_B.json | phoq:test, trained minus model-guided, pick": {
+   "source": "b11_test_B.json",
+   "comparison": "phoq:test, trained minus model-guided, pick",
+   "mean": -0.3500796039678924,
+   "old_interval": [
+    -0.3820023895532061,
+    -0.3184995672463142
+   ],
+   "cluster_interval": [
+    -0.3941010042309078,
+    -0.3077461093563167
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.2492906471265513,
+     -0.3272178976897562,
+     -0.4737302670873698
+    ],
+    "mean": -0.3500796039678924,
+    "range": [
+     -0.4737302670873698,
+     -0.2492906471265513
+    ],
+    "t_interval": [
+     -0.6331544696599607,
+     -0.06700473827582404
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_noise.json | low, Run A minus random, pick": {
+   "source": "b11_robustness_noise.json",
+   "comparison": "low, Run A minus random, pick",
+   "mean": 0.44628603344044443,
+   "old_interval": [
+    0.42431837061620875,
+    0.4680266140452834
+   ],
+   "cluster_interval": [
+    0.39841421346711114,
+    0.49224102562066663
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     0.46632549274133334,
+     0.44639614127666666,
+     0.4261364663033333
+    ],
+    "mean": 0.44628603344044443,
+    "range": [
+     0.4261364663033333,
+     0.46632549274133334
+    ],
+    "t_interval": [
+     0.39636793331686,
+     0.49620413356402887
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_noise.json | low, Run A minus random, share": {
+   "source": "b11_robustness_noise.json",
+   "comparison": "low, Run A minus random, share",
+   "mean": 9.224814814832444,
+   "old_interval": [
+    9.09592592592592,
+    9.349629629629634
+   ],
+   "cluster_interval": [
+    9.02000000001689,
+    9.433333333343779
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     11.934444444446,
+     13.564444444449332,
+     2.175555555602
+    ],
+    "mean": 9.224814814832444,
+    "range": [
+     2.175555555602,
+     13.564444444449332
+    ],
+    "t_interval": [
+     -6.0749865447781985,
+     24.524616174443086
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_noise.json | low, Run A minus best scripted (informed k=1), pick": {
+   "source": "b11_robustness_noise.json",
+   "comparison": "low, Run A minus best scripted (informed k=1), pick",
+   "mean": -0.04128281637822224,
+   "old_interval": [
+    -0.05877289662835646,
+    -0.024105820030804453
+   ],
+   "cluster_interval": [
+    -0.0807992975028889,
+    -0.0026305948008889433
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.021243357077333356,
+     -0.04117270854200002,
+     -0.06143238351533336
+    ],
+    "mean": -0.04128281637822224,
+    "range": [
+     -0.06143238351533336,
+     -0.021243357077333356
+    ],
+    "t_interval": [
+     -0.09120091650180662,
+     0.00863528374536214
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_noise.json | low, Run A minus best scripted (informed k=1), share": {
+   "source": "b11_robustness_noise.json",
+   "comparison": "low, Run A minus best scripted (informed k=1), share",
+   "mean": -14.108518518167552,
+   "old_interval": [
+    -14.234074074074073,
+    -13.982592592592589
+   ],
+   "cluster_interval": [
+    -14.313333332983111,
+    -13.899999999656222
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -11.398888888553998,
+     -9.768888888550665,
+     -21.157777777398
+    ],
+    "mean": -14.108518518167552,
+    "range": [
+     -21.157777777398,
+     -9.768888888550665
+    ],
+    "t_interval": [
+     -29.408319877778197,
+     1.191282841443094
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_noise.json | low, guessing k=0 minus guessing k=1, pick": {
+   "source": "b11_robustness_noise.json",
+   "comparison": "low, guessing k=0 minus guessing k=1, pick",
+   "mean": -0.07984402632599999,
+   "old_interval": [
+    -0.09945366261536606,
+    -0.060114888989487844
+   ],
+   "cluster_interval": [
+    -0.10644706536799994,
+    -0.05302259565666665
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.07984402632599999
+    ],
+    "mean": -0.07984402632599999,
+    "range": [
+     -0.07984402632599999,
+     -0.07984402632599999
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_noise.json | low, guessing k=2 minus guessing k=1, pick": {
+   "source": "b11_robustness_noise.json",
+   "comparison": "low, guessing k=2 minus guessing k=1, pick",
+   "mean": -0.09353263734666666,
+   "old_interval": [
+    -0.11242139302805597,
+    -0.07501706989490403
+   ],
+   "cluster_interval": [
+    -0.12067747592200002,
+    -0.06723810682666664
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.09353263734666666
+    ],
+    "mean": -0.09353263734666666,
+    "range": [
+     -0.09353263734666666,
+     -0.09353263734666666
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_noise.json | low, guessing k=3 minus guessing k=1, pick": {
+   "source": "b11_robustness_noise.json",
+   "comparison": "low, guessing k=3 minus guessing k=1, pick",
+   "mean": -0.2628811502626666,
+   "old_interval": [
+    -0.2851600257516433,
+    -0.2412940789550085
+   ],
+   "cluster_interval": [
+    -0.29739866352933336,
+    -0.22806094226466667
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.2628811502626666
+    ],
+    "mean": -0.2628811502626666,
+    "range": [
+     -0.2628811502626666,
+     -0.2628811502626666
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_noise.json | low, guessing k=4 minus guessing k=1, pick": {
+   "source": "b11_robustness_noise.json",
+   "comparison": "low, guessing k=4 minus guessing k=1, pick",
+   "mean": -0.7173690767857733,
+   "old_interval": [
+    -0.7453224409643733,
+    -0.688812358113976
+   ],
+   "cluster_interval": [
+    -0.7835499402050632,
+    -0.6541663526980198
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.7173690767857733
+    ],
+    "mean": -0.7173690767857733,
+    "range": [
+     -0.7173690767857733,
+     -0.7173690767857733
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_noise.json | low, informed k=0 minus informed k=1, pick": {
+   "source": "b11_robustness_noise.json",
+   "comparison": "low, informed k=0 minus informed k=1, pick",
+   "mean": -0.03696260893400001,
+   "old_interval": [
+    -0.053852504202066595,
+    -0.020120003830121944
+   ],
+   "cluster_interval": [
+    -0.05935981848600001,
+    -0.013929590517333345
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.03696260893400001
+    ],
+    "mean": -0.03696260893400001,
+    "range": [
+     -0.03696260893400001,
+     -0.03696260893400001
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_noise.json | low, informed k=2 minus informed k=1, pick": {
+   "source": "b11_robustness_noise.json",
+   "comparison": "low, informed k=2 minus informed k=1, pick",
+   "mean": -0.058918774558666676,
+   "old_interval": [
+    -0.07517020816952044,
+    -0.042204348372760166
+   ],
+   "cluster_interval": [
+    -0.08183847296199998,
+    -0.037215433366
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.058918774558666676
+    ],
+    "mean": -0.058918774558666676,
+    "range": [
+     -0.058918774558666676,
+     -0.058918774558666676
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_noise.json | low, informed k=3 minus informed k=1, pick": {
+   "source": "b11_robustness_noise.json",
+   "comparison": "low, informed k=3 minus informed k=1, pick",
+   "mean": -0.22194633850933337,
+   "old_interval": [
+    -0.24200300604972183,
+    -0.2024963406168982
+   ],
+   "cluster_interval": [
+    -0.2494424957426667,
+    -0.19626497048066668
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.22194633850933337
+    ],
+    "mean": -0.22194633850933337,
+    "range": [
+     -0.22194633850933337,
+     -0.22194633850933337
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_noise.json | low, informed k=4 minus informed k=1, pick": {
+   "source": "b11_robustness_noise.json",
+   "comparison": "low, informed k=4 minus informed k=1, pick",
+   "mean": -0.8163200683333334,
+   "old_interval": [
+    -0.8399731936040037,
+    -0.7920062634737087
+   ],
+   "cluster_interval": [
+    -0.8506857129574323,
+    -0.7822817337904312
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.8163200683333334
+    ],
+    "mean": -0.8163200683333334,
+    "range": [
+     -0.8163200683333334,
+     -0.8163200683333334
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_noise.json | assay, Run A minus random, pick": {
+   "source": "b11_robustness_noise.json",
+   "comparison": "assay, Run A minus random, pick",
+   "mean": 0.400362538404,
+   "old_interval": [
+    0.37525105251398755,
+    0.42584557368967785
+   ],
+   "cluster_interval": [
+    0.356761976546,
+    0.44291125209177773
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     0.42267185624533327,
+     0.3936458884286667,
+     0.384769870538
+    ],
+    "mean": 0.400362538404,
+    "range": [
+     0.384769870538,
+     0.42267185624533327
+    ],
+    "t_interval": [
+     0.35111798271691314,
+     0.44960709409108685
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_noise.json | assay, Run A minus random, share": {
+   "source": "b11_robustness_noise.json",
+   "comparison": "assay, Run A minus random, share",
+   "mean": 9.318518518540888,
+   "old_interval": [
+    9.189259259259254,
+    9.445925925925922
+   ],
+   "cluster_interval": [
+    9.120740740762223,
+    9.519259259280668
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     11.975555555563332,
+     13.783333333347999,
+     2.1966666667113333
+    ],
+    "mean": 9.318518518540888,
+    "range": [
+     2.1966666667113333,
+     13.783333333347999
+    ],
+    "t_interval": [
+     -6.166567754019294,
+     24.80360479110107
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_noise.json | assay, Run A minus best scripted (informed k=1), pick": {
+   "source": "b11_robustness_noise.json",
+   "comparison": "assay, Run A minus best scripted (informed k=1), pick",
+   "mean": -0.09811060900600005,
+   "old_interval": [
+    -0.11908173258927217,
+    -0.0772098776270446
+   ],
+   "cluster_interval": [
+    -0.14182281592155557,
+    -0.05474119628488894
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.07580129116466672,
+     -0.10482725898133335,
+     -0.11370327687200006
+    ],
+    "mean": -0.09811060900600005,
+    "range": [
+     -0.11370327687200006,
+     -0.07580129116466672
+    ],
+    "t_interval": [
+     -0.14735516469308702,
+     -0.0488660533189131
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_noise.json | assay, Run A minus best scripted (informed k=1), share": {
+   "source": "b11_robustness_noise.json",
+   "comparison": "assay, Run A minus best scripted (informed k=1), share",
+   "mean": -14.01481481445911,
+   "old_interval": [
+    -14.142962962962969,
+    -13.88555555555556
+   ],
+   "cluster_interval": [
+    -14.212592592237776,
+    -13.81407407371933
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -11.357777777436665,
+     -9.549999999651998,
+     -21.136666666288665
+    ],
+    "mean": -14.01481481445911,
+    "range": [
+     -21.136666666288665,
+     -9.549999999651998
+    ],
+    "t_interval": [
+     -29.499901087019296,
+     1.4702714581010756
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_noise.json | assay, guessing k=0 minus guessing k=1, pick": {
+   "source": "b11_robustness_noise.json",
+   "comparison": "assay, guessing k=0 minus guessing k=1, pick",
+   "mean": -0.15910382679399998,
+   "old_interval": [
+    -0.18509691910547008,
+    -0.13423236449906528
+   ],
+   "cluster_interval": [
+    -0.2002923803833333,
+    -0.12002217859066665
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.15910382679399998
+    ],
+    "mean": -0.15910382679399998,
+    "range": [
+     -0.15910382679399998,
+     -0.15910382679399998
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_noise.json | assay, guessing k=2 minus guessing k=1, pick": {
+   "source": "b11_robustness_noise.json",
+   "comparison": "assay, guessing k=2 minus guessing k=1, pick",
+   "mean": -0.04260044198466665,
+   "old_interval": [
+    -0.06453530305866798,
+    -0.020239032288919795
+   ],
+   "cluster_interval": [
+    -0.07861576371133332,
+    -0.007700202880666625
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.04260044198466665
+    ],
+    "mean": -0.04260044198466665,
+    "range": [
+     -0.04260044198466665,
+     -0.04260044198466665
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_noise.json | assay, guessing k=3 minus guessing k=1, pick": {
+   "source": "b11_robustness_noise.json",
+   "comparison": "assay, guessing k=3 minus guessing k=1, pick",
+   "mean": -0.18901351922333334,
+   "old_interval": [
+    -0.21382835171902362,
+    -0.16483572216480416
+   ],
+   "cluster_interval": [
+    -0.2267295164393333,
+    -0.152797572114
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.18901351922333334
+    ],
+    "mean": -0.18901351922333334,
+    "range": [
+     -0.18901351922333334,
+     -0.18901351922333334
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_noise.json | assay, guessing k=4 minus guessing k=1, pick": {
+   "source": "b11_robustness_noise.json",
+   "comparison": "assay, guessing k=4 minus guessing k=1, pick",
+   "mean": -0.5863023969735318,
+   "old_interval": [
+    -0.6155731369935863,
+    -0.5575972579081493
+   ],
+   "cluster_interval": [
+    -0.6427883796354514,
+    -0.5314760373085107
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.5863023969735318
+    ],
+    "mean": -0.5863023969735318,
+    "range": [
+     -0.5863023969735318,
+     -0.5863023969735318
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_noise.json | assay, informed k=0 minus informed k=1, pick": {
+   "source": "b11_robustness_noise.json",
+   "comparison": "assay, informed k=0 minus informed k=1, pick",
+   "mean": -0.09662827554333334,
+   "old_interval": [
+    -0.11975632324300002,
+    -0.0735938343939246
+   ],
+   "cluster_interval": [
+    -0.12699676742000005,
+    -0.06610998981000002
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.09662827554333334
+    ],
+    "mean": -0.09662827554333334,
+    "range": [
+     -0.09662827554333334,
+     -0.09662827554333334
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_noise.json | assay, informed k=2 minus informed k=1, pick": {
+   "source": "b11_robustness_noise.json",
+   "comparison": "assay, informed k=2 minus informed k=1, pick",
+   "mean": -0.048079145726000014,
+   "old_interval": [
+    -0.06900324210299676,
+    -0.027101453800127576
+   ],
+   "cluster_interval": [
+    -0.076536647352,
+    -0.019939768311333372
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.048079145726000014
+    ],
+    "mean": -0.048079145726000014,
+    "range": [
+     -0.048079145726000014,
+     -0.048079145726000014
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_noise.json | assay, informed k=3 minus informed k=1, pick": {
+   "source": "b11_robustness_noise.json",
+   "comparison": "assay, informed k=3 minus informed k=1, pick",
+   "mean": -0.16732420885200003,
+   "old_interval": [
+    -0.1898613142818135,
+    -0.1446883445737296
+   ],
+   "cluster_interval": [
+    -0.20111570160000003,
+    -0.13517603925399999
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.16732420885200003
+    ],
+    "mean": -0.16732420885200003,
+    "range": [
+     -0.16732420885200003,
+     -0.16732420885200003
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_noise.json | assay, informed k=4 minus informed k=1, pick": {
+   "source": "b11_robustness_noise.json",
+   "comparison": "assay, informed k=4 minus informed k=1, pick",
+   "mean": -0.7141794983759296,
+   "old_interval": [
+    -0.7397113177516358,
+    -0.6882082069765346
+   ],
+   "cluster_interval": [
+    -0.7546461454222972,
+    -0.6743928779145764
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.7141794983759296
+    ],
+    "mean": -0.7141794983759296,
+    "range": [
+     -0.7141794983759296,
+     -0.7141794983759296
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_noise.json | high, Run A minus random, pick": {
+   "source": "b11_robustness_noise.json",
+   "comparison": "high, Run A minus random, pick",
+   "mean": 0.3534415255748889,
+   "old_interval": [
+    0.3246451192097484,
+    0.38248705048493953
+   ],
+   "cluster_interval": [
+    0.3051108498833333,
+    0.40081069848999995
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     0.37058667392066674,
+     0.36289052884066664,
+     0.3268473739633333
+    ],
+    "mean": 0.3534415255748889,
+    "range": [
+     0.3268473739633333,
+     0.37058667392066674
+    ],
+    "t_interval": [
+     0.29543574841584863,
+     0.41144730273392915
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_noise.json | high, Run A minus random, share": {
+   "source": "b11_robustness_noise.json",
+   "comparison": "high, Run A minus random, share",
+   "mean": 9.044814814821555,
+   "old_interval": [
+    8.912222222222226,
+    9.177407407407399
+   ],
+   "cluster_interval": [
+    8.850000000007332,
+    9.236296296292888
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     11.962222222215331,
+     12.934444444436,
+     2.2377777778133336
+    ],
+    "mean": 9.044814814821555,
+    "range": [
+     2.2377777778133336,
+     12.934444444436
+    ],
+    "t_interval": [
+     -5.649047462518682,
+     23.738677092161794
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_noise.json | high, Run A minus best scripted (informed k=1), pick": {
+   "source": "b11_robustness_noise.json",
+   "comparison": "high, Run A minus best scripted (informed k=1), pick",
+   "mean": -0.09388933517177778,
+   "old_interval": [
+    -0.12065657902288306,
+    -0.06710220483645622
+   ],
+   "cluster_interval": [
+    -0.14280886908555557,
+    -0.04542469759088887
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.076744186826,
+     -0.08444033190600002,
+     -0.12048348678333334
+    ],
+    "mean": -0.09388933517177778,
+    "range": [
+     -0.12048348678333334,
+     -0.076744186826
+    ],
+    "t_interval": [
+     -0.15189511233081793,
+     -0.03588355801273761
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_noise.json | high, Run A minus best scripted (informed k=1), share": {
+   "source": "b11_robustness_noise.json",
+   "comparison": "high, Run A minus best scripted (informed k=1), share",
+   "mean": -14.288518518178444,
+   "old_interval": [
+    -14.420740740740749,
+    -14.161481481481466
+   ],
+   "cluster_interval": [
+    -14.483333332992663,
+    -14.097037036707109
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -11.371111110784666,
+     -10.398888888563999,
+     -21.095555555186667
+    ],
+    "mean": -14.288518518178444,
+    "range": [
+     -21.095555555186667,
+     -10.398888888563999
+    ],
+    "t_interval": [
+     -28.982380795518683,
+     0.405343759161795
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_noise.json | high, guessing k=0 minus guessing k=2, pick": {
+   "source": "b11_robustness_noise.json",
+   "comparison": "high, guessing k=0 minus guessing k=2, pick",
+   "mean": -0.19573539837333337,
+   "old_interval": [
+    -0.22718582654144268,
+    -0.16438958085907715
+   ],
+   "cluster_interval": [
+    -0.23969543226733328,
+    -0.15108066559333336
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.19573539837333337
+    ],
+    "mean": -0.19573539837333337,
+    "range": [
+     -0.19573539837333337,
+     -0.19573539837333337
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_noise.json | high, guessing k=1 minus guessing k=2, pick": {
+   "source": "b11_robustness_noise.json",
+   "comparison": "high, guessing k=1 minus guessing k=2, pick",
+   "mean": -0.00932513713466667,
+   "old_interval": [
+    -0.037378698129047136,
+    0.018791329168247307
+   ],
+   "cluster_interval": [
+    -0.04482124197400001,
+    0.027053315469333324
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.00932513713466667
+    ],
+    "mean": -0.00932513713466667,
+    "range": [
+     -0.00932513713466667,
+     -0.00932513713466667
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": false,
+   "new_excludes_zero": false
+  },
+  "b11_robustness_noise.json | high, guessing k=3 minus guessing k=2, pick": {
+   "source": "b11_robustness_noise.json",
+   "comparison": "high, guessing k=3 minus guessing k=2, pick",
+   "mean": -0.08243366751333332,
+   "old_interval": [
+    -0.1083805327592785,
+    -0.05545466512379251
+   ],
+   "cluster_interval": [
+    -0.12017680134866669,
+    -0.046857776294
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.08243366751333332
+    ],
+    "mean": -0.08243366751333332,
+    "range": [
+     -0.08243366751333332,
+     -0.08243366751333332
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_noise.json | high, guessing k=4 minus guessing k=2, pick": {
+   "source": "b11_robustness_noise.json",
+   "comparison": "high, guessing k=4 minus guessing k=2, pick",
+   "mean": -0.38872123929280394,
+   "old_interval": [
+    -0.42029499741535986,
+    -0.3581423313574913
+   ],
+   "cluster_interval": [
+    -0.44610640387848105,
+    -0.3389238742921614
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.38872123929280394
+    ],
+    "mean": -0.38872123929280394,
+    "range": [
+     -0.38872123929280394,
+     -0.38872123929280394
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_noise.json | high, informed k=0 minus informed k=1, pick": {
+   "source": "b11_robustness_noise.json",
+   "comparison": "high, informed k=0 minus informed k=1, pick",
+   "mean": -0.15319671095066667,
+   "old_interval": [
+    -0.18481062573609225,
+    -0.12193765888335463
+   ],
+   "cluster_interval": [
+    -0.1902892384846667,
+    -0.11637338961066666
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.15319671095066667
+    ],
+    "mean": -0.15319671095066667,
+    "range": [
+     -0.15319671095066667,
+     -0.15319671095066667
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_noise.json | high, informed k=2 minus informed k=1, pick": {
+   "source": "b11_robustness_noise.json",
+   "comparison": "high, informed k=2 minus informed k=1, pick",
+   "mean": -0.0019560464526666753,
+   "old_interval": [
+    -0.02848916435356532,
+    0.02519054353658223
+   ],
+   "cluster_interval": [
+    -0.040114708838,
+    0.03635201816200001
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.0019560464526666753
+    ],
+    "mean": -0.0019560464526666753,
+    "range": [
+     -0.0019560464526666753,
+     -0.0019560464526666753
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": false,
+   "new_excludes_zero": false
+  },
+  "b11_robustness_noise.json | high, informed k=3 minus informed k=1, pick": {
+   "source": "b11_robustness_noise.json",
+   "comparison": "high, informed k=3 minus informed k=1, pick",
+   "mean": -0.07984652550266666,
+   "old_interval": [
+    -0.10826432694244777,
+    -0.05102582573891925
+   ],
+   "cluster_interval": [
+    -0.122860777414,
+    -0.03818230888933333
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.07984652550266666
+    ],
+    "mean": -0.07984652550266666,
+    "range": [
+     -0.07984652550266666,
+     -0.07984652550266666
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_noise.json | high, informed k=4 minus informed k=1, pick": {
+   "source": "b11_robustness_noise.json",
+   "comparison": "high, informed k=4 minus informed k=1, pick",
+   "mean": -0.5208276741034483,
+   "old_interval": [
+    -0.5516635684345563,
+    -0.49026524277654904
+   ],
+   "cluster_interval": [
+    -0.5675512524582486,
+    -0.4728985553896016
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.5208276741034483
+    ],
+    "mean": -0.5208276741034483,
+    "range": [
+     -0.5208276741034483,
+     -0.5208276741034483
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_noise.json | share change, Run A, low minus assay": {
+   "source": "b11_robustness_noise.json",
+   "comparison": "share change, Run A, low minus assay",
+   "mean": -0.09370370370844444,
+   "old_interval": [
+    -0.23444444444444448,
+    0.046296296296296315
+   ],
+   "cluster_interval": [
+    -0.2874074074071111,
+    0.09407407408066669
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.04111111111733329,
+     -0.21888888889866673,
+     -0.02111111110933334
+    ],
+    "mean": -0.09370370370844444,
+    "range": [
+     -0.21888888889866673,
+     -0.02111111110933334
+    ],
+    "t_interval": [
+     -0.3641611433004508,
+     0.1767537358835619
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": false,
+   "new_excludes_zero": false
+  },
+  "b11_robustness_noise.json | share change, informed k=1, low minus assay": {
+   "source": "b11_robustness_noise.json",
+   "comparison": "share change, informed k=1, low minus assay",
+   "mean": 0.0,
+   "old_interval": [
+    0.0,
+    0.0
+   ],
+   "cluster_interval": [
+    0.0,
+    0.0
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     0.0
+    ],
+    "mean": 0.0,
+    "range": [
+     0.0,
+     0.0
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": false,
+   "new_excludes_zero": false
+  },
+  "b11_robustness_noise.json | share change, Run A, high minus assay": {
+   "source": "b11_robustness_noise.json",
+   "comparison": "share change, Run A, high minus assay",
+   "mean": -0.27370370371933334,
+   "old_interval": [
+    -0.41185185185185125,
+    -0.13407407407407443
+   ],
+   "cluster_interval": [
+    -0.4648148148184444,
+    -0.09000000000666673
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.013333333348000029,
+     -0.848888888912,
+     0.041111111102000004
+    ],
+    "mean": -0.27370370371933334,
+    "range": [
+     -0.848888888912,
+     0.041111111102000004
+    ],
+    "t_interval": [
+     -1.512961177801475,
+     0.9655537703628085
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_noise.json | share change, informed k=1, high minus assay": {
+   "source": "b11_robustness_noise.json",
+   "comparison": "share change, informed k=1, high minus assay",
+   "mean": 0.0,
+   "old_interval": [
+    0.0,
+    0.0
+   ],
+   "cluster_interval": [
+    0.0,
+    0.0
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     0.0
+    ],
+    "mean": 0.0,
+    "range": [
+     0.0,
+     0.0
+    ],
+    "t_interval": [
+     NaN,
+     NaN
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": false,
+   "new_excludes_zero": false
+  },
+  "b11_robustness_llm.json | grid, Opus 4.7, Run A minus the LLM, pick": {
+   "source": "b11_robustness_llm.json",
+   "comparison": "grid, Opus 4.7, Run A minus the LLM, pick",
+   "mean": 0.24587879680000002,
+   "old_interval": [
+    0.14240988283879663,
+    0.35427574774273435
+   ],
+   "cluster_interval": [
+    0.13867656158888889,
+    0.3548341129388888
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     0.24408605376666662,
+     0.3043331449166667,
+     0.18921719171666668
+    ],
+    "mean": 0.24587879680000002,
+    "range": [
+     0.18921719171666668,
+     0.3043331449166667
+    ],
+    "t_interval": [
+     0.10284484990252551,
+     0.38891274369747453
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_llm.json | grid, Opus 4.7, Run A minus the LLM, share": {
+   "source": "b11_robustness_llm.json",
+   "comparison": "grid, Opus 4.7, Run A minus the LLM, share",
+   "mean": -65.34259259257222,
+   "old_interval": [
+    -66.88888888888889,
+    -63.80555555555554
+   ],
+   "cluster_interval": [
+    -66.87962962963888,
+    -63.787037036988885
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -62.0,
+     -61.38888888888333,
+     -72.63888888883335
+    ],
+    "mean": -65.34259259257222,
+    "range": [
+     -72.63888888883335,
+     -61.38888888888333
+    ],
+    "t_interval": [
+     -81.05764886849559,
+     -49.62753631664884
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_llm.json | grid, Gemini 2.5 Flash, Run A minus the LLM, pick": {
+   "source": "b11_robustness_llm.json",
+   "comparison": "grid, Gemini 2.5 Flash, Run A minus the LLM, pick",
+   "mean": 0.1557458860944441,
+   "old_interval": [
+    0.1070044829151612,
+    0.20635672443387287
+   ],
+   "cluster_interval": [
+    0.10666030334166632,
+    0.20513654153333294
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     0.16908615039999966,
+     0.20466536068333296,
+     0.09348614719999968
+    ],
+    "mean": 0.1557458860944441,
+    "range": [
+     0.09348614719999968,
+     0.20466536068333296
+    ],
+    "t_interval": [
+     0.014702935226136749,
+     0.29678883696275143
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_llm.json | grid, Gemini 2.5 Flash, Run A minus the LLM, share": {
+   "source": "b11_robustness_llm.json",
+   "comparison": "grid, Gemini 2.5 Flash, Run A minus the LLM, share",
+   "mean": -84.61111111125834,
+   "old_interval": [
+    -85.625,
+    -83.52314814814817
+   ],
+   "cluster_interval": [
+    -85.60185185202222,
+    -83.50462962977223
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -81.40277777794167,
+     -80.66666666683334,
+     -91.76388888900001
+    ],
+    "mean": -84.61111111125834,
+    "range": [
+     -91.76388888900001,
+     -80.66666666683334
+    ],
+    "t_interval": [
+     -100.02620892897708,
+     -69.1960132935396
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_llm.json | grid, DeepSeek V3.1, Run A minus the LLM, pick": {
+   "source": "b11_robustness_llm.json",
+   "comparison": "grid, DeepSeek V3.1, Run A minus the LLM, pick",
+   "mean": 0.09706121999444435,
+   "old_interval": [
+    0.04360913881120715,
+    0.15255835887639488
+   ],
+   "cluster_interval": [
+    0.04263945364166662,
+    0.15070034488333325
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     0.11040148429999991,
+     0.14598069458333324,
+     0.03480148109999994
+    ],
+    "mean": 0.09706121999444435,
+    "range": [
+     0.03480148109999994,
+     0.14598069458333324
+    ],
+    "t_interval": [
+     -0.04398173087386299,
+     0.2381041708627517
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_llm.json | grid, DeepSeek V3.1, Run A minus the LLM, share": {
+   "source": "b11_robustness_llm.json",
+   "comparison": "grid, DeepSeek V3.1, Run A minus the LLM, share",
+   "mean": -81.58333333326665,
+   "old_interval": [
+    -82.39814814814814,
+    -80.75
+   ],
+   "cluster_interval": [
+    -82.40740740734722,
+    -80.74537037024443
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -78.37499999994999,
+     -77.63888888884166,
+     -88.73611111100833
+    ],
+    "mean": -81.58333333326665,
+    "range": [
+     -88.73611111100833,
+     -77.63888888884166
+    ],
+    "t_interval": [
+     -96.99843115098538,
+     -66.16823551554792
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_llm.json | grid, GPT-6.1 Sol, Run A minus the LLM, pick": {
+   "source": "b11_robustness_llm.json",
+   "comparison": "grid, GPT-6.1 Sol, Run A minus the LLM, pick",
+   "mean": 0.1948975328,
+   "old_interval": [
+    0.07245953502045553,
+    0.31368791025262116
+   ],
+   "cluster_interval": [
+    0.0739387272833333,
+    0.314049067611111
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     0.1931047897666666,
+     0.25335188091666666,
+     0.13823592771666668
+    ],
+    "mean": 0.1948975328,
+    "range": [
+     0.13823592771666668,
+     0.25335188091666666
+    ],
+    "t_interval": [
+     0.051863585902525516,
+     0.3379314796974745
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_llm.json | grid, GPT-6.1 Sol, Run A minus the LLM, share": {
+   "source": "b11_robustness_llm.json",
+   "comparison": "grid, GPT-6.1 Sol, Run A minus the LLM, share",
+   "mean": -34.537037037038886,
+   "old_interval": [
+    -37.16666666666666,
+    -31.925925925925934
+   ],
+   "cluster_interval": [
+    -37.22222222227222,
+    -31.898148148111115
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -31.19444444446667,
+     -30.58333333335,
+     -41.8333333333
+    ],
+    "mean": -34.537037037038886,
+    "range": [
+     -41.8333333333,
+     -30.58333333335
+    ],
+    "t_interval": [
+     -50.252093312962224,
+     -18.821980761115547
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_llm.json | grid, Gemini 3.1 Pro, Run A minus the LLM, pick": {
+   "source": "b11_robustness_llm.json",
+   "comparison": "grid, Gemini 3.1 Pro, Run A minus the LLM, pick",
+   "mean": 0.17891222478333335,
+   "old_interval": [
+    0.06339611344789176,
+    0.2909691684458708
+   ],
+   "cluster_interval": [
+    0.06743483062222229,
+    0.28957819823333325
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     0.17711948174999997,
+     0.2373665729,
+     0.12225061970000002
+    ],
+    "mean": 0.17891222478333335,
+    "range": [
+     0.12225061970000002,
+     0.2373665729
+    ],
+    "t_interval": [
+     0.0358782778858589,
+     0.3219461716808078
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_llm.json | grid, Gemini 3.1 Pro, Run A minus the LLM, share": {
+   "source": "b11_robustness_llm.json",
+   "comparison": "grid, Gemini 3.1 Pro, Run A minus the LLM, share",
+   "mean": -4.398148148122221,
+   "old_interval": [
+    -5.777777777777779,
+    -3.027777777777778
+   ],
+   "cluster_interval": [
+    -5.768518518538889,
+    -3.055555555466666
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -1.0555555555499998,
+     -0.4444444444333333,
+     -11.69444444438333
+    ],
+    "mean": -4.398148148122221,
+    "range": [
+     -11.69444444438333,
+     -0.4444444444333333
+    ],
+    "t_interval": [
+     -20.113204424045563,
+     11.316908127801119
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_llm.json | gb1_scrambled, Opus 4.7, Run A minus the LLM, pick": {
+   "source": "b11_robustness_llm.json",
+   "comparison": "gb1_scrambled, Opus 4.7, Run A minus the LLM, pick",
+   "mean": 0.01599377469999989,
+   "old_interval": [
+    -0.36828188996031025,
+    0.4147270079400404
+   ],
+   "cluster_interval": [
+    -0.36755240514444454,
+    0.4153739758222221
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -0.45845171226666676,
+     0.025302285783333246,
+     0.48113075058333316
+    ],
+    "mean": 0.01599377469999989,
+    "range": [
+     -0.45845171226666676,
+     0.48113075058333316
+    ],
+    "t_interval": [
+     -1.1512041428815734,
+     1.183191692281573
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": false,
+   "new_excludes_zero": false
+  },
+  "b11_robustness_llm.json | gb1_scrambled, Opus 4.7, Run A minus the LLM, share": {
+   "source": "b11_robustness_llm.json",
+   "comparison": "gb1_scrambled, Opus 4.7, Run A minus the LLM, share",
+   "mean": -61.36111111097778,
+   "old_interval": [
+    -63.47222222222223,
+    -59.20370370370372
+   ],
+   "cluster_interval": [
+    -63.453703703500004,
+    -59.212962962805555
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -61.41666666655001,
+     -60.444444444316666,
+     -62.22222222206666
+    ],
+    "mean": -61.36111111097778,
+    "range": [
+     -62.22222222206666,
+     -60.444444444316666
+    ],
+    "t_interval": [
+     -63.57246571019097,
+     -59.14975651176459
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_llm.json | gb1_scrambled, Gemini 2.5 Flash, Run A minus the LLM, pick": {
+   "source": "b11_robustness_llm.json",
+   "comparison": "gb1_scrambled, Gemini 2.5 Flash, Run A minus the LLM, pick",
+   "mean": 3.6762844764666665,
+   "old_interval": [
+    3.4130098993968487,
+    3.92180059924276
+   ],
+   "cluster_interval": [
+    3.4151066688222222,
+    3.923568451961111
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     3.2018389894999997,
+     3.6855929875500006,
+     4.1414214523499995
+    ],
+    "mean": 3.6762844764666665,
+    "range": [
+     3.2018389894999997,
+     4.1414214523499995
+    ],
+    "t_interval": [
+     2.5090865588850932,
+     4.843482394048239
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_llm.json | gb1_scrambled, Gemini 2.5 Flash, Run A minus the LLM, share": {
+   "source": "b11_robustness_llm.json",
+   "comparison": "gb1_scrambled, Gemini 2.5 Flash, Run A minus the LLM, share",
+   "mean": -89.99999999962779,
+   "old_interval": [
+    -91.22222222222224,
+    -88.10185185185189
+   ],
+   "cluster_interval": [
+    -91.24074074035555,
+    -88.08333333296112
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -90.0555555552,
+     -89.08333333296669,
+     -90.86111111071666
+    ],
+    "mean": -89.99999999962779,
+    "range": [
+     -90.86111111071666,
+     -89.08333333296669
+    ],
+    "t_interval": [
+     -92.21135459884094,
+     -87.78864540041464
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_llm.json | gb1_scrambled, DeepSeek V3.1, Run A minus the LLM, pick": {
+   "source": "b11_robustness_llm.json",
+   "comparison": "gb1_scrambled, DeepSeek V3.1, Run A minus the LLM, pick",
+   "mean": 3.9515762965499994,
+   "old_interval": [
+    3.678131172564124,
+    4.213051909143462
+   ],
+   "cluster_interval": [
+    3.6724893409555555,
+    4.2156276677388895
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     3.477130809583332,
+     3.9608848076333336,
+     4.416713272433333
+    ],
+    "mean": 3.9515762965499994,
+    "range": [
+     3.477130809583332,
+     4.416713272433333
+    ],
+    "t_interval": [
+     2.784378378968425,
+     5.118774214131574
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_llm.json | gb1_scrambled, DeepSeek V3.1, Run A minus the LLM, share": {
+   "source": "b11_robustness_llm.json",
+   "comparison": "gb1_scrambled, DeepSeek V3.1, Run A minus the LLM, share",
+   "mean": -94.0277777777611,
+   "old_interval": [
+    -94.63888888888891,
+    -93.37037037037038
+   ],
+   "cluster_interval": [
+    -94.63888888884445,
+    -93.37962962963888
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -94.08333333333331,
+     -93.11111111109999,
+     -94.88888888884999
+    ],
+    "mean": -94.0277777777611,
+    "range": [
+     -94.88888888884999,
+     -93.11111111109999
+    ],
+    "t_interval": [
+     -96.2391323769743,
+     -91.81642317854791
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_llm.json | gb1_scrambled, GPT-6.1 Sol, Run A minus the LLM, pick": {
+   "source": "b11_robustness_llm.json",
+   "comparison": "gb1_scrambled, GPT-6.1 Sol, Run A minus the LLM, pick",
+   "mean": -1.6936448176333334,
+   "old_interval": [
+    -2.0783737037908323,
+    -1.352722404034931
+   ],
+   "cluster_interval": [
+    -2.0860552437,
+    -1.3526696269000003
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -2.1834390229666667,
+     -1.7702701425666667,
+     -1.1272252873666668
+    ],
+    "mean": -1.6936448176333334,
+    "range": [
+     -2.1834390229666667,
+     -1.1272252873666668
+    ],
+    "t_interval": [
+     -3.0158513413199186,
+     -0.37143829394674843
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_llm.json | gb1_scrambled, GPT-6.1 Sol, Run A minus the LLM, share": {
+   "source": "b11_robustness_llm.json",
+   "comparison": "gb1_scrambled, GPT-6.1 Sol, Run A minus the LLM, share",
+   "mean": -17.3148148147,
+   "old_interval": [
+    -19.61111111111111,
+    -15.148148148148147
+   ],
+   "cluster_interval": [
+    -19.55555555546667,
+    -15.166666666433334
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -17.111111111,
+     -16.444444444333335,
+     -18.388888888766665
+    ],
+    "mean": -17.3148148147,
+    "range": [
+     -18.388888888766665,
+     -16.444444444333335
+    ],
+    "t_interval": [
+     -19.76938605670737,
+     -14.86024357269263
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_llm.json | gb1_scrambled, Gemini 3.1 Pro, Run A minus the LLM, pick": {
+   "source": "b11_robustness_llm.json",
+   "comparison": "gb1_scrambled, Gemini 3.1 Pro, Run A minus the LLM, pick",
+   "mean": -0.2351575048333334,
+   "old_interval": [
+    -0.8227587608002261,
+    0.3702819220670308
+   ],
+   "cluster_interval": [
+    -0.8205598420666665,
+    0.36840196994444446
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -0.7249517101666668,
+     -0.31178282976666666,
+     0.3312620254333333
+    ],
+    "mean": -0.2351575048333334,
+    "range": [
+     -0.7249517101666668,
+     0.3312620254333333
+    ],
+    "t_interval": [
+     -1.5573640285199186,
+     1.0870490188532518
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": false,
+   "new_excludes_zero": false
+  },
+  "b11_robustness_llm.json | gb1_scrambled, Gemini 3.1 Pro, Run A minus the LLM, share": {
+   "source": "b11_robustness_llm.json",
+   "comparison": "gb1_scrambled, Gemini 3.1 Pro, Run A minus the LLM, share",
+   "mean": -8.981481481466668,
+   "old_interval": [
+    -10.666666666666666,
+    -7.314814814814814
+   ],
+   "cluster_interval": [
+    -10.72222222221111,
+    -7.277777777733334
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -8.777777777766666,
+     -8.1111111111,
+     -10.055555555533335
+    ],
+    "mean": -8.981481481466668,
+    "range": [
+     -10.055555555533335,
+     -8.1111111111
+    ],
+    "t_interval": [
+     -11.436052723474045,
+     -6.526910239459291
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_llm.json | gb1_real, Opus 4.7, Run A minus the LLM, pick": {
+   "source": "b11_robustness_llm.json",
+   "comparison": "gb1_real, Opus 4.7, Run A minus the LLM, pick",
+   "mean": -2.8438583013944445,
+   "old_interval": [
+    -3.203542113665082,
+    -2.463454388641869
+   ],
+   "cluster_interval": [
+    -3.212431298555556,
+    -2.464948367594445
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -3.468348911416667,
+     -2.8135564278166663,
+     -2.24966956495
+    ],
+    "mean": -2.8438583013944445,
+    "range": [
+     -3.468348911416667,
+     -2.24966956495
+    ],
+    "t_interval": [
+     -4.358945051961184,
+     -1.3287715508277054
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_llm.json | gb1_real, Opus 4.7, Run A minus the LLM, share": {
+   "source": "b11_robustness_llm.json",
+   "comparison": "gb1_real, Opus 4.7, Run A minus the LLM, share",
+   "mean": -49.342592592572224,
+   "old_interval": [
+    -51.47222222222223,
+    -47.25925925925926
+   ],
+   "cluster_interval": [
+    -51.54629629627778,
+    -47.15740740736111
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -49.05555555555,
+     -48.50000000001667,
+     -50.472222222149995
+    ],
+    "mean": -49.342592592572224,
+    "range": [
+     -50.472222222149995,
+     -48.50000000001667
+    ],
+    "t_interval": [
+     -51.86886149647685,
+     -46.816323688667595
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_llm.json | gb1_real, Gemini 2.5 Flash, Run A minus the LLM, pick": {
+   "source": "b11_robustness_llm.json",
+   "comparison": "gb1_real, Gemini 2.5 Flash, Run A minus the LLM, pick",
+   "mean": 2.3385217440055555,
+   "old_interval": [
+    1.9387172600577607,
+    2.7211325763004903
+   ],
+   "cluster_interval": [
+    1.9322138753888891,
+    2.7395725558499997
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     1.7140311339833334,
+     2.368823617583333,
+     2.93271048045
+    ],
+    "mean": 2.3385217440055555,
+    "range": [
+     1.7140311339833334,
+     2.93271048045
+    ],
+    "t_interval": [
+     0.823434993438817,
+     3.8536084945722937
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_llm.json | gb1_real, Gemini 2.5 Flash, Run A minus the LLM, share": {
+   "source": "b11_robustness_llm.json",
+   "comparison": "gb1_real, Gemini 2.5 Flash, Run A minus the LLM, share",
+   "mean": -43.203703703722226,
+   "old_interval": [
+    -50.31481481481482,
+    -36.388888888888886
+   ],
+   "cluster_interval": [
+    -50.20370370371666,
+    -36.4444444444
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -42.91666666670001,
+     -42.361111111166665,
+     -44.3333333333
+    ],
+    "mean": -43.203703703722226,
+    "range": [
+     -44.3333333333,
+     -42.361111111166665
+    ],
+    "t_interval": [
+     -45.72997260762686,
+     -40.67743479981759
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_llm.json | gb1_real, DeepSeek V3.1, Run A minus the LLM, pick": {
+   "source": "b11_robustness_llm.json",
+   "comparison": "gb1_real, DeepSeek V3.1, Run A minus the LLM, pick",
+   "mean": 3.4799991633555556,
+   "old_interval": [
+    3.0992558308482394,
+    3.847727659686552
+   ],
+   "cluster_interval": [
+    3.113389736255556,
+    3.841184330661111
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     2.855508553333333,
+     3.510301036933333,
+     4.0741878998
+    ],
+    "mean": 3.4799991633555556,
+    "range": [
+     2.855508553333333,
+     4.0741878998
+    ],
+    "t_interval": [
+     1.964912412788816,
+     4.995085913922296
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_llm.json | gb1_real, DeepSeek V3.1, Run A minus the LLM, share": {
+   "source": "b11_robustness_llm.json",
+   "comparison": "gb1_real, DeepSeek V3.1, Run A minus the LLM, share",
+   "mean": -89.92592592580557,
+   "old_interval": [
+    -90.96296296296295,
+    -88.76851851851853
+   ],
+   "cluster_interval": [
+    -90.9814814813222,
+    -88.7962962961389
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -89.63888888878336,
+     -89.08333333325001,
+     -91.05555555538335
+    ],
+    "mean": -89.92592592580557,
+    "range": [
+     -91.05555555538335,
+     -89.08333333325001
+    ],
+    "t_interval": [
+     -92.45219482971022,
+     -87.39965702190092
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_llm.json | phoq_scrambled, Opus 4.7, Run A minus the LLM, pick": {
+   "source": "b11_robustness_llm.json",
+   "comparison": "phoq_scrambled, Opus 4.7, Run A minus the LLM, pick",
+   "mean": 0.3079555113777778,
+   "old_interval": [
+    0.05493540554050195,
+    0.5841824043035598
+   ],
+   "cluster_interval": [
+    0.05580845036666676,
+    0.5818302663777779
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     0.23134958843333336,
+     0.1556215947000001,
+     0.536895351
+    ],
+    "mean": 0.3079555113777778,
+    "range": [
+     0.1556215947000001,
+     0.536895351
+    ],
+    "t_interval": [
+     -0.19346982335109347,
+     0.8093808461066492
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_llm.json | phoq_scrambled, Opus 4.7, Run A minus the LLM, share": {
+   "source": "b11_robustness_llm.json",
+   "comparison": "phoq_scrambled, Opus 4.7, Run A minus the LLM, share",
+   "mean": -60.38888888884444,
+   "old_interval": [
+    -62.2037037037037,
+    -58.5
+   ],
+   "cluster_interval": [
+    -62.22222222210001,
+    -58.57407407407778
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -60.27777777776667,
+     -59.0,
+     -61.88888888876667
+    ],
+    "mean": -60.38888888884444,
+    "range": [
+     -61.88888888876667,
+     -59.0
+    ],
+    "t_interval": [
+     -63.98504097163087,
+     -56.79273680605801
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_llm.json | phoq_scrambled, Gemini 2.5 Flash, Run A minus the LLM, pick": {
+   "source": "b11_robustness_llm.json",
+   "comparison": "phoq_scrambled, Gemini 2.5 Flash, Run A minus the LLM, pick",
+   "mean": 0.07068309554444456,
+   "old_interval": [
+    -0.16325403685866016,
+    0.3340493678166074
+   ],
+   "cluster_interval": [
+    -0.16127141362222208,
+    0.32665980296666675
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -0.005922827399999912,
+     -0.08165082113333323,
+     0.2996229351666668
+    ],
+    "mean": 0.07068309554444456,
+    "range": [
+     -0.08165082113333323,
+     0.2996229351666668
+    ],
+    "t_interval": [
+     -0.43074223918442694,
+     0.572108430273316
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": false,
+   "new_excludes_zero": false
+  },
+  "b11_robustness_llm.json | phoq_scrambled, Gemini 2.5 Flash, Run A minus the LLM, share": {
+   "source": "b11_robustness_llm.json",
+   "comparison": "phoq_scrambled, Gemini 2.5 Flash, Run A minus the LLM, share",
+   "mean": -61.27777777777777,
+   "old_interval": [
+    -64.35185185185186,
+    -58.05555555555554
+   ],
+   "cluster_interval": [
+    -64.27777777764443,
+    -58.2037037037
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -61.1666666667,
+     -59.88888888893334,
+     -62.777777777699995
+    ],
+    "mean": -61.27777777777777,
+    "range": [
+     -62.777777777699995,
+     -59.88888888893334
+    ],
+    "t_interval": [
+     -64.87392986056419,
+     -57.681625694991354
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_llm.json | phoq_scrambled, DeepSeek V3.1, Run A minus the LLM, pick": {
+   "source": "b11_robustness_llm.json",
+   "comparison": "phoq_scrambled, DeepSeek V3.1, Run A minus the LLM, pick",
+   "mean": 1.3710909080444444,
+   "old_interval": [
+    1.1695081023999714,
+    1.6071632429662672
+   ],
+   "cluster_interval": [
+    1.1672629407888888,
+    1.5963888344666668
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     1.2944849850999998,
+     1.2187569913666667,
+     1.6000307476666664
+    ],
+    "mean": 1.3710909080444444,
+    "range": [
+     1.2187569913666667,
+     1.6000307476666664
+    ],
+    "t_interval": [
+     0.8696655733155733,
+     1.8725162427733157
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_llm.json | phoq_scrambled, DeepSeek V3.1, Run A minus the LLM, share": {
+   "source": "b11_robustness_llm.json",
+   "comparison": "phoq_scrambled, DeepSeek V3.1, Run A minus the LLM, share",
+   "mean": -87.55555555547778,
+   "old_interval": [
+    -89.48148148148148,
+    -85.24074074074073
+   ],
+   "cluster_interval": [
+    -89.46296296290001,
+    -85.24074074078888
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -87.4444444444,
+     -86.16666666663333,
+     -89.05555555539999
+    ],
+    "mean": -87.55555555547778,
+    "range": [
+     -89.05555555539999,
+     -86.16666666663333
+    ],
+    "t_interval": [
+     -91.1517076382642,
+     -83.95940347269136
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_llm.json | phoq_scrambled, GPT-6.1 Sol, Run A minus the LLM, pick": {
+   "source": "b11_robustness_llm.json",
+   "comparison": "phoq_scrambled, GPT-6.1 Sol, Run A minus the LLM, pick",
+   "mean": -0.1674441408555556,
+   "old_interval": [
+    -0.4452129094562684,
+    0.11105434173805089
+   ],
+   "cluster_interval": [
+    -0.4370601361666666,
+    0.11669124026666662
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -0.24405006380000008,
+     -0.3197780575333333,
+     0.061495698766666634
+    ],
+    "mean": -0.1674441408555556,
+    "range": [
+     -0.3197780575333333,
+     0.061495698766666634
+    ],
+    "t_interval": [
+     -0.668869475584427,
+     0.3339811938733158
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": false,
+   "new_excludes_zero": false
+  },
+  "b11_robustness_llm.json | phoq_scrambled, GPT-6.1 Sol, Run A minus the LLM, share": {
+   "source": "b11_robustness_llm.json",
+   "comparison": "phoq_scrambled, GPT-6.1 Sol, Run A minus the LLM, share",
+   "mean": -21.55555555554444,
+   "old_interval": [
+    -24.962962962962962,
+    -18.259259259259256
+   ],
+   "cluster_interval": [
+    -24.870370370455557,
+    -18.29629629626667
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -21.44444444446666,
+     -20.1666666667,
+     -23.055555555466658
+    ],
+    "mean": -21.55555555554444,
+    "range": [
+     -23.055555555466658,
+     -20.1666666667
+    ],
+    "t_interval": [
+     -25.151707638330855,
+     -17.959403472758027
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_llm.json | phoq_scrambled, Gemini 3.1 Pro, Run A minus the LLM, pick": {
+   "source": "b11_robustness_llm.json",
+   "comparison": "phoq_scrambled, Gemini 3.1 Pro, Run A minus the LLM, pick",
+   "mean": 0.4759717105777778,
+   "old_interval": [
+    0.2385062164378184,
+    0.7288910860606664
+   ],
+   "cluster_interval": [
+    0.2397323758444445,
+    0.7249920096111113
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     0.39936578763333336,
+     0.3236377938999999,
+     0.7049115502000001
+    ],
+    "mean": 0.4759717105777778,
+    "range": [
+     0.3236377938999999,
+     0.7049115502000001
+    ],
+    "t_interval": [
+     -0.0254536241510937,
+     0.9773970453066494
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_robustness_llm.json | phoq_scrambled, Gemini 3.1 Pro, Run A minus the LLM, share": {
+   "source": "b11_robustness_llm.json",
+   "comparison": "phoq_scrambled, Gemini 3.1 Pro, Run A minus the LLM, share",
+   "mean": -12.333333333411112,
+   "old_interval": [
+    -13.870370370370372,
+    -10.75925925925926
+   ],
+   "cluster_interval": [
+    -13.888888888922223,
+    -10.759259259377778
+   ],
+   "levels": "episodes (one landscape)",
+   "seed": {
+    "per_seed": [
+     -12.222222222333333,
+     -10.944444444566669,
+     -13.833333333333334
+    ],
+    "mean": -12.333333333411112,
+    "range": [
+     -13.833333333333334,
+     -10.944444444566669
+    ],
+    "t_interval": [
+     -15.929485416197537,
+     -8.737181250624687
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_replication_A.json | nk:test, trained minus initialisation, pick": {
+   "source": "b11_replication_A.json",
+   "comparison": "nk:test, trained minus initialisation, pick",
+   "mean": 0.8715114248604958,
+   "old_interval": [
+    0.857572523897748,
+    0.8853052299541195
+   ],
+   "cluster_interval": [
+    0.8341018378129184,
+    0.9073052760144303
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     0.8657773273481468,
+     0.8723255747417142,
+     0.8664115332008538,
+     0.8914160809716568,
+     0.8616266080401075
+    ],
+    "mean": 0.8715114248604958,
+    "range": [
+     0.8616266080401075,
+     0.8914160809716568
+    ],
+    "t_interval": [
+     0.8569059440571829,
+     0.8861169056638087
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_replication_A.json | nk:test, trained minus random, pick": {
+   "source": "b11_replication_A.json",
+   "comparison": "nk:test, trained minus random, pick",
+   "mean": 0.41583662765270135,
+   "old_interval": [
+    0.3910746564062813,
+    0.44081623647284884
+   ],
+   "cluster_interval": [
+    0.3717303934835895,
+    0.4583245395080122
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     0.4022031159460983,
+     0.42216587401538874,
+     0.4075973697850169,
+     0.4151814561380376,
+     0.4320353223789651
+    ],
+    "mean": 0.41583662765270135,
+    "range": [
+     0.4022031159460983,
+     0.4320353223789651
+    ],
+    "t_interval": [
+     0.4011891451166533,
+     0.4304841101887494
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_replication_A.json | nk:test, trained minus guessing, pick": {
+   "source": "b11_replication_A.json",
+   "comparison": "nk:test, trained minus guessing, pick",
+   "mean": -0.012918484346147166,
+   "old_interval": [
+    -0.032646561718039147,
+    0.0069736116010167565
+   ],
+   "cluster_interval": [
+    -0.04508071509863386,
+    0.02020085114941382
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.026551996052750194,
+     -0.006589237983459736,
+     -0.02115774221383161,
+     -0.013573655860810904,
+     0.003280210380116611
+    ],
+    "mean": -0.012918484346147166,
+    "range": [
+     -0.026551996052750194,
+     0.003280210380116611
+    ],
+    "t_interval": [
+     -0.027565966882195224,
+     0.0017289981899008926
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": false,
+   "new_excludes_zero": false
+  },
+  "b11_replication_A.json | nk:test, trained minus informed, pick": {
+   "source": "b11_replication_A.json",
+   "comparison": "nk:test, trained minus informed, pick",
+   "mean": -0.03455737403725095,
+   "old_interval": [
+    -0.054678430392085586,
+    -0.014262831632218826
+   ],
+   "cluster_interval": [
+    -0.07935489095370593,
+    0.012465430444070993
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.048190885743853974,
+     -0.02822812767456352,
+     -0.04279663190493539,
+     -0.035212545551914685,
+     -0.01835867931098717
+    ],
+    "mean": -0.03455737403725095,
+    "range": [
+     -0.048190885743853974,
+     -0.01835867931098717
+    ],
+    "t_interval": [
+     -0.049204856573299004,
+     -0.01990989150120289
+    ]
+   },
+   "now_crosses_zero": true,
+   "old_excludes_zero": true,
+   "new_excludes_zero": false
+  },
+  "b11_replication_A.json | nk:test, trained minus model-guided, pick": {
+   "source": "b11_replication_A.json",
+   "comparison": "nk:test, trained minus model-guided, pick",
+   "mean": -0.043248781385887926,
+   "old_interval": [
+    -0.06219521513755781,
+    -0.02465379747290649
+   ],
+   "cluster_interval": [
+    -0.09159380470651118,
+    0.0037368898594543655
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.05688229309249093,
+     -0.03691953502320049,
+     -0.05148803925357236,
+     -0.04390395290055166,
+     -0.027050086659624148
+    ],
+    "mean": -0.043248781385887926,
+    "range": [
+     -0.05688229309249093,
+     -0.027050086659624148
+    ],
+    "t_interval": [
+     -0.057896263921935975,
+     -0.02860129884983988
+    ]
+   },
+   "now_crosses_zero": true,
+   "old_excludes_zero": true,
+   "new_excludes_zero": false
+  },
+  "b11_replication_A.json | gb1:test, trained minus initialisation, pick": {
+   "source": "b11_replication_A.json",
+   "comparison": "gb1:test, trained minus initialisation, pick",
+   "mean": 3.5333010562682303,
+   "old_interval": [
+    3.4878287797434266,
+    3.578949398206037
+   ],
+   "cluster_interval": [
+    3.469223276896116,
+    3.598664682018587
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     3.7496090371446185,
+     4.003750659084715,
+     3.237324172865967,
+     3.480397237588596,
+     3.1954241746572563
+    ],
+    "mean": 3.5333010562682303,
+    "range": [
+     3.1954241746572563,
+     4.003750659084715
+    ],
+    "t_interval": [
+     3.106471093131375,
+     3.9601310194050856
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_replication_A.json | gb1:test, trained minus random, pick": {
+   "source": "b11_replication_A.json",
+   "comparison": "gb1:test, trained minus random, pick",
+   "mean": 1.6271400388539141,
+   "old_interval": [
+    1.556217853819795,
+    1.7003465232649713
+   ],
+   "cluster_interval": [
+    1.5312104627978242,
+    1.7213533680324002
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     1.879422693871407,
+     2.12188271598153,
+     1.3636825844008458,
+     1.528621892787701,
+     1.2420903072280884
+    ],
+    "mean": 1.6271400388539141,
+    "range": [
+     1.2420903072280884,
+     2.12188271598153
+    ],
+    "t_interval": [
+     1.172702971845305,
+     2.081577105862523
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_replication_A.json | gb1:test, trained minus guessing, pick": {
+   "source": "b11_replication_A.json",
+   "comparison": "gb1:test, trained minus guessing, pick",
+   "mean": -1.1299243194346382,
+   "old_interval": [
+    -1.211106778733442,
+    -1.048491939979543
+   ],
+   "cluster_interval": [
+    -1.246232586178277,
+    -1.0157427282237756
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.8776416644171453,
+     -0.6351816423070227,
+     -1.3933817738877066,
+     -1.2284424655008517,
+     -1.5149740510604643
+    ],
+    "mean": -1.1299243194346382,
+    "range": [
+     -1.5149740510604643,
+     -0.6351816423070227
+    ],
+    "t_interval": [
+     -1.5843613864432475,
+     -0.675487252426029
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_replication_A.json | gb1:test, trained minus informed, pick": {
+   "source": "b11_replication_A.json",
+   "comparison": "gb1:test, trained minus informed, pick",
+   "mean": -0.9699068415202469,
+   "old_interval": [
+    -1.0421290348637897,
+    -0.8988742568676569
+   ],
+   "cluster_interval": [
+    -1.0609394714581413,
+    -0.8755912624711651
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.7176241865027542,
+     -0.47516416439263154,
+     -1.2333642959733155,
+     -1.0684249875864604,
+     -1.3549565731460729
+    ],
+    "mean": -0.9699068415202469,
+    "range": [
+     -1.3549565731460729,
+     -0.47516416439263154
+    ],
+    "t_interval": [
+     -1.4243439085288558,
+     -0.5154697745116379
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_replication_A.json | gb1:test, trained minus model-guided, pick": {
+   "source": "b11_replication_A.json",
+   "comparison": "gb1:test, trained minus model-guided, pick",
+   "mean": -0.36729575358101496,
+   "old_interval": [
+    -0.4487813651641789,
+    -0.28554947604853165
+   ],
+   "cluster_interval": [
+    -0.47039211197542113,
+    -0.2658482751341379
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.11501309856352217,
+     0.12744692354660048,
+     -0.6307532080340835,
+     -0.4658138996472284,
+     -0.7523454852068411
+    ],
+    "mean": -0.36729575358101496,
+    "range": [
+     -0.7523454852068411,
+     0.12744692354660048
+    ],
+    "t_interval": [
+     -0.8217328205896242,
+     0.08714131342759424
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_replication_A.json | phoq:test, trained minus initialisation, pick": {
+   "source": "b11_replication_A.json",
+   "comparison": "phoq:test, trained minus initialisation, pick",
+   "mean": 1.5004343949872825,
+   "old_interval": [
+    1.4741350040289787,
+    1.526227809734639
+   ],
+   "cluster_interval": [
+    1.4645125802811656,
+    1.5381526709844056
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     1.4692524305750998,
+     1.478280942653487,
+     1.564526610364006,
+     1.5385890456144602,
+     1.4515229457293592
+    ],
+    "mean": 1.5004343949872825,
+    "range": [
+     1.4515229457293592,
+     1.564526610364006
+    ],
+    "t_interval": [
+     1.4401816670268601,
+     1.5606871229477048
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_replication_A.json | phoq:test, trained minus random, pick": {
+   "source": "b11_replication_A.json",
+   "comparison": "phoq:test, trained minus random, pick",
+   "mean": 0.6586719647847559,
+   "old_interval": [
+    0.6142531798724205,
+    0.7029555524691513
+   ],
+   "cluster_interval": [
+    0.5925865731351129,
+    0.7211065233879965
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     0.6362902877406035,
+     0.6320858572008143,
+     0.7256721852587664,
+     0.6978308531764527,
+     0.6014806405471423
+    ],
+    "mean": 0.6586719647847559,
+    "range": [
+     0.6014806405471423,
+     0.7256721852587664
+    ],
+    "t_interval": [
+     0.5950524158710572,
+     0.7222915136984546
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_replication_A.json | phoq:test, trained minus guessing, pick": {
+   "source": "b11_replication_A.json",
+   "comparison": "phoq:test, trained minus guessing, pick",
+   "mean": 0.07574971641440617,
+   "old_interval": [
+    0.023806182562908722,
+    0.12620973121244602
+   ],
+   "cluster_interval": [
+    0.0029635663386505654,
+    0.1432789645751692
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     0.05336803937025377,
+     0.0491636088304647,
+     0.14274993688841686,
+     0.11490860480610293,
+     0.01855839217679262
+    ],
+    "mean": 0.07574971641440617,
+    "range": [
+     0.01855839217679262,
+     0.14274993688841686
+    ],
+    "t_interval": [
+     0.012130167500707376,
+     0.13936926532810495
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_replication_A.json | phoq:test, trained minus informed, pick": {
+   "source": "b11_replication_A.json",
+   "comparison": "phoq:test, trained minus informed, pick",
+   "mean": -0.5133715347072471,
+   "old_interval": [
+    -0.5957085340789676,
+    -0.4331235022768838
+   ],
+   "cluster_interval": [
+    -0.6293174652897375,
+    -0.39846411429913753
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.5357532117513996,
+     -0.5399576422911886,
+     -0.4463713142332364,
+     -0.4742126463155503,
+     -0.5705628589448607
+    ],
+    "mean": -0.5133715347072471,
+    "range": [
+     -0.5705628589448607,
+     -0.4463713142332364
+    ],
+    "t_interval": [
+     -0.5769910836209459,
+     -0.44975198579354825
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_replication_A.json | phoq:test, trained minus model-guided, pick": {
+   "source": "b11_replication_A.json",
+   "comparison": "phoq:test, trained minus model-guided, pick",
+   "mean": 0.2753386967846133,
+   "old_interval": [
+    0.23825321111528633,
+    0.3130354303766635
+   ],
+   "cluster_interval": [
+    0.2244026053817417,
+    0.32530174085385777
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     0.25295701974046086,
+     0.24875258920067184,
+     0.342338917258624,
+     0.31449758517631005,
+     0.21814737254699973
+    ],
+    "mean": 0.2753386967846133,
+    "range": [
+     0.21814737254699973,
+     0.342338917258624
+    ],
+    "t_interval": [
+     0.2117191478709145,
+     0.3389582456983121
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_B_ent05.json | phoq:test, trained minus initialisation, pick": {
+   "source": "b11_B_ent05.json",
+   "comparison": "phoq:test, trained minus initialisation, pick",
+   "mean": 1.339599439708472,
+   "old_interval": [
+    1.3096753266858785,
+    1.3700602669217234
+   ],
+   "cluster_interval": [
+    1.2966855820604513,
+    1.384398570473511
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     1.2042804500605617,
+     1.426542154255636,
+     1.3879757148092182
+    ],
+    "mean": 1.339599439708472,
+    "range": [
+     1.2042804500605617,
+     1.426542154255636
+    ],
+    "t_interval": [
+     1.0445693700740581,
+     1.634629509342886
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_B_ent05.json | phoq:test, trained minus random, pick": {
+   "source": "b11_B_ent05.json",
+   "comparison": "phoq:test, trained minus random, pick",
+   "mean": 0.4986749766367738,
+   "old_interval": [
+    0.45054388974393184,
+    0.5452911310387581
+   ],
+   "cluster_interval": [
+    0.4347881156469115,
+    0.5605280406463488
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     0.35454928857875523,
+     0.572251887187069,
+     0.5692237541444973
+    ],
+    "mean": 0.4986749766367738,
+    "range": [
+     0.35454928857875523,
+     0.572251887187069
+    ],
+    "t_interval": [
+     0.18859077287894155,
+     0.808759180394606
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_B_ent05.json | phoq:test, trained minus guessing, pick": {
+   "source": "b11_B_ent05.json",
+   "comparison": "phoq:test, trained minus guessing, pick",
+   "mean": -0.08424727173357588,
+   "old_interval": [
+    -0.1377571222339176,
+    -0.031227377857492175
+   ],
+   "cluster_interval": [
+    -0.16074299922148497,
+    -0.011860769778798796
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.22837295979159444,
+     -0.010670361183280762,
+     -0.013698494225852443
+    ],
+    "mean": -0.08424727173357588,
+    "range": [
+     -0.22837295979159444,
+     -0.010670361183280762
+    ],
+    "t_interval": [
+     -0.39433147549140807,
+     0.2258369320242563
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_B_ent05.json | phoq:test, trained minus informed, pick": {
+   "source": "b11_B_ent05.json",
+   "comparison": "phoq:test, trained minus informed, pick",
+   "mean": -0.6733685228552293,
+   "old_interval": [
+    -0.7560713524452513,
+    -0.5912954975952522
+   ],
+   "cluster_interval": [
+    -0.7858071215745747,
+    -0.5668618892961261
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.8174942109132479,
+     -0.5997916123049342,
+     -0.6028197453475057
+    ],
+    "mean": -0.6733685228552293,
+    "range": [
+     -0.8174942109132479,
+     -0.5997916123049342
+    ],
+    "t_interval": [
+     -0.9834527266130617,
+     -0.3632843190973969
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_B_ent05.json | phoq:test, trained minus model-guided, pick": {
+   "source": "b11_B_ent05.json",
+   "comparison": "phoq:test, trained minus model-guided, pick",
+   "mean": 0.11534170863663122,
+   "old_interval": [
+    0.0758888089459302,
+    0.15476308367328814
+   ],
+   "cluster_interval": [
+    0.056067257821991075,
+    0.17245425709300366
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.028783979421387357,
+     0.18891861918692635,
+     0.18589048614435466
+    ],
+    "mean": 0.11534170863663122,
+    "range": [
+     -0.028783979421387357,
+     0.18891861918692635
+    ],
+    "t_interval": [
+     -0.19474249512120095,
+     0.4254259123944634
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_B_ent05.json | gb1:test, trained minus initialisation, pick": {
+   "source": "b11_B_ent05.json",
+   "comparison": "gb1:test, trained minus initialisation, pick",
+   "mean": 3.552535255241358,
+   "old_interval": [
+    3.494003347751048,
+    3.612196627183756
+   ],
+   "cluster_interval": [
+    3.4714825397949673,
+    3.6316480139721734
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     3.5956210902919485,
+     3.5825081047009237,
+     3.4794765707312036
+    ],
+    "mean": 3.552535255241358,
+    "range": [
+     3.4794765707312036,
+     3.5956210902919485
+    ],
+    "t_interval": [
+     3.3945205434584693,
+     3.7105499670242468
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_B_ent05.json | gb1:test, trained minus random, pick": {
+   "source": "b11_B_ent05.json",
+   "comparison": "gb1:test, trained minus random, pick",
+   "mean": 1.6605157935790522,
+   "old_interval": [
+    1.583690984167193,
+    1.736509382019807
+   ],
+   "cluster_interval": [
+    1.555987432021567,
+    1.7642969797581538
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     1.6162616722682306,
+     1.687034156163835,
+     1.678251552305091
+    ],
+    "mean": 1.6605157935790522,
+    "range": [
+     1.6162616722682306,
+     1.687034156163835
+    ],
+    "t_interval": [
+     1.5646878196758984,
+     1.756343767482206
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_B_ent05.json | gb1:test, trained minus guessing, pick": {
+   "source": "b11_B_ent05.json",
+   "comparison": "gb1:test, trained minus guessing, pick",
+   "mean": -1.0965485647095006,
+   "old_interval": [
+    -1.1808171868530124,
+    -1.011708639277709
+   ],
+   "cluster_interval": [
+    -1.2324598794246866,
+    -0.9661139360082135
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -1.1408026860203222,
+     -1.0700302021247177,
+     -1.0788128059834616
+    ],
+    "mean": -1.0965485647095006,
+    "range": [
+     -1.1408026860203222,
+     -1.0700302021247177
+    ],
+    "t_interval": [
+     -1.1923765386126548,
+     -1.0007205908063463
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_B_ent05.json | gb1:test, trained minus informed, pick": {
+   "source": "b11_B_ent05.json",
+   "comparison": "gb1:test, trained minus informed, pick",
+   "mean": -0.9365310867951093,
+   "old_interval": [
+    -1.0117233945936122,
+    -0.8609411754888271
+   ],
+   "cluster_interval": [
+    -1.0380551216804423,
+    -0.8303752691483974
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.9807852081059311,
+     -0.9100127242103265,
+     -0.9187953280690705
+    ],
+    "mean": -0.9365310867951093,
+    "range": [
+     -0.9807852081059311,
+     -0.9100127242103265
+    ],
+    "t_interval": [
+     -1.0323590606982636,
+     -0.8407031128919551
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_B_ent05.json | gb1:test, trained minus model-guided, pick": {
+   "source": "b11_B_ent05.json",
+   "comparison": "gb1:test, trained minus model-guided, pick",
+   "mean": -0.33391999885587736,
+   "old_interval": [
+    -0.4200306707093396,
+    -0.2477993219272487
+   ],
+   "cluster_interval": [
+    -0.44177085313164105,
+    -0.22460050825572472
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.37817412016669905,
+     -0.3074016362710945,
+     -0.3161842401298384
+    ],
+    "mean": -0.33391999885587736,
+    "range": [
+     -0.37817412016669905,
+     -0.3074016362710945
+    ],
+    "t_interval": [
+     -0.4297479727590316,
+     -0.23809202495272314
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_B_ent05.json | nk:test, trained minus initialisation, pick": {
+   "source": "b11_B_ent05.json",
+   "comparison": "nk:test, trained minus initialisation, pick",
+   "mean": 0.7789459184616953,
+   "old_interval": [
+    0.760643702716632,
+    0.7970038879314293
+   ],
+   "cluster_interval": [
+    0.7437100319316304,
+    0.8145069069889143
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     0.7823939534896158,
+     0.7735535863661318,
+     0.7808902155293379
+    ],
+    "mean": 0.7789459184616953,
+    "range": [
+     0.7735535863661318,
+     0.7823939534896158
+    ],
+    "t_interval": [
+     0.7671958575313449,
+     0.7906959793920456
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_B_ent05.json | nk:test, trained minus random, pick": {
+   "source": "b11_B_ent05.json",
+   "comparison": "nk:test, trained minus random, pick",
+   "mean": 0.31943112867939166,
+   "old_interval": [
+    0.29345067850842105,
+    0.3457007020414609
+   ],
+   "cluster_interval": [
+    0.2755444018136855,
+    0.3652651509947944
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     0.32097409425928014,
+     0.31174590112800404,
+     0.3255733906508909
+    ],
+    "mean": 0.31943112867939166,
+    "range": [
+     0.31174590112800404,
+     0.3255733906508909
+    ],
+    "t_interval": [
+     0.301938596469902,
+     0.3369236608888813
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_B_ent05.json | nk:test, trained minus guessing, pick": {
+   "source": "b11_B_ent05.json",
+   "comparison": "nk:test, trained minus guessing, pick",
+   "mean": -0.10932398331945682,
+   "old_interval": [
+    -0.13071890902202835,
+    -0.08795239656279467
+   ],
+   "cluster_interval": [
+    -0.14403420944541293,
+    -0.0739746552125116
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.10778101773956837,
+     -0.11700921087084448,
+     -0.10318172134795761
+    ],
+    "mean": -0.10932398331945682,
+    "range": [
+     -0.11700921087084448,
+     -0.10318172134795761
+    ],
+    "t_interval": [
+     -0.12681651552894652,
+     -0.09183145110996714
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_B_ent05.json | nk:test, trained minus informed, pick": {
+   "source": "b11_B_ent05.json",
+   "comparison": "nk:test, trained minus informed, pick",
+   "mean": -0.13096287301056062,
+   "old_interval": [
+    -0.15273814272965303,
+    -0.10926815057417051
+   ],
+   "cluster_interval": [
+    -0.17807316230888395,
+    -0.08177615996439558
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.12941990743067217,
+     -0.1386481005619483,
+     -0.12482061103906138
+    ],
+    "mean": -0.13096287301056062,
+    "range": [
+     -0.1386481005619483,
+     -0.12482061103906138
+    ],
+    "t_interval": [
+     -0.14845540522005035,
+     -0.11347034080107088
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  },
+  "b11_B_ent05.json | nk:test, trained minus model-guided, pick": {
+   "source": "b11_B_ent05.json",
+   "comparison": "nk:test, trained minus model-guided, pick",
+   "mean": -0.13965428035919755,
+   "old_interval": [
+    -0.15939633450118676,
+    -0.11936296763612357
+   ],
+   "cluster_interval": [
+    -0.18834833681330662,
+    -0.0921705370984276
+   ],
+   "levels": "landscapes, then episodes",
+   "seed": {
+    "per_seed": [
+     -0.13811131477930913,
+     -0.1473395079105852,
+     -0.13351201838769836
+    ],
+    "mean": -0.13965428035919755,
+    "range": [
+     -0.1473395079105852,
+     -0.13351201838769836
+    ],
+    "t_interval": [
+     -0.1571468125686872,
+     -0.12216174814970791
+    ]
+   },
+   "now_crosses_zero": false,
+   "old_excludes_zero": true,
+   "new_excludes_zero": true
+  }
+ }
+}

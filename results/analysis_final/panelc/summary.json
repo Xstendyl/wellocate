@@ -1,0 +1,94 @@
+{
+ "tag": "panelc",
+ "campaigns": 151,
+ "cells": 4,
+ "cells_detail": [
+  {
+   "condition": "Blind",
+   "model": "claude-opus-4.7",
+   "model_id": "anthropic/claude-opus-4.7",
+   "n": 40,
+   "mean": 7.5157167266589155,
+   "median": 7.473366360634051,
+   "lo": 7.436866664291342,
+   "hi": 7.5989193751965525,
+   "distinct": 14.0,
+   "exploration_shortfall": 1.136709201545968,
+   "selection_shortfall": 0.10957407179511706,
+   "replication": {
+    "over slots used": 0.6904166666666667,
+    "over all 60 slots": 0.6904166666666667,
+    "excl anchor, slots used": 0.56,
+    "excl anchor, all 60": 0.56
+   }
+  },
+  {
+   "condition": "Blind",
+   "model": "gemini-2.5-flash",
+   "model_id": "google/gemini-2.5-flash",
+   "n": 35,
+   "mean": 7.4261288455089645,
+   "median": 7.320150931559056,
+   "lo": 7.338100896886317,
+   "hi": 7.517777539242247,
+   "distinct": 10.085714285714285,
+   "exploration_shortfall": 1.2317991924392522,
+   "selection_shortfall": 0.10407196205178393,
+   "replication": {
+    "over slots used": 0.8180952380952381,
+    "over all 60 slots": 0.8180952380952381,
+    "excl anchor, slots used": 0.6161904761904762,
+    "excl anchor, all 60": 0.6161904761904762
+   }
+  },
+  {
+   "condition": "Mechanism",
+   "model": "claude-opus-4.7",
+   "model_id": "anthropic/claude-opus-4.7",
+   "n": 40,
+   "mean": 7.455356895545526,
+   "median": 7.328230977719663,
+   "lo": 7.368199104697792,
+   "hi": 7.5491046803115065,
+   "distinct": 12.15,
+   "exploration_shortfall": 1.2177860032772316,
+   "selection_shortfall": 0.08885710117724321,
+   "replication": {
+    "over slots used": 0.7266666666666667,
+    "over all 60 slots": 0.7266666666666667,
+    "excl anchor, slots used": 0.5904166666666667,
+    "excl anchor, all 60": 0.5904166666666667
+   }
+  },
+  {
+   "condition": "Mechanism",
+   "model": "gemini-2.5-flash",
+   "model_id": "google/gemini-2.5-flash",
+   "n": 36,
+   "mean": 7.460987889577827,
+   "median": 7.386663845521595,
+   "lo": 7.384858582349668,
+   "hi": 7.544899608540737,
+   "distinct": 7.416666666666667,
+   "exploration_shortfall": 1.2312575503356173,
+   "selection_shortfall": 0.06975456008655605,
+   "replication": {
+    "over slots used": 0.8601851851851852,
+    "over all 60 slots": 0.8601851851851852,
+    "excl anchor, slots used": 0.6407407407407407,
+    "excl anchor, all 60": 0.6407407407407407
+   }
+  }
+ ],
+ "scripted_kstar_mean": 8.005659149667496,
+ "scripted_k0_mean": 7.88556713548877,
+ "paired_by_seed": true,
+ "undefined_comparator": {},
+ "fallbacks_excluded": 9,
+ "fallbacks_by_cell": {
+  "Blind|google/gemini-2.5-flash": 5,
+  "Mechanism|google/gemini-2.5-flash": 4
+ },
+ "contrasts_with_fallbacks": [],
+ "contrasts": []
+}

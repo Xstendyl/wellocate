@@ -1,0 +1,144 @@
+SPOT CHECK: raw model output beside the proposals the harness accepted.
+Sampled deterministically, 20 calls per model. Written for a human to read.
+
+====================================================================================================
+openai/gpt-6.1-sol  (frontier-openai)   128 calls, showing 20
+====================================================================================================
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['EDQT']
+SECONDARY: ['EDQT']
+RAW:
+EDQT | Probe a single-symbol change from the reference at position four
+
+--- round 3  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 5  parsers agree True ---
+PARSED   : ['HDQS', 'EFQS', 'EDOS', 'EDQR']
+SECONDARY: ['HDQS', 'EFQS', 'EDOS', 'EDQR']
+RAW:
+HDQS | Probe a new symbol at the first position
+EFQS | Test the second position beyond prior substitutions
+EDOS | Explore another third-position substitution
+EDQR | Retry the unmeasured fourth-position substitution
+
+--- round 4  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['IFQS', 'IDOS', 'JDQS', 'KDQS']
+SECONDARY: ['IFQS', 'IDOS', 'JDQS', 'KDQS']
+RAW:
+IFQS | Combine strongest first-position gain with improved second position
+IDOS | Combine strongest first-position gain with improved third position
+JDQS | Explore first position near the best observed candidate
+KDQS | Probe further first-position improvement
+
+--- round 5  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['NDQS']
+SECONDARY: ['NDQS']
+RAW:
+NDQS | Explore a new first-position symbol while retaining the best-known DQS background.
+
+--- round 6  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['IDQA']
+SECONDARY: ['IDQA']
+RAW:
+IDQA | Test remaining position change around highest-scoring IDQS
+
+--- round 7  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['RDQS']
+SECONDARY: ['RDQS']
+RAW:
+RDQS | Explore an untested first-position symbol while preserving the reference background
+
+--- round 7  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['SDQS']
+SECONDARY: ['SDQS']
+RAW:
+SDQS | Test an unexplored first-position symbol while preserving the reference background
+
+--- round 8  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['IDLS']
+SECONDARY: ['IDLS']
+RAW:
+IDLS | Explore a new third-position symbol near the strong IDMS result.
+
+--- round 10  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['IDQG']
+SECONDARY: ['IDQG']
+RAW:
+IDQG | Explore an untested fourth-position symbol near promising variants.
+
+--- round 10  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['IDQH']
+SECONDARY: ['IDQH']
+RAW:
+IDQH | Explore a new fourth-position variant of the strongest candidate
+
+--- round 11  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 9  parsers agree True ---
+PARSED   : ['IAQE', 'IAMS', 'IAQB', 'ILQS']
+SECONDARY: ['IAQE', 'IAMS', 'IAQB', 'ILQS']
+RAW:
+IAQE | Combine the best second-position change with promising E
+IAMS | Test M with the highest-scoring second-position setting
+IAQB | Test whether B improves the current best candidate
+ILQS | Explore an untested second-position symbol near promising J
+
+--- round 15  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['IGQT']
+SECONDARY: ['IGQT']
+RAW:
+IGQT | Tests a new neighbor of the strongest confirmed candidate, IAQT.
+
+--- round 1  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['ADQS', 'EAQS', 'EDAS', 'EDQA']
+SECONDARY: ['ADQS', 'EAQS', 'EDAS', 'EDQA']
+RAW:
+ADQS | Probe position 1 near the reference
+EAQS | Probe position 2 near the reference
+EDAS | Probe position 3 near the reference
+EDQA | Probe position 4 near the reference
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['EDQT']
+SECONDARY: ['EDQT']
+RAW:
+EDQT | Test a nearby fourth-position change from the reference
+
+--- round 2  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['EDQR', 'EDQP', 'EAQT', 'ECQT']
+SECONDARY: ['EDQR', 'EDQP', 'EAQT', 'ECQT']
+RAW:
+EDQR | Probe near the improved fourth-position symbol
+EDQP | Explore another fourth-position alternative
+EAQT | Test whether the T gain survives a second-position change
+ECQT | Explore second-position improvement on the best background
+
+--- round 4  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['LAQT']
+SECONDARY: ['LAQT']
+RAW:
+LAQT | Explore first-position variation around best candidate IAQT
+
+--- round 4  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['HAQT']
+SECONDARY: ['HAQT']
+RAW:
+HAQT | Explore first-position neighbor of highest-scoring IAQT
+
+--- round 4  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 5  parsers agree True ---
+PARSED   : ['JAQT']
+SECONDARY: ['JAQT']
+RAW:
+JAQT | Test a nearby first-position change from the best candidate IAQT
+
+--- round 5  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['GAQT', 'NAQT', 'IAPT', 'IAOT']
+SECONDARY: ['GAQT', 'NAQT', 'IAPT', 'IAOT']
+RAW:
+GAQT | Explore first-position effects with favorable AQT background
+NAQT | Test a distant first-position alternative
+IAPT | Explore third position around the best candidate
+IAOT | Test another third-position alternative with favorable IAT context
+
+--- round 5  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['KAQT']
+SECONDARY: ['KAQT']
+RAW:
+KAQT | Explore first-position effects while retaining the strongest AQT combination

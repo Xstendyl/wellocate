@@ -1,0 +1,11 @@
+{
+ "deepseek/deepseek-chat-v3.1": {
+  "calls": 5717,
+  "empty": 0,
+  "malformed": 2,
+  "truncated": 0,
+  "mean_reasoning": 0,
+  "max_reasoning": 0,
+  "max_completion": 1496
+ }
+}

@@ -1,0 +1,163 @@
+{
+ "rows": [
+  {
+   "landscape": "NK uniform, GB1-scaled",
+   "n": 1,
+   "prior_mean": 6.972347288551312,
+   "prior_var": 0.1650266617780071,
+   "pool_max": 8.762,
+   "max_observed": 9.811845309541543,
+   "median_champ": 8.98657934741756,
+   "turning_point": null,
+   "reachable": false
+  },
+  {
+   "landscape": "NK uniform, GB1-scaled",
+   "n": 2,
+   "prior_mean": 6.972347288551312,
+   "prior_var": 0.1650266617780071,
+   "pool_max": 8.762,
+   "max_observed": 9.811845309541543,
+   "median_champ": 8.98657934741756,
+   "turning_point": null,
+   "reachable": false
+  },
+  {
+   "landscape": "NK uniform, GB1-scaled",
+   "n": 4,
+   "prior_mean": 6.972347288551312,
+   "prior_var": 0.1650266617780071,
+   "pool_max": 8.762,
+   "max_observed": 9.811845309541543,
+   "median_champ": 8.98657934741756,
+   "turning_point": null,
+   "reachable": false
+  },
+  {
+   "landscape": "GB1",
+   "n": 1,
+   "prior_mean": 0.9623472030582227,
+   "prior_var": 1.1822244319840722,
+   "pool_max": 8.76196565571,
+   "max_observed": 9.843688893750716,
+   "median_champ": 5.848092910593583,
+   "turning_point": null,
+   "reachable": false
+  },
+  {
+   "landscape": "GB1",
+   "n": 2,
+   "prior_mean": 0.9623472030582227,
+   "prior_var": 1.1822244319840722,
+   "pool_max": 8.76196565571,
+   "max_observed": 9.843688893750716,
+   "median_champ": 5.848092910593583,
+   "turning_point": null,
+   "reachable": false
+  },
+  {
+   "landscape": "GB1",
+   "n": 4,
+   "prior_mean": 0.9623472030582227,
+   "prior_var": 1.1822244319840722,
+   "pool_max": 8.76196565571,
+   "max_observed": 9.843688893750716,
+   "median_champ": 5.848092910593583,
+   "turning_point": null,
+   "reachable": false
+  },
+  {
+   "landscape": "PhoQ, UNSCALED",
+   "n": 1,
+   "prior_mean": 8.365872800314936,
+   "prior_var": 53.51653010142855,
+   "pool_max": 133.59427,
+   "max_observed": 136.42064643122725,
+   "median_champ": 30.444800422508997,
+   "turning_point": 108.92659987528573,
+   "reachable": true
+  },
+  {
+   "landscape": "PhoQ, UNSCALED",
+   "n": 2,
+   "prior_mean": 8.365872800314936,
+   "prior_var": 53.51653010142855,
+   "pool_max": 133.59427,
+   "max_observed": 136.42064643122725,
+   "median_champ": 30.444800422508997,
+   "turning_point": 150.3341881607481,
+   "reachable": false
+  },
+  {
+   "landscape": "PhoQ, UNSCALED",
+   "n": 4,
+   "prior_mean": 8.365872800314936,
+   "prior_var": 53.51653010142855,
+   "pool_max": 133.59427,
+   "max_observed": 136.42064643122725,
+   "median_champ": 30.444800422508997,
+   "turning_point": null,
+   "reachable": false
+  },
+  {
+   "landscape": "PhoQ, GB1-scaled",
+   "n": 1,
+   "prior_mean": 0.5486895319414483,
+   "prior_var": 0.23020713621695824,
+   "pool_max": 8.762,
+   "max_observed": 8.947375325607776,
+   "median_champ": 1.9968086503036584,
+   "turning_point": 7.144333802648768,
+   "reachable": true
+  },
+  {
+   "landscape": "PhoQ, GB1-scaled",
+   "n": 2,
+   "prior_mean": 0.5486895319414483,
+   "prior_var": 0.23020713621695824,
+   "pool_max": 8.762,
+   "max_observed": 8.947375325607776,
+   "median_champ": 1.9968086503036584,
+   "turning_point": 9.860052345696397,
+   "reachable": false
+  },
+  {
+   "landscape": "PhoQ, GB1-scaled",
+   "n": 4,
+   "prior_mean": 0.5486895319414483,
+   "prior_var": 0.23020713621695824,
+   "pool_max": 8.762,
+   "max_observed": 8.947375325607776,
+   "median_champ": 1.9968086503036584,
+   "turning_point": null,
+   "reachable": false
+  }
+ ],
+ "affected": [
+  {
+   "landscape": "NK uniform, GB1-scaled",
+   "peak": null,
+   "frac_campaigns_past_peak": 0.0,
+   "frac_singleton_readings_past_peak": 0.0
+  },
+  {
+   "landscape": "GB1",
+   "peak": null,
+   "frac_campaigns_past_peak": 0.0,
+   "frac_singleton_readings_past_peak": 0.0
+  },
+  {
+   "landscape": "PhoQ, UNSCALED",
+   "peak": 108.92675601584999,
+   "frac_campaigns_past_peak": 0.0,
+   "frac_singleton_readings_past_peak": 0.0
+  },
+  {
+   "landscape": "PhoQ, GB1-scaled",
+   "peak": 7.1443047975,
+   "frac_campaigns_past_peak": 0.0,
+   "frac_singleton_readings_past_peak": 0.0
+  }
+ ],
+ "monotone_within_data": false
+}

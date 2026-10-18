@@ -1,0 +1,67 @@
+ZERO-NOISE PANEL: rendered round-1 prompt diff against the grid, all five conditions.
+Generated before the panel runs. Failures stay at 15%, so only the DATA differ where the text does not.
+
+========================================================================================
+Blind   BYTE-IDENTICAL
+========================================================================================
+  (no change)
+
+========================================================================================
+Quantitative   6 changed lines
+========================================================================================
+  -- Readings are subject to measurement error, so a reading is not exactly the
+  -  candidate's true score.
+  -- Each measurement carries independent Gaussian error whose standard deviation DEPENDS ON
+  -  the string's own level f, as sigma(f) = sqrt(0.00351^2 + (0.073 * f)^2).
+  +- Every reading is exact: a reading IS the string's true score.
+  +- Every reading is exact, so repeating a measurement returns the same number.
+
+========================================================================================
+Mechanism   8 changed lines
+========================================================================================
+  -- Readings are subject to measurement error, so a reading is not exactly the
+  -  candidate's true score.
+  -- Each measurement carries independent Gaussian error whose standard deviation DEPENDS ON
+  -  the string's own level f, as sigma(f) = sqrt(0.00351^2 + (0.073 * f)^2).
+  +- Every reading is exact: a reading IS the string's true score.
+  +- Every reading is exact, so repeating a measurement returns the same number.
+  -- Independent measurements of the same string can be averaged; n measurements reduce the
+  -  standard error of its mean by a factor of sqrt(n).
+
+========================================================================================
+Aggregated   8 changed lines
+========================================================================================
+  -- Readings are subject to measurement error, so a reading is not exactly the
+  -  candidate's true score.
+  -- Each measurement carries independent Gaussian error whose standard deviation DEPENDS ON
+  -  the string's own level f, as sigma(f) = sqrt(0.00351^2 + (0.073 * f)^2).
+  +- Every reading is exact: a reading IS the string's true score.
+  +- Every reading is exact, so repeating a measurement returns the same number.
+  -- Independent measurements of the same string can be averaged; n measurements reduce the
+  -  standard error of its mean by a factor of sqrt(n).
+
+========================================================================================
+Decision-rule   8 changed lines
+========================================================================================
+  -- Readings are subject to measurement error, so a reading is not exactly the
+  -  candidate's true score.
+  -- Each measurement carries independent Gaussian error whose standard deviation DEPENDS ON
+  -  the string's own level f, as sigma(f) = sqrt(0.00351^2 + (0.073 * f)^2).
+  +- Every reading is exact: a reading IS the string's true score.
+  +- Every reading is exact, so repeating a measurement returns the same number.
+  -- Independent measurements of the same string can be averaged; n measurements reduce the
+  -  standard error of its mean by a factor of sqrt(n).
+
+========================================================================================
+PAIRWISE, WITHIN THE PANEL: which conditions render the same text?
+========================================================================================
+  Mechanism == Aggregated   IDENTICAL TEXT
+  Blind vs Quantitative differ by 2 line(s): +- Every reading is exact: a reading IS the string's true sc | +- Every reading is exact, so repeating a measurement return
+  Blind vs Mechanism differ by 3 line(s): +- Every reading is exact: a reading IS the string's true sc | +- Every reading is exact, so repeating a measurement return | +- You may order the same string more than once, within a ro
+  Blind vs Aggregated differ by 3 line(s): +- Every reading is exact: a reading IS the string's true sc | +- Every reading is exact, so repeating a measurement return | +- You may order the same string more than once, within a ro
+  Blind vs Decision-rule differ by 5 line(s): +- Every reading is exact: a reading IS the string's true sc | +- Every reading is exact, so repeating a measurement return | +- You may order the same string more than once, within a ro | +- When you report your final answer, report the string with | +  AVERAGE reading across all of its measurements.
+  Quantitative vs Mechanism differ by 1 line(s): +- You may order the same string more than once, within a ro
+  Quantitative vs Aggregated differ by 1 line(s): +- You may order the same string more than once, within a ro
+  Quantitative vs Decision-rule differ by 3 line(s): +- You may order the same string more than once, within a ro | +- When you report your final answer, report the string with | +  AVERAGE reading across all of its measurements.
+  Mechanism vs Decision-rule differ by 2 line(s): +- When you report your final answer, report the string with | +  AVERAGE reading across all of its measurements.
+  Aggregated vs Decision-rule differ by 2 line(s): +- When you report your final answer, report the string with | +  AVERAGE reading across all of its measurements.

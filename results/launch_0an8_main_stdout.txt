@@ -1,0 +1,294 @@
+seeds clear: main 17000000..17000029, smoke 18000000..18000001
+scramble 20261004 is the phoq:paper instance and none of the 430 train, validation and test scrambles
+balance start opus: $437.2981
+== opus (anthropic/claude-opus-4.7): ceiling $40
+before gen_0an8_opus_phoq_blind seed 17000000: balance $437.2981, opus by balance $0.0000 of $40, panel $1.2945 of $100, largest campaign $0.2528
+gen_0an8_opus_phoq_blind seed 17000000: written
+before gen_0an8_opus_phoq_blind seed 17000001: balance $437.2172, opus by balance $0.0809 of $40, panel $1.3754 of $100, largest campaign $0.2528
+gen_0an8_opus_phoq_blind seed 17000001: written
+before gen_0an8_opus_phoq_blind seed 17000002: balance $437.2172, opus by balance $0.0809 of $40, panel $1.3754 of $100, largest campaign $0.2528
+gen_0an8_opus_phoq_blind seed 17000002: written
+before gen_0an8_opus_phoq_blind seed 17000003: balance $437.2172, opus by balance $0.0809 of $40, panel $1.3754 of $100, largest campaign $0.2528
+gen_0an8_opus_phoq_blind seed 17000003: written
+before gen_0an8_opus_phoq_blind seed 17000004: balance $436.7487, opus by balance $0.5493 of $40, panel $1.8438 of $100, largest campaign $0.2528
+gen_0an8_opus_phoq_blind seed 17000004: written
+before gen_0an8_opus_phoq_blind seed 17000005: balance $436.7487, opus by balance $0.5493 of $40, panel $1.8438 of $100, largest campaign $0.2528
+gen_0an8_opus_phoq_blind seed 17000005: written
+before gen_0an8_opus_phoq_blind seed 17000006: balance $436.3978, opus by balance $0.9002 of $40, panel $2.1947 of $100, largest campaign $0.2528
+gen_0an8_opus_phoq_blind seed 17000006: written
+before gen_0an8_opus_phoq_blind seed 17000007: balance $436.0428, opus by balance $1.2553 of $40, panel $2.5497 of $100, largest campaign $0.2528
+gen_0an8_opus_phoq_blind seed 17000007: written
+before gen_0an8_opus_phoq_blind seed 17000008: balance $436.0428, opus by balance $1.2553 of $40, panel $2.5497 of $100, largest campaign $0.2528
+gen_0an8_opus_phoq_blind seed 17000008: written
+before gen_0an8_opus_phoq_blind seed 17000009: balance $435.6796, opus by balance $1.6185 of $40, panel $2.9130 of $100, largest campaign $0.2528
+gen_0an8_opus_phoq_blind seed 17000009: written
+before gen_0an8_opus_phoq_blind seed 17000010: balance $435.4377, opus by balance $1.8604 of $40, panel $3.1549 of $100, largest campaign $0.2528
+gen_0an8_opus_phoq_blind seed 17000010: written
+before gen_0an8_opus_phoq_blind seed 17000011: balance $435.4377, opus by balance $1.8604 of $40, panel $3.1549 of $100, largest campaign $0.2528
+gen_0an8_opus_phoq_blind seed 17000011: written
+before gen_0an8_opus_phoq_blind seed 17000012: balance $435.1651, opus by balance $2.1330 of $40, panel $3.4275 of $100, largest campaign $0.2528
+gen_0an8_opus_phoq_blind seed 17000012: written
+before gen_0an8_opus_phoq_blind seed 17000013: balance $434.8237, opus by balance $2.4744 of $40, panel $3.7688 of $100, largest campaign $0.2528
+gen_0an8_opus_phoq_blind seed 17000013: written
+before gen_0an8_opus_phoq_blind seed 17000014: balance $434.5465, opus by balance $2.7516 of $40, panel $4.0461 of $100, largest campaign $0.2528
+gen_0an8_opus_phoq_blind seed 17000014: written
+before gen_0an8_opus_phoq_blind seed 17000015: balance $434.5465, opus by balance $2.7516 of $40, panel $4.0461 of $100, largest campaign $0.2528
+gen_0an8_opus_phoq_blind seed 17000015: written
+before gen_0an8_opus_phoq_blind seed 17000016: balance $434.2265, opus by balance $3.0716 of $40, panel $4.3661 of $100, largest campaign $0.2528
+gen_0an8_opus_phoq_blind seed 17000016: written
+before gen_0an8_opus_phoq_blind seed 17000017: balance $434.2265, opus by balance $3.0716 of $40, panel $4.3661 of $100, largest campaign $0.2528
+gen_0an8_opus_phoq_blind seed 17000017: written
+before gen_0an8_opus_phoq_blind seed 17000018: balance $433.8559, opus by balance $3.4422 of $40, panel $4.7367 of $100, largest campaign $0.2528
+gen_0an8_opus_phoq_blind seed 17000018: written
+before gen_0an8_opus_phoq_blind seed 17000019: balance $433.8559, opus by balance $3.4422 of $40, panel $4.7367 of $100, largest campaign $0.2528
+gen_0an8_opus_phoq_blind seed 17000019: written
+before gen_0an8_opus_phoq_blind seed 17000020: balance $433.4638, opus by balance $3.8343 of $40, panel $5.1288 of $100, largest campaign $0.2835
+gen_0an8_opus_phoq_blind seed 17000020: written
+before gen_0an8_opus_phoq_blind seed 17000021: balance $433.1582, opus by balance $4.1399 of $40, panel $5.4343 of $100, largest campaign $0.2835
+gen_0an8_opus_phoq_blind seed 17000021: written
+before gen_0an8_opus_phoq_blind seed 17000022: balance $432.9152, opus by balance $4.3829 of $40, panel $5.6774 of $100, largest campaign $0.2835
+gen_0an8_opus_phoq_blind seed 17000022: written
+before gen_0an8_opus_phoq_blind seed 17000023: balance $432.7244, opus by balance $4.5737 of $40, panel $5.8682 of $100, largest campaign $0.2835
+gen_0an8_opus_phoq_blind seed 17000023: written
+before gen_0an8_opus_phoq_blind seed 17000024: balance $432.5079, opus by balance $4.7902 of $40, panel $6.0846 of $100, largest campaign $0.2835
+gen_0an8_opus_phoq_blind seed 17000024: written
+before gen_0an8_opus_phoq_blind seed 17000025: balance $432.5079, opus by balance $4.7902 of $40, panel $6.0846 of $100, largest campaign $0.2835
+gen_0an8_opus_phoq_blind seed 17000025: written
+before gen_0an8_opus_phoq_blind seed 17000026: balance $432.2462, opus by balance $5.0519 of $40, panel $6.3464 of $100, largest campaign $0.2835
+gen_0an8_opus_phoq_blind seed 17000026: written
+before gen_0an8_opus_phoq_blind seed 17000027: balance $431.9536, opus by balance $5.3445 of $40, panel $6.6389 of $100, largest campaign $0.2835
+gen_0an8_opus_phoq_blind seed 17000027: written
+before gen_0an8_opus_phoq_blind seed 17000028: balance $431.6912, opus by balance $5.6068 of $40, panel $6.9013 of $100, largest campaign $0.2835
+gen_0an8_opus_phoq_blind seed 17000028: written
+before gen_0an8_opus_phoq_blind seed 17000029: balance $431.4151, opus by balance $5.8830 of $40, panel $7.1775 of $100, largest campaign $0.2835
+gen_0an8_opus_phoq_blind seed 17000029: written
+balance end opus: $431.4151
+balance start flash: $431.4151
+== flash (google/gemini-2.5-flash): ceiling $15
+before gen_0an8_flash_phoq_blind seed 17000000: balance $431.1272, flash by balance $0.2879 of $15, panel $7.4654 of $100, largest campaign $0.0063
+gen_0an8_flash_phoq_blind seed 17000000: written
+before gen_0an8_flash_phoq_blind seed 17000001: balance $431.1272, flash by balance $0.2879 of $15, panel $7.4654 of $100, largest campaign $0.0067
+gen_0an8_flash_phoq_blind seed 17000001: written
+before gen_0an8_flash_phoq_blind seed 17000002: balance $431.1272, flash by balance $0.2879 of $15, panel $7.4654 of $100, largest campaign $0.0067
+gen_0an8_flash_phoq_blind seed 17000002: written
+before gen_0an8_flash_phoq_blind seed 17000003: balance $431.1114, flash by balance $0.3036 of $15, panel $7.4811 of $100, largest campaign $0.0067
+gen_0an8_flash_phoq_blind seed 17000003: written
+before gen_0an8_flash_phoq_blind seed 17000004: balance $431.1114, flash by balance $0.3036 of $15, panel $7.4811 of $100, largest campaign $0.0067
+gen_0an8_flash_phoq_blind seed 17000004: written
+before gen_0an8_flash_phoq_blind seed 17000005: balance $431.1099, flash by balance $0.3052 of $15, panel $7.4827 of $100, largest campaign $0.0067
+gen_0an8_flash_phoq_blind seed 17000005: written
+before gen_0an8_flash_phoq_blind seed 17000006: balance $431.0898, flash by balance $0.3253 of $15, panel $7.5027 of $100, largest campaign $0.0067
+gen_0an8_flash_phoq_blind seed 17000006: written
+before gen_0an8_flash_phoq_blind seed 17000007: balance $431.0898, flash by balance $0.3253 of $15, panel $7.5027 of $100, largest campaign $0.0067
+gen_0an8_flash_phoq_blind seed 17000007: written
+before gen_0an8_flash_phoq_blind seed 17000008: balance $431.0898, flash by balance $0.3253 of $15, panel $7.5027 of $100, largest campaign $0.0068
+gen_0an8_flash_phoq_blind seed 17000008: written
+before gen_0an8_flash_phoq_blind seed 17000009: balance $431.0898, flash by balance $0.3253 of $15, panel $7.5027 of $100, largest campaign $0.0068
+gen_0an8_flash_phoq_blind seed 17000009: written
+before gen_0an8_flash_phoq_blind seed 17000010: balance $431.0667, flash by balance $0.3484 of $15, panel $7.5259 of $100, largest campaign $0.0070
+gen_0an8_flash_phoq_blind seed 17000010: written
+before gen_0an8_flash_phoq_blind seed 17000011: balance $431.0647, flash by balance $0.3504 of $15, panel $7.5279 of $100, largest campaign $0.0070
+gen_0an8_flash_phoq_blind seed 17000011: written
+before gen_0an8_flash_phoq_blind seed 17000012: balance $431.0440, flash by balance $0.3711 of $15, panel $7.5485 of $100, largest campaign $0.0070
+gen_0an8_flash_phoq_blind seed 17000012: written
+before gen_0an8_flash_phoq_blind seed 17000013: balance $431.0440, flash by balance $0.3711 of $15, panel $7.5485 of $100, largest campaign $0.0070
+gen_0an8_flash_phoq_blind seed 17000013: written
+before gen_0an8_flash_phoq_blind seed 17000014: balance $431.0440, flash by balance $0.3711 of $15, panel $7.5485 of $100, largest campaign $0.0070
+gen_0an8_flash_phoq_blind seed 17000014: written
+before gen_0an8_flash_phoq_blind seed 17000015: balance $431.0219, flash by balance $0.3932 of $15, panel $7.5707 of $100, largest campaign $0.0070
+gen_0an8_flash_phoq_blind seed 17000015: written
+before gen_0an8_flash_phoq_blind seed 17000016: balance $431.0219, flash by balance $0.3932 of $15, panel $7.5707 of $100, largest campaign $0.0070
+gen_0an8_flash_phoq_blind seed 17000016: written
+before gen_0an8_flash_phoq_blind seed 17000017: balance $431.0201, flash by balance $0.3950 of $15, panel $7.5725 of $100, largest campaign $0.0077
+gen_0an8_flash_phoq_blind seed 17000017: written
+before gen_0an8_flash_phoq_blind seed 17000018: balance $431.0010, flash by balance $0.4141 of $15, panel $7.5916 of $100, largest campaign $0.0077
+gen_0an8_flash_phoq_blind seed 17000018: written
+before gen_0an8_flash_phoq_blind seed 17000019: balance $430.9961, flash by balance $0.4190 of $15, panel $7.5965 of $100, largest campaign $0.0077
+gen_0an8_flash_phoq_blind seed 17000019: written
+before gen_0an8_flash_phoq_blind seed 17000020: balance $430.9790, flash by balance $0.4360 of $15, panel $7.6135 of $100, largest campaign $0.0077
+gen_0an8_flash_phoq_blind seed 17000020: written
+before gen_0an8_flash_phoq_blind seed 17000021: balance $430.9790, flash by balance $0.4360 of $15, panel $7.6135 of $100, largest campaign $0.0077
+gen_0an8_flash_phoq_blind seed 17000021: written
+before gen_0an8_flash_phoq_blind seed 17000022: balance $430.9790, flash by balance $0.4360 of $15, panel $7.6135 of $100, largest campaign $0.0077
+gen_0an8_flash_phoq_blind seed 17000022: written
+before gen_0an8_flash_phoq_blind seed 17000023: balance $430.9790, flash by balance $0.4360 of $15, panel $7.6135 of $100, largest campaign $0.0077
+gen_0an8_flash_phoq_blind seed 17000023: written
+before gen_0an8_flash_phoq_blind seed 17000024: balance $430.9588, flash by balance $0.4563 of $15, panel $7.6338 of $100, largest campaign $0.0077
+gen_0an8_flash_phoq_blind seed 17000024: written
+before gen_0an8_flash_phoq_blind seed 17000025: balance $430.9588, flash by balance $0.4563 of $15, panel $7.6338 of $100, largest campaign $0.0077
+gen_0an8_flash_phoq_blind seed 17000025: written
+before gen_0an8_flash_phoq_blind seed 17000026: balance $430.9588, flash by balance $0.4563 of $15, panel $7.6338 of $100, largest campaign $0.0077
+gen_0an8_flash_phoq_blind seed 17000026: written
+before gen_0an8_flash_phoq_blind seed 17000027: balance $430.9588, flash by balance $0.4563 of $15, panel $7.6338 of $100, largest campaign $0.0077
+gen_0an8_flash_phoq_blind seed 17000027: written
+before gen_0an8_flash_phoq_blind seed 17000028: balance $430.9355, flash by balance $0.4796 of $15, panel $7.6571 of $100, largest campaign $0.0077
+gen_0an8_flash_phoq_blind seed 17000028: written
+before gen_0an8_flash_phoq_blind seed 17000029: balance $430.9355, flash by balance $0.4796 of $15, panel $7.6571 of $100, largest campaign $0.0077
+gen_0an8_flash_phoq_blind seed 17000029: written
+balance end flash: $430.9065
+balance start deepseek: $430.9046
+== deepseek (deepseek/deepseek-chat-v3.1): ceiling $15
+before gen_0an8_deepseek_phoq_blind seed 17000000: balance $430.9046, deepseek by balance $0.0000 of $15, panel $7.6880 of $100, largest campaign $0.0034
+gen_0an8_deepseek_phoq_blind seed 17000000: written
+before gen_0an8_deepseek_phoq_blind seed 17000001: balance $430.9046, deepseek by balance $0.0000 of $15, panel $7.6880 of $100, largest campaign $0.0037
+gen_0an8_deepseek_phoq_blind seed 17000001: written
+before gen_0an8_deepseek_phoq_blind seed 17000002: balance $430.8884, deepseek by balance $0.0162 of $15, panel $7.7042 of $100, largest campaign $0.0068
+gen_0an8_deepseek_phoq_blind seed 17000002: written
+before gen_0an8_deepseek_phoq_blind seed 17000003: balance $430.8884, deepseek by balance $0.0162 of $15, panel $7.7042 of $100, largest campaign $0.0068
+gen_0an8_deepseek_phoq_blind seed 17000003: written
+before gen_0an8_deepseek_phoq_blind seed 17000004: balance $430.8828, deepseek by balance $0.0218 of $15, panel $7.7097 of $100, largest campaign $0.0068
+gen_0an8_deepseek_phoq_blind seed 17000004: written
+before gen_0an8_deepseek_phoq_blind seed 17000005: balance $430.8784, deepseek by balance $0.0262 of $15, panel $7.7141 of $100, largest campaign $0.0068
+gen_0an8_deepseek_phoq_blind seed 17000005: written
+before gen_0an8_deepseek_phoq_blind seed 17000006: balance $430.8784, deepseek by balance $0.0262 of $15, panel $7.7141 of $100, largest campaign $0.0068
+gen_0an8_deepseek_phoq_blind seed 17000006: written
+before gen_0an8_deepseek_phoq_blind seed 17000007: balance $430.8728, deepseek by balance $0.0318 of $15, panel $7.7198 of $100, largest campaign $0.0068
+gen_0an8_deepseek_phoq_blind seed 17000007: written
+before gen_0an8_deepseek_phoq_blind seed 17000008: balance $430.8677, deepseek by balance $0.0369 of $15, panel $7.7248 of $100, largest campaign $0.0068
+gen_0an8_deepseek_phoq_blind seed 17000008: written
+before gen_0an8_deepseek_phoq_blind seed 17000009: balance $430.8677, deepseek by balance $0.0369 of $15, panel $7.7248 of $100, largest campaign $0.0068
+gen_0an8_deepseek_phoq_blind seed 17000009: written
+before gen_0an8_deepseek_phoq_blind seed 17000010: balance $430.8627, deepseek by balance $0.0419 of $15, panel $7.7298 of $100, largest campaign $0.0068
+gen_0an8_deepseek_phoq_blind seed 17000010: written
+before gen_0an8_deepseek_phoq_blind seed 17000011: balance $430.8627, deepseek by balance $0.0419 of $15, panel $7.7298 of $100, largest campaign $0.0068
+gen_0an8_deepseek_phoq_blind seed 17000011: written
+before gen_0an8_deepseek_phoq_blind seed 17000012: balance $430.8548, deepseek by balance $0.0498 of $15, panel $7.7378 of $100, largest campaign $0.0068
+gen_0an8_deepseek_phoq_blind seed 17000012: written
+before gen_0an8_deepseek_phoq_blind seed 17000013: balance $430.8476, deepseek by balance $0.0570 of $15, panel $7.7450 of $100, largest campaign $0.0068
+gen_0an8_deepseek_phoq_blind seed 17000013: written
+before gen_0an8_deepseek_phoq_blind seed 17000014: balance $430.8476, deepseek by balance $0.0570 of $15, panel $7.7450 of $100, largest campaign $0.0069
+gen_0an8_deepseek_phoq_blind seed 17000014: written
+before gen_0an8_deepseek_phoq_blind seed 17000015: balance $430.8362, deepseek by balance $0.0684 of $15, panel $7.7564 of $100, largest campaign $0.0069
+gen_0an8_deepseek_phoq_blind seed 17000015: written
+before gen_0an8_deepseek_phoq_blind seed 17000016: balance $430.8362, deepseek by balance $0.0684 of $15, panel $7.7564 of $100, largest campaign $0.0069
+gen_0an8_deepseek_phoq_blind seed 17000016: written
+before gen_0an8_deepseek_phoq_blind seed 17000017: balance $430.8362, deepseek by balance $0.0684 of $15, panel $7.7564 of $100, largest campaign $0.0069
+gen_0an8_deepseek_phoq_blind seed 17000017: written
+before gen_0an8_deepseek_phoq_blind seed 17000018: balance $430.8280, deepseek by balance $0.0766 of $15, panel $7.7646 of $100, largest campaign $0.0078
+gen_0an8_deepseek_phoq_blind seed 17000018: written
+before gen_0an8_deepseek_phoq_blind seed 17000019: balance $430.8280, deepseek by balance $0.0766 of $15, panel $7.7646 of $100, largest campaign $0.0078
+gen_0an8_deepseek_phoq_blind seed 17000019: written
+before gen_0an8_deepseek_phoq_blind seed 17000020: balance $430.8167, deepseek by balance $0.0879 of $15, panel $7.7759 of $100, largest campaign $0.0078
+gen_0an8_deepseek_phoq_blind seed 17000020: written
+before gen_0an8_deepseek_phoq_blind seed 17000021: balance $430.8167, deepseek by balance $0.0879 of $15, panel $7.7759 of $100, largest campaign $0.0078
+gen_0an8_deepseek_phoq_blind seed 17000021: written
+before gen_0an8_deepseek_phoq_blind seed 17000022: balance $430.8075, deepseek by balance $0.0971 of $15, panel $7.7851 of $100, largest campaign $0.0078
+gen_0an8_deepseek_phoq_blind seed 17000022: written
+before gen_0an8_deepseek_phoq_blind seed 17000023: balance $430.8075, deepseek by balance $0.0971 of $15, panel $7.7851 of $100, largest campaign $0.0078
+gen_0an8_deepseek_phoq_blind seed 17000023: written
+before gen_0an8_deepseek_phoq_blind seed 17000024: balance $430.8075, deepseek by balance $0.0971 of $15, panel $7.7851 of $100, largest campaign $0.0078
+gen_0an8_deepseek_phoq_blind seed 17000024: written
+before gen_0an8_deepseek_phoq_blind seed 17000025: balance $430.7994, deepseek by balance $0.1052 of $15, panel $7.7931 of $100, largest campaign $0.0088
+gen_0an8_deepseek_phoq_blind seed 17000025: written
+before gen_0an8_deepseek_phoq_blind seed 17000026: balance $430.7994, deepseek by balance $0.1052 of $15, panel $7.7931 of $100, largest campaign $0.0088
+gen_0an8_deepseek_phoq_blind seed 17000026: written
+before gen_0an8_deepseek_phoq_blind seed 17000027: balance $430.7870, deepseek by balance $0.1176 of $15, panel $7.8056 of $100, largest campaign $0.0088
+gen_0an8_deepseek_phoq_blind seed 17000027: written
+before gen_0an8_deepseek_phoq_blind seed 17000028: balance $430.7870, deepseek by balance $0.1176 of $15, panel $7.8056 of $100, largest campaign $0.0088
+gen_0an8_deepseek_phoq_blind seed 17000028: written
+before gen_0an8_deepseek_phoq_blind seed 17000029: balance $430.7795, deepseek by balance $0.1251 of $15, panel $7.8131 of $100, largest campaign $0.0088
+gen_0an8_deepseek_phoq_blind seed 17000029: written
+balance end deepseek: $430.7795
+balance start sol: $430.7795
+== sol (openai/gpt-6.1-sol): ceiling $15
+before gen_0an8_sol_phoq_blind seed 17000000: balance $430.7795, sol by balance $0.0000 of $15, panel $7.8131 of $100, largest campaign $0.3288
+gen_0an8_sol_phoq_blind seed 17000000: written
+before gen_0an8_sol_phoq_blind seed 17000001: balance $430.7110, sol by balance $0.0684 of $15, panel $7.8816 of $100, largest campaign $0.3288
+gen_0an8_sol_phoq_blind seed 17000001: written
+before gen_0an8_sol_phoq_blind seed 17000002: balance $430.6241, sol by balance $0.1554 of $15, panel $7.9685 of $100, largest campaign $0.3288
+gen_0an8_sol_phoq_blind seed 17000002: written
+before gen_0an8_sol_phoq_blind seed 17000003: balance $430.3832, sol by balance $0.3962 of $15, panel $8.2093 of $100, largest campaign $0.3288
+gen_0an8_sol_phoq_blind seed 17000003: written
+before gen_0an8_sol_phoq_blind seed 17000004: balance $429.9793, sol by balance $0.8002 of $15, panel $8.6133 of $100, largest campaign $0.3417
+gen_0an8_sol_phoq_blind seed 17000004: written
+before gen_0an8_sol_phoq_blind seed 17000005: balance $429.8181, sol by balance $0.9613 of $15, panel $8.7744 of $100, largest campaign $0.3417
+gen_0an8_sol_phoq_blind seed 17000005: written
+before gen_0an8_sol_phoq_blind seed 17000006: balance $429.6613, sol by balance $1.1182 of $15, panel $8.9313 of $100, largest campaign $0.3417
+gen_0an8_sol_phoq_blind seed 17000006: written
+before gen_0an8_sol_phoq_blind seed 17000007: balance $429.3597, sol by balance $1.4198 of $15, panel $9.2329 of $100, largest campaign $0.3417
+gen_0an8_sol_phoq_blind seed 17000007: written
+before gen_0an8_sol_phoq_blind seed 17000008: balance $429.2502, sol by balance $1.5293 of $15, panel $9.3424 of $100, largest campaign $0.3417
+gen_0an8_sol_phoq_blind seed 17000008: written
+before gen_0an8_sol_phoq_blind seed 17000009: balance $429.1386, sol by balance $1.6408 of $15, panel $9.4539 of $100, largest campaign $0.3417
+gen_0an8_sol_phoq_blind seed 17000009: written
+before gen_0an8_sol_phoq_blind seed 17000010: balance $428.8450, sol by balance $1.9345 of $15, panel $9.7476 of $100, largest campaign $0.3417
+gen_0an8_sol_phoq_blind seed 17000010: written
+before gen_0an8_sol_phoq_blind seed 17000011: balance $428.6093, sol by balance $2.1702 of $15, panel $9.9833 of $100, largest campaign $0.3417
+gen_0an8_sol_phoq_blind seed 17000011: written
+before gen_0an8_sol_phoq_blind seed 17000012: balance $428.4181, sol by balance $2.3614 of $15, panel $10.1745 of $100, largest campaign $0.3417
+gen_0an8_sol_phoq_blind seed 17000012: written
+before gen_0an8_sol_phoq_blind seed 17000013: balance $428.3017, sol by balance $2.4778 of $15, panel $10.2909 of $100, largest campaign $0.3417
+gen_0an8_sol_phoq_blind seed 17000013: written
+before gen_0an8_sol_phoq_blind seed 17000014: balance $428.1675, sol by balance $2.6120 of $15, panel $10.4251 of $100, largest campaign $0.3417
+gen_0an8_sol_phoq_blind seed 17000014: written
+before gen_0an8_sol_phoq_blind seed 17000015: balance $427.9527, sol by balance $2.8268 of $15, panel $10.6399 of $100, largest campaign $0.3417
+gen_0an8_sol_phoq_blind seed 17000015: abandoned
+before gen_0an8_sol_phoq_blind seed 17000016: balance $427.9527, sol by balance $2.8268 of $15, panel $10.6399 of $100, largest campaign $0.3417
+gen_0an8_sol_phoq_blind seed 17000016: abandoned
+ARM STOPPED, sol: 2 first-pass campaigns abandoned, above the limit of 1: [17000015, 17000016]
+balance end sol: $427.8298
+balance start gem: $427.7705
+== gem (google/gemini-3.1-pro-preview): ceiling $30
+before gen_0an8_gem_phoq_blind seed 17000000: balance $427.7705, gem by balance $0.0000 of $30, panel $10.8220 of $100, largest campaign $0.1927
+gen_0an8_gem_phoq_blind seed 17000000: written
+before gen_0an8_gem_phoq_blind seed 17000001: balance $427.5207, gem by balance $0.2498 of $30, panel $11.0718 of $100, largest campaign $0.3256
+gen_0an8_gem_phoq_blind seed 17000001: written
+before gen_0an8_gem_phoq_blind seed 17000002: balance $427.3649, gem by balance $0.4057 of $30, panel $11.2277 of $100, largest campaign $0.3256
+gen_0an8_gem_phoq_blind seed 17000002: written
+before gen_0an8_gem_phoq_blind seed 17000003: balance $427.2241, gem by balance $0.5464 of $30, panel $11.3685 of $100, largest campaign $0.3256
+gen_0an8_gem_phoq_blind seed 17000003: written
+before gen_0an8_gem_phoq_blind seed 17000004: balance $427.0567, gem by balance $0.7139 of $30, panel $11.5359 of $100, largest campaign $0.3256
+gen_0an8_gem_phoq_blind seed 17000004: written
+before gen_0an8_gem_phoq_blind seed 17000005: balance $426.9097, gem by balance $0.8609 of $30, panel $11.6829 of $100, largest campaign $0.3256
+gen_0an8_gem_phoq_blind seed 17000005: written
+before gen_0an8_gem_phoq_blind seed 17000006: balance $426.7090, gem by balance $1.0615 of $30, panel $11.8835 of $100, largest campaign $0.3256
+gen_0an8_gem_phoq_blind seed 17000006: written
+before gen_0an8_gem_phoq_blind seed 17000007: balance $426.5436, gem by balance $1.2270 of $30, panel $12.0490 of $100, largest campaign $0.3256
+gen_0an8_gem_phoq_blind seed 17000007: written
+before gen_0an8_gem_phoq_blind seed 17000008: balance $426.2615, gem by balance $1.5091 of $30, panel $12.3311 of $100, largest campaign $0.3256
+gen_0an8_gem_phoq_blind seed 17000008: written
+before gen_0an8_gem_phoq_blind seed 17000009: balance $426.2615, gem by balance $1.5091 of $30, panel $12.3311 of $100, largest campaign $0.3256
+gen_0an8_gem_phoq_blind seed 17000009: written
+before gen_0an8_gem_phoq_blind seed 17000010: balance $426.0639, gem by balance $1.7066 of $30, panel $12.5287 of $100, largest campaign $0.3256
+gen_0an8_gem_phoq_blind seed 17000010: written
+before gen_0an8_gem_phoq_blind seed 17000011: balance $425.8753, gem by balance $1.8952 of $30, panel $12.7172 of $100, largest campaign $0.3256
+gen_0an8_gem_phoq_blind seed 17000011: written
+before gen_0an8_gem_phoq_blind seed 17000012: balance $425.6908, gem by balance $2.0797 of $30, panel $12.9017 of $100, largest campaign $0.3256
+gen_0an8_gem_phoq_blind seed 17000012: written
+before gen_0an8_gem_phoq_blind seed 17000013: balance $425.4545, gem by balance $2.3160 of $30, panel $13.1381 of $100, largest campaign $0.3256
+gen_0an8_gem_phoq_blind seed 17000013: written
+before gen_0an8_gem_phoq_blind seed 17000014: balance $425.2754, gem by balance $2.4952 of $30, panel $13.3172 of $100, largest campaign $0.3256
+gen_0an8_gem_phoq_blind seed 17000014: written
+before gen_0an8_gem_phoq_blind seed 17000015: balance $424.9465, gem by balance $2.8240 of $30, panel $13.6461 of $100, largest campaign $0.3256
+gen_0an8_gem_phoq_blind seed 17000015: written
+before gen_0an8_gem_phoq_blind seed 17000016: balance $424.7828, gem by balance $2.9877 of $30, panel $13.8098 of $100, largest campaign $0.3256
+gen_0an8_gem_phoq_blind seed 17000016: written
+before gen_0an8_gem_phoq_blind seed 17000017: balance $424.7828, gem by balance $2.9877 of $30, panel $13.8098 of $100, largest campaign $0.3256
+gen_0an8_gem_phoq_blind seed 17000017: written
+before gen_0an8_gem_phoq_blind seed 17000018: balance $424.4241, gem by balance $3.3464 of $30, panel $14.1684 of $100, largest campaign $0.3256
+gen_0an8_gem_phoq_blind seed 17000018: written
+before gen_0an8_gem_phoq_blind seed 17000019: balance $424.4241, gem by balance $3.3464 of $30, panel $14.1684 of $100, largest campaign $0.3256
+gen_0an8_gem_phoq_blind seed 17000019: written
+before gen_0an8_gem_phoq_blind seed 17000020: balance $424.0869, gem by balance $3.6836 of $30, panel $14.5056 of $100, largest campaign $0.6330
+gen_0an8_gem_phoq_blind seed 17000020: written
+before gen_0an8_gem_phoq_blind seed 17000021: balance $423.5810, gem by balance $4.1895 of $30, panel $15.0115 of $100, largest campaign $0.6330
+gen_0an8_gem_phoq_blind seed 17000021: written
+before gen_0an8_gem_phoq_blind seed 17000022: balance $423.3697, gem by balance $4.4008 of $30, panel $15.2229 of $100, largest campaign $0.6330
+gen_0an8_gem_phoq_blind seed 17000022: written
+before gen_0an8_gem_phoq_blind seed 17000023: balance $423.1981, gem by balance $4.5724 of $30, panel $15.3944 of $100, largest campaign $0.6330
+gen_0an8_gem_phoq_blind seed 17000023: written
+before gen_0an8_gem_phoq_blind seed 17000024: balance $423.0462, gem by balance $4.7243 of $30, panel $15.5464 of $100, largest campaign $0.6330
+gen_0an8_gem_phoq_blind seed 17000024: written
+before gen_0an8_gem_phoq_blind seed 17000025: balance $422.7522, gem by balance $5.0183 of $30, panel $15.8404 of $100, largest campaign $0.6330
+gen_0an8_gem_phoq_blind seed 17000025: written
+before gen_0an8_gem_phoq_blind seed 17000026: balance $422.6106, gem by balance $5.1600 of $30, panel $15.9820 of $100, largest campaign $0.6330
+gen_0an8_gem_phoq_blind seed 17000026: written
+before gen_0an8_gem_phoq_blind seed 17000027: balance $422.3192, gem by balance $5.4513 of $30, panel $16.2734 of $100, largest campaign $0.6330
+gen_0an8_gem_phoq_blind seed 17000027: written
+before gen_0an8_gem_phoq_blind seed 17000028: balance $422.1951, gem by balance $5.5754 of $30, panel $16.3974 of $100, largest campaign $0.6330
+gen_0an8_gem_phoq_blind seed 17000028: written
+before gen_0an8_gem_phoq_blind seed 17000029: balance $422.0776, gem by balance $5.6929 of $30, panel $16.5150 of $100, largest campaign $0.6330
+gen_0an8_gem_phoq_blind seed 17000029: written
+balance end gem: $421.8381
+balance end of main run: $421.8381
+main run done: {"stopped": {"sol": "2 first-pass campaigns abandoned, above the limit of 1: [17000015, 17000016]"}, "dropped": {}}

@@ -1,0 +1,15 @@
+{
+ "total": 360,
+ "with_calls": 224,
+ "per_cell": {
+  "BioRole|anthropic/claude-opus-4.7": 25,
+  "BioRole|deepseek/deepseek-chat-v3.1": 27,
+  "BioRole|google/gemini-2.5-flash": 27,
+  "BioRoleNoisy|anthropic/claude-opus-4.7": 23,
+  "BioRoleNoisy|deepseek/deepseek-chat-v3.1": 25,
+  "BioRoleNoisy|google/gemini-2.5-flash": 25,
+  "BioRoleExact|anthropic/claude-opus-4.7": 27,
+  "BioRoleExact|deepseek/deepseek-chat-v3.1": 23,
+  "BioRoleExact|google/gemini-2.5-flash": 22
+ }
+}

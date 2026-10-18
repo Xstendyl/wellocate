@@ -1,0 +1,9 @@
+BASELINE (must be clean before any verdict means anything)
+  green=True  OK
+  reports the Welch SE while calling itself paired     CAUGHT
+  pairs by row order, the predecessor's bug            CAUGHT
+  stops reporting dropped seeds                        CAUGHT
+  lets a degenerate cell through to Holm               CAUGHT
+  uses the unpaired difference as the point estimate   CAUGHT
+
+CAUGHT 5/5

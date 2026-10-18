@@ -1,0 +1,46 @@
+{
+ "counts": {
+  "claude-opus-4.7": {
+   "push": 9
+  },
+  "deepseek-chat-v3.1": {
+   "echo": 10,
+   "push": 304
+  },
+  "gemini-2.5-flash": {
+   "push": 850,
+   "echo": 143
+  }
+ },
+ "examples": {
+  "claude-opus-4.7|push": "GDKL | best observed near-top variant, explore adjacent viable neighbor",
+  "deepseek-chat-v3.1|echo": "GDIC | Already has high readings (7.841 and 8.087) and is at the order limit, but since it cannot be ordered again, choose a similar high-performing variant like GDIJ (7.905) but it is also at limit. Instead, try a mutation of GDIC, such as GDIS, which hasn't been tested and might be viable.",
+  "deepseek-chat-v3.1|push": "GDHM | testing variation from GDIM with H at position 3",
+  "gemini-2.5-flash|push": "GDIC | Re-ordering GDIC to confirm high score and viability.",
+  "gemini-2.5-flash|echo": "GDIC | GDIC has been ordered the maximum number of times. Please choose a different candidate."
+ },
+ "disagreements": [
+  {
+   "model": "deepseek-chat-v3.1",
+   "seed": 15000001,
+   "round": 9,
+   "n_slots": 1,
+   "primary": [
+    "GDIC"
+   ],
+   "secondary": [],
+   "reply": "GDIC | Already at order limit, cannot be chosen again.  \n\nGiven the constraints, I need to pick a viable candidate not in the rejected list or at the limit.  \n\nFrom history, GDIM scored well (8.408, 8.424) and is not in the current rejected list, but it is in the \"at the limit\" list.  \nGDIF, GDIJ, GDJF, etc., are also at the limit.  \n\nWe need a new candidate that might be viable.  \nTrying a small variation from high-scoring ones: GDIM was good, maybe GDLM or GDNM? But we don't know viability.  \n\nFrom earlier, GDIS scored 8.774 but is at limit.  \nGDIR scored ~7.9 but at limit.  \n\nLet's try **GDIY** \u2014 not tested yet, and close to GDIF/GDIS pattern but with Y.  \n\nGDIY | New variation near high scorers, not yet tested."
+  },
+  {
+   "model": "deepseek-chat-v3.1",
+   "seed": 15000000,
+   "round": 15,
+   "n_slots": 1,
+   "primary": [
+    "GDIO"
+   ],
+   "secondary": [],
+   "reply": "Looking at the history, the best score so far is **GDIM** with **8.544**, but it has already been ordered the maximum number of times.  \nThe next best viable candidate that hasn\u2019t been ordered twice yet is **GDIL** (7.699), but it\u2019s also at the limit.  \n\nWe need to try something new that might be viable and high-scoring.  \nGiven the pattern that **GDIx** with certain letters works, and **GDIM** was best, maybe **GDIO** or **GDIU** could be viable and promising.  \nBut **GDIO** was rejected in round 12, so it\u2019s likely not viable.  \n\nFrom the list of viable ones we\u2019ve seen:  \n- GDIC (7.897) \u2014 maxed out  \n- GDIJ (7.729) \u2014 maxed out  \n- GDIL (7.699) \u2014 maxed out  \n- GDIS (7.732) \u2014 maxed out  \n\nWe haven\u2019t tried **GDIX** or **GDIZ** or **GDIY** yet.  \nSince **M** was best, letters near M might be good: **N** is rejected, **O** rejected, **L** maxed, so maybe **P**? But **P** was rejected many times.  \n\nActually, **GDIP** was rejected in multiple rounds (rounds 4, 5, 6, 7, 8, 9, 10, 12, 13, 14), so not viable.  \n\nWe haven\u2019t seen **GDIU**, **GDIV**, **GDIW**, **GDIY** tested \u2014 maybe one is viable.  \nLet\u2019s try **GDIY** as a new candidate near the high end of the alphabet, possibly similar to M in score potential.  \n\n**GDIY** has not appeared in history at all, so it\u2019s worth a shot.  \n\nGDIO | not viable (rejected before)  \nGDIA\u2013GDIU range: A\u2013T mostly rejected or tried, U not tried.  \n\nBetter: **GDIU** (untested, possibly viable).  \n\nBut since M (high score) is between L and N, maybe letters after T are too far.  \nLet\u2019s check: GDIR worked (7.444), GDIS worked (7.732), GDIT worked (6.687).  \nSo maybe GDIU could be viable and high-scoring.  \n\nI\u2019ll choose **GDIU** as a new candidate.  \n\nGDIU | untested, near high-scoring region"
+  }
+ ]
+}

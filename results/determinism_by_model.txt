@@ -1,0 +1,54 @@
+====================================================================================================
+ROUND-1 DETERMINISM, tag=stage0. One prompt per cell, sent n times.
+====================================================================================================
+  model                  rung              n  re-asks  distinct     modal identical?
+  claude-opus-4.7        aggregated       40        0        30         4 no
+  claude-opus-4.7        blind            40        0        16        13 no
+  claude-opus-4.7        decision_rule    40        0        27         4 no
+  claude-opus-4.7        informed         40        0        29         4 no
+  claude-opus-4.7        instructed       40        0        34         4 no
+  deepseek-chat-v3.1     aggregated       40        0        28         4 no
+  deepseek-chat-v3.1     blind            40        0        24         4 no
+  deepseek-chat-v3.1     decision_rule    40        0        24        10 no
+  deepseek-chat-v3.1     informed         40        0        33         3 no
+  deepseek-chat-v3.1     instructed       40        0        34         2 no
+  gemini-2.5-flash       aggregated       40        0         3        37 no
+  gemini-2.5-flash       blind            40        0         1        40 yes
+  gemini-2.5-flash       decision_rule    40        0         5        32 no
+  gemini-2.5-flash       informed         40        0         3        36 no
+  gemini-2.5-flash       instructed       40        0         4        36 no
+
+  PER MODEL, over its rungs:
+    claude-opus-4.7        distinct replies per cell 16-27-29-30-34   modal reply covers 29 of 200 calls (14%)
+    deepseek-chat-v3.1     distinct replies per cell 24-28-33-34   modal reply covers 23 of 200 calls (12%)
+    gemini-2.5-flash       distinct replies per cell 1-3-4-5   modal reply covers 181 of 200 calls (90%)
+
+  wrote results/determinism_by_model_stage0.json
+
+====================================================================================================
+ROUND-1 DETERMINISM, tag=stage1. One prompt per cell, sent n times.
+====================================================================================================
+  model                  rung              n  re-asks  distinct     modal identical?
+  claude-opus-4.7        aggregated       40        0        20         9 no
+  claude-opus-4.7        blind            40        0        18         8 no
+  claude-opus-4.7        decision_rule    40        0        20         6 no
+  claude-opus-4.7        informed         40        0        16        15 no
+  claude-opus-4.7        instructed       40        0        23         7 no
+  deepseek-chat-v3.1     aggregated       39        1        22         7 no
+  deepseek-chat-v3.1     blind            40        0        29         5 no
+  deepseek-chat-v3.1     decision_rule    40        0        25         9 no
+  deepseek-chat-v3.1     informed         40        0        21         7 no
+  deepseek-chat-v3.1     instructed       40        0        25         7 no
+  gemini-2.5-flash       aggregated       40        0         2        39 no
+  gemini-2.5-flash       blind            40        0         4        37 no
+  gemini-2.5-flash       decision_rule    40        0         2        39 no
+  gemini-2.5-flash       informed         40        0         1        40 yes
+  gemini-2.5-flash       instructed       40        0         3        38 no
+
+  PER MODEL, over its rungs:
+    claude-opus-4.7        distinct replies per cell 16-18-20-23   modal reply covers 45 of 200 calls (22%)
+    deepseek-chat-v3.1     distinct replies per cell 21-22-25-29   modal reply covers 35 of 199 calls (18%)
+    gemini-2.5-flash       distinct replies per cell 1-2-3-4   modal reply covers 193 of 200 calls (96%)
+
+  wrote results/determinism_by_model_stage1.json
+

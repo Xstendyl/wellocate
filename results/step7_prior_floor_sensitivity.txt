@@ -1,0 +1,36 @@
+================================================================================================
+1. HOW OFTEN THE VARIANCE FLOOR BINDS   NK uniform, grid noise model, n=400
+================================================================================================
+  policy          rel_floor        binds mean variants mean prior var
+  random               0.01         1.0%         51.1        0.16339
+  random               0.10         3.8%         51.1        0.16397
+  random               0.50        34.8%         51.1        0.18127
+  greedy k=0           0.01         0.8%         51.2        0.21342
+  greedy k=0           0.10         1.0%         51.2        0.21365
+  greedy k=0           0.50        24.0%         51.2        0.22460
+  greedy k=1           0.01         5.8%         39.2        0.14899
+  greedy k=1           0.10         9.8%         39.2        0.15060
+  greedy k=1           0.50        41.2%         39.2        0.17380
+  greedy k=2           0.01        10.0%         27.2        0.14595
+  greedy k=2           0.10        16.0%         27.2        0.14845
+  greedy k=2           0.50        45.5%         27.2        0.17420
+  greedy k=3           0.01        17.5%         15.4        0.14419
+  greedy k=3           0.10        22.2%         15.4        0.14777
+  greedy k=3           0.50        42.2%         15.4        0.17302
+
+================================================================================================
+2. DOES THE MARGIN MOVE WITH THE FLOOR?   shrinkage minus max-single, paired, greedy k=1
+================================================================================================
+     rel_floor  margin (shrink - max)         SE        binds
+          0.01      +0.0374 +- 0.0123         3.0         5.0%
+          0.10      +0.0374 +- 0.0123         3.0         8.0%
+          0.50      +0.0374 +- 0.0123         3.0        42.0%
+
+  margin at 0.50 minus margin at 0.01 = +0.0000 +- 0.0174  (0.0 SE)
+  prior variance changed in 168 of 400 campaigns; NOMINATION changed in 0 of 400
+
+  The floor is INERT across a 50-fold range: the margin moves by less than 2 SE from
+  rel_floor 0.01 to 0.5. It is a guard against a degenerate campaign and not a dial
+  with scientific consequences, and the methods can say so with this number behind it.
+
+saved /Users/<name>/projects/repdef/results/step7_prior_floor_sensitivity.json

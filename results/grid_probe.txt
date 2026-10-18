@@ -1,0 +1,65 @@
+====================================================================================================
+COST PROBE  NK uniform K=1 seed=1 pct=93.0  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 1 conditions x 3 models x 5 campaigns = 15 campaigns
+  ceiling $600.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    frontier     anthropic/claude-opus-4.7        released 2026-02
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+    open-weight  deepseek/deepseek-chat-v3.1      released 2025-08
+prompt facts checked: reference GDIF is viable and reads 6.8730 (stated 6.8700), pool is 7.00% of the space, example ADIF (not viable, as on GB1)
+    frontier     anthropic/claude-opus-4.7        released 2026-02
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+    open-weight  deepseek/deepseek-chat-v3.1      released 2025-08
+canary: comparator live, differs from the mean rule on 24 of 60 scripted campaigns
+
+
+  --- Mechanism      frontier     anthropic/claude-opus-4.7 ---
+      seed 300000 ok 26 rep 25 ( 86%) | shortfall  0.0000 | nom=GDIL MEAN | $0.1376 cum $0.14 | 55s
+      seed 300001 ok 41 rep 40 ( 83%) | shortfall  0.0000 | nom=GDIM MEAN | $0.1460 cum $0.28 | 56s
+      seed 300002 ok 26 rep 26 ( 74%) | shortfall  0.4014 | nom=GDKF MAX | $0.2444 cum $0.53 | 88s
+      seed 300003 ok 32 rep 37 ( 90%) | shortfall  0.0000 | nom=GDIH MEAN | $0.1413 cum $0.67 | 55s
+      seed 300004 ok 38 rep 28 ( 72%) | shortfall  0.2869 | nom=FDIM MAX | $0.1877 cum $0.86 | 71s
+
+  --- Mechanism      mid-tier     google/gemini-2.5-flash ---
+      seed 300000 ok 45 rep 59 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0052 cum $0.86 | 18s
+      seed 300001 ok 49 rep 58 ( 97%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0058 cum $0.87 | 20s
+      seed 300002 ok 46 rep 59 ( 98%) | shortfall  0.0000 | nom=GDIF MEAN | $0.0053 cum $0.87 | 18s
+      seed 300003 ok 53 rep 58 ( 97%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0062 cum $0.88 | 23s
+      seed 300004 ok 52 rep 57 ( 97%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0059 cum $0.89 | 21s
+
+  --- Mechanism      open-weight  deepseek/deepseek-chat-v3.1 ---
+      seed 300000 ok 48 rep 53 ( 93%) | shortfall  0.0000 | nom=GDIM MAX | $0.0045 cum $0.89 | 116s
+      seed 300001 ok 45 rep 52 ( 95%) | shortfall  0.0000 | nom=GDIC MEAN | $0.0038 cum $0.89 | 132s
+      seed 300002 ok 45 rep 50 ( 94%) | shortfall  0.3146 | nom=GDIH OTHER | $0.0056 cum $0.90 | 161s
+      seed 300003 ok 45 rep 54 ( 93%) | shortfall  0.0000 | nom=GDIM MEAN | $0.0041 cum $0.90 | 154s
+      seed 300004 ok 49 rep 53 ( 93%) | shortfall  0.0116 | nom=GDIM OTHER | $0.0030 cum $0.91 | 115s
+
+====================================================================================================
+SUMMARY   probe
+====================================================================================================
+  condition      role           n |        shortfall |    replication | $/campaign
+  Mechanism      frontier       5 |  0.1377 +- 0.0862 |  81.2% +- 3.5  | $0.1714
+  Mechanism      mid-tier       5 |  0.0000 +- 0.0000 |  97.3% +- 0.4  | $0.0057
+  Mechanism      open-weight    5 |  0.0652 +- 0.0624 |  93.6% +- 0.3  | $0.0042
+
+  TOTAL SPEND $0.9063 over 336 calls, 15 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls     empty malformed     trunc  mean rsn    max rsn
+  anthropic/claude-opus-4.7         136        0%       62%        0%         0          0
+  google/gemini-2.5-flash            87        0%        1%        0%         0          0
+  deepseek/deepseek-chat-v3.1       113        0%       14%        0%         0          0
+
+  No empty and no truncated responses on any model at max_tokens=3000.
+
+  COST PROBE RESULT, which sets the final N:
+    anthropic/claude-opus-4.7      $0.1714 per campaign
+    google/gemini-2.5-flash        $0.0057 per campaign
+    deepseek/deepseek-chat-v3.1    $0.0042 per campaign
+    one campaign in all 3 models costs $0.1813, so 5 conditions cost $0.9063
+      N=383  -> $  347.12  FITS  detectable shortfall difference 0.0390
+      N=250  -> $  226.58  FITS  detectable shortfall difference 0.0482
+      N=150  -> $  135.95  FITS  detectable shortfall difference 0.0623
+      N=100  -> $   90.63  FITS  detectable shortfall difference 0.0763
+      N=60   -> $   54.38  FITS  detectable shortfall difference 0.0985
+      N=40   -> $   36.25  FITS  detectable shortfall difference 0.1206

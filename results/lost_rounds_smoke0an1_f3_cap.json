@@ -1,0 +1,313 @@
+{
+ "lost": [
+  {
+   "model": "claude-opus-4.7",
+   "seed": 15000000,
+   "round": 9,
+   "n_slots": 4,
+   "status": "ambiguous",
+   "attempts": 2,
+   "at_limit": [
+    "GAJF",
+    "GAJH",
+    "GAJN",
+    "GAKF",
+    "GDJF",
+    "GDKF"
+   ],
+   "lines": {
+    "prose": 5,
+    "pipe: new": 9,
+    "pipe: in the history": 6
+   }
+  },
+  {
+   "model": "claude-opus-4.7",
+   "seed": 15000000,
+   "round": 10,
+   "n_slots": 4,
+   "status": "ambiguous",
+   "attempts": 2,
+   "at_limit": [
+    "GAJF",
+    "GAJH",
+    "GAJN",
+    "GAKF",
+    "GDJF",
+    "GDKF"
+   ],
+   "lines": {
+    "prose": 3,
+    "pipe: new": 8,
+    "pipe: in the history": 3
+   }
+  },
+  {
+   "model": "claude-opus-4.7",
+   "seed": 15000000,
+   "round": 11,
+   "n_slots": 4,
+   "status": "ambiguous",
+   "attempts": 2,
+   "at_limit": [
+    "GAJF",
+    "GAJH",
+    "GAJN",
+    "GAKF",
+    "GDJF",
+    "GDKF"
+   ],
+   "lines": {
+    "prose": 7,
+    "pipe: new": 11,
+    "pipe: in the history": 4
+   }
+  },
+  {
+   "model": "claude-opus-4.7",
+   "seed": 15000000,
+   "round": 12,
+   "n_slots": 4,
+   "status": "ambiguous",
+   "attempts": 2,
+   "at_limit": [
+    "GAJF",
+    "GAJH",
+    "GAJN",
+    "GAKF",
+    "GDJF",
+    "GDKF"
+   ],
+   "lines": {
+    "prose": 2,
+    "pipe: new": 5,
+    "pipe: in the history": 3
+   }
+  },
+  {
+   "model": "claude-opus-4.7",
+   "seed": 15000000,
+   "round": 13,
+   "n_slots": 4,
+   "status": "alphabet_then_wrong_count",
+   "attempts": 2,
+   "at_limit": [
+    "GAJF",
+    "GAJH",
+    "GAJN",
+    "GAKF",
+    "GDJF",
+    "GDKF"
+   ],
+   "lines": {
+    "pipe: new": 3,
+    "pipe: in the history": 1
+   }
+  },
+  {
+   "model": "claude-opus-4.7",
+   "seed": 15000001,
+   "round": 7,
+   "n_slots": 4,
+   "status": "ambiguous",
+   "attempts": 2,
+   "at_limit": [
+    "FDKL",
+    "GDJF",
+    "GDKF",
+    "GDKJ",
+    "GDKL"
+   ],
+   "lines": {
+    "prose": 2,
+    "pipe: in the history": 4,
+    "pipe: new": 4
+   }
+  },
+  {
+   "model": "claude-opus-4.7",
+   "seed": 15000001,
+   "round": 8,
+   "n_slots": 4,
+   "status": "ambiguous",
+   "attempts": 2,
+   "at_limit": [
+    "FDKL",
+    "GDJF",
+    "GDKF",
+    "GDKJ",
+    "GDKL"
+   ],
+   "lines": {
+    "pipe: at the limit": 1,
+    "prose": 2,
+    "pipe: in the history": 2,
+    "pipe: new": 2
+   }
+  },
+  {
+   "model": "claude-opus-4.7",
+   "seed": 15000001,
+   "round": 13,
+   "n_slots": 4,
+   "status": "ambiguous",
+   "attempts": 2,
+   "at_limit": [
+    "FDKL",
+    "GDJF",
+    "GDJN",
+    "GDKF",
+    "GDKJ",
+    "GDKL",
+    "GEKF",
+    "GEKL"
+   ],
+   "lines": {
+    "prose": 6,
+    "pipe: at the limit": 1,
+    "pipe: new": 6,
+    "pipe: in the history": 1
+   }
+  },
+  {
+   "model": "claude-opus-4.7",
+   "seed": 15000001,
+   "round": 15,
+   "n_slots": 4,
+   "status": "wrong_count",
+   "attempts": 2,
+   "at_limit": [
+    "FDKL",
+    "GDJF",
+    "GDJN",
+    "GDKF",
+    "GDKJ",
+    "GDKL",
+    "GEKF",
+    "GEKL"
+   ],
+   "lines": {
+    "pipe: new": 2,
+    "prose": 1,
+    "pipe: in the history": 1
+   }
+  },
+  {
+   "model": "deepseek-chat-v3.1",
+   "seed": 15000001,
+   "round": 8,
+   "n_slots": 1,
+   "status": "bad_alphabet",
+   "attempts": 2,
+   "at_limit": [
+    "GDHM",
+    "GDIC",
+    "GDIF",
+    "GDIH",
+    "GDIJ",
+    "GDIM",
+    "GDIR",
+    "GDIS",
+    "GDIT",
+    "GDJF"
+   ],
+   "lines": {
+    "pipe: new": 1
+   }
+  }
+ ],
+ "base": {
+  "smoke0an1_f3_cap": {
+   "claude-opus-4.7|round": {
+    "calls": 30,
+    "lost": 9
+   },
+   "claude-opus-4.7|replacement": {
+    "calls": 147
+   },
+   "deepseek-chat-v3.1|round": {
+    "calls": 30
+   },
+   "deepseek-chat-v3.1|replacement": {
+    "calls": 569,
+    "lost": 1
+   },
+   "gemini-2.5-flash|round": {
+    "calls": 30
+   },
+   "gemini-2.5-flash|replacement": {
+    "calls": 1203
+   }
+  },
+  "smoke0an_f3_cap": {
+   "claude-opus-4.7|round": {
+    "calls": 15,
+    "lost": 1
+   },
+   "claude-opus-4.7|replacement": {
+    "calls": 108
+   },
+   "gemini-2.5-flash|round": {
+    "calls": 15
+   },
+   "gemini-2.5-flash|replacement": {
+    "calls": 173,
+    "lost": 5
+   }
+  },
+  "smoke0an_f1_ledger": {
+   "claude-opus-4.7|round": {
+    "calls": 30
+   },
+   "claude-opus-4.7|replacement": {
+    "calls": 41
+   },
+   "deepseek-chat-v3.1|round": {
+    "calls": 30
+   },
+   "deepseek-chat-v3.1|replacement": {
+    "calls": 23
+   },
+   "gemini-2.5-flash|round": {
+    "calls": 30
+   },
+   "gemini-2.5-flash|replacement": {
+    "calls": 49
+   }
+  },
+  "smoke0an_f2_menu": {
+   "claude-opus-4.7|round": {
+    "calls": 30
+   },
+   "claude-opus-4.7|replacement": {
+    "calls": 109
+   },
+   "deepseek-chat-v3.1|round": {
+    "calls": 15
+   },
+   "deepseek-chat-v3.1|replacement": {
+    "calls": 18
+   },
+   "gemini-2.5-flash|round": {
+    "calls": 30
+   },
+   "gemini-2.5-flash|replacement": {
+    "calls": 85
+   }
+  },
+  "smoke0an_f0_control": {
+   "deepseek-chat-v3.1|round": {
+    "calls": 30
+   },
+   "deepseek-chat-v3.1|replacement": {
+    "calls": 13
+   },
+   "gemini-2.5-flash|round": {
+    "calls": 30
+   },
+   "gemini-2.5-flash|replacement": {
+    "calls": 22
+   }
+  }
+ }
+}

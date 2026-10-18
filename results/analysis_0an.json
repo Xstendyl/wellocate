@@ -1,0 +1,854 @@
+{
+ "yardstick": 23.78,
+ "share_ceiling_f3": 50.0,
+ "cells": {
+  "F1 ledger|Opus": {
+   "pairs": 60,
+   "share": 79.30555555555556,
+   "share_ci": [
+    78.30555555555556,
+    80.27777777777777
+   ],
+   "partner_share": 74.91666666666667,
+   "d_share": 4.388888888888889,
+   "d_share_ci": [
+    2.63888888888889,
+    6.166666666666667
+   ],
+   "share_non_lost": 81.99463701133752,
+   "lost_slots": 1.9333333333333333,
+   "lost_rejection": 1.9333333333333333,
+   "lost_cap_bound": 0,
+   "lost_rounds": 0,
+   "distinct": 8.983333333333333,
+   "partner_distinct": 11.35,
+   "rejections": 25.516666666666666,
+   "partner_rejections": 25.216666666666665,
+   "capped": 0,
+   "capped_ci": [
+    0,
+    0
+   ],
+   "repeat_cap_hits": 0,
+   "pick": 7.49522143177953,
+   "partner_pick": 7.62119689719785,
+   "d_pick": -0.12597546541831878,
+   "d_pick_ci": [
+    -0.20951420470308652,
+    -0.03638856200532647
+   ],
+   "delta": 0.22,
+   "pick_powered": false,
+   "pick_label": "pick falls (descriptive)",
+   "share_label": "no effect",
+   "sensitivity_vs_grid": {
+    "pairs": 60,
+    "share": 79.30555555555556,
+    "share_ci": [
+     78.27777777777777,
+     80.30555555555556
+    ],
+    "partner_share": 76.02777777777777,
+    "d_share": 3.2777777777777777,
+    "d_share_ci": [
+     1.5555555555555565,
+     5.083333333333333
+    ],
+    "share_non_lost": 81.99463701133752,
+    "lost_slots": 1.9333333333333333,
+    "lost_rejection": 1.9333333333333333,
+    "lost_cap_bound": 0,
+    "lost_rounds": 0,
+    "distinct": 8.983333333333333,
+    "partner_distinct": 10.6,
+    "rejections": 25.516666666666666,
+    "partner_rejections": 25.1,
+    "capped": 0,
+    "capped_ci": [
+     0,
+     0
+    ],
+    "repeat_cap_hits": 0,
+    "pick": 7.49522143177953,
+    "partner_pick": 7.646849470492825,
+    "d_pick": -0.15162803871329394,
+    "d_pick_ci": [
+     -0.23885361662168372,
+     -0.06246214515351409
+    ],
+    "delta": 0.22,
+    "pick_powered": false,
+    "pick_label": "pick falls (descriptive)",
+    "share_label": "no effect"
+   }
+  },
+  "F1 ledger|Gemini": {
+   "pairs": 120,
+   "share": 93.06944444444444,
+   "share_ci": [
+    92.31944444444444,
+    93.76388888888889
+   ],
+   "partner_share": 94.0,
+   "d_share": -0.9305555555555584,
+   "d_share_ci": [
+    -2.0833333333333366,
+    0.24999999999999692
+   ],
+   "share_non_lost": 93.83272940552463,
+   "lost_slots": 0.49166666666666664,
+   "lost_rejection": 0.4583333333333333,
+   "lost_cap_bound": 0,
+   "lost_rounds": 0.03333333333333333,
+   "distinct": 3.3833333333333333,
+   "partner_distinct": 3.0416666666666665,
+   "rejections": 21.316666666666666,
+   "partner_rejections": 18.533333333333335,
+   "capped": 0,
+   "capped_ci": [
+    0,
+    0
+   ],
+   "repeat_cap_hits": 0,
+   "pick": 7.511038419890362,
+   "partner_pick": 7.701341594622921,
+   "d_pick": -0.19030317473255873,
+   "d_pick_ci": [
+    -0.27186456101154494,
+    -0.1118411142516119
+   ],
+   "delta": 0.13,
+   "pick_powered": true,
+   "pick_label": "pick falls",
+   "share_label": "no effect",
+   "sensitivity_vs_grid": {
+    "pairs": 120,
+    "share": 93.06944444444444,
+    "share_ci": [
+     92.33333333333333,
+     93.76388888888889
+    ],
+    "partner_share": 93.68055555555556,
+    "d_share": -0.6111111111111137,
+    "d_share_ci": [
+     -1.6944444444444466,
+     0.48611111111110916
+    ],
+    "share_non_lost": 93.83272940552463,
+    "lost_slots": 0.49166666666666664,
+    "lost_rejection": 0.4583333333333333,
+    "lost_cap_bound": 0,
+    "lost_rounds": 0.03333333333333333,
+    "distinct": 3.3833333333333333,
+    "partner_distinct": 3.308333333333333,
+    "rejections": 21.316666666666666,
+    "partner_rejections": 18.233333333333334,
+    "capped": 0,
+    "capped_ci": [
+     0,
+     0
+    ],
+    "repeat_cap_hits": 0,
+    "pick": 7.511038419890362,
+    "partner_pick": 7.7011527657311785,
+    "d_pick": -0.19011434584081605,
+    "d_pick_ci": [
+     -0.2691285906018472,
+     -0.11477998203755164
+    ],
+    "delta": 0.13,
+    "pick_powered": true,
+    "pick_label": "pick falls",
+    "share_label": "no effect"
+   }
+  },
+  "F1 ledger|DeepSeek": {
+   "pairs": 120,
+   "share": 91.77777777777777,
+   "share_ci": [
+    91.38888888888889,
+    92.13888888888889
+   ],
+   "partner_share": 90.97222222222223,
+   "d_share": 0.8055555555555554,
+   "d_share_ci": [
+    0.05555555555555583,
+    1.5555555555555562
+   ],
+   "share_non_lost": 91.81450094161958,
+   "lost_slots": 0.025,
+   "lost_rejection": 0.025,
+   "lost_cap_bound": 0,
+   "lost_rounds": 0,
+   "distinct": 4.65,
+   "partner_distinct": 4.9,
+   "rejections": 15.275,
+   "partner_rejections": 14.683333333333334,
+   "capped": 0,
+   "capped_ci": [
+    0,
+    0
+   ],
+   "repeat_cap_hits": 0,
+   "pick": 7.7713159904841635,
+   "partner_pick": 7.760026260434459,
+   "d_pick": 0.011289730049705378,
+   "d_pick_ci": [
+    -0.03244774435902116,
+    0.057659046214320143
+   ],
+   "delta": 0.11,
+   "pick_powered": true,
+   "pick_label": "no change beyond delta",
+   "share_label": "no effect",
+   "sensitivity_vs_grid": {
+    "pairs": 120,
+    "share": 91.77777777777777,
+    "share_ci": [
+     91.38888888888889,
+     92.13888888888889
+    ],
+    "partner_share": 91.25,
+    "d_share": 0.527777777777777,
+    "d_share_ci": [
+     -0.13888888888888964,
+     1.2083333333333317
+    ],
+    "share_non_lost": 91.81450094161958,
+    "lost_slots": 0.025,
+    "lost_rejection": 0.025,
+    "lost_cap_bound": 0,
+    "lost_rounds": 0,
+    "distinct": 4.65,
+    "partner_distinct": 4.866666666666666,
+    "rejections": 15.275,
+    "partner_rejections": 14.133333333333333,
+    "capped": 0,
+    "capped_ci": [
+     0,
+     0
+    ],
+    "repeat_cap_hits": 0,
+    "pick": 7.7713159904841635,
+    "partner_pick": 7.771320820636678,
+    "d_pick": -4.830152513838707e-06,
+    "d_pick_ci": [
+     -0.041398734182175975,
+     0.04255485236708423
+    ],
+    "delta": 0.11,
+    "pick_powered": true,
+    "pick_label": "no change beyond delta",
+    "share_label": "no effect"
+   }
+  },
+  "F2 menu|Opus": {
+   "pairs": 30,
+   "share": 55.666666666666664,
+   "share_ci": [
+    52.44444444444444,
+    59.111111111111114
+   ],
+   "partner_share": 75.38888888888889,
+   "d_share": -19.72222222222222,
+   "d_share_ci": [
+    -23.27777777777778,
+    -16.0
+   ],
+   "share_non_lost": 61.168602529383904,
+   "lost_slots": 5.466666666666667,
+   "lost_rejection": 5.466666666666667,
+   "lost_cap_bound": 0,
+   "lost_rounds": 0,
+   "distinct": 17.7,
+   "partner_distinct": 11.233333333333333,
+   "rejections": 50.7,
+   "partner_rejections": 24.9,
+   "capped": 0,
+   "capped_ci": [
+    0,
+    0
+   ],
+   "repeat_cap_hits": 0,
+   "pick": 7.690766561826198,
+   "partner_pick": 7.593231243600018,
+   "d_pick": 0.09753531822618079,
+   "d_pick_ci": [
+    -0.066013502161589,
+    0.2716034372296307
+   ],
+   "delta": 0.31,
+   "pick_powered": false,
+   "pick_label": "no change beyond delta (descriptive)",
+   "share_label": "reduces",
+   "sensitivity_vs_grid": {
+    "pairs": 30,
+    "share": 55.666666666666664,
+    "share_ci": [
+     52.55555555555556,
+     59.05555555555556
+    ],
+    "partner_share": 76.66666666666667,
+    "d_share": -21.0,
+    "d_share_ci": [
+     -24.166666666666668,
+     -17.72222222222222
+    ],
+    "share_non_lost": 61.168602529383904,
+    "lost_slots": 5.466666666666667,
+    "lost_rejection": 5.466666666666667,
+    "lost_cap_bound": 0,
+    "lost_rounds": 0,
+    "distinct": 17.7,
+    "partner_distinct": 10.133333333333333,
+    "rejections": 50.7,
+    "partner_rejections": 25.733333333333334,
+    "capped": 0,
+    "capped_ci": [
+     0,
+     0
+    ],
+    "repeat_cap_hits": 0,
+    "pick": 7.690766561826198,
+    "partner_pick": 7.58460816782505,
+    "d_pick": 0.10615839400114806,
+    "d_pick_ci": [
+     -0.05598307369209188,
+     0.2780359064133595
+    ],
+    "delta": 0.31,
+    "pick_powered": false,
+    "pick_label": "no change beyond delta (descriptive)",
+    "share_label": "reduces"
+   }
+  },
+  "F2 menu|Gemini": {
+   "pairs": 120,
+   "share": 67.83333333333333,
+   "share_ci": [
+    66.30555555555556,
+    69.36111111111111
+   ],
+   "partner_share": 94.0,
+   "d_share": -26.166666666666668,
+   "d_share_ci": [
+    -27.861111111111114,
+    -24.486111111111114
+   ],
+   "share_non_lost": 71.44275151119685,
+   "lost_slots": 3.058333333333333,
+   "lost_rejection": 3.025,
+   "lost_cap_bound": 0,
+   "lost_rounds": 0.03333333333333333,
+   "distinct": 14.516666666666667,
+   "partner_distinct": 3.0416666666666665,
+   "rejections": 40.958333333333336,
+   "partner_rejections": 18.533333333333335,
+   "capped": 0,
+   "capped_ci": [
+    0,
+    0
+   ],
+   "repeat_cap_hits": 0,
+   "pick": 7.736283387630135,
+   "partner_pick": 7.701341594622921,
+   "d_pick": 0.03494179300721472,
+   "d_pick_ci": [
+    -0.03711707610897053,
+    0.10634437103687228
+   ],
+   "delta": 0.13,
+   "pick_powered": true,
+   "pick_label": "no change beyond delta",
+   "share_label": "reduces",
+   "sensitivity_vs_grid": {
+    "pairs": 120,
+    "share": 67.83333333333333,
+    "share_ci": [
+     66.29166666666667,
+     69.36111111111111
+    ],
+    "partner_share": 93.68055555555556,
+    "d_share": -25.847222222222225,
+    "d_share_ci": [
+     -27.611111111111114,
+     -24.02777777777778
+    ],
+    "share_non_lost": 71.44275151119685,
+    "lost_slots": 3.058333333333333,
+    "lost_rejection": 3.025,
+    "lost_cap_bound": 0,
+    "lost_rounds": 0.03333333333333333,
+    "distinct": 14.516666666666667,
+    "partner_distinct": 3.308333333333333,
+    "rejections": 40.958333333333336,
+    "partner_rejections": 18.233333333333334,
+    "capped": 0,
+    "capped_ci": [
+     0,
+     0
+    ],
+    "repeat_cap_hits": 0,
+    "pick": 7.736283387630135,
+    "partner_pick": 7.7011527657311785,
+    "d_pick": 0.0351306218989574,
+    "d_pick_ci": [
+     -0.03806234367557811,
+     0.10833775909035719
+    ],
+    "delta": 0.13,
+    "pick_powered": true,
+    "pick_label": "no change beyond delta",
+    "share_label": "reduces"
+   }
+  },
+  "F2 menu|DeepSeek": {
+   "pairs": 120,
+   "share": 59.52777777777778,
+   "share_ci": [
+    57.68055555555556,
+    61.40277777777778
+   ],
+   "partner_share": 90.97222222222223,
+   "d_share": -31.444444444444443,
+   "d_share_ci": [
+    -33.48611111111111,
+    -29.430555555555557
+   ],
+   "share_non_lost": 63.54859802622236,
+   "lost_slots": 3.8583333333333334,
+   "lost_rejection": 3.8583333333333334,
+   "lost_cap_bound": 0,
+   "lost_rounds": 0,
+   "distinct": 17.7,
+   "partner_distinct": 4.9,
+   "rejections": 50.291666666666664,
+   "partner_rejections": 14.683333333333334,
+   "capped": 0,
+   "capped_ci": [
+    0,
+    0
+   ],
+   "repeat_cap_hits": 0,
+   "pick": 7.748720567362978,
+   "partner_pick": 7.760026260434459,
+   "d_pick": -0.011305693071479979,
+   "d_pick_ci": [
+    -0.0974779137568472,
+    0.0752882303306869
+   ],
+   "delta": 0.11,
+   "pick_powered": true,
+   "pick_label": "no change beyond delta",
+   "share_label": "reduces",
+   "sensitivity_vs_grid": {
+    "pairs": 120,
+    "share": 59.52777777777778,
+    "share_ci": [
+     57.68055555555556,
+     61.375
+    ],
+    "partner_share": 91.25,
+    "d_share": -31.72222222222222,
+    "d_share_ci": [
+     -33.666666666666664,
+     -29.76388888888889
+    ],
+    "share_non_lost": 63.54859802622236,
+    "lost_slots": 3.8583333333333334,
+    "lost_rejection": 3.8583333333333334,
+    "lost_cap_bound": 0,
+    "lost_rounds": 0,
+    "distinct": 17.7,
+    "partner_distinct": 4.866666666666666,
+    "rejections": 50.291666666666664,
+    "partner_rejections": 14.133333333333333,
+    "capped": 0,
+    "capped_ci": [
+     0,
+     0
+    ],
+    "repeat_cap_hits": 0,
+    "pick": 7.748720567362978,
+    "partner_pick": 7.771320820636678,
+    "d_pick": -0.022600253273699196,
+    "d_pick_ci": [
+     -0.09961591008414253,
+     0.05604098590949878
+    ],
+    "delta": 0.11,
+    "pick_powered": true,
+    "pick_label": "no change beyond delta",
+    "share_label": "reduces"
+   }
+  },
+  "F5 structure|Opus": {
+   "pairs": 30,
+   "share": 70.72222222222223,
+   "share_ci": [
+    68.72222222222223,
+    72.72222222222223
+   ],
+   "partner_share": 75.38888888888889,
+   "d_share": -4.666666666666666,
+   "d_share_ci": [
+    -7.777777777777778,
+    -1.499999999999999
+   ],
+   "share_non_lost": 74.34667065802174,
+   "lost_slots": 2.9,
+   "lost_rejection": 2.9,
+   "lost_cap_bound": 0,
+   "lost_rounds": 0,
+   "distinct": 12.8,
+   "partner_distinct": 11.233333333333333,
+   "rejections": 34.9,
+   "partner_rejections": 24.9,
+   "capped": 0,
+   "capped_ci": [
+    0,
+    0
+   ],
+   "repeat_cap_hits": 0,
+   "pick": 7.573536598693864,
+   "partner_pick": 7.593231243600018,
+   "d_pick": -0.019694644906153514,
+   "d_pick_ci": [
+    -0.1578931696605942,
+    0.13842309735762492
+   ],
+   "delta": 0.31,
+   "pick_powered": false,
+   "pick_label": "no change beyond delta (descriptive)",
+   "share_label": "no effect",
+   "sensitivity_vs_grid": {
+    "pairs": 30,
+    "share": 70.72222222222223,
+    "share_ci": [
+     68.77777777777777,
+     72.72222222222223
+    ],
+    "partner_share": 76.66666666666667,
+    "d_share": -5.944444444444444,
+    "d_share_ci": [
+     -9.38888888888889,
+     -2.61111111111111
+    ],
+    "share_non_lost": 74.34667065802174,
+    "lost_slots": 2.9,
+    "lost_rejection": 2.9,
+    "lost_cap_bound": 0,
+    "lost_rounds": 0,
+    "distinct": 12.8,
+    "partner_distinct": 10.133333333333333,
+    "rejections": 34.9,
+    "partner_rejections": 25.733333333333334,
+    "capped": 0,
+    "capped_ci": [
+     0,
+     0
+    ],
+    "repeat_cap_hits": 0,
+    "pick": 7.573536598693864,
+    "partner_pick": 7.58460816782505,
+    "d_pick": -0.011071569131186247,
+    "d_pick_ci": [
+     -0.13131641751835327,
+     0.1171671918945922
+    ],
+    "delta": 0.31,
+    "pick_powered": false,
+    "pick_label": "no change beyond delta (descriptive)",
+    "share_label": "no effect"
+   }
+  },
+  "F5 structure|Gemini": {
+   "pairs": 120,
+   "share": 93.48611111111111,
+   "share_ci": [
+    92.56944444444444,
+    94.29166666666667
+   ],
+   "partner_share": 94.0,
+   "d_share": -0.5138888888888897,
+   "d_share_ci": [
+    -1.7916666666666667,
+    0.7638888888888886
+   ],
+   "share_non_lost": 94.11004758066812,
+   "lost_slots": 0.4083333333333333,
+   "lost_rejection": 0.4083333333333333,
+   "lost_cap_bound": 0,
+   "lost_rounds": 0,
+   "distinct": 3.3,
+   "partner_distinct": 3.0416666666666665,
+   "rejections": 31.908333333333335,
+   "partner_rejections": 18.533333333333335,
+   "capped": 0,
+   "capped_ci": [
+    0,
+    0
+   ],
+   "repeat_cap_hits": 0,
+   "pick": 7.717556098849364,
+   "partner_pick": 7.701341594622921,
+   "d_pick": 0.01621450422644346,
+   "d_pick_ci": [
+    -0.00899902049544951,
+    0.044427145491862594
+   ],
+   "delta": 0.13,
+   "pick_powered": true,
+   "pick_label": "no change beyond delta",
+   "share_label": "no effect",
+   "sensitivity_vs_grid": {
+    "pairs": 120,
+    "share": 93.48611111111111,
+    "share_ci": [
+     92.58333333333333,
+     94.31944444444444
+    ],
+    "partner_share": 93.68055555555556,
+    "d_share": -0.1944444444444451,
+    "d_share_ci": [
+     -1.5000000000000002,
+     1.097222222222222
+    ],
+    "share_non_lost": 94.11004758066812,
+    "lost_slots": 0.4083333333333333,
+    "lost_rejection": 0.4083333333333333,
+    "lost_cap_bound": 0,
+    "lost_rounds": 0,
+    "distinct": 3.3,
+    "partner_distinct": 3.308333333333333,
+    "rejections": 31.908333333333335,
+    "partner_rejections": 18.233333333333334,
+    "capped": 0,
+    "capped_ci": [
+     0,
+     0
+    ],
+    "repeat_cap_hits": 0,
+    "pick": 7.717556098849364,
+    "partner_pick": 7.7011527657311785,
+    "d_pick": 0.016403333118186137,
+    "d_pick_ci": [
+     -0.0067665148329400775,
+     0.040587224440081705
+    ],
+    "delta": 0.13,
+    "pick_powered": true,
+    "pick_label": "no change beyond delta",
+    "share_label": "no effect"
+   }
+  },
+  "F5 structure|DeepSeek": {
+   "pairs": 120,
+   "share": 92.45833333333333,
+   "share_ci": [
+    92.08333333333333,
+    92.81944444444444
+   ],
+   "partner_share": 90.97222222222223,
+   "d_share": 1.4861111111111112,
+   "d_share_ci": [
+    0.7916666666666671,
+    2.2361111111111103
+   ],
+   "share_non_lost": 92.57540903202873,
+   "lost_slots": 0.075,
+   "lost_rejection": 0.075,
+   "lost_cap_bound": 0,
+   "lost_rounds": 0,
+   "distinct": 4.308333333333334,
+   "partner_distinct": 4.9,
+   "rejections": 17.516666666666666,
+   "partner_rejections": 14.683333333333334,
+   "capped": 0,
+   "capped_ci": [
+    0,
+    0
+   ],
+   "repeat_cap_hits": 0,
+   "pick": 7.63205938386695,
+   "partner_pick": 7.760026260434459,
+   "d_pick": -0.12796687656750877,
+   "d_pick_ci": [
+    -0.18992639650467327,
+    -0.06678230207631851
+   ],
+   "delta": 0.11,
+   "pick_powered": true,
+   "pick_label": "pick falls",
+   "share_label": "no effect",
+   "sensitivity_vs_grid": {
+    "pairs": 120,
+    "share": 92.45833333333333,
+    "share_ci": [
+     92.08333333333333,
+     92.81944444444444
+    ],
+    "partner_share": 91.25,
+    "d_share": 1.2083333333333328,
+    "d_share_ci": [
+     0.625000000000001,
+     1.8055555555555551
+    ],
+    "share_non_lost": 92.57540903202873,
+    "lost_slots": 0.075,
+    "lost_rejection": 0.075,
+    "lost_cap_bound": 0,
+    "lost_rounds": 0,
+    "distinct": 4.308333333333334,
+    "partner_distinct": 4.866666666666666,
+    "rejections": 17.516666666666666,
+    "partner_rejections": 14.133333333333333,
+    "capped": 0,
+    "capped_ci": [
+     0,
+     0
+    ],
+    "repeat_cap_hits": 0,
+    "pick": 7.63205938386695,
+    "partner_pick": 7.771320820636678,
+    "d_pick": -0.139261436769728,
+    "d_pick_ci": [
+     -0.19401319980447507,
+     -0.08704899684405136
+    ],
+    "delta": 0.11,
+    "pick_powered": true,
+    "pick_label": "pick falls",
+    "share_label": "no effect"
+   }
+  }
+ },
+ "fallbacks_dropped": {
+  "F0 control": 0,
+  "F1 ledger": 0,
+  "F2 menu": 0,
+  "F5 structure": 0
+ },
+ "spend": {
+  "F0 control": 2.09704318,
+  "F1 ledger": 21.44999222000002,
+  "F2 menu": 23.903461480000015,
+  "F5 structure": 16.136804220000013
+ },
+ "control_vs_grid": {
+  "Opus": {
+   "pairs": 60,
+   "share": 74.91666666666667,
+   "share_ci": [
+    73.5,
+    76.30555555555556
+   ],
+   "partner_share": 76.02777777777777,
+   "d_share": -1.1111111111111112,
+   "d_share_ci": [
+    -3.138888888888888,
+    0.88888888888889
+   ],
+   "share_non_lost": 77.38046785534404,
+   "lost_slots": 1.9166666666666667,
+   "lost_rejection": 1.9166666666666667,
+   "lost_cap_bound": 0,
+   "lost_rounds": 0,
+   "distinct": 11.35,
+   "partner_distinct": 10.6,
+   "rejections": 25.216666666666665,
+   "partner_rejections": 25.1,
+   "capped": 0,
+   "capped_ci": [
+    0,
+    0
+   ],
+   "repeat_cap_hits": 0,
+   "pick": 7.62119689719785,
+   "partner_pick": 7.646849470492825,
+   "d_pick": -0.025652573294975188,
+   "d_pick_ci": [
+    -0.12976928607534652,
+    0.0757930504259746
+   ],
+   "delta": null,
+   "pick_powered": null
+  },
+  "Gemini": {
+   "pairs": 120,
+   "share": 94.0,
+   "share_ci": [
+    93.06944444444444,
+    94.86111111111111
+   ],
+   "partner_share": 93.68055555555556,
+   "d_share": 0.31944444444444464,
+   "d_share_ci": [
+    -0.6250000000000001,
+    1.3333333333333335
+   ],
+   "share_non_lost": 94.61711257790047,
+   "lost_slots": 0.4083333333333333,
+   "lost_rejection": 0.14166666666666666,
+   "lost_cap_bound": 0,
+   "lost_rounds": 0.26666666666666666,
+   "distinct": 3.0416666666666665,
+   "partner_distinct": 3.308333333333333,
+   "rejections": 18.533333333333335,
+   "partner_rejections": 18.233333333333334,
+   "capped": 0,
+   "capped_ci": [
+    0,
+    0
+   ],
+   "repeat_cap_hits": 0,
+   "pick": 7.701341594622921,
+   "partner_pick": 7.7011527657311785,
+   "d_pick": 0.00018882889174267614,
+   "d_pick_ci": [
+    -0.020795326936526873,
+    0.019562822662418163
+   ],
+   "delta": null,
+   "pick_powered": null
+  },
+  "DeepSeek": {
+   "pairs": 120,
+   "share": 90.97222222222223,
+   "share_ci": [
+    90.29166666666667,
+    91.61111111111111
+   ],
+   "partner_share": 91.25,
+   "d_share": -0.27777777777777835,
+   "d_share_ci": [
+    -1.1250000000000004,
+    0.5138888888888888
+   ],
+   "share_non_lost": 91.21106636231656,
+   "lost_slots": 0.16666666666666666,
+   "lost_rejection": 0.1,
+   "lost_cap_bound": 0,
+   "lost_rounds": 0.06666666666666667,
+   "distinct": 4.9,
+   "partner_distinct": 4.866666666666666,
+   "rejections": 14.683333333333334,
+   "partner_rejections": 14.133333333333333,
+   "capped": 0,
+   "capped_ci": [
+    0,
+    0
+   ],
+   "repeat_cap_hits": 0,
+   "pick": 7.760026260434459,
+   "partner_pick": 7.771320820636678,
+   "d_pick": -0.011294560202219217,
+   "d_pick_ci": [
+    -0.06293030399329767,
+    0.03816789079104731
+   ],
+   "delta": null,
+   "pick_powered": null
+  }
+ }
+}

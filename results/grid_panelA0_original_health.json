@@ -1,0 +1,11 @@
+{
+ "google/gemini-2.5-flash": {
+  "calls": 26,
+  "empty": 0,
+  "malformed": 0,
+  "truncated": 0,
+  "mean_reasoning": 0,
+  "max_reasoning": 0,
+  "max_completion": 77
+ }
+}

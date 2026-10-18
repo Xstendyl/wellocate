@@ -1,0 +1,16 @@
+{
+ "source": "results/basins.json",
+ "guessing_pick": 6.086764857732206,
+ "models": {
+  "Gemini 2.5 Flash": {
+   "blind_pick": 1.1150320031139602,
+   "menu_pick": 4.830745543515375,
+   "gap_closed_pct": 74.73678994940137
+  },
+  "DeepSeek V3.1": {
+   "blind_pick": 0.8397401828313098,
+   "menu_pick": 4.49037658384188,
+   "gap_closed_pct": 69.5753617945302
+  }
+ }
+}

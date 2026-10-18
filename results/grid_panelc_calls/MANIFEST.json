@@ -1,0 +1,42 @@
+{
+ "tag": "panelc",
+ "cells": 4,
+ "total_lines": 5852,
+ "source_lines": 32,
+ "carried_forward_lines": 1270,
+ "untouched_cell_lines": 4550,
+ "replaced_lines": 0,
+ "expected_total_lines": 5852,
+ "all_verified": true,
+ "empty": false,
+ "files": {
+  "blind__anthropic_claude-opus-4.7.jsonl.gz": {
+   "lines": 1845,
+   "sha256": "2b9638f5de35a7196813f7fbab79bb3a9d975c14b0dd6440096e18bc6a82e0f0",
+   "bytes": 239971,
+   "verified": true,
+   "written_by_this_run": false
+  },
+  "instructed__anthropic_claude-opus-4.7.jsonl.gz": {
+   "lines": 1628,
+   "sha256": "16161cd9fcdca08ce16d694590d58302b5aa05a9fe04ae5515e7648912838ea7",
+   "bytes": 223186,
+   "verified": true,
+   "written_by_this_run": false
+  },
+  "instructed__google_gemini-2.5-flash.jsonl.gz": {
+   "lines": 1077,
+   "sha256": "a60aa0e79b7e4a1e517bea77d75c3c543e43abc935a3d348fde386238c155cc0",
+   "bytes": 236291,
+   "verified": true,
+   "written_by_this_run": false
+  },
+  "blind__google_gemini-2.5-flash.jsonl.gz": {
+   "lines": 1302,
+   "sha256": "729a4801375996f41825c856077888171645e1adb7884b2fa19262ad44af2b11",
+   "bytes": 222019,
+   "verified": true,
+   "written_by_this_run": true
+  }
+ }
+}

@@ -1,0 +1,422 @@
+SPOT CHECK: raw model output beside the proposals the harness accepted.
+Sampled deterministically, 20 calls per model. Written for a human to read.
+
+====================================================================================================
+anthropic/claude-opus-4.7  (frontier)   139 calls, showing 20
+====================================================================================================
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['GDJO']
+SECONDARY: ['GDJO']
+RAW:
+GDJO | explore position 4 with top-ranked suggestion
+
+--- round 2  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['GDJF', 'GDJB', 'CDJF', 'EDJF']
+SECONDARY: ['GDJF', 'GDJB', 'CDJF', 'EDJF']
+RAW:
+GDJF | reconfirm best mean (7.419/6.656 spread)
+GDJB | explore pos4 with top motif GDJ_
+CDJF | explore pos1 variation on best motif
+EDJF | explore pos1 variation on best motif
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['GAIT']
+SECONDARY: ['GAIT']
+RAW:
+GAIT | explore position 4 variant of GAIF
+
+--- round 3  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['PAIC']
+SECONDARY: ['PAIC']
+RAW:
+PAIC | explore position 1 variant of best candidate GAIC (7.951)
+
+--- round 4  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['GAIC']
+SECONDARY: ['GAIC']
+RAW:
+GAIC | retry best-scoring candidate after failed order
+
+--- round 5  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['GSJF']
+SECONDARY: ['GSJF']
+RAW:
+GSJF | explore position 2 variant near best GDJF
+
+--- round 6  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['GAMC']
+SECONDARY: ['GAMC']
+RAW:
+GAMC | explore position 3 variant of best candidate GAIC (8.031)
+
+--- round 6  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['GAKC']
+SECONDARY: ['GAKC']
+RAW:
+GAKC | top-ranked suggestion, explores position 3 variant of best GAIC
+
+--- round 6  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['GADC']
+SECONDARY: ['GADC']
+RAW:
+GADC | top-ranked suggestion, explores position 2 variant of best candidate GAIC
+
+--- round 7  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['GCMC']
+SECONDARY: ['GCMC']
+RAW:
+GCMC | explore position 3 variant of best candidate GCIC
+
+--- round 7  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['GCNC']
+SECONDARY: ['GCNC']
+RAW:
+GCNC | explore unseen P2=C variant with promising additive score
+
+--- round 7  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['GCIL']
+SECONDARY: ['GCIL']
+RAW:
+GCIL | explore position 4 variant near top candidate GCIC
+
+--- round 7  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['GCIC']
+SECONDARY: ['GCIC']
+RAW:
+GCIC | best measured so far at 7.667, re-measure to confirm
+
+--- round 9  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['GCIC', 'HCIC', 'GCIL', 'HCIL']
+SECONDARY: ['GCIC', 'HCIC', 'GCIL', 'HCIL']
+RAW:
+GCIC | best mean so far (8.093, 8.031), replicate to confirm
+HCIC | combine top prefix HC with best suffix IC
+GCIL | top candidate with L suffix, retest for noise
+HCIL | retest second-best candidate (7.761)
+
+--- round 9  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['HCIL']
+SECONDARY: ['HCIL']
+RAW:
+HCIL | second-best mean (7.761), replicate to confirm high value
+
+--- round 10  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['HCIC']
+SECONDARY: ['HCIC']
+RAW:
+HCIC | explore position-3 variant of top performers GCIC(8.09) and HCIL(7.85)
+
+--- round 10  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['HCAL']
+SECONDARY: ['HCAL']
+RAW:
+HCAL | explore position-3 letter near best HCIL cluster
+
+--- round 10  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['HCML']
+SECONDARY: ['HCML']
+RAW:
+HCML | explore new P3 letter near top candidate HCIL
+
+--- round 11  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['HCOL', 'HCBL', 'HCIL', 'GCIC']
+SECONDARY: ['HCOL', 'HCBL', 'HCIL', 'GCIC']
+RAW:
+HCOL | top-ranked by additive model, explore pos3 letter O
+HCBL | second-ranked, explore pos3 letter B
+HCIL | best mean so far (7.76,7.42,7.85,7.27), replicate for confidence
+GCIC | strong historical mean (~7.6), replicate top candidate
+
+--- round 11  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['HCBL']
+SECONDARY: ['HCBL']
+RAW:
+HCBL | explore position 3 variant of top-performing HCIL
+
+====================================================================================================
+google/gemini-2.5-flash  (mid-tier)   115 calls, showing 20
+====================================================================================================
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['GDIF']
+SECONDARY: ['GDIF']
+RAW:
+GDIF | reference point, good score
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['GDBF']
+SECONDARY: ['GDBF']
+RAW:
+GDBF | exploring suggested candidate
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['GDBB']
+SECONDARY: ['GDBB']
+RAW:
+GDBB | Exploring variations around GDBF, which had a high score.
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['GDBP']
+SECONDARY: ['GDBP']
+RAW:
+GDBP | exploring variations around GDBF
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['GDIF']
+SECONDARY: ['GDIF']
+RAW:
+GDIF | explore around the reference point
+
+--- round 3  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['GDBF', 'GDBE', 'GDIF', 'GDBH']
+SECONDARY: ['GDBF', 'GDBE', 'GDIF', 'GDBH']
+RAW:
+GDBF | Best performing candidate so far
+GDBE | Second best performing candidate so far
+GDIF | Reference point, good for comparison
+GDBH | Explore neighborhood of GDBF
+
+--- round 5  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['GDIE', 'GDIG', 'GDIA', 'GDIB']
+SECONDARY: ['GDIE', 'GDIG', 'GDIA', 'GDIB']
+RAW:
+GDIE | exploring suggested candidates
+GDIG | exploring suggested candidates
+GDIA | exploring suggested candidates
+GDIB | exploring suggested candidates
+
+--- round 5  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['GDIF']
+SECONDARY: ['GDIF']
+RAW:
+GDIF | GDIF is a known viable candidate and has a good score.
+
+--- round 5  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['GDIA']
+SECONDARY: ['GDIA']
+RAW:
+GDIA | Exploring suggested candidates, one letter away from GDIF
+
+--- round 5  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['GDIO']
+SECONDARY: ['GDIO']
+RAW:
+GDIO | exploring high-scoring suggestion
+
+--- round 5  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['GDIS']
+SECONDARY: ['GDIS']
+RAW:
+GDIS | exploring high-scoring suggestions
+
+--- round 6  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['GDIQ', 'GDIF', 'GDQF', 'GDIF']
+SECONDARY: ['GDIQ', 'GDIF', 'GDQF', 'GDIF']
+RAW:
+GDIQ | exploring variations around the highest score
+GDIF | re-evaluating the reference point
+GDQF | exploring variations around the highest score
+GDIF | re-evaluating the reference point
+
+--- round 7  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['GDIQ']
+SECONDARY: ['GDIQ']
+RAW:
+GDIQ | exploring around GDIQ, which has shown good scores
+
+--- round 8  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 5  parsers agree True ---
+PARSED   : ['GDIF', 'GDIQ', 'GDIF', 'GDIF']
+SECONDARY: ['GDIF', 'GDIQ', 'GDIF', 'GDIF']
+RAW:
+GDIF | Baseline
+GDIQ | Explore around previous high score
+GDIF | Baseline
+GDIF | Baseline
+
+--- round 10  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['GDIQ', 'MDIQ', 'IDIQ', 'KDIQ']
+SECONDARY: ['GDIQ', 'MDIQ', 'IDIQ', 'KDIQ']
+RAW:
+GDIQ | Highest scoring candidate so far
+MDIQ | Suggested candidate, high predicted score
+IDIQ | Suggested candidate, high predicted score
+KDIQ | Suggested candidate, high predicted score
+
+--- round 10  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['HDIQ']
+SECONDARY: ['HDIQ']
+RAW:
+HDIQ | exploring first position variations
+
+--- round 10  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['QDIQ']
+SECONDARY: ['QDIQ']
+RAW:
+QDIQ | exploring high-scoring candidates
+
+--- round 11  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['QDIQ', 'QDIJ', 'QDIK', 'QDIS']
+SECONDARY: ['QDIQ', 'QDIJ', 'QDIK', 'QDIS']
+RAW:
+QDIQ | Explore variations around the highest scoring candidate
+QDIJ | Explore variations around the highest scoring candidate
+QDIK | Explore variations around the highest scoring candidate
+QDIS | Explore variations around the highest scoring candidate
+
+--- round 12  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['QDIQ']
+SECONDARY: ['QDIQ']
+RAW:
+QDIQ | exploring around best known
+
+--- round 14  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['QDIQ']
+SECONDARY: ['QDIQ']
+RAW:
+QDIQ | highest scoring candidate so far
+
+====================================================================================================
+deepseek/deepseek-chat-v3.1  (open-weight)   33 calls, showing 20
+====================================================================================================
+
+--- round 1  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['GDIF', 'GIIF', 'NDIF', 'GDBF']
+SECONDARY: ['GDIF', 'GIIF', 'NDIF', 'GDBF']
+RAW:
+GDIF | reference point baseline
+GIIF | single letter change from reference
+NDIF | single letter change from reference
+GDBF | single letter change from reference
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['GDIF']
+SECONDARY: ['GDIF']
+RAW:
+GDIF | reference point, known viable and good reading
+
+--- round 3  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 10  parsers agree True ---
+PARSED   : ['GDIL', 'JDIL', 'GGIL', 'GDBL']
+SECONDARY: ['GDIL', 'JDIL', 'GGIL', 'GDBL']
+RAW:
+GDIL | extrapolate from GDIL's 8.177 reading by trying G
+JDIL | suggested candidate near top of list, combines J and IL
+GGIL | top suggested candidate, tests G at pos1 and IL at pos3-4
+GDBL | build on GDBF's success by varying last position to L
+
+--- round 3  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['GDIL']
+SECONDARY: ['GDIL']
+RAW:
+GDIL | Explore near GDIL (8.177) with common viable pattern
+
+--- round 3  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['NDIL']
+SECONDARY: ['NDIL']
+RAW:
+NDIL | Highest-ranked suggested candidate, one letter away from GDIL (8.177) and similar to viable patterns.
+
+--- round 3  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['GDIL']
+SECONDARY: ['GDIL']
+RAW:
+GDIL | Building on GDIL's success (8.177) by testing a new letter at position 3
+
+--- round 4  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 6  parsers agree True ---
+PARSED   : ['GDIL', 'GDBL', 'HDIL', 'LDIL']
+SECONDARY: ['GDIL', 'GDBL', 'HDIL', 'LDIL']
+RAW:
+GDIL | High reading in round 2, need to confirm and reduce noise
+GDBL | Strong performance in round 3, promising variant
+HDIL | Top suggested candidate, explores new letter at position 1
+LDIL | Second suggested candidate, continues position 1 exploration
+
+--- round 4  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['LDIL']
+SECONDARY: ['LDIL']
+RAW:
+LDIL | Highest-ranked suggested candidate, one letter change from GDIL which has shown good readings.
+
+--- round 4  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['TDIL']
+SECONDARY: ['TDIL']
+RAW:
+TDIL | Suggested candidate with highest rank from additive model
+
+--- round 4  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['GDIL']
+SECONDARY: ['GDIL']
+RAW:
+GDIL | Building on GDIL (7.407) which has shown promise, testing a minor variation to explore viability.
+
+--- round 4  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 5  parsers agree True ---
+PARSED   : ['GDIL']
+SECONDARY: ['GDIL']
+RAW:
+GDIL | Continuing to explore variations around the high-scoring GDIL base, which has shown promising readings (8.177, 7.671, 7.533) despite some failures.
+
+--- round 5  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 6  parsers agree True ---
+PARSED   : ['GDIL', 'GDBL', 'FDIL', 'GIIL']
+SECONDARY: ['GDIL', 'GDBL', 'FDIL', 'GIIL']
+RAW:
+GDIL | continue exploring position 3 variation with L
+GDBL | continue exploring position 4 variation with L
+FDIL | suggested candidate with high potential
+GIIL | suggested candidate with high potential
+
+--- round 5  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['GDIL']
+SECONDARY: ['GDIL']
+RAW:
+GDIL | Continuing to explore variations around the high-scoring GDIL and GDBL, focusing on viability and building on recent successes.
+
+--- round 6  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 13  parsers agree True ---
+PARSED   : ['GDIL', 'FDIL', 'FFIL', 'GDBL']
+SECONDARY: ['GDIL', 'FDIL', 'FFIL', 'GDBL']
+RAW:
+GDIL | Continue exploring the promising "GDIL" base
+FDIL | Build on the successful "FDIL" from round 5
+FFIL | Top suggested candidate, one letter away from FDIL
+GDBL | Further test the "GDBL" variant that showed promise
+
+--- round 6  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['FDIL']
+SECONDARY: ['FDIL']
+RAW:
+FDIL | Continuing to explore variations around the high-scoring GDIL and FDIL, focusing on viable neighbors.
+
+--- round 7  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['FDIL', 'GDBL', 'GDIL', 'FEIL']
+SECONDARY: ['FDIL', 'GDBL', 'GDIL', 'FEIL']
+RAW:
+FDIL | continuing exploration around this promising candidate
+GDBL | further testing due to previous high readings
+GDIL | baseline reference with consistent performance
+FEIL | top suggested candidate from additive model
+
+--- round 7  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['FTIL']
+SECONDARY: ['FTIL']
+RAW:
+FTIL | Exploring F at position 1 and T at position 3, building on FDIL's success.
+
+--- round 8  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['FDIL', 'GDBL', 'GDIL', 'FJIL']
+SECONDARY: ['FDIL', 'GDBL', 'GDIL', 'FJIL']
+RAW:
+FDIL | continue exploring around current best candidate
+GDBL | confirm stability of second best candidate
+GDIL | baseline for comparison with modifications
+FJIL | top suggested candidate from additive model
+
+--- round 8  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['GBIL']
+SECONDARY: ['GBIL']
+RAW:
+GBIL | Suggested candidate ranked highest by additive model, near top performers GDIL and GDBL.
+
+--- round 8  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['GDIL']
+SECONDARY: ['GDIL']
+RAW:
+GDIL | Continue exploring the high-performing candidate with consistent readings around 8.0+

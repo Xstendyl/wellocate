@@ -1,0 +1,144 @@
+SPOT CHECK: raw model output beside the proposals the harness accepted.
+Sampled deterministically, 20 calls per model. Written for a human to read.
+
+====================================================================================================
+openai/gpt-6.1-sol  (frontier-openai)   1378 calls, showing 20
+====================================================================================================
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['ELTL']
+SECONDARY: ['ELTL']
+RAW:
+ELTL | Test whether the improving first-position trend continues beyond D.
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['DLTL']
+SECONDARY: ['DLTL']
+RAW:
+DLTL | Test a nearby first-position change from the reference.
+
+--- round 4  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['FKRM']
+SECONDARY: ['FKRM']
+RAW:
+FKRM | Explore third-position change from best observed FKTM
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 5  parsers agree True ---
+PARSED   : ['CKSL']
+SECONDARY: ['CKSL']
+RAW:
+CKSL | Test third-position change near best measured candidate CKTL
+
+--- round 3  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['FKTJ']
+SECONDARY: ['FKTJ']
+RAW:
+FKTJ | Test second-position improvement near the best observed candidate
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['JLTL']
+SECONDARY: ['JLTL']
+RAW:
+JLTL | Test a further first-position change beyond the improving D and F variants.
+
+--- round 4  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 9  parsers agree True ---
+PARSED   : ['FLRM', 'DKRM', 'FKRL', 'FKRN']
+SECONDARY: ['FLRM', 'DKRM', 'FKRL', 'FKRN']
+RAW:
+FLRM | Test second-position effect near the strongest candidate
+DKRM | Test a viable first-position alternative at the peak
+FKRL | Compare L against M at the strongest candidate
+FKRN | Test whether N improves the R-containing background
+
+--- round 6  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 6  parsers agree True ---
+PARSED   : ['HKRM', 'FHRM', 'FKRR', 'FKMM']
+SECONDARY: ['HKRM', 'FHRM', 'FKRR', 'FKMM']
+RAW:
+HKRM | Explore a new first-position neighbor of the leader
+FHRM | Test another second-position neighbor of FKRM
+FKRR | Explore an untested fourth-position substitution
+FKMM | Probe a new third-position alternative to R
+
+--- round 14  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['FSRL']
+SECONDARY: ['FSRL']
+RAW:
+FSRL | Test a neighboring fourth-position symbol near the best candidate
+
+--- round 3  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 5  parsers agree True ---
+PARSED   : ['BLTM', 'DLTL', 'CKTL', 'ELTL']
+SECONDARY: ['BLTM', 'DLTL', 'CKTL', 'ELTL']
+RAW:
+BLTM | Test interaction of promising first-position change
+DLTL | Retry unmeasured first-position neighbor
+CKTL | Retry unmeasured second-position neighbor
+ELTL | Explore another first-position substitution
+
+--- round 11  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 9  parsers agree True ---
+PARSED   : ['FITG', 'FLTJ', 'DITJ', 'FKTG']
+SECONDARY: ['FITG', 'FLTJ', 'DITJ', 'FKTG']
+RAW:
+FITG | Retry failed probe for a better fourth-position symbol
+FLTJ | Retry failed probe near the strongest candidates
+DITJ | Test whether D benefits more from second-position I
+FKTG | Test fourth-position G with the strong FK pairing
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['CLTS']
+SECONDARY: ['CLTS']
+RAW:
+CLTS | Test a nearby final-position change from the reference
+
+--- round 4  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['JLTL', 'KLTL', 'NLTL', 'FKTL']
+SECONDARY: ['JLTL', 'KLTL', 'NLTL', 'FKTL']
+RAW:
+JLTL | Retry promising first-position change after technical failure
+KLTL | Explore beyond the strong F first-position result
+NLTL | Probe a more distant first-position alternative
+FKTL | Test second-position improvement around the best candidate
+
+--- round 8  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['FKTP']
+SECONDARY: ['FKTP']
+RAW:
+FKTP | Explore a new fourth-position symbol near the best candidate FKTM
+
+--- round 11  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['FKRJ', 'FITJ', 'FKRL', 'FKQM']
+SECONDARY: ['FKRJ', 'FITJ', 'FKRL', 'FKQM']
+RAW:
+FKRJ | Combine the two strongest newly discovered changes
+FITJ | Test the promising J ending with position-two I
+FKRL | Test the strong R change with viable L ending
+FKQM | Explore another third-position change near FKRM
+
+--- round 15  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['FITB']
+SECONDARY: ['FITB']
+RAW:
+FITB | Explore an untested fourth-position symbol on the strongest FIT background
+
+--- round 11  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['FITC']
+SECONDARY: ['FITC']
+RAW:
+FITC | Probe next to viable FITD for a stronger alternative peak.
+
+--- round 15  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['RITJ']
+SECONDARY: ['RITJ']
+RAW:
+RITJ | Explore an untested first-position symbol while preserving the best-scoring ITJ background.
+
+--- round 8  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['FKTS']
+SECONDARY: ['FKTS']
+RAW:
+FKTS | Explore a new fourth-position symbol near the strong FKTP and FKTR variants
+
+--- round 10  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['TKTM']
+SECONDARY: ['TKTM']
+RAW:
+TKTM | Explore an untested first symbol on the highest-scoring KTM background

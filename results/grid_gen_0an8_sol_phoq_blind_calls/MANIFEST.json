@@ -1,0 +1,21 @@
+{
+ "tag": "gen_0an8_sol_phoq_blind",
+ "cells": 1,
+ "total_lines": 802,
+ "source_lines": 0,
+ "carried_forward_lines": 0,
+ "untouched_cell_lines": 802,
+ "replaced_lines": 0,
+ "expected_total_lines": 802,
+ "all_verified": true,
+ "empty": false,
+ "files": {
+  "blind__openai_gpt-6.1-sol.jsonl.gz": {
+   "lines": 802,
+   "sha256": "c33ad0c52f1cef3f4839b6d4713ea60424c002203f6880034fcb28b582e1758e",
+   "bytes": 164289,
+   "verified": true,
+   "written_by_this_run": false
+  }
+ }
+}

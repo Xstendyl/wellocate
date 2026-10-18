@@ -1,0 +1,20 @@
+{
+ "anthropic/claude-opus-4.7": {
+  "calls": 124,
+  "empty": 0,
+  "malformed": 1,
+  "truncated": 0,
+  "mean_reasoning": 0,
+  "max_reasoning": 0,
+  "max_completion": 236
+ },
+ "google/gemini-2.5-flash": {
+  "calls": 189,
+  "empty": 0,
+  "malformed": 5,
+  "truncated": 0,
+  "mean_reasoning": 0,
+  "max_reasoning": 0,
+  "max_completion": 99
+ }
+}

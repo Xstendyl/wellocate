@@ -1,0 +1,2543 @@
+{
+ "A_s0": {
+  "updates_logged": 1500,
+  "points": [
+   {
+    "update": 0,
+    "episodes": 0,
+    "train_reward": null,
+    "val_score": 0.8019316224387054,
+    "val_share": {
+     "nk:validation": 9.55
+    },
+    "order_entropy": null,
+    "nominate_entropy": null,
+    "best_update": 0,
+    "wall_h": 0.016861403584480284
+   },
+   {
+    "update": 50,
+    "episodes": 1600,
+    "train_reward": 0.8774936963705906,
+    "val_score": 0.8905062158564179,
+    "val_share": {
+     "nk:validation": 9.383333333333333
+    },
+    "order_entropy": 5.919996835735807,
+    "nominate_entropy": 0.8319741199485271,
+    "best_update": 50,
+    "wall_h": 0.35540283580621085
+   },
+   {
+    "update": 100,
+    "episodes": 3200,
+    "train_reward": 0.8971616787632384,
+    "val_score": 0.8995502939460502,
+    "val_share": {
+     "nk:validation": 6.841666666666668
+    },
+    "order_entropy": 5.769277002214688,
+    "nominate_entropy": 0.009869396448965914,
+    "best_update": 100,
+    "wall_h": 0.6799965605470869
+   },
+   {
+    "update": 150,
+    "episodes": 4800,
+    "train_reward": 0.8985759041237931,
+    "val_score": 0.8986038869945121,
+    "val_share": {
+     "nk:validation": 6.475
+    },
+    "order_entropy": 5.651618441327191,
+    "nominate_entropy": 0.005095149578974379,
+    "best_update": 100,
+    "wall_h": 0.9447489272223578
+   },
+   {
+    "update": 200,
+    "episodes": 6400,
+    "train_reward": 0.9003622746665512,
+    "val_score": 0.8935750716742148,
+    "val_share": {
+     "nk:validation": 8.941666666666668
+    },
+    "order_entropy": 5.421776707647674,
+    "nominate_entropy": 0.0012475785439453237,
+    "best_update": 100,
+    "wall_h": 1.2018972908125984
+   },
+   {
+    "update": 250,
+    "episodes": 8000,
+    "train_reward": 0.899400085008669,
+    "val_score": 0.9014860410711705,
+    "val_share": {
+     "nk:validation": 9.675
+    },
+    "order_entropy": 5.382284052365111,
+    "nominate_entropy": 0.0007232334619604737,
+    "best_update": 250,
+    "wall_h": 1.4531096805466546
+   },
+   {
+    "update": 300,
+    "episodes": 9600,
+    "train_reward": 0.9040347039823824,
+    "val_score": 0.897732634859417,
+    "val_share": {
+     "nk:validation": 6.783333333333332
+    },
+    "order_entropy": 5.356238259666558,
+    "nominate_entropy": 0.001346402351787371,
+    "best_update": 250,
+    "wall_h": 1.7354939035574595
+   },
+   {
+    "update": 350,
+    "episodes": 11200,
+    "train_reward": 0.9013104374793061,
+    "val_score": 0.900275223362281,
+    "val_share": {
+     "nk:validation": 8.35
+    },
+    "order_entropy": 5.304799989352153,
+    "nominate_entropy": 0.00040947690757124904,
+    "best_update": 250,
+    "wall_h": 2.001771258049541
+   },
+   {
+    "update": 400,
+    "episodes": 12800,
+    "train_reward": 0.9021419585770137,
+    "val_score": 0.9016377788712506,
+    "val_share": {
+     "nk:validation": 10.241666666666667
+    },
+    "order_entropy": 5.417487965175476,
+    "nominate_entropy": 0.00342435853180644,
+    "best_update": 400,
+    "wall_h": 2.301404856973224
+   },
+   {
+    "update": 450,
+    "episodes": 14400,
+    "train_reward": 0.8991441586607606,
+    "val_score": 0.898187453429255,
+    "val_share": {
+     "nk:validation": 7.566666666666667
+    },
+    "order_entropy": 5.367564740282668,
+    "nominate_entropy": 0.0027790511039718657,
+    "best_update": 400,
+    "wall_h": 2.612609721687105
+   },
+   {
+    "update": 500,
+    "episodes": 16000,
+    "train_reward": 0.9019543693913498,
+    "val_score": 0.9053885357771506,
+    "val_share": {
+     "nk:validation": 8.725
+    },
+    "order_entropy": 5.315858402753312,
+    "nominate_entropy": 0.006895387249542002,
+    "best_update": 500,
+    "wall_h": 2.906076998313268
+   },
+   {
+    "update": 550,
+    "episodes": 17600,
+    "train_reward": 0.9027837184259444,
+    "val_score": 0.8938654188418133,
+    "val_share": {
+     "nk:validation": 11.05
+    },
+    "order_entropy": 5.517053758883584,
+    "nominate_entropy": 0.03575103069067615,
+    "best_update": 500,
+    "wall_h": 3.168292649189631
+   },
+   {
+    "update": 600,
+    "episodes": 19200,
+    "train_reward": 0.9013053377166274,
+    "val_score": 0.9041062545150895,
+    "val_share": {
+     "nk:validation": 11.341666666666665
+    },
+    "order_entropy": 5.44938818063611,
+    "nominate_entropy": 0.011675190947414996,
+    "best_update": 500,
+    "wall_h": 3.4173465255233975
+   },
+   {
+    "update": 650,
+    "episodes": 20800,
+    "train_reward": 0.9025104054411018,
+    "val_score": 0.8960265424559393,
+    "val_share": {
+     "nk:validation": 11.525
+    },
+    "order_entropy": 5.415381107950358,
+    "nominate_entropy": 0.004193426623615462,
+    "best_update": 500,
+    "wall_h": 3.6581802344322205
+   },
+   {
+    "update": 700,
+    "episodes": 22400,
+    "train_reward": 0.899682080460383,
+    "val_score": 0.9060010069129518,
+    "val_share": {
+     "nk:validation": 10.641666666666666
+    },
+    "order_entropy": 5.463784932023138,
+    "nominate_entropy": 0.07413880825576943,
+    "best_update": 700,
+    "wall_h": 3.8776257014274598
+   },
+   {
+    "update": 750,
+    "episodes": 24000,
+    "train_reward": 0.9014630630880238,
+    "val_score": 0.9039344681554792,
+    "val_share": {
+     "nk:validation": 8.633333333333333
+    },
+    "order_entropy": 5.2542574090038245,
+    "nominate_entropy": 0.00415180776722331,
+    "best_update": 700,
+    "wall_h": 4.093247968554497
+   },
+   {
+    "update": 800,
+    "episodes": 25600,
+    "train_reward": 0.9022605726771338,
+    "val_score": 0.9027045959649627,
+    "val_share": {
+     "nk:validation": 6.908333333333334
+    },
+    "order_entropy": 5.3229959389642625,
+    "nominate_entropy": 0.0034498769355907465,
+    "best_update": 700,
+    "wall_h": 4.3096431774563255
+   },
+   {
+    "update": 850,
+    "episodes": 27200,
+    "train_reward": 0.9039704951876463,
+    "val_score": 0.9071206958179562,
+    "val_share": {
+     "nk:validation": 11.266666666666667
+    },
+    "order_entropy": 5.185592624256504,
+    "nominate_entropy": 0.013168074372626943,
+    "best_update": 850,
+    "wall_h": 4.512605366706848
+   },
+   {
+    "update": 900,
+    "episodes": 28800,
+    "train_reward": 0.902706005555748,
+    "val_score": 0.8990088508146701,
+    "val_share": {
+     "nk:validation": 13.525
+    },
+    "order_entropy": 5.08369615382721,
+    "nominate_entropy": 0.02533419708515118,
+    "best_update": 850,
+    "wall_h": 4.725064185261727
+   },
+   {
+    "update": 950,
+    "episodes": 30400,
+    "train_reward": 0.9040421831517509,
+    "val_score": 0.9000976195648227,
+    "val_share": {
+     "nk:validation": 10.7
+    },
+    "order_entropy": 5.190099308230867,
+    "nominate_entropy": 0.011765629647036098,
+    "best_update": 850,
+    "wall_h": 4.937901432183054
+   },
+   {
+    "update": 1000,
+    "episodes": 32000,
+    "train_reward": 0.8997246930549874,
+    "val_score": 0.900181833075771,
+    "val_share": {
+     "nk:validation": 9.191666666666668
+    },
+    "order_entropy": 5.443527819242515,
+    "nominate_entropy": 0.06234928259316282,
+    "best_update": 850,
+    "wall_h": 5.15539246585634
+   },
+   {
+    "update": 1050,
+    "episodes": 33600,
+    "train_reward": 0.9012152349297472,
+    "val_score": 0.8992058718316158,
+    "val_share": {
+     "nk:validation": 12.075
+    },
+    "order_entropy": 5.337543039774625,
+    "nominate_entropy": 0.061840926718336145,
+    "best_update": 850,
+    "wall_h": 5.3570101233323415
+   },
+   {
+    "update": 1100,
+    "episodes": 35200,
+    "train_reward": 0.9004571320118643,
+    "val_score": 0.90085364022637,
+    "val_share": {
+     "nk:validation": 9.366666666666667
+    },
+    "order_entropy": 5.509472855729339,
+    "nominate_entropy": 0.014031233284112474,
+    "best_update": 850,
+    "wall_h": 5.569408887492286
+   },
+   {
+    "update": 1150,
+    "episodes": 36800,
+    "train_reward": 0.8987331331175835,
+    "val_score": 0.8985441227478995,
+    "val_share": {
+     "nk:validation": 10.683333333333335
+    },
+    "order_entropy": 5.53849210721158,
+    "nominate_entropy": 0.02257455296946033,
+    "best_update": 850,
+    "wall_h": 5.7802839742104215
+   },
+   {
+    "update": 1200,
+    "episodes": 38400,
+    "train_reward": 0.9032270713399063,
+    "val_score": 0.9017742220844712,
+    "val_share": {
+     "nk:validation": 12.708333333333336
+    },
+    "order_entropy": 5.284091194955383,
+    "nominate_entropy": 0.03490419329242255,
+    "best_update": 850,
+    "wall_h": 5.979004187981288
+   },
+   {
+    "update": 1250,
+    "episodes": 40000,
+    "train_reward": 0.8993266516520358,
+    "val_score": 0.8971801664757001,
+    "val_share": {
+     "nk:validation": 12.083333333333332
+    },
+    "order_entropy": 5.366411368208353,
+    "nominate_entropy": 0.024393850971379666,
+    "best_update": 850,
+    "wall_h": 6.178453561928537
+   },
+   {
+    "update": 1300,
+    "episodes": 41600,
+    "train_reward": 0.9003840391279928,
+    "val_score": 0.9006873705128688,
+    "val_share": {
+     "nk:validation": 11.958333333333336
+    },
+    "order_entropy": 5.309823542722609,
+    "nominate_entropy": 0.007027524166982205,
+    "best_update": 850,
+    "wall_h": 6.380627168549432
+   },
+   {
+    "update": 1350,
+    "episodes": 43200,
+    "train_reward": 0.9003802659003126,
+    "val_score": 0.899603739630707,
+    "val_share": {
+     "nk:validation": 9.233333333333333
+    },
+    "order_entropy": 5.20890996177448,
+    "nominate_entropy": 0.08148228589743386,
+    "best_update": 850,
+    "wall_h": 6.57824487970935
+   },
+   {
+    "update": 1400,
+    "episodes": 44800,
+    "train_reward": 0.902874978613972,
+    "val_score": 0.8992749508868401,
+    "val_share": {
+     "nk:validation": 12.675
+    },
+    "order_entropy": 5.365927506077522,
+    "nominate_entropy": 0.07198658260566389,
+    "best_update": 850,
+    "wall_h": 6.782601700822513
+   },
+   {
+    "update": 1450,
+    "episodes": 46400,
+    "train_reward": 0.9014571499135622,
+    "val_score": 0.8994175619023801,
+    "val_share": {
+     "nk:validation": 9.158333333333333
+    },
+    "order_entropy": 5.140239301551791,
+    "nominate_entropy": 0.048768634177953574,
+    "best_update": 850,
+    "wall_h": 6.988311041063732
+   },
+   {
+    "update": 1500,
+    "episodes": 48000,
+    "train_reward": 0.9034332977499127,
+    "val_score": 0.8970625808060682,
+    "val_share": {
+     "nk:validation": 6.558333333333334
+    },
+    "order_entropy": 5.340605408421775,
+    "nominate_entropy": 0.13228460323593447,
+    "best_update": 850,
+    "wall_h": 7.197099171148406
+   }
+  ]
+ },
+ "A_s1": {
+  "updates_logged": 1500,
+  "points": [
+   {
+    "update": 0,
+    "episodes": 0,
+    "train_reward": null,
+    "val_score": 0.8006705489441245,
+    "val_share": {
+     "nk:validation": 10.05
+    },
+    "order_entropy": null,
+    "nominate_entropy": null,
+    "best_update": 0,
+    "wall_h": 0.016809244751930238
+   },
+   {
+    "update": 50,
+    "episodes": 1600,
+    "train_reward": 0.8788729604906393,
+    "val_score": 0.889884090557181,
+    "val_share": {
+     "nk:validation": 7.691666666666667
+    },
+    "order_entropy": 5.877244964821996,
+    "nominate_entropy": 0.9527599392627023,
+    "best_update": 50,
+    "wall_h": 0.3509674733214908
+   },
+   {
+    "update": 100,
+    "episodes": 3200,
+    "train_reward": 0.8982973124591933,
+    "val_score": 0.8930714994264257,
+    "val_share": {
+     "nk:validation": 4.525
+    },
+    "order_entropy": 5.586539361523648,
+    "nominate_entropy": 0.02711841963295154,
+    "best_update": 100,
+    "wall_h": 0.6726506097449196
+   },
+   {
+    "update": 150,
+    "episodes": 4800,
+    "train_reward": 0.8994245877677338,
+    "val_score": 0.8986552895223529,
+    "val_share": {
+     "nk:validation": 5.583333333333334
+    },
+    "order_entropy": 5.660330292387683,
+    "nominate_entropy": 0.004651423184742841,
+    "best_update": 150,
+    "wall_h": 0.941988418367174
+   },
+   {
+    "update": 200,
+    "episodes": 6400,
+    "train_reward": 0.90052380479493,
+    "val_score": 0.8925419556021442,
+    "val_share": {
+     "nk:validation": 10.008333333333333
+    },
+    "order_entropy": 5.6833638621626505,
+    "nominate_entropy": 0.0025396803231521347,
+    "best_update": 150,
+    "wall_h": 1.2086518072419696
+   },
+   {
+    "update": 250,
+    "episodes": 8000,
+    "train_reward": 0.8995083603431188,
+    "val_score": 0.8981259796758738,
+    "val_share": {
+     "nk:validation": 7.125
+    },
+    "order_entropy": 5.528626024408576,
+    "nominate_entropy": 0.07969420254247865,
+    "best_update": 150,
+    "wall_h": 1.470087787244055
+   },
+   {
+    "update": 300,
+    "episodes": 9600,
+    "train_reward": 0.8989955164518831,
+    "val_score": 0.9045390963961077,
+    "val_share": {
+     "nk:validation": 8.866666666666667
+    },
+    "order_entropy": 5.402528685134508,
+    "nominate_entropy": 0.003898747543857439,
+    "best_update": 300,
+    "wall_h": 1.7554308019744025
+   },
+   {
+    "update": 350,
+    "episodes": 11200,
+    "train_reward": 0.8992893262175637,
+    "val_score": 0.8965787754758976,
+    "val_share": {
+     "nk:validation": 19.474999999999998
+    },
+    "order_entropy": 5.035358952808808,
+    "nominate_entropy": 0.008780098249887222,
+    "best_update": 300,
+    "wall_h": 2.010768248902427
+   },
+   {
+    "update": 400,
+    "episodes": 12800,
+    "train_reward": 0.9020902563834947,
+    "val_score": 0.9016121407329559,
+    "val_share": {
+     "nk:validation": 10.916666666666668
+    },
+    "order_entropy": 5.0968549431059875,
+    "nominate_entropy": 0.010703907967505907,
+    "best_update": 300,
+    "wall_h": 2.2949510602818597
+   },
+   {
+    "update": 450,
+    "episodes": 14400,
+    "train_reward": 0.9009876724036444,
+    "val_score": 0.900453139596423,
+    "val_share": {
+     "nk:validation": 12.233333333333334
+    },
+    "order_entropy": 5.436390209079484,
+    "nominate_entropy": 0.11082496162776014,
+    "best_update": 300,
+    "wall_h": 2.6058538666698667
+   },
+   {
+    "update": 500,
+    "episodes": 16000,
+    "train_reward": 0.8994198005665917,
+    "val_score": 0.9020680533449424,
+    "val_share": {
+     "nk:validation": 13.591666666666667
+    },
+    "order_entropy": 5.553887158004041,
+    "nominate_entropy": 0.19430666561292484,
+    "best_update": 300,
+    "wall_h": 2.9102246416939628
+   },
+   {
+    "update": 550,
+    "episodes": 17600,
+    "train_reward": 0.9015970482716607,
+    "val_score": 0.9037306761367898,
+    "val_share": {
+     "nk:validation": 11.35
+    },
+    "order_entropy": 5.518773383121179,
+    "nominate_entropy": 0.0544889513464506,
+    "best_update": 300,
+    "wall_h": 3.1720342730813558
+   },
+   {
+    "update": 600,
+    "episodes": 19200,
+    "train_reward": 0.8982424431706764,
+    "val_score": 0.9055127260176934,
+    "val_share": {
+     "nk:validation": 12.958333333333336
+    },
+    "order_entropy": 5.362073487620767,
+    "nominate_entropy": 0.06807568057736275,
+    "best_update": 600,
+    "wall_h": 3.4212723364432653
+   },
+   {
+    "update": 650,
+    "episodes": 20800,
+    "train_reward": 0.8994654796764397,
+    "val_score": 0.9017822500264393,
+    "val_share": {
+     "nk:validation": 15.216666666666665
+    },
+    "order_entropy": 5.157522458679536,
+    "nominate_entropy": 0.10421756727409376,
+    "best_update": 600,
+    "wall_h": 3.6597070261504916
+   },
+   {
+    "update": 700,
+    "episodes": 22400,
+    "train_reward": 0.9013424656940399,
+    "val_score": 0.8959054971734821,
+    "val_share": {
+     "nk:validation": 13.408333333333333
+    },
+    "order_entropy": 5.280231420003469,
+    "nominate_entropy": 0.025981193663140046,
+    "best_update": 600,
+    "wall_h": 3.8748032425509558
+   },
+   {
+    "update": 750,
+    "episodes": 24000,
+    "train_reward": 0.9038956638953846,
+    "val_score": 0.898196983727548,
+    "val_share": {
+     "nk:validation": 6.75
+    },
+    "order_entropy": 5.370746600746002,
+    "nominate_entropy": 0.007332029799128908,
+    "best_update": 600,
+    "wall_h": 4.094662461148368
+   },
+   {
+    "update": 800,
+    "episodes": 25600,
+    "train_reward": 0.9006168226188532,
+    "val_score": 0.8961734259615395,
+    "val_share": {
+     "nk:validation": 8.833333333333334
+    },
+    "order_entropy": 5.356766241637546,
+    "nominate_entropy": 0.013933556259670188,
+    "best_update": 600,
+    "wall_h": 4.312096105880207
+   },
+   {
+    "update": 850,
+    "episodes": 27200,
+    "train_reward": 0.8981777770179824,
+    "val_score": 0.8978787325752478,
+    "val_share": {
+     "nk:validation": 11.041666666666668
+    },
+    "order_entropy": 5.507869905577272,
+    "nominate_entropy": 0.08743825030428401,
+    "best_update": 600,
+    "wall_h": 4.528079440858629
+   },
+   {
+    "update": 900,
+    "episodes": 28800,
+    "train_reward": 0.8999723111811891,
+    "val_score": 0.903352990901258,
+    "val_share": {
+     "nk:validation": 13.633333333333335
+    },
+    "order_entropy": 5.506830768238323,
+    "nominate_entropy": 0.07756607048374758,
+    "best_update": 600,
+    "wall_h": 4.755305780834622
+   },
+   {
+    "update": 950,
+    "episodes": 30400,
+    "train_reward": 0.9022162905133401,
+    "val_score": 0.9003753286193431,
+    "val_share": {
+     "nk:validation": 10.55
+    },
+    "order_entropy": 5.316635155826654,
+    "nominate_entropy": 0.022235133405598417,
+    "best_update": 600,
+    "wall_h": 4.973083738883337
+   },
+   {
+    "update": 1000,
+    "episodes": 32000,
+    "train_reward": 0.8994497763196019,
+    "val_score": 0.8987015581596722,
+    "val_share": {
+     "nk:validation": 10.183333333333334
+    },
+    "order_entropy": 5.422188504132611,
+    "nominate_entropy": 0.00653877823843849,
+    "best_update": 600,
+    "wall_h": 5.183547892570496
+   },
+   {
+    "update": 1050,
+    "episodes": 33600,
+    "train_reward": 0.89868667184588,
+    "val_score": 0.9042865190711091,
+    "val_share": {
+     "nk:validation": 15.325
+    },
+    "order_entropy": 5.35552787600246,
+    "nominate_entropy": 0.009022618063684715,
+    "best_update": 600,
+    "wall_h": 5.385707859198252
+   },
+   {
+    "update": 1100,
+    "episodes": 35200,
+    "train_reward": 0.8984558246919385,
+    "val_score": 0.9027497051683823,
+    "val_share": {
+     "nk:validation": 13.05
+    },
+    "order_entropy": 5.28885450566029,
+    "nominate_entropy": 0.17714920586927327,
+    "best_update": 600,
+    "wall_h": 5.591037841969066
+   },
+   {
+    "update": 1150,
+    "episodes": 36800,
+    "train_reward": 0.9029398634228845,
+    "val_score": 0.8983927293072926,
+    "val_share": {
+     "nk:validation": 7.833333333333332
+    },
+    "order_entropy": 5.275413693326997,
+    "nominate_entropy": 0.08508499474562738,
+    "best_update": 600,
+    "wall_h": 5.7967872467305925
+   },
+   {
+    "update": 1200,
+    "episodes": 38400,
+    "train_reward": 0.9006376310106756,
+    "val_score": 0.9023901177066016,
+    "val_share": {
+     "nk:validation": 7.191666666666667
+    },
+    "order_entropy": 5.336924775286069,
+    "nominate_entropy": 0.13085071841782916,
+    "best_update": 600,
+    "wall_h": 6.002163723972108
+   },
+   {
+    "update": 1250,
+    "episodes": 40000,
+    "train_reward": 0.9027613874400404,
+    "val_score": 0.9037954397065476,
+    "val_share": {
+     "nk:validation": 11.825
+    },
+    "order_entropy": 5.465812467998108,
+    "nominate_entropy": 0.1499950975738732,
+    "best_update": 600,
+    "wall_h": 6.210332346955935
+   },
+   {
+    "update": 1300,
+    "episodes": 41600,
+    "train_reward": 0.902009707057686,
+    "val_score": 0.9000784407956915,
+    "val_share": {
+     "nk:validation": 10.016666666666666
+    },
+    "order_entropy": 5.552102145243068,
+    "nominate_entropy": 0.1361316851571736,
+    "best_update": 600,
+    "wall_h": 6.416228799687492
+   },
+   {
+    "update": 1350,
+    "episodes": 43200,
+    "train_reward": 0.8996694656605717,
+    "val_score": 0.9022434513809044,
+    "val_share": {
+     "nk:validation": 7.908333333333332
+    },
+    "order_entropy": 5.495898410303305,
+    "nominate_entropy": 0.10634991794231016,
+    "best_update": 600,
+    "wall_h": 6.625553786357244
+   },
+   {
+    "update": 1400,
+    "episodes": 44800,
+    "train_reward": 0.900340208984915,
+    "val_score": 0.8994899351717518,
+    "val_share": {
+     "nk:validation": 11.9
+    },
+    "order_entropy": 5.4832047386841145,
+    "nominate_entropy": 0.10154574437207745,
+    "best_update": 600,
+    "wall_h": 6.839053296976619
+   },
+   {
+    "update": 1450,
+    "episodes": 46400,
+    "train_reward": 0.8994210372989779,
+    "val_score": 0.8949115481772324,
+    "val_share": {
+     "nk:validation": 14.383333333333333
+    },
+    "order_entropy": 5.187843364869959,
+    "nominate_entropy": 0.050130595144614515,
+    "best_update": 600,
+    "wall_h": 7.051219874752892
+   },
+   {
+    "update": 1500,
+    "episodes": 48000,
+    "train_reward": 0.9008486532546081,
+    "val_score": 0.9015451671382742,
+    "val_share": {
+     "nk:validation": 12.408333333333333
+    },
+    "order_entropy": 5.13185615611232,
+    "nominate_entropy": 0.005527412431420981,
+    "best_update": 600,
+    "wall_h": 7.247406939135657
+   }
+  ]
+ },
+ "A_s2": {
+  "updates_logged": 1500,
+  "points": [
+   {
+    "update": 0,
+    "episodes": 0,
+    "train_reward": null,
+    "val_score": 0.8031743096198523,
+    "val_share": {
+     "nk:validation": 9.575
+    },
+    "order_entropy": null,
+    "nominate_entropy": null,
+    "best_update": 0,
+    "wall_h": 0.016720687482092114
+   },
+   {
+    "update": 50,
+    "episodes": 1600,
+    "train_reward": 0.8745310902445741,
+    "val_score": 0.8950734633478694,
+    "val_share": {
+     "nk:validation": 5.275
+    },
+    "order_entropy": 5.909644937575909,
+    "nominate_entropy": 0.8620024487641819,
+    "best_update": 50,
+    "wall_h": 0.35471085442437067
+   },
+   {
+    "update": 100,
+    "episodes": 3200,
+    "train_reward": 0.899400262623072,
+    "val_score": 0.9074149525730059,
+    "val_share": {
+     "nk:validation": 2.3083333333333336
+    },
+    "order_entropy": 5.725349101887807,
+    "nominate_entropy": 0.004725530906354284,
+    "best_update": 100,
+    "wall_h": 0.6825805599821938
+   },
+   {
+    "update": 150,
+    "episodes": 4800,
+    "train_reward": 0.8992804499627699,
+    "val_score": 0.8972594946444588,
+    "val_share": {
+     "nk:validation": 10.283333333333335
+    },
+    "order_entropy": 5.672680124112492,
+    "nominate_entropy": 0.0015769903727566703,
+    "best_update": 100,
+    "wall_h": 0.942997989124722
+   },
+   {
+    "update": 200,
+    "episodes": 6400,
+    "train_reward": 0.8975551786273843,
+    "val_score": 0.8998778699264627,
+    "val_share": {
+     "nk:validation": 9.783333333333333
+    },
+    "order_entropy": 5.462246765233332,
+    "nominate_entropy": 0.025244666667206202,
+    "best_update": 100,
+    "wall_h": 1.200712392197715
+   },
+   {
+    "update": 250,
+    "episodes": 8000,
+    "train_reward": 0.8964193271415084,
+    "val_score": 0.8982929302485928,
+    "val_share": {
+     "nk:validation": 9.216666666666667
+    },
+    "order_entropy": 5.413808362281759,
+    "nominate_entropy": 0.0012136476866370896,
+    "best_update": 100,
+    "wall_h": 1.4605833313862482
+   },
+   {
+    "update": 300,
+    "episodes": 9600,
+    "train_reward": 0.9010955349254616,
+    "val_score": 0.9018906516964494,
+    "val_share": {
+     "nk:validation": 8.616666666666667
+    },
+    "order_entropy": 5.084651752413652,
+    "nominate_entropy": 0.0002934731016953953,
+    "best_update": 100,
+    "wall_h": 1.7368975241316689
+   },
+   {
+    "update": 350,
+    "episodes": 11200,
+    "train_reward": 0.8985217079311089,
+    "val_score": 0.8926163362156794,
+    "val_share": {
+     "nk:validation": 8.616666666666667
+    },
+    "order_entropy": 5.3127099188989,
+    "nominate_entropy": 0.002801330690923289,
+    "best_update": 100,
+    "wall_h": 2.002005765835444
+   },
+   {
+    "update": 400,
+    "episodes": 12800,
+    "train_reward": 0.9005513467852595,
+    "val_score": 0.901110785689147,
+    "val_share": {
+     "nk:validation": 8.15
+    },
+    "order_entropy": 5.359656201773672,
+    "nominate_entropy": 0.012182711956429367,
+    "best_update": 100,
+    "wall_h": 2.300687835216522
+   },
+   {
+    "update": 450,
+    "episodes": 14400,
+    "train_reward": 0.8999712045870081,
+    "val_score": 0.8977842534447515,
+    "val_share": {
+     "nk:validation": 8.1
+    },
+    "order_entropy": 5.365371577813119,
+    "nominate_entropy": 0.002246795513464238,
+    "best_update": 100,
+    "wall_h": 2.6154791382948557
+   },
+   {
+    "update": 500,
+    "episodes": 16000,
+    "train_reward": 0.8999391717825651,
+    "val_score": 0.8956953744043967,
+    "val_share": {
+     "nk:validation": 12.608333333333333
+    },
+    "order_entropy": 5.462153075760813,
+    "nominate_entropy": 0.014149684500978652,
+    "best_update": 100,
+    "wall_h": 2.916687897178862
+   },
+   {
+    "update": 550,
+    "episodes": 17600,
+    "train_reward": 0.8997737158655077,
+    "val_score": 0.8985477487981123,
+    "val_share": {
+     "nk:validation": 12.933333333333335
+    },
+    "order_entropy": 5.353032882263622,
+    "nominate_entropy": 0.004197719973218678,
+    "best_update": 100,
+    "wall_h": 3.173328235546748
+   },
+   {
+    "update": 600,
+    "episodes": 19200,
+    "train_reward": 0.9040502018321629,
+    "val_score": 0.9004594685460182,
+    "val_share": {
+     "nk:validation": 9.333333333333334
+    },
+    "order_entropy": 5.227677333054519,
+    "nominate_entropy": 0.00716559811056895,
+    "best_update": 100,
+    "wall_h": 3.417175657749176
+   },
+   {
+    "update": 650,
+    "episodes": 20800,
+    "train_reward": 0.9032311884850752,
+    "val_score": 0.9020760458545242,
+    "val_share": {
+     "nk:validation": 14.991666666666665
+    },
+    "order_entropy": 5.172131173132487,
+    "nominate_entropy": 0.01483384654492563,
+    "best_update": 100,
+    "wall_h": 3.6526794949505064
+   },
+   {
+    "update": 700,
+    "episodes": 22400,
+    "train_reward": 0.8998658087948499,
+    "val_score": 0.8970804100377535,
+    "val_share": {
+     "nk:validation": 10.708333333333336
+    },
+    "order_entropy": 5.34661252133197,
+    "nominate_entropy": 0.002138137027673374,
+    "best_update": 100,
+    "wall_h": 3.8682141774892806
+   },
+   {
+    "update": 750,
+    "episodes": 24000,
+    "train_reward": 0.9016604577727145,
+    "val_score": 0.9050194596372073,
+    "val_share": {
+     "nk:validation": 11.591666666666665
+    },
+    "order_entropy": 5.220682199571268,
+    "nominate_entropy": 0.05557633025659621,
+    "best_update": 100,
+    "wall_h": 4.081070469154252
+   },
+   {
+    "update": 800,
+    "episodes": 25600,
+    "train_reward": 0.9005880857772586,
+    "val_score": 0.8988041515925325,
+    "val_share": {
+     "nk:validation": 17.8
+    },
+    "order_entropy": 5.216725420161831,
+    "nominate_entropy": 0.013639582388896503,
+    "best_update": 100,
+    "wall_h": 4.292380162477493
+   },
+   {
+    "update": 850,
+    "episodes": 27200,
+    "train_reward": 0.9003217245595998,
+    "val_score": 0.9002261661280064,
+    "val_share": {
+     "nk:validation": 9.416666666666666
+    },
+    "order_entropy": 5.395132958024771,
+    "nominate_entropy": 0.004346637145692825,
+    "best_update": 100,
+    "wall_h": 4.4996282719241245
+   },
+   {
+    "update": 900,
+    "episodes": 28800,
+    "train_reward": 0.9036627183838657,
+    "val_score": 0.9051250482919428,
+    "val_share": {
+     "nk:validation": 9.1
+    },
+    "order_entropy": 5.3886656455633615,
+    "nominate_entropy": 0.000353524850310985,
+    "best_update": 100,
+    "wall_h": 4.7166683885786265
+   },
+   {
+    "update": 950,
+    "episodes": 30400,
+    "train_reward": 0.9017010480034905,
+    "val_score": 0.8974134810481982,
+    "val_share": {
+     "nk:validation": 5.8583333333333325
+    },
+    "order_entropy": 5.341683593560586,
+    "nominate_entropy": 0.019115870063104053,
+    "best_update": 100,
+    "wall_h": 4.934509196943707
+   },
+   {
+    "update": 1000,
+    "episodes": 32000,
+    "train_reward": 0.9016331230114745,
+    "val_score": 0.9010432589121424,
+    "val_share": {
+     "nk:validation": 11.366666666666665
+    },
+    "order_entropy": 5.43729450503288,
+    "nominate_entropy": 0.004206140267040536,
+    "best_update": 100,
+    "wall_h": 5.145488481389152
+   },
+   {
+    "update": 1050,
+    "episodes": 33600,
+    "train_reward": 0.9016478071062681,
+    "val_score": 0.8966975553559056,
+    "val_share": {
+     "nk:validation": 6.275
+    },
+    "order_entropy": 5.562240185923783,
+    "nominate_entropy": 0.04288050507735983,
+    "best_update": 100,
+    "wall_h": 5.353414340813955
+   },
+   {
+    "update": 1100,
+    "episodes": 35200,
+    "train_reward": 0.899155771573103,
+    "val_score": 0.8986217827366996,
+    "val_share": {
+     "nk:validation": 12.933333333333332
+    },
+    "order_entropy": 5.530242353773051,
+    "nominate_entropy": 0.0029607132002226937,
+    "best_update": 100,
+    "wall_h": 5.561108498308394
+   },
+   {
+    "update": 1150,
+    "episodes": 36800,
+    "train_reward": 0.9010653353156696,
+    "val_score": 0.9004058093490533,
+    "val_share": {
+     "nk:validation": 11.791666666666668
+    },
+    "order_entropy": 5.473269600904313,
+    "nominate_entropy": 0.0005040237036083658,
+    "best_update": 100,
+    "wall_h": 5.769775164922079
+   },
+   {
+    "update": 1200,
+    "episodes": 38400,
+    "train_reward": 0.9009468524610259,
+    "val_score": 0.901354497062653,
+    "val_share": {
+     "nk:validation": 10.166666666666668
+    },
+    "order_entropy": 5.203462956072151,
+    "nominate_entropy": 0.004494839289221002,
+    "best_update": 100,
+    "wall_h": 5.966527082456483
+   },
+   {
+    "update": 1250,
+    "episodes": 40000,
+    "train_reward": 0.9030327402845224,
+    "val_score": 0.9011470519754056,
+    "val_share": {
+     "nk:validation": 9.091666666666667
+    },
+    "order_entropy": 5.396821743191817,
+    "nominate_entropy": 0.0014159144449217647,
+    "best_update": 100,
+    "wall_h": 6.164777666926384
+   },
+   {
+    "update": 1300,
+    "episodes": 41600,
+    "train_reward": 0.900431229931227,
+    "val_score": 0.8930161125740264,
+    "val_share": {
+     "nk:validation": 6.875
+    },
+    "order_entropy": 5.371144439203039,
+    "nominate_entropy": 0.01042608371623055,
+    "best_update": 100,
+    "wall_h": 6.36668506913715
+   },
+   {
+    "update": 1350,
+    "episodes": 43200,
+    "train_reward": 0.9003218861101009,
+    "val_score": 0.9058092101028028,
+    "val_share": {
+     "nk:validation": 10.575
+    },
+    "order_entropy": 5.212295044031306,
+    "nominate_entropy": 0.05545003757060532,
+    "best_update": 100,
+    "wall_h": 6.562950956092941
+   },
+   {
+    "update": 1400,
+    "episodes": 44800,
+    "train_reward": 0.9010089958880134,
+    "val_score": 0.9040768938139613,
+    "val_share": {
+     "nk:validation": 11.55
+    },
+    "order_entropy": 4.968633181692338,
+    "nominate_entropy": 0.004062874123376077,
+    "best_update": 100,
+    "wall_h": 6.758158458603753
+   },
+   {
+    "update": 1450,
+    "episodes": 46400,
+    "train_reward": 0.9008012207333153,
+    "val_score": 0.9064251338160052,
+    "val_share": {
+     "nk:validation": 9.391666666666667
+    },
+    "order_entropy": 5.025905545901137,
+    "nominate_entropy": 0.0007485001807835416,
+    "best_update": 100,
+    "wall_h": 6.964713753329383
+   },
+   {
+    "update": 1500,
+    "episodes": 48000,
+    "train_reward": 0.8997740776449555,
+    "val_score": 0.8997019135220005,
+    "val_share": {
+     "nk:validation": 19.30833333333333
+    },
+    "order_entropy": 5.02208325821677,
+    "nominate_entropy": 0.11236526674657021,
+    "best_update": 100,
+    "wall_h": 7.167672149406539
+   }
+  ]
+ },
+ "B_s0": {
+  "updates_logged": 1500,
+  "points": [
+   {
+    "update": 0,
+    "episodes": 0,
+    "train_reward": null,
+    "val_score": 0.4858048551653324,
+    "val_share": {
+     "gb1:validation": 8.241666666666667,
+     "nk:validation": 9.000000000000002
+    },
+    "order_entropy": null,
+    "nominate_entropy": null,
+    "best_update": 0,
+    "wall_h": 0.030551725029945374
+   },
+   {
+    "update": 50,
+    "episodes": 1600,
+    "train_reward": 0.6600230816817902,
+    "val_score": 0.6404163541386306,
+    "val_share": {
+     "gb1:validation": 66.18333333333334,
+     "nk:validation": 68.24166666666666
+    },
+    "order_entropy": 5.703767184679276,
+    "nominate_entropy": 1.1100023501702863,
+    "best_update": 50,
+    "wall_h": 0.3231419499715169
+   },
+   {
+    "update": 100,
+    "episodes": 3200,
+    "train_reward": 0.6140255645979674,
+    "val_score": 0.5845174628932169,
+    "val_share": {
+     "gb1:validation": 70.18333333333334,
+     "nk:validation": 73.11666666666667
+    },
+    "order_entropy": 4.068455604023603,
+    "nominate_entropy": 0.07078063425216206,
+    "best_update": 50,
+    "wall_h": 0.5666448639498817
+   },
+   {
+    "update": 150,
+    "episodes": 4800,
+    "train_reward": 0.5837020881181618,
+    "val_score": 0.5950857699538922,
+    "val_share": {
+     "gb1:validation": 66.18333333333334,
+     "nk:validation": 68.7
+    },
+    "order_entropy": 3.1975008259387243,
+    "nominate_entropy": 0.18871353277862504,
+    "best_update": 50,
+    "wall_h": 0.7698825742138756
+   },
+   {
+    "update": 200,
+    "episodes": 6400,
+    "train_reward": 0.574044168060804,
+    "val_score": 0.5641991250215255,
+    "val_share": {
+     "gb1:validation": 79.68333333333334,
+     "nk:validation": 85.19166666666666
+    },
+    "order_entropy": 3.173198034084542,
+    "nominate_entropy": 0.08389399814053482,
+    "best_update": 50,
+    "wall_h": 0.9407106030649609
+   },
+   {
+    "update": 250,
+    "episodes": 8000,
+    "train_reward": 0.5457842310852654,
+    "val_score": 0.5433670323636755,
+    "val_share": {
+     "gb1:validation": 83.71666666666668,
+     "nk:validation": 87.375
+    },
+    "order_entropy": 2.131814571325526,
+    "nominate_entropy": 0.014276799643994755,
+    "best_update": 50,
+    "wall_h": 1.0809255049626032
+   },
+   {
+    "update": 300,
+    "episodes": 9600,
+    "train_reward": 0.5375117968019097,
+    "val_score": 0.534743726865573,
+    "val_share": {
+     "gb1:validation": 86.84166666666668,
+     "nk:validation": 88.65833333333332
+    },
+    "order_entropy": 1.2289185584748126,
+    "nominate_entropy": 0.0027180063618907108,
+    "best_update": 50,
+    "wall_h": 1.2065704666905932
+   },
+   {
+    "update": 350,
+    "episodes": 11200,
+    "train_reward": 0.5356653547648945,
+    "val_score": 0.5378469051554808,
+    "val_share": {
+     "gb1:validation": 85.53333333333332,
+     "nk:validation": 88.5
+    },
+    "order_entropy": 1.1706993834292279,
+    "nominate_entropy": 0.0003975074884888835,
+    "best_update": 50,
+    "wall_h": 1.3315968928072188
+   },
+   {
+    "update": 400,
+    "episodes": 12800,
+    "train_reward": 0.5457840785689727,
+    "val_score": 0.5417431937659298,
+    "val_share": {
+     "gb1:validation": 85.175,
+     "nk:validation": 88.325
+    },
+    "order_entropy": 1.0756105778079765,
+    "nominate_entropy": 0.00017927999409976807,
+    "best_update": 50,
+    "wall_h": 1.4596672638919619
+   },
+   {
+    "update": 450,
+    "episodes": 14400,
+    "train_reward": 0.5476311188675209,
+    "val_score": 0.5386085610168002,
+    "val_share": {
+     "gb1:validation": 83.55,
+     "nk:validation": 88.825
+    },
+    "order_entropy": 1.163735348632112,
+    "nominate_entropy": 4.383811992128895e-05,
+    "best_update": 50,
+    "wall_h": 1.5970707763565912
+   },
+   {
+    "update": 500,
+    "episodes": 16000,
+    "train_reward": 0.5404258489782086,
+    "val_score": 0.5403349206342285,
+    "val_share": {
+     "gb1:validation": 84.04166666666669,
+     "nk:validation": 88.5
+    },
+    "order_entropy": 0.9948081805177504,
+    "nominate_entropy": 2.4968527701552827e-05,
+    "best_update": 50,
+    "wall_h": 1.7455401792128882
+   },
+   {
+    "update": 550,
+    "episodes": 17600,
+    "train_reward": 0.5434265810026726,
+    "val_score": 0.5441147518831783,
+    "val_share": {
+     "gb1:validation": 84.275,
+     "nk:validation": 88.725
+    },
+    "order_entropy": 1.0726379492203453,
+    "nominate_entropy": 0.00011598021138076807,
+    "best_update": 50,
+    "wall_h": 1.8878442502684063
+   },
+   {
+    "update": 600,
+    "episodes": 19200,
+    "train_reward": 0.5352227257012534,
+    "val_score": 0.544097097336408,
+    "val_share": {
+     "gb1:validation": 87.63333333333334,
+     "nk:validation": 91.84166666666665
+    },
+    "order_entropy": 1.1559687571303967,
+    "nominate_entropy": 1.3243185804873027e-05,
+    "best_update": 50,
+    "wall_h": 2.0182905958096184
+   },
+   {
+    "update": 650,
+    "episodes": 20800,
+    "train_reward": 0.5372648684139604,
+    "val_score": 0.5386522959437893,
+    "val_share": {
+     "gb1:validation": 86.65,
+     "nk:validation": 90.48333333333333
+    },
+    "order_entropy": 1.1967636807358417,
+    "nominate_entropy": 1.1780364134111758e-05,
+    "best_update": 50,
+    "wall_h": 2.1673941838741304
+   },
+   {
+    "update": 700,
+    "episodes": 22400,
+    "train_reward": 0.5362541186480306,
+    "val_score": 0.5420179969194081,
+    "val_share": {
+     "gb1:validation": 86.55833333333334,
+     "nk:validation": 90.74166666666667
+    },
+    "order_entropy": 1.1610498131078284,
+    "nominate_entropy": 3.2257148551525312e-06,
+    "best_update": 50,
+    "wall_h": 2.318348648879263
+   },
+   {
+    "update": 750,
+    "episodes": 24000,
+    "train_reward": 0.5323748487510076,
+    "val_score": 0.5403771190660425,
+    "val_share": {
+     "gb1:validation": 85.625,
+     "nk:validation": 89.375
+    },
+    "order_entropy": 1.0611572788216364,
+    "nominate_entropy": 5.227813031669215e-07,
+    "best_update": 50,
+    "wall_h": 2.472263368566831
+   },
+   {
+    "update": 800,
+    "episodes": 25600,
+    "train_reward": 0.5358392645770099,
+    "val_score": 0.5353357416493928,
+    "val_share": {
+     "gb1:validation": 84.79166666666666,
+     "nk:validation": 88.00833333333333
+    },
+    "order_entropy": 1.0187479304030347,
+    "nominate_entropy": 4.7018388529735425e-07,
+    "best_update": 50,
+    "wall_h": 2.6238156647814646
+   },
+   {
+    "update": 850,
+    "episodes": 27200,
+    "train_reward": 0.5397613657676315,
+    "val_score": 0.5424642069464527,
+    "val_share": {
+     "gb1:validation": 85.1,
+     "nk:validation": 88.125
+    },
+    "order_entropy": 0.8596764988872486,
+    "nominate_entropy": 2.3580123242133643e-07,
+    "best_update": 50,
+    "wall_h": 2.773024884197447
+   },
+   {
+    "update": 900,
+    "episodes": 28800,
+    "train_reward": 0.5417027908787118,
+    "val_score": 0.5317418240357421,
+    "val_share": {
+     "gb1:validation": 85.10833333333332,
+     "nk:validation": 88.20833333333331
+    },
+    "order_entropy": 0.8377082494569892,
+    "nominate_entropy": 1.485034161024634e-07,
+    "best_update": 50,
+    "wall_h": 2.915477058357663
+   },
+   {
+    "update": 950,
+    "episodes": 30400,
+    "train_reward": 0.5392773265954163,
+    "val_score": 0.5343671175206848,
+    "val_share": {
+     "gb1:validation": 84.44166666666666,
+     "nk:validation": 87.69166666666666
+    },
+    "order_entropy": 0.9143312174120009,
+    "nominate_entropy": 1.0330668392118318e-07,
+    "best_update": 50,
+    "wall_h": 3.0478458438979255
+   },
+   {
+    "update": 1000,
+    "episodes": 32000,
+    "train_reward": 0.5365696901641427,
+    "val_score": 0.5343658360366,
+    "val_share": {
+     "gb1:validation": 85.575,
+     "nk:validation": 87.89166666666667
+    },
+    "order_entropy": 0.9441715097299095,
+    "nominate_entropy": 1.0615940883625314e-07,
+    "best_update": 50,
+    "wall_h": 3.171422536969185
+   },
+   {
+    "update": 1050,
+    "episodes": 33600,
+    "train_reward": 0.5358703564056879,
+    "val_score": 0.5456324451620199,
+    "val_share": {
+     "gb1:validation": 83.45833333333331,
+     "nk:validation": 87.2
+    },
+    "order_entropy": 0.8751704201507023,
+    "nominate_entropy": 2.383033860601289e-05,
+    "best_update": 50,
+    "wall_h": 3.2920085152652527
+   },
+   {
+    "update": 1100,
+    "episodes": 35200,
+    "train_reward": 0.5399393222327675,
+    "val_score": 0.5358357918908996,
+    "val_share": {
+     "gb1:validation": 84.65833333333335,
+     "nk:validation": 88.11666666666667
+    },
+    "order_entropy": 0.9735427045640656,
+    "nominate_entropy": 8.419292185567707e-08,
+    "best_update": 50,
+    "wall_h": 3.414668969710668
+   },
+   {
+    "update": 1150,
+    "episodes": 36800,
+    "train_reward": 0.5383231907843984,
+    "val_score": 0.5306945080038643,
+    "val_share": {
+     "gb1:validation": 87.575,
+     "nk:validation": 89.95833333333334
+    },
+    "order_entropy": 1.0100947535400975,
+    "nominate_entropy": 8.075201040414996e-08,
+    "best_update": 50,
+    "wall_h": 3.545509712497393
+   },
+   {
+    "update": 1200,
+    "episodes": 38400,
+    "train_reward": 0.5382648047057923,
+    "val_score": 0.5522901296847382,
+    "val_share": {
+     "gb1:validation": 84.9,
+     "nk:validation": 89.4
+    },
+    "order_entropy": 1.133899163364982,
+    "nominate_entropy": 7.99777674456649e-08,
+    "best_update": 50,
+    "wall_h": 3.654368019766278
+   },
+   {
+    "update": 1250,
+    "episodes": 40000,
+    "train_reward": 0.5384151009299658,
+    "val_score": 0.5364103527050811,
+    "val_share": {
+     "gb1:validation": 88.88333333333333,
+     "nk:validation": 91.05
+    },
+    "order_entropy": 1.1127547126015025,
+    "nominate_entropy": 0.0003356559586928331,
+    "best_update": 50,
+    "wall_h": 3.761080463661088
+   },
+   {
+    "update": 1300,
+    "episodes": 41600,
+    "train_reward": 0.5363440444087463,
+    "val_score": 0.5533818647743108,
+    "val_share": {
+     "gb1:validation": 87.99166666666667,
+     "nk:validation": 91.25833333333333
+    },
+    "order_entropy": 1.227823555612793,
+    "nominate_entropy": 7.704140186680462e-06,
+    "best_update": 50,
+    "wall_h": 3.8672273853090076
+   },
+   {
+    "update": 1350,
+    "episodes": 43200,
+    "train_reward": 0.5319490796552618,
+    "val_score": 0.5340379484764892,
+    "val_share": {
+     "gb1:validation": 89.60833333333332,
+     "nk:validation": 91.93333333333332
+    },
+    "order_entropy": 1.0944794826102302,
+    "nominate_entropy": 2.8774912115146415e-06,
+    "best_update": 50,
+    "wall_h": 3.967537442247073
+   },
+   {
+    "update": 1400,
+    "episodes": 44800,
+    "train_reward": 0.5306683797012095,
+    "val_score": 0.5480775917559083,
+    "val_share": {
+     "gb1:validation": 87.025,
+     "nk:validation": 90.33333333333331
+    },
+    "order_entropy": 1.1781248494339258,
+    "nominate_entropy": 1.4321363027778513e-06,
+    "best_update": 50,
+    "wall_h": 4.069869901405441
+   },
+   {
+    "update": 1450,
+    "episodes": 46400,
+    "train_reward": 0.5387701141037643,
+    "val_score": 0.5343378258462326,
+    "val_share": {
+     "gb1:validation": 87.29166666666669,
+     "nk:validation": 90.0
+    },
+    "order_entropy": 1.3311992546464455,
+    "nominate_entropy": 4.2294177756008586e-07,
+    "best_update": 50,
+    "wall_h": 4.173429873916838
+   },
+   {
+    "update": 1500,
+    "episodes": 48000,
+    "train_reward": 0.5414050077381498,
+    "val_score": 0.5497932898156099,
+    "val_share": {
+     "gb1:validation": 84.15,
+     "nk:validation": 88.25
+    },
+    "order_entropy": 1.1479396680818919,
+    "nominate_entropy": 2.2990868645021085e-07,
+    "best_update": 50,
+    "wall_h": 4.280609076950285
+   }
+  ]
+ },
+ "B_s1": {
+  "updates_logged": 1500,
+  "points": [
+   {
+    "update": 0,
+    "episodes": 0,
+    "train_reward": null,
+    "val_score": 0.49301935129010793,
+    "val_share": {
+     "gb1:validation": 7.941666666666667,
+     "nk:validation": 9.375
+    },
+    "order_entropy": null,
+    "nominate_entropy": null,
+    "best_update": 0,
+    "wall_h": 0.03021604829364353
+   },
+   {
+    "update": 50,
+    "episodes": 1600,
+    "train_reward": 0.6458720304680238,
+    "val_score": 0.6164399254666832,
+    "val_share": {
+     "gb1:validation": 67.91666666666667,
+     "nk:validation": 72.16666666666666
+    },
+    "order_entropy": 5.649403939578881,
+    "nominate_entropy": 1.3067324227750838,
+    "best_update": 50,
+    "wall_h": 0.3246409163210127
+   },
+   {
+    "update": 100,
+    "episodes": 3200,
+    "train_reward": 0.6008879431788143,
+    "val_score": 0.6031326971007596,
+    "val_share": {
+     "gb1:validation": 73.69166666666666,
+     "nk:validation": 74.4
+    },
+    "order_entropy": 3.6954756078392603,
+    "nominate_entropy": 0.05872651963251832,
+    "best_update": 50,
+    "wall_h": 0.5487491736147139
+   },
+   {
+    "update": 150,
+    "episodes": 4800,
+    "train_reward": 0.5835351892716152,
+    "val_score": 0.5807979357888672,
+    "val_share": {
+     "gb1:validation": 81.04166666666667,
+     "nk:validation": 83.23333333333333
+    },
+    "order_entropy": 3.2146247957364102,
+    "nominate_entropy": 0.1338567372142498,
+    "best_update": 50,
+    "wall_h": 0.7392710652616289
+   },
+   {
+    "update": 200,
+    "episodes": 6400,
+    "train_reward": 0.559672579620619,
+    "val_score": 0.5711315080697699,
+    "val_share": {
+     "gb1:validation": 80.25833333333334,
+     "nk:validation": 84.93333333333332
+    },
+    "order_entropy": 2.4088653952036143,
+    "nominate_entropy": 0.08698408504810091,
+    "best_update": 50,
+    "wall_h": 0.8952497546540367
+   },
+   {
+    "update": 250,
+    "episodes": 8000,
+    "train_reward": 0.5528095043810296,
+    "val_score": 0.5408693942091566,
+    "val_share": {
+     "gb1:validation": 84.21666666666665,
+     "nk:validation": 88.275
+    },
+    "order_entropy": 1.64146130454573,
+    "nominate_entropy": 0.04751973601207928,
+    "best_update": 50,
+    "wall_h": 1.0364669052759807
+   },
+   {
+    "update": 300,
+    "episodes": 9600,
+    "train_reward": 0.5396189019749813,
+    "val_score": 0.5449950097057359,
+    "val_share": {
+     "gb1:validation": 82.61666666666667,
+     "nk:validation": 88.30833333333332
+    },
+    "order_entropy": 0.9814706611041076,
+    "nominate_entropy": 0.0023398164584817263,
+    "best_update": 50,
+    "wall_h": 1.1735268941852781
+   },
+   {
+    "update": 350,
+    "episodes": 11200,
+    "train_reward": 0.5366508988511933,
+    "val_score": 0.5392107966942842,
+    "val_share": {
+     "gb1:validation": 83.58333333333331,
+     "nk:validation": 89.01666666666668
+    },
+    "order_entropy": 0.9237349231863194,
+    "nominate_entropy": 0.0004443929433820274,
+    "best_update": 50,
+    "wall_h": 1.305057618882921
+   },
+   {
+    "update": 400,
+    "episodes": 12800,
+    "train_reward": 0.5399067746419971,
+    "val_score": 0.5433107753494026,
+    "val_share": {
+     "gb1:validation": 82.49166666666667,
+     "nk:validation": 87.75
+    },
+    "order_entropy": 1.034801774311524,
+    "nominate_entropy": 0.00011923224469568198,
+    "best_update": 50,
+    "wall_h": 1.4363583255476422
+   },
+   {
+    "update": 450,
+    "episodes": 14400,
+    "train_reward": 0.5321499186393212,
+    "val_score": 0.5398764702040929,
+    "val_share": {
+     "gb1:validation": 82.825,
+     "nk:validation": 86.88333333333333
+    },
+    "order_entropy": 0.8891239463423308,
+    "nominate_entropy": 7.049191143724096e-05,
+    "best_update": 50,
+    "wall_h": 1.5637730830245549
+   },
+   {
+    "update": 500,
+    "episodes": 16000,
+    "train_reward": 0.5433632119666283,
+    "val_score": 0.5371894498616265,
+    "val_share": {
+     "gb1:validation": 81.65833333333335,
+     "nk:validation": 88.575
+    },
+    "order_entropy": 0.9478739178751086,
+    "nominate_entropy": 1.1138025319284547e-05,
+    "best_update": 50,
+    "wall_h": 1.7234529430336423
+   },
+   {
+    "update": 550,
+    "episodes": 17600,
+    "train_reward": 0.5422532523548235,
+    "val_score": 0.5325322966063084,
+    "val_share": {
+     "gb1:validation": 84.85833333333333,
+     "nk:validation": 88.96666666666665
+    },
+    "order_entropy": 0.9641403009173473,
+    "nominate_entropy": 3.3422458550439326e-06,
+    "best_update": 50,
+    "wall_h": 1.8662314471933577
+   },
+   {
+    "update": 600,
+    "episodes": 19200,
+    "train_reward": 0.5333246311867698,
+    "val_score": 0.5279026461672058,
+    "val_share": {
+     "gb1:validation": 85.625,
+     "nk:validation": 87.81666666666668
+    },
+    "order_entropy": 0.7979306676458474,
+    "nominate_entropy": 0.00012216360053841034,
+    "best_update": 50,
+    "wall_h": 1.9895617277092403
+   },
+   {
+    "update": 650,
+    "episodes": 20800,
+    "train_reward": 0.5341368453582277,
+    "val_score": 0.5278939728098003,
+    "val_share": {
+     "gb1:validation": 85.46666666666665,
+     "nk:validation": 87.55833333333334
+    },
+    "order_entropy": 0.7421869122303554,
+    "nominate_entropy": 0.0004415025704375569,
+    "best_update": 50,
+    "wall_h": 2.1235808416869904
+   },
+   {
+    "update": 700,
+    "episodes": 22400,
+    "train_reward": 0.5316062742385711,
+    "val_score": 0.5487999364612357,
+    "val_share": {
+     "gb1:validation": 82.49166666666667,
+     "nk:validation": 87.55833333333332
+    },
+    "order_entropy": 0.8514981819568226,
+    "nominate_entropy": 0.004401888323783246,
+    "best_update": 50,
+    "wall_h": 2.273834935559167
+   },
+   {
+    "update": 750,
+    "episodes": 24000,
+    "train_reward": 0.5427889843502592,
+    "val_score": 0.5305455374903416,
+    "val_share": {
+     "gb1:validation": 85.29166666666666,
+     "nk:validation": 88.66666666666666
+    },
+    "order_entropy": 0.9345866402735313,
+    "nominate_entropy": 0.00032658649545553074,
+    "best_update": 50,
+    "wall_h": 2.4362638405296537
+   },
+   {
+    "update": 800,
+    "episodes": 25600,
+    "train_reward": 0.5377567673560649,
+    "val_score": 0.535504162627208,
+    "val_share": {
+     "gb1:validation": 83.21666666666668,
+     "nk:validation": 88.15
+    },
+    "order_entropy": 0.855820618460361,
+    "nominate_entropy": 0.0002484948307367926,
+    "best_update": 50,
+    "wall_h": 2.587933980226517
+   },
+   {
+    "update": 850,
+    "episodes": 27200,
+    "train_reward": 0.5417640307731909,
+    "val_score": 0.5414434956224395,
+    "val_share": {
+     "gb1:validation": 82.94166666666668,
+     "nk:validation": 86.85833333333332
+    },
+    "order_entropy": 0.8165838753474209,
+    "nominate_entropy": 0.001401455266950071,
+    "best_update": 50,
+    "wall_h": 2.7359144405523934
+   },
+   {
+    "update": 900,
+    "episodes": 28800,
+    "train_reward": 0.5352764200914365,
+    "val_score": 0.5350622427400644,
+    "val_share": {
+     "gb1:validation": 84.0,
+     "nk:validation": 88.28333333333332
+    },
+    "order_entropy": 0.759238764611073,
+    "nominate_entropy": 0.01164170110645629,
+    "best_update": 50,
+    "wall_h": 2.8814050538672342
+   },
+   {
+    "update": 950,
+    "episodes": 30400,
+    "train_reward": 0.5402413136048323,
+    "val_score": 0.5453014995331764,
+    "val_share": {
+     "gb1:validation": 82.34166666666665,
+     "nk:validation": 86.725
+    },
+    "order_entropy": 0.8602109676403686,
+    "nominate_entropy": 0.012280465352128074,
+    "best_update": 50,
+    "wall_h": 3.0177427241537305
+   },
+   {
+    "update": 1000,
+    "episodes": 32000,
+    "train_reward": 0.5391462735897143,
+    "val_score": 0.5455658608877982,
+    "val_share": {
+     "gb1:validation": 83.40833333333335,
+     "nk:validation": 88.24166666666667
+    },
+    "order_entropy": 0.9455960674392874,
+    "nominate_entropy": 0.0023804549208716027,
+    "best_update": 50,
+    "wall_h": 3.1443826958205965
+   },
+   {
+    "update": 1050,
+    "episodes": 33600,
+    "train_reward": 0.547638922529087,
+    "val_score": 0.5419347637272048,
+    "val_share": {
+     "gb1:validation": 83.50833333333334,
+     "nk:validation": 87.16666666666666
+    },
+    "order_entropy": 0.9239984888946401,
+    "nominate_entropy": 0.001666301911734568,
+    "best_update": 50,
+    "wall_h": 3.268275648885303
+   },
+   {
+    "update": 1100,
+    "episodes": 35200,
+    "train_reward": 0.5456963682456291,
+    "val_score": 0.5431025491432779,
+    "val_share": {
+     "gb1:validation": 84.25,
+     "nk:validation": 87.58333333333334
+    },
+    "order_entropy": 0.9315682762899459,
+    "nominate_entropy": 0.00010932905564666234,
+    "best_update": 50,
+    "wall_h": 3.394332700835334
+   },
+   {
+    "update": 1150,
+    "episodes": 36800,
+    "train_reward": 0.5424571092118451,
+    "val_score": 0.5421046480714871,
+    "val_share": {
+     "gb1:validation": 84.025,
+     "nk:validation": 87.54166666666669
+    },
+    "order_entropy": 0.8046692110005861,
+    "nominate_entropy": 0.013398782353435583,
+    "best_update": 50,
+    "wall_h": 3.5247899191909364
+   },
+   {
+    "update": 1200,
+    "episodes": 38400,
+    "train_reward": 0.5371135237496532,
+    "val_score": 0.5412699933390852,
+    "val_share": {
+     "gb1:validation": 84.09166666666668,
+     "nk:validation": 87.175
+    },
+    "order_entropy": 0.915765089171055,
+    "nominate_entropy": 0.0035839429441976815,
+    "best_update": 50,
+    "wall_h": 3.6299774152702757
+   },
+   {
+    "update": 1250,
+    "episodes": 40000,
+    "train_reward": 0.5460462362758289,
+    "val_score": 0.5342147661696948,
+    "val_share": {
+     "gb1:validation": 83.55833333333332,
+     "nk:validation": 88.05833333333332
+    },
+    "order_entropy": 0.959422093112117,
+    "nominate_entropy": 0.0060325657024354554,
+    "best_update": 50,
+    "wall_h": 3.7384653747081757
+   },
+   {
+    "update": 1300,
+    "episodes": 41600,
+    "train_reward": 0.535291357072646,
+    "val_score": 0.533091847361449,
+    "val_share": {
+     "gb1:validation": 85.36666666666666,
+     "nk:validation": 88.35833333333333
+    },
+    "order_entropy": 0.757758680758759,
+    "nominate_entropy": 0.046136826809125786,
+    "best_update": 50,
+    "wall_h": 3.842647718058692
+   },
+   {
+    "update": 1350,
+    "episodes": 43200,
+    "train_reward": 0.533733083103133,
+    "val_score": 0.5383065845821594,
+    "val_share": {
+     "gb1:validation": 84.31666666666668,
+     "nk:validation": 88.03333333333335
+    },
+    "order_entropy": 0.81325560620771,
+    "nominate_entropy": 0.1111686275936954,
+    "best_update": 50,
+    "wall_h": 3.947850522465176
+   },
+   {
+    "update": 1400,
+    "episodes": 44800,
+    "train_reward": 0.5353242843399828,
+    "val_score": 0.5335522124291979,
+    "val_share": {
+     "gb1:validation": 84.23333333333332,
+     "nk:validation": 87.675
+    },
+    "order_entropy": 0.8231978930180871,
+    "nominate_entropy": 0.11895058390878482,
+    "best_update": 50,
+    "wall_h": 4.054805226127306
+   },
+   {
+    "update": 1450,
+    "episodes": 46400,
+    "train_reward": 0.5380222548119109,
+    "val_score": 0.5371390597352335,
+    "val_share": {
+     "gb1:validation": 82.41666666666666,
+     "nk:validation": 87.14166666666667
+    },
+    "order_entropy": 0.8393007519682391,
+    "nominate_entropy": 0.08148385288527132,
+    "best_update": 50,
+    "wall_h": 4.160102026992374
+   },
+   {
+    "update": 1500,
+    "episodes": 48000,
+    "train_reward": 0.5447114934559231,
+    "val_score": 0.545682749042345,
+    "val_share": {
+     "gb1:validation": 83.45,
+     "nk:validation": 87.98333333333333
+    },
+    "order_entropy": 0.9859985833376262,
+    "nominate_entropy": 0.07428798362622623,
+    "best_update": 50,
+    "wall_h": 4.26917489806811
+   }
+  ]
+ },
+ "B_s2": {
+  "updates_logged": 1500,
+  "points": [
+   {
+    "update": 0,
+    "episodes": 0,
+    "train_reward": null,
+    "val_score": 0.487268851689709,
+    "val_share": {
+     "gb1:validation": 7.85,
+     "nk:validation": 9.45
+    },
+    "order_entropy": null,
+    "nominate_entropy": null,
+    "best_update": 0,
+    "wall_h": 0.03055441419283549
+   },
+   {
+    "update": 50,
+    "episodes": 1600,
+    "train_reward": 0.6261811649553677,
+    "val_score": 0.5958677465727225,
+    "val_share": {
+     "gb1:validation": 74.375,
+     "nk:validation": 76.775
+    },
+    "order_entropy": 5.33662183828981,
+    "nominate_entropy": 1.0732923009974609,
+    "best_update": 50,
+    "wall_h": 0.3060351186990738
+   },
+   {
+    "update": 100,
+    "episodes": 3200,
+    "train_reward": 0.5693403436311466,
+    "val_score": 0.5558741695150825,
+    "val_share": {
+     "gb1:validation": 85.08333333333331,
+     "nk:validation": 86.15
+    },
+    "order_entropy": 3.015377459273988,
+    "nominate_entropy": 0.09232991135037844,
+    "best_update": 50,
+    "wall_h": 0.49992416474554274
+   },
+   {
+    "update": 150,
+    "episodes": 4800,
+    "train_reward": 0.5516572442723272,
+    "val_score": 0.5483910777520978,
+    "val_share": {
+     "gb1:validation": 82.16666666666669,
+     "nk:validation": 84.89166666666668
+    },
+    "order_entropy": 2.0642465426688226,
+    "nominate_entropy": 0.14077415139996333,
+    "best_update": 50,
+    "wall_h": 0.6740701661507289
+   },
+   {
+    "update": 200,
+    "episodes": 6400,
+    "train_reward": 0.5458712777336713,
+    "val_score": 0.5397123944346618,
+    "val_share": {
+     "gb1:validation": 86.86666666666667,
+     "nk:validation": 88.44166666666666
+    },
+    "order_entropy": 1.9423546255742883,
+    "nominate_entropy": 0.18473866971269717,
+    "best_update": 50,
+    "wall_h": 0.8127373611927032
+   },
+   {
+    "update": 250,
+    "episodes": 8000,
+    "train_reward": 0.5301080424329141,
+    "val_score": 0.5346656536317118,
+    "val_share": {
+     "gb1:validation": 86.675,
+     "nk:validation": 89.34166666666665
+    },
+    "order_entropy": 1.2378178617039517,
+    "nominate_entropy": 0.1135793591178837,
+    "best_update": 50,
+    "wall_h": 0.9361174419191148
+   },
+   {
+    "update": 300,
+    "episodes": 9600,
+    "train_reward": 0.5257341010638586,
+    "val_score": 0.5259195903911057,
+    "val_share": {
+     "gb1:validation": 88.15833333333332,
+     "nk:validation": 89.94166666666668
+    },
+    "order_entropy": 0.910003966085943,
+    "nominate_entropy": 0.090373938979153,
+    "best_update": 50,
+    "wall_h": 1.0579063747988806
+   },
+   {
+    "update": 350,
+    "episodes": 11200,
+    "train_reward": 0.5324358348313527,
+    "val_score": 0.5326401974653994,
+    "val_share": {
+     "gb1:validation": 87.94166666666668,
+     "nk:validation": 90.51666666666667
+    },
+    "order_entropy": 0.9908869730893712,
+    "nominate_entropy": 0.07988291523288348,
+    "best_update": 50,
+    "wall_h": 1.1845314666959974
+   },
+   {
+    "update": 400,
+    "episodes": 12800,
+    "train_reward": 0.5276251193719578,
+    "val_score": 0.532896583427247,
+    "val_share": {
+     "gb1:validation": 89.00833333333334,
+     "nk:validation": 91.30833333333332
+    },
+    "order_entropy": 1.1102000687968439,
+    "nominate_entropy": 0.03216840842514124,
+    "best_update": 50,
+    "wall_h": 1.3052266594436435
+   },
+   {
+    "update": 450,
+    "episodes": 14400,
+    "train_reward": 0.5284939179099786,
+    "val_score": 0.5393553799360534,
+    "val_share": {
+     "gb1:validation": 88.28333333333332,
+     "nk:validation": 91.54166666666669
+    },
+    "order_entropy": 1.0460875134553873,
+    "nominate_entropy": 0.05874660194078409,
+    "best_update": 50,
+    "wall_h": 1.4229139041900636
+   },
+   {
+    "update": 500,
+    "episodes": 16000,
+    "train_reward": 0.5240359555754884,
+    "val_score": 0.529638095379781,
+    "val_share": {
+     "gb1:validation": 91.10833333333333,
+     "nk:validation": 92.44166666666666
+    },
+    "order_entropy": 0.9961001256853343,
+    "nominate_entropy": 0.07493406681440264,
+    "best_update": 50,
+    "wall_h": 1.5487868830892775
+   },
+   {
+    "update": 550,
+    "episodes": 17600,
+    "train_reward": 0.5255567793224434,
+    "val_score": 0.5187110461391746,
+    "val_share": {
+     "gb1:validation": 86.45833333333331,
+     "nk:validation": 89.94166666666668
+    },
+    "order_entropy": 0.8554382569464163,
+    "nominate_entropy": 0.04063892920220616,
+    "best_update": 50,
+    "wall_h": 1.6905865961313247
+   },
+   {
+    "update": 600,
+    "episodes": 19200,
+    "train_reward": 0.5351175112921291,
+    "val_score": 0.5393268004805813,
+    "val_share": {
+     "gb1:validation": 89.175,
+     "nk:validation": 91.50833333333333
+    },
+    "order_entropy": 1.1528110093489672,
+    "nominate_entropy": 0.0016599281681195358,
+    "best_update": 50,
+    "wall_h": 1.8226658166779413
+   },
+   {
+    "update": 650,
+    "episodes": 20800,
+    "train_reward": 0.5353766091843972,
+    "val_score": 0.5385332778574652,
+    "val_share": {
+     "gb1:validation": 88.35,
+     "nk:validation": 92.275
+    },
+    "order_entropy": 1.1880174353933246,
+    "nominate_entropy": 0.00041752005133070894,
+    "best_update": 50,
+    "wall_h": 1.951142243941625
+   },
+   {
+    "update": 700,
+    "episodes": 22400,
+    "train_reward": 0.5407741696196713,
+    "val_score": 0.5373922352894327,
+    "val_share": {
+     "gb1:validation": 86.45,
+     "nk:validation": 89.54166666666669
+    },
+    "order_entropy": 1.187082417494593,
+    "nominate_entropy": 0.000150624655858799,
+    "best_update": 50,
+    "wall_h": 2.088877202802234
+   },
+   {
+    "update": 750,
+    "episodes": 24000,
+    "train_reward": 0.5322744066901344,
+    "val_score": 0.5390248852427122,
+    "val_share": {
+     "gb1:validation": 87.44166666666666,
+     "nk:validation": 88.83333333333331
+    },
+    "order_entropy": 1.1211514500309747,
+    "nominate_entropy": 0.015012917379391998,
+    "best_update": 50,
+    "wall_h": 2.2344424631198248
+   },
+   {
+    "update": 800,
+    "episodes": 25600,
+    "train_reward": 0.538107481167843,
+    "val_score": 0.5308387374249892,
+    "val_share": {
+     "gb1:validation": 87.525,
+     "nk:validation": 90.28333333333332
+    },
+    "order_entropy": 1.2064681352763318,
+    "nominate_entropy": 0.0013325199445653108,
+    "best_update": 50,
+    "wall_h": 2.394249410033226
+   },
+   {
+    "update": 850,
+    "episodes": 27200,
+    "train_reward": 0.5315726810725339,
+    "val_score": 0.5312220466861179,
+    "val_share": {
+     "gb1:validation": 84.425,
+     "nk:validation": 88.225
+    },
+    "order_entropy": 1.004006190483387,
+    "nominate_entropy": 0.0009789945830225599,
+    "best_update": 50,
+    "wall_h": 2.549106165568034
+   },
+   {
+    "update": 900,
+    "episodes": 28800,
+    "train_reward": 0.5407636656108467,
+    "val_score": 0.5444132457010538,
+    "val_share": {
+     "gb1:validation": 84.725,
+     "nk:validation": 88.20833333333331
+    },
+    "order_entropy": 0.9110912210503831,
+    "nominate_entropy": 0.00027710196500149405,
+    "best_update": 50,
+    "wall_h": 2.6907859536674286
+   },
+   {
+    "update": 950,
+    "episodes": 30400,
+    "train_reward": 0.5398796393453305,
+    "val_score": 0.5390424038982113,
+    "val_share": {
+     "gb1:validation": 87.0,
+     "nk:validation": 89.7
+    },
+    "order_entropy": 0.9242409151916704,
+    "nominate_entropy": 0.00016017335844511688,
+    "best_update": 50,
+    "wall_h": 2.840581151644389
+   },
+   {
+    "update": 1000,
+    "episodes": 32000,
+    "train_reward": 0.5313037802488171,
+    "val_score": 0.53944462078507,
+    "val_share": {
+     "gb1:validation": 89.83333333333334,
+     "nk:validation": 91.55833333333332
+    },
+    "order_entropy": 1.0703653528518748,
+    "nominate_entropy": 4.134283492025407e-05,
+    "best_update": 50,
+    "wall_h": 2.9718065794971253
+   },
+   {
+    "update": 1050,
+    "episodes": 33600,
+    "train_reward": 0.532692821103023,
+    "val_score": 0.5391550758032786,
+    "val_share": {
+     "gb1:validation": 88.84166666666668,
+     "nk:validation": 91.64166666666668
+    },
+    "order_entropy": 1.0830739148604596,
+    "nominate_entropy": 0.0036841393186917005,
+    "best_update": 50,
+    "wall_h": 3.0863743636343215
+   },
+   {
+    "update": 1100,
+    "episodes": 35200,
+    "train_reward": 0.5327232379952007,
+    "val_score": 0.5376608975358794,
+    "val_share": {
+     "gb1:validation": 90.04166666666666,
+     "nk:validation": 92.10833333333332
+    },
+    "order_entropy": 1.0561120645176958,
+    "nominate_entropy": 0.00034242387675169654,
+    "best_update": 50,
+    "wall_h": 3.194017284711202
+   },
+   {
+    "update": 1150,
+    "episodes": 36800,
+    "train_reward": 0.5202334991968626,
+    "val_score": 0.5220277714769703,
+    "val_share": {
+     "gb1:validation": 91.38333333333334,
+     "nk:validation": 93.13333333333333
+    },
+    "order_entropy": 0.9536354193904182,
+    "nominate_entropy": 0.0008551262844427068,
+    "best_update": 50,
+    "wall_h": 3.2954209419753817
+   },
+   {
+    "update": 1200,
+    "episodes": 38400,
+    "train_reward": 0.5223701374481182,
+    "val_score": 0.5362706624250255,
+    "val_share": {
+     "gb1:validation": 88.5,
+     "nk:validation": 91.96666666666668
+    },
+    "order_entropy": 1.0074695911326192,
+    "nominate_entropy": 0.00010564725522482752,
+    "best_update": 50,
+    "wall_h": 3.397852650814586
+   },
+   {
+    "update": 1250,
+    "episodes": 40000,
+    "train_reward": 0.521670558111987,
+    "val_score": 0.519636765776713,
+    "val_share": {
+     "gb1:validation": 91.13333333333333,
+     "nk:validation": 92.80833333333332
+    },
+    "order_entropy": 0.9327209039390525,
+    "nominate_entropy": 2.242835364376089e-05,
+    "best_update": 50,
+    "wall_h": 3.5120686078071595
+   },
+   {
+    "update": 1300,
+    "episodes": 41600,
+    "train_reward": 0.5206456146708934,
+    "val_score": 0.5289248764057186,
+    "val_share": {
+     "gb1:validation": 91.39166666666668,
+     "nk:validation": 93.23333333333332
+    },
+    "order_entropy": 0.8066303791156194,
+    "nominate_entropy": 5.3564838631151e-06,
+    "best_update": 50,
+    "wall_h": 3.599303893910514
+   },
+   {
+    "update": 1350,
+    "episodes": 43200,
+    "train_reward": 0.5192990033233131,
+    "val_score": 0.5167160630377331,
+    "val_share": {
+     "gb1:validation": 91.85,
+     "nk:validation": 93.39166666666668
+    },
+    "order_entropy": 0.8184630827673456,
+    "nominate_entropy": 4.788303447473086e-05,
+    "best_update": 50,
+    "wall_h": 3.686671458946334
+   },
+   {
+    "update": 1400,
+    "episodes": 44800,
+    "train_reward": 0.5227710178902403,
+    "val_score": 0.5240856620846257,
+    "val_share": {
+     "gb1:validation": 88.08333333333334,
+     "nk:validation": 93.85833333333333
+    },
+    "order_entropy": 0.9570895117871235,
+    "nominate_entropy": 0.00520546277011779,
+    "best_update": 50,
+    "wall_h": 3.775602151155472
+   },
+   {
+    "update": 1450,
+    "episodes": 46400,
+    "train_reward": 0.5233969364789478,
+    "val_score": 0.5257224851568202,
+    "val_share": {
+     "gb1:validation": 88.375,
+     "nk:validation": 93.70833333333331
+    },
+    "order_entropy": 0.9185411393017029,
+    "nominate_entropy": 0.00038866119266315767,
+    "best_update": 50,
+    "wall_h": 3.8663092019160588
+   },
+   {
+    "update": 1500,
+    "episodes": 48000,
+    "train_reward": 0.524952143160728,
+    "val_score": 0.5165477453508416,
+    "val_share": {
+     "gb1:validation": 91.30833333333334,
+     "nk:validation": 93.93333333333334
+    },
+    "order_entropy": 1.0549023962833664,
+    "nominate_entropy": 0.005863957781979168,
+    "best_update": 50,
+    "wall_h": 3.9539565266503227
+   }
+  ]
+ }
+}

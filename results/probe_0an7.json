@@ -1,0 +1,179 @@
+{
+ "prompt_chars": 1425,
+ "probes": [
+  {
+   "http": 200,
+   "model_returned": "openai/gpt-6.1-sol",
+   "provider": "OpenAI",
+   "finish_reason": "stop",
+   "prompt_tokens": 340,
+   "completion_tokens": 218,
+   "reasoning_tokens": 165,
+   "cost": 0.00286,
+   "answer_arrived": true,
+   "answer_chars": 171,
+   "reasoning_text_chars": 0,
+   "parsed": [
+    "HDIF",
+    "GEIF",
+    "GDJF",
+    "GDIG"
+   ],
+   "parse_status": "ok",
+   "answer": "HDIF | Probe a single change at position 1\nGEIF | Probe a single change at position 2\nGDJF | Probe a single change at position 3\nGDIG | Probe a single change at position 4",
+   "seconds": 7.600764989852905,
+   "model": "openai/gpt-6.1-sol",
+   "setting": "default (no reasoning parameter)",
+   "reasoning_param": null,
+   "temperature_sent": true
+  },
+  {
+   "http": 200,
+   "model_returned": "openai/gpt-6.1-sol",
+   "provider": "OpenAI",
+   "finish_reason": "stop",
+   "prompt_tokens": 340,
+   "completion_tokens": 142,
+   "reasoning_tokens": 92,
+   "cost": 0.0021,
+   "answer_arrived": true,
+   "answer_chars": 217,
+   "reasoning_text_chars": 0,
+   "parsed": [
+    "ADIF",
+    "GAIF",
+    "GDAF",
+    "GDIA"
+   ],
+   "parse_status": "ok",
+   "answer": "ADIF | Probe the first position against the reference\nGAIF | Probe the second position against the reference\nGDAF | Probe the third position against the reference\nGDIA | Probe the fourth position against the reference",
+   "seconds": 5.118340969085693,
+   "model": "openai/gpt-6.1-sol",
+   "setting": "default, temperature not sent",
+   "reasoning_param": null,
+   "temperature_sent": false
+  },
+  {
+   "http": 200,
+   "model_returned": "google/gemini-3.1-pro-preview",
+   "provider": "Google",
+   "finish_reason": "stop",
+   "prompt_tokens": 357,
+   "completion_tokens": 396,
+   "reasoning_tokens": 364,
+   "cost": 0.005466,
+   "answer_arrived": true,
+   "answer_chars": 79,
+   "reasoning_text_chars": 286,
+   "parsed": [
+    "HDIF",
+    "GEIF",
+    "GDAF",
+    "GDIG"
+   ],
+   "parse_status": "ok",
+   "answer": "HDIF | mutate pos 1\nGEIF | mutate pos 2\nGDAF | mutate pos 3\nGDIG | mutate pos 4",
+   "seconds": 4.425979137420654,
+   "model": "google/gemini-3.1-pro-preview",
+   "setting": "default (no reasoning parameter)",
+   "reasoning_param": null,
+   "temperature_sent": true
+  },
+  {
+   "http": 400,
+   "error": "{\"error\":{\"message\":\"Reasoning is mandatory for this endpoint and cannot be disabled.\",\"code\":400,\"metadata\":{\"provider_name\":null}}}",
+   "seconds": 0.08257699012756348,
+   "model": "google/gemini-3.1-pro-preview",
+   "setting": "reasoning enabled false",
+   "reasoning_param": {
+    "enabled": false
+   },
+   "temperature_sent": true
+  },
+  {
+   "http": 200,
+   "model_returned": "google/gemini-3.1-pro-preview",
+   "provider": "Google",
+   "finish_reason": "stop",
+   "prompt_tokens": 357,
+   "completion_tokens": 199,
+   "reasoning_tokens": 168,
+   "cost": 0.003102,
+   "answer_arrived": true,
+   "answer_chars": 99,
+   "reasoning_text_chars": 273,
+   "parsed": [
+    "HDIF",
+    "GEIF",
+    "GDJF",
+    "GDIG"
+   ],
+   "parse_status": "ok",
+   "answer": "HDIF | mutate position 1\nGEIF | mutate position 2\nGDJF | mutate position 3\nGDIG | mutate position 4",
+   "seconds": 3.4452311992645264,
+   "model": "google/gemini-3.1-pro-preview",
+   "setting": "effort minimal",
+   "reasoning_param": {
+    "effort": "minimal"
+   },
+   "temperature_sent": true
+  },
+  {
+   "http": 200,
+   "model_returned": "google/gemini-3.1-pro-preview",
+   "provider": "Google",
+   "finish_reason": "stop",
+   "prompt_tokens": 357,
+   "completion_tokens": 199,
+   "reasoning_tokens": 168,
+   "cost": 0.003102,
+   "answer_arrived": true,
+   "answer_chars": 99,
+   "reasoning_text_chars": 292,
+   "parsed": [
+    "HDIF",
+    "GEIF",
+    "GDJF",
+    "GDIG"
+   ],
+   "parse_status": "ok",
+   "answer": "HDIF | mutate position 1\nGEIF | mutate position 2\nGDJF | mutate position 3\nGDIG | mutate position 4",
+   "seconds": 4.539383888244629,
+   "model": "google/gemini-3.1-pro-preview",
+   "setting": "effort low",
+   "reasoning_param": {
+    "effort": "low"
+   },
+   "temperature_sent": true
+  },
+  {
+   "http": 200,
+   "model_returned": "google/gemini-3.1-pro-preview",
+   "provider": "Google",
+   "finish_reason": "stop",
+   "prompt_tokens": 357,
+   "completion_tokens": 199,
+   "reasoning_tokens": 168,
+   "cost": 0.003102,
+   "answer_arrived": true,
+   "answer_chars": 99,
+   "reasoning_text_chars": 292,
+   "parsed": [
+    "HDIF",
+    "GEIF",
+    "GDJF",
+    "GDIG"
+   ],
+   "parse_status": "ok",
+   "answer": "HDIF | mutate position 1\nGEIF | mutate position 2\nGDJF | mutate position 3\nGDIG | mutate position 4",
+   "seconds": 3.387158155441284,
+   "model": "google/gemini-3.1-pro-preview",
+   "setting": "reasoning budget 128 tokens",
+   "reasoning_param": {
+    "max_tokens": 128
+   },
+   "temperature_sent": true
+  }
+ ],
+ "total_cost": 0.019732000000000003
+}

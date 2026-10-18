@@ -1,0 +1,15 @@
+TABLE 2b. EXPLORATORY: 'panelc' against 'stage1', paired on the seeds they share.
+One row per condition and model. This is the panel's own question and is NOT in the
+confirmatory family of section 0g. Holm is applied across the rows of this table only.
+
+condition      model                     seeds   drop      diff       SE               95% CI      wild p
+Blind          claude-opus-4.7              40      0   -0.0987   0.0438  [-0.1845, -0.0129]     0.03215
+Blind          gemini-2.5-flash             35      5   -0.2630   0.0489  [-0.3588, -0.1672]     0.00005
+Mechanism      claude-opus-4.7              40      0   -0.2016   0.0694  [-0.3376, -0.0655]     0.00655
+Mechanism      gemini-2.5-flash             36      4   -0.2241   0.0557  [-0.3332, -0.1149]     0.00005
+
+condition      model                          raw p      Holm p reject
+Blind          claude-opus-4.7              0.03215     0.03215 YES
+Blind          gemini-2.5-flash             0.00005     0.00020 YES
+Mechanism      claude-opus-4.7              0.00655     0.01310 YES
+Mechanism      gemini-2.5-flash             0.00005     0.00020 YES

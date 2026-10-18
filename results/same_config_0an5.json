@@ -1,0 +1,55 @@
+{
+ "prompts": {
+  "f2_commit": "9bc8ef4",
+  "sent_at_f2_commit": 67,
+  "sent_now": 67,
+  "identical": true
+ },
+ "settings": {
+  "compared": [
+   "K",
+   "anchor",
+   "anchor_reading",
+   "comparator",
+   "conditions",
+   "cv",
+   "example",
+   "fail_pct",
+   "gb1_max",
+   "global_best",
+   "landscape",
+   "max_reasks",
+   "max_tokens",
+   "noise",
+   "noise_floor",
+   "order_seed",
+   "pct",
+   "pool",
+   "primary_outcome",
+   "prior_rel_floor",
+   "prompt_landscape",
+   "reasoning_effort",
+   "riskfree_cap",
+   "rounds",
+   "seed",
+   "shuffled",
+   "slots",
+   "space",
+   "temperature",
+   "workers",
+   "credit_floor_usd"
+  ],
+  "differences": {},
+  "prompt_option_differences": {},
+  "prompt_options_added_since": {
+   "structure": false
+  },
+  "models": [
+   "anthropic/claude-opus-4.7"
+  ],
+  "seed0": 300030,
+  "campaigns": 30,
+  "budget_usd": 25.0
+ },
+ "verdict": "same F2 configuration"
+}

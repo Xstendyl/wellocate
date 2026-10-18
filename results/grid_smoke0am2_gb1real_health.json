@@ -1,0 +1,29 @@
+{
+ "anthropic/claude-opus-4.7": {
+  "calls": 54,
+  "empty": 0,
+  "malformed": 0,
+  "truncated": 0,
+  "mean_reasoning": 0,
+  "max_reasoning": 0,
+  "max_completion": 113
+ },
+ "google/gemini-2.5-flash": {
+  "calls": 109,
+  "empty": 0,
+  "malformed": 0,
+  "truncated": 0,
+  "mean_reasoning": 0,
+  "max_reasoning": 0,
+  "max_completion": 91
+ },
+ "deepseek/deepseek-chat-v3.1": {
+  "calls": 32,
+  "empty": 0,
+  "malformed": 0,
+  "truncated": 0,
+  "mean_reasoning": 0,
+  "max_reasoning": 0,
+  "max_completion": 80
+ }
+}

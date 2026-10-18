@@ -1,0 +1,259 @@
+================================================================================================================
+LEARNABILITY SIMULATION, FRESH LANDSCAPE PER SEED   9 settings x 2 scopes x 1500 landscapes
+landscape seed = campaign seed; train 9100000..9101499, held out 9300000..9301499 (disjoint)
+================================================================================================================
+  train K=1   50/1500 landscapes  42s
+  train K=1  100/1500 landscapes  85s
+  train K=1  150/1500 landscapes  127s
+  train K=1  200/1500 landscapes  170s
+  train K=1  250/1500 landscapes  213s
+  train K=1  300/1500 landscapes  256s
+  train K=1  350/1500 landscapes  299s
+  train K=1  400/1500 landscapes  341s
+  train K=1  450/1500 landscapes  384s
+  train K=1  500/1500 landscapes  426s
+  train K=1  550/1500 landscapes  469s
+  train K=1  600/1500 landscapes  512s
+  train K=1  650/1500 landscapes  554s
+  train K=1  700/1500 landscapes  597s
+  train K=1  750/1500 landscapes  639s
+  train K=1  800/1500 landscapes  682s
+  train K=1  850/1500 landscapes  725s
+  train K=1  900/1500 landscapes  768s
+  train K=1  950/1500 landscapes  810s
+  train K=1 1000/1500 landscapes  853s
+  train K=1 1050/1500 landscapes  895s
+  train K=1 1100/1500 landscapes  937s
+  train K=1 1150/1500 landscapes  980s
+  train K=1 1200/1500 landscapes  1023s
+  train K=1 1250/1500 landscapes  1066s
+  train K=1 1300/1500 landscapes  1108s
+  train K=1 1350/1500 landscapes  1150s
+  train K=1 1400/1500 landscapes  1192s
+  train K=1 1450/1500 landscapes  1234s
+  train K=1 1500/1500 landscapes  1276s
+  train K=2   50/1500 landscapes  1321s
+  train K=2  100/1500 landscapes  1366s
+  train K=2  150/1500 landscapes  1411s
+  train K=2  200/1500 landscapes  1456s
+  train K=2  250/1500 landscapes  1501s
+  train K=2  300/1500 landscapes  1547s
+  train K=2  350/1500 landscapes  1592s
+  train K=2  400/1500 landscapes  1637s
+  train K=2  450/1500 landscapes  1682s
+  train K=2  500/1500 landscapes  1727s
+  train K=2  550/1500 landscapes  1773s
+  train K=2  600/1500 landscapes  1818s
+  train K=2  650/1500 landscapes  1864s
+  train K=2  700/1500 landscapes  1910s
+  train K=2  750/1500 landscapes  1955s
+  train K=2  800/1500 landscapes  2001s
+  train K=2  850/1500 landscapes  2047s
+  train K=2  900/1500 landscapes  2092s
+  train K=2  950/1500 landscapes  2137s
+  train K=2 1000/1500 landscapes  2182s
+  train K=2 1050/1500 landscapes  2228s
+  train K=2 1100/1500 landscapes  2273s
+  train K=2 1150/1500 landscapes  2318s
+  train K=2 1200/1500 landscapes  2363s
+  train K=2 1250/1500 landscapes  2409s
+  train K=2 1300/1500 landscapes  2454s
+  train K=2 1350/1500 landscapes  2499s
+  train K=2 1400/1500 landscapes  2544s
+  train K=2 1450/1500 landscapes  2589s
+  train K=2 1500/1500 landscapes  2635s
+  train K=3   50/1500 landscapes  2682s
+  train K=3  100/1500 landscapes  2730s
+  train K=3  150/1500 landscapes  2777s
+  train K=3  200/1500 landscapes  2824s
+  train K=3  250/1500 landscapes  2872s
+  train K=3  300/1500 landscapes  2919s
+  train K=3  350/1500 landscapes  2967s
+  train K=3  400/1500 landscapes  3014s
+  train K=3  450/1500 landscapes  3061s
+  train K=3  500/1500 landscapes  3108s
+  train K=3  550/1500 landscapes  3156s
+  train K=3  600/1500 landscapes  3203s
+  train K=3  650/1500 landscapes  3250s
+  train K=3  700/1500 landscapes  3297s
+  train K=3  750/1500 landscapes  3345s
+  train K=3  800/1500 landscapes  3392s
+  train K=3  850/1500 landscapes  3439s
+  train K=3  900/1500 landscapes  3487s
+  train K=3  950/1500 landscapes  3534s
+  train K=3 1000/1500 landscapes  3581s
+  train K=3 1050/1500 landscapes  3628s
+  train K=3 1100/1500 landscapes  3676s
+  train K=3 1150/1500 landscapes  3723s
+  train K=3 1200/1500 landscapes  3770s
+  train K=3 1250/1500 landscapes  3817s
+  train K=3 1300/1500 landscapes  3865s
+  train K=3 1350/1500 landscapes  3912s
+  train K=3 1400/1500 landscapes  3959s
+  train K=3 1450/1500 landscapes  4006s
+  train K=3 1500/1500 landscapes  4054s
+  learned on reward alone, scope=pool: k=1 selector=shrinkage
+  learned on reward alone, scope=fair: k=1 selector=shrinkage
+  held  K=1   50/1500 landscapes  4089s
+  held  K=1  100/1500 landscapes  4125s
+  held  K=1  150/1500 landscapes  4161s
+  held  K=1  200/1500 landscapes  4196s
+  held  K=1  250/1500 landscapes  4232s
+  held  K=1  300/1500 landscapes  4268s
+  held  K=1  350/1500 landscapes  4303s
+  held  K=1  400/1500 landscapes  4339s
+  held  K=1  450/1500 landscapes  4374s
+  held  K=1  500/1500 landscapes  4410s
+  held  K=1  550/1500 landscapes  4446s
+  held  K=1  600/1500 landscapes  4481s
+  held  K=1  650/1500 landscapes  4517s
+  held  K=1  700/1500 landscapes  4552s
+  held  K=1  750/1500 landscapes  4588s
+  held  K=1  800/1500 landscapes  4624s
+  held  K=1  850/1500 landscapes  4659s
+  held  K=1  900/1500 landscapes  4695s
+  held  K=1  950/1500 landscapes  4730s
+  held  K=1 1000/1500 landscapes  4766s
+  held  K=1 1050/1500 landscapes  4801s
+  held  K=1 1100/1500 landscapes  4837s
+  held  K=1 1150/1500 landscapes  4872s
+  held  K=1 1200/1500 landscapes  4908s
+  held  K=1 1250/1500 landscapes  4943s
+  held  K=1 1300/1500 landscapes  4979s
+  held  K=1 1350/1500 landscapes  5014s
+  held  K=1 1400/1500 landscapes  5049s
+  held  K=1 1450/1500 landscapes  5084s
+  held  K=1 1500/1500 landscapes  5120s
+  held  K=2   50/1500 landscapes  5158s
+  held  K=2  100/1500 landscapes  5196s
+  held  K=2  150/1500 landscapes  5234s
+  held  K=2  200/1500 landscapes  5271s
+  held  K=2  250/1500 landscapes  5309s
+  held  K=2  300/1500 landscapes  5347s
+  held  K=2  350/1500 landscapes  5385s
+  held  K=2  400/1500 landscapes  5422s
+  held  K=2  450/1500 landscapes  5460s
+  held  K=2  500/1500 landscapes  5498s
+  held  K=2  550/1500 landscapes  5536s
+  held  K=2  600/1500 landscapes  5574s
+  held  K=2  650/1500 landscapes  5612s
+  held  K=2  700/1500 landscapes  5649s
+  held  K=2  750/1500 landscapes  5687s
+  held  K=2  800/1500 landscapes  5725s
+  held  K=2  850/1500 landscapes  5763s
+  held  K=2  900/1500 landscapes  5800s
+  held  K=2  950/1500 landscapes  5838s
+  held  K=2 1000/1500 landscapes  5876s
+  held  K=2 1050/1500 landscapes  5914s
+  held  K=2 1100/1500 landscapes  5951s
+  held  K=2 1150/1500 landscapes  5989s
+  held  K=2 1200/1500 landscapes  6027s
+  held  K=2 1250/1500 landscapes  6065s
+  held  K=2 1300/1500 landscapes  6102s
+  held  K=2 1350/1500 landscapes  6140s
+  held  K=2 1400/1500 landscapes  6178s
+  held  K=2 1450/1500 landscapes  6216s
+  held  K=2 1500/1500 landscapes  6253s
+  held  K=3   50/1500 landscapes  6293s
+  held  K=3  100/1500 landscapes  6332s
+  held  K=3  150/1500 landscapes  6371s
+  held  K=3  200/1500 landscapes  6410s
+  held  K=3  250/1500 landscapes  6450s
+  held  K=3  300/1500 landscapes  6489s
+  held  K=3  350/1500 landscapes  6528s
+  held  K=3  400/1500 landscapes  6567s
+  held  K=3  450/1500 landscapes  6607s
+  held  K=3  500/1500 landscapes  6646s
+  held  K=3  550/1500 landscapes  6685s
+  held  K=3  600/1500 landscapes  6724s
+  held  K=3  650/1500 landscapes  6763s
+  held  K=3  700/1500 landscapes  6802s
+  held  K=3  750/1500 landscapes  6842s
+  held  K=3  800/1500 landscapes  6881s
+  held  K=3  850/1500 landscapes  6920s
+  held  K=3  900/1500 landscapes  6959s
+  held  K=3  950/1500 landscapes  6998s
+  held  K=3 1000/1500 landscapes  7038s
+  held  K=3 1050/1500 landscapes  7077s
+  held  K=3 1100/1500 landscapes  7116s
+  held  K=3 1150/1500 landscapes  7155s
+  held  K=3 1200/1500 landscapes  7194s
+  held  K=3 1250/1500 landscapes  7234s
+  held  K=3 1300/1500 landscapes  7273s
+  held  K=3 1350/1500 landscapes  7312s
+  held  K=3 1400/1500 landscapes  7351s
+  held  K=3 1450/1500 landscapes  7391s
+  held  K=3 1500/1500 landscapes  7430s
+
+  K   cv      scope k*  runner-up gap to runner-up (SE)      span  kept k*
+  1   0.036   pool  1   0           +0.0426 (0.0090)        0.0426     1500
+  1   0.036   fair  1   0           +0.0589 (0.0105)        0.0589     1500
+  1   0.073   pool  1   2           +0.0482 (0.0107)        0.1148     1500
+  1   0.073   fair  1   2           +0.0844 (0.0118)        0.1525     1500
+  1   0.146   pool  2   1           +0.0076 (0.0139) TIE    0.1458     1500
+  1   0.146   fair  1   2           +0.0146 (0.0148) TIE    0.1809     1500
+  2   0.036   pool  1   0           +0.0352 (0.0091)        0.0352     1500
+  2   0.036   fair  1   0           +0.0271 (0.0132)        0.0269     1499
+  2   0.073   pool  1   2           +0.0353 (0.0102)        0.1079     1500
+  2   0.073   fair  1   2           +0.0611 (0.0128)        0.1491     1499
+  2   0.146   pool  2   1           +0.0172 (0.0134) TIE    0.1596     1500
+  2   0.146   fair  1   2           +0.0241 (0.0151) TIE    0.1917     1499
+  3   0.036   pool  1   0           +0.0002 (0.0095) TIE    0.0002     1500
+  3   0.036   fair  1   0           +0.0228 (0.0159) TIE    0.0227     1475
+  3   0.073   pool  1   2           +0.0388 (0.0100)        0.0891     1500
+  3   0.073   fair  1   2           +0.0502 (0.0165)        0.1061     1475
+  3   0.146   pool  2   1           +0.0079 (0.0136) TIE    0.1226     1500
+  3   0.146   fair  1   2           +0.0273 (0.0172) TIE    0.1440     1475
+
+  COLLAPSES: campaigns lost to UnusableSigma, so every mean above is over SURVIVORS
+    K=1 cv=0.036 pool   k=4 lost 18 of 1500
+    K=1 cv=0.036 fair   k=4 lost 283 of 1500
+    K=1 cv=0.073 pool   k=4 lost 18 of 1500
+    K=1 cv=0.073 fair   k=4 lost 283 of 1500
+    K=1 cv=0.146 pool   k=4 lost 18 of 1500
+    K=1 cv=0.146 fair   k=4 lost 283 of 1500
+    K=2 cv=0.036 pool   k=4 lost 11 of 1500
+    K=2 cv=0.036 fair   k=1 lost 1 of 1500, k=2 lost 1 of 1500, k=3 lost 5 of 1500, k=4 lost 611 of 1500
+    K=2 cv=0.073 pool   k=4 lost 11 of 1500
+    K=2 cv=0.073 fair   k=1 lost 1 of 1500, k=2 lost 1 of 1500, k=3 lost 5 of 1500, k=4 lost 611 of 1500
+    K=2 cv=0.146 pool   k=4 lost 11 of 1500
+    K=2 cv=0.146 fair   k=1 lost 1 of 1500, k=2 lost 1 of 1500, k=3 lost 5 of 1500, k=4 lost 611 of 1500
+    K=3 cv=0.036 pool   k=4 lost 15 of 1500
+    K=3 cv=0.036 fair   k=0 lost 22 of 1500, k=1 lost 25 of 1500, k=2 lost 35 of 1500, k=3 lost 96 of 1500, k=4 lost 968 of 1500
+    K=3 cv=0.073 pool   k=4 lost 15 of 1500
+    K=3 cv=0.073 fair   k=0 lost 22 of 1500, k=1 lost 25 of 1500, k=2 lost 35 of 1500, k=3 lost 96 of 1500, k=4 lost 968 of 1500
+    K=3 cv=0.146 pool   k=4 lost 15 of 1500
+    K=3 cv=0.146 fair   k=0 lost 22 of 1500, k=1 lost 25 of 1500, k=2 lost 35 of 1500, k=3 lost 96 of 1500, k=4 lost 968 of 1500
+
+  scope=pool  learned k=1, shrinkage
+    held-out LANDSCAPES, training settings: 0.842   (LEARNABLE needs >= 0.80: PASS)
+    held-out SETTINGS:                      -2.856   (TRANSFERS needs > 0.50: FAIL)
+
+  scope=fair  learned k=1, shrinkage
+    held-out LANDSCAPES, training settings: 1.068   (LEARNABLE needs >= 0.80: PASS)
+    held-out SETTINGS:                      0.889   (TRANSFERS needs > 0.50: PASS)
+
+  DISCRIMINATES as pre-registered: 15 of 18;  paired: 15
+    K=1 cv=0.036 pool      PASS gap +0.910, intervals disjoint
+    K=1 cv=0.036 fair      PASS gap +1.284, intervals disjoint
+    K=1 cv=0.073 pool      PASS gap +0.539, intervals disjoint
+    K=1 cv=0.073 fair      PASS gap +0.915, intervals disjoint
+    K=1 cv=0.146 pool      PASS gap +0.680, intervals disjoint
+    K=1 cv=0.146 fair      PASS gap +1.019, intervals disjoint
+    K=2 cv=0.036 pool      FAIL gap +0.299, intervals OVERLAP
+    K=2 cv=0.036 fair      PASS gap +1.538, intervals disjoint
+    K=2 cv=0.073 pool      PASS gap +0.667, intervals disjoint
+    K=2 cv=0.073 fair      PASS gap +0.850, intervals disjoint
+    K=2 cv=0.146 pool      PASS gap +0.757, intervals disjoint
+    K=2 cv=0.146 fair      PASS gap +0.765, intervals disjoint
+    K=3 cv=0.036 pool      FAIL gap +57.392, intervals OVERLAP
+    K=3 cv=0.036 fair      FAIL gap +0.416, intervals OVERLAP
+    K=3 cv=0.073 pool      PASS gap +0.712, intervals disjoint
+    K=3 cv=0.073 fair      PASS gap +0.594, intervals disjoint
+    K=3 cv=0.146 pool      PASS gap +0.782, intervals disjoint
+    K=3 cv=0.146 fair      PASS gap +0.550, intervals disjoint
+
+  TRANSFERS (one ordering everywhere): PASS
+    C k* shrinkage > B k* max > A k=0 max
+
+  wrote results/learnability_fresh_n1500.json   (7555 s)

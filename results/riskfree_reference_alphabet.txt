@@ -1,0 +1,20 @@
+
+  grid rule (reproduces the committed curve), n=1500 per k, k* = 1
+    k     mean      SE   share %  distinct  rejections   lost  cap hits collapsed
+    0   7.7098  0.0112      0.87     31.03      133.47  23.09         0        0
+    1   7.8659  0.0106     23.78     28.94       83.02  11.70         0        0
+    2   7.8186  0.0102     46.82     20.86       55.46   7.45         0        0
+    3   7.7049  0.0095     70.03     11.93       30.33   3.89         0        0
+    4   7.4271  0.0102     93.34      2.88        6.26   0.72         0      147
+
+  risk-free rule, n=1500 per k, k* = 1
+    k     mean      SE   share %  distinct  rejections   lost  cap hits collapsed
+    0   7.7939  0.0112      1.24     41.67      402.48  10.36     15533        0
+    1   7.9459  0.0101     23.96     38.23      134.54   0.86      1291        0
+    2   7.8977  0.0101     46.93     27.04       77.59   0.15       218        0
+    3   7.7649  0.0096     70.08     15.23       39.54   0.02        23        0
+    4   7.4658  0.0095     93.40      3.41        8.12   0.00         2       27
+
+  risk-free k* = 1: mean 7.9459, replication share 23.96%; Panel B's 'twice' line is 47.93%
+  wrote results/riskfree_reference_alphabet.json
+python3 -B scripts/riskfree_reference.py  1076.58s user 1.63s system 99% cpu 17:58.39 total

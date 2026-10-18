@@ -1,0 +1,412 @@
+{
+ "yardstick": 0.888888888888889,
+ "removes_line": 1.777777777777778,
+ "cells": {
+  "Opus": {
+   "pairs": 30,
+   "share": 47.166666666666664,
+   "share_ci": [
+    44.111111111111114,
+    50.44444444444444
+   ],
+   "partner_share": 61.666666666666664,
+   "d_share": -14.5,
+   "d_share_ci": [
+    -18.77777777777778,
+    -9.944444444444445
+   ],
+   "share_non_lost": 49.331126983628856,
+   "lost_slots": 2.7333333333333334,
+   "lost_rejection": 2.7333333333333334,
+   "lost_cap_bound": 0,
+   "lost_rounds": 0,
+   "distinct": 24.633333333333333,
+   "partner_distinct": 19.8,
+   "rejections": 33.1,
+   "partner_rejections": 21.3,
+   "capped": 0,
+   "capped_ci": [
+    0,
+    0
+   ],
+   "repeat_cap_hits": 0,
+   "pick": 5.0350813059971,
+   "partner_pick": 4.748839458489229,
+   "d_pick": 0.28624184750787024,
+   "d_pick_ci": [
+    -0.5080224096090669,
+    1.145201990206707
+   ],
+   "delta": null,
+   "pick_powered": false,
+   "share_label": "reduces (interval crosses a line)",
+   "control": "0am Panel R, non-concurrent",
+   "pick_note": "descriptive",
+   "d_highest_mean_repick": 0.27567528751627146,
+   "d_highest_mean_repick_ci": [
+    -0.519423565877021,
+    1.148776191736122
+   ],
+   "exploration_part": 0.2913619282296464,
+   "exploration_ci": [
+    -0.49946291112351915,
+    1.144023317109012
+   ],
+   "selection_part": 0.005120080721776136,
+   "selection_ci": [
+    -0.038184843607269106,
+    0.04885561622801542
+   ],
+   "viability": {
+    "list": {
+     "names": 1233,
+     "viable": 578,
+     "rate": 0.46877534468775345,
+     "ci": [
+      0.4311111111111111,
+      0.5076045627376425
+     ]
+    },
+    "earlier list": {
+     "names": 117,
+     "viable": 62,
+     "rate": 0.5299145299145299,
+     "ci": [
+      0.4358974358974359,
+      0.6198347107438017
+     ]
+    },
+    "own": {
+     "names": 446,
+     "viable": 229,
+     "rate": 0.5134529147982063,
+     "ci": [
+      0.46292585170340683,
+      0.5683453237410072
+     ]
+    },
+    "own_std_minus_list": {
+     "diff": 0.03389454062324776,
+     "ci": [
+      -0.05548539922223383,
+      0.12472244496545787
+     ]
+    },
+    "no_list_baseline": {
+     "names": 2423,
+     "viable": 1274,
+     "rate": 0.5257944696657036,
+     "source": "0am Panel R, non-concurrent",
+     "ci": [
+      0.5132989281460897,
+      0.5379310344827586
+     ]
+    }
+   }
+  },
+  "Gemini": {
+   "pairs": 60,
+   "share": 54.083333333333336,
+   "share_ci": [
+    51.44444444444444,
+    56.63888888888889
+   ],
+   "partner_share": 91.94444444444444,
+   "d_share": -37.86111111111111,
+   "d_share_ci": [
+    -40.74999999999999,
+    -34.86111111111111
+   ],
+   "share_non_lost": 55.98334437576616,
+   "lost_slots": 2.066666666666667,
+   "lost_rejection": 1.9333333333333333,
+   "lost_cap_bound": 0,
+   "lost_rounds": 0.13333333333333333,
+   "distinct": 22.216666666666665,
+   "partner_distinct": 3.9,
+   "rejections": 31.666666666666668,
+   "partner_rejections": 2.533333333333333,
+   "capped": 0,
+   "capped_ci": [
+    0,
+    0
+   ],
+   "repeat_cap_hits": 0,
+   "pick": 4.830745543515375,
+   "partner_pick": 1.1150320031139602,
+   "d_pick": 3.7157135404014157,
+   "d_pick_ci": [
+    3.275142360047831,
+    4.170060813346343
+   ],
+   "delta": null,
+   "pick_powered": false,
+   "share_label": "reduces",
+   "control": "concurrent no-tool control",
+   "pick_note": "interval only; no GB1 band",
+   "d_highest_mean_repick": 3.725750632418666,
+   "d_highest_mean_repick_ci": [
+    3.2755230086124536,
+    4.176587770562667
+   ],
+   "exploration_part": 3.7392481198560805,
+   "exploration_ci": [
+    3.2970785204692783,
+    4.184370368482808
+   ],
+   "selection_part": 0.02353457945466506,
+   "selection_ci": [
+    0.00860409146667147,
+    0.04181425179724354
+   ],
+   "viability": {
+    "list": {
+     "names": 2536,
+     "viable": 1253,
+     "rate": 0.49408517350157727,
+     "ci": [
+      0.4678935003915427,
+      0.5236698785085881
+     ]
+    },
+    "earlier list": {
+     "names": 129,
+     "viable": 56,
+     "rate": 0.43410852713178294,
+     "ci": [
+      0.3624161073825503,
+      0.5128205128205128
+     ]
+    },
+    "own": {
+     "names": 381,
+     "viable": 220,
+     "rate": 0.5774278215223098,
+     "ci": [
+      0.5266106442577031,
+      0.6290322580645161
+     ]
+    },
+    "own_std_minus_list": {
+     "diff": 0.09479146090661711,
+     "ci": [
+      0.04773743682494114,
+      0.15374089350062548
+     ]
+    },
+    "no_list_baseline": {
+     "names": 324,
+     "viable": 264,
+     "rate": 0.8148148148148148,
+     "source": "concurrent no-tool control",
+     "ci": [
+      0.7017543859649122,
+      0.9431818181818182
+     ]
+    }
+   }
+  },
+  "DeepSeek": {
+   "pairs": 60,
+   "share": 59.25,
+   "share_ci": [
+    57.0,
+    61.416666666666664
+   ],
+   "partner_share": 95.97222222222223,
+   "d_share": -36.72222222222222,
+   "d_share_ci": [
+    -39.0,
+    -34.47222222222222
+   ],
+   "share_non_lost": 60.845321784660236,
+   "lost_slots": 1.6,
+   "lost_rejection": 1.6,
+   "lost_cap_bound": 0,
+   "lost_rounds": 0,
+   "distinct": 19.7,
+   "partner_distinct": 2.4166666666666665,
+   "rejections": 28.2,
+   "partner_rejections": 27.116666666666667,
+   "capped": 0,
+   "capped_ci": [
+    0,
+    0
+   ],
+   "repeat_cap_hits": 0,
+   "pick": 4.49037658384188,
+   "partner_pick": 0.8397401828313098,
+   "d_pick": 3.6506364010105705,
+   "d_pick_ci": [
+    3.168221041044685,
+    4.125832661575336
+   ],
+   "delta": null,
+   "pick_powered": false,
+   "share_label": "reduces",
+   "control": "concurrent no-tool control",
+   "pick_note": "interval only; no GB1 band",
+   "d_highest_mean_repick": 3.706225236772993,
+   "d_highest_mean_repick_ci": [
+    3.230429402131736,
+    4.172014507483444
+   ],
+   "exploration_part": 3.713352201039623,
+   "exploration_ci": [
+    3.2361061277528353,
+    4.18202325851534
+   ],
+   "selection_part": 0.06271580002905244,
+   "selection_ci": [
+    0.01616149502782148,
+    0.12507648564770116
+   ],
+   "viability": {
+    "list": {
+     "names": 2791,
+     "viable": 1305,
+     "rate": 0.4675743461125045,
+     "ci": [
+      0.43891402714932126,
+      0.5001853911753801
+     ]
+    },
+    "earlier list": {
+     "names": 10,
+     "viable": 3,
+     "rate": 0.3,
+     "ci": [
+      0.0,
+      0.5833333333333334
+     ]
+    },
+    "own": {
+     "names": 79,
+     "viable": 63,
+     "rate": 0.7974683544303798,
+     "ci": [
+      0.6989247311827957,
+      0.8970588235294118
+     ]
+    },
+    "own_std_minus_list": {
+     "diff": 0.17039463581921466,
+     "ci": [
+      -0.004008061669494356,
+      0.35295175233904474
+     ]
+    },
+    "no_list_baseline": {
+     "names": 432,
+     "viable": 145,
+     "rate": 0.33564814814814814,
+     "source": "concurrent no-tool control",
+     "ci": [
+      0.3053763440860215,
+      0.3672055427251732
+     ]
+    }
+   }
+  }
+ },
+ "crosschecks": {
+  "control_reproduces_0am": {
+   "Gemini": {
+    "pairs": 60,
+    "pick_0an6": 1.1150320031139602,
+    "pick_0am": 1.2172166501365886,
+    "d_pick": -0.10218464702262847,
+    "d_pick_ci": [
+     -0.33466153128998405,
+     0.11582461128902409
+    ],
+    "share_0an6": 91.94444444444444,
+    "share_0am": 92.19444444444444,
+    "nominee_start_or_neighbour_0an6": 0.9833333333333333,
+    "nominee_start_0an6": 0.0,
+    "nominee_start_or_neighbour_0am": 0.9833333333333333
+   },
+   "DeepSeek": {
+    "pairs": 60,
+    "pick_0an6": 0.8397401828313098,
+    "pick_0am": 0.9022408122945611,
+    "d_pick": -0.06250062946325134,
+    "d_pick_ci": [
+     -0.31845758299020904,
+     0.18553051535890716
+    ],
+    "share_0an6": 95.97222222222223,
+    "share_0am": 95.75,
+    "nominee_start_or_neighbour_0an6": 0.9333333333333333,
+    "nominee_start_0an6": 0.5166666666666667,
+    "nominee_start_or_neighbour_0am": 0.9833333333333333
+   }
+  },
+  "sign_counts": {
+   "Opus": {
+    "pairs": 30,
+    "menu_higher": 14,
+    "menu_lower": 16,
+    "equal": 0,
+    "control": "0am Panel R, non-concurrent"
+   },
+   "Gemini": {
+    "pairs": 60,
+    "menu_higher": 60,
+    "menu_lower": 0,
+    "equal": 0,
+    "control": "concurrent no-tool control"
+   },
+   "DeepSeek": {
+    "pairs": 60,
+    "menu_higher": 58,
+    "menu_lower": 2,
+    "equal": 0,
+    "control": "concurrent no-tool control"
+   }
+  },
+  "distinct_nominees": {
+   "Opus": {
+    "campaigns": 30,
+    "distinct": 29,
+    "most_nominated": 2
+   },
+   "Gemini": {
+    "campaigns": 60,
+    "distinct": 52,
+    "most_nominated": 3
+   },
+   "DeepSeek": {
+    "campaigns": 60,
+    "distinct": 53,
+    "most_nominated": 3
+   }
+  },
+  "nominee_le_best": {
+   "campaigns": 450,
+   "exceed": 0
+  },
+  "menu_reads_no_true_value": {
+   "parameters": [
+    "rows",
+    "parent",
+    "alphabet",
+    "campaign_seed",
+    "rnd",
+    "n"
+   ],
+   "modules_in_tools": [
+    "R",
+    "collections"
+   ],
+   "landscape_modules_reachable": [],
+   "observation_fields": [
+    "round",
+    "seq",
+    "outcome",
+    "observed"
+   ],
+   "holds": true
+  }
+ }
+}

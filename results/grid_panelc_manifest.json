@@ -1,0 +1,92 @@
+{
+ "tag": "panelc",
+ "started": "2026-09-28T22:38:17+1000",
+ "landscape": "nk_uniform_k1_s1_p93.0",
+ "K": 1,
+ "seed": 1,
+ "pct": 93.0,
+ "cv": 0.073,
+ "noise_floor": 0.0035087719298245615,
+ "gb1_max": 8.762,
+ "rounds": 15,
+ "slots": 4,
+ "fail_pct": 15,
+ "conditions": [
+  "Blind",
+  "Mechanism"
+ ],
+ "models": [
+  {
+   "role": "frontier",
+   "id": "anthropic/claude-opus-4.7",
+   "released": "2026-02"
+  },
+  {
+   "role": "mid-tier",
+   "id": "google/gemini-2.5-flash",
+   "released": "2025-06"
+  }
+ ],
+ "campaigns_per_cell": 40,
+ "seed0": 300000,
+ "workers": 1,
+ "max_tokens": 6000,
+ "max_reasks": 3,
+ "budget_usd": 95.0,
+ "shuffled": true,
+ "order_seed": 20260928,
+ "stage": "panelc",
+ "reasoning_effort": "medium",
+ "noise": "multiplicative",
+ "temperature": 0.0,
+ "prompt_landscape": "abstract",
+ "anchor": "GDIF",
+ "anchor_reading": 6.872952536863767,
+ "example": "ADIF",
+ "pool": 11199,
+ "space": 160000,
+ "global_best": 8.762,
+ "scripted": {
+  "mean": {
+   "kstar": 1,
+   "mean": 7.964095504618686,
+   "se": 0.009800294930038062,
+   "k0_mean": 7.88556713548877
+  },
+  "max": {
+   "kstar": 1,
+   "mean": 7.971993279527578,
+   "se": 0.009340006688354796,
+   "k0_mean": 7.88556713548877
+  },
+  "shrinkage": {
+   "kstar": 1,
+   "mean": 8.005659149667496,
+   "se": 0.008739972675956834,
+   "k0_mean": 7.88556713548877
+  }
+ },
+ "comparator": "empirical-Bayes prior fitted per campaign from that campaign's own readings",
+ "prior_rel_floor": 0.01,
+ "primary_outcome": "nominated true fitness vs the scripted k* policy",
+ "key_source": "repdef/.env",
+ "key_fingerprint_sha256_8": "0d6f7d3f",
+ "credit_floor_usd": 50.0,
+ "credit_balance_at_launch": 128.53818631000001,
+ "credit_detail_at_launch": {
+  "account": 428.58083716600004,
+  "key_remaining": 128.53818631000001,
+  "binding": 128.53818631000001,
+  "key_expires_at": "2026-10-28T04:16:20.217Z",
+  "bound_by": "key"
+ },
+ "launched_below_credit_floor": false,
+ "git_commit": "2c03d780f6243774226dd2d7e241531ecbc359fd",
+ "git_status_porcelain": [
+  "?? results/grid_panelc_rerun2.txt"
+ ],
+ "code_dirty": false,
+ "code_dirty_paths": [],
+ "code_diff_sha256": null,
+ "git_commit_describes_the_code": true
+}

@@ -1,0 +1,13 @@
+{
+ "annotates": "results/grid_zeronoise_manifest.json",
+ "written": "2026-09-28",
+ "why": "This run launched before e3ad28e, so its credit_balance_at_launch came from the ACCOUNT-ONLY guard, which read /credits and never the key's own remaining allowance. The run was deliberately NOT restarted to pick up the fix.",
+ "launch_commit": "ab0ab37725b5c3994a9cda3f405db61d61f764d3",
+ "credit_balance_at_launch_recorded": 794.845171126,
+ "guard_used": "account only (/credits): total_credits - total_usage",
+ "guard_from_e3ad28e": "min(account balance, key limit_remaining), naming the binding limit",
+ "was_the_recorded_figure_correct_at_launch": "YES. At launch the account held about $800 and the key's $1,000 limit was almost unused, so the account WAS the binding limit and the account-only guard returned the binding figure. The method became unsafe only after the $500 top-up made the key bind: account $1,127.35 against key $826.40.",
+ "risk_while_this_run_continues": "Exhausting the key returns HTTP 402, which llm_policy raises as CreditsExhausted, halting the run and abandoning the in-flight campaign UNWRITTEN. The failure mode is a clean halt and not contaminated data; the floor check would simply not have warned in advance.",
+ "credit_floor_usd": 50.0,
+ "see": "spec/GRID_PREREGISTRATION.md 0z, and commit e3ad28e"
+}

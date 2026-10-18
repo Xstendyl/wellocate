@@ -1,0 +1,37 @@
+====================================================================================================
+DEEPSEEK PROVIDER MIXTURE  tags=topup_deepseek
+====================================================================================================
+  calls with a provider recorded: 1584 over 61 campaigns
+    AtlasCloud           1437 calls   90.7%
+    DeepInfra             145 calls    9.2%
+    CoreWeave               1 calls    0.1%
+    SiliconFlow             1 calls    0.1%
+  majority provider: AtlasCloud
+
+1. BALANCE. Routing can only bias a contrast by correlating with condition.
+   condition           calls AtlasClo    share
+   Blind                 248      226    91.1%
+   Quantitative          348      316    90.8%
+   Mechanism             260      235    90.4%
+   Aggregated            377      345    91.5%
+   Decision-rule         351      315    89.7%
+   spread across conditions: 1.8 percentage points
+
+2. SENSITIVITY on the NOMINATION call, paired: both cells' nomination served by AtlasCloud.
+   contrast                    pairs   kept    diff all   diff kept       shift
+   Aggregated vs Mechanism         1      1         nan         nan         nan
+   Decision-rule vs Mechanism      1      1         nan         nan         nan
+   `shift` is how far the estimate moves when the non-majority nominations are dropped. A
+   shift far below the minimal effect of interest, 0.06, is the reassuring result; a large
+   one says the provider mixture is doing work and must be reported as such.
+
+3. THE ALL-CALLS DEFINITION, reported as infeasible.
+   campaigns whose every call was AtlasCloud: 5 of 61 (8%)
+   paired seeds that would survive, both cells pure: about 0.7%
+   A test with that capacity can only return a null, so it is not run.
+
+4. THE MODAL-PROVIDER FACT.
+   campaigns whose MODAL provider was AtlasCloud: 61 of 61 (100%)
+   providers per campaign: {1: 5, 2: 54, 3: 2}
+
+  wrote results/provider_sensitivity.json

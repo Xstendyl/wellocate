@@ -1,0 +1,15 @@
+{
+ "corrects": "results/grid_rprobe_manifest.json",
+ "written": "2026-09-28",
+ "why": "The manifest's git_commit is wrong. The run launched with --temperature, an argument that existed in no commit until 55f650b. The manifest also carries a `temperature` key that only the 55f650b version of grid.py writes, so the file contradicts its own commit field.",
+ "recorded_git_commit": "30ce9ac6304ea1b69fc96048a68ee11100c4c3b7",
+ "recorded_git_commit_contains_the_temperature_flag": false,
+ "manifest_has_a_temperature_key_only_the_later_code_writes": true,
+ "temperature_used": 0.0,
+ "code_that_actually_ran": "30ce9ac plus an uncommitted diff. Committed as 55f650b at 10:06, one minute after this launch. Git does not record a working tree, so byte-identity with 55f650b cannot be proven and is not claimed.",
+ "exposure_bound": "55f650b over 30ce9ac changes (1) the aggregated history SE under EXACT noise only, for which all 28 multiplicative prompt hashes in spec/PROMPT_SNAPSHOT.txt are byte-identical across the two commits, and this run used noise=multiplicative; and (2) the threading of temperature, whose default 0.0 reproduces the previously hardcoded 0.0.",
+ "prompts_affected": false,
+ "status_under_the_preregistration": "EXPLORATORY under section 0q. No confirmatory number depends on this run.",
+ "see": "spec/GRID_PREREGISTRATION.md section 0t",
+ "the_gate_that_prevents_a_repeat": "scripts/grid.py now refuses to launch with uncommitted changes under repdef/ or scripts/ and records git status --porcelain in every manifest."
+}

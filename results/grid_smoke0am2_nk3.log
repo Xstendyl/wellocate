@@ -1,0 +1,100 @@
+  key source: repdef/.env  (fingerprint 0d6f7d3f, never the key)
+  credit (launch): account $754.49, key $754.45 -> BINDING $754.45 (key), key expires 2026-10-28
+  credit check (launch): $754.45 spendable, floor $50.00 -> ok
+====================================================================================================
+GRID  0am landscape nk K=3 (20 landscapes)  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 2 conditions x 3 models, campaigns per model frontier 1, mid-tier 1, open-weight 1 = 6 campaigns
+  ceiling $0.75 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    frontier     anthropic/claude-opus-4.7        released 2026-02
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+    open-weight  deepseek/deepseek-chat-v3.1      released 2025-08
+prompt facts checked: reference IMLE is viable and reads 6.8311 (stated 6.8300), pool is 7.00% of the space, example AMLE (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+prompt facts checked: reference ONCQ is viable and reads 6.8603 (stated 6.8600), pool is 7.00% of the space, example ANCQ (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+prompt facts checked: reference HLCE is viable and reads 6.8312 (stated 6.8300), pool is 7.00% of the space, example ALCE (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+prompt facts checked: reference MNLP is viable and reads 6.8755 (stated 6.8800), pool is 7.00% of the space, example ANLP (viable)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+prompt facts checked: reference JBBP is viable and reads 6.7938 (stated 6.7900), pool is 7.00% of the space, example ABBP (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+prompt facts checked: reference PLTD is viable and reads 6.8897 (stated 6.8900), pool is 7.00% of the space, example ALTD (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+prompt facts checked: reference HPDH is viable and reads 6.8519 (stated 6.8500), pool is 7.00% of the space, example APDH (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+prompt facts checked: reference DFON is viable and reads 6.7564 (stated 6.7600), pool is 7.00% of the space, example AFON (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+prompt facts checked: reference KGQD is viable and reads 6.9416 (stated 6.9400), pool is 7.00% of the space, example AGQD (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+prompt facts checked: reference RISC is viable and reads 6.7729 (stated 6.7700), pool is 7.00% of the space, example AISC (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+prompt facts checked: reference RDHK is viable and reads 6.7861 (stated 6.7900), pool is 7.00% of the space, example ADHK (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+prompt facts checked: reference RANK is viable and reads 6.7868 (stated 6.7900), pool is 7.00% of the space, example AANK (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+prompt facts checked: reference DQJS is viable and reads 6.8402 (stated 6.8400), pool is 7.00% of the space, example AQJS (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+prompt facts checked: reference DROC is viable and reads 6.8066 (stated 6.8100), pool is 7.00% of the space, example AROC (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+prompt facts checked: reference BSBR is viable and reads 6.8069 (stated 6.8100), pool is 7.00% of the space, example ASBR (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+prompt facts checked: reference IOEM is viable and reads 6.8977 (stated 6.9000), pool is 7.00% of the space, example AOEM (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+prompt facts checked: reference GPNI is viable and reads 6.7168 (stated 6.7200), pool is 7.00% of the space, example APNI (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+prompt facts checked: reference NPEC is viable and reads 6.8939 (stated 6.8900), pool is 7.00% of the space, example APEC (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+prompt facts checked: reference CBAR is viable and reads 6.8590 (stated 6.8600), pool is 7.00% of the space, example ABAR (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+prompt facts checked: reference QJDJ is viable and reads 6.8157 (stated 6.8200), pool is 7.00% of the space, example AJDJ (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_smoke0am2_nk3_manifest.json (commit 15526185)
+    frontier     anthropic/claude-opus-4.7        released 2026-02
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+    open-weight  deepseek/deepseek-chat-v3.1      released 2025-08
+canary: comparator live, differs from the mean rule on 24 of 60 scripted campaigns
+
+comparator liveness per landscape (of 60 scripted campaigns): {'nk_uniform_k3_s7300_p93.0': 25, 'nk_uniform_k3_s7301_p93.0': 18, 'nk_uniform_k3_s7302_p93.0': 24, 'nk_uniform_k3_s7303_p93.0': 27, 'nk_uniform_k3_s7304_p93.0': 24, 'nk_uniform_k3_s7305_p93.0': 25, 'nk_uniform_k3_s7306_p93.0': 21, 'nk_uniform_k3_s7307_p93.0': 24, 'nk_uniform_k3_s7308_p93.0': 22, 'nk_uniform_k3_s7309_p93.0': 27, 'nk_uniform_k3_s7310_p93.0': 24, 'nk_uniform_k3_s7311_p93.0': 24, 'nk_uniform_k3_s7312_p93.0': 21, 'nk_uniform_k3_s7313_p93.0': 30, 'nk_uniform_k3_s7314_p93.0': 27, 'nk_uniform_k3_s7315_p93.0': 27, 'nk_uniform_k3_s7316_p93.0': 29, 'nk_uniform_k3_s7317_p93.0': 27, 'nk_uniform_k3_s7318_p93.0': 29, 'nk_uniform_k3_s7319_p93.0': 29}
+
+  SHUFFLED order over 6 campaigns across 6 cells (order seed 20261003)
+      Mechanism     mid-tier    seed 13000001 ok 48 rep 59 ( 98%) | nom  6.8311 | distn  1 | $0.0059 cum $0.01 | 20s
+      Blind         mid-tier    seed 13000001 ok 39 rep 46 ( 77%) | nom  6.8311 | distn  2 | $0.0218 cum $0.03 | 63s
+      Blind         frontier    seed 13000001 ok 46 rep 57 ( 95%) | nom  6.8311 | distn  1 | $0.2978 cum $0.33 | 88s
+      Mechanism     open-weight seed 13000001 ok 48 rep 59 ( 98%) | nom  6.8311 | distn  1 | $0.0089 cum $0.33 | 86s
+      Blind         open-weight seed 13000001 ok 45 rep 56 ( 93%) | nom  6.8311 | distn  1 | $0.0270 cum $0.36 | 170s
+      Mechanism     frontier    seed 13000001 ok 48 rep 56 ( 93%) | nom  8.7620 | distn  2 | $0.4139 cum $0.78 | 106s
+      CEILING STOP at $0.78
+
+  NOMINATION CALLS: 6, of which 6 carry a two-parser comparison, 6 agree
+
+  TWO-PARSER CHECK over 273 ROUND calls (nomination calls above)
+    GENUINE disagreement (both read, and differ)         0  0.00%
+    by design (primary refused the count, spent none)    0  0.00%
+  spot check written: results/grid_smoke0am2_nk3_spotcheck.txt
+  call log archived: 6 cells, 279 lines (279 new, 0 carried, 0 untouched, 0 replaced), 0.0 MB, all verified True
+  plain call log removed after verification: grid_smoke0am2_nk3_calls.jsonl
+
+====================================================================================================
+SUMMARY   smoke0am2_nk3
+====================================================================================================
+  VARIANCES AND HEALTH ONLY. The primary outcome by condition is NOT printed here; see
+  scripts/stage1_variance.py for the sizing inputs and the final analysis script for means.
+  (scripted reference for later use: k*=1 at 8.0057, k=0 at 7.8856)
+  condition     role          n | sd(nominated) sd(distinct) |   distn | rep of budget | $/campaign
+  Blind         frontier      1 |           nan         nan |     1.0 |         95.0%     0.2978
+  Blind         mid-tier      1 |           nan         nan |     2.0 |         76.7%     0.0218
+  Blind         open-weight   1 |           nan         nan |     1.0 |         93.3%     0.0270
+  Mechanism     frontier      1 |           nan         nan |     2.0 |         93.3%     0.4139
+  Mechanism     mid-tier      1 |           nan         nan |     1.0 |         98.3%     0.0059
+  Mechanism     open-weight   1 |           nan         nan |     1.0 |         98.3%     0.0089
+
+  TOTAL SPEND $0.7752 over 279 calls, 6 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls       empty     malformed       trunc  mean rsn   max rsn
+  anthropic/claude-opus-4.7          88     0  0.0%      0   0.0%     0  0.0%         0         0
+  google/gemini-2.5-flash            73     0  0.0%      0   0.0%     0  0.0%         0         0
+  deepseek/deepseek-chat-v3.1       118     0  0.0%      0   0.0%     0  0.0%         0         0
+
+  No empty and no truncated responses on any model at max_tokens=6000.

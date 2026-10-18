@@ -1,0 +1,22 @@
+*** PILOT (stage 0). Ran on the pre-2026-09-28 environment, which misreported the
+*** budget. NO NUMBER BELOW IS QUOTABLE. It exists to exercise this script.
+
+TABLE 1. Primary outcome: nominated true fitness, by condition and model.
+Scripted reference: k*=1 at 8.0057, k=0 at 7.8856. tag=stage0, 600 campaigns.
+
+condition      model                             n      mean       SE    median          mean 95% CI      vs k*
+Blind          claude-opus-4.7                  40    7.5719   0.0462    7.5794  [ 7.4852,  7.6618]    -0.4337
+Blind          deepseek-chat-v3.1               40    7.8198   0.0278    7.9397  [ 7.7632,  7.8708]    -0.1859
+Blind          gemini-2.5-flash                 40    7.8460   0.0199    7.9397  [ 7.8068,  7.8839]    -0.1597
+Quantitative   claude-opus-4.7                  40    7.6613   0.0495    7.7204  [ 7.5656,  7.7575]    -0.3443
+Quantitative   deepseek-chat-v3.1               40    7.7633   0.0239    7.7287  [ 7.7162,  7.8073]    -0.2424
+Quantitative   gemini-2.5-flash                 40    7.7317   0.0460    7.7287  [ 7.6404,  7.8119]    -0.2739
+Mechanism      claude-opus-4.7                  40    7.6778   0.0453    7.7752  [ 7.5859,  7.7593]    -0.3278
+Mechanism      deepseek-chat-v3.1               40    7.6607   0.0541    7.7287  [ 7.5549,  7.7581]    -0.3450
+Mechanism      gemini-2.5-flash                 40    7.0830   0.0586    6.8730  [ 6.9747,  7.1979]    -0.9227
+Aggregated     claude-opus-4.7                  40    7.6385   0.0399    7.7287  [ 7.5588,  7.7143]    -0.3671
+Aggregated     deepseek-chat-v3.1               40    7.6990   0.0264    7.7287  [ 7.6460,  7.7497]    -0.3066
+Aggregated     gemini-2.5-flash                 40    7.5456   0.0477    7.6865  [ 7.4457,  7.6284]    -0.4601
+Decision-rule  claude-opus-4.7                  40    7.7642   0.0413    7.9397  [ 7.6825,  7.8394]    -0.2414
+Decision-rule  deepseek-chat-v3.1               40    7.7181   0.0314    7.7287  [ 7.6528,  7.7743]    -0.2876
+Decision-rule  gemini-2.5-flash                 40    7.6680   0.0522    7.7076  [ 7.5612,  7.7643]    -0.3376

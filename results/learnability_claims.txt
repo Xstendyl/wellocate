@@ -1,0 +1,40 @@
+==============================================================================================================
+learnability, 200 landscapes per cell
+==============================================================================================================
+  learner's choice, per scope                                    old {'fair': 'k=1 shrinkage', 'pool': 'k=1 shrinkage'} new {'fair': 'k=1 shrinkage', 'pool': 'k=1 shrinkage'}
+  settings where the learner's k is k* or tied with it, of 18    old 18                         new 18
+  settings with k* = 1                                           old 13                         new 13
+* settings with k* = 2                                           old 5                          new 3
+* settings with k* = 2 at double noise                           old 4                          new 3
+* settings with k* = 2 within two SEs (ties)                     old 5                          new 3
+  gaps to the runner-up inside two SEs, of 18                    old 16                         new 16
+* raw paired difference, k* shrinkage minus never-replicate, held out old 0.0027 to 0.2243           new -0.0077 to 0.2231
+* learned score, training endpoints                              old 0.1790 to 6.8079           new 0.1223 to 7.7648
+* learned score, held-out endpoints                              old 0.9232 to 1.4545           new 0.7835 to 1.0000
+* cells scoring exactly 1.000 held out                           old 13                         new 11
+* cells whose held-out score is undefined (held-out span zero or negative) old []                         new ['K=2 cv=0.0365 pool k*=1', 'K=2 cv=0.0365 fair k*=0', 'K=3 cv=0.0365 pool k*=0', 'K=3 cv=0.0365 fair k*=1']
+* k* = 1 cells scoring exactly 1.000                             old 13                         new 11
+* settings with k* = 0                                           old 0                          new 2
+* learned score held out where k* is not 1 (defined cells)       old 0.9232 to 1.4545           new 0.7835 to 0.9973
+* collapses at K=3, guessing policy: (k=4, k=3) of n             old [(144, 16)]                new [(138, 12)]
+  n per cell                                                     old 200                        new 200
+==============================================================================================================
+learnability, 1500 landscapes per cell
+==============================================================================================================
+  learner's choice, per scope                                    old {'fair': 'k=1 shrinkage', 'pool': 'k=1 shrinkage'} new {'fair': 'k=1 shrinkage', 'pool': 'k=1 shrinkage'}
+  settings where the learner's k is k* or tied with it, of 18    old 18                         new 18
+* settings with k* = 1                                           old 13                         new 15
+* settings with k* = 2                                           old 5                          new 3
+* settings with k* = 2 at double noise                           old 5                          new 3
+* settings with k* = 2 within two SEs (ties)                     old 5                          new 3
+  gaps to the runner-up inside two SEs, of 18                    old 8                          new 8
+* raw paired difference, k* shrinkage minus never-replicate, held out old 0.0186 to 0.2033           new 0.0168 to 0.2292
+* learned score, training endpoints                              old 0.4005 to 2.3092           new -17.7561 to 1.5166
+* learned score, held-out endpoints                              old 0.8296 to 1.2048           new 0.8186 to 1.0000
+* cells scoring exactly 1.000 held out                           old 13                         new 15
+  cells whose held-out score is undefined (held-out span zero or negative) old []                         new []
+* k* = 1 cells scoring exactly 1.000                             old 13                         new 15
+  settings with k* = 0                                           old 0                          new 0
+* learned score held out where k* is not 1 (defined cells)       old 0.8296 to 1.2048           new 0.8186 to 0.9247
+* collapses at K=3, guessing policy: (k=4, k=3) of n             old [(1054, 156)]              new [(968, 96)]
+  n per cell                                                     old 1500                       new 1500

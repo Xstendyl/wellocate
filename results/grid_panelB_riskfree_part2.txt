@@ -1,0 +1,80 @@
+  key source: repdef/.env  (fingerprint 0d6f7d3f, never the key)
+  credit (launch): account $772.34, key $772.44 -> BINDING $772.34 (account), key expires 2026-10-28
+  credit check (launch): $772.34 spendable, floor $50.00 -> ok
+====================================================================================================
+GRID  NK uniform K=1 seed=1 pct=93.0  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 2 conditions x 3 models x 60 campaigns = 360 campaigns
+  ceiling $55.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    frontier     anthropic/claude-opus-4.7        released 2026-02
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+    open-weight  deepseek/deepseek-chat-v3.1      released 2025-08
+prompt facts checked: reference GDIF is viable and reads 6.8730 (stated 6.8700), pool is 7.00% of the space, example ADIF (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_panelB_riskfree_manifest.json (commit 3405e286)
+    frontier     anthropic/claude-opus-4.7        released 2026-02
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+    open-weight  deepseek/deepseek-chat-v3.1      released 2025-08
+canary: comparator live, differs from the mean rule on 24 of 60 scripted campaigns
+
+resuming: 335 campaigns already on disk, $40.0450 already spent
+
+  SHUFFLED order over 25 campaigns across 6 cells (order seed 20261002)
+      Mechanism     mid-tier    seed 300030 ok 50 rep 52 ( 87%) | nom  7.9397 | distn  8 | $0.0086 cum $40.05 | 30s
+      Mechanism     mid-tier    seed 300022 ok 54 rep 54 ( 90%) | nom  7.9397 | distn  6 | $0.0097 cum $40.06 | 33s
+      Blind         mid-tier    seed 300004 ok 54 rep 49 ( 82%) | nom  7.7287 | distn 10 | $0.0105 cum $40.07 | 40s
+      Mechanism     mid-tier    seed 300059 ok 48 rep 50 ( 83%) | nom  7.9513 | distn 10 | $0.0111 cum $40.08 | 38s
+      Blind         open-weight seed 300025 ok 48 rep 54 ( 90%) | nom  7.9513 | distn  6 | $0.0035 cum $40.09 | 112s
+      Mechanism     open-weight seed 300058 ok 54 rep 57 ( 95%) | nom  7.7287 | distn  3 | $0.0081 cum $40.10 | 183s
+      Mechanism     open-weight seed 300017 ok 54 rep 56 ( 93%) | nom  7.7287 | distn  4 | $0.0043 cum $40.10 | 103s
+      Mechanism     frontier    seed 300015 ok 50 rep 50 ( 83%) | nom  7.9397 | distn  9 | $0.2583 cum $40.36 | 80s
+      Mechanism     mid-tier    seed 300049 ok 56 rep 52 ( 87%) | nom  7.9397 | distn  8 | $0.0094 cum $40.37 | 34s
+      Mechanism     mid-tier    seed 300007 ok 48 rep 54 ( 90%) | nom  7.9397 | distn  5 | $0.0083 cum $40.38 | 30s
+      Blind         frontier    seed 300053 ok 57 rep 43 ( 72%) | nom  8.1684 | distn 15 | $0.2314 cum $40.61 | 77s
+      Blind         mid-tier    seed 300001 ok 52 rep 49 ( 82%) | nom  7.7839 | distn 10 | $0.0108 cum $40.62 | 52s
+      Blind         open-weight seed 300012 ok 53 rep 56 ( 93%) | nom  7.9397 | distn  4 | $0.0036 cum $40.62 | 103s
+      Mechanism     mid-tier    seed 300029 ok 49 rep 51 ( 85%) | nom  7.9397 | distn  8 | $0.0087 cum $40.63 | 31s
+      Mechanism     open-weight seed 300003 ok 50 rep 56 ( 93%) | nom  7.3202 | distn  4 | $0.0036 cum $40.63 | 140s
+      Mechanism     open-weight seed 300056 ok 49 rep 56 ( 93%) | nom  7.6865 | distn  4 | $0.0040 cum $40.64 | 114s
+      Mechanism     mid-tier    seed 300025 ok 46 rep 50 ( 83%) | nom  7.9513 | distn 10 | $0.0082 cum $40.65 | 32s
+      Blind         frontier    seed 300012 ok 52 rep 44 ( 73%) | nom  8.4012 | distn 14 | $0.2217 cum $40.87 | 74s
+      Blind         frontier    seed 300038 ok 53 rep 47 ( 78%) | nom  7.2642 | distn 13 | $0.4753 cum $41.34 | 133s
+      Mechanism     mid-tier    seed 300054 ok 47 rep 54 ( 90%) | nom  7.7287 | distn  5 | $0.0085 cum $41.35 | 30s
+      Blind         open-weight seed 300010 ok 54 rep 55 ( 92%) | nom  7.9513 | distn  5 | $0.0051 cum $41.36 | 83s
+      Blind         open-weight seed 300018 ok 51 rep 56 ( 93%) | nom  7.7287 | distn  4 | $0.0048 cum $41.36 | 113s
+      Blind         mid-tier    seed 300009 ok 43 rep 49 ( 82%) | nom  7.9397 | distn  8 | $0.0150 cum $41.38 | 53s
+      Blind         open-weight seed 300037 ok 54 rep 53 ( 88%) | nom  7.9513 | distn  7 | $0.0035 cum $41.38 | 98s
+      Mechanism     open-weight seed 300020 ok 51 rep 55 ( 92%) | nom  7.9513 | distn  5 | $0.0042 cum $41.39 | 89s
+
+  NOMINATION CALLS: 25, of which 25 carry a two-parser comparison, 25 agree
+
+  TWO-PARSER CHECK over 669 ROUND calls (nomination calls above)
+    GENUINE disagreement (both read, and differ)         0  0.00%
+    by design (primary refused the count, spent none)    0  0.00%
+  spot check written: /Users/<name>/projects/repdef/results/grid_panelB_riskfree_spotcheck.txt
+  call log archived: 6 cells, 11462 lines (694 new, 10768 carried, 0 untouched, 0 replaced), 1.6 MB, all verified True
+  plain call log removed after verification: grid_panelB_riskfree_calls.jsonl
+
+====================================================================================================
+SUMMARY   panelB_riskfree
+====================================================================================================
+  VARIANCES AND HEALTH ONLY. The primary outcome by condition is NOT printed here; see
+  scripts/stage1_variance.py for the sizing inputs and the final analysis script for means.
+  (scripted reference for later use: k*=1 at 8.0057, k=0 at 7.8856)
+  condition     role          n | sd(nominated) sd(distinct) |   distn | rep of budget | $/campaign
+  Blind         frontier     60 |        0.3785      2.8456 |    12.7 |         74.8%     0.3288
+  Blind         mid-tier     60 |        0.1102      2.0667 |     8.0 |         83.3%     0.0108
+  Blind         open-weight  60 |        0.1154      1.3925 |     5.6 |         90.0%     0.0046
+  Mechanism     frontier     60 |        0.3172      2.5544 |     9.8 |         80.9%     0.3313
+  Mechanism     mid-tier     60 |        0.1719      2.0294 |     6.0 |         89.0%     0.0085
+  Mechanism     open-weight  60 |        0.1375      0.6422 |     3.8 |         93.5%     0.0057
+
+  TOTAL SPEND $41.3852 over 694 calls, 360 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls       empty     malformed       trunc  mean rsn   max rsn
+  anthropic/claude-opus-4.7         159     0  0.0%      0   0.0%     0  0.0%         0         0
+  google/gemini-2.5-flash           322     0  0.0%      3   0.9%     0  0.0%         0         0
+  deepseek/deepseek-chat-v3.1       213     0  0.0%      0   0.0%     0  0.0%         0         0
+
+  No empty and no truncated responses on any model at max_tokens=6000.

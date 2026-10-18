@@ -1,0 +1,47 @@
+TABLE 2. The SIX confirmatory contrasts, Holm-corrected across the family.
+PAIRED BY SEED, campaign level, one weight per seed. Primary p is a studentised wild cluster
+bootstrap over seeds with Rademacher weights. Welch is a SENSITIVITY and assumes the cells are
+independent, which the shared seed makes false.
+Minimal effect of interest 0.06. Bootstrap draws 20000, resolution floor 0.00005.
+
+model                    contrast                   seeds  drop      diff       SE               95% CI      wild p
+claude-opus-4.7          Aggregated vs Mechanism      695     0   -0.0334   0.0139  [-0.0606, -0.0061]     0.01745
+claude-opus-4.7          Decision-rule vs Mechanism   695     0   -0.0316   0.0136  [-0.0583, -0.0049]     0.01920
+deepseek-chat-v3.1       Aggregated vs Mechanism      181     0   -0.0332   0.0217  [-0.0757, +0.0092]     0.12404
+deepseek-chat-v3.1       Decision-rule vs Mechanism   180     1   +0.0699   0.0218  [+0.0271, +0.1126]     0.00125
+gemini-2.5-flash         Aggregated vs Mechanism      139     0   +0.0067   0.0101  [-0.0130, +0.0265]     0.52152
+gemini-2.5-flash         Decision-rule vs Mechanism   139     0   -0.0044   0.0119  [-0.0278, +0.0189]     0.73371
+
+HOLM across the confirmatory family of 6, on the primary paired bootstrap p:
+model                    contrast                         raw p      Holm p reject at .05
+claude-opus-4.7          Aggregated vs Mechanism        0.01745     0.08725 no
+claude-opus-4.7          Decision-rule vs Mechanism     0.01920     0.08725 no
+deepseek-chat-v3.1       Aggregated vs Mechanism        0.12404     0.37213 no
+deepseek-chat-v3.1       Decision-rule vs Mechanism     0.00125     0.00750 YES
+gemini-2.5-flash         Aggregated vs Mechanism        0.52152     1.00000 no
+gemini-2.5-flash         Decision-rule vs Mechanism     0.73371     1.00000 no
+
+SENSITIVITY. Paired bootstrap (primary) against the paired t and Welch.
+corr is the within-seed correlation between the two cells. Where it is NEGATIVE the Welch SE
+is SMALLER than the truth, so an unpaired p is anti-conservative; where POSITIVE, Welch is
+conservative and loses power. The direction is not known in advance, which is why the
+paired estimator is the primary one.
+
+model                    contrast                      corr  SE pair SE Welch    ratio      wild p  paired t p     welch p reject w/pt/we
+claude-opus-4.7          Aggregated vs Mechanism     +0.048   0.0139   0.0142    1.025     0.01745     0.01658     0.01922 n/n/n
+claude-opus-4.7          Decision-rule vs Mechanism  +0.104   0.0136   0.0144    1.057     0.01920     0.02056     0.02821 n/n/n
+deepseek-chat-v3.1       Aggregated vs Mechanism     -0.012   0.0217   0.0215    0.994     0.12404     0.12654     0.12346 n/n/n
+deepseek-chat-v3.1       Decision-rule vs Mechanism  -0.086   0.0218   0.0209    0.960     0.00125     0.00160     0.00094 Y/Y/Y
+gemini-2.5-flash         Aggregated vs Mechanism     +0.157   0.0101   0.0109    1.084     0.52152     0.50520     0.53827 n/n/n
+gemini-2.5-flash         Decision-rule vs Mechanism  -0.261   0.0119   0.0107    0.898     0.73371     0.70976     0.67816 n/n/n
+
+The paired and unpaired POINT ESTIMATES agree to floating point when the seed sets match,
+since mean(b - a) equals mean(b) - mean(a). Only the standard error differs.
+
+0ag NOMINATION FALLBACKS EXCLUDED from these primary figures: 1 campaign(s) -> Decision-rule/deepseek-chat-v3.1 1.
+A fallback is a nomination that did not parse, where campaign.py substituted best_by_mean(),
+which is exactly the Decision-rule instruction. The sensitivity keeping them is in
+summary.json under contrasts_with_fallbacks.
+
+0ah UNDEFINED SHRINKAGE COMPARATOR in 4 campaign(s), NOT excluded because the
+primary outcome is unaffected. Reason recovered per cell: Decision-rule/gemini-2.5-flash 3 (fewer than two measured variants); Mechanism/gemini-2.5-flash 1 (fewer than two measured variants)

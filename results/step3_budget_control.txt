@@ -1,0 +1,84 @@
+
+============================================================================================================
+ENDPOINT CHECK  PHOQ   (targets: q=1 -> pool-restricted, q=0 -> verbatim thresh.py)
+============================================================================================================
+  r1.0 q=1 vs pool-restricted      37.65  36.72  30.54  25.54 | dev/SE  0.3  1.2  2.3  1.0 | argmax mine k=0 target k=0 MATCH
+  r1.0 q=0 vs verbatim thresh.py   28.65  27.90  24.66  20.99 | dev/SE  1.0  0.1  2.1  1.4 | argmax mine k=0 target k=0 MATCH
+  r2.0 q=1 vs pool-restricted      32.91  32.80  29.60  23.60 | dev/SE  0.2  0.8  0.2  2.1 | argmax mine k=0 target k=1 DIFFER
+  r2.0 q=0 vs verbatim thresh.py   22.15  23.57  21.90  18.48 | dev/SE  1.9  0.5  0.2  1.6 | argmax mine k=1 target k=1 MATCH
+  r4.0 q=1 vs pool-restricted      24.50  26.23  24.66  21.06 | dev/SE  0.2  0.0  1.1  0.5 | argmax mine k=1 target k=1 MATCH
+  r4.0 q=0 vs verbatim thresh.py   12.74  14.94  14.67  14.66 | dev/SE  0.5  1.1  0.5  1.0 | argmax mine k=1 target k=1 MATCH
+
+============================================================================================================
+BUDGET CONTROL  PHOQ
+============================================================================================================
+
+  --- ratio 2.0 ---
+   mode=slots   (15 rounds x 4 slots)
+     q=0.00  22.34  23.72  21.94  18.60 | argmax k=1 P=1.00 | gain  +6.16%+-2.15 | prec 0.440 | rep.frac 0.00 0.37 0.62 0.80 | rounds 15 | useful 29
+     q=0.25  23.86  25.21  22.57  19.62 | argmax k=1 P=1.00 | gain  +5.64%+-2.09 | prec 0.512 | rep.frac 0.00 0.35 0.60 0.78 | rounds 15 | useful 32
+     q=0.50  26.90  26.73  24.79  20.51 | argmax k=0 P=0.65 NOT IDENTIFIED | gain  +0.00%+-0.00 | prec 0.613 | rep.frac 0.00 0.32 0.57 0.77 | rounds 15 | useful 36
+     q=0.75  29.44  29.91  26.71  22.29 | argmax k=1 P=0.79 NOT IDENTIFIED | gain  +1.58%+-1.83 | prec 0.770 | rep.frac 0.00 0.28 0.53 0.74 | rounds 15 | useful 41
+     q=1.00  32.99  33.12  29.31  23.93 | argmax k=1 P=0.57 NOT IDENTIFIED | gain  +0.39%+-1.67 | prec 1.000 | rep.frac 0.00 0.23 0.47 0.70 | rounds 15 | useful 51
+   mode=useful  (run until 51 viable readings)
+     q=0.00  33.88  31.96  26.07  20.43 | argmax k=0 P=1.00 | gain  +0.00%+-0.00 | prec 0.490 | rep.frac 0.00 0.39 0.64 0.81 | rounds 28 | useful 52
+     q=0.25  33.24  31.71  26.04  21.24 | argmax k=0 P=0.99 | gain  +0.00%+-0.00 | prec 0.566 | rep.frac 0.00 0.36 0.61 0.80 | rounds 25 | useful 52
+     q=0.50  33.45  31.89  27.54  22.00 | argmax k=0 P=1.00 | gain  +0.00%+-0.00 | prec 0.661 | rep.frac 0.00 0.32 0.58 0.78 | rounds 22 | useful 52
+     q=0.75  33.01  33.04  28.69  23.20 | argmax k=1 P=0.50 NOT IDENTIFIED | gain  +0.09%+-1.78 | prec 0.794 | rep.frac 0.00 0.28 0.53 0.75 | rounds 19 | useful 52
+     q=1.00  33.36  33.49  29.50  24.33 | argmax k=1 P=0.58 NOT IDENTIFIED | gain  +0.37%+-1.67 | prec 1.000 | rep.frac 0.00 0.23 0.47 0.70 | rounds 15 | useful 52
+
+  --- ratio 4.0 ---
+   mode=slots   (15 rounds x 4 slots)
+     q=0.00  12.69  14.84  14.64  14.64 | argmax k=1 P=0.56 NOT IDENTIFIED | gain +16.98%+-3.87 | prec 0.375 | rep.frac 0.00 0.35 0.59 0.78 | rounds 15 | useful 24
+     q=0.25  13.99  16.78  15.53  15.47 | argmax k=1 P=1.00 | gain +19.90%+-3.66 | prec 0.441 | rep.frac 0.00 0.33 0.57 0.77 | rounds 15 | useful 27
+     q=0.50  16.99  19.13  18.07  16.78 | argmax k=1 P=0.98 | gain +12.62%+-3.21 | prec 0.549 | rep.frac 0.00 0.30 0.55 0.76 | rounds 15 | useful 31
+     q=0.75  20.42  22.44  20.41  18.76 | argmax k=1 P=1.00 | gain  +9.90%+-2.83 | prec 0.744 | rep.frac 0.00 0.28 0.52 0.74 | rounds 15 | useful 38
+     q=1.00  24.39  25.54  23.98  21.29 | argmax k=1 P=0.96 | gain  +4.72%+-2.55 | prec 1.000 | rep.frac 0.00 0.23 0.47 0.70 | rounds 15 | useful 51
+   mode=useful  (run until 51 viable readings)
+     q=0.00  21.86  24.71  21.07  17.80 | argmax k=1 P=1.00 | gain +13.04%+-3.02 | prec 0.445 | rep.frac 0.00 0.37 0.63 0.81 | rounds 45 | useful 51
+     q=0.25  22.31  25.14  21.31  18.06 | argmax k=1 P=1.00 | gain +12.65%+-3.06 | prec 0.522 | rep.frac 0.00 0.35 0.60 0.79 | rounds 35 | useful 52
+     q=0.50  23.55  25.18  22.30  18.88 | argmax k=1 P=1.00 | gain  +6.96%+-2.77 | prec 0.625 | rep.frac 0.00 0.32 0.57 0.77 | rounds 27 | useful 52
+     q=0.75  23.61  26.73  23.24  20.27 | argmax k=1 P=1.00 | gain +13.24%+-2.74 | prec 0.776 | rep.frac 0.00 0.28 0.53 0.74 | rounds 21 | useful 52
+     q=1.00  24.60  25.71  24.27  21.56 | argmax k=1 P=0.95 | gain  +4.48%+-2.55 | prec 1.000 | rep.frac 0.00 0.23 0.47 0.70 | rounds 15 | useful 52
+
+============================================================================================================
+ENDPOINT CHECK  GB1   (targets: q=1 -> pool-restricted, q=0 -> verbatim thresh.py)
+============================================================================================================
+  r1.0 q=1 vs pool-restricted       5.92   5.67   5.08   4.24 | dev/SE  0.1  1.1  0.2  1.1 | argmax mine k=0 target k=0 MATCH
+  r1.0 q=0 vs verbatim thresh.py    5.10   4.82   4.32   3.48 | dev/SE  0.8  0.3  1.6  0.1 | argmax mine k=0 target k=0 MATCH
+  r2.0 q=1 vs pool-restricted       5.29   5.32   4.80   4.04 | dev/SE  0.1  0.2  0.1  0.8 | argmax mine k=1 target k=1 MATCH
+  r2.0 q=0 vs verbatim thresh.py    4.27   4.37   3.92   3.29 | dev/SE  1.4  1.4  0.3  1.3 | argmax mine k=1 target k=1 MATCH
+  r4.0 q=1 vs pool-restricted       3.93   4.35   4.12   3.60 | dev/SE  0.7  0.2  0.4  1.6 | argmax mine k=1 target k=1 MATCH
+  r4.0 q=0 vs verbatim thresh.py    2.73   3.25   3.07   2.77 | dev/SE  0.7  2.4  1.5  2.2 | argmax mine k=1 target k=1 MATCH
+
+============================================================================================================
+BUDGET CONTROL  GB1
+============================================================================================================
+
+  --- ratio 2.0 ---
+   mode=slots   (15 rounds x 4 slots)
+     q=0.00   4.24   4.34   3.89   3.25 | argmax k=1 P=0.98 | gain  +2.33%+-1.16 | prec 0.589 | rep.frac 0.00 0.32 0.57 0.77 | rounds 15 | useful 35
+     q=0.25   4.54   4.56   4.02   3.39 | argmax k=1 P=0.70 NOT IDENTIFIED | gain  +0.51%+-1.08 | prec 0.661 | rep.frac 0.00 0.30 0.55 0.76 | rounds 15 | useful 38
+     q=0.50   4.73   4.80   4.34   3.53 | argmax k=1 P=0.94 NOT IDENTIFIED | gain  +1.53%+-0.99 | prec 0.744 | rep.frac 0.00 0.28 0.53 0.74 | rounds 15 | useful 41
+     q=0.75   5.06   5.02   4.57   3.75 | argmax k=0 P=0.80 NOT IDENTIFIED | gain  +0.00%+-0.00 | prec 0.860 | rep.frac 0.00 0.26 0.50 0.72 | rounds 15 | useful 45
+     q=1.00   5.30   5.31   4.81   4.03 | argmax k=1 P=0.59 NOT IDENTIFIED | gain  +0.20%+-0.77 | prec 1.000 | rep.frac 0.00 0.23 0.47 0.70 | rounds 15 | useful 51
+   mode=useful  (run until 51 viable readings)
+     q=0.00   5.28   5.16   4.47   3.52 | argmax k=0 P=1.00 | gain  +0.00%+-0.00 | prec 0.612 | rep.frac 0.00 0.33 0.58 0.78 | rounds 23 | useful 52
+     q=0.25   5.37   5.21   4.52   3.64 | argmax k=0 P=1.00 | gain  +0.00%+-0.00 | prec 0.683 | rep.frac 0.00 0.31 0.56 0.77 | rounds 21 | useful 52
+     q=0.50   5.32   5.26   4.70   3.72 | argmax k=0 P=0.92 NOT IDENTIFIED | gain  +0.00%+-0.00 | prec 0.762 | rep.frac 0.00 0.29 0.53 0.75 | rounds 19 | useful 52
+     q=0.75   5.33   5.29   4.77   3.87 | argmax k=0 P=0.84 NOT IDENTIFIED | gain  +0.00%+-0.00 | prec 0.867 | rep.frac 0.00 0.26 0.50 0.73 | rounds 17 | useful 52
+     q=1.00   5.33   5.35   4.84   4.05 | argmax k=1 P=0.62 NOT IDENTIFIED | gain  +0.24%+-0.76 | prec 1.000 | rep.frac 0.00 0.23 0.47 0.70 | rounds 15 | useful 52
+
+  --- ratio 4.0 ---
+   mode=slots   (15 rounds x 4 slots)
+     q=0.00   2.67   3.18   3.03   2.72 | argmax k=1 P=1.00 | gain +19.07%+-2.09 | prec 0.508 | rep.frac 0.00 0.32 0.56 0.76 | rounds 15 | useful 31
+     q=0.25   2.90   3.36   3.20   2.81 | argmax k=1 P=1.00 | gain +16.15%+-1.94 | prec 0.576 | rep.frac 0.00 0.30 0.54 0.75 | rounds 15 | useful 33
+     q=0.50   3.16   3.70   3.46   2.95 | argmax k=1 P=1.00 | gain +16.89%+-1.80 | prec 0.678 | rep.frac 0.00 0.28 0.52 0.74 | rounds 15 | useful 38
+     q=0.75   3.61   4.05   3.82   3.25 | argmax k=1 P=1.00 | gain +12.35%+-1.52 | prec 0.828 | rep.frac 0.00 0.26 0.50 0.72 | rounds 15 | useful 43
+     q=1.00   3.90   4.35   4.11   3.56 | argmax k=1 P=1.00 | gain +11.71%+-1.32 | prec 1.000 | rep.frac 0.00 0.23 0.47 0.70 | rounds 15 | useful 51
+   mode=useful  (run until 51 viable readings)
+     q=0.00   3.84   4.28   3.92   3.15 | argmax k=1 P=1.00 | gain +11.29%+-1.46 | prec 0.550 | rep.frac 0.00 0.33 0.58 0.78 | rounds 30 | useful 52
+     q=0.25   3.97   4.41   3.96   3.19 | argmax k=1 P=1.00 | gain +10.89%+-1.38 | prec 0.626 | rep.frac 0.00 0.31 0.56 0.77 | rounds 26 | useful 52
+     q=0.50   3.96   4.41   4.01   3.27 | argmax k=1 P=1.00 | gain +11.34%+-1.36 | prec 0.720 | rep.frac 0.00 0.29 0.53 0.75 | rounds 22 | useful 52
+     q=0.75   3.92   4.40   4.08   3.45 | argmax k=1 P=1.00 | gain +12.13%+-1.33 | prec 0.842 | rep.frac 0.00 0.26 0.50 0.73 | rounds 18 | useful 52
+     q=1.00   3.94   4.37   4.14   3.59 | argmax k=1 P=1.00 | gain +11.10%+-1.31 | prec 1.000 | rep.frac 0.00 0.23 0.47 0.70 | rounds 15 | useful 52

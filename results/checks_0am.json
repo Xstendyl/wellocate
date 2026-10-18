@@ -1,0 +1,604 @@
+{
+ "options": {
+  "(True, False, False, False)": 1580
+ },
+ "campaigns": {
+  "gen_r_gb1scr": 300,
+  "gen_r_gb1real": 300,
+  "gen_r_phoqscr": 300,
+  "gen_r_gb1scr_top": 60,
+  "gen_r_gb1real_top": 60,
+  "gen_k0": 140,
+  "gen_k1": 140,
+  "gen_k2": 140,
+  "gen_k3": 140
+ },
+ "k0_max_abs_epistasis": {
+  "7000": 2.6645352591003757e-15,
+  "7001": 2.6645352591003757e-15,
+  "7002": 2.6645352591003757e-15,
+  "7003": 2.6645352591003757e-15,
+  "7004": 2.6645352591003757e-15,
+  "7005": 2.6645352591003757e-15,
+  "7006": 2.6645352591003757e-15,
+  "7007": 2.6645352591003757e-15,
+  "7008": 2.6645352591003757e-15,
+  "7009": 3.552713678800501e-15,
+  "7010": 2.6645352591003757e-15,
+  "7011": 2.6645352591003757e-15,
+  "7012": 2.6645352591003757e-15,
+  "7013": 3.552713678800501e-15,
+  "7014": 3.552713678800501e-15,
+  "7015": 3.552713678800501e-15,
+  "7016": 2.6645352591003757e-15,
+  "7017": 2.6645352591003757e-15,
+  "7018": 2.6645352591003757e-15,
+  "7019": 2.6645352591003757e-15
+ },
+ "panel_k_mechanism": {
+  "0|claude-opus-4.7": {
+   "n": 20,
+   "rejections": 13.9,
+   "distinct": 18.9,
+   "share": 61.25,
+   "lost": 0.65,
+   "guessing": 25.900555555555556
+  },
+  "0|deepseek-chat-v3.1": {
+   "n": 60,
+   "rejections": 14.95,
+   "distinct": 4.183333333333334,
+   "share": 90.88888888888889,
+   "lost": 1,
+   "guessing": 25.900555555555556
+  },
+  "0|gemini-2.5-flash": {
+   "n": 60,
+   "rejections": 23.8,
+   "distinct": 8.216666666666667,
+   "share": 78.36111111111111,
+   "lost": 4.183333333333334,
+   "guessing": 25.900555555555556
+  },
+  "1|claude-opus-4.7": {
+   "n": 20,
+   "rejections": 28.5,
+   "distinct": 10.35,
+   "share": 75.75,
+   "lost": 2.6,
+   "guessing": 23.7335
+  },
+  "1|deepseek-chat-v3.1": {
+   "n": 60,
+   "rejections": 28.35,
+   "distinct": 2.966666666666667,
+   "share": 92.86111111111111,
+   "lost": 1.2166666666666666,
+   "guessing": 23.7335
+  },
+  "1|gemini-2.5-flash": {
+   "n": 60,
+   "rejections": 29.483333333333334,
+   "distinct": 4.516666666666667,
+   "share": 85.72222222222223,
+   "lost": 3.6166666666666667,
+   "guessing": 23.7335
+  },
+  "2|claude-opus-4.7": {
+   "n": 20,
+   "rejections": 32.2,
+   "distinct": 5.35,
+   "share": 83.41666666666667,
+   "lost": 3.9,
+   "guessing": 24.471899970350602
+  },
+  "2|deepseek-chat-v3.1": {
+   "n": 60,
+   "rejections": 35.18333333333333,
+   "distinct": 2.2333333333333334,
+   "share": 92.13888888888889,
+   "lost": 2.316666666666667,
+   "guessing": 24.471899970350602
+  },
+  "2|gemini-2.5-flash": {
+   "n": 60,
+   "rejections": 56.083333333333336,
+   "distinct": 3.05,
+   "share": 77.27777777777777,
+   "lost": 10.416666666666666,
+   "guessing": 24.471899970350602
+  },
+  "3|claude-opus-4.7": {
+   "n": 20,
+   "rejections": 33.7,
+   "distinct": 3,
+   "share": 86.58333333333333,
+   "lost": 4.75,
+   "guessing": 22.484547228149836
+  },
+  "3|deepseek-chat-v3.1": {
+   "n": 60,
+   "rejections": 41.1,
+   "distinct": 1.7,
+   "share": 94.08333333333333,
+   "lost": 1.8166666666666667,
+   "guessing": 22.484547228149836
+  },
+  "3|gemini-2.5-flash": {
+   "n": 60,
+   "rejections": 39.18333333333333,
+   "distinct": 2.216666666666667,
+   "share": 85.69444444444444,
+   "lost": 6.25,
+   "guessing": 22.484547228149836
+  }
+ },
+ "out_of_alphabet": {
+  "gen_r_gb1scr|Blind|claude-opus-4.7": {
+   "proposals": 35,
+   "campaigns_with_any": 20,
+   "campaigns": 30,
+   "letters": {
+    "U": 34,
+    "V": 1
+   }
+  },
+  "gen_r_gb1scr|Blind|deepseek-chat-v3.1": {
+   "proposals": 4,
+   "campaigns_with_any": 4,
+   "campaigns": 60,
+   "letters": {
+    "Z": 4
+   }
+  },
+  "gen_r_gb1scr|Blind|gemini-2.5-flash": {
+   "proposals": 11,
+   "campaigns_with_any": 3,
+   "campaigns": 60,
+   "letters": {
+    "U": 5,
+    "V": 3,
+    "W": 3
+   }
+  },
+  "gen_r_gb1scr|Mechanism|claude-opus-4.7": {
+   "proposals": 27,
+   "campaigns_with_any": 16,
+   "campaigns": 30,
+   "letters": {
+    "U": 27
+   }
+  },
+  "gen_r_gb1scr|Mechanism|deepseek-chat-v3.1": {
+   "proposals": 1,
+   "campaigns_with_any": 1,
+   "campaigns": 60,
+   "letters": {
+    "Z": 1
+   }
+  },
+  "gen_r_gb1scr|Mechanism|gemini-2.5-flash": {
+   "proposals": 28,
+   "campaigns_with_any": 13,
+   "campaigns": 60,
+   "letters": {
+    "U": 26,
+    "V": 2
+   }
+  },
+  "gen_r_gb1real|Blind|claude-opus-4.7": {
+   "proposals": 0,
+   "campaigns_with_any": 0,
+   "campaigns": 30,
+   "letters": {}
+  },
+  "gen_r_gb1real|Blind|deepseek-chat-v3.1": {
+   "proposals": 0,
+   "campaigns_with_any": 0,
+   "campaigns": 60,
+   "letters": {}
+  },
+  "gen_r_gb1real|Blind|gemini-2.5-flash": {
+   "proposals": 235,
+   "campaigns_with_any": 36,
+   "campaigns": 60,
+   "letters": {
+    "B": 100,
+    "X": 69,
+    "Z": 49,
+    "J": 17
+   }
+  },
+  "gen_r_gb1real|Mechanism|claude-opus-4.7": {
+   "proposals": 0,
+   "campaigns_with_any": 0,
+   "campaigns": 30,
+   "letters": {}
+  },
+  "gen_r_gb1real|Mechanism|deepseek-chat-v3.1": {
+   "proposals": 0,
+   "campaigns_with_any": 0,
+   "campaigns": 60,
+   "letters": {}
+  },
+  "gen_r_gb1real|Mechanism|gemini-2.5-flash": {
+   "proposals": 0,
+   "campaigns_with_any": 0,
+   "campaigns": 60,
+   "letters": {}
+  },
+  "gen_r_phoqscr|Blind|claude-opus-4.7": {
+   "proposals": 86,
+   "campaigns_with_any": 30,
+   "campaigns": 30,
+   "letters": {
+    "U": 77,
+    "V": 9
+   }
+  },
+  "gen_r_phoqscr|Blind|deepseek-chat-v3.1": {
+   "proposals": 127,
+   "campaigns_with_any": 54,
+   "campaigns": 60,
+   "letters": {
+    "U": 107,
+    "V": 17,
+    "W": 2,
+    "Z": 1
+   }
+  },
+  "gen_r_phoqscr|Blind|gemini-2.5-flash": {
+   "proposals": 649,
+   "campaigns_with_any": 58,
+   "campaigns": 60,
+   "letters": {
+    "U": 222,
+    "V": 142,
+    "W": 138,
+    "Z": 56,
+    "X": 54,
+    "Y": 37
+   }
+  },
+  "gen_r_phoqscr|Mechanism|claude-opus-4.7": {
+   "proposals": 86,
+   "campaigns_with_any": 30,
+   "campaigns": 30,
+   "letters": {
+    "U": 83,
+    "V": 2,
+    "W": 1
+   }
+  },
+  "gen_r_phoqscr|Mechanism|deepseek-chat-v3.1": {
+   "proposals": 144,
+   "campaigns_with_any": 23,
+   "campaigns": 60,
+   "letters": {
+    "U": 86,
+    "V": 57,
+    "Z": 4
+   }
+  },
+  "gen_r_phoqscr|Mechanism|gemini-2.5-flash": {
+   "proposals": 43,
+   "campaigns_with_any": 18,
+   "campaigns": 60,
+   "letters": {
+    "U": 26,
+    "V": 12,
+    "W": 2,
+    "X": 1,
+    "Y": 1,
+    "Z": 1
+   }
+  },
+  "gen_r_gb1scr_top|Blind|claude-opus-4.7": {
+   "proposals": 43,
+   "campaigns_with_any": 21,
+   "campaigns": 30,
+   "letters": {
+    "U": 40,
+    "V": 3
+   }
+  },
+  "gen_r_gb1scr_top|Mechanism|claude-opus-4.7": {
+   "proposals": 21,
+   "campaigns_with_any": 13,
+   "campaigns": 30,
+   "letters": {
+    "U": 21
+   }
+  },
+  "gen_r_gb1real_top|Blind|claude-opus-4.7": {
+   "proposals": 0,
+   "campaigns_with_any": 0,
+   "campaigns": 30,
+   "letters": {}
+  },
+  "gen_r_gb1real_top|Mechanism|claude-opus-4.7": {
+   "proposals": 0,
+   "campaigns_with_any": 0,
+   "campaigns": 30,
+   "letters": {}
+  },
+  "gen_k0|Blind|claude-opus-4.7": {
+   "proposals": 15,
+   "campaigns_with_any": 5,
+   "campaigns": 20,
+   "letters": {
+    "U": 15
+   }
+  },
+  "gen_k0|Blind|deepseek-chat-v3.1": {
+   "proposals": 128,
+   "campaigns_with_any": 22,
+   "campaigns": 60,
+   "letters": {
+    "U": 57,
+    "V": 33,
+    "W": 19,
+    "X": 17,
+    "Y": 3,
+    "Z": 1
+   }
+  },
+  "gen_k0|Blind|gemini-2.5-flash": {
+   "proposals": 280,
+   "campaigns_with_any": 38,
+   "campaigns": 60,
+   "letters": {
+    "U": 117,
+    "V": 81,
+    "W": 50,
+    "X": 22,
+    "Z": 7,
+    "Y": 6
+   }
+  },
+  "gen_k1|Blind|claude-opus-4.7": {
+   "proposals": 15,
+   "campaigns_with_any": 5,
+   "campaigns": 20,
+   "letters": {
+    "U": 14,
+    "W": 1
+   }
+  },
+  "gen_k1|Blind|deepseek-chat-v3.1": {
+   "proposals": 26,
+   "campaigns_with_any": 11,
+   "campaigns": 60,
+   "letters": {
+    "U": 20,
+    "V": 5,
+    "X": 1
+   }
+  },
+  "gen_k1|Blind|gemini-2.5-flash": {
+   "proposals": 116,
+   "campaigns_with_any": 27,
+   "campaigns": 60,
+   "letters": {
+    "U": 73,
+    "V": 30,
+    "W": 7,
+    "X": 6
+   }
+  },
+  "gen_k2|Blind|claude-opus-4.7": {
+   "proposals": 21,
+   "campaigns_with_any": 7,
+   "campaigns": 20,
+   "letters": {
+    "U": 20,
+    "V": 1
+   }
+  },
+  "gen_k2|Blind|deepseek-chat-v3.1": {
+   "proposals": 111,
+   "campaigns_with_any": 15,
+   "campaigns": 60,
+   "letters": {
+    "U": 60,
+    "V": 30,
+    "X": 10,
+    "W": 9,
+    "Z": 1,
+    "Y": 1
+   }
+  },
+  "gen_k2|Blind|gemini-2.5-flash": {
+   "proposals": 291,
+   "campaigns_with_any": 32,
+   "campaigns": 60,
+   "letters": {
+    "U": 146,
+    "V": 70,
+    "W": 41,
+    "X": 25,
+    "Y": 6,
+    "Z": 3
+   }
+  },
+  "gen_k3|Blind|claude-opus-4.7": {
+   "proposals": 25,
+   "campaigns_with_any": 6,
+   "campaigns": 20,
+   "letters": {
+    "U": 16,
+    "X": 3,
+    "W": 3,
+    "Y": 2,
+    "V": 1
+   }
+  },
+  "gen_k3|Blind|deepseek-chat-v3.1": {
+   "proposals": 103,
+   "campaigns_with_any": 20,
+   "campaigns": 60,
+   "letters": {
+    "U": 69,
+    "V": 19,
+    "W": 10,
+    "X": 3,
+    "Y": 1,
+    "Z": 1
+   }
+  },
+  "gen_k3|Blind|gemini-2.5-flash": {
+   "proposals": 95,
+   "campaigns_with_any": 23,
+   "campaigns": 60,
+   "letters": {
+    "U": 67,
+    "V": 15,
+    "X": 6,
+    "W": 5,
+    "Z": 2
+   }
+  }
+ },
+ "heaviest_alphabet_losses": [
+  {
+   "tag": "gen_r_phoqscr",
+   "model": "deepseek/deepseek-chat-v3.1",
+   "condition": "Mechanism",
+   "seed": 11000012,
+   "out_of_alphabet": 52,
+   "letters": {
+    "U": 26,
+    "V": 26
+   },
+   "rounds_lost_slots": 52,
+   "lost_slots": 52,
+   "truthful_reasks_sent": 13,
+   "reask_sample": "Your previous reply could not be used. These candidates contain letters that are not in the alphabet: EDQU, EDQV. Every candidate must use only the letters ABCDEFGHIJKLMNOPQRST. Reply again with exactly 4 lines in the fo"
+  },
+  {
+   "tag": "gen_r_phoqscr",
+   "model": "google/gemini-2.5-flash",
+   "condition": "Blind",
+   "seed": 11000019,
+   "out_of_alphabet": 78,
+   "letters": {
+    "U": 23,
+    "W": 21,
+    "V": 18,
+    "Y": 7,
+    "X": 7,
+    "Z": 2
+   },
+   "rounds_lost_slots": 44,
+   "lost_slots": 47,
+   "truthful_reasks_sent": 12,
+   "reask_sample": "Your previous reply could not be used. These candidates contain letters that are not in the alphabet: EDQU, EDQW, EDQV, EDQY. Every candidate must use only the letters ABCDEFGHIJKLMNOPQRST. Reply again with exactly 4 lin"
+  },
+  {
+   "tag": "gen_k2",
+   "model": "deepseek/deepseek-chat-v3.1",
+   "condition": "Blind",
+   "seed": 12000007,
+   "out_of_alphabet": 66,
+   "letters": {
+    "U": 28,
+    "V": 24,
+    "W": 7,
+    "X": 7
+   },
+   "rounds_lost_slots": 44,
+   "lost_slots": 49,
+   "truthful_reasks_sent": 15,
+   "reask_sample": "Your previous reply could not be used. These candidates contain letters that are not in the alphabet: TDGU, TDGV. Every candidate must use only the letters ABCDEFGHIJKLMNOPQRST. Reply again with exactly 4 lines in the fo"
+  },
+  {
+   "tag": "gen_r_phoqscr",
+   "model": "deepseek/deepseek-chat-v3.1",
+   "condition": "Mechanism",
+   "seed": 11000018,
+   "out_of_alphabet": 32,
+   "letters": {
+    "U": 17,
+    "V": 15
+   },
+   "rounds_lost_slots": 32,
+   "lost_slots": 32,
+   "truthful_reasks_sent": 9,
+   "reask_sample": "Your previous reply could not be used. These candidates contain letters that are not in the alphabet: EDQU, EDQV. Every candidate must use only the letters ABCDEFGHIJKLMNOPQRST. Reply again with exactly 4 lines in the fo"
+  },
+  {
+   "tag": "gen_r_phoqscr",
+   "model": "google/gemini-2.5-flash",
+   "condition": "Blind",
+   "seed": 11000055,
+   "out_of_alphabet": 40,
+   "letters": {
+    "U": 12,
+    "W": 11,
+    "V": 11,
+    "Y": 3,
+    "X": 3
+   },
+   "rounds_lost_slots": 20,
+   "lost_slots": 20,
+   "truthful_reasks_sent": 7,
+   "reask_sample": "Your previous reply could not be used. These candidates contain letters that are not in the alphabet: EDQU, EDQW, EDQV, EDQY. Every candidate must use only the letters ABCDEFGHIJKLMNOPQRST. Reply again with exactly 4 lin"
+  },
+  {
+   "tag": "gen_r_phoqscr",
+   "model": "google/gemini-2.5-flash",
+   "condition": "Blind",
+   "seed": 11000033,
+   "out_of_alphabet": 31,
+   "letters": {
+    "U": 11,
+    "V": 8,
+    "W": 6,
+    "X": 4,
+    "Z": 1,
+    "Y": 1
+   },
+   "rounds_lost_slots": 20,
+   "lost_slots": 20,
+   "truthful_reasks_sent": 7,
+   "reask_sample": "Your previous reply could not be used. These candidates contain letters that are not in the alphabet: EDQU, EDQV, EDQW, EDQX. Every candidate must use only the letters ABCDEFGHIJKLMNOPQRST. Reply again with exactly 4 lin"
+  },
+  {
+   "tag": "gen_k0",
+   "model": "google/gemini-2.5-flash",
+   "condition": "Blind",
+   "seed": 12000056,
+   "out_of_alphabet": 33,
+   "letters": {
+    "U": 11,
+    "V": 8,
+    "W": 8,
+    "X": 2,
+    "Y": 2,
+    "Z": 2
+   },
+   "rounds_lost_slots": 20,
+   "lost_slots": 21,
+   "truthful_reasks_sent": 7,
+   "reask_sample": "Your previous reply could not be used. These candidates contain letters that are not in the alphabet: NREU, NREV, NREW. Every candidate must use only the letters ABCDEFGHIJKLMNOPQRST. Reply again with exactly 4 lines in "
+  },
+  {
+   "tag": "gen_r_phoqscr",
+   "model": "google/gemini-2.5-flash",
+   "condition": "Blind",
+   "seed": 11000014,
+   "out_of_alphabet": 28,
+   "letters": {
+    "U": 8,
+    "V": 7,
+    "W": 7,
+    "Z": 4,
+    "X": 2
+   },
+   "rounds_lost_slots": 16,
+   "lost_slots": 16,
+   "truthful_reasks_sent": 6,
+   "reask_sample": "Your previous reply could not be used. These candidates contain letters that are not in the alphabet: EDQU. Every candidate must use only the letters ABCDEFGHIJKLMNOPQRST. Reply again with exactly 1 lines in the form CAN"
+  }
+ ]
+}

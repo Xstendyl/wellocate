@@ -1,0 +1,456 @@
+SPOT CHECK: raw model output beside the proposals the harness accepted.
+Sampled deterministically, 20 calls per model. Written for a human to read.
+
+====================================================================================================
+anthropic/claude-opus-4.7  (frontier)   565 calls, showing 20
+====================================================================================================
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['NREF']
+SECONDARY: ['NREF']
+RAW:
+NREF | explore position 4 near best A
+
+--- round 6  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 5  parsers agree True ---
+PARSED   : ['BAEA', 'BBEA', 'BAEB', 'EAEA']
+SECONDARY: ['BAEA', 'BBEA', 'BAEB', 'EAEA']
+RAW:
+BAEA | best so far (8.84), reconfirm with replicate
+BBEA | explore position 2 variant around champion
+BAEB | explore position 4 variant around champion
+EAEA | explore position 1 variant around champion
+
+--- round 10  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['BAEA', 'BAEK', 'IAEA', 'BAEP']
+SECONDARY: ['BAEA', 'BAEK', 'IAEA', 'BAEP']
+RAW:
+BAEA | best mean so far, replicate for noise
+BAEK | second best confirmed, replicate
+IAEA | explore position 1 unexplored letter
+BAEP | explore position 4 unexplored letter
+
+--- round 14  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 6  parsers agree True ---
+PARSED   : ['BAEA', 'BAES', 'MAEA', 'BAES']
+SECONDARY: ['BAEA', 'BAES', 'MAEA', 'BAES']
+RAW:
+BAEA | best confirmed candidate, replicate for noise reduction
+BAES | second best, replicate to confirm
+MAEA | explore remaining first position
+BAES | extra replicate given failures
+
+--- round 5  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 6  parsers agree True ---
+PARSED   : ['GDBQ', 'CDDP', 'HDBQ', 'CDEQ']
+SECONDARY: ['GDBQ', 'CDDP', 'HDBQ', 'CDEQ']
+RAW:
+GDBQ | explore position 1 further, F>C>B>A trend
+CDDP | combine good pos3=D with pos4=P
+HDBQ | explore more pos1 letters
+CDEQ | explore pos3 beyond D
+
+--- round 5  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['FDBQ']
+SECONDARY: ['FDBQ']
+RAW:
+FDBQ | best viable so far, re-measure to confirm high score
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['DKGB']
+SECONDARY: ['DKGB']
+RAW:
+DKGB | vary position 4 to probe its effect
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['AKGH']
+SECONDARY: ['AKGH']
+RAW:
+AKGH | explore position 3 variation while keeping viable AKG_ scaffold
+
+--- round 7  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 9  parsers agree True ---
+PARSED   : ['ANGK', 'ALGK', 'ANIK', 'AOGK']
+SECONDARY: ['ANGK', 'ALGK', 'ANIK', 'AOGK']
+RAW:
+ANGK readings: 7.779, 7.419, 7.429, 7.308, 6.852, 7.394 - noisy but good. Let me explore position variations.
+
+Position 2: K→6.368/6.691/6.985, L→7.546/7.254, N→7.533, so N/L good
+Position 4: A→various, K→7.779 best
+
+Let me try N variants with K at end, and explore position 3.
+
+ANGK | best candidate so far, replicate for noise averaging
+ALGK | combine two strong P2 letters (L, K)
+ANIK | explore position 3 variation
+AOGK | explore P2=O (between N and P)
+
+--- round 8  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 5  parsers agree True ---
+PARSED   : ['ANIM']
+SECONDARY: ['ANIM']
+RAW:
+ANIM | explore position-4 variant near best ANIK/ANGK
+
+--- round 12  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['ANJK']
+SECONDARY: ['ANJK']
+RAW:
+ANJK | best performer, re-measure to confirm high score
+
+--- round 13  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 6  parsers agree True ---
+PARSED   : ['ANIK', 'ANJK', 'ANGK', 'ANIA']
+SECONDARY: ['ANIK', 'ANJK', 'ANGK', 'ANIA']
+RAW:
+ANIK | best observed mean around 7.3-7.5, resample
+ANJK | strong performer ~7.2-7.4, resample
+ANGK | consistent ~7.3-7.4, resample
+ANIA | solid ~7.3, resample
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['QHNB']
+SECONDARY: ['QHNB']
+RAW:
+QHNB | vary position 4 to explore neighborhood of reference
+
+--- round 3  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['QHNC']
+SECONDARY: ['QHNC']
+RAW:
+QHNC | best known reading, resample to reduce noise
+
+--- round 3  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['PHNC']
+SECONDARY: ['PHNC']
+RAW:
+PHNC | try position 1 variant P, unexplored neighbor
+
+--- round 15  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 12  parsers agree True ---
+PARSED   : ['QHNB', 'QHNB', 'QHNB', 'QHNB']
+SECONDARY: ['QHNB', 'QHNB', 'QHNB', 'QHNB']
+RAW:
+QHNB | best mean, exploit final round
+QHNB | best mean, exploit final round
+QHNB | best mean, exploit final round
+QHNB | best mean, exploit final round
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['TMPT']
+SECONDARY: ['TMPT']
+RAW:
+TMPT | vary last position from reference to probe position 4
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['TMPR']
+SECONDARY: ['TMPR']
+RAW:
+TMPR | vary last position to probe neighborhood of TMPS
+
+--- round 10  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 6  parsers agree True ---
+PARSED   : ['TMKT', 'TMKS', 'TOKT', 'TMKO']
+SECONDARY: ['TMKT', 'TMKS', 'TOKT', 'TMKO']
+RAW:
+TMKT | best observed mean ~9.0, reconfirm
+TMKS | strong secondary, reconfirm
+TOKT | explore 2nd position variant
+TMKO | explore 4th position toward O
+
+--- round 6  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 9  parsers agree True ---
+PARSED   : ['TMAE', 'TMAI', 'TQAE', 'TMME']
+SECONDARY: ['TMAE', 'TMAI', 'TQAE', 'TMME']
+RAW:
+TMAE | best so far ~8.3, replicate for noise
+TMAI | explore pos4 near best E
+TQAE | explore pos1 letters, keep MAE
+TMME | combine good pos2 M with E, vary pos3
+
+====================================================================================================
+google/gemini-2.5-flash  (mid-tier)   2193 calls, showing 20
+====================================================================================================
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['SDCT']
+SECONDARY: ['SDCT']
+RAW:
+SDCT | exploring the 'T' variant after 'L' and 'M' showed viability
+
+--- round 8  slots 1  status bad_alphabet  tier pipe  accepted 0  tokens-anywhere 2  parsers agree True ---
+PARSED   : []
+SECONDARY: []
+RAW:
+JQMU | Exploring the 'U' position, as it hasn't been tested much.
+
+--- round 3  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['RFIF']
+SECONDARY: ['RFIF']
+RAW:
+RFIF | Exploring viability around the reference point with a small change.
+
+--- round 5  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['RFID']
+SECONDARY: ['RFID']
+RAW:
+RFID | Exploring viability around RFHI
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['NMEP']
+SECONDARY: ['NMEP']
+RAW:
+NMEP | Exploring the neighborhood of NMEK, which had a high score.
+
+--- round 7  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 13  parsers agree True ---
+PARSED   : ['NMEK', 'NMEH', 'NMEF', 'NMEI']
+SECONDARY: ['NMEK', 'NMEH', 'NMEF', 'NMEI']
+RAW:
+NMEK | Exploring variations around NMEK, which has shown high scores.
+NMEH | NMEH has also shown good scores, exploring it further.
+NMEF | NMEF has shown a good score, exploring it further.
+NMEI | NMEI is the reference point and has shown good scores.
+
+--- round 3  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['PKGA', 'QKGA', 'RKGA', 'SKGA']
+SECONDARY: ['PKGA', 'QKGA', 'RKGA', 'SKGA']
+RAW:
+PKGA | Exploring first position
+QKGA | Exploring first position
+RKGA | Exploring first position
+SKGA | Exploring first position
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['CQMR']
+SECONDARY: ['CQMR']
+RAW:
+CQMR | Exploring viability of first position changes
+
+--- round 9  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['SQMR']
+SECONDARY: ['SQMR']
+RAW:
+SQMR | Exploring the neighborhood of the reference point
+
+--- round 5  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['KJDF']
+SECONDARY: ['KJDF']
+RAW:
+KJDF | exploring KJD* variations
+
+--- round 12  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['KJDD']
+SECONDARY: ['KJDD']
+RAW:
+KJDD | Exploring the 'D' in the last position, as it has been rejected before but not recently.
+
+--- round 15  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['KJDE']
+SECONDARY: ['KJDE']
+RAW:
+KJDE | exploring the neighborhood of KJDB
+
+--- round 6  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['MONB', 'MONC', 'MOND', 'MONF']
+SECONDARY: ['MONB', 'MONC', 'MOND', 'MONF']
+RAW:
+MONB | exploring around MONE
+MONC | exploring around MONE
+MOND | exploring around MONE
+MONF | exploring around MONE
+
+--- round 4  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['NRES']
+SECONDARY: ['NRES']
+RAW:
+NRES | Exploring the next symbol in the sequence
+
+--- round 8  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['RFJR', 'RFJS', 'RFJT', 'RFJQ']
+SECONDARY: ['RFJR', 'RFJS', 'RFJT', 'RFJQ']
+RAW:
+RFJR | Explore around best score
+RFJS | Explore around best score
+RFJT | Explore around best score
+RFJQ | Explore around best score
+
+--- round 6  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['CDBT']
+SECONDARY: ['CDBT']
+RAW:
+CDBT | exploring variations around the best performing candidates
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['KJDC']
+SECONDARY: ['KJDC']
+RAW:
+KJDC | Exploring viability around KJDI, similar to KJDD
+
+--- round 6  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['LIOQ']
+SECONDARY: ['LIOQ']
+RAW:
+LIOQ | exploring around known good candidates
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['SDCQ']
+SECONDARY: ['SDCQ']
+RAW:
+SDCQ | Exploring the neighborhood of SDCM, which scored well.
+
+--- round 6  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['SDCB']
+SECONDARY: ['SDCB']
+RAW:
+SDCB | Exploring a new symbol in the last position, similar to previous successful variations.
+
+====================================================================================================
+deepseek/deepseek-chat-v3.1  (open-weight)   1788 calls, showing 20
+====================================================================================================
+
+--- round 7  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['LMBD', 'LMCD', 'LMCC', 'LMBC']
+SECONDARY: ['LMBD', 'LMCD', 'LMCC', 'LMBC']
+RAW:
+LMBD | continue exploring around best recent score
+LMCD | high variability, potential for improvement
+LMCC | previous high score of 7.662
+LMBC | baseline with consistent performance
+
+--- round 8  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['KJDI', 'KJDS', 'KJDA', 'KJDT']
+SECONDARY: ['KJDI', 'KJDS', 'KJDA', 'KJDT']
+RAW:
+KJDI | baseline reference point
+KJDS | previously measured around 6.9-7.2
+KJDA | showed improvement to 7.09-7.11
+KJDT | recent reading of 7.205
+
+--- round 14  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['MOOE']
+SECONDARY: ['MOOE']
+RAW:
+MOOE | Continuing to measure baseline for comparison
+
+--- round 15  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['MOOE', 'MOOE', 'MOOE', 'MOOE']
+SECONDARY: ['MOOE', 'MOOE', 'MOOE', 'MOOE']
+RAW:
+MOOE | Baseline reference for consistency  
+MOOE | Additional baseline measurement  
+MOOE | Continue tracking reference stability  
+MOOE | Maximize remaining viable measurements
+
+--- round 4  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['LMCC', 'LMBC', 'LMCE', 'LMCA']
+SECONDARY: ['LMCC', 'LMBC', 'LMCE', 'LMCA']
+RAW:
+LMCC | continue testing best performer  
+LMBC | second best so far, check consistency  
+LMCE | high variability, needs more samples  
+LMCA | consistent mid-range, explore further
+
+--- round 8  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['LMCC', 'LMBC', 'LMCE', 'LMBD']
+SECONDARY: ['LMCC', 'LMBC', 'LMCE', 'LMBD']
+RAW:
+LMCC | continue testing current best
+LMBC | compare with high performer
+LMCE | check consistency of previous results
+LMBD | explore alternative with decent past readings
+
+--- round 4  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['NREJ']
+SECONDARY: ['NREJ']
+RAW:
+NREJ | Continuing to explore high-scoring candidate from previous rounds
+
+--- round 7  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 6  parsers agree True ---
+PARSED   : ['NREJ', 'NREA', 'NREK', 'NRDJ']
+SECONDARY: ['NREJ', 'NREA', 'NREK', 'NRDJ']
+RAW:
+NREJ | continue exploring high-performing variant
+NREA | baseline for comparison
+NREK | test viability after previous failures
+NRDJ | attempt different third symbol after repeated rejections
+
+--- round 8  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['CKLP', 'CKLS', 'CKLJ', 'CKLR']
+SECONDARY: ['CKLP', 'CKLS', 'CKLJ', 'CKLR']
+RAW:
+CKLP | Continue exploring best known candidate
+CKLS | Second best candidate, check consistency
+CKLJ | Baseline reference point
+CKLR | Test viability of R at position 4
+
+--- round 3  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['LJOP']
+SECONDARY: ['LJOP']
+RAW:
+LJOP | Continue with best known candidate despite recent failure
+
+--- round 4  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['LJOP']
+SECONDARY: ['LJOP']
+RAW:
+LJOP | continuing to explore the best-performing candidate so far
+
+--- round 12  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['QNIN']
+SECONDARY: ['QNIN']
+RAW:
+QNIN | continuing to explore the best-performing candidate
+
+--- round 13  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['QNIN']
+SECONDARY: ['QNIN']
+RAW:
+QNIN | continuing to test the best-performing candidate so far
+
+--- round 8  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 10  parsers agree True ---
+PARSED   : ['QHMC', 'QHND', 'QHNC', 'QHMT']
+SECONDARY: ['QHMC', 'QHND', 'QHNC', 'QHMT']
+RAW:
+QHMC | continue exploring best performer
+QHND | high readings and frequent viability
+QHNC | reference point, needs more data
+QHMT | variation on QHMC, test viability
+
+--- round 13  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 10  parsers agree True ---
+PARSED   : ['QHMS', 'QHNC', 'QHNS', 'QHMC']
+SECONDARY: ['QHMS', 'QHNC', 'QHNS', 'QHMC']
+RAW:
+QHMS | explore high performer from round 7 (7.419)  
+QHNC | consistent baseline around 6.5  
+QHNS | historically variable but sometimes high (8.113 in round 1)  
+QHMC | test viability and performance near QHMS
+
+--- round 13  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['TMNS', 'TMNT', 'TMQS', 'TNPS']
+SECONDARY: ['TMNS', 'TMNT', 'TMQS', 'TNPS']
+RAW:
+TMNS | High readings (up to 9.113), consistently good performer
+TMNT | Strong results (up to 9.041), despite occasional failures
+TMQS | Consistent mid-to-high readings (7.1-8.3 range)
+TNPS | Explore variations on successful patterns from previous rounds
+
+--- round 9  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['SDCT', 'SDCM', 'SDCQ', 'SECM']
+SECONDARY: ['SDCT', 'SDCM', 'SDCQ', 'SECM']
+RAW:
+SDCT | continue exploring best known candidate  
+SDCM | check consistency of previous high reading  
+SDCQ | compare with other top performers  
+SECM | test viability of alternate second position
+
+--- round 12  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['SDCT', 'SDCQ', 'SDCM', 'SDCL']
+SECONDARY: ['SDCT', 'SDCQ', 'SDCM', 'SDCL']
+RAW:
+SDCT | continue exploiting current best performer
+SDCQ | second best performer, worth further evaluation
+SDCM | previous high readings, potential for improvement
+SDCL | reference point, baseline comparison
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['RFHI']
+SECONDARY: ['RFHI']
+RAW:
+RFHI | reference point, already measured but viable
+
+--- round 11  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['RFHI']
+SECONDARY: ['RFHI']
+RAW:
+RFHI | Continuing baseline measurement for stability

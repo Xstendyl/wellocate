@@ -1,0 +1,4247 @@
+{
+ "instance": "phoq/scramble:20261004",
+ "split": "phoq:paper",
+ "noise": "assay, CV 0.073",
+ "landscape": {
+  "same_as_harness": {
+   "table": true,
+   "pool": true,
+   "start": true,
+   "source_keys": true,
+   "label": true
+  },
+  "label": "phoq_scrambled_s20261004_p93.0",
+  "start": "EDQS",
+  "start_value": 0.43626057516470107,
+  "scramble_seed": 20261004,
+  "letter_maps": [
+   "IGLSJKDBHCOPRATENMFQ",
+   "BFJGHMTDQENILAOCRPSK",
+   "GMLAHFRBNDQPOIJTESKC",
+   "BFAOHNCLGSITMJEDKPQR"
+  ],
+  "frozen_sha256": "d95092853d5996c8b56ebbfa24c760bf824d567a578f421846e66990c2b9fead"
+ },
+ "reference_seeds": "8,200,000 to 8,201,499",
+ "agent_seeds": "17000000 to 17000029",
+ "reference": {
+  "guessing k=0": {
+   "n": 1500,
+   "collapsed": 0,
+   "pick": 2.0500042464604817,
+   "pick_se": 0.022866490390623526,
+   "pick_ci": [
+    2.00518592529486,
+    2.0948225676261036
+   ],
+   "share_budget": 1.0333333333333334,
+   "share_budget_se": 0.032998091826512366,
+   "share_budget_ci": [
+    0.9686570733533693,
+    1.0980095933132976
+   ],
+   "share_nonlost": 1.2195886319867726,
+   "share_nonlost_se": 0.03937454681524389,
+   "share_nonlost_ci": [
+    1.1424145202288947,
+    1.2967627437446505
+   ],
+   "exploration_shortfall": 6.692098749613926,
+   "exploration_shortfall_se": 0.022698771581069886,
+   "exploration_shortfall_ci": [
+    6.6476091573150295,
+    6.736588341912823
+   ],
+   "selection_shortfall": 0.019897003925592432,
+   "selection_shortfall_se": 0.0016028121144508163,
+   "selection_shortfall_ci": [
+    0.016755492181268834,
+    0.02303851566991603
+   ],
+   "distinct": 42.46066666666667,
+   "distinct_se": 0.19312013810054818,
+   "distinct_ci": [
+    42.082151195989596,
+    42.83918213734374
+   ],
+   "lost_slots": 9.517333333333333,
+   "lost_slots_se": 0.21747182737273718,
+   "lost_slots_ci": [
+    9.091088551682768,
+    9.943578114983898
+   ],
+   "nominee_one_reading": 99.4,
+   "top_nominee": "EDQJ",
+   "top_nominee_count": 269,
+   "distinct_nominees": 220
+  },
+  "guessing k=1": {
+   "n": 1500,
+   "collapsed": 0,
+   "pick": 1.9841689559287403,
+   "pick_se": 0.023181865531900492,
+   "pick_ci": [
+    1.9387324994862154,
+    2.0296054123712652
+   ],
+   "share_budget": 23.806666666666665,
+   "share_budget_se": 0.02258841415266357,
+   "share_budget_ci": [
+    23.762393374927445,
+    23.850939958405885
+   ],
+   "share_nonlost": 26.49160416209709,
+   "share_nonlost_se": 0.10069565183049202,
+   "share_nonlost_ci": [
+    26.294240684509326,
+    26.688967639684854
+   ],
+   "exploration_shortfall": 6.770622100869388,
+   "exploration_shortfall_se": 0.0231202305601095,
+   "exploration_shortfall_ci": [
+    6.7253064489715735,
+    6.815937752767202
+   ],
+   "selection_shortfall": 0.007208943201872551,
+   "selection_shortfall_se": 0.0008200660154938275,
+   "selection_shortfall_ci": [
+    0.005601613811504648,
+    0.008816272592240453
+   ],
+   "distinct": 34.36066666666667,
+   "distinct_se": 0.13336426036694168,
+   "distinct_ci": [
+    34.099272716347464,
+    34.62206061698587
+   ],
+   "lost_slots": 5.330666666666667,
+   "lost_slots_se": 0.1423647754924493,
+   "lost_slots_ci": [
+    5.051631706701466,
+    5.6097016266318676
+   ],
+   "nominee_one_reading": 7.133333333333333,
+   "top_nominee": "EDQJ",
+   "top_nominee_count": 263,
+   "distinct_nominees": 225
+  },
+  "guessing k=2": {
+   "n": 1500,
+   "collapsed": 0,
+   "pick": 1.792340956481885,
+   "pick_se": 0.01690489526689735,
+   "pick_ci": [
+    1.7592073617587662,
+    1.825474551205004
+   ],
+   "share_budget": 46.84888888888889,
+   "share_budget_se": 0.014149879013330157,
+   "share_budget_ci": [
+    46.82115512602276,
+    46.876622651755014
+   ],
+   "share_nonlost": 49.22350588429354,
+   "share_nonlost_se": 0.08613234641805263,
+   "share_nonlost_ci": [
+    49.05468648531416,
+    49.39232528327292
+   ],
+   "exploration_shortfall": 6.965044479525778,
+   "exploration_shortfall_se": 0.016855670704709492,
+   "exploration_shortfall_ci": [
+    6.932007364944547,
+    6.998081594107009
+   ],
+   "selection_shortfall": 0.0046145639923375744,
+   "selection_shortfall_se": 0.0006008969570813662,
+   "selection_shortfall_ci": [
+    0.003436805956458097,
+    0.005792322028217052
+   ],
+   "distinct": 24.822,
+   "distinct_se": 0.08527701853980632,
+   "distinct_ci": [
+    24.65485704366198,
+    24.989142956338018
+   ],
+   "lost_slots": 2.6866666666666665,
+   "lost_slots_se": 0.08155900697112356,
+   "lost_slots_ci": [
+    2.526811013003264,
+    2.846522320330069
+   ],
+   "nominee_one_reading": 6.133333333333333,
+   "top_nominee": "EDQJ",
+   "top_nominee_count": 231,
+   "distinct_nominees": 240
+  },
+  "guessing k=3": {
+   "n": 1500,
+   "collapsed": 0,
+   "pick": 1.580992605636572,
+   "pick_se": 0.01591663283390136,
+   "pick_ci": [
+    1.5497960052821254,
+    1.6121892059910186
+   ],
+   "share_budget": 70.03,
+   "share_budget_se": 0.005723213268209488,
+   "share_budget_ci": [
+    70.01878250199431,
+    70.0412174980057
+   ],
+   "share_nonlost": 71.38906697538837,
+   "share_nonlost_se": 0.05238393129021312,
+   "share_nonlost_ci": [
+    71.28639447005956,
+    71.49173948071719
+   ],
+   "exploration_shortfall": 7.177802875681133,
+   "exploration_shortfall_se": 0.015886036108348354,
+   "exploration_shortfall_ci": [
+    7.14666624490877,
+    7.208939506453495
+   ],
+   "selection_shortfall": 0.0032045186822960863,
+   "selection_shortfall_se": 0.0005132668912519621,
+   "selection_shortfall_ci": [
+    0.0021985155754422406,
+    0.004210521789149932
+   ],
+   "distinct": 14.308,
+   "distinct_se": 0.04921308268364257,
+   "distinct_ci": [
+    14.211542357940061,
+    14.404457642059938
+   ],
+   "lost_slots": 1.0986666666666667,
+   "lost_slots_se": 0.03996550287693204,
+   "lost_slots_ci": [
+    1.02033428102788,
+    1.1769990523054534
+   ],
+   "nominee_one_reading": 4.8,
+   "top_nominee": "EDQJ",
+   "top_nominee_count": 161,
+   "distinct_nominees": 242
+  },
+  "guessing k=4": {
+   "n": 1476,
+   "collapsed": 24,
+   "pick": 1.0692021160665803,
+   "pick_se": 0.011853289905226357,
+   "pick_ci": [
+    1.0459696678523367,
+    1.092434564280824
+   ],
+   "share_budget": 93.36156278229448,
+   "share_budget_se": 0.005599768749055586,
+   "share_budget_ci": [
+    93.35058723554634,
+    93.37253832904263
+   ],
+   "share_nonlost": 93.52264189893019,
+   "share_nonlost_se": 0.014219567857360817,
+   "share_nonlost_ci": [
+    93.49477154592977,
+    93.55051225193061
+   ],
+   "exploration_shortfall": 7.691736245705303,
+   "exploration_shortfall_se": 0.011844153626002855,
+   "exploration_shortfall_ci": [
+    7.668521704598337,
+    7.714950786812269
+   ],
+   "selection_shortfall": 0.0010616382281176198,
+   "selection_shortfall_se": 0.00021862051175332588,
+   "selection_shortfall_ci": [
+    0.0006331420250811011,
+    0.0014901344311541386
+   ],
+   "distinct": 3.3292682926829267,
+   "distinct_se": 0.01815999215902085,
+   "distinct_ci": [
+    3.293674708051246,
+    3.3648618773146075
+   ],
+   "lost_slots": 0.1016260162601626,
+   "lost_slots_se": 0.008321435562279912,
+   "lost_slots_ci": [
+    0.08531600255809398,
+    0.11793602996223122
+   ],
+   "nominee_one_reading": 0.0,
+   "top_nominee": "ECQS",
+   "top_nominee_count": 85,
+   "distinct_nominees": 163
+  },
+  "informed k=0": {
+   "n": 1500,
+   "collapsed": 0,
+   "pick": 2.62619878168794,
+   "pick_se": 0.03615481411367739,
+   "pick_ci": [
+    2.5553353460251325,
+    2.697062217350748
+   ],
+   "share_budget": 0.0,
+   "share_budget_se": 0.0,
+   "share_budget_ci": [
+    0.0,
+    0.0
+   ],
+   "share_nonlost": 0.0,
+   "share_nonlost_se": 0.0,
+   "share_nonlost_ci": [
+    0.0,
+    0.0
+   ],
+   "exploration_shortfall": 6.116480596230652,
+   "exploration_shortfall_se": 0.03591252972705629,
+   "exploration_shortfall_ci": [
+    6.046092037965622,
+    6.186869154495682
+   ],
+   "selection_shortfall": 0.01932062208140834,
+   "selection_shortfall_se": 0.0015098832227843431,
+   "selection_shortfall_ci": [
+    0.01636125096475103,
+    0.022279993198065652
+   ],
+   "distinct": 51.092666666666666,
+   "distinct_se": 0.07204290265936052,
+   "distinct_ci": [
+    50.95146257745432,
+    51.23387075587901
+   ],
+   "lost_slots": 0,
+   "lost_slots_se": 0.0,
+   "lost_slots_ci": [
+    0.0,
+    0.0
+   ],
+   "nominee_one_reading": 100.0,
+   "top_nominee": "NGKI",
+   "top_nominee_count": 32,
+   "distinct_nominees": 414
+  },
+  "informed k=1": {
+   "n": 1500,
+   "collapsed": 0,
+   "pick": 2.4082670656113296,
+   "pick_se": 0.03314791677168823,
+   "pick_ci": [
+    2.3432971487388206,
+    2.4732369824838387
+   ],
+   "share_budget": 23.333333333333332,
+   "share_budget_se": 0.0,
+   "share_budget_ci": [
+    23.333333333333332,
+    23.333333333333332
+   ],
+   "share_nonlost": 23.333333333333332,
+   "share_nonlost_se": 0.0,
+   "share_nonlost_ci": [
+    23.333333333333332,
+    23.333333333333332
+   ],
+   "exploration_shortfall": 6.344044167782496,
+   "exploration_shortfall_se": 0.03305632244560642,
+   "exploration_shortfall_ci": [
+    6.279253775789107,
+    6.408834559775884
+   ],
+   "selection_shortfall": 0.009688766606175004,
+   "selection_shortfall_se": 0.0009643293542431262,
+   "selection_shortfall_ci": [
+    0.007798681071858477,
+    0.011578852140491532
+   ],
+   "distinct": 39.212666666666664,
+   "distinct_se": 0.060445162511486,
+   "distinct_ci": [
+    39.094194148144155,
+    39.33113918518917
+   ],
+   "lost_slots": 0,
+   "lost_slots_se": 0.0,
+   "lost_slots_ci": [
+    0.0,
+    0.0
+   ],
+   "nominee_one_reading": 9.866666666666667,
+   "top_nominee": "NAMO",
+   "top_nominee_count": 23,
+   "distinct_nominees": 459
+  },
+  "informed k=2": {
+   "n": 1500,
+   "collapsed": 0,
+   "pick": 2.147275986315684,
+   "pick_se": 0.030086362699123178,
+   "pick_ci": [
+    2.0883067154254022,
+    2.2062452572059654
+   ],
+   "share_budget": 46.666666666666664,
+   "share_budget_se": 0.0,
+   "share_budget_ci": [
+    46.666666666666664,
+    46.666666666666664
+   ],
+   "share_nonlost": 46.666666666666664,
+   "share_nonlost_se": 0.0,
+   "share_nonlost_ci": [
+    46.666666666666664,
+    46.666666666666664
+   ],
+   "exploration_shortfall": 6.60815716354321,
+   "exploration_shortfall_se": 0.030023072155186837,
+   "exploration_shortfall_ci": [
+    6.549311942119044,
+    6.667002384967376
+   ],
+   "selection_shortfall": 0.006566850141106559,
+   "selection_shortfall_se": 0.0007751586286982647,
+   "selection_shortfall_ci": [
+    0.00504753922885796,
+    0.008086161053355157
+   ],
+   "distinct": 27.310666666666666,
+   "distinct_se": 0.0521165511594092,
+   "distinct_ci": [
+    27.208518226394226,
+    27.412815106939107
+   ],
+   "lost_slots": 0,
+   "lost_slots_se": 0.0,
+   "lost_slots_ci": [
+    0.0,
+    0.0
+   ],
+   "nominee_one_reading": 8.933333333333334,
+   "top_nominee": "NGMT",
+   "top_nominee_count": 17,
+   "distinct_nominees": 602
+  },
+  "informed k=3": {
+   "n": 1500,
+   "collapsed": 0,
+   "pick": 1.731699365844682,
+   "pick_se": 0.023753622312148632,
+   "pick_ci": [
+    1.6851422661128708,
+    1.7782564655764932
+   ],
+   "share_budget": 70.0,
+   "share_budget_se": 0.0,
+   "share_budget_ci": [
+    70.0,
+    70.0
+   ],
+   "share_nonlost": 70.0,
+   "share_nonlost_se": 0.0,
+   "share_nonlost_ci": [
+    70.0,
+    70.0
+   ],
+   "exploration_shortfall": 7.025434103381788,
+   "exploration_shortfall_se": 0.023700806517911253,
+   "exploration_shortfall_ci": [
+    6.978980522606682,
+    7.071887684156894
+   ],
+   "selection_shortfall": 0.004866530773530014,
+   "selection_shortfall_se": 0.0006035373589561593,
+   "selection_shortfall_ci": [
+    0.0036835975499759422,
+    0.006049463997084087
+   ],
+   "distinct": 15.362,
+   "distinct_se": 0.038312375471881426,
+   "distinct_ci": [
+    15.286907744075112,
+    15.437092255924888
+   ],
+   "lost_slots": 0,
+   "lost_slots_se": 0.0,
+   "lost_slots_ci": [
+    0.0,
+    0.0
+   ],
+   "nominee_one_reading": 6.133333333333333,
+   "top_nominee": "NGGC",
+   "top_nominee_count": 8,
+   "distinct_nominees": 836
+  },
+  "informed k=4": {
+   "n": 1484,
+   "collapsed": 16,
+   "pick": 0.9700151659539855,
+   "pick_se": 0.015398012506434045,
+   "pick_ci": [
+    0.9398350614413747,
+    1.0001952704665962
+   ],
+   "share_budget": 93.33333333333333,
+   "share_budget_se": 0.0,
+   "share_budget_ci": [
+    93.33333333333333,
+    93.33333333333333
+   ],
+   "share_nonlost": 93.33333333333333,
+   "share_nonlost_se": 0.0,
+   "share_nonlost_ci": [
+    93.33333333333333,
+    93.33333333333333
+   ],
+   "exploration_shortfall": 7.791091480654682,
+   "exploration_shortfall_se": 0.01539433331331341,
+   "exploration_shortfall_ci": [
+    7.760918587360588,
+    7.821264373948776
+   ],
+   "selection_shortfall": 0.0008933533913324766,
+   "selection_shortfall_se": 0.0001846101032565791,
+   "selection_shortfall_ci": [
+    0.0005315175889495815,
+    0.0012551891937153717
+   ],
+   "distinct": 3.4440700808625335,
+   "distinct_se": 0.017111024954855142,
+   "distinct_ci": [
+    3.4105324719510173,
+    3.4776076897740498
+   ],
+   "lost_slots": 0,
+   "lost_slots_se": 0.0,
+   "lost_slots_ci": [
+    0.0,
+    0.0
+   ],
+   "nominee_one_reading": 0.0,
+   "top_nominee": "NCGJ",
+   "top_nominee_count": 3,
+   "distinct_nominees": 1319
+  },
+  "model-guided k=1 with confirmation": {
+   "n": 1500,
+   "collapsed": 0,
+   "pick": 1.8509453071453839,
+   "pick_se": 0.013122824724261446,
+   "pick_ci": [
+    1.8252245706858314,
+    1.8766660436049363
+   ],
+   "share_budget": 36.617777777777775,
+   "share_budget_se": 0.0558922714259825,
+   "share_budget_ci": [
+    36.50822892578285,
+    36.7273266297727
+   ],
+   "share_nonlost": 38.28463777477138,
+   "share_nonlost_se": 0.07620913005725645,
+   "share_nonlost_ci": [
+    38.13526787985916,
+    38.43400766968361
+   ],
+   "exploration_shortfall": 6.90854737675697,
+   "exploration_shortfall_se": 0.01308352096007034,
+   "exploration_shortfall_ci": [
+    6.882903675675232,
+    6.934191077838708
+   ],
+   "selection_shortfall": 0.0025073160976467885,
+   "selection_shortfall_se": 0.0004019763988076108,
+   "selection_shortfall_ci": [
+    0.0017194423559838713,
+    0.0032951898393097055
+   ],
+   "distinct": 30.382,
+   "distinct_se": 0.08040954211395136,
+   "distinct_ci": [
+    30.224397297456658,
+    30.539602702543345
+   ],
+   "lost_slots": 2.486666666666667,
+   "lost_slots_se": 0.0649343533071584,
+   "lost_slots_ci": [
+    2.3593953341846365,
+    2.613937999148697
+   ],
+   "nominee_one_reading": 0.0,
+   "top_nominee": "EDQJ",
+   "top_nominee_count": 287,
+   "distinct_nominees": 159
+  }
+ },
+ "agent_seeds_rows": {
+  "guessing k=0": [
+   {
+    "pick": 1.429101191465772,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 7.332898808534228,
+    "selection_shortfall": 0.0,
+    "distinct": 36,
+    "lost_slots": 15,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "INQP"
+   },
+   {
+    "pick": 1.1203670472139473,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 7.641632952786053,
+    "selection_shortfall": 0.0,
+    "distinct": 32,
+    "lost_slots": 24,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "ERIS"
+   },
+   {
+    "pick": 2.1320555764105755,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 6.629944423589425,
+    "selection_shortfall": 0.0,
+    "distinct": 50,
+    "lost_slots": 4,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "EGQI"
+   },
+   {
+    "pick": 1.6826927753338525,
+    "share_budget": 5.0,
+    "share_nonlost": 5.769230769230769,
+    "exploration_shortfall": 7.079307224666148,
+    "selection_shortfall": 0.0,
+    "distinct": 40,
+    "lost_slots": 8,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "OBQS"
+   },
+   {
+    "pick": 1.5883150684531608,
+    "share_budget": 1.6666666666666667,
+    "share_nonlost": 2.7777777777777777,
+    "exploration_shortfall": 7.173684931546839,
+    "selection_shortfall": 0.0,
+    "distinct": 30,
+    "lost_slots": 24,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "IAQS"
+   },
+   {
+    "pick": 3.8249823279097237,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 4.937017672090277,
+    "selection_shortfall": 0.0,
+    "distinct": 45,
+    "lost_slots": 5,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "NFQT"
+   },
+   {
+    "pick": 1.1762470747706875,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 7.57435768285571,
+    "selection_shortfall": 0.011395242373603454,
+    "distinct": 28,
+    "lost_slots": 27,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "EBQG"
+   },
+   {
+    "pick": 2.1839784465783945,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 6.578021553421606,
+    "selection_shortfall": 0.0,
+    "distinct": 40,
+    "lost_slots": 8,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "EDQJ"
+   },
+   {
+    "pick": 3.912924509187408,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 4.849075490812592,
+    "selection_shortfall": 0.0,
+    "distinct": 46,
+    "lost_slots": 5,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "NBQT"
+   },
+   {
+    "pick": 2.0923838543374655,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 6.669616145662535,
+    "selection_shortfall": 0.0,
+    "distinct": 35,
+    "lost_slots": 20,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "ODMT"
+   },
+   {
+    "pick": 1.2658726247465557,
+    "share_budget": 5.0,
+    "share_nonlost": 5.660377358490566,
+    "exploration_shortfall": 7.486855806587922,
+    "selection_shortfall": 0.0092715686655227,
+    "distinct": 45,
+    "lost_slots": 7,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "ERET"
+   },
+   {
+    "pick": 1.8936149995055929,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 6.578021553421606,
+    "selection_shortfall": 0.2903634470728016,
+    "distinct": 36,
+    "lost_slots": 23,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "EDQG"
+   },
+   {
+    "pick": 3.912924509187408,
+    "share_budget": 1.6666666666666667,
+    "share_nonlost": 1.7241379310344827,
+    "exploration_shortfall": 4.849075490812592,
+    "selection_shortfall": 0.0,
+    "distinct": 47,
+    "lost_slots": 2,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "NBQT"
+   },
+   {
+    "pick": 3.9898114055340854,
+    "share_budget": 1.6666666666666667,
+    "share_nonlost": 1.694915254237288,
+    "exploration_shortfall": 4.772188594465915,
+    "selection_shortfall": 0.0,
+    "distinct": 50,
+    "lost_slots": 1,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "NGMT"
+   },
+   {
+    "pick": 1.8546619977516599,
+    "share_budget": 1.6666666666666667,
+    "share_nonlost": 1.694915254237288,
+    "exploration_shortfall": 6.90733800224834,
+    "selection_shortfall": 0.0,
+    "distinct": 50,
+    "lost_slots": 1,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "EGML"
+   },
+   {
+    "pick": 3.0446602965082263,
+    "share_budget": 3.3333333333333335,
+    "share_nonlost": 5.2631578947368425,
+    "exploration_shortfall": 5.717339703491774,
+    "selection_shortfall": 0.0,
+    "distinct": 33,
+    "lost_slots": 22,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "KIQL"
+   },
+   {
+    "pick": 1.313483358819397,
+    "share_budget": 1.6666666666666667,
+    "share_nonlost": 2.2222222222222223,
+    "exploration_shortfall": 7.448516641180603,
+    "selection_shortfall": 0.0,
+    "distinct": 38,
+    "lost_slots": 15,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "EDEB"
+   },
+   {
+    "pick": 3.912924509187408,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 4.849075490812592,
+    "selection_shortfall": 0.0,
+    "distinct": 50,
+    "lost_slots": 4,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "NBQT"
+   },
+   {
+    "pick": 2.2102646995264097,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 6.551735300473591,
+    "selection_shortfall": 0.0,
+    "distinct": 32,
+    "lost_slots": 18,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "JFQL"
+   },
+   {
+    "pick": 1.4958548855276506,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 7.26614511447235,
+    "selection_shortfall": 0.0,
+    "distinct": 40,
+    "lost_slots": 8,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "EMFR"
+   },
+   {
+    "pick": 1.8095884502653103,
+    "share_budget": 1.6666666666666667,
+    "share_nonlost": 1.8518518518518519,
+    "exploration_shortfall": 6.95241154973469,
+    "selection_shortfall": 0.0,
+    "distinct": 45,
+    "lost_slots": 6,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "EDMJ"
+   },
+   {
+    "pick": 1.3593936060730751,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 7.378492676744295,
+    "selection_shortfall": 0.024113717182630667,
+    "distinct": 44,
+    "lost_slots": 2,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "NFES"
+   },
+   {
+    "pick": 1.302433747939923,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 7.211071589673231,
+    "selection_shortfall": 0.24849466238684648,
+    "distinct": 54,
+    "lost_slots": 1,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "ECDS"
+   },
+   {
+    "pick": 1.5943477280874399,
+    "share_budget": 1.6666666666666667,
+    "share_nonlost": 1.9607843137254901,
+    "exploration_shortfall": 7.16765227191256,
+    "selection_shortfall": 0.0,
+    "distinct": 41,
+    "lost_slots": 9,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "IDES"
+   },
+   {
+    "pick": 2.5036234886898563,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 6.258376511310145,
+    "selection_shortfall": 0.0,
+    "distinct": 55,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "EGMI"
+   },
+   {
+    "pick": 1.6060044425558075,
+    "share_budget": 1.6666666666666667,
+    "share_nonlost": 1.6666666666666667,
+    "exploration_shortfall": 7.155995557444193,
+    "selection_shortfall": 0.0,
+    "distinct": 49,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "ECML"
+   },
+   {
+    "pick": 2.1839784465783945,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 6.578021553421606,
+    "selection_shortfall": 0.0,
+    "distinct": 45,
+    "lost_slots": 7,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "EDQJ"
+   },
+   {
+    "pick": 2.1839784465783945,
+    "share_budget": 1.6666666666666667,
+    "share_nonlost": 1.8518518518518519,
+    "exploration_shortfall": 6.578021553421606,
+    "selection_shortfall": 0.0,
+    "distinct": 47,
+    "lost_slots": 6,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "EDQJ"
+   },
+   {
+    "pick": 2.1839784465783945,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 6.578021553421606,
+    "selection_shortfall": 0.0,
+    "distinct": 45,
+    "lost_slots": 6,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "EDQJ"
+   },
+   {
+    "pick": 1.6945457031849152,
+    "share_budget": 1.6666666666666667,
+    "share_nonlost": 1.8518518518518519,
+    "exploration_shortfall": 7.067454296815085,
+    "selection_shortfall": 0.0,
+    "distinct": 47,
+    "lost_slots": 6,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "NBQS"
+   }
+  ],
+  "guessing k=1": [
+   {
+    "pick": 1.6103917956062042,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 23.333333333333332,
+    "exploration_shortfall": 7.1516082043937965,
+    "selection_shortfall": 0.0,
+    "distinct": 38,
+    "lost_slots": 0,
+    "nominee_readings": 6,
+    "shrinkage_nominee": "EGMK"
+   },
+   {
+    "pick": 1.1203670472139473,
+    "share_budget": 25.0,
+    "share_nonlost": 31.914893617021278,
+    "exploration_shortfall": 7.641632952786053,
+    "selection_shortfall": 0.0,
+    "distinct": 29,
+    "lost_slots": 13,
+    "nominee_readings": 13,
+    "shrinkage_nominee": "ERIS"
+   },
+   {
+    "pick": 1.4474335333122792,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 27.45098039215686,
+    "exploration_shortfall": 7.3145664666877215,
+    "selection_shortfall": 0.0,
+    "distinct": 34,
+    "lost_slots": 9,
+    "nominee_readings": 10,
+    "shrinkage_nominee": "EAQP"
+   },
+   {
+    "pick": 1.6343026751549645,
+    "share_budget": 25.0,
+    "share_nonlost": 25.423728813559322,
+    "exploration_shortfall": 7.067454296815085,
+    "selection_shortfall": 0.06024302802995063,
+    "distinct": 33,
+    "lost_slots": 1,
+    "nominee_readings": 3,
+    "shrinkage_nominee": "OIQS"
+   },
+   {
+    "pick": 1.5943477280874399,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 24.137931034482758,
+    "exploration_shortfall": 7.16765227191256,
+    "selection_shortfall": 0.0,
+    "distinct": 39,
+    "lost_slots": 2,
+    "nominee_readings": 6,
+    "shrinkage_nominee": "IDES"
+   },
+   {
+    "pick": 1.5509284103267695,
+    "share_budget": 25.0,
+    "share_nonlost": 25.423728813559322,
+    "exploration_shortfall": 7.211071589673231,
+    "selection_shortfall": 0.0,
+    "distinct": 38,
+    "lost_slots": 1,
+    "nominee_readings": 11,
+    "shrinkage_nominee": "ECQS"
+   },
+   {
+    "pick": 1.5509284103267695,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 23.333333333333332,
+    "exploration_shortfall": 7.211071589673231,
+    "selection_shortfall": 0.0,
+    "distinct": 38,
+    "lost_slots": 0,
+    "nominee_readings": 11,
+    "shrinkage_nominee": "ECQS"
+   },
+   {
+    "pick": 2.1839784465783945,
+    "share_budget": 25.0,
+    "share_nonlost": 25.862068965517242,
+    "exploration_shortfall": 6.578021553421606,
+    "selection_shortfall": 0.0,
+    "distinct": 29,
+    "lost_slots": 2,
+    "nominee_readings": 5,
+    "shrinkage_nominee": "EDQJ"
+   },
+   {
+    "pick": 1.6945457031849152,
+    "share_budget": 25.0,
+    "share_nonlost": 25.862068965517242,
+    "exploration_shortfall": 7.067454296815085,
+    "selection_shortfall": 0.0,
+    "distinct": 38,
+    "lost_slots": 2,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "NBQS"
+   },
+   {
+    "pick": 1.8095884502653103,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 23.728813559322035,
+    "exploration_shortfall": 6.95241154973469,
+    "selection_shortfall": 0.0,
+    "distinct": 36,
+    "lost_slots": 1,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "EDMJ"
+   },
+   {
+    "pick": 1.4984177492792172,
+    "share_budget": 25.0,
+    "share_nonlost": 26.31578947368421,
+    "exploration_shortfall": 7.263582250720783,
+    "selection_shortfall": 0.0,
+    "distinct": 38,
+    "lost_slots": 3,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "EDGT"
+   },
+   {
+    "pick": 2.1839784465783945,
+    "share_budget": 25.0,
+    "share_nonlost": 26.31578947368421,
+    "exploration_shortfall": 6.578021553421606,
+    "selection_shortfall": 0.0,
+    "distinct": 38,
+    "lost_slots": 3,
+    "nominee_readings": 11,
+    "shrinkage_nominee": "EDQJ"
+   },
+   {
+    "pick": 1.6826927753338525,
+    "share_budget": 25.0,
+    "share_nonlost": 25.862068965517242,
+    "exploration_shortfall": 7.067454296815085,
+    "selection_shortfall": 0.011852927851062622,
+    "distinct": 37,
+    "lost_slots": 2,
+    "nominee_readings": 8,
+    "shrinkage_nominee": "OBQS"
+   },
+   {
+    "pick": 1.2264103645584907,
+    "share_budget": 25.0,
+    "share_nonlost": 26.31578947368421,
+    "exploration_shortfall": 7.53558963544151,
+    "selection_shortfall": 0.0,
+    "distinct": 37,
+    "lost_slots": 3,
+    "nominee_readings": 11,
+    "shrinkage_nominee": "EFMS"
+   },
+   {
+    "pick": 1.2553624231379223,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 25.454545454545453,
+    "exploration_shortfall": 7.506637576862078,
+    "selection_shortfall": 0.0,
+    "distinct": 34,
+    "lost_slots": 5,
+    "nominee_readings": 9,
+    "shrinkage_nominee": "EDTL"
+   },
+   {
+    "pick": 3.0446602965082263,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 28.0,
+    "exploration_shortfall": 5.717339703491774,
+    "selection_shortfall": 0.0,
+    "distinct": 31,
+    "lost_slots": 10,
+    "nominee_readings": 3,
+    "shrinkage_nominee": "KIQL"
+   },
+   {
+    "pick": 1.5028768759795956,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 25.0,
+    "exploration_shortfall": 7.259123124020405,
+    "selection_shortfall": 0.0,
+    "distinct": 34,
+    "lost_slots": 4,
+    "nominee_readings": 7,
+    "shrinkage_nominee": "EDEI"
+   },
+   {
+    "pick": 1.890372455387003,
+    "share_budget": 25.0,
+    "share_nonlost": 25.0,
+    "exploration_shortfall": 6.8716275446129975,
+    "selection_shortfall": 0.0,
+    "distinct": 37,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "NRQS"
+   },
+   {
+    "pick": 2.2102646995264097,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 25.925925925925927,
+    "exploration_shortfall": 6.551735300473591,
+    "selection_shortfall": 0.0,
+    "distinct": 31,
+    "lost_slots": 6,
+    "nominee_readings": 6,
+    "shrinkage_nominee": "JFQL"
+   },
+   {
+    "pick": 1.4958548855276506,
+    "share_budget": 25.0,
+    "share_nonlost": 26.785714285714285,
+    "exploration_shortfall": 7.26614511447235,
+    "selection_shortfall": 0.0,
+    "distinct": 33,
+    "lost_slots": 4,
+    "nominee_readings": 2,
+    "shrinkage_nominee": "EMFR"
+   },
+   {
+    "pick": 0.9400912086545735,
+    "share_budget": 25.0,
+    "share_nonlost": 25.862068965517242,
+    "exploration_shortfall": 7.821908791345427,
+    "selection_shortfall": 0.0,
+    "distinct": 31,
+    "lost_slots": 2,
+    "nominee_readings": 12,
+    "shrinkage_nominee": "EDFR"
+   },
+   {
+    "pick": 2.350897715934973,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 23.333333333333332,
+    "exploration_shortfall": 6.411102284065027,
+    "selection_shortfall": 0.0,
+    "distinct": 36,
+    "lost_slots": 0,
+    "nominee_readings": 5,
+    "shrinkage_nominee": "NGEN"
+   },
+   {
+    "pick": 1.5509284103267695,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 24.137931034482758,
+    "exploration_shortfall": 7.211071589673231,
+    "selection_shortfall": 0.0,
+    "distinct": 39,
+    "lost_slots": 2,
+    "nominee_readings": 12,
+    "shrinkage_nominee": "ECQS"
+   },
+   {
+    "pick": 1.5943477280874399,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 25.454545454545453,
+    "exploration_shortfall": 7.16765227191256,
+    "selection_shortfall": 0.0,
+    "distinct": 32,
+    "lost_slots": 5,
+    "nominee_readings": 11,
+    "shrinkage_nominee": "IDES"
+   },
+   {
+    "pick": 1.9933381819444804,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 25.0,
+    "exploration_shortfall": 6.76866181805552,
+    "selection_shortfall": 0.0,
+    "distinct": 37,
+    "lost_slots": 4,
+    "nominee_readings": 8,
+    "shrinkage_nominee": "NRQJ"
+   },
+   {
+    "pick": 2.1839784465783945,
+    "share_budget": 25.0,
+    "share_nonlost": 25.423728813559322,
+    "exploration_shortfall": 6.578021553421606,
+    "selection_shortfall": 0.0,
+    "distinct": 40,
+    "lost_slots": 1,
+    "nominee_readings": 9,
+    "shrinkage_nominee": "EDQJ"
+   },
+   {
+    "pick": 3.1818744450641487,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 48.275862068965516,
+    "exploration_shortfall": 5.580125554935852,
+    "selection_shortfall": 0.0,
+    "distinct": 11,
+    "lost_slots": 31,
+    "nominee_readings": 10,
+    "shrinkage_nominee": "DDQF"
+   },
+   {
+    "pick": 2.1839784465783945,
+    "share_budget": 25.0,
+    "share_nonlost": 25.862068965517242,
+    "exploration_shortfall": 6.578021553421606,
+    "selection_shortfall": 0.0,
+    "distinct": 36,
+    "lost_slots": 2,
+    "nominee_readings": 4,
+    "shrinkage_nominee": "EDQJ"
+   },
+   {
+    "pick": 2.1839784465783945,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 24.137931034482758,
+    "exploration_shortfall": 6.578021553421606,
+    "selection_shortfall": 0.0,
+    "distinct": 38,
+    "lost_slots": 2,
+    "nominee_readings": 8,
+    "shrinkage_nominee": "EDQJ"
+   },
+   {
+    "pick": 1.187642317144291,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 25.925925925925927,
+    "exploration_shortfall": 7.57435768285571,
+    "selection_shortfall": 0.0,
+    "distinct": 36,
+    "lost_slots": 6,
+    "nominee_readings": 9,
+    "shrinkage_nominee": "EBQF"
+   }
+  ],
+  "guessing k=2": [
+   {
+    "pick": 1.054370909770307,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 48.275862068965516,
+    "exploration_shortfall": 7.707629090229694,
+    "selection_shortfall": 0.0,
+    "distinct": 25,
+    "lost_slots": 2,
+    "nominee_readings": 5,
+    "shrinkage_nominee": "ENQF"
+   },
+   {
+    "pick": 1.1203670472139473,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 52.83018867924528,
+    "exploration_shortfall": 7.641632952786053,
+    "selection_shortfall": 0.0,
+    "distinct": 21,
+    "lost_slots": 7,
+    "nominee_readings": 24,
+    "shrinkage_nominee": "ERIS"
+   },
+   {
+    "pick": 1.659591355228035,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 50.0,
+    "exploration_shortfall": 7.102408644771965,
+    "selection_shortfall": 0.0,
+    "distinct": 22,
+    "lost_slots": 4,
+    "nominee_readings": 16,
+    "shrinkage_nominee": "EAQT"
+   },
+   {
+    "pick": 1.21976753462184,
+    "share_budget": 48.333333333333336,
+    "share_nonlost": 49.152542372881356,
+    "exploration_shortfall": 7.54223246537816,
+    "selection_shortfall": 0.0,
+    "distinct": 26,
+    "lost_slots": 1,
+    "nominee_readings": 3,
+    "shrinkage_nominee": "EBDS"
+   },
+   {
+    "pick": 2.516490714010414,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 51.851851851851855,
+    "exploration_shortfall": 6.245509285989586,
+    "selection_shortfall": 0.0,
+    "distinct": 22,
+    "lost_slots": 6,
+    "nominee_readings": 13,
+    "shrinkage_nominee": "IAQT"
+   },
+   {
+    "pick": 1.978653987929273,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 47.45762711864407,
+    "exploration_shortfall": 6.783346012070727,
+    "selection_shortfall": 0.0,
+    "distinct": 26,
+    "lost_slots": 1,
+    "nominee_readings": 5,
+    "shrinkage_nominee": "EMQT"
+   },
+   {
+    "pick": 1.2965078892774684,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 46.666666666666664,
+    "exploration_shortfall": 7.465492110722532,
+    "selection_shortfall": 0.0,
+    "distinct": 28,
+    "lost_slots": 0,
+    "nominee_readings": 8,
+    "shrinkage_nominee": "EMDS"
+   },
+   {
+    "pick": 2.1839784465783945,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 48.275862068965516,
+    "exploration_shortfall": 6.578021553421606,
+    "selection_shortfall": 0.0,
+    "distinct": 21,
+    "lost_slots": 2,
+    "nominee_readings": 14,
+    "shrinkage_nominee": "EDQJ"
+   },
+   {
+    "pick": 1.187642317144291,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 48.275862068965516,
+    "exploration_shortfall": 7.57435768285571,
+    "selection_shortfall": 0.0,
+    "distinct": 25,
+    "lost_slots": 2,
+    "nominee_readings": 19,
+    "shrinkage_nominee": "EBQF"
+   },
+   {
+    "pick": 1.978653987929273,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 49.12280701754386,
+    "exploration_shortfall": 6.783346012070727,
+    "selection_shortfall": 0.0,
+    "distinct": 24,
+    "lost_slots": 3,
+    "nominee_readings": 16,
+    "shrinkage_nominee": "EMQT"
+   },
+   {
+    "pick": 1.0859257379349088,
+    "share_budget": 50.0,
+    "share_nonlost": 51.724137931034484,
+    "exploration_shortfall": 7.676074262065091,
+    "selection_shortfall": 0.0,
+    "distinct": 24,
+    "lost_slots": 2,
+    "nominee_readings": 18,
+    "shrinkage_nominee": "ERES"
+   },
+   {
+    "pick": 2.1839784465783945,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 48.275862068965516,
+    "exploration_shortfall": 6.578021553421606,
+    "selection_shortfall": 0.0,
+    "distinct": 27,
+    "lost_slots": 2,
+    "nominee_readings": 24,
+    "shrinkage_nominee": "EDQJ"
+   },
+   {
+    "pick": 1.5509284103267695,
+    "share_budget": 48.333333333333336,
+    "share_nonlost": 48.333333333333336,
+    "exploration_shortfall": 7.211071589673231,
+    "selection_shortfall": 0.0,
+    "distinct": 25,
+    "lost_slots": 0,
+    "nominee_readings": 14,
+    "shrinkage_nominee": "ECQS"
+   },
+   {
+    "pick": 1.2255669931733122,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 46.666666666666664,
+    "exploration_shortfall": 7.53558963544151,
+    "selection_shortfall": 0.0008433713851785374,
+    "distinct": 25,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "ECMS"
+   },
+   {
+    "pick": 1.2553624231379223,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 49.12280701754386,
+    "exploration_shortfall": 7.506637576862078,
+    "selection_shortfall": 0.0,
+    "distinct": 21,
+    "lost_slots": 3,
+    "nominee_readings": 18,
+    "shrinkage_nominee": "EDTL"
+   },
+   {
+    "pick": 5.507142375717162,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 54.90196078431372,
+    "exploration_shortfall": 3.254857624282838,
+    "selection_shortfall": 0.0,
+    "distinct": 19,
+    "lost_slots": 9,
+    "nominee_readings": 13,
+    "shrinkage_nominee": "KGQL"
+   },
+   {
+    "pick": 1.313483358819397,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 48.275862068965516,
+    "exploration_shortfall": 7.448516641180603,
+    "selection_shortfall": 0.0,
+    "distinct": 25,
+    "lost_slots": 2,
+    "nominee_readings": 8,
+    "shrinkage_nominee": "EDEB"
+   },
+   {
+    "pick": 1.27538981539871,
+    "share_budget": 48.333333333333336,
+    "share_nonlost": 48.333333333333336,
+    "exploration_shortfall": 7.4866101846012905,
+    "selection_shortfall": 0.0,
+    "distinct": 29,
+    "lost_slots": 0,
+    "nominee_readings": 15,
+    "shrinkage_nominee": "EIQH"
+   },
+   {
+    "pick": 1.6389079507676492,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 47.45762711864407,
+    "exploration_shortfall": 7.123092049232351,
+    "selection_shortfall": 0.0,
+    "distinct": 25,
+    "lost_slots": 1,
+    "nominee_readings": 25,
+    "shrinkage_nominee": "EMQL"
+   },
+   {
+    "pick": 1.4958548855276506,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 50.90909090909091,
+    "exploration_shortfall": 7.26614511447235,
+    "selection_shortfall": 0.0,
+    "distinct": 23,
+    "lost_slots": 5,
+    "nominee_readings": 21,
+    "shrinkage_nominee": "EMFR"
+   },
+   {
+    "pick": 1.5028768759795956,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 47.45762711864407,
+    "exploration_shortfall": 7.259123124020405,
+    "selection_shortfall": 0.0,
+    "distinct": 25,
+    "lost_slots": 1,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "EDEI"
+   },
+   {
+    "pick": 1.2966835691802157,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 47.45762711864407,
+    "exploration_shortfall": 7.465316430819785,
+    "selection_shortfall": 0.0,
+    "distinct": 22,
+    "lost_slots": 1,
+    "nominee_readings": 10,
+    "shrinkage_nominee": "NBED"
+   },
+   {
+    "pick": 2.2797736448305357,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 50.0,
+    "exploration_shortfall": 6.482226355169464,
+    "selection_shortfall": 0.0,
+    "distinct": 22,
+    "lost_slots": 4,
+    "nominee_readings": 10,
+    "shrinkage_nominee": "NMQT"
+   },
+   {
+    "pick": 1.5943477280874399,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 50.0,
+    "exploration_shortfall": 7.16765227191256,
+    "selection_shortfall": 0.0,
+    "distinct": 24,
+    "lost_slots": 4,
+    "nominee_readings": 23,
+    "shrinkage_nominee": "IDES"
+   },
+   {
+    "pick": 1.3540238306627974,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 49.12280701754386,
+    "exploration_shortfall": 7.349471701174011,
+    "selection_shortfall": 0.05850446816319277,
+    "distinct": 27,
+    "lost_slots": 3,
+    "nominee_readings": 20,
+    "shrinkage_nominee": "EGQH"
+   },
+   {
+    "pick": 3.0446602965082263,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 52.83018867924528,
+    "exploration_shortfall": 5.717339703491774,
+    "selection_shortfall": 0.0,
+    "distinct": 21,
+    "lost_slots": 7,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "KIQL"
+   },
+   {
+    "pick": 1.4474335333122792,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 48.275862068965516,
+    "exploration_shortfall": 7.3145664666877215,
+    "selection_shortfall": 0.0,
+    "distinct": 23,
+    "lost_slots": 2,
+    "nominee_readings": 14,
+    "shrinkage_nominee": "EAQP"
+   },
+   {
+    "pick": 2.1839784465783945,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 47.45762711864407,
+    "exploration_shortfall": 6.578021553421606,
+    "selection_shortfall": 0.0,
+    "distinct": 26,
+    "lost_slots": 1,
+    "nominee_readings": 19,
+    "shrinkage_nominee": "EDQJ"
+   },
+   {
+    "pick": 2.1839784465783945,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 46.666666666666664,
+    "exploration_shortfall": 6.578021553421606,
+    "selection_shortfall": 0.0,
+    "distinct": 26,
+    "lost_slots": 0,
+    "nominee_readings": 13,
+    "shrinkage_nominee": "EDQJ"
+   },
+   {
+    "pick": 1.187642317144291,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 48.275862068965516,
+    "exploration_shortfall": 7.57435768285571,
+    "selection_shortfall": 0.0,
+    "distinct": 29,
+    "lost_slots": 2,
+    "nominee_readings": 13,
+    "shrinkage_nominee": "EBQF"
+   }
+  ],
+  "guessing k=3": [
+   {
+    "pick": 1.2674181959029727,
+    "share_budget": 70.0,
+    "share_nonlost": 71.1864406779661,
+    "exploration_shortfall": 7.202500817677286,
+    "selection_shortfall": 0.29208098641974245,
+    "distinct": 16,
+    "lost_slots": 1,
+    "nominee_readings": 4,
+    "shrinkage_nominee": "EGQC"
+   },
+   {
+    "pick": 1.1203670472139473,
+    "share_budget": 70.0,
+    "share_nonlost": 73.6842105263158,
+    "exploration_shortfall": 7.641632952786053,
+    "selection_shortfall": 0.0,
+    "distinct": 14,
+    "lost_slots": 3,
+    "nominee_readings": 35,
+    "shrinkage_nominee": "ERIS"
+   },
+   {
+    "pick": 2.0946511846653304,
+    "share_budget": 70.0,
+    "share_nonlost": 70.0,
+    "exploration_shortfall": 6.66734881533467,
+    "selection_shortfall": 0.0,
+    "distinct": 16,
+    "lost_slots": 0,
+    "nominee_readings": 4,
+    "shrinkage_nominee": "NQPI"
+   },
+   {
+    "pick": 1.6826927753338525,
+    "share_budget": 71.66666666666667,
+    "share_nonlost": 71.66666666666667,
+    "exploration_shortfall": 7.079307224666148,
+    "selection_shortfall": 0.0,
+    "distinct": 13,
+    "lost_slots": 0,
+    "nominee_readings": 7,
+    "shrinkage_nominee": "OBQS"
+   },
+   {
+    "pick": 1.3900341782622865,
+    "share_budget": 70.0,
+    "share_nonlost": 71.1864406779661,
+    "exploration_shortfall": 7.371965821737714,
+    "selection_shortfall": 0.0,
+    "distinct": 15,
+    "lost_slots": 1,
+    "nominee_readings": 35,
+    "shrinkage_nominee": "IDQS"
+   },
+   {
+    "pick": 1.1396874025769086,
+    "share_budget": 70.0,
+    "share_nonlost": 70.0,
+    "exploration_shortfall": 7.622312597423091,
+    "selection_shortfall": 0.0,
+    "distinct": 16,
+    "lost_slots": 0,
+    "nominee_readings": 35,
+    "shrinkage_nominee": "EMQS"
+   },
+   {
+    "pick": 1.0816365535126082,
+    "share_budget": 70.0,
+    "share_nonlost": 70.0,
+    "exploration_shortfall": 7.680363446487393,
+    "selection_shortfall": 0.0,
+    "distinct": 17,
+    "lost_slots": 0,
+    "nominee_readings": 35,
+    "shrinkage_nominee": "EBQS"
+   },
+   {
+    "pick": 1.8936149995055929,
+    "share_budget": 70.0,
+    "share_nonlost": 71.1864406779661,
+    "exploration_shortfall": 6.868385000494408,
+    "selection_shortfall": 0.0,
+    "distinct": 9,
+    "lost_slots": 1,
+    "nominee_readings": 37,
+    "shrinkage_nominee": "EDQG"
+   },
+   {
+    "pick": 1.1762470747706875,
+    "share_budget": 70.0,
+    "share_nonlost": 72.41379310344827,
+    "exploration_shortfall": 7.585752925229313,
+    "selection_shortfall": 0.0,
+    "distinct": 14,
+    "lost_slots": 2,
+    "nominee_readings": 21,
+    "shrinkage_nominee": "EBQG"
+   },
+   {
+    "pick": 1.4435218364801532,
+    "share_budget": 70.0,
+    "share_nonlost": 71.1864406779661,
+    "exploration_shortfall": 7.318478163519847,
+    "selection_shortfall": 0.0,
+    "distinct": 15,
+    "lost_slots": 1,
+    "nominee_readings": 26,
+    "shrinkage_nominee": "EDMN"
+   },
+   {
+    "pick": 1.215637976688671,
+    "share_budget": 71.66666666666667,
+    "share_nonlost": 78.18181818181819,
+    "exploration_shortfall": 7.54636202331133,
+    "selection_shortfall": 0.0,
+    "distinct": 11,
+    "lost_slots": 5,
+    "nominee_readings": 6,
+    "shrinkage_nominee": "EDES"
+   },
+   {
+    "pick": 2.1839784465783945,
+    "share_budget": 70.0,
+    "share_nonlost": 70.0,
+    "exploration_shortfall": 6.578021553421606,
+    "selection_shortfall": 0.0,
+    "distinct": 17,
+    "lost_slots": 0,
+    "nominee_readings": 37,
+    "shrinkage_nominee": "EDQJ"
+   },
+   {
+    "pick": 1.2698713550635474,
+    "share_budget": 70.0,
+    "share_nonlost": 71.1864406779661,
+    "exploration_shortfall": 7.492128644936453,
+    "selection_shortfall": 0.0,
+    "distinct": 13,
+    "lost_slots": 1,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "EDQF"
+   },
+   {
+    "pick": 1.2264103645584907,
+    "share_budget": 70.0,
+    "share_nonlost": 72.41379310344827,
+    "exploration_shortfall": 7.53558963544151,
+    "selection_shortfall": 0.0,
+    "distinct": 13,
+    "lost_slots": 2,
+    "nominee_readings": 36,
+    "shrinkage_nominee": "EFMS"
+   },
+   {
+    "pick": 1.8936149995055929,
+    "share_budget": 70.0,
+    "share_nonlost": 76.36363636363636,
+    "exploration_shortfall": 6.868385000494408,
+    "selection_shortfall": 0.0,
+    "distinct": 13,
+    "lost_slots": 5,
+    "nominee_readings": 19,
+    "shrinkage_nominee": "EDQG"
+   },
+   {
+    "pick": 1.1377197303447224,
+    "share_budget": 70.0,
+    "share_nonlost": 72.41379310344827,
+    "exploration_shortfall": 7.624280269655278,
+    "selection_shortfall": 0.0,
+    "distinct": 12,
+    "lost_slots": 2,
+    "nominee_readings": 10,
+    "shrinkage_nominee": "KDQF"
+   },
+   {
+    "pick": 1.5943477280874399,
+    "share_budget": 70.0,
+    "share_nonlost": 70.0,
+    "exploration_shortfall": 7.16765227191256,
+    "selection_shortfall": 0.0,
+    "distinct": 16,
+    "lost_slots": 0,
+    "nominee_readings": 14,
+    "shrinkage_nominee": "IDES"
+   },
+   {
+    "pick": 1.3540238306627974,
+    "share_budget": 70.0,
+    "share_nonlost": 70.0,
+    "exploration_shortfall": 7.4079761693372035,
+    "selection_shortfall": 0.0,
+    "distinct": 17,
+    "lost_slots": 0,
+    "nominee_readings": 18,
+    "shrinkage_nominee": "EGQH"
+   },
+   {
+    "pick": 1.8322361747522962,
+    "share_budget": 70.0,
+    "share_nonlost": 70.0,
+    "exploration_shortfall": 6.929763825247704,
+    "selection_shortfall": 0.0,
+    "distinct": 16,
+    "lost_slots": 0,
+    "nominee_readings": 30,
+    "shrinkage_nominee": "EFQL"
+   },
+   {
+    "pick": 1.4958548855276506,
+    "share_budget": 70.0,
+    "share_nonlost": 71.1864406779661,
+    "exploration_shortfall": 7.26614511447235,
+    "selection_shortfall": 0.0,
+    "distinct": 14,
+    "lost_slots": 1,
+    "nominee_readings": 18,
+    "shrinkage_nominee": "EMFR"
+   },
+   {
+    "pick": 1.3440426910151164,
+    "share_budget": 70.0,
+    "share_nonlost": 71.1864406779661,
+    "exploration_shortfall": 7.417957308984884,
+    "selection_shortfall": 0.0,
+    "distinct": 14,
+    "lost_slots": 1,
+    "nominee_readings": 4,
+    "shrinkage_nominee": "EFFQ"
+   },
+   {
+    "pick": 1.4443381318420516,
+    "share_budget": 70.0,
+    "share_nonlost": 70.0,
+    "exploration_shortfall": 7.317661868157948,
+    "selection_shortfall": 0.0,
+    "distinct": 14,
+    "lost_slots": 0,
+    "nominee_readings": 16,
+    "shrinkage_nominee": "NCEL"
+   },
+   {
+    "pick": 1.0883765359696942,
+    "share_budget": 70.0,
+    "share_nonlost": 76.36363636363636,
+    "exploration_shortfall": 7.673623464030307,
+    "selection_shortfall": 0.0,
+    "distinct": 12,
+    "lost_slots": 5,
+    "nominee_readings": 32,
+    "shrinkage_nominee": "ERQK"
+   },
+   {
+    "pick": 1.5943477280874399,
+    "share_budget": 70.0,
+    "share_nonlost": 70.0,
+    "exploration_shortfall": 7.16765227191256,
+    "selection_shortfall": 0.0,
+    "distinct": 14,
+    "lost_slots": 0,
+    "nominee_readings": 32,
+    "shrinkage_nominee": "IDES"
+   },
+   {
+    "pick": 1.0816365535126082,
+    "share_budget": 70.0,
+    "share_nonlost": 70.0,
+    "exploration_shortfall": 7.680363446487393,
+    "selection_shortfall": 0.0,
+    "distinct": 15,
+    "lost_slots": 0,
+    "nominee_readings": 35,
+    "shrinkage_nominee": "EBQS"
+   },
+   {
+    "pick": 1.2698713550635474,
+    "share_budget": 70.0,
+    "share_nonlost": 71.1864406779661,
+    "exploration_shortfall": 7.492128644936453,
+    "selection_shortfall": 0.0,
+    "distinct": 14,
+    "lost_slots": 1,
+    "nominee_readings": 14,
+    "shrinkage_nominee": "EDQF"
+   },
+   {
+    "pick": 1.8936149995055929,
+    "share_budget": 70.0,
+    "share_nonlost": 70.0,
+    "exploration_shortfall": 6.868385000494408,
+    "selection_shortfall": 0.0,
+    "distinct": 18,
+    "lost_slots": 0,
+    "nominee_readings": 25,
+    "shrinkage_nominee": "EDQG"
+   },
+   {
+    "pick": 2.1839784465783945,
+    "share_budget": 70.0,
+    "share_nonlost": 72.41379310344827,
+    "exploration_shortfall": 6.578021553421606,
+    "selection_shortfall": 0.0,
+    "distinct": 13,
+    "lost_slots": 2,
+    "nominee_readings": 22,
+    "shrinkage_nominee": "EDQJ"
+   },
+   {
+    "pick": 1.8936149995055929,
+    "share_budget": 70.0,
+    "share_nonlost": 73.6842105263158,
+    "exploration_shortfall": 6.868385000494408,
+    "selection_shortfall": 0.0,
+    "distinct": 13,
+    "lost_slots": 3,
+    "nominee_readings": 33,
+    "shrinkage_nominee": "EDQG"
+   },
+   {
+    "pick": 1.21976753462184,
+    "share_budget": 70.0,
+    "share_nonlost": 70.0,
+    "exploration_shortfall": 7.54223246537816,
+    "selection_shortfall": 0.0,
+    "distinct": 17,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "EBDS"
+   }
+  ],
+  "guessing k=4": [
+   {
+    "pick": 0.9481524632278422,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 7.813847536772158,
+    "selection_shortfall": 0.0,
+    "distinct": 4,
+    "lost_slots": 0,
+    "nominee_readings": 52,
+    "shrinkage_nominee": "ENQS"
+   },
+   {
+    "pick": 0.861012151562216,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 7.900987848437785,
+    "selection_shortfall": 0.0,
+    "distinct": 4,
+    "lost_slots": 0,
+    "nominee_readings": 49,
+    "shrinkage_nominee": "EDIS"
+   },
+   {
+    "pick": 0.8911637898841023,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 7.870836210115899,
+    "selection_shortfall": 0.0,
+    "distinct": 4,
+    "lost_slots": 0,
+    "nominee_readings": 52,
+    "shrinkage_nominee": "EDQP"
+   },
+   {
+    "pick": 1.0816365535126082,
+    "share_budget": 95.0,
+    "share_nonlost": 95.0,
+    "exploration_shortfall": 7.680363446487393,
+    "selection_shortfall": 0.0,
+    "distinct": 3,
+    "lost_slots": 0,
+    "nominee_readings": 46,
+    "shrinkage_nominee": "EBQS"
+   },
+   {
+    "pick": 1.3900341782622865,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 7.371965821737714,
+    "selection_shortfall": 0.0,
+    "distinct": 3,
+    "lost_slots": 0,
+    "nominee_readings": 48,
+    "shrinkage_nominee": "IDQS"
+   },
+   {
+    "pick": 1.1396874025769086,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 7.622312597423091,
+    "selection_shortfall": 0.0,
+    "distinct": 4,
+    "lost_slots": 0,
+    "nominee_readings": 50,
+    "shrinkage_nominee": "EMQS"
+   },
+   {
+    "pick": 1.0816365535126082,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 7.680363446487393,
+    "selection_shortfall": 0.0,
+    "distinct": 4,
+    "lost_slots": 0,
+    "nominee_readings": 48,
+    "shrinkage_nominee": "EBQS"
+   },
+   {
+    "pick": 1.8936149995055929,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 6.868385000494408,
+    "selection_shortfall": 0.0,
+    "distinct": 2,
+    "lost_slots": 0,
+    "nominee_readings": 51,
+    "shrinkage_nominee": "EDQG"
+   },
+   {
+    "pick": 1.0816365535126082,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 7.680363446487393,
+    "selection_shortfall": 0.0,
+    "distinct": 4,
+    "lost_slots": 0,
+    "nominee_readings": 48,
+    "shrinkage_nominee": "EBQS"
+   },
+   {
+    "pick": 0.7232398970882106,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 8.03876010291179,
+    "selection_shortfall": 0.0,
+    "distinct": 3,
+    "lost_slots": 0,
+    "nominee_readings": 51,
+    "shrinkage_nominee": "EDQT"
+   },
+   {
+    "pick": 0.6790021420828903,
+    "share_budget": 95.0,
+    "share_nonlost": 96.61016949152543,
+    "exploration_shortfall": 8.08299785791711,
+    "selection_shortfall": 0.0,
+    "distinct": 2,
+    "lost_slots": 1,
+    "nominee_readings": 51,
+    "shrinkage_nominee": "EDOS"
+   },
+   {
+    "pick": 2.1839784465783945,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 6.578021553421606,
+    "selection_shortfall": 0.0,
+    "distinct": 4,
+    "lost_slots": 0,
+    "nominee_readings": 48,
+    "shrinkage_nominee": "EDQJ"
+   },
+   {
+    "pick": 1.0816365535126082,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 7.680363446487393,
+    "selection_shortfall": 0.0,
+    "distinct": 3,
+    "lost_slots": 0,
+    "nominee_readings": 50,
+    "shrinkage_nominee": "EBQS"
+   },
+   {
+    "pick": 1.2264103645584907,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 7.53558963544151,
+    "selection_shortfall": 0.0,
+    "distinct": 3,
+    "lost_slots": 0,
+    "nominee_readings": 46,
+    "shrinkage_nominee": "EFMS"
+   },
+   {
+    "pick": 0.7181029809887312,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 94.91525423728814,
+    "exploration_shortfall": 8.043897019011268,
+    "selection_shortfall": 0.0,
+    "distinct": 3,
+    "lost_slots": 1,
+    "nominee_readings": 44,
+    "shrinkage_nominee": "EDTS"
+   },
+   {
+    "pick": 0.4343908456552816,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 8.327609154344719,
+    "selection_shortfall": 0.0,
+    "distinct": 2,
+    "lost_slots": 0,
+    "nominee_readings": 48,
+    "shrinkage_nominee": "KDQH"
+   },
+   {
+    "pick": 1.215637976688671,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 7.54636202331133,
+    "selection_shortfall": 0.0,
+    "distinct": 3,
+    "lost_slots": 0,
+    "nominee_readings": 51,
+    "shrinkage_nominee": "EDES"
+   },
+   {
+    "pick": 1.0419889527516144,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 7.720011047248386,
+    "selection_shortfall": 0.0,
+    "distinct": 4,
+    "lost_slots": 0,
+    "nominee_readings": 46,
+    "shrinkage_nominee": "EIQS"
+   },
+   {
+    "pick": 1.6389079507676492,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 7.123092049232351,
+    "selection_shortfall": 0.0,
+    "distinct": 4,
+    "lost_slots": 0,
+    "nominee_readings": 51,
+    "shrinkage_nominee": "EMQL"
+   },
+   {
+    "pick": 0.9400912086545735,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 7.821908791345427,
+    "selection_shortfall": 0.0,
+    "distinct": 4,
+    "lost_slots": 0,
+    "nominee_readings": 45,
+    "shrinkage_nominee": "EDFR"
+   },
+   {
+    "pick": 0.33755748368209076,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 8.42444251631791,
+    "selection_shortfall": 0.0,
+    "distinct": 2,
+    "lost_slots": 0,
+    "nominee_readings": 48,
+    "shrinkage_nominee": "EDFS"
+   },
+   {
+    "pick": 0.8002657824695626,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 7.9411864134592,
+    "selection_shortfall": 0.020547804071237574,
+    "distinct": 4,
+    "lost_slots": 0,
+    "nominee_readings": 48,
+    "shrinkage_nominee": "NDEF"
+   },
+   {
+    "pick": 0.43877186959440706,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 8.323228130405594,
+    "selection_shortfall": 0.0,
+    "distinct": 3,
+    "lost_slots": 0,
+    "nominee_readings": 49,
+    "shrinkage_nominee": "EJQS"
+   },
+   {
+    "pick": 1.3900341782622865,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 7.371965821737714,
+    "selection_shortfall": 0.0,
+    "distinct": 4,
+    "lost_slots": 0,
+    "nominee_readings": 52,
+    "shrinkage_nominee": "IDQS"
+   },
+   {
+    "pick": 1.0816365535126082,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 7.680363446487393,
+    "selection_shortfall": 0.0,
+    "distinct": 3,
+    "lost_slots": 0,
+    "nominee_readings": 47,
+    "shrinkage_nominee": "EBQS"
+   },
+   {
+    "pick": 1.1395541888136371,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 7.622445811186363,
+    "selection_shortfall": 0.0,
+    "distinct": 3,
+    "lost_slots": 0,
+    "nominee_readings": 46,
+    "shrinkage_nominee": "EDQL"
+   },
+   {
+    "pick": 0.8672788826468787,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 7.8947211173531215,
+    "selection_shortfall": 0.0,
+    "distinct": 4,
+    "lost_slots": 0,
+    "nominee_readings": 47,
+    "shrinkage_nominee": "EDQN"
+   },
+   {
+    "pick": 0.7939728258367669,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 7.968027174163233,
+    "selection_shortfall": 0.0,
+    "distinct": 2,
+    "lost_slots": 0,
+    "nominee_readings": 51,
+    "shrinkage_nominee": "EDQD"
+   },
+   {
+    "pick": 1.2698713550635474,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 7.492128644936453,
+    "selection_shortfall": 0.0,
+    "distinct": 4,
+    "lost_slots": 0,
+    "nominee_readings": 51,
+    "shrinkage_nominee": "EDQF"
+   },
+   {
+    "pick": 1.0816365535126082,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 7.680363446487393,
+    "selection_shortfall": 0.0,
+    "distinct": 4,
+    "lost_slots": 0,
+    "nominee_readings": 46,
+    "shrinkage_nominee": "EBQS"
+   }
+  ],
+  "informed k=0": [
+   {
+    "pick": 1.302433747939923,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 7.459566252060077,
+    "selection_shortfall": 0.0,
+    "distinct": 53,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "ECDS"
+   },
+   {
+    "pick": 2.1839784465783945,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 6.578021553421606,
+    "selection_shortfall": 0.0,
+    "distinct": 57,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "EDQJ"
+   },
+   {
+    "pick": 1.9683697833269753,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 6.793630216673025,
+    "selection_shortfall": 0.0,
+    "distinct": 54,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "NGTI"
+   },
+   {
+    "pick": 2.3657535829942407,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 6.248227196570632,
+    "selection_shortfall": 0.14801922043512805,
+    "distinct": 50,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "KDFI"
+   },
+   {
+    "pick": 2.9720578477654773,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 5.789942152234524,
+    "selection_shortfall": 0.0,
+    "distinct": 52,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "KGBF"
+   },
+   {
+    "pick": 1.5025520034654183,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 7.259447996534583,
+    "selection_shortfall": 0.0,
+    "distinct": 50,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "NNQK"
+   },
+   {
+    "pick": 2.489540068345556,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 6.272459931654444,
+    "selection_shortfall": 0.0,
+    "distinct": 49,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "EGMF"
+   },
+   {
+    "pick": 1.6259508717430367,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 7.136049128256964,
+    "selection_shortfall": 0.0,
+    "distinct": 53,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "NNPB"
+   },
+   {
+    "pick": 1.500519866847583,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 7.261480133152418,
+    "selection_shortfall": 0.0,
+    "distinct": 52,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "ACKP"
+   },
+   {
+    "pick": 8.762,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 0.0,
+    "selection_shortfall": 0.0,
+    "distinct": 53,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "NGQC"
+   },
+   {
+    "pick": 1.4099593239403683,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 7.352040676059632,
+    "selection_shortfall": 0.0,
+    "distinct": 56,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "KCMS"
+   },
+   {
+    "pick": 3.418057201704834,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 5.343942798295167,
+    "selection_shortfall": 0.0,
+    "distinct": 52,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "IQQK"
+   },
+   {
+    "pick": 2.516490714010414,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 6.245509285989586,
+    "selection_shortfall": 0.0,
+    "distinct": 53,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "IAQT"
+   },
+   {
+    "pick": 1.6346376042924597,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 7.045767198061713,
+    "selection_shortfall": 0.08159519764582734,
+    "distinct": 49,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "NFTK"
+   },
+   {
+    "pick": 2.108306652149079,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 6.653693347850922,
+    "selection_shortfall": 0.0,
+    "distinct": 51,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "OFGH"
+   },
+   {
+    "pick": 1.8727135850362449,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 6.889286414963756,
+    "selection_shortfall": 0.0,
+    "distinct": 51,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "NRFI"
+   },
+   {
+    "pick": 1.5512334723160315,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 7.210766527683969,
+    "selection_shortfall": 0.0,
+    "distinct": 52,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "OCKI"
+   },
+   {
+    "pick": 3.7872037643530674,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 4.6293717067356255,
+    "selection_shortfall": 0.3454245289113076,
+    "distinct": 52,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "NAQI"
+   },
+   {
+    "pick": 1.973846158895887,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 6.649648947368775,
+    "selection_shortfall": 0.13850489373533792,
+    "distinct": 52,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "IIGL"
+   },
+   {
+    "pick": 2.5036234886898563,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 6.258376511310145,
+    "selection_shortfall": 0.0,
+    "distinct": 50,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "EGMI"
+   },
+   {
+    "pick": 1.7782051311781564,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 6.983794868821844,
+    "selection_shortfall": 0.0,
+    "distinct": 58,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "INET"
+   },
+   {
+    "pick": 1.3440426910151164,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 7.417957308984884,
+    "selection_shortfall": 0.0,
+    "distinct": 52,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "EFFQ"
+   },
+   {
+    "pick": 1.7166917444887424,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 6.76866181805552,
+    "selection_shortfall": 0.276646437455738,
+    "distinct": 51,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "NRRJ"
+   },
+   {
+    "pick": 1.7315870400551268,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 7.030412959944874,
+    "selection_shortfall": 0.0,
+    "distinct": 49,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "NCQD"
+   },
+   {
+    "pick": 3.9027234903113737,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 4.859276509688627,
+    "selection_shortfall": 0.0,
+    "distinct": 56,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "ORQI"
+   },
+   {
+    "pick": 1.3025281345141182,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 7.396770516088561,
+    "selection_shortfall": 0.06270134939732075,
+    "distinct": 54,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "ICDS"
+   },
+   {
+    "pick": 3.6870129491332233,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 5.074987050866778,
+    "selection_shortfall": 0.0,
+    "distinct": 52,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "QGMF"
+   },
+   {
+    "pick": 2.705460486788652,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 6.056539513211348,
+    "selection_shortfall": 0.0,
+    "distinct": 45,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "ICQI"
+   },
+   {
+    "pick": 3.0210356589395646,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 5.740964341060436,
+    "selection_shortfall": 0.0,
+    "distinct": 49,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "NQMI"
+   },
+   {
+    "pick": 3.7872037643530674,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "exploration_shortfall": 4.6293717067356255,
+    "selection_shortfall": 0.3454245289113076,
+    "distinct": 48,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "NAQI"
+   }
+  ],
+  "informed k=1": [
+   {
+    "pick": 1.3462116838817428,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 23.333333333333332,
+    "exploration_shortfall": 7.3581614069825,
+    "selection_shortfall": 0.0576269091357573,
+    "distinct": 42,
+    "lost_slots": 0,
+    "nominee_readings": 8,
+    "shrinkage_nominee": "IRDS"
+   },
+   {
+    "pick": 1.8727135850362449,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 23.333333333333332,
+    "exploration_shortfall": 6.889286414963756,
+    "selection_shortfall": 0.0,
+    "distinct": 41,
+    "lost_slots": 0,
+    "nominee_readings": 4,
+    "shrinkage_nominee": "NRFI"
+   },
+   {
+    "pick": 1.237075217653422,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 23.333333333333332,
+    "exploration_shortfall": 7.524924782346578,
+    "selection_shortfall": 0.0,
+    "distinct": 40,
+    "lost_slots": 0,
+    "nominee_readings": 3,
+    "shrinkage_nominee": "NADS"
+   },
+   {
+    "pick": 1.5028768759795956,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 23.333333333333332,
+    "exploration_shortfall": 7.259123124020405,
+    "selection_shortfall": 0.0,
+    "distinct": 34,
+    "lost_slots": 0,
+    "nominee_readings": 4,
+    "shrinkage_nominee": "EDEI"
+   },
+   {
+    "pick": 2.9720578477654773,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 23.333333333333332,
+    "exploration_shortfall": 5.789942152234524,
+    "selection_shortfall": 0.0,
+    "distinct": 36,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "KGBF"
+   },
+   {
+    "pick": 1.374353395171814,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 23.333333333333332,
+    "exploration_shortfall": 7.387646604828186,
+    "selection_shortfall": 0.0,
+    "distinct": 40,
+    "lost_slots": 0,
+    "nominee_readings": 11,
+    "shrinkage_nominee": "ABPH"
+   },
+   {
+    "pick": 1.8546619977516599,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 23.333333333333332,
+    "exploration_shortfall": 6.90733800224834,
+    "selection_shortfall": 0.0,
+    "distinct": 40,
+    "lost_slots": 0,
+    "nominee_readings": 5,
+    "shrinkage_nominee": "EGML"
+   },
+   {
+    "pick": 1.9200965913433268,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 23.333333333333332,
+    "exploration_shortfall": 6.841903408656673,
+    "selection_shortfall": 0.0,
+    "distinct": 40,
+    "lost_slots": 0,
+    "nominee_readings": 12,
+    "shrinkage_nominee": "ARLC"
+   },
+   {
+    "pick": 1.6343026751549645,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 23.333333333333332,
+    "exploration_shortfall": 7.127697324845036,
+    "selection_shortfall": 0.0,
+    "distinct": 41,
+    "lost_slots": 0,
+    "nominee_readings": 3,
+    "shrinkage_nominee": "OIQS"
+   },
+   {
+    "pick": 3.7139533195547987,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 23.333333333333332,
+    "exploration_shortfall": 5.048046680445202,
+    "selection_shortfall": 0.0,
+    "distinct": 41,
+    "lost_slots": 0,
+    "nominee_readings": 9,
+    "shrinkage_nominee": "OGMC"
+   },
+   {
+    "pick": 1.3947407852419527,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 23.333333333333332,
+    "exploration_shortfall": 7.367259214758048,
+    "selection_shortfall": 0.0,
+    "distinct": 36,
+    "lost_slots": 0,
+    "nominee_readings": 6,
+    "shrinkage_nominee": "NCMJ"
+   },
+   {
+    "pick": 3.8249823279097237,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 23.333333333333332,
+    "exploration_shortfall": 4.937017672090277,
+    "selection_shortfall": 0.0,
+    "distinct": 40,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "NFQT"
+   },
+   {
+    "pick": 2.516490714010414,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 23.333333333333332,
+    "exploration_shortfall": 6.245509285989586,
+    "selection_shortfall": 0.0,
+    "distinct": 39,
+    "lost_slots": 0,
+    "nominee_readings": 11,
+    "shrinkage_nominee": "IAQT"
+   },
+   {
+    "pick": 1.2788098310176435,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 23.333333333333332,
+    "exploration_shortfall": 7.4831901689823574,
+    "selection_shortfall": 0.0,
+    "distinct": 40,
+    "lost_slots": 0,
+    "nominee_readings": 2,
+    "shrinkage_nominee": "NGDL"
+   },
+   {
+    "pick": 2.108306652149079,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 23.333333333333332,
+    "exploration_shortfall": 6.653693347850922,
+    "selection_shortfall": 0.0,
+    "distinct": 36,
+    "lost_slots": 0,
+    "nominee_readings": 6,
+    "shrinkage_nominee": "OFGH"
+   },
+   {
+    "pick": 8.762,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 23.333333333333332,
+    "exploration_shortfall": 0.0,
+    "selection_shortfall": 0.0,
+    "distinct": 37,
+    "lost_slots": 0,
+    "nominee_readings": 5,
+    "shrinkage_nominee": "NGQC"
+   },
+   {
+    "pick": 1.5512334723160315,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 23.333333333333332,
+    "exploration_shortfall": 7.210766527683969,
+    "selection_shortfall": 0.0,
+    "distinct": 39,
+    "lost_slots": 0,
+    "nominee_readings": 12,
+    "shrinkage_nominee": "OCKI"
+   },
+   {
+    "pick": 3.7872037643530674,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 23.333333333333332,
+    "exploration_shortfall": 4.974796235646933,
+    "selection_shortfall": 0.0,
+    "distinct": 40,
+    "lost_slots": 0,
+    "nominee_readings": 9,
+    "shrinkage_nominee": "NAQI"
+   },
+   {
+    "pick": 2.5036234886898563,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 23.333333333333332,
+    "exploration_shortfall": 6.258376511310145,
+    "selection_shortfall": 0.0,
+    "distinct": 41,
+    "lost_slots": 0,
+    "nominee_readings": 4,
+    "shrinkage_nominee": "EGMI"
+   },
+   {
+    "pick": 1.8095884502653103,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 23.333333333333332,
+    "exploration_shortfall": 6.95241154973469,
+    "selection_shortfall": 0.0,
+    "distinct": 36,
+    "lost_slots": 0,
+    "nominee_readings": 5,
+    "shrinkage_nominee": "EDMJ"
+   },
+   {
+    "pick": 1.3724068928527056,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 23.333333333333332,
+    "exploration_shortfall": 7.389593107147295,
+    "selection_shortfall": 0.0,
+    "distinct": 40,
+    "lost_slots": 0,
+    "nominee_readings": 9,
+    "shrinkage_nominee": "IRPH"
+   },
+   {
+    "pick": 2.5137728034293687,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 23.333333333333332,
+    "exploration_shortfall": 6.248227196570632,
+    "selection_shortfall": 0.0,
+    "distinct": 39,
+    "lost_slots": 0,
+    "nominee_readings": 4,
+    "shrinkage_nominee": "KDMI"
+   },
+   {
+    "pick": 1.7701184071264842,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 23.333333333333332,
+    "exploration_shortfall": 6.991881592873517,
+    "selection_shortfall": 0.0,
+    "distinct": 35,
+    "lost_slots": 0,
+    "nominee_readings": 6,
+    "shrinkage_nominee": "NBEI"
+   },
+   {
+    "pick": 1.8923751308248224,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 23.333333333333332,
+    "exploration_shortfall": 6.869624869175178,
+    "selection_shortfall": 0.0,
+    "distinct": 40,
+    "lost_slots": 0,
+    "nominee_readings": 10,
+    "shrinkage_nominee": "NRQP"
+   },
+   {
+    "pick": 2.0732771528299834,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 23.333333333333332,
+    "exploration_shortfall": 6.688722847170017,
+    "selection_shortfall": 0.0,
+    "distinct": 41,
+    "lost_slots": 0,
+    "nominee_readings": 2,
+    "shrinkage_nominee": "AMQI"
+   },
+   {
+    "pick": 1.3025281345141182,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 23.333333333333332,
+    "exploration_shortfall": 7.459471865485883,
+    "selection_shortfall": 0.0,
+    "distinct": 39,
+    "lost_slots": 0,
+    "nominee_readings": 6,
+    "shrinkage_nominee": "ICDS"
+   },
+   {
+    "pick": 1.3984520784393195,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 23.333333333333332,
+    "exploration_shortfall": 7.363547921560681,
+    "selection_shortfall": 0.0,
+    "distinct": 41,
+    "lost_slots": 0,
+    "nominee_readings": 6,
+    "shrinkage_nominee": "EADI"
+   },
+   {
+    "pick": 2.5036234886898563,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 23.333333333333332,
+    "exploration_shortfall": 6.258376511310145,
+    "selection_shortfall": 0.0,
+    "distinct": 40,
+    "lost_slots": 0,
+    "nominee_readings": 8,
+    "shrinkage_nominee": "EGMI"
+   },
+   {
+    "pick": 3.0210356589395646,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 23.333333333333332,
+    "exploration_shortfall": 5.740964341060436,
+    "selection_shortfall": 0.0,
+    "distinct": 36,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "NQMI"
+   },
+   {
+    "pick": 2.4467067966958873,
+    "share_budget": 23.333333333333332,
+    "share_nonlost": 23.333333333333332,
+    "exploration_shortfall": 6.315293203304114,
+    "selection_shortfall": 0.0,
+    "distinct": 40,
+    "lost_slots": 0,
+    "nominee_readings": 9,
+    "shrinkage_nominee": "NPTI"
+   }
+  ],
+  "informed k=2": [
+   {
+    "pick": 2.7687976194637693,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 46.666666666666664,
+    "exploration_shortfall": 5.993202380536231,
+    "selection_shortfall": 0.0,
+    "distinct": 28,
+    "lost_slots": 0,
+    "nominee_readings": 16,
+    "shrinkage_nominee": "NMMT"
+   },
+   {
+    "pick": 2.4664694193096754,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 46.666666666666664,
+    "exploration_shortfall": 6.2955305806903255,
+    "selection_shortfall": 0.0,
+    "distinct": 25,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "NGMQ"
+   },
+   {
+    "pick": 1.237075217653422,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 46.666666666666664,
+    "exploration_shortfall": 7.524924782346578,
+    "selection_shortfall": 0.0,
+    "distinct": 28,
+    "lost_slots": 0,
+    "nominee_readings": 14,
+    "shrinkage_nominee": "NADS"
+   },
+   {
+    "pick": 5.7634074352141,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 46.666666666666664,
+    "exploration_shortfall": 2.9985925647859,
+    "selection_shortfall": 0.0,
+    "distinct": 26,
+    "lost_slots": 0,
+    "nominee_readings": 14,
+    "shrinkage_nominee": "NAMO"
+   },
+   {
+    "pick": 2.159117172812686,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 46.666666666666664,
+    "exploration_shortfall": 6.602882827187314,
+    "selection_shortfall": 0.0,
+    "distinct": 29,
+    "lost_slots": 0,
+    "nominee_readings": 12,
+    "shrinkage_nominee": "EGBF"
+   },
+   {
+    "pick": 1.139513525093554,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 46.666666666666664,
+    "exploration_shortfall": 7.622486474906447,
+    "selection_shortfall": 0.0,
+    "distinct": 28,
+    "lost_slots": 0,
+    "nominee_readings": 3,
+    "shrinkage_nominee": "EMEJ"
+   },
+   {
+    "pick": 2.489540068345556,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 46.666666666666664,
+    "exploration_shortfall": 6.272459931654444,
+    "selection_shortfall": 0.0,
+    "distinct": 27,
+    "lost_slots": 0,
+    "nominee_readings": 5,
+    "shrinkage_nominee": "EGMF"
+   },
+   {
+    "pick": 7.239845459988667,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 46.666666666666664,
+    "exploration_shortfall": 1.5221545400113339,
+    "selection_shortfall": 0.0,
+    "distinct": 28,
+    "lost_slots": 0,
+    "nominee_readings": 18,
+    "shrinkage_nominee": "ATLN"
+   },
+   {
+    "pick": 1.232646998659639,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 46.666666666666664,
+    "exploration_shortfall": 7.529353001340361,
+    "selection_shortfall": 0.0,
+    "distinct": 29,
+    "lost_slots": 0,
+    "nominee_readings": 19,
+    "shrinkage_nominee": "OECJ"
+   },
+   {
+    "pick": 2.4462533196970204,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 46.666666666666664,
+    "exploration_shortfall": 6.31574668030298,
+    "selection_shortfall": 0.0,
+    "distinct": 26,
+    "lost_slots": 0,
+    "nominee_readings": 16,
+    "shrinkage_nominee": "OGGF"
+   },
+   {
+    "pick": 1.3734888667350988,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 46.666666666666664,
+    "exploration_shortfall": 7.388511133264902,
+    "selection_shortfall": 0.0,
+    "distinct": 29,
+    "lost_slots": 0,
+    "nominee_readings": 14,
+    "shrinkage_nominee": "KCDI"
+   },
+   {
+    "pick": 3.418057201704834,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 46.666666666666664,
+    "exploration_shortfall": 5.343942798295167,
+    "selection_shortfall": 0.0,
+    "distinct": 28,
+    "lost_slots": 0,
+    "nominee_readings": 9,
+    "shrinkage_nominee": "IQQK"
+   },
+   {
+    "pick": 2.516490714010414,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 46.666666666666664,
+    "exploration_shortfall": 6.245509285989586,
+    "selection_shortfall": 0.0,
+    "distinct": 28,
+    "lost_slots": 0,
+    "nominee_readings": 20,
+    "shrinkage_nominee": "IAQT"
+   },
+   {
+    "pick": 2.4467067966958873,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 46.666666666666664,
+    "exploration_shortfall": 6.315293203304114,
+    "selection_shortfall": 0.0,
+    "distinct": 24,
+    "lost_slots": 0,
+    "nominee_readings": 5,
+    "shrinkage_nominee": "NPTI"
+   },
+   {
+    "pick": 1.3833784454977,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 46.666666666666664,
+    "exploration_shortfall": 7.378621554502301,
+    "selection_shortfall": 0.0,
+    "distinct": 27,
+    "lost_slots": 0,
+    "nominee_readings": 4,
+    "shrinkage_nominee": "JFQS"
+   },
+   {
+    "pick": 8.762,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 46.666666666666664,
+    "exploration_shortfall": 0.0,
+    "selection_shortfall": 0.0,
+    "distinct": 25,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "NGQC"
+   },
+   {
+    "pick": 1.4468026262244766,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 46.666666666666664,
+    "exploration_shortfall": 7.315197373775524,
+    "selection_shortfall": 0.0,
+    "distinct": 28,
+    "lost_slots": 0,
+    "nominee_readings": 11,
+    "shrinkage_nominee": "DCDI"
+   },
+   {
+    "pick": 1.21785841256515,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 46.666666666666664,
+    "exploration_shortfall": 7.54002864890837,
+    "selection_shortfall": 0.004112938526480203,
+    "distinct": 28,
+    "lost_slots": 0,
+    "nominee_readings": 17,
+    "shrinkage_nominee": "NHGI"
+   },
+   {
+    "pick": 2.5036234886898563,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 46.666666666666664,
+    "exploration_shortfall": 6.258376511310145,
+    "selection_shortfall": 0.0,
+    "distinct": 25,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "EGMI"
+   },
+   {
+    "pick": 1.3702031815707771,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 46.666666666666664,
+    "exploration_shortfall": 7.391796818429223,
+    "selection_shortfall": 0.0,
+    "distinct": 24,
+    "lost_slots": 0,
+    "nominee_readings": 17,
+    "shrinkage_nominee": "EAEF"
+   },
+   {
+    "pick": 1.9056492744308977,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 46.666666666666664,
+    "exploration_shortfall": 6.8563507255691025,
+    "selection_shortfall": 0.0,
+    "distinct": 29,
+    "lost_slots": 0,
+    "nominee_readings": 16,
+    "shrinkage_nominee": "IRGT"
+   },
+   {
+    "pick": 1.108545041537894,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 46.666666666666664,
+    "exploration_shortfall": 7.653454958462106,
+    "selection_shortfall": 0.0,
+    "distinct": 29,
+    "lost_slots": 0,
+    "nominee_readings": 6,
+    "shrinkage_nominee": "EDFO"
+   },
+   {
+    "pick": 1.3947407852419527,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 46.666666666666664,
+    "exploration_shortfall": 7.367259214758048,
+    "selection_shortfall": 0.0,
+    "distinct": 23,
+    "lost_slots": 0,
+    "nominee_readings": 16,
+    "shrinkage_nominee": "NCMJ"
+   },
+   {
+    "pick": 2.2797736448305357,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 46.666666666666664,
+    "exploration_shortfall": 6.482226355169464,
+    "selection_shortfall": 0.0,
+    "distinct": 28,
+    "lost_slots": 0,
+    "nominee_readings": 5,
+    "shrinkage_nominee": "NMQT"
+   },
+   {
+    "pick": 2.1071192059360033,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 46.666666666666664,
+    "exploration_shortfall": 6.654880794063997,
+    "selection_shortfall": 0.0,
+    "distinct": 28,
+    "lost_slots": 0,
+    "nominee_readings": 12,
+    "shrinkage_nominee": "OMKF"
+   },
+   {
+    "pick": 1.3025281345141182,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 46.666666666666664,
+    "exploration_shortfall": 7.435111769341795,
+    "selection_shortfall": 0.024360096144087517,
+    "distinct": 29,
+    "lost_slots": 0,
+    "nominee_readings": 11,
+    "shrinkage_nominee": "ICDS"
+   },
+   {
+    "pick": 1.3984520784393195,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 46.666666666666664,
+    "exploration_shortfall": 7.363547921560681,
+    "selection_shortfall": 0.0,
+    "distinct": 30,
+    "lost_slots": 0,
+    "nominee_readings": 6,
+    "shrinkage_nominee": "EADI"
+   },
+   {
+    "pick": 2.705460486788652,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 46.666666666666664,
+    "exploration_shortfall": 6.056539513211348,
+    "selection_shortfall": 0.0,
+    "distinct": 28,
+    "lost_slots": 0,
+    "nominee_readings": 14,
+    "shrinkage_nominee": "ICQI"
+   },
+   {
+    "pick": 3.0210356589395646,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 46.666666666666664,
+    "exploration_shortfall": 5.740964341060436,
+    "selection_shortfall": 0.0,
+    "distinct": 25,
+    "lost_slots": 0,
+    "nominee_readings": 16,
+    "shrinkage_nominee": "NQMI"
+   },
+   {
+    "pick": 2.705460486788652,
+    "share_budget": 46.666666666666664,
+    "share_nonlost": 46.666666666666664,
+    "exploration_shortfall": 6.056539513211348,
+    "selection_shortfall": 0.0,
+    "distinct": 28,
+    "lost_slots": 0,
+    "nominee_readings": 3,
+    "shrinkage_nominee": "ICQI"
+   }
+  ],
+  "informed k=3": [
+   {
+    "pick": 1.2902152393212676,
+    "share_budget": 70.0,
+    "share_nonlost": 70.0,
+    "exploration_shortfall": 7.471784760678733,
+    "selection_shortfall": 0.0,
+    "distinct": 16,
+    "lost_slots": 0,
+    "nominee_readings": 17,
+    "shrinkage_nominee": "IQDR"
+   },
+   {
+    "pick": 1.7117677615065379,
+    "share_budget": 70.0,
+    "share_nonlost": 70.0,
+    "exploration_shortfall": 7.050232238493463,
+    "selection_shortfall": 0.0,
+    "distinct": 16,
+    "lost_slots": 0,
+    "nominee_readings": 10,
+    "shrinkage_nominee": "NMQB"
+   },
+   {
+    "pick": 1.7952243737324964,
+    "share_budget": 70.0,
+    "share_nonlost": 70.0,
+    "exploration_shortfall": 6.966775626267504,
+    "selection_shortfall": 0.0,
+    "distinct": 16,
+    "lost_slots": 0,
+    "nominee_readings": 13,
+    "shrinkage_nominee": "NGDN"
+   },
+   {
+    "pick": 1.3605575722671341,
+    "share_budget": 70.0,
+    "share_nonlost": 70.0,
+    "exploration_shortfall": 7.401442427732866,
+    "selection_shortfall": 0.0,
+    "distinct": 13,
+    "lost_slots": 0,
+    "nominee_readings": 19,
+    "shrinkage_nominee": "EDMT"
+   },
+   {
+    "pick": 1.998691582553463,
+    "share_budget": 70.0,
+    "share_nonlost": 70.0,
+    "exploration_shortfall": 6.763308417446537,
+    "selection_shortfall": 0.0,
+    "distinct": 18,
+    "lost_slots": 0,
+    "nominee_readings": 7,
+    "shrinkage_nominee": "EQBF"
+   },
+   {
+    "pick": 1.5272779501218534,
+    "share_budget": 70.0,
+    "share_nonlost": 70.0,
+    "exploration_shortfall": 7.2347220498781475,
+    "selection_shortfall": 0.0,
+    "distinct": 16,
+    "lost_slots": 0,
+    "nominee_readings": 26,
+    "shrinkage_nominee": "ABTJ"
+   },
+   {
+    "pick": 1.5439885528501682,
+    "share_budget": 70.0,
+    "share_nonlost": 70.0,
+    "exploration_shortfall": 7.2180114471498324,
+    "selection_shortfall": 0.0,
+    "distinct": 15,
+    "lost_slots": 0,
+    "nominee_readings": 34,
+    "shrinkage_nominee": "EGMT"
+   },
+   {
+    "pick": 0.7579391129948913,
+    "share_budget": 70.0,
+    "share_nonlost": 70.0,
+    "exploration_shortfall": 8.004060887005108,
+    "selection_shortfall": 0.0,
+    "distinct": 15,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "ACKS"
+   },
+   {
+    "pick": 0.9475801104343774,
+    "share_budget": 70.0,
+    "share_nonlost": 70.0,
+    "exploration_shortfall": 7.814419889565623,
+    "selection_shortfall": 0.0,
+    "distinct": 16,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "OAKL"
+   },
+   {
+    "pick": 2.6202284550078385,
+    "share_budget": 70.0,
+    "share_nonlost": 70.0,
+    "exploration_shortfall": 6.141771544992162,
+    "selection_shortfall": 0.0,
+    "distinct": 14,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "NGGC"
+   },
+   {
+    "pick": 1.2685898138745024,
+    "share_budget": 70.0,
+    "share_nonlost": 70.0,
+    "exploration_shortfall": 7.493410186125498,
+    "selection_shortfall": 0.0,
+    "distinct": 16,
+    "lost_slots": 0,
+    "nominee_readings": 15,
+    "shrinkage_nominee": "NCQP"
+   },
+   {
+    "pick": 1.486913851694388,
+    "share_budget": 70.0,
+    "share_nonlost": 70.0,
+    "exploration_shortfall": 7.275086148305612,
+    "selection_shortfall": 0.0,
+    "distinct": 14,
+    "lost_slots": 0,
+    "nominee_readings": 37,
+    "shrinkage_nominee": "EAQK"
+   },
+   {
+    "pick": 2.516490714010414,
+    "share_budget": 70.0,
+    "share_nonlost": 70.0,
+    "exploration_shortfall": 6.245509285989586,
+    "selection_shortfall": 0.0,
+    "distinct": 17,
+    "lost_slots": 0,
+    "nominee_readings": 32,
+    "shrinkage_nominee": "IAQT"
+   },
+   {
+    "pick": 8.762,
+    "share_budget": 70.0,
+    "share_nonlost": 70.0,
+    "exploration_shortfall": 0.0,
+    "selection_shortfall": 0.0,
+    "distinct": 13,
+    "lost_slots": 0,
+    "nominee_readings": 1,
+    "shrinkage_nominee": "NGQC"
+   },
+   {
+    "pick": 1.819104635251198,
+    "share_budget": 70.0,
+    "share_nonlost": 70.0,
+    "exploration_shortfall": 6.942895364748803,
+    "selection_shortfall": 0.0,
+    "distinct": 17,
+    "lost_slots": 0,
+    "nominee_readings": 22,
+    "shrinkage_nominee": "OFCL"
+   },
+   {
+    "pick": 2.531036520204048,
+    "share_budget": 70.0,
+    "share_nonlost": 70.0,
+    "exploration_shortfall": 6.230963479795952,
+    "selection_shortfall": 0.0,
+    "distinct": 16,
+    "lost_slots": 0,
+    "nominee_readings": 25,
+    "shrinkage_nominee": "NGQB"
+   },
+   {
+    "pick": 1.2492137480147916,
+    "share_budget": 70.0,
+    "share_nonlost": 70.0,
+    "exploration_shortfall": 7.512786251985209,
+    "selection_shortfall": 0.0,
+    "distinct": 16,
+    "lost_slots": 0,
+    "nominee_readings": 9,
+    "shrinkage_nominee": "OGTI"
+   },
+   {
+    "pick": 1.166465701111283,
+    "share_budget": 70.0,
+    "share_nonlost": 70.0,
+    "exploration_shortfall": 7.595534298888717,
+    "selection_shortfall": 0.0,
+    "distinct": 15,
+    "lost_slots": 0,
+    "nominee_readings": 37,
+    "shrinkage_nominee": "NJGI"
+   },
+   {
+    "pick": 0.7534351519327723,
+    "share_budget": 70.0,
+    "share_nonlost": 70.0,
+    "exploration_shortfall": 8.008564848067229,
+    "selection_shortfall": 0.0,
+    "distinct": 15,
+    "lost_slots": 0,
+    "nominee_readings": 4,
+    "shrinkage_nominee": "KETS"
+   },
+   {
+    "pick": 2.007491124132794,
+    "share_budget": 70.0,
+    "share_nonlost": 70.0,
+    "exploration_shortfall": 6.754508875867206,
+    "selection_shortfall": 0.0,
+    "distinct": 15,
+    "lost_slots": 0,
+    "nominee_readings": 23,
+    "shrinkage_nominee": "NQMP"
+   },
+   {
+    "pick": 1.7782051311781564,
+    "share_budget": 70.0,
+    "share_nonlost": 70.0,
+    "exploration_shortfall": 6.983794868821844,
+    "selection_shortfall": 0.0,
+    "distinct": 17,
+    "lost_slots": 0,
+    "nominee_readings": 16,
+    "shrinkage_nominee": "INET"
+   },
+   {
+    "pick": 0.744972797186586,
+    "share_budget": 70.0,
+    "share_nonlost": 70.0,
+    "exploration_shortfall": 7.99922501968086,
+    "selection_shortfall": 0.017802183132554994,
+    "distinct": 17,
+    "lost_slots": 0,
+    "nominee_readings": 21,
+    "shrinkage_nominee": "IDFQ"
+   },
+   {
+    "pick": 0.9114658080020949,
+    "share_budget": 70.0,
+    "share_nonlost": 70.0,
+    "exploration_shortfall": 7.850534191997905,
+    "selection_shortfall": 0.0,
+    "distinct": 15,
+    "lost_slots": 0,
+    "nominee_readings": 31,
+    "shrinkage_nominee": "NCQJ"
+   },
+   {
+    "pick": 0.9929998461011841,
+    "share_budget": 70.0,
+    "share_nonlost": 70.0,
+    "exploration_shortfall": 7.7690001538988165,
+    "selection_shortfall": 0.0,
+    "distinct": 14,
+    "lost_slots": 0,
+    "nominee_readings": 22,
+    "shrinkage_nominee": "NFQC"
+   },
+   {
+    "pick": 1.0401210223219157,
+    "share_budget": 70.0,
+    "share_nonlost": 70.0,
+    "exploration_shortfall": 7.7218789776780845,
+    "selection_shortfall": 0.0,
+    "distinct": 14,
+    "lost_slots": 0,
+    "nominee_readings": 5,
+    "shrinkage_nominee": "NMGS"
+   },
+   {
+    "pick": 1.196274771773264,
+    "share_budget": 70.0,
+    "share_nonlost": 70.0,
+    "exploration_shortfall": 7.565725228226737,
+    "selection_shortfall": 0.0,
+    "distinct": 15,
+    "lost_slots": 0,
+    "nominee_readings": 34,
+    "shrinkage_nominee": "ICDN"
+   },
+   {
+    "pick": 1.2008363825783845,
+    "share_budget": 70.0,
+    "share_nonlost": 70.0,
+    "exploration_shortfall": 7.561163617421616,
+    "selection_shortfall": 0.0,
+    "distinct": 16,
+    "lost_slots": 0,
+    "nominee_readings": 9,
+    "shrinkage_nominee": "ERDJ"
+   },
+   {
+    "pick": 1.0445630828328194,
+    "share_budget": 70.0,
+    "share_nonlost": 70.0,
+    "exploration_shortfall": 7.717436917167181,
+    "selection_shortfall": 0.0,
+    "distinct": 13,
+    "lost_slots": 0,
+    "nominee_readings": 25,
+    "shrinkage_nominee": "NIFH"
+   },
+   {
+    "pick": 2.506908286512778,
+    "share_budget": 70.0,
+    "share_nonlost": 70.0,
+    "exploration_shortfall": 6.255091713487222,
+    "selection_shortfall": 0.0,
+    "distinct": 12,
+    "lost_slots": 0,
+    "nominee_readings": 38,
+    "shrinkage_nominee": "NQMK"
+   },
+   {
+    "pick": 1.2654552500739997,
+    "share_budget": 70.0,
+    "share_nonlost": 70.0,
+    "exploration_shortfall": 7.4965447499260005,
+    "selection_shortfall": 0.0,
+    "distinct": 16,
+    "lost_slots": 0,
+    "nominee_readings": 20,
+    "shrinkage_nominee": "ICTI"
+   }
+  ],
+  "informed k=4": [
+   {
+    "pick": 0.3999051689369802,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 8.36209483106302,
+    "selection_shortfall": 0.0,
+    "distinct": 4,
+    "lost_slots": 0,
+    "nominee_readings": 45,
+    "shrinkage_nominee": "IQDK"
+   },
+   {
+    "pick": 0.802172331594951,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 7.959827668405049,
+    "selection_shortfall": 0.0,
+    "distinct": 4,
+    "lost_slots": 0,
+    "nominee_readings": 44,
+    "shrinkage_nominee": "OIEP"
+   },
+   {
+    "pick": 0.6847598779326285,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 8.077240122067373,
+    "selection_shortfall": 0.0,
+    "distinct": 4,
+    "lost_slots": 0,
+    "nominee_readings": 51,
+    "shrinkage_nominee": "NTTS"
+   },
+   {
+    "pick": 0.9467878237592078,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 7.8152121762407925,
+    "selection_shortfall": 0.0,
+    "distinct": 2,
+    "lost_slots": 0,
+    "nominee_readings": 47,
+    "shrinkage_nominee": "EDMI"
+   },
+   {
+    "pick": 0.8252964337467469,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 7.936703566253254,
+    "selection_shortfall": 0.0,
+    "distinct": 4,
+    "lost_slots": 0,
+    "nominee_readings": 50,
+    "shrinkage_nominee": "NJMF"
+   },
+   {
+    "pick": 0.5485988387076782,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 8.213401161292323,
+    "selection_shortfall": 0.0,
+    "distinct": 4,
+    "lost_slots": 0,
+    "nominee_readings": 49,
+    "shrinkage_nominee": "ABPT"
+   },
+   {
+    "pick": 1.5439885528501682,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 7.2180114471498324,
+    "selection_shortfall": 0.0,
+    "distinct": 4,
+    "lost_slots": 0,
+    "nominee_readings": 47,
+    "shrinkage_nominee": "EGMT"
+   },
+   {
+    "pick": 0.5078561523035383,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 8.254143847696461,
+    "selection_shortfall": 0.0,
+    "distinct": 3,
+    "lost_slots": 0,
+    "nominee_readings": 50,
+    "shrinkage_nominee": "ARFK"
+   },
+   {
+    "pick": 0.5675518488432366,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 8.168207262307265,
+    "selection_shortfall": 0.026240888849499377,
+    "distinct": 4,
+    "lost_slots": 0,
+    "nominee_readings": 45,
+    "shrinkage_nominee": "ORCS"
+   },
+   {
+    "pick": 1.1713473151206262,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 7.590652684879374,
+    "selection_shortfall": 0.0,
+    "distinct": 3,
+    "lost_slots": 0,
+    "nominee_readings": 46,
+    "shrinkage_nominee": "OGGK"
+   },
+   {
+    "pick": 1.1262545288806176,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 7.635745471119383,
+    "selection_shortfall": 0.0,
+    "distinct": 3,
+    "lost_slots": 0,
+    "nominee_readings": 47,
+    "shrinkage_nominee": "KCQP"
+   },
+   {
+    "pick": 1.486913851694388,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 7.275086148305612,
+    "selection_shortfall": 0.0,
+    "distinct": 4,
+    "lost_slots": 0,
+    "nominee_readings": 47,
+    "shrinkage_nominee": "EAQK"
+   },
+   {
+    "pick": 1.659591355228035,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 7.102408644771965,
+    "selection_shortfall": 0.0,
+    "distinct": 4,
+    "lost_slots": 0,
+    "nominee_readings": 53,
+    "shrinkage_nominee": "EAQT"
+   },
+   {
+    "pick": 0.5849005003235733,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 8.151958214659956,
+    "selection_shortfall": 0.025141285016471726,
+    "distinct": 4,
+    "lost_slots": 0,
+    "nominee_readings": 54,
+    "shrinkage_nominee": "NJTL"
+   },
+   {
+    "pick": 0.2795478813323166,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 8.482452118667684,
+    "selection_shortfall": 0.0,
+    "distinct": 3,
+    "lost_slots": 0,
+    "nominee_readings": 48,
+    "shrinkage_nominee": "OFFS"
+   },
+   {
+    "pick": 0.31565868581040196,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 8.446341314189599,
+    "selection_shortfall": 0.0,
+    "distinct": 3,
+    "lost_slots": 0,
+    "nominee_readings": 47,
+    "shrinkage_nominee": "NDIB"
+   },
+   {
+    "pick": 0.5882984351050387,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 8.173701564894962,
+    "selection_shortfall": 0.0,
+    "distinct": 3,
+    "lost_slots": 0,
+    "nominee_readings": 52,
+    "shrinkage_nominee": "OCBI"
+   },
+   {
+    "pick": 1.166465701111283,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 7.595534298888717,
+    "selection_shortfall": 0.0,
+    "distinct": 4,
+    "lost_slots": 0,
+    "nominee_readings": 50,
+    "shrinkage_nominee": "NJGI"
+   },
+   {
+    "pick": 0.7036957650498515,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 8.05830423495015,
+    "selection_shortfall": 0.0,
+    "distinct": 4,
+    "lost_slots": 0,
+    "nominee_readings": 45,
+    "shrinkage_nominee": "EETS"
+   },
+   {
+    "pick": 0.5964850197949851,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 8.165514980205016,
+    "selection_shortfall": 0.0,
+    "distinct": 3,
+    "lost_slots": 0,
+    "nominee_readings": 45,
+    "shrinkage_nominee": "EQEP"
+   },
+   {
+    "pick": 1.3525120584887362,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 7.409487941511264,
+    "selection_shortfall": 0.0,
+    "distinct": 4,
+    "lost_slots": 0,
+    "nominee_readings": 48,
+    "shrinkage_nominee": "IRET"
+   },
+   {
+    "pick": 0.744972797186586,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 8.017027202813415,
+    "selection_shortfall": 0.0,
+    "distinct": 4,
+    "lost_slots": 0,
+    "nominee_readings": 46,
+    "shrinkage_nominee": "IDFQ"
+   },
+   {
+    "pick": 0.9114658080020949,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 7.850534191997905,
+    "selection_shortfall": 0.0,
+    "distinct": 4,
+    "lost_slots": 0,
+    "nominee_readings": 44,
+    "shrinkage_nominee": "NCQJ"
+   },
+   {
+    "pick": 0.8642385043909444,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 7.897761495609056,
+    "selection_shortfall": 0.0,
+    "distinct": 2,
+    "lost_slots": 0,
+    "nominee_readings": 54,
+    "shrinkage_nominee": "BFQP"
+   },
+   {
+    "pick": 0.4555901983922106,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 8.29607017628825,
+    "selection_shortfall": 0.01033962531954008,
+    "distinct": 3,
+    "lost_slots": 0,
+    "nominee_readings": 55,
+    "shrinkage_nominee": "OMGF"
+   },
+   {
+    "pick": 1.196274771773264,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 7.565725228226737,
+    "selection_shortfall": 0.0,
+    "distinct": 3,
+    "lost_slots": 0,
+    "nominee_readings": 47,
+    "shrinkage_nominee": "ICDN"
+   },
+   {
+    "pick": 0.7017906592372968,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 8.060209340762704,
+    "selection_shortfall": 0.0,
+    "distinct": 4,
+    "lost_slots": 0,
+    "nominee_readings": 48,
+    "shrinkage_nominee": "EABH"
+   },
+   {
+    "pick": 0.8282366174686985,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 7.933763382531302,
+    "selection_shortfall": 0.0,
+    "distinct": 3,
+    "lost_slots": 0,
+    "nominee_readings": 45,
+    "shrinkage_nominee": "NIFS"
+   },
+   {
+    "pick": 2.506908286512778,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 6.255091713487222,
+    "selection_shortfall": 0.0,
+    "distinct": 3,
+    "lost_slots": 0,
+    "nominee_readings": 49,
+    "shrinkage_nominee": "NQMK"
+   },
+   {
+    "pick": 0.9886757841634977,
+    "share_budget": 93.33333333333333,
+    "share_nonlost": 93.33333333333333,
+    "exploration_shortfall": 7.773324215836503,
+    "selection_shortfall": 0.0,
+    "distinct": 3,
+    "lost_slots": 0,
+    "nominee_readings": 53,
+    "shrinkage_nominee": "INTI"
+   }
+  ],
+  "model-guided k=1 with confirmation": [
+   {
+    "pick": 1.5943477280874399,
+    "share_budget": 33.333333333333336,
+    "share_nonlost": 33.898305084745765,
+    "exploration_shortfall": 7.16765227191256,
+    "selection_shortfall": 0.0,
+    "distinct": 31,
+    "lost_slots": 1,
+    "nominee_readings": 5,
+    "shrinkage_nominee": "IDES"
+   },
+   {
+    "pick": 1.5509284103267695,
+    "share_budget": 33.333333333333336,
+    "share_nonlost": 33.898305084745765,
+    "exploration_shortfall": 7.211071589673231,
+    "selection_shortfall": 0.0,
+    "distinct": 34,
+    "lost_slots": 1,
+    "nominee_readings": 4,
+    "shrinkage_nominee": "ECQS"
+   },
+   {
+    "pick": 2.7180588068634983,
+    "share_budget": 36.666666666666664,
+    "share_nonlost": 40.74074074074074,
+    "exploration_shortfall": 6.043941193136503,
+    "selection_shortfall": 0.0,
+    "distinct": 26,
+    "lost_slots": 6,
+    "nominee_readings": 4,
+    "shrinkage_nominee": "ODFF"
+   },
+   {
+    "pick": 1.6826927753338525,
+    "share_budget": 38.333333333333336,
+    "share_nonlost": 38.983050847457626,
+    "exploration_shortfall": 7.079307224666148,
+    "selection_shortfall": 0.0,
+    "distinct": 35,
+    "lost_slots": 1,
+    "nominee_readings": 5,
+    "shrinkage_nominee": "OBQS"
+   },
+   {
+    "pick": 1.5943477280874399,
+    "share_budget": 35.0,
+    "share_nonlost": 36.206896551724135,
+    "exploration_shortfall": 7.16765227191256,
+    "selection_shortfall": 0.0,
+    "distinct": 35,
+    "lost_slots": 2,
+    "nominee_readings": 3,
+    "shrinkage_nominee": "IDES"
+   },
+   {
+    "pick": 2.1839784465783945,
+    "share_budget": 38.333333333333336,
+    "share_nonlost": 39.6551724137931,
+    "exploration_shortfall": 6.578021553421606,
+    "selection_shortfall": 0.0,
+    "distinct": 31,
+    "lost_slots": 2,
+    "nominee_readings": 4,
+    "shrinkage_nominee": "EDQJ"
+   },
+   {
+    "pick": 2.1839784465783945,
+    "share_budget": 38.333333333333336,
+    "share_nonlost": 40.35087719298246,
+    "exploration_shortfall": 6.578021553421606,
+    "selection_shortfall": 0.0,
+    "distinct": 28,
+    "lost_slots": 3,
+    "nominee_readings": 4,
+    "shrinkage_nominee": "EDQJ"
+   },
+   {
+    "pick": 1.5583311497566479,
+    "share_budget": 40.0,
+    "share_nonlost": 40.0,
+    "exploration_shortfall": 7.173684931546839,
+    "selection_shortfall": 0.029983918696512957,
+    "distinct": 33,
+    "lost_slots": 0,
+    "nominee_readings": 5,
+    "shrinkage_nominee": "IAQK"
+   },
+   {
+    "pick": 1.7782051311781564,
+    "share_budget": 40.0,
+    "share_nonlost": 42.857142857142854,
+    "exploration_shortfall": 6.983794868821844,
+    "selection_shortfall": 0.0,
+    "distinct": 27,
+    "lost_slots": 4,
+    "nominee_readings": 4,
+    "shrinkage_nominee": "INET"
+   },
+   {
+    "pick": 2.1839784465783945,
+    "share_budget": 38.333333333333336,
+    "share_nonlost": 39.6551724137931,
+    "exploration_shortfall": 6.578021553421606,
+    "selection_shortfall": 0.0,
+    "distinct": 30,
+    "lost_slots": 2,
+    "nominee_readings": 5,
+    "shrinkage_nominee": "EDQJ"
+   },
+   {
+    "pick": 1.6343026751549645,
+    "share_budget": 35.0,
+    "share_nonlost": 35.0,
+    "exploration_shortfall": 7.127697324845036,
+    "selection_shortfall": 0.0,
+    "distinct": 32,
+    "lost_slots": 0,
+    "nominee_readings": 5,
+    "shrinkage_nominee": "OIQS"
+   },
+   {
+    "pick": 3.4551648138801165,
+    "share_budget": 40.0,
+    "share_nonlost": 42.857142857142854,
+    "exploration_shortfall": 5.3068351861198835,
+    "selection_shortfall": 0.0,
+    "distinct": 30,
+    "lost_slots": 4,
+    "nominee_readings": 4,
+    "shrinkage_nominee": "IPQI"
+   },
+   {
+    "pick": 1.5509284103267695,
+    "share_budget": 40.0,
+    "share_nonlost": 40.0,
+    "exploration_shortfall": 7.211071589673231,
+    "selection_shortfall": 0.0,
+    "distinct": 33,
+    "lost_slots": 0,
+    "nominee_readings": 5,
+    "shrinkage_nominee": "ECQS"
+   },
+   {
+    "pick": 2.1839784465783945,
+    "share_budget": 38.333333333333336,
+    "share_nonlost": 39.6551724137931,
+    "exploration_shortfall": 6.578021553421606,
+    "selection_shortfall": 0.0,
+    "distinct": 27,
+    "lost_slots": 2,
+    "nominee_readings": 5,
+    "shrinkage_nominee": "EDQJ"
+   },
+   {
+    "pick": 2.1839784465783945,
+    "share_budget": 38.333333333333336,
+    "share_nonlost": 40.35087719298246,
+    "exploration_shortfall": 6.578021553421606,
+    "selection_shortfall": 0.0,
+    "distinct": 29,
+    "lost_slots": 3,
+    "nominee_readings": 5,
+    "shrinkage_nominee": "EDQJ"
+   },
+   {
+    "pick": 1.3900341782622865,
+    "share_budget": 36.666666666666664,
+    "share_nonlost": 37.93103448275862,
+    "exploration_shortfall": 7.371965821737714,
+    "selection_shortfall": 0.0,
+    "distinct": 33,
+    "lost_slots": 2,
+    "nominee_readings": 4,
+    "shrinkage_nominee": "IDQS"
+   },
+   {
+    "pick": 1.5509284103267695,
+    "share_budget": 38.333333333333336,
+    "share_nonlost": 38.983050847457626,
+    "exploration_shortfall": 7.211071589673231,
+    "selection_shortfall": 0.0,
+    "distinct": 29,
+    "lost_slots": 1,
+    "nominee_readings": 4,
+    "shrinkage_nominee": "ECQS"
+   },
+   {
+    "pick": 1.7436030381664231,
+    "share_budget": 33.333333333333336,
+    "share_nonlost": 36.36363636363637,
+    "exploration_shortfall": 7.018396961833577,
+    "selection_shortfall": 0.0,
+    "distinct": 27,
+    "lost_slots": 5,
+    "nominee_readings": 5,
+    "shrinkage_nominee": "IIMN"
+   },
+   {
+    "pick": 3.418057201704834,
+    "share_budget": 35.0,
+    "share_nonlost": 36.206896551724135,
+    "exploration_shortfall": 5.343942798295167,
+    "selection_shortfall": 0.0,
+    "distinct": 34,
+    "lost_slots": 2,
+    "nominee_readings": 4,
+    "shrinkage_nominee": "IQQK"
+   },
+   {
+    "pick": 1.5943477280874399,
+    "share_budget": 36.666666666666664,
+    "share_nonlost": 36.666666666666664,
+    "exploration_shortfall": 7.16765227191256,
+    "selection_shortfall": 0.0,
+    "distinct": 31,
+    "lost_slots": 0,
+    "nominee_readings": 5,
+    "shrinkage_nominee": "IDES"
+   },
+   {
+    "pick": 2.1839784465783945,
+    "share_budget": 36.666666666666664,
+    "share_nonlost": 37.93103448275862,
+    "exploration_shortfall": 6.578021553421606,
+    "selection_shortfall": 0.0,
+    "distinct": 31,
+    "lost_slots": 2,
+    "nominee_readings": 5,
+    "shrinkage_nominee": "EDQJ"
+   },
+   {
+    "pick": 1.5509284103267695,
+    "share_budget": 36.666666666666664,
+    "share_nonlost": 36.666666666666664,
+    "exploration_shortfall": 7.211071589673231,
+    "selection_shortfall": 0.0,
+    "distinct": 35,
+    "lost_slots": 0,
+    "nominee_readings": 5,
+    "shrinkage_nominee": "ECQS"
+   },
+   {
+    "pick": 5.7634074352141,
+    "share_budget": 36.666666666666664,
+    "share_nonlost": 37.93103448275862,
+    "exploration_shortfall": 2.9985925647859,
+    "selection_shortfall": 0.0,
+    "distinct": 33,
+    "lost_slots": 2,
+    "nominee_readings": 4,
+    "shrinkage_nominee": "NAMO"
+   },
+   {
+    "pick": 1.5943477280874399,
+    "share_budget": 40.0,
+    "share_nonlost": 40.67796610169491,
+    "exploration_shortfall": 7.16765227191256,
+    "selection_shortfall": 0.0,
+    "distinct": 27,
+    "lost_slots": 1,
+    "nominee_readings": 5,
+    "shrinkage_nominee": "IDES"
+   },
+   {
+    "pick": 1.5509284103267695,
+    "share_budget": 35.0,
+    "share_nonlost": 36.206896551724135,
+    "exploration_shortfall": 7.211071589673231,
+    "selection_shortfall": 0.0,
+    "distinct": 30,
+    "lost_slots": 2,
+    "nominee_readings": 4,
+    "shrinkage_nominee": "ECQS"
+   },
+   {
+    "pick": 1.6826927753338525,
+    "share_budget": 38.333333333333336,
+    "share_nonlost": 39.6551724137931,
+    "exploration_shortfall": 7.079307224666148,
+    "selection_shortfall": 0.0,
+    "distinct": 29,
+    "lost_slots": 2,
+    "nominee_readings": 5,
+    "shrinkage_nominee": "OBQS"
+   },
+   {
+    "pick": 1.2106753631723877,
+    "share_budget": 33.333333333333336,
+    "share_nonlost": 33.333333333333336,
+    "exploration_shortfall": 7.551324636827613,
+    "selection_shortfall": 0.0,
+    "distinct": 34,
+    "lost_slots": 0,
+    "nominee_readings": 4,
+    "shrinkage_nominee": "EIQP"
+   },
+   {
+    "pick": 1.5883150684531608,
+    "share_budget": 38.333333333333336,
+    "share_nonlost": 40.35087719298246,
+    "exploration_shortfall": 7.173684931546839,
+    "selection_shortfall": 0.0,
+    "distinct": 29,
+    "lost_slots": 3,
+    "nominee_readings": 4,
+    "shrinkage_nominee": "IAQS"
+   },
+   {
+    "pick": 1.215637976688671,
+    "share_budget": 38.333333333333336,
+    "share_nonlost": 39.6551724137931,
+    "exploration_shortfall": 7.54636202331133,
+    "selection_shortfall": 0.0,
+    "distinct": 31,
+    "lost_slots": 2,
+    "nominee_readings": 5,
+    "shrinkage_nominee": "EDES"
+   },
+   {
+    "pick": 1.6060044425558075,
+    "share_budget": 35.0,
+    "share_nonlost": 35.59322033898305,
+    "exploration_shortfall": 7.155995557444193,
+    "selection_shortfall": 0.0,
+    "distinct": 33,
+    "lost_slots": 1,
+    "nominee_readings": 3,
+    "shrinkage_nominee": "ECML"
+   }
+  ]
+ },
+ "guessing_kstar": 0,
+ "informed_kstar": 0,
+ "best_scripted": {
+  "policy": "informed k=0",
+  "pick": 2.62619878168794,
+  "pick_se": 0.03615481411367739,
+  "share_budget": 0.0,
+  "share_budget_ci": [
+   0.0,
+   0.0
+  ],
+  "share_nonlost": 0.0
+ },
+ "seconds": 42.8
+}

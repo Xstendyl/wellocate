@@ -1,0 +1,27 @@
+baseline green: True
+21 mutants, each canary-verified before its verdict is believed
+
+CAUGHT  abstract keeps the biological metric
+CAUGHT  abstract keeps the amino-acid alphabet
+CAUGHT  abstract keeps the word variant
+CAUGHT  abstract keeps a protein parent
+CAUGHT  aggregated ordered by mean, which recommends the leader
+CAUGHT  aggregated invents SE=0 from one measurement
+CAUGHT  aggregated uses population sd, the flattering convention
+CAUGHT  aggregated reports sd where it says standard error
+CAUGHT  decision rule names the failure mode
+CAUGHT  decision rule leaks into the instructed rung
+CAUGHT  aggregated gains wording of its own
+CAUGHT  aggregation dropped at the nomination, the one moment that matters
+CAUGHT  blind regains the measurement-error line
+CAUGHT  forced diverges from blind
+CAUGHT  instructed loses its sigma
+CAUGHT  aggregated hides further failed orders
+CAUGHT  aggregated hides rejections
+CAUGHT  an unknown landscape silently defaults to GB1
+CAUGHT  an unknown substitution is silently ignored
+CAUGHT  every rung is silently aggregated
+CAUGHT  an unknown rung silently becomes blind
+
+21 caught, 0 missed, 0 refused (stale or drifted anchor), of 21
+restored green: True

@@ -1,0 +1,28 @@
+{
+ "tag": "rprobe",
+ "cells": 2,
+ "total_lines": 334,
+ "source_lines": 334,
+ "carried_forward_lines": 0,
+ "untouched_cell_lines": 0,
+ "replaced_lines": 0,
+ "expected_total_lines": 334,
+ "all_verified": true,
+ "empty": false,
+ "files": {
+  "instructed__anthropic_claude-opus-4.7.jsonl.gz": {
+   "lines": 194,
+   "sha256": "f463742023088764d0bcf7db85bf3b9bf2df259927f2bebed1c79e6fcd42b13a",
+   "bytes": 27812,
+   "verified": true,
+   "written_by_this_run": true
+  },
+  "instructed__google_gemini-2.5-flash.jsonl.gz": {
+   "lines": 140,
+   "sha256": "2ed936adf45595d1b77f8933779af8d0d8668c421e5cba006181a9ab2542c98a",
+   "bytes": 29388,
+   "verified": true,
+   "written_by_this_run": true
+  }
+ }
+}

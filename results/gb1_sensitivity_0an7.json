@@ -1,0 +1,93 @@
+{
+ "top_nominee": "FSRM",
+ "top_nominee_campaigns": 12,
+ "campaigns": 30,
+ "top_nominee_true": 6.274971091147244,
+ "distinct_nominees": 10,
+ "guessing": 6.086764857732206,
+ "guessing_se": 0.037651206418461175,
+ "versions": {
+  "as registered (seed bootstrap)": {
+   "n": 30,
+   "pick": 6.3624120153632235,
+   "pick_ci": [
+    6.157749803381254,
+    6.604520137844744
+   ],
+   "pick_minus_guessing": 0.27564715763101777,
+   "pick_minus_guessing_ci": [
+    0.05808676500725893,
+    0.5287523657891632
+   ],
+   "beats_guessing": true,
+   "menu_minus_blind": -0.24579499824524909,
+   "menu_minus_blind_ci": [
+    -0.8775968527282242,
+    0.37860139625464706
+   ],
+   "pairs": 30
+  },
+  "cluster bootstrap by nominee": {
+   "n": 30,
+   "pick": 6.3624120153632235,
+   "pick_ci": [
+    6.090231947422783,
+    6.821048355120495
+   ],
+   "pick_minus_guessing": 0.27564715763101777,
+   "pick_minus_guessing_ci": [
+    -0.006359744428691083,
+    0.7401826197554919
+   ],
+   "beats_guessing": false,
+   "menu_minus_blind": -0.24579499824524909,
+   "menu_minus_blind_ci": [
+    -1.09878883980382,
+    0.41253190869529416
+   ],
+   "pairs": 30
+  },
+  "FSRM collapsed to one (seed bootstrap)": {
+   "n": 19,
+   "pick": 6.413035708330369,
+   "pick_ci": [
+    6.083288058508338,
+    6.788880843705339
+   ],
+   "pick_minus_guessing": 0.3262708505981635,
+   "pick_minus_guessing_ci": [
+    -0.011633597416958408,
+    0.7092923502692405
+   ],
+   "beats_guessing": false,
+   "menu_minus_blind": -0.2920482224963188,
+   "menu_minus_blind_ci": [
+    -1.1382823664201467,
+    0.535467294516367
+   ],
+   "pairs": 19
+  },
+  "FSRM collapsed, cluster bootstrap": {
+   "n": 19,
+   "pick": 6.413035708330369,
+   "pick_ci": [
+    6.028481778093499,
+    6.969916400604078
+   ],
+   "pick_minus_guessing": 0.3262708505981635,
+   "pick_minus_guessing_ci": [
+    -0.06529986930550213,
+    0.8880199127713877
+   ],
+   "beats_guessing": false,
+   "menu_minus_blind": -0.2920482224963188,
+   "menu_minus_blind_ci": [
+    -1.3377604598604727,
+    0.5990810119005943
+   ],
+   "pairs": 19
+  }
+ },
+ "survives": false,
+ "verdict": "holds as registered only; it does not survive clustering by nominee or collapsing FSRM to one campaign"
+}

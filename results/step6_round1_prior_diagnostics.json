@@ -1,0 +1,62 @@
+[
+ {
+  "name": "GB1  (VDGV -> FWAA)",
+  "n_camp": 20,
+  "n_prop": 80,
+  "n_inpool": 58,
+  "hits": 11,
+  "rate": 0.55,
+  "chance": 0.0003471619510501649,
+  "enrichment": 1584.275,
+  "rate_upper95": 0.7413493902510877,
+  "enrichment_upper95": 2135.456918618258,
+  "hamming": {
+   "1": 42,
+   "2": 4,
+   "3": 2,
+   "4": 13
+  },
+  "n_nonparent": 61,
+  "mean_hamming": 1.7704918032786885,
+  "frac_distance_ge3": 0.2459016393442623,
+  "mean_fitness_percentile": 0.7142468082049928,
+  "se_fitness_percentile": 0.03790490217894517,
+  "z_percentile": 5.652218997784389
+ },
+ {
+  "name": "PhoQ (AVST -> TEMH)",
+  "n_camp": 20,
+  "n_prop": 78,
+  "n_inpool": 47,
+  "hits": 0,
+  "rate": 0.0,
+  "chance": 0.00035887313834559486,
+  "enrichment": 0.0,
+  "rate_upper95": 0.13910834066826522,
+  "enrichment_upper95": 387.625391272121,
+  "hamming": {
+   "1": 34,
+   "2": 16,
+   "3": 3,
+   "4": 5
+  },
+  "n_nonparent": 58,
+  "mean_hamming": 1.6379310344827587,
+  "frac_distance_ge3": 0.13793103448275862,
+  "mean_fitness_percentile": 0.41418541524294555,
+  "se_fitness_percentile": 0.042107596053325945,
+  "z_percentile": -2.037983470924748
+ },
+ {
+  "name": "contrast",
+  "diff_percentile": 0.3000613929620472,
+  "se_percentile": 0.056655372689494096,
+  "se_units_percentile": 5.296256625237754,
+  "diff_dist4": 0.1269078575466365,
+  "z_dist4": 1.931274329858294,
+  "diff_dist_ge3": 0.10797060486150367,
+  "z_dist_ge3": 1.4909339178416248,
+  "diff_mean_hamming": 0.13256076879592982,
+  "mean_hamming_is_a_separator": false
+ }
+]

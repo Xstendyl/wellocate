@@ -1,0 +1,48 @@
+# Five MB of publicly available landscape data. The download script is what makes
+# this reproducible, so the bytes themselves do not belong in history.
+data/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Never commit a key. The harness reads OPENROUTER_API_KEY from the environment.
+.env
+
+# Result outputs ARE committed (they are the paper's evidence and are small text files).
+# ONE exception, below: the raw per-call logs, which are committed as a verified gzip archive instead.
+# Add nothing else under results/ without saying here what replaces it in the repo.
+
+# RAW IN-FLIGHT CALL LOGS ARE NOT COMMITTED.
+# grid_stage1_calls.jsonl reached 55 MB at 406 of 600 campaigns, past GitHub's 50 MB warning, and the
+# top-up is an order of magnitude larger and would pass the 100 MB HARD limit, at which point a push
+# fails and the run's record is stranded on one laptop. The committed artefact is the per-cell gzip
+# archive that archive_calls() writes, which is read back line by line and SHA256'd before it replaces
+# anything. The raw logs stay on local disk, because eighteen analysis scripts read them directly.
+results/grid_*_calls.jsonl
+# EXCEPT an abandoned campaign's evidence : its calls so far and the request that failed, with the
+# provider's raw response. It is small, it is never read by an analysis, and it is the record that tells a provider
+# failure from a prompt failure. It is committed as plain JSONL; scripts/archive_index.py checks that it is tracked.
+!results/grid_*_abandoned_calls.jsonl
+
+# LaTeX build products. The PDF is committed; the rest is rebuilt by scripts/build_paper.py.
+paper/main.log
+paper/main.blg
+paper/main.aux
+paper/main.bbl
+paper/main.out
+
+# PID files for long jobs, written by scripts/runjob.sh. Machine state, not results.
+results/pids/
+
+# WELLOCATE CHUNK CACHE AND RUN LOG, not committed. scripts/wellocate_chunks.py writes one file per policy, split
+# and noise preset (about 100 MB in all) so a restart resumes where it stopped. What replaces them in the repo:
+# results/wellocate_scorecard.json and results/wellocate_noise_sweep.json, built from the chunks and carrying every
+# reported number. The chunks are seeded and rebuild exactly by rerunning the same command.
+results/wellocate_partial/
+results/wellocate_runs.log
+
+# Training outputs: large and rebuilt from the committed scripts and seeds; the summaries are under results/.
+training/out/

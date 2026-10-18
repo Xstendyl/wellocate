@@ -1,0 +1,41 @@
+{
+ "tag": "topup_deepseek",
+ "cells": 5,
+ "total_lines": 19052,
+ "source_lines": 19052,
+ "all_verified": true,
+ "empty": false,
+ "unlisted_preexisting_files": [],
+ "files": {
+  "aggregated__deepseek_deepseek-chat-v3.1.jsonl.gz": {
+   "lines": 3517,
+   "sha256": "fc4aba3dadf5c731b628ebdb674c6966ae28fd5dfc2bcd00d760742524cf16b8",
+   "bytes": 464469,
+   "verified": true
+  },
+  "blind__deepseek_deepseek-chat-v3.1.jsonl.gz": {
+   "lines": 4268,
+   "sha256": "cc332c0ba8131e261f0aaf296240cd6edfd6353127c69dd95cfaf1b917a4bf0b",
+   "bytes": 554901,
+   "verified": true
+  },
+  "decision_rule__deepseek_deepseek-chat-v3.1.jsonl.gz": {
+   "lines": 3318,
+   "sha256": "8fece5ad2e4110f25a6982b8730c9e35c2e1ee9c4f1299826c8c37c28b67c388",
+   "bytes": 547149,
+   "verified": true
+  },
+  "informed__deepseek_deepseek-chat-v3.1.jsonl.gz": {
+   "lines": 4486,
+   "sha256": "bae93b63b382fa81612d4f148ffa8facb06c0b1de2b7fa6e80e8af6953aa948c",
+   "bytes": 595776,
+   "verified": true
+  },
+  "instructed__deepseek_deepseek-chat-v3.1.jsonl.gz": {
+   "lines": 3463,
+   "sha256": "8aca8a0c897155b5077baaa2f16e741074c73a3b88508038aa462c6327210d3b",
+   "bytes": 510341,
+   "verified": true
+  }
+ }
+}

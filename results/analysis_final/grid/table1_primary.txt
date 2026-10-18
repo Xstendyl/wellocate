@@ -1,0 +1,28 @@
+TABLE 1. Primary outcome: nominated true fitness, by condition and model.
+Pool-scope scripted reference: k*=1 at 8.0057, k=0 at 7.8856. tag=stage1+topup_opus+topup_gemini+topup_deepseek, 5074 campaigns.
+Reference bracket (0ai), both at k*=1 on the same 1500 seeds: distinct variants 25.65 fair (97.6 rejections/campaign) and 39.13 pool-scope (0 rejections). Agents sit below both.
+
+condition      model                             n      mean       SE    median          mean 95% CI      vs k*
+Blind          claude-opus-4.7                 695    7.6521   0.0115    7.7165  [ 7.6297,  7.6750]    -0.3535
+Blind          deepseek-chat-v3.1              181    7.7782   0.0125    7.7287  [ 7.7531,  7.8023]    -0.2275
+Blind          gemini-2.5-flash                139    7.7029   0.0074    7.6865  [ 7.6884,  7.7176]    -0.3028
+Quantitative   claude-opus-4.7                 695    7.7251   0.0099    7.7839  [ 7.7057,  7.7444]    -0.2806
+Quantitative   deepseek-chat-v3.1              181    7.6337   0.0213    7.7287  [ 7.5911,  7.6738]    -0.3719
+Quantitative   gemini-2.5-flash                139    7.8501   0.0108    7.9397  [ 7.8290,  7.8708]    -0.1555
+Mechanism      claude-opus-4.7                 695    7.6947   0.0101    7.7287  [ 7.6746,  7.7142]    -0.3110
+Mechanism      deepseek-chat-v3.1              181    7.6641   0.0162    7.7287  [ 7.6320,  7.6947]    -0.3416
+Mechanism      gemini-2.5-flash                139    7.7076   0.0089    7.6865  [ 7.6893,  7.7240]    -0.2981
+Aggregated     claude-opus-4.7                 695    7.6613   0.0100    7.7287  [ 7.6418,  7.6811]    -0.3443
+Aggregated     deepseek-chat-v3.1              181    7.6308   0.0142    7.7287  [ 7.6023,  7.6573]    -0.3748
+Aggregated     gemini-2.5-flash                139    7.7143   0.0064    7.6865  [ 7.7025,  7.7273]    -0.2913
+Decision-rule  claude-opus-4.7                 695    7.6631   0.0103    7.7287  [ 7.6427,  7.6831]    -0.3426
+Decision-rule  deepseek-chat-v3.1              180    7.7356   0.0133    7.7287  [ 7.7088,  7.7602]    -0.2701
+Decision-rule  gemini-2.5-flash                139    7.7031   0.0059    7.6865  [ 7.6921,  7.7152]    -0.3025
+
+0ag NOMINATION FALLBACKS EXCLUDED from these primary figures: 1 campaign(s) -> Decision-rule/deepseek-chat-v3.1 1.
+A fallback is a nomination that did not parse, where campaign.py substituted best_by_mean(),
+which is exactly the Decision-rule instruction. The sensitivity keeping them is in
+summary.json under contrasts_with_fallbacks.
+
+0ah UNDEFINED SHRINKAGE COMPARATOR in 4 campaign(s), NOT excluded because the
+primary outcome is unaffected. Reason recovered per cell: Decision-rule/gemini-2.5-flash 3 (fewer than two measured variants); Mechanism/gemini-2.5-flash 1 (fewer than two measured variants)

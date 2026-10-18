@@ -1,0 +1,1031 @@
+{
+ "source": "learnability_fresh_n200.json",
+ "n_per_cell": 200,
+ "note": "held-out endpoints; see DEFERRED_CHANGES deviation 2",
+ "cells": [
+  {
+   "K": 1,
+   "cv": 0.0365,
+   "scope": "pool",
+   "kstar": 1,
+   "runner_up": 0,
+   "gap": 0.010303547862785457,
+   "gap_se": 0.024930772059204874,
+   "gap_is_a_tie": true,
+   "held_span": 0.0474106685897695,
+   "raw": {
+    "A k=0 max": 8.130250454661088,
+    "B k* max": 8.1621653018744,
+    "C k* shrinkage": 8.177661123250857,
+    "D k=0 shrinkage": 8.130250454661088,
+    "LEARNED": 8.177661123250857
+   },
+   "norm_heldout": {
+    "A k=0 max": 0.0,
+    "B k* max": 0.6731575015206227,
+    "C k* shrinkage": 1.0,
+    "D k=0 shrinkage": 0.0,
+    "LEARNED": 1.0
+   },
+   "norm_training": {
+    "A k=0 max": -0.6070977100590779,
+    "B k* max": 2.490364216485952,
+    "C k* shrinkage": 3.994294860844648,
+    "D k=0 shrinkage": -0.6070977100590779,
+    "LEARNED": 3.994294860844648
+   },
+   "kept": {
+    "A k=0 max": 200,
+    "B k* max": 200,
+    "C k* shrinkage": 200,
+    "D k=0 shrinkage": 200,
+    "LEARNED": 200
+   },
+   "paired": {
+    "B k* max - A k=0 max": {
+     "diff": 3.09746192654503,
+     "lo": -1.8953603740527463,
+     "hi": 8.307186333001784,
+     "n": 200
+    },
+    "C k* shrinkage - B k* max": {
+     "diff": 1.503930644358696,
+     "lo": 0.46003257089344235,
+     "hi": 2.645621771508817,
+     "n": 200
+    },
+    "C k* shrinkage - A k=0 max": {
+     "diff": 4.601392570903726,
+     "lo": -0.1220096158791332,
+     "hi": 9.524228898538194,
+     "n": 200
+    }
+   }
+  },
+  {
+   "K": 1,
+   "cv": 0.0365,
+   "scope": "fair",
+   "kstar": 1,
+   "runner_up": 0,
+   "gap": 0.08186696572725721,
+   "gap_se": 0.027449693452101707,
+   "gap_is_a_tie": false,
+   "held_span": 0.06499555023942083,
+   "raw": {
+    "A k=0 max": 7.990701767089955,
+    "B k* max": 8.039990574670421,
+    "C k* shrinkage": 8.056731130119777,
+    "D k=0 shrinkage": 7.991735579880356,
+    "LEARNED": 8.056731130119777
+   },
+   "norm_heldout": {
+    "A k=0 max": -0.015905901043894655,
+    "B k* max": 0.7424353607640842,
+    "C k* shrinkage": 1.0,
+    "D k=0 shrinkage": 0.0,
+    "LEARNED": 1.0
+   },
+   "norm_training": {
+    "A k=0 max": -0.15696555933127265,
+    "B k* max": 0.44509422317826036,
+    "C k* shrinkage": 0.6495790883573094,
+    "D k=0 shrinkage": -0.14433759906404964,
+    "LEARNED": 0.6495790883573094
+   },
+   "kept": {
+    "A k=0 max": 200,
+    "B k* max": 200,
+    "C k* shrinkage": 200,
+    "D k=0 shrinkage": 200,
+    "LEARNED": 200
+   },
+   "paired": {
+    "B k* max - A k=0 max": {
+     "diff": 0.602059782509533,
+     "lo": -0.1306742620293142,
+     "hi": 1.3317177823720359,
+     "n": 200
+    },
+    "C k* shrinkage - B k* max": {
+     "diff": 0.20448486517904899,
+     "lo": 0.04639073373649612,
+     "hi": 0.38032965084266257,
+     "n": 200
+    },
+    "C k* shrinkage - A k=0 max": {
+     "diff": 0.806544647688582,
+     "lo": 0.07298194427102224,
+     "hi": 1.5212872224543295,
+     "n": 200
+    }
+   }
+  },
+  {
+   "K": 1,
+   "cv": 0.073,
+   "scope": "pool",
+   "kstar": 1,
+   "runner_up": 2,
+   "gap": 0.025436271378229267,
+   "gap_se": 0.0277925561047595,
+   "gap_is_a_tie": true,
+   "held_span": 0.0812753989072661,
+   "raw": {
+    "A k=0 max": 7.940186885307664,
+    "B k* max": 7.99678006787941,
+    "C k* shrinkage": 8.02146228421493,
+    "D k=0 shrinkage": 7.940186885307664,
+    "LEARNED": 8.02146228421493
+   },
+   "norm_heldout": {
+    "A k=0 max": 0.0,
+    "B k* max": 0.696313808761708,
+    "C k* shrinkage": 1.0,
+    "D k=0 shrinkage": 0.0,
+    "LEARNED": 1.0
+   },
+   "norm_training": {
+    "A k=0 max": 0.4467956463721138,
+    "B k* max": 1.0580274570257486,
+    "C k* shrinkage": 1.3246064882116912,
+    "D k=0 shrinkage": 0.4467956463721138,
+    "LEARNED": 1.3246064882116912
+   },
+   "kept": {
+    "A k=0 max": 200,
+    "B k* max": 200,
+    "C k* shrinkage": 200,
+    "D k=0 shrinkage": 200,
+    "LEARNED": 200
+   },
+   "paired": {
+    "B k* max - A k=0 max": {
+     "diff": 0.6112318106536349,
+     "lo": -0.11861836447770248,
+     "hi": 1.297154790037349,
+     "n": 200
+    },
+    "C k* shrinkage - B k* max": {
+     "diff": 0.26657903118594256,
+     "lo": -0.10616713375957565,
+     "hi": 0.6405828097723942,
+     "n": 200
+    },
+    "C k* shrinkage - A k=0 max": {
+     "diff": 0.8778108418395775,
+     "lo": 0.1693331939790333,
+     "hi": 1.5916206292892394,
+     "n": 200
+    }
+   }
+  },
+  {
+   "K": 1,
+   "cv": 0.073,
+   "scope": "fair",
+   "kstar": 1,
+   "runner_up": 2,
+   "gap": 0.09793999096967637,
+   "gap_se": 0.03328264174969459,
+   "gap_is_a_tie": false,
+   "held_span": 0.1576809011553033,
+   "raw": {
+    "A k=0 max": 7.735858056929252,
+    "B k* max": 7.890155274302312,
+    "C k* shrinkage": 7.899242735630563,
+    "D k=0 shrinkage": 7.7415618344752595,
+    "LEARNED": 7.899242735630563
+   },
+   "norm_heldout": {
+    "A k=0 max": -0.036172913169679445,
+    "B k* max": 0.9423680276960062,
+    "C k* shrinkage": 1.0,
+    "D k=0 shrinkage": 0.0,
+    "LEARNED": 1.0
+   },
+   "norm_training": {
+    "A k=0 max": -0.6613917635636971,
+    "B k* max": 0.3936757750174372,
+    "C k* shrinkage": 0.4558148441386138,
+    "D k=0 shrinkage": -0.6223899549858364,
+    "LEARNED": 0.4558148441386138
+   },
+   "kept": {
+    "A k=0 max": 200,
+    "B k* max": 200,
+    "C k* shrinkage": 200,
+    "D k=0 shrinkage": 200,
+    "LEARNED": 200
+   },
+   "paired": {
+    "B k* max - A k=0 max": {
+     "diff": 1.0550675385811343,
+     "lo": 0.5040542684859937,
+     "hi": 1.5952793195850272,
+     "n": 200
+    },
+    "C k* shrinkage - B k* max": {
+     "diff": 0.06213906912117658,
+     "lo": -0.1291443726090011,
+     "hi": 0.2575705198487182,
+     "n": 200
+    },
+    "C k* shrinkage - A k=0 max": {
+     "diff": 1.1172066077023108,
+     "lo": 0.5700043354302848,
+     "hi": 1.6598007082822286,
+     "n": 200
+    }
+   }
+  },
+  {
+   "K": 1,
+   "cv": 0.146,
+   "scope": "pool",
+   "kstar": 1,
+   "runner_up": 2,
+   "gap": 0.06234218541232445,
+   "gap_se": 0.03407648877756755,
+   "gap_is_a_tie": true,
+   "held_span": 0.1441445074877592,
+   "raw": {
+    "A k=0 max": 7.543174185167643,
+    "B k* max": 7.650273100815663,
+    "C k* shrinkage": 7.687318692655402,
+    "D k=0 shrinkage": 7.543174185167643,
+    "LEARNED": 7.687318692655402
+   },
+   "norm_heldout": {
+    "A k=0 max": 0.0,
+    "B k* max": 0.7429968544386965,
+    "C k* shrinkage": 1.0,
+    "D k=0 shrinkage": 0.0,
+    "LEARNED": 1.0
+   },
+   "norm_training": {
+    "A k=0 max": -0.8569761958500234,
+    "B k* max": -0.12937355828714073,
+    "C k* shrinkage": 0.1223047166008905,
+    "D k=0 shrinkage": -0.8569761958500234,
+    "LEARNED": 0.1223047166008905
+   },
+   "kept": {
+    "A k=0 max": 200,
+    "B k* max": 200,
+    "C k* shrinkage": 200,
+    "D k=0 shrinkage": 200,
+    "LEARNED": 200
+   },
+   "paired": {
+    "B k* max - A k=0 max": {
+     "diff": 0.7276026375628827,
+     "lo": 0.19035164359547296,
+     "hi": 1.2624821924725216,
+     "n": 200
+    },
+    "C k* shrinkage - B k* max": {
+     "diff": 0.2516782748880312,
+     "lo": -0.09940330183368067,
+     "hi": 0.6353985175303034,
+     "n": 200
+    },
+    "C k* shrinkage - A k=0 max": {
+     "diff": 0.9792809124509139,
+     "lo": 0.4401902124422147,
+     "hi": 1.5197344641989523,
+     "n": 200
+    }
+   }
+  },
+  {
+   "K": 1,
+   "cv": 0.146,
+   "scope": "fair",
+   "kstar": 2,
+   "runner_up": 1,
+   "gap": 0.013273685750229842,
+   "gap_se": 0.040790058723781136,
+   "gap_is_a_tie": true,
+   "held_span": 0.22309286434690012,
+   "raw": {
+    "A k=0 max": 7.414728058390607,
+    "B k* max": 7.629462301210398,
+    "C k* shrinkage": 7.648588920726497,
+    "D k=0 shrinkage": 7.425496056379597,
+    "LEARNED": 7.6479881107162
+   },
+   "norm_heldout": {
+    "A k=0 max": -0.04826688661922352,
+    "B k* max": 0.9142661080976676,
+    "C k* shrinkage": 1.0,
+    "D k=0 shrinkage": 0.0,
+    "LEARNED": 0.9973069061977603
+   },
+   "norm_training": {
+    "A k=0 max": -0.49690033187203525,
+    "B k* max": 0.7454004454447652,
+    "C k* shrinkage": 0.8560535670907319,
+    "D k=0 shrinkage": -0.4346042951700786,
+    "LEARNED": 0.8525777044010672
+   },
+   "kept": {
+    "A k=0 max": 200,
+    "B k* max": 200,
+    "C k* shrinkage": 200,
+    "D k=0 shrinkage": 200,
+    "LEARNED": 200
+   },
+   "paired": {
+    "B k* max - A k=0 max": {
+     "diff": 1.2423007773168004,
+     "lo": 0.7386945316775851,
+     "hi": 1.7640477024873802,
+     "n": 200
+    },
+    "C k* shrinkage - B k* max": {
+     "diff": 0.11065312164596659,
+     "lo": -0.13452179892534802,
+     "hi": 0.35736196626583744,
+     "n": 200
+    },
+    "C k* shrinkage - A k=0 max": {
+     "diff": 1.3529538989627672,
+     "lo": 0.8522486945744552,
+     "hi": 1.8747256886283177,
+     "n": 200
+    }
+   }
+  },
+  {
+   "K": 2,
+   "cv": 0.0365,
+   "scope": "pool",
+   "kstar": 1,
+   "runner_up": 2,
+   "gap": 0.005757929794996657,
+   "gap_se": 0.021548071547583723,
+   "gap_is_a_tie": true,
+   "held_span": -0.0076952550798008446,
+   "raw": {
+    "A k=0 max": 8.059756141109574,
+    "B k* max": 8.037479100217926,
+    "C k* shrinkage": 8.052060886029773,
+    "D k=0 shrinkage": 8.059756141109574,
+    "LEARNED": 8.052060886029773
+   },
+   "norm_heldout": {
+    "A k=0 max": NaN,
+    "B k* max": NaN,
+    "C k* shrinkage": NaN,
+    "D k=0 shrinkage": NaN,
+    "LEARNED": NaN
+   },
+   "norm_training": {
+    "A k=0 max": 0.8579464581078665,
+    "B k* max": 0.21288250047807575,
+    "C k* shrinkage": 0.6351192109483007,
+    "D k=0 shrinkage": 0.8579464581078665,
+    "LEARNED": 0.6351192109483007
+   },
+   "kept": {
+    "A k=0 max": 200,
+    "B k* max": 200,
+    "C k* shrinkage": 200,
+    "D k=0 shrinkage": 200,
+    "LEARNED": 200
+   },
+   "paired": {
+    "B k* max - A k=0 max": {
+     "diff": -0.6450639576297907,
+     "lo": -1.994260737456736,
+     "hi": 0.8474930555336252,
+     "n": 200
+    },
+    "C k* shrinkage - B k* max": {
+     "diff": 0.42223671047022493,
+     "lo": 0.01765729870357247,
+     "hi": 0.8324093444721852,
+     "n": 200
+    },
+    "C k* shrinkage - A k=0 max": {
+     "diff": -0.22282724715956578,
+     "lo": -1.622408793764148,
+     "hi": 1.271003780090844,
+     "n": 200
+    }
+   }
+  },
+  {
+   "K": 2,
+   "cv": 0.0365,
+   "scope": "fair",
+   "kstar": 0,
+   "runner_up": 1,
+   "gap": 0.03635235979707829,
+   "gap_se": 0.02772360157918286,
+   "gap_is_a_tie": true,
+   "held_span": 0.0,
+   "raw": {
+    "A k=0 max": 7.752351036157018,
+    "B k* max": 7.752351036157018,
+    "C k* shrinkage": 7.752351036157018,
+    "D k=0 shrinkage": 7.752351036157018,
+    "LEARNED": 7.789506861659529
+   },
+   "norm_heldout": {
+    "A k=0 max": NaN,
+    "B k* max": NaN,
+    "C k* shrinkage": NaN,
+    "D k=0 shrinkage": NaN,
+    "LEARNED": NaN
+   },
+   "norm_training": {
+    "A k=0 max": NaN,
+    "B k* max": NaN,
+    "C k* shrinkage": NaN,
+    "D k=0 shrinkage": NaN,
+    "LEARNED": NaN
+   },
+   "kept": {
+    "A k=0 max": 200,
+    "B k* max": 200,
+    "C k* shrinkage": 200,
+    "D k=0 shrinkage": 200,
+    "LEARNED": 200
+   },
+   "paired": {}
+  },
+  {
+   "K": 2,
+   "cv": 0.073,
+   "scope": "pool",
+   "kstar": 1,
+   "runner_up": 2,
+   "gap": 0.012731329119013597,
+   "gap_se": 0.029244055217144526,
+   "gap_is_a_tie": true,
+   "held_span": 0.10638172876008412,
+   "raw": {
+    "A k=0 max": 7.846785372999071,
+    "B k* max": 7.910973454973146,
+    "C k* shrinkage": 7.953167101759155,
+    "D k=0 shrinkage": 7.846785372999071,
+    "LEARNED": 7.953167101759155
+   },
+   "norm_heldout": {
+    "A k=0 max": 0.0,
+    "B k* max": 0.6033750600052157,
+    "C k* shrinkage": 1.0,
+    "D k=0 shrinkage": 0.0,
+    "LEARNED": 1.0
+   },
+   "norm_training": {
+    "A k=0 max": 0.3246620366778307,
+    "B k* max": 1.214169049586866,
+    "C k* shrinkage": 1.7988810952205367,
+    "D k=0 shrinkage": 0.3246620366778307,
+    "LEARNED": 1.7988810952205367
+   },
+   "kept": {
+    "A k=0 max": 200,
+    "B k* max": 200,
+    "C k* shrinkage": 200,
+    "D k=0 shrinkage": 200,
+    "LEARNED": 200
+   },
+   "paired": {
+    "B k* max - A k=0 max": {
+     "diff": 0.8895070129090353,
+     "lo": -0.04708130870496642,
+     "hi": 1.79511155643046,
+     "n": 200
+    },
+    "C k* shrinkage - B k* max": {
+     "diff": 0.5847120456336706,
+     "lo": 0.19813459028399857,
+     "hi": 0.9804748907193762,
+     "n": 200
+    },
+    "C k* shrinkage - A k=0 max": {
+     "diff": 1.474219058542706,
+     "lo": 0.5175986335216336,
+     "hi": 2.4201007934980794,
+     "n": 200
+    }
+   }
+  },
+  {
+   "K": 2,
+   "cv": 0.073,
+   "scope": "fair",
+   "kstar": 1,
+   "runner_up": 2,
+   "gap": 0.011385279568875384,
+   "gap_se": 0.034703899515352105,
+   "gap_is_a_tie": true,
+   "held_span": 0.13593483045161925,
+   "raw": {
+    "A k=0 max": 7.532369351444169,
+    "B k* max": 7.652772668215584,
+    "C k* shrinkage": 7.6679080710479415,
+    "D k=0 shrinkage": 7.531973240596322,
+    "LEARNED": 7.6679080710479415
+   },
+   "norm_heldout": {
+    "A k=0 max": 0.0029139761055406816,
+    "B k* max": 0.8886569190392711,
+    "C k* shrinkage": 1.0,
+    "D k=0 shrinkage": 0.0,
+    "LEARNED": 1.0
+   },
+   "norm_training": {
+    "A k=0 max": -0.12895844660193068,
+    "B k* max": 0.6397263480362835,
+    "C k* shrinkage": 0.7363545334545096,
+    "D k=0 shrinkage": -0.13148731701759633,
+    "LEARNED": 0.7363545334545096
+   },
+   "kept": {
+    "A k=0 max": 200,
+    "B k* max": 200,
+    "C k* shrinkage": 200,
+    "D k=0 shrinkage": 200,
+    "LEARNED": 200
+   },
+   "paired": {
+    "B k* max - A k=0 max": {
+     "diff": 0.7686847946382142,
+     "lo": 0.2721799694005575,
+     "hi": 1.250097409083781,
+     "n": 200
+    },
+    "C k* shrinkage - B k* max": {
+     "diff": 0.09662818541822615,
+     "lo": -0.09069616504374992,
+     "hi": 0.28912462558136764,
+     "n": 200
+    },
+    "C k* shrinkage - A k=0 max": {
+     "diff": 0.8653129800564403,
+     "lo": 0.38008469968554864,
+     "hi": 1.3633191407363905,
+     "n": 200
+    }
+   }
+  },
+  {
+   "K": 2,
+   "cv": 0.146,
+   "scope": "pool",
+   "kstar": 2,
+   "runner_up": 1,
+   "gap": 0.04413276811882621,
+   "gap_se": 0.03493640447958483,
+   "gap_is_a_tie": true,
+   "held_span": 0.20745951831154397,
+   "raw": {
+    "A k=0 max": 7.533891955043106,
+    "B k* max": 7.678215033043023,
+    "C k* shrinkage": 7.74135147335465,
+    "D k=0 shrinkage": 7.533891955043106,
+    "LEARNED": 7.714935090825946
+   },
+   "norm_heldout": {
+    "A k=0 max": 0.0,
+    "B k* max": 0.6956686257373174,
+    "C k* shrinkage": 1.0,
+    "D k=0 shrinkage": 0.0,
+    "LEARNED": 0.8726672907384591
+   },
+   "norm_training": {
+    "A k=0 max": 0.02559692204365277,
+    "B k* max": 0.7228090355328908,
+    "C k* shrinkage": 1.0278156332156323,
+    "D k=0 shrinkage": 0.02559692204365277,
+    "LEARNED": 0.9002004094494926
+   },
+   "kept": {
+    "A k=0 max": 200,
+    "B k* max": 200,
+    "C k* shrinkage": 200,
+    "D k=0 shrinkage": 200,
+    "LEARNED": 200
+   },
+   "paired": {
+    "B k* max - A k=0 max": {
+     "diff": 0.697212113489238,
+     "lo": 0.31042176554403106,
+     "hi": 1.1047323697406537,
+     "n": 200
+    },
+    "C k* shrinkage - B k* max": {
+     "diff": 0.3050065976827416,
+     "lo": 0.0824757940626335,
+     "hi": 0.5265667582302489,
+     "n": 200
+    },
+    "C k* shrinkage - A k=0 max": {
+     "diff": 1.0022187111719796,
+     "lo": 0.6094161907990362,
+     "hi": 1.4112942615959743,
+     "n": 200
+    }
+   }
+  },
+  {
+   "K": 2,
+   "cv": 0.146,
+   "scope": "fair",
+   "kstar": 1,
+   "runner_up": 2,
+   "gap": -0.0014571438112122121,
+   "gap_se": 0.04348128213790871,
+   "gap_is_a_tie": true,
+   "held_span": 0.10982634291210402,
+   "raw": {
+    "A k=0 max": 7.3334304378139175,
+    "B k* max": 7.456259109665964,
+    "C k* shrinkage": 7.44155854425287,
+    "D k=0 shrinkage": 7.331732201340766,
+    "LEARNED": 7.44155854425287
+   },
+   "norm_heldout": {
+    "A k=0 max": 0.015462924723903544,
+    "B k* max": 1.1338528173050315,
+    "C k* shrinkage": 1.0,
+    "D k=0 shrinkage": 0.0,
+    "LEARNED": 1.0
+   },
+   "norm_training": {
+    "A k=0 max": 0.00948049667106029,
+    "B k* max": 0.5444310191832779,
+    "C k* shrinkage": 0.48040626803696446,
+    "D k=0 shrinkage": 0.002084239144513135,
+    "LEARNED": 0.48040626803696446
+   },
+   "kept": {
+    "A k=0 max": 200,
+    "B k* max": 200,
+    "C k* shrinkage": 200,
+    "D k=0 shrinkage": 200,
+    "LEARNED": 200
+   },
+   "paired": {
+    "B k* max - A k=0 max": {
+     "diff": 0.5349505225122175,
+     "lo": 0.18405430504208492,
+     "hi": 0.9069341891938822,
+     "n": 200
+    },
+    "C k* shrinkage - B k* max": {
+     "diff": -0.06402475114631331,
+     "lo": -0.2591739451687919,
+     "hi": 0.13245869831429816,
+     "n": 200
+    },
+    "C k* shrinkage - A k=0 max": {
+     "diff": 0.4709257713659042,
+     "lo": 0.10244628627455643,
+     "hi": 0.8609433113889637,
+     "n": 200
+    }
+   }
+  },
+  {
+   "K": 3,
+   "cv": 0.0365,
+   "scope": "pool",
+   "kstar": 0,
+   "runner_up": 1,
+   "gap": 0.011307527261394532,
+   "gap_se": 0.026180618446659722,
+   "gap_is_a_tie": true,
+   "held_span": 0.0,
+   "raw": {
+    "A k=0 max": 7.9848714916443955,
+    "B k* max": 7.9848714916443955,
+    "C k* shrinkage": 7.9848714916443955,
+    "D k=0 shrinkage": 7.9848714916443955,
+    "LEARNED": 8.037123769492561
+   },
+   "norm_heldout": {
+    "A k=0 max": NaN,
+    "B k* max": NaN,
+    "C k* shrinkage": NaN,
+    "D k=0 shrinkage": NaN,
+    "LEARNED": NaN
+   },
+   "norm_training": {
+    "A k=0 max": NaN,
+    "B k* max": NaN,
+    "C k* shrinkage": NaN,
+    "D k=0 shrinkage": NaN,
+    "LEARNED": NaN
+   },
+   "kept": {
+    "A k=0 max": 200,
+    "B k* max": 200,
+    "C k* shrinkage": 200,
+    "D k=0 shrinkage": 200,
+    "LEARNED": 200
+   },
+   "paired": {}
+  },
+  {
+   "K": 3,
+   "cv": 0.0365,
+   "scope": "fair",
+   "kstar": 1,
+   "runner_up": 0,
+   "gap": 0.003671248691142485,
+   "gap_se": 0.028338868166437183,
+   "gap_is_a_tie": true,
+   "held_span": -0.003709255233162345,
+   "raw": {
+    "A k=0 max": 7.458217009292724,
+    "B k* max": 7.4395605136615,
+    "C k* shrinkage": 7.46684069522443,
+    "D k=0 shrinkage": 7.470549950457593,
+    "LEARNED": 7.46684069522443
+   },
+   "norm_heldout": {
+    "A k=0 max": NaN,
+    "B k* max": NaN,
+    "C k* shrinkage": NaN,
+    "D k=0 shrinkage": NaN,
+    "LEARNED": NaN
+   },
+   "norm_training": {
+    "A k=0 max": 5.415856323900807,
+    "B k* max": 0.33407156869375304,
+    "C k* shrinkage": 7.764835283705588,
+    "D k=0 shrinkage": 8.775187767347289,
+    "LEARNED": 7.764835283705588
+   },
+   "kept": {
+    "A k=0 max": 200,
+    "B k* max": 200,
+    "C k* shrinkage": 196,
+    "D k=0 shrinkage": 196,
+    "LEARNED": 196
+   },
+   "paired": {
+    "B k* max - A k=0 max": {
+     "diff": -5.081784755207054,
+     "lo": -20.37184169173838,
+     "hi": 9.946037207860522,
+     "n": 200
+    },
+    "C k* shrinkage - B k* max": {
+     "diff": 7.384152603723807,
+     "lo": -16.034846574374235,
+     "hi": 31.29485286610351,
+     "n": 196
+    },
+    "C k* shrinkage - A k=0 max": {
+     "diff": 2.198657955553342,
+     "lo": -21.778004751722158,
+     "hi": 26.73996704539947,
+     "n": 196
+    }
+   }
+  },
+  {
+   "K": 3,
+   "cv": 0.073,
+   "scope": "pool",
+   "kstar": 1,
+   "runner_up": 2,
+   "gap": 0.022617277677969817,
+   "gap_se": 0.02638906490031504,
+   "gap_is_a_tie": true,
+   "held_span": 0.04683084062427767,
+   "raw": {
+    "A k=0 max": 7.8153628194787546,
+    "B k* max": 7.84857758108231,
+    "C k* shrinkage": 7.862193660103032,
+    "D k=0 shrinkage": 7.8153628194787546,
+    "LEARNED": 7.862193660103032
+   },
+   "norm_heldout": {
+    "A k=0 max": 0.0,
+    "B k* max": 0.709249741426518,
+    "C k* shrinkage": 1.0,
+    "D k=0 shrinkage": 0.0,
+    "LEARNED": 1.0
+   },
+   "norm_training": {
+    "A k=0 max": 0.02578261518984419,
+    "B k* max": 0.39815182012965705,
+    "C k* shrinkage": 0.550801072286295,
+    "D k=0 shrinkage": 0.02578261518984419,
+    "LEARNED": 0.550801072286295
+   },
+   "kept": {
+    "A k=0 max": 200,
+    "B k* max": 200,
+    "C k* shrinkage": 200,
+    "D k=0 shrinkage": 200,
+    "LEARNED": 200
+   },
+   "paired": {
+    "B k* max - A k=0 max": {
+     "diff": 0.37236920493981285,
+     "lo": -0.46494264464884516,
+     "hi": 1.2019516215696013,
+     "n": 200
+    },
+    "C k* shrinkage - B k* max": {
+     "diff": 0.15264925215663805,
+     "lo": -0.24122296158535897,
+     "hi": 0.5295020926038803,
+     "n": 200
+    },
+    "C k* shrinkage - A k=0 max": {
+     "diff": 0.5250184570964509,
+     "lo": -0.34348229467689784,
+     "hi": 1.346544282447188,
+     "n": 200
+    }
+   }
+  },
+  {
+   "K": 3,
+   "cv": 0.073,
+   "scope": "fair",
+   "kstar": 1,
+   "runner_up": 2,
+   "gap": 0.05364636730190418,
+   "gap_se": 0.030271655852793237,
+   "gap_is_a_tie": true,
+   "held_span": 0.031764925558555035,
+   "raw": {
+    "A k=0 max": 7.336454129897378,
+    "B k* max": 7.341742943805605,
+    "C k* shrinkage": 7.378067039898448,
+    "D k=0 shrinkage": 7.346302114339893,
+    "LEARNED": 7.378067039898448
+   },
+   "norm_heldout": {
+    "A k=0 max": -0.3100269957932417,
+    "B k* max": -0.14352845014175294,
+    "C k* shrinkage": 1.0,
+    "D k=0 shrinkage": 0.0,
+    "LEARNED": 1.0
+   },
+   "norm_training": {
+    "A k=0 max": 0.2355464346470069,
+    "B k* max": 0.2865934306832099,
+    "C k* shrinkage": 0.6371892393929066,
+    "D k=0 shrinkage": 0.3305979965897733,
+    "LEARNED": 0.6371892393929066
+   },
+   "kept": {
+    "A k=0 max": 200,
+    "B k* max": 200,
+    "C k* shrinkage": 196,
+    "D k=0 shrinkage": 196,
+    "LEARNED": 196
+   },
+   "paired": {
+    "B k* max - A k=0 max": {
+     "diff": 0.051046996036203024,
+     "lo": -0.47762831208183576,
+     "hi": 0.5854974766066904,
+     "n": 200
+    },
+    "C k* shrinkage - B k* max": {
+     "diff": 0.36821199456777604,
+     "lo": -0.4667065773370066,
+     "hi": 1.2830166318937601,
+     "n": 196
+    },
+    "C k* shrinkage - A k=0 max": {
+     "diff": 0.4203007660332893,
+     "lo": -0.41895185209717456,
+     "hi": 1.2969993253155463,
+     "n": 196
+    }
+   }
+  },
+  {
+   "K": 3,
+   "cv": 0.146,
+   "scope": "pool",
+   "kstar": 2,
+   "runner_up": 1,
+   "gap": 0.021154594347247768,
+   "gap_se": 0.03724394600487591,
+   "gap_is_a_tie": true,
+   "held_span": 0.21476711843738627,
+   "raw": {
+    "A k=0 max": 7.420398771923331,
+    "B k* max": 7.571670300876058,
+    "C k* shrinkage": 7.635165890360717,
+    "D k=0 shrinkage": 7.420398771923331,
+    "LEARNED": 7.588674443740324
+   },
+   "norm_heldout": {
+    "A k=0 max": 0.0,
+    "B k* max": 0.7043514391465349,
+    "C k* shrinkage": 1.0,
+    "D k=0 shrinkage": 0.0,
+    "LEARNED": 0.7835262354933171
+   },
+   "norm_training": {
+    "A k=0 max": -2.162411818997903,
+    "B k* max": 0.3465867051017394,
+    "C k* shrinkage": 1.3997283068742103,
+    "D k=0 shrinkage": -2.162411818997903,
+    "LEARNED": 0.628618424126368
+   },
+   "kept": {
+    "A k=0 max": 200,
+    "B k* max": 200,
+    "C k* shrinkage": 200,
+    "D k=0 shrinkage": 200,
+    "LEARNED": 200
+   },
+   "paired": {
+    "B k* max - A k=0 max": {
+     "diff": 2.5089985240996424,
+     "lo": 1.1289761448801363,
+     "hi": 4.009459024461831,
+     "n": 200
+    },
+    "C k* shrinkage - B k* max": {
+     "diff": 1.0531416017724708,
+     "lo": 0.3576214259690904,
+     "hi": 1.8154200092313721,
+     "n": 200
+    },
+    "C k* shrinkage - A k=0 max": {
+     "diff": 3.562140125872113,
+     "lo": 2.1594551612739177,
+     "hi": 5.034170792521948,
+     "n": 200
+    }
+   }
+  },
+  {
+   "K": 3,
+   "cv": 0.146,
+   "scope": "fair",
+   "kstar": 1,
+   "runner_up": 2,
+   "gap": 0.028908687259042238,
+   "gap_se": 0.03379623204021666,
+   "gap_is_a_tie": true,
+   "held_span": 0.07851326110148449,
+   "raw": {
+    "A k=0 max": 7.1877346143461285,
+    "B k* max": 7.220263429720352,
+    "C k* shrinkage": 7.27306076773602,
+    "D k=0 shrinkage": 7.194547506634535,
+    "LEARNED": 7.27306076773602
+   },
+   "norm_heldout": {
+    "A k=0 max": -0.08677377799402021,
+    "B k* max": 0.32753604582258755,
+    "C k* shrinkage": 1.0,
+    "D k=0 shrinkage": 0.0,
+    "LEARNED": 1.0
+   },
+   "norm_training": {
+    "A k=0 max": 0.37089429418028674,
+    "B k* max": 0.5557741244704524,
+    "C k* shrinkage": 0.8558515413641541,
+    "D k=0 shrinkage": 0.4096158509162262,
+    "LEARNED": 0.8558515413641541
+   },
+   "kept": {
+    "A k=0 max": 200,
+    "B k* max": 200,
+    "C k* shrinkage": 196,
+    "D k=0 shrinkage": 196,
+    "LEARNED": 196
+   },
+   "paired": {
+    "B k* max - A k=0 max": {
+     "diff": 0.1848798302901656,
+     "lo": -0.17369826410190883,
+     "hi": 0.5646014305607485,
+     "n": 200
+    },
+    "C k* shrinkage - B k* max": {
+     "diff": 0.3347062808600087,
+     "lo": -0.19243965017288409,
+     "hi": 0.8766819748742444,
+     "n": 196
+    },
+    "C k* shrinkage - A k=0 max": {
+     "diff": 0.46812417516197274,
+     "lo": -0.04384152659388946,
+     "hi": 1.004215030691871,
+     "n": 196
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,212 @@
+{
+ "gemini-3.1-pro-preview|grid_blind": {
+  "campaigns": 2,
+  "calls_per_campaign": 97.0,
+  "prompt_tokens": 1611.1237113402062,
+  "reasoning_median": 254.5,
+  "reasoning_p90": 589,
+  "reasoning_max": 1202,
+  "calls_with_reasoning": 194,
+  "visible_median": 13.0,
+  "rejections": [
+   92,
+   96
+  ],
+  "lost_rejection": [
+   14,
+   12
+  ],
+  "lost_rounds": [
+   0,
+   0
+  ],
+  "share": [
+   11.7,
+   18.3
+  ],
+  "distinct": [
+   39,
+   36
+  ],
+  "pick": [
+   8.011,
+   7.469
+  ],
+  "cost_per_campaign": 0.6936419999999999
+ },
+ "gpt-6.1-sol|grid_blind": {
+  "campaigns": 2,
+  "calls_per_campaign": 51.5,
+  "prompt_tokens": 1013.7669902912621,
+  "reasoning_median": 0,
+  "reasoning_p90": 108,
+  "reasoning_max": 222,
+  "calls_with_reasoning": 50,
+  "visible_median": 21,
+  "rejections": [
+   41,
+   33
+  ],
+  "lost_rejection": [
+   2,
+   1
+  ],
+  "lost_rounds": [
+   0,
+   0
+  ],
+  "share": [
+   25.0,
+   55.0
+  ],
+  "distinct": [
+   43,
+   26
+  ],
+  "pick": [
+   8.025,
+   8.168
+  ],
+  "cost_per_campaign": 0.15709724999999997
+ },
+ "gemini-3.1-pro-preview|gb1_blind": {
+  "campaigns": 2,
+  "calls_per_campaign": 56.0,
+  "prompt_tokens": 1070.142857142857,
+  "reasoning_median": 270.5,
+  "reasoning_p90": 473,
+  "reasoning_max": 15361,
+  "calls_with_reasoning": 112,
+  "visible_median": 13.0,
+  "rejections": [
+   41,
+   42
+  ],
+  "lost_rejection": [
+   1,
+   2
+  ],
+  "lost_rounds": [
+   0,
+   0
+  ],
+  "share": [
+   6.7,
+   13.3
+  ],
+  "distinct": [
+   52,
+   43
+  ],
+  "pick": [
+   4.486,
+   6.878
+  ],
+  "cost_per_campaign": 0.42106200000000005
+ },
+ "gpt-6.1-sol|gb1_blind": {
+  "campaigns": 2,
+  "calls_per_campaign": 47.5,
+  "prompt_tokens": 970.0526315789474,
+  "reasoning_median": 52,
+  "reasoning_p90": 158,
+  "reasoning_max": 234,
+  "calls_with_reasoning": 57,
+  "visible_median": 22,
+  "rejections": [
+   31,
+   33
+  ],
+  "lost_rejection": [
+   0,
+   1
+  ],
+  "lost_rounds": [
+   0,
+   0
+  ],
+  "share": [
+   18.3,
+   23.3
+  ],
+  "distinct": [
+   47,
+   43
+  ],
+  "pick": [
+   5.842,
+   5.593
+  ],
+  "cost_per_campaign": 0.1524535
+ },
+ "gemini-3.1-pro-preview|gb1_menu": {
+  "campaigns": 2,
+  "calls_per_campaign": 41.0,
+  "prompt_tokens": 1109.2560975609756,
+  "reasoning_median": 196.5,
+  "reasoning_p90": 500,
+  "reasoning_max": 903,
+  "calls_with_reasoning": 82,
+  "visible_median": 14.5,
+  "rejections": [
+   13,
+   41
+  ],
+  "lost_rejection": [
+   0,
+   4
+  ],
+  "lost_rounds": [
+   0,
+   0
+  ],
+  "share": [
+   6.7,
+   10.0
+  ],
+  "distinct": [
+   54,
+   46
+  ],
+  "pick": [
+   4.17,
+   4.17
+  ],
+  "cost_per_campaign": 0.22868899999999998
+ },
+ "gpt-6.1-sol|gb1_menu": {
+  "campaigns": 2,
+  "calls_per_campaign": 40.0,
+  "prompt_tokens": 1048.1375,
+  "reasoning_median": 0.0,
+  "reasoning_p90": 110,
+  "reasoning_max": 157,
+  "calls_with_reasoning": 22,
+  "visible_median": 21.5,
+  "rejections": [
+   26,
+   27
+  ],
+  "lost_rejection": [
+   2,
+   3
+  ],
+  "lost_rounds": [
+   0,
+   0
+  ],
+  "share": [
+   11.7,
+   13.3
+  ],
+  "distinct": [
+   49,
+   47
+  ],
+  "pick": [
+   4.574,
+   4.17
+  ],
+  "cost_per_campaign": 0.12007350000000001
+ }
+}

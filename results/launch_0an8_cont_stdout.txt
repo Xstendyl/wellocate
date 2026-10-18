@@ -1,0 +1,23 @@
+== continuation of sol: re-runs [17000015, 17000016], then 13 unrun seeds 17000017..17000029; ceiling $15
+balance start sol continuation: $421.3563
+before gen_0an8_sol_phoq_blind_rerun seed 17000015: balance $421.3563, sol by balance $2.9497 of $15, panel $17.2362 of $100, largest campaign $0.3417
+gen_0an8_sol_phoq_blind_rerun seed 17000015: written
+before gen_0an8_sol_phoq_blind_rerun seed 17000016: balance $421.3257, sol by balance $2.9803 of $15, panel $17.2669 of $100, largest campaign $0.3417
+gen_0an8_sol_phoq_blind_rerun seed 17000016: written
+before gen_0an8_sol_phoq_blind_cont seed 17000017: balance $421.2041, sol by balance $3.1019 of $15, panel $17.3885 of $100, largest campaign $0.3417
+gen_0an8_sol_phoq_blind_cont seed 17000017: written
+before gen_0an8_sol_phoq_blind_cont seed 17000018: balance $421.0277, sol by balance $3.2783 of $15, panel $17.5649 of $100, largest campaign $0.3417
+gen_0an8_sol_phoq_blind_cont seed 17000018: written
+before gen_0an8_sol_phoq_blind_cont seed 17000019: balance $420.8539, sol by balance $3.4521 of $15, panel $17.7387 of $100, largest campaign $0.3417
+gen_0an8_sol_phoq_blind_cont seed 17000019: written
+before gen_0an8_sol_phoq_blind_cont seed 17000020: balance $420.6734, sol by balance $3.6326 of $15, panel $17.9191 of $100, largest campaign $0.3417
+gen_0an8_sol_phoq_blind_cont seed 17000020: written
+before gen_0an8_sol_phoq_blind_cont seed 17000021: balance $420.4041, sol by balance $3.9019 of $15, panel $18.1885 of $100, largest campaign $0.3417
+gen_0an8_sol_phoq_blind_cont seed 17000021: written
+before gen_0an8_sol_phoq_blind_cont seed 17000022: balance $420.0669, sol by balance $4.2391 of $15, panel $18.5256 of $100, largest campaign $0.3417
+gen_0an8_sol_phoq_blind_cont seed 17000022: abandoned
+before gen_0an8_sol_phoq_blind_cont seed 17000023: balance $419.9673, sol by balance $4.3387 of $15, panel $18.6253 of $100, largest campaign $0.3417
+gen_0an8_sol_phoq_blind_cont seed 17000023: abandoned
+before gen_0an8_sol_phoq_blind_cont seed 17000024: balance $419.9673, sol by balance $4.3387 of $15, panel $18.6253 of $100, largest campaign $0.3417
+gen_0an8_sol_phoq_blind_cont seed 17000024: abandoned
+STOP: 3 continuation failures, the limit; reported

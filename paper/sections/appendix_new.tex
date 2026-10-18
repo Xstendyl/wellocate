@@ -1,0 +1,208 @@
+\section{What was registered}
+\label{app:amendments}
+
+The prompt study's design, outcome, confirmatory contrasts and analysis were registered before it ran
+(Appendix~\ref{app:grid}). Every later change was registered, with its date, before the data it governs. These changes
+added the aids experiment on the grid, with labels for a large, a small or no change in re-testing fixed in
+advance; the structure note; the model-guided rule; the Menu on scrambled GB1; GPT-6.1 Sol and Gemini 3.1 Pro on the
+grid and on GB1; the PhoQ runs for all five models, with its named test; the replication of the Decision-rule result; the
+learnability simulation; and the test of the trained policy. A cap on repeat orders was also registered and then withdrawn before its main run: in trial runs the agents met the
+cap by proposing new names, most of them non-viable. No seed was dropped from the GPT-6.1 Sol, Gemini 3.1 Pro or PhoQ runs.
+Every other analysis in these appendices was decided after the registered ones. It describes, checks or explores
+the results and tests no claim, and so does the noise sweep of Section~\ref{sec:bench}.
+
+\section{The five models: settings and further results}
+\label{app:comparators}
+All five models ran at temperature 0 (Table~\ref{tab:models}). OpenRouter sends each call for an open-weight
+model to one of several hosting companies, so in every run DeepSeek V3.1's calls went to several hosts, and its
+results average over them. Opus 4.7, Gemini 2.5 Flash and DeepSeek V3.1 ran with
+reasoning off. GPT-6.1 Sol and Gemini 3.1 Pro ran at their lowest reasoning setting. Even so, Gemini 3.1 Pro used over 16{,}000
+reasoning tokens on \nProHeavyCalls{} calls, up to \nProMaxReasoning{} on one. All five saw the Blind prompt of Appendix~\ref{app:grid}, which says nothing about measurement error or repeats.
+
+\input{sections/table_models}
+
+\paragraph{Results on the grid.} Table~\ref{tab:fivegrid} gives each model's re-testing share, final pick and losses.
+The scripted band runs from \nGuessShare\% to \nBandHi\% of slots, or \nBandNonlostLo\% to \nBandNonlostHi\% counted
+over slots not lost, and the guessing rule's exploration and selection losses are 0.67 and 0.23. Every model's pick
+interval lies below the guessing rule's 7.87. Gemini 3.1 Pro's final pick had a single reading in
+\nGridOneReadingPro\% of its campaigns, against \nGridOneReadingInf\% for the informed rule and
+\nGridOneReadingGuess\% for the guessing rule. With reasoning on (Appendix~\ref{app:reasoning}), Opus 4.7 re-tests
+\nPanelcOpus\% of its slots and Gemini 2.5 Flash \nPanelcFlash\%. The aids' effects on re-testing are in
+Table~\ref{tab:fixes}.
+
+\begin{table}[tbp]
+\centering
+\small
+\caption{The five models on the grid, with 95\% intervals. The second column counts re-testing over slots not lost.}
+\label{tab:fivegrid}
+\begin{tabular}{lccccc}
+\toprule
+ & share (\%) & share, slots not lost (\%) & final pick & exploration loss & selection loss \\
+\midrule
+Opus 4.7 & \estci{\nShareOpus}{\nShareOpusci} & \estci{\nNonlostOpus}{\nNonlostOpusci} & \estci{\nPickOpus}{\nPickOpusci} & \estci{\nExplOpus}{\nExplOpusci} & \estci{\nSelOpus}{\nSelOpusci} \\
+Gemini 2.5 Flash & \estci{\nShareFlash}{\nShareFlashci} & \estci{\nNonlostFlash}{\nNonlostFlashci} & \estci{\nPickFlash}{\nPickFlashci} & \estci{\nExplFlash}{\nExplFlashci} & \estci{\nSelFlash}{\nSelFlashci} \\
+DeepSeek V3.1 & \estci{\nShareDeep}{\nShareDeepci} & \estci{\nNonlostDeep}{\nNonlostDeepci} & \estci{\nPickDeep}{\nPickDeepci} & \estci{\nExplDeep}{\nExplDeepci} & \estci{\nSelDeep}{\nSelDeepci} \\
+GPT-6.1 Sol & \estci{\nShareSol}{\nShareSolci} & \estci{\nNonlostSol}{\nNonlostSolci} & \estci{\nPickSol}{\nPickSolci} & \estci{\nExplSol}{\nExplSolci} & \estci{\nSelSol}{\nSelSolci} \\
+Gemini 3.1 Pro & \estci{\nSharePro}{\nShareProci} & \estci{\nNonlostPro}{\nNonlostProci} & \estci{\nPickPro}{\nPickProci} & \estci{\nExplPro}{\nExplProci} & \estci{\nSelPro}{\nSelProci} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\input{sections/table_fixes}
+
+Each model's numbers come from the runs its registered comparison uses. Gemini 2.5 Flash and DeepSeek V3.1 come from the control runs of the aids experiment, whose prompt options match those of the GPT-6.1 Sol and Gemini 3.1 Pro runs. Opus 4.7 comes from a same-day rerun of the original
+prompts, which differs only in the message sent back when a reply cannot be read. Counting re-testing over slots not lost leaves the conclusions unchanged. The GPT-6.1 Sol and Gemini 3.1 Pro runs cost about \$\nSolSpend{} and \$\nGemSpend, and the PhoQ runs about \$\nPqSpend. The scripted rules and Wellocate cost nothing to rerun.
+
+\paragraph{On scrambled GB1, descriptive.} These runs used different landscapes and seeds from the grid's, so the
+comparison is not paired; Table~\ref{tab:landscapes} gives their shares. Gemini 2.5 Flash measures \nGbDistinctFlash{}
+distinct candidates and DeepSeek V3.1 \nGbDistinctDeep, both in the control runs of the GB1 Menu experiment. Opus 4.7 measures
+\nGbDistinctOpus{} and re-tests \nGbShareOpus\% in an earlier control run, its first \nPqNOpus{} campaigns;
+Table~\ref{tab:landscapes} uses all \nGbNOpus{}. Sol measures \nGbDistinctSol{} and Gemini
+3.1 Pro \nGbDistinctPro. On GB1 Gemini 3.1 Pro loses mostly through exploration, \nGbExplPro, against \nGbSelPro{} at
+selection.
+
+\subsection{Sol on scrambled GB1}
+\label{app:atwo}
+
+Sol nominated the same candidate, true value \nFsrmTrue, in 12 of its 30 GB1 campaigns without the Menu. Its registered lead over the
+guessing rule resamples campaigns by seed, so it counts those twelve campaigns as independent. Two checks that count
+them as one leave the estimate about the same and widen its interval to include zero (Table~\ref{tab:sollead}): one
+resamples whole nominees, and the other counts the repeated nominee once. Sol's lead on GB1 is therefore uncertain. The Menu's effect on its pick stays undetectable under both checks: \nSolGbMenuClu{} \nSolGbMenuCluci{} and \nSolGbMenuCol{}
+\nSolGbMenuColci.
+
+\begin{table}[tbp]
+\centering
+\small
+\caption{Sol's pick minus the guessing rule's mean, with 95\% intervals that include the guessing rule's own
+uncertainty: as registered, and under two checks that count its repeated nominee as one. The checks were not
+registered.}
+\label{tab:sollead}
+\begin{tabular}{lcc}
+\toprule
+ & GB1 & PhoQ \\
+\midrule
+registered: campaigns resampled by seed & \estci{\nSolGbLeadReg}{\nSolGbLeadRegci} & \estci{\nPqSolLeadReg}{\nPqSolLeadRegci} \\
+whole nominees resampled & \estci{\nSolGbLeadClu}{\nSolGbLeadCluci} & \estci{\nPqSolLeadNom}{\nPqSolLeadNomci} \\
+repeated nominee counted once & \estci{\nSolGbLeadCol}{\nSolGbLeadColci} & \estci{\nPqSolLeadOnce}{\nPqSolLeadOnceci} \\
+both checks together & -- & \estci{\nPqSolLeadOnceNom}{\nPqSolLeadOnceNomci} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{The Menu's pick split on the grid}
+\label{app:split}
+
+On the grid the Menu raised the best value Gemini 2.5 Flash and DeepSeek V3.1 measured, and it worsened the selection
+of all three over-confirming models (Table~\ref{tab:split}). A simple selection rule applied to the agents' own
+readings recovers part of the selection loss for two of the three models.
+
+\begin{table}[tbp]
+\centering
+\small
+\caption{Change with the Menu on the grid, against each model's control on the same seeds, with 95\% intervals. For
+Opus 4.7 only the selection loss was computed.}
+\label{tab:split}
+\begin{tabular}{lcc}
+\toprule
+ & best value measured & selection loss \\
+\midrule
+Gemini 2.5 Flash & \estci{\nSplitFlashExpl}{\nSplitFlashExplci} & \estci{\nSplitFlashSel}{\nSplitFlashSelci} \\
+DeepSeek V3.1 & \estci{\nSplitDeepExpl}{\nSplitDeepExplci} & \estci{\nSplitDeepSel}{\nSplitDeepSelci} \\
+Opus 4.7 & -- & \estci{\nSplitOpusSel}{\nSplitOpusSelci} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{PhoQ, five models}
+\label{app:phoq}
+
+The PhoQ runs repeat the GB1 runs without the Menu on scrambled PhoQ, for all five models. Each model ran at the settings of its GB1 runs, and only the landscape changed. The scramble is our own and differs from all of Wellocate's frozen
+training, validation and test scrambles. Every model ran \nPqNOpus{} campaigns on the same seeds, so the models pair by
+seed. The design, the outcomes and a named test were registered before the first call.
+
+\paragraph{The named test.} On GB1 every model re-tests more than the best scripted rule. The registered test
+extends that claim to PhoQ only if each model's 95\% interval lies above PhoQ's best scripted share. On PhoQ that
+rule is the informed rule with no re-tests, so its share is zero. Every interval lies above it, and also above the
+guessing rule's \nPqGuessShare\% (Table~\ref{tab:phoq}). Gemini 2.5 Flash lost \nPqFlashLostRounds{} slots a campaign
+to rounds it could not complete, and a lost slot is never a re-test.
+
+\paragraph{Picks against the guessing rule.} The registered comparison sets each pick against the guessing rule's mean
+over its 1{,}500 reference seeds, \nPqGuessPick, and adds that rule's own uncertainty. A second, descriptive comparison
+runs the guessing rule on each model's own seeds and pairs the two picks seed by seed. Paired this way, DeepSeek V3.1
+and Gemini 3.1 Pro pick worse than the guessing rule on PhoQ, and the other three are about level with it. On GB1
+every model except Sol picks worse. In the registered comparison Opus 4.7 is slightly worse and Sol better, and Sol's
+lead rests on one repeated nominee.
+
+\begin{table}[tbp]
+\centering
+\small
+\caption{The five models on scrambled PhoQ, with 95\% intervals. The last three columns are each model's pick minus
+the guessing rule's: against its mean over 1{,}500 reference seeds (the registered comparison), and paired with the
+guessing rule on the model's own seeds, on PhoQ and on GB1.}
+\label{tab:phoq}
+\begin{tabular}{lccccc}
+\toprule
+ & & & \multicolumn{3}{c}{pick minus the guessing rule} \\
+\cmidrule(lr){4-6}
+ & share (\%) & final pick & registered & paired, PhoQ & paired, GB1 \\
+\midrule
+Opus 4.7 & \estci{\nPqShareOpus}{\nPqShareOpusci} & \estci{\nPqPickOpus}{\nPqPickOpusci} & \estci{\nPqLeadOpus}{\nPqLeadOpusci} & \estci{\nPairPqOpus}{\nPairPqOpusci} & \estci{\nPairGbOpus}{\nPairGbOpusci} \\
+Gemini 2.5 Flash & \estci{\nPqShareFlash}{\nPqShareFlashci} & \estci{\nPqPickFlash}{\nPqPickFlashci} & \estci{\nPqLeadFlash}{\nPqLeadFlashci} & \estci{\nPairPqFlash}{\nPairPqFlashci} & \estci{\nPairGbFlash}{\nPairGbFlashci} \\
+DeepSeek V3.1 & \estci{\nPqShareDeep}{\nPqShareDeepci} & \estci{\nPqPickDeep}{\nPqPickDeepci} & \estci{\nPqLeadDeep}{\nPqLeadDeepci} & \estci{\nPairPqDeep}{\nPairPqDeepci} & \estci{\nPairGbDeep}{\nPairGbDeepci} \\
+GPT-6.1 Sol & \estci{\nPqShareSol}{\nPqShareSolci} & \estci{\nPqPickSol}{\nPqPickSolci} & \estci{\nPqLeadSol}{\nPqLeadSolci} & \estci{\nPairPqSol}{\nPairPqSolci} & \estci{\nPairGbSol}{\nPairGbSolci} \\
+Gemini 3.1 Pro & \estci{\nPqSharePro}{\nPqShareProci} & \estci{\nPqPickPro}{\nPqPickProci} & \estci{\nPqLeadPro}{\nPqLeadProci} & \estci{\nPairPqPro}{\nPairPqProci} & \estci{\nPairGbPro}{\nPairGbProci} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Sol's lead on PhoQ.} Sol nominated one candidate, IAQT, in \nPqTopSol{} of its campaigns, among
+\nPqSolDistinctNominees{} different nominees. Its registered lead
+therefore rests partly on that one candidate. Under the checks of Appendix~\ref{app:atwo} every interval includes zero
+(Table~\ref{tab:sollead}), so Sol's lead on PhoQ is uncertain too.
+
+\paragraph{A replication on other seeds.} An earlier run put the three earlier models on the same PhoQ landscape,
+under the same Blind prompt, on other seeds. Its shares were
+\nPqOamShareOpus\% \nPqOamShareOpusci{} for Opus 4.7, \nPqOamShareFlash\% \nPqOamShareFlashci{} for Gemini 2.5 Flash
+and \nPqOamShareDeep\% \nPqOamShareDeepci{} for DeepSeek V3.1, close to the shares above. Its picks were
+\nPqOamPickOpus, \nPqOamPickFlash{} and \nPqOamPickDeep, close to those in Table~\ref{tab:landscapes}.
+
+\section{The confirmation simulation}
+\label{app:aone}
+
+\paragraph{Rebuilding each campaign.} The nomination prompt holds a campaign's whole history, one line per order.
+Replaying those orders through the simulated assay with the campaign's seed reproduces every reading. The noise and the failures are fixed by the seed, the candidate and its order count. A campaign was used only if every
+logged outcome and reading was reproduced and the rebuilt registered pick and re-test count matched the original run's.
+We rebuilt the grid campaigns of Gemini 3.1 Pro and Sol, and as a check those of Gemini 2.5 Flash and DeepSeek V3.1.
+Every campaign passed.
+
+\paragraph{Results.} With the final round replaced, Gemini 3.1 Pro gains against its own pick at $m = 3$ and
+$m = 4$, and its re-testing share rises to \nAoneProShareAfter\% (Table~\ref{tab:aone}). The registered rule applied
+to its unchanged readings gains almost nothing, so the gain comes from the extra readings. Gemini 2.5 Flash and
+DeepSeek V3.1 gain a little at $m = 1$. The simulation drops the agent's own final-round orders, so it gives up
+whatever those would have found.
+
+\begin{table}[!htbp]
+\centering
+\small
+\caption{Change in final pick against each model's own pick in the confirmation simulation, with 95\% intervals.}
+\label{tab:aone}
+\begin{tabular}{llc}
+\toprule
+model & replay & change in final pick \\
+\midrule
+Gemini 3.1 Pro & last round, $m = 3$ & \estci{\nAoneProKthree}{\nAoneProKthreeci} \\
+Gemini 3.1 Pro & last round, $m = 4$ & \estci{\nAoneProKfour}{\nAoneProKfourci} \\
+Gemini 3.1 Pro & registered rule on unchanged readings & \estci{\nAoneProRepick}{\nAoneProRepickci} \\
+Gemini 2.5 Flash & last round, $m = 1$ & \estci{\nAoneFlashKone}{\nAoneFlashKoneci} \\
+DeepSeek V3.1 & last round, $m = 1$ & \estci{\nAoneDeepKone}{\nAoneDeepKoneci} \\
+Gemini 3.1 Pro & last two rounds, $m = 3$ & \estci{\nAtwoProKthree}{\nAtwoProKthreeci} \\
+GPT-6.1 Sol & last two rounds, $m = 1$ & \estci{\nAtwoSolKone}{\nAtwoSolKoneci} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Two final rounds.} Replacing the last two rounds, with the top $m$ chosen after the round before them,
+recovers about \nAtwoProRecoveredOwn\% of Gemini 3.1 Pro's selection loss at $m = 3$, close to one round's
+\nAoneProRecoveredKthree\% at the same $m$. Sol loses ground at $m = 1$. This run was not planned in advance.
+

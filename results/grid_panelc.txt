@@ -1,0 +1,23 @@
+====================================================================================================
+GRID  NK uniform K=1 seed=1 pct=93.0  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 2 conditions x 3 models x 40 campaigns = 240 campaigns
+  ceiling $95.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    frontier     anthropic/claude-opus-4.7        released 2026-02
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+    open-weight  deepseek/deepseek-chat-v3.1      released 2025-08
+prompt facts checked: reference GDIF is viable and reads 6.8730 (stated 6.8700), pool is 7.00% of the space, example ADIF (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_panelc_manifest.json (commit 6f780be1)
+    frontier     anthropic/claude-opus-4.7        released 2026-02
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+    open-weight  deepseek/deepseek-chat-v3.1      released 2025-08
+canary: comparator live, differs from the mean rule on 24 of 60 scripted campaigns
+
+
+  SHUFFLED order over 240 campaigns across 6 cells (order seed 20260928)
+      Blind         frontier    seed 300032 ok 51 rep 38 ( 63%) | nom  7.5385 | distn 16 | $0.5238 cum $0.52 | 183s
+      Mechanism     mid-tier    seed 300011 ok 51 rep 52 ( 87%) | nom  8.0254 | distn  8 | $0.1891 cum $0.71 | 514s
+      Mechanism     mid-tier    seed 300020 ok 52 rep 51 ( 85%) | nom  7.3867 | distn  8 | $0.1874 cum $0.90 | 374s
+      Blind         mid-tier    seed 300026 ok 51 rep 49 ( 82%) | nom  7.2332 | distn 11 | $0.1964 cum $1.10 | 626s
+      Mechanism     frontier    seed 300008 ok 47 rep 43 ( 72%) | nom  7.3214 | distn 13 | $0.4071 cum $1.50 | 153s

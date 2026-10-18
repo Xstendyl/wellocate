@@ -1,0 +1,157 @@
+{
+ "seeds": "8200000 to 8201499",
+ "guessing": 7.8659,
+ "informed": 7.9993,
+ "grid": {
+  "confirm|k=0": {
+   "n": 1500,
+   "collapsed": 0,
+   "shrinkage": 7.919715428125056,
+   "highest_mean": 7.9264824467262365,
+   "share": 28.191111111111113,
+   "share_nonlost": 33.57266887218626,
+   "distinct": 29.096,
+   "rejections": 71.124,
+   "lost": 9.569333333333333,
+   "shrinkage_se": 0.01007880147477289,
+   "highest_mean_se": 0.010107799884910437
+  },
+  "confirm|k=1": {
+   "n": 1500,
+   "collapsed": 0,
+   "shrinkage": 7.928157045385749,
+   "highest_mean": 7.925482869983193,
+   "share": 37.60777777777778,
+   "share_nonlost": 44.101893553695355,
+   "distinct": 24.687333333333335,
+   "rejections": 62.29933333333334,
+   "lost": 8.770666666666667,
+   "shrinkage_se": 0.009273906686716201,
+   "highest_mean_se": 0.009396935841121081
+  },
+  "confirm|k=2": {
+   "n": 1500,
+   "collapsed": 0,
+   "shrinkage": 7.893718208450405,
+   "highest_mean": 7.896699547091762,
+   "share": 48.69777777777778,
+   "share_nonlost": 55.93296901706971,
+   "distinct": 19.718666666666667,
+   "rejections": 52.12266666666667,
+   "lost": 7.704,
+   "shrinkage_se": 0.008594321309799412,
+   "highest_mean_se": 0.008584979058716868
+  },
+  "confirm|k=3": {
+   "n": 1500,
+   "collapsed": 0,
+   "shrinkage": 7.859022181773334,
+   "highest_mean": 7.857371132067013,
+   "share": 60.0,
+   "share_nonlost": 67.37919336530848,
+   "distinct": 14.796666666666667,
+   "rejections": 41.32666666666667,
+   "lost": 6.532666666666667,
+   "shrinkage_se": 0.007932290828269819,
+   "highest_mean_se": 0.007927489868651398
+  },
+  "no-confirm|k=0": {
+   "n": 1500,
+   "collapsed": 0,
+   "shrinkage": 7.819357767938474,
+   "highest_mean": 7.803282249207241,
+   "share": 11.377346239161122,
+   "share_nonlost": 13.904598539588173,
+   "distinct": 36.68266666666667,
+   "rejections": 85.248,
+   "lost": 11.04,
+   "shrinkage_se": 0.010965229688623235,
+   "highest_mean_se": 0.010990434983499277
+  },
+  "no-confirm|k=1": {
+   "n": 1500,
+   "collapsed": 0,
+   "shrinkage": 7.907556385880154,
+   "highest_mean": 7.901495762606563,
+   "share": 24.45888888888889,
+   "share_nonlost": 29.174978933998414,
+   "distinct": 30.783333333333335,
+   "rejections": 72.11466666666666,
+   "lost": 9.644666666666666,
+   "shrinkage_se": 0.009756030579680703,
+   "highest_mean_se": 0.010327205803443979
+  },
+  "no-confirm|k=2": {
+   "n": 1500,
+   "collapsed": 0,
+   "shrinkage": 7.875229384680731,
+   "highest_mean": 7.870113849621973,
+   "share": 39.553333333333335,
+   "share_nonlost": 45.999017361566324,
+   "distinct": 23.900666666666666,
+   "rejections": 58.82866666666666,
+   "lost": 8.346666666666666,
+   "shrinkage_se": 0.008390942344368447,
+   "highest_mean_se": 0.009590549106099779
+  },
+  "no-confirm|k=3": {
+   "n": 1500,
+   "collapsed": 0,
+   "shrinkage": 7.842981714713451,
+   "highest_mean": 7.826992659048283,
+   "share": 55.0,
+   "share_nonlost": 62.287497729889665,
+   "distinct": 16.993333333333332,
+   "rejections": 45.242,
+   "lost": 6.972666666666667,
+   "shrinkage_se": 0.0082291259337383,
+   "highest_mean_se": 0.008908316684981757
+  }
+ },
+ "panel_k": {
+  "0": {
+   "landscapes": 20,
+   "campaigns": 1500,
+   "collapsed": 0,
+   "shrinkage": 8.089656211830144,
+   "highest_mean": 8.089881786919305,
+   "share": 34.49444444444445,
+   "guessing_yardstick_mean": 8.103541138452943,
+   "guessing_yardstick_share": 25.900555555555556
+  },
+  "1": {
+   "landscapes": 20,
+   "campaigns": 1500,
+   "collapsed": 0,
+   "shrinkage": 7.9743202274751,
+   "highest_mean": 7.979418155697639,
+   "share": 37.63888888888889,
+   "guessing_yardstick_mean": 7.939272880115952,
+   "guessing_yardstick_share": 23.7335
+  },
+  "2": {
+   "landscapes": 20,
+   "campaigns": 1497,
+   "collapsed": 3,
+   "shrinkage": 7.824185233039251,
+   "highest_mean": 7.832261210636353,
+   "share": 36.480550554970584,
+   "guessing_yardstick_mean": 7.723538853743293,
+   "guessing_yardstick_share": 24.471899970350602
+  },
+  "3": {
+   "landscapes": 20,
+   "campaigns": 1470,
+   "collapsed": 30,
+   "shrinkage": 7.554225765405523,
+   "highest_mean": 7.557742255868079,
+   "share": 34.883210878219074,
+   "guessing_yardstick_mean": 7.39984080722688,
+   "guessing_yardstick_share": 22.484547228149836
+  }
+ },
+ "peak": {
+  "variant": "confirm|k=1",
+  "pick": 7.928157045385749
+ }
+}

@@ -1,0 +1,110 @@
+{
+ "cells": [
+  {
+   "condition": "Aggregated",
+   "model": "claude-opus-4.7",
+   "n": 695,
+   "headline": 0.8583932853717027,
+   "strict": 0.8536690647482015
+  },
+  {
+   "condition": "Aggregated",
+   "model": "deepseek-chat-v3.1",
+   "n": 181,
+   "headline": 0.9429097605893185,
+   "strict": 0.934622467771639
+  },
+  {
+   "condition": "Aggregated",
+   "model": "gemini-2.5-flash",
+   "n": 139,
+   "headline": 0.9557553956834532,
+   "strict": 0.950599520383693
+  },
+  {
+   "condition": "Blind",
+   "model": "claude-opus-4.7",
+   "n": 695,
+   "headline": 0.754052757793765,
+   "strict": 0.746810551558753
+  },
+  {
+   "condition": "Blind",
+   "model": "deepseek-chat-v3.1",
+   "n": 181,
+   "headline": 0.9104051565377532,
+   "strict": 0.9001841620626151
+  },
+  {
+   "condition": "Blind",
+   "model": "gemini-2.5-flash",
+   "n": 139,
+   "headline": 0.9378896882494004,
+   "strict": 0.9311750599520384
+  },
+  {
+   "condition": "Decision-rule",
+   "model": "claude-opus-4.7",
+   "n": 695,
+   "headline": 0.8531654676258993,
+   "strict": 0.8481534772182254
+  },
+  {
+   "condition": "Decision-rule",
+   "model": "deepseek-chat-v3.1",
+   "n": 180,
+   "headline": 0.9335185185185185,
+   "strict": 0.9246296296296296
+  },
+  {
+   "condition": "Decision-rule",
+   "model": "gemini-2.5-flash",
+   "n": 139,
+   "headline": 0.9546762589928057,
+   "strict": 0.9492805755395683
+  },
+  {
+   "condition": "Mechanism",
+   "model": "claude-opus-4.7",
+   "n": 695,
+   "headline": 0.815947242206235,
+   "strict": 0.8099520383693045
+  },
+  {
+   "condition": "Mechanism",
+   "model": "deepseek-chat-v3.1",
+   "n": 181,
+   "headline": 0.9367403314917127,
+   "strict": 0.9262430939226519
+  },
+  {
+   "condition": "Mechanism",
+   "model": "gemini-2.5-flash",
+   "n": 139,
+   "headline": 0.9522781774580336,
+   "strict": 0.9465227817745804
+  },
+  {
+   "condition": "Quantitative",
+   "model": "claude-opus-4.7",
+   "n": 695,
+   "headline": 0.7837889688249401,
+   "strict": 0.7764748201438849
+  },
+  {
+   "condition": "Quantitative",
+   "model": "deepseek-chat-v3.1",
+   "n": 181,
+   "headline": 0.9314917127071823,
+   "strict": 0.9218232044198895
+  },
+  {
+   "condition": "Quantitative",
+   "model": "gemini-2.5-flash",
+   "n": 139,
+   "headline": 0.843884892086331,
+   "strict": 0.8303357314148682
+  }
+ ],
+ "campaigns": 5075
+}

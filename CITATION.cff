@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you use this environment, these results or this paper, please cite it as below."
+title: "Explore or Confirm? LLM Agents Misallocate Measurements Under Noise"
+type: software
+authors:
+  - given-names: Abdul
+    family-names: Karim
+    affiliation: Xstendyl
+    email: abdul.karim@xstendyl.com
+  - given-names: Matt
+    family-names: Keon
+    affiliation: Xstendyl
+    email: matt.keon@xstendyl.com
+repository-code: "https://github.com/Xstendyl/wellocate"
+abstract: >-
+  Wellocate is a simulated assay-ordering environment that measures how an agent spends a fixed
+  measurement budget under noise, together with the code, the logs and the paper from a
+  study of five language models in it.
+keywords:
+  - LLM agents
+  - sequential experimental design
+  - replication
+  - measurement noise
+  - benchmark environment
+license: MIT
+license-url: "https://github.com/Xstendyl/wellocate/blob/main/LICENSE"
+preferred-citation:
+  type: unpublished
+  title: "Explore or Confirm? LLM Agents Misallocate Measurements Under Noise"
+  year: 2026
+  url: "https://github.com/Xstendyl/wellocate"
+  authors:
+    - given-names: Abdul
+      family-names: Karim
+      affiliation: Xstendyl
+      email: abdul.karim@xstendyl.com
+    - given-names: Matt
+      family-names: Keon
+      affiliation: Xstendyl
+      email: matt.keon@xstendyl.com

@@ -1,0 +1,67 @@
+{
+ "anchor": "You are running a numerical optimization campaign on four positions of an abstract four-position system.",
+ "role": "You are a protein engineer working in a wet lab. You are improving a protein by changing four positions, each of which can hold one of 20 building blocks. Each order is a sample submitted to the lab's assay facility.",
+ "noise_sentence": "Assay readings can be noisy, as in any real lab: a single reading may not reflect the sample's true value.",
+ "rendered": {
+  "bio_role|round": {
+   "sha256": "a1e526cdb571bd7886578e0c72276e4264998447131cc65eef035b2df6001e1d",
+   "diff_lines": 2,
+   "base_sha256": "d0a3cc63ad6de8db0b02c40797855dc6df6858856027427a43e0f974a9f67fbe"
+  },
+  "bio_role|replacement": {
+   "sha256": "e2cd57690baae7c220e6724ce516c5e9155eb96a53d832c46eb02bc0d5f8bd84",
+   "diff_lines": 2,
+   "base_sha256": "f62b55ec7dcae8345e01987d11a1d83510ac5df9a76d04bc0bc15d6d1e68a48b"
+  },
+  "bio_role|reask": {
+   "sha256": "0313ba8cde99368d975d28f6a636768acdc4d0f72c1c0f8e3ad762c9861600ed",
+   "diff_lines": 2,
+   "base_sha256": "b0e7b1e52ee91fe729b22d8cd2dae420d3e4462cd1ee2b5f65525f29577660ec"
+  },
+  "bio_role|nomination": {
+   "sha256": "00d1176f43ccd6aac49ce05bb28daf239e560cb3271c55bca09fdde61b541ba8",
+   "diff_lines": 2,
+   "base_sha256": "e4fa3ebba967aebfc750575f9cad94c0ecbce3f64b8e427fa289cc1ae6a24335"
+  },
+  "bio_role_noisy|round": {
+   "sha256": "d017e7984c8c1a6b76ebfe92a1e379c9df20927ed60e85f027a1e263ccfd2e13",
+   "diff_lines": 2,
+   "base_sha256": "d0a3cc63ad6de8db0b02c40797855dc6df6858856027427a43e0f974a9f67fbe"
+  },
+  "bio_role_noisy|replacement": {
+   "sha256": "8bf7e390a1abd2ca0d67159d067c07fb1bf93d70854e3a2be425a230b700bb36",
+   "diff_lines": 2,
+   "base_sha256": "f62b55ec7dcae8345e01987d11a1d83510ac5df9a76d04bc0bc15d6d1e68a48b"
+  },
+  "bio_role_noisy|reask": {
+   "sha256": "b62964333d6cfb2c15d48de68ace2dbc2d3498dbe6684aabe1da65a7de9d2702",
+   "diff_lines": 2,
+   "base_sha256": "b0e7b1e52ee91fe729b22d8cd2dae420d3e4462cd1ee2b5f65525f29577660ec"
+  },
+  "bio_role_noisy|nomination": {
+   "sha256": "53a5e26d01e62ddcd650cd823570195f709464677558095b3ce697a7595cbc0d",
+   "diff_lines": 2,
+   "base_sha256": "e4fa3ebba967aebfc750575f9cad94c0ecbce3f64b8e427fa289cc1ae6a24335"
+  },
+  "bio_role_exact|round": {
+   "sha256": "a1e526cdb571bd7886578e0c72276e4264998447131cc65eef035b2df6001e1d",
+   "diff_lines": 2,
+   "base_sha256": "d0a3cc63ad6de8db0b02c40797855dc6df6858856027427a43e0f974a9f67fbe"
+  },
+  "bio_role_exact|replacement": {
+   "sha256": "e2cd57690baae7c220e6724ce516c5e9155eb96a53d832c46eb02bc0d5f8bd84",
+   "diff_lines": 2,
+   "base_sha256": "f62b55ec7dcae8345e01987d11a1d83510ac5df9a76d04bc0bc15d6d1e68a48b"
+  },
+  "bio_role_exact|reask": {
+   "sha256": "0313ba8cde99368d975d28f6a636768acdc4d0f72c1c0f8e3ad762c9861600ed",
+   "diff_lines": 2,
+   "base_sha256": "b0e7b1e52ee91fe729b22d8cd2dae420d3e4462cd1ee2b5f65525f29577660ec"
+  },
+  "bio_role_exact|nomination": {
+   "sha256": "00d1176f43ccd6aac49ce05bb28daf239e560cb3271c55bca09fdde61b541ba8",
+   "diff_lines": 2,
+   "base_sha256": "e4fa3ebba967aebfc750575f9cad94c0ecbce3f64b8e427fa289cc1ae6a24335"
+  }
+ }
+}

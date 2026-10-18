@@ -1,0 +1,35 @@
+{
+ "tag": "probe3",
+ "cells": 3,
+ "total_lines": 337,
+ "source_lines": 337,
+ "carried_forward_lines": 0,
+ "untouched_cell_lines": 0,
+ "replaced_lines": 0,
+ "expected_total_lines": 337,
+ "all_verified": true,
+ "empty": false,
+ "files": {
+  "instructed__anthropic_claude-opus-4.7.jsonl.gz": {
+   "lines": 140,
+   "sha256": "1a535c9f20834efd966f09dd25ecd3de92f2897bc14b74e7483006c2110c2a43",
+   "bytes": 22632,
+   "verified": true,
+   "written_by_this_run": true
+  },
+  "instructed__deepseek_deepseek-chat-v3.1.jsonl.gz": {
+   "lines": 107,
+   "sha256": "1d522f6bdccc410a06a8666e85d56d7ee710f50150d3169e786c4ff0733c8794",
+   "bytes": 18457,
+   "verified": true,
+   "written_by_this_run": true
+  },
+  "instructed__google_gemini-2.5-flash.jsonl.gz": {
+   "lines": 90,
+   "sha256": "a908a602e8b70b6693aa713758607f05cc5f2e63989af65ace5c5431fe44b428",
+   "bytes": 10969,
+   "verified": true,
+   "written_by_this_run": true
+  }
+ }
+}

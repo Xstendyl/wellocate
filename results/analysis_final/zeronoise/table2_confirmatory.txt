@@ -1,0 +1,47 @@
+TABLE 2. EXPLORATORY contrasts within the 'zeronoise' panel. NOT the confirmatory family of section 0g; Holm is applied across this panel's own contrasts only.
+PAIRED BY SEED, campaign level, one weight per seed. Primary p is a studentised wild cluster
+bootstrap over seeds with Rademacher weights. Welch is a SENSITIVITY and assumes the cells are
+independent, which the shared seed makes false.
+Minimal effect of interest 0.06. Bootstrap draws 20000, resolution floor 0.00005.
+
+model                    contrast                   seeds  drop      diff       SE               95% CI      wild p
+claude-opus-4.7          Aggregated vs Mechanism       40     0   -0.0545   0.0654  [-0.1827, +0.0737]     0.40573
+claude-opus-4.7          Decision-rule vs Mechanism    40     0   +0.0297   0.0611  [-0.0900, +0.1494]     0.63427
+deepseek-chat-v3.1       Aggregated vs Mechanism       40     0   -0.1309   0.0284  [-0.1866, -0.0753]     0.00005
+deepseek-chat-v3.1       Decision-rule vs Mechanism    40     0   -0.0772   0.0235  [-0.1232, -0.0312]     0.00205
+gemini-2.5-flash         Aggregated vs Mechanism       40     0   -0.0420   0.0093  [-0.0602, -0.0237]     0.00015
+gemini-2.5-flash         Decision-rule vs Mechanism    40     0   -0.2192   0.0205  [-0.2593, -0.1791]     0.00005
+
+HOLM across this panel's own family of 6, on the primary paired bootstrap p:
+model                    contrast                         raw p      Holm p reject at .05
+claude-opus-4.7          Aggregated vs Mechanism        0.40573     0.81146 no
+claude-opus-4.7          Decision-rule vs Mechanism     0.63427     0.81146 no
+deepseek-chat-v3.1       Aggregated vs Mechanism        0.00005     0.00030 YES
+deepseek-chat-v3.1       Decision-rule vs Mechanism     0.00205     0.00615 YES
+gemini-2.5-flash         Aggregated vs Mechanism        0.00015     0.00060 YES
+gemini-2.5-flash         Decision-rule vs Mechanism     0.00005     0.00030 YES
+
+SENSITIVITY. Paired bootstrap (primary) against the paired t and Welch.
+corr is the within-seed correlation between the two cells. Where it is NEGATIVE the Welch SE
+is SMALLER than the truth, so an unpaired p is anti-conservative; where POSITIVE, Welch is
+conservative and loses power. The direction is not known in advance, which is why the
+paired estimator is the primary one.
+
+model                    contrast                      corr  SE pair SE Welch    ratio      wild p  paired t p     welch p reject w/pt/we
+claude-opus-4.7          Aggregated vs Mechanism     +0.103   0.0654   0.0689    1.054     0.40573     0.40961     0.43171 n/n/n
+claude-opus-4.7          Decision-rule vs Mechanism  +0.147   0.0611   0.0660    1.081     0.63427     0.62973     0.65441 n/n/n
+deepseek-chat-v3.1       Aggregated vs Mechanism     -0.195   0.0284   0.0265    0.933     0.00005     0.00004     0.00001 Y/Y/Y
+deepseek-chat-v3.1       Decision-rule vs Mechanism  +0.043   0.0235   0.0239    1.018     0.00205     0.00214     0.00203 Y/Y/Y
+gemini-2.5-flash         Aggregated vs Mechanism     +0.175   0.0093   0.0102    1.101     0.00015     0.00006     0.00010 Y/Y/Y
+gemini-2.5-flash         Decision-rule vs Mechanism  -0.109   0.0205   0.0198    0.965     0.00005     0.00000     0.00000 Y/Y/Y
+
+The paired and unpaired POINT ESTIMATES agree to floating point when the seed sets match,
+since mean(b - a) equals mean(b) - mean(a). Only the standard error differs.
+
+0ag NOMINATION FALLBACKS EXCLUDED from these primary figures: 0 campaign(s).
+A fallback is a nomination that did not parse, where campaign.py substituted best_by_mean(),
+which is exactly the Decision-rule instruction. The sensitivity keeping them is in
+summary.json under contrasts_with_fallbacks.
+
+0ah UNDEFINED SHRINKAGE COMPARATOR in 600 campaign(s), NOT excluded because the
+primary outcome is unaffected. Reason recovered per cell: Aggregated/claude-opus-4.7 40 (no noise: undefined by design); Aggregated/deepseek-chat-v3.1 40 (no noise: undefined by design); Aggregated/gemini-2.5-flash 40 (no noise: undefined by design); Blind/claude-opus-4.7 40 (no noise: undefined by design); Blind/deepseek-chat-v3.1 40 (no noise: undefined by design); Blind/gemini-2.5-flash 40 (no noise: undefined by design); Decision-rule/claude-opus-4.7 40 (no noise: undefined by design); Decision-rule/deepseek-chat-v3.1 40 (no noise: undefined by design); Decision-rule/gemini-2.5-flash 40 (no noise: undefined by design); Mechanism/claude-opus-4.7 40 (no noise: undefined by design); Mechanism/deepseek-chat-v3.1 40 (no noise: undefined by design); Mechanism/gemini-2.5-flash 40 (no noise: undefined by design); Quantitative/claude-opus-4.7 40 (no noise: undefined by design); Quantitative/deepseek-chat-v3.1 40 (no noise: undefined by design); Quantitative/gemini-2.5-flash 40 (no noise: undefined by design)

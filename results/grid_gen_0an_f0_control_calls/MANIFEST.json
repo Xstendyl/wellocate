@@ -1,0 +1,28 @@
+{
+ "tag": "gen_0an_f0_control",
+ "cells": 2,
+ "total_lines": 7802,
+ "source_lines": 7802,
+ "carried_forward_lines": 0,
+ "untouched_cell_lines": 0,
+ "replaced_lines": 0,
+ "expected_total_lines": 7802,
+ "all_verified": true,
+ "empty": false,
+ "files": {
+  "blind__deepseek_deepseek-chat-v3.1.jsonl.gz": {
+   "lines": 3675,
+   "sha256": "33ca25653e4b04c86e2107fe81171bee4e913eb7bf7063712d86999fae5b0391",
+   "bytes": 483097,
+   "verified": true,
+   "written_by_this_run": true
+  },
+  "blind__google_gemini-2.5-flash.jsonl.gz": {
+   "lines": 4127,
+   "sha256": "e8da53dcf31664975ca1dd745aba8da75f46dd6836fe533eacc9a06722309019",
+   "bytes": 441032,
+   "verified": true,
+   "written_by_this_run": true
+  }
+ }
+}

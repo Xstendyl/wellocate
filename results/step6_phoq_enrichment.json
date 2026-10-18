@@ -1,0 +1,19 @@
+{
+ "model": "anthropic/claude-opus-4.7",
+ "n": 20,
+ "hits": 0,
+ "obs": 0.0,
+ "chance": 0.00035887313834559486,
+ "enrichment": 0.0,
+ "enrichment_se": 139.325,
+ "argmax": "TEMH",
+ "pool": 11146,
+ "sigma_unit": 5.807048999999999,
+ "inpool": 47,
+ "top10_hits": 0,
+ "top10_enrichment": 0.0,
+ "gb1_one_ask_hits": 11,
+ "gb1_one_ask_n": 20,
+ "gb1_one_ask_enrichment": 1584.275,
+ "spend_usd": 0.08695000000000003
+}

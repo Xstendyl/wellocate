@@ -1,0 +1,165 @@
+SPOT CHECK: raw model output beside the proposals the harness accepted.
+Sampled deterministically, 20 calls per model. Written for a human to read.
+
+====================================================================================================
+anthropic/claude-opus-4.7  (frontier)   23 calls, showing 20
+====================================================================================================
+
+--- round 1  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['EDQS', 'ADQS', 'EAQS', 'EDAS']
+SECONDARY: ['EDQS', 'ADQS', 'EAQS', 'EDAS']
+RAW:
+EDQS | reference point baseline
+ADQS | vary position 1
+EAQS | vary position 2
+EDAS | vary position 3
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['EDQT']
+SECONDARY: ['EDQT']
+RAW:
+EDQT | vary position 4 to explore neighborhood
+
+--- round 2  slots 4  status alphabet_then_wrong_count  tier pipe  accepted 0  tokens-anywhere 5  parsers agree False ---
+PARSED   : []
+SECONDARY: ['EDQT', 'FDQT', 'EEQT']
+RAW:
+EDQT | best so far, confirm and anchor
+FDQT | vary pos1, T at pos4 looks strong
+EDQU | pos4 neighbor exploration... wait use valid letter
+EEQT | vary pos2 near E
+
+--- round 3  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 10  parsers agree True ---
+PARSED   : ['EDQT', 'FDQT', 'EDQP', 'EDRT']
+SECONDARY: ['EDQT', 'FDQT', 'EDQP', 'EDRT']
+RAW:
+EDQT | best so far 0.707, re-measure/anchor
+FDQT | vary pos1 near best
+EDQP | vary pos4 from T
+EDRT | vary pos3 near best
+
+--- round 3  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['EDPT']
+SECONDARY: ['EDPT']
+RAW:
+EDPT | explore position 3 neighbor of best EDQT
+
+--- round 3  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['EDQO']
+SECONDARY: ['EDQO']
+RAW:
+EDQO | position 4 moving toward P/Q which scored high, explore neighbor
+
+--- round 4  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 6  parsers agree True ---
+PARSED   : ['EDQP', 'EDQN', 'EDQQ', 'ECQP']
+SECONDARY: ['EDQP', 'EDQN', 'EDQQ', 'ECQP']
+RAW:
+EDQP | best so far 0.833, confirm/explore nearby
+EDQN | explore P-neighborhood on pos4
+EDQQ | try adjacent letter to P
+ECQP | vary pos2 around best point
+
+--- round 5  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 6  parsers agree True ---
+PARSED   : ['ECQN', 'EBQP', 'ECQM', 'EBQN']
+SECONDARY: ['ECQN', 'EBQP', 'ECQM', 'EBQN']
+RAW:
+ECQN | combine two best moves C@2 and N@4
+EBQP | try B@2, extending C→B trend
+ECQM | explore N→M direction at pos4 with C@2
+EBQN | B@2 with best N@4
+
+--- round 5  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['ECQO']
+SECONDARY: ['ECQO']
+RAW:
+ECQO | explore position 4 with C at pos2, best so far was ECQP=1.225
+
+--- round 6  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 10  parsers agree True ---
+PARSED   : ['ECQP', 'ECRP', 'ECQQ', 'DCQP']
+SECONDARY: ['ECQP', 'ECRP', 'ECQQ', 'DCQP']
+RAW:
+ECQP | best so far, replicate
+ECRP | vary pos3 near best
+ECQQ | neighbor of best on pos4
+DCQP | vary pos1 near best
+
+--- round 6  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['ECQP']
+SECONDARY: ['ECQP']
+RAW:
+ECQP | best so far ~1.27, re-measure to confirm or explore nearby
+
+--- round 6  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['ECQP']
+SECONDARY: ['ECQP']
+RAW:
+ECQP | best performer so far, replicate to confirm high score
+
+--- round 7  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 6  parsers agree True ---
+PARSED   : ['ECQP', 'BCQP', 'ECPP', 'ECQS']
+SECONDARY: ['ECQP', 'BCQP', 'ECPP', 'ECQS']
+RAW:
+ECQP | confirm best mean around 1.17
+BCQP | explore position 1 neighbor
+ECPP | explore position 3 neighbor
+ECQS | explore position 4 toward reference
+
+--- round 8  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 6  parsers agree True ---
+PARSED   : ['ECQS', 'ECQT', 'ECQR', 'EDQS']
+SECONDARY: ['ECQS', 'ECQT', 'ECQR', 'EDQS']
+RAW:
+ECQS | best so far, replicate
+ECQT | neighbor of top in pos4
+ECQR | neighbor of top in pos4
+EDQS | reference check with best pos2 revisit
+
+--- round 9  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 9  parsers agree True ---
+PARSED   : ['ECQS', 'ECQP', 'ECQN', 'FCQS']
+SECONDARY: ['ECQS', 'ECQP', 'ECQN', 'FCQS']
+RAW:
+ECQS | best confirmed point, replicate for noise
+ECQP | strong second, replicate
+ECQN | explore pos4 N near best
+FCQS | explore pos1 F near best
+
+--- round 9  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['DCQS']
+SECONDARY: ['DCQS']
+RAW:
+DCQS | try D at pos1, C at pos2 with QS tail which gave best scores
+
+--- round 10  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['ECQS', 'ECQS', 'ECRS', 'ECQS']
+SECONDARY: ['ECQS', 'ECQS', 'ECRS', 'ECQS']
+RAW:
+ECQS | best so far, replicate to confirm
+ECQS | replicate for noise reduction
+ECRS | explore pos3 neighbor near best
+ECQS | triple replicate at optimum
+
+--- round 11  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['ECQS', 'ECQS', 'ECQS', 'ECQS']
+SECONDARY: ['ECQS', 'ECQS', 'ECQS', 'ECQS']
+RAW:
+ECQS | best known, replicate for noise reduction
+ECQS | replicate best known
+ECQS | replicate best known
+ECQS | replicate best known
+
+--- round 12  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 6  parsers agree True ---
+PARSED   : ['ECQS', 'ECQS', 'ECQS', 'ECQS']
+SECONDARY: ['ECQS', 'ECQS', 'ECQS', 'ECQS']
+RAW:
+ECQS | best known, confirm high score
+ECQS | replicate for noise averaging
+ECQS | replicate for noise averaging
+ECQS | replicate for noise averaging
+
+--- round 13  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 6  parsers agree True ---
+PARSED   : ['ECQS', 'ECQS', 'ECQS', 'ECQS']
+SECONDARY: ['ECQS', 'ECQS', 'ECQS', 'ECQS']
+RAW:
+ECQS | best known mean ~1.5, confirm
+ECQS | reduce noise on champion
+ECQS | reduce noise on champion
+ECQS | reduce noise on champion

@@ -1,0 +1,153 @@
+====================================================================================================
+GRID  NK uniform K=1 seed=1 pct=93.0  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 5 conditions x 3 models x 40 campaigns = 600 campaigns
+  ceiling $110.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    frontier     anthropic/claude-opus-4.7        released 2026-02
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+    open-weight  deepseek/deepseek-chat-v3.1      released 2025-08
+prompt facts checked: reference GDIF is viable and reads 6.8730 (stated 6.8700), pool is 7.00% of the space, example ADIF (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_zeronoise_manifest.json (commit de3a7d42)
+    frontier     anthropic/claude-opus-4.7        released 2026-02
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+    open-weight  deepseek/deepseek-chat-v3.1      released 2025-08
+canary: comparator live, differs from the mean rule on 24 of 60 scripted campaigns
+
+resuming: 326 campaigns already on disk, $47.3235 already spent
+
+  SHUFFLED order over 274 campaigns across 15 cells (order seed 20260927)
+      Mechanism     open-weight seed 300033 ok 53 rep 54 ( 90%) | nom  7.9513 | distn  6 | $0.0042 cum $47.33 | 41s
+      Aggregated    open-weight seed 300015 ok 51 rep 54 ( 90%) | nom  7.9513 | distn  6 | $0.0024 cum $47.33 | 42s
+      Decision-rule frontier    seed 300030 ok 49 rep 44 ( 73%) | nom  7.9397 | distn 13 | $0.3101 cum $47.64 | 96s
+      Quantitative  frontier    seed 300004 ok 45 rep 26 ( 43%) | nom  7.9513 | distn 22 | $0.3537 cum $47.99 | 142s
+      Aggregated    frontier    seed 300030 ok 20 rep  8 ( 13%) | nom  7.9397 | distn 12 | $0.3120 cum $48.31 | 149s
+      Quantitative  open-weight seed 300038 ok 48 rep 56 ( 93%) | nom  7.9513 | distn  4 | $0.0042 cum $48.31 | 44s
+      Blind         frontier    seed 300034 ok 48 rep 37 ( 62%) | nom  7.4380 | distn 13 | $0.5924 cum $48.90 | 145s
+      Blind         mid-tier    seed 300005 ok 50 rep 50 ( 83%) | nom  7.9397 | distn  8 | $0.0145 cum $48.92 | 50s
+      Mechanism     mid-tier    seed 300016 ok 53 rep 45 ( 75%) | nom  7.9513 | distn 14 | $0.0137 cum $48.93 | 49s
+      Quantitative  open-weight seed 300006 ok 52 rep 49 ( 82%) | nom  7.9513 | distn 10 | $0.0045 cum $48.94 | 56s
+      Mechanism     frontier    seed 300005 ok 49 rep 30 ( 50%) | nom  7.5251 | distn 24 | $0.4413 cum $49.38 | 121s
+      Decision-rule mid-tier    seed 300038 ok 49 rep 57 ( 95%) | nom  7.6865 | distn  2 | $0.0088 cum $49.39 | 33s
+      Blind         mid-tier    seed 300026 ok 51 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0070 cum $49.39 | 30s
+      Blind         frontier    seed 300026 ok 48 rep 36 ( 60%) | nom  7.3867 | distn 18 | $0.3770 cum $49.77 | 113s
+      Quantitative  open-weight seed 300017 ok 46 rep 50 ( 83%) | nom  7.9513 | distn  6 | $0.0035 cum $49.77 | 56s
+      Decision-rule frontier    seed 300002 ok 42 rep 28 ( 47%) | nom  7.9513 | distn 16 | $0.2722 cum $50.05 | 99s
+      Aggregated    frontier    seed 300039 ok 48 rep 45 ( 75%) | nom  7.3867 | distn 12 | $0.3675 cum $50.41 | 133s
+      Quantitative  open-weight seed 300000 ok 48 rep 56 ( 93%) | nom  7.7287 | distn  4 | $0.0059 cum $50.42 | 82s
+      Quantitative  mid-tier    seed 300039 ok 46 rep 38 ( 63%) | nom  7.9513 | distn 15 | $0.0231 cum $50.44 | 69s
+      Aggregated    open-weight seed 300032 ok 51 rep 56 ( 93%) | nom  7.7287 | distn  4 | $0.0034 cum $50.45 | 64s
+      Decision-rule frontier    seed 300022 ok 48 rep 38 ( 63%) | nom  7.4380 | distn 16 | $0.5093 cum $50.95 | 120s
+      Mechanism     open-weight seed 300017 ok 52 rep 53 ( 88%) | nom  7.9513 | distn  7 | $0.0037 cum $50.96 | 50s
+      Decision-rule open-weight seed 300038 ok 46 rep 55 ( 92%) | nom  7.9513 | distn  5 | $0.0040 cum $50.96 | 42s
+      Blind         mid-tier    seed 300036 ok 51 rep 53 ( 88%) | nom  7.6865 | distn  6 | $0.0139 cum $50.98 | 49s
+      Quantitative  mid-tier    seed 300026 ok 49 rep 37 ( 62%) | nom  8.0406 | distn 18 | $0.0215 cum $51.00 | 72s
+      Quantitative  frontier    seed 300037 ok 48 rep 21 ( 35%) | nom  7.8754 | distn 33 | $0.6073 cum $51.60 | 164s
+      Blind         mid-tier    seed 300034 ok 49 rep 53 ( 88%) | nom  7.9397 | distn  7 | $0.0125 cum $51.62 | 45s
+      Mechanism     frontier    seed 300001 ok 47 rep 23 ( 38%) | nom  8.1209 | distn 28 | $0.4168 cum $52.03 | 118s
+      Blind         mid-tier    seed 300010 ok 54 rep 55 ( 92%) | nom  7.6865 | distn  4 | $0.0117 cum $52.05 | 42s
+      Blind         mid-tier    seed 300029 ok 51 rep 56 ( 93%) | nom  7.6865 | distn  4 | $0.0111 cum $52.06 | 40s
+      Aggregated    open-weight seed 300003 ok 52 rep 55 ( 92%) | nom  7.9513 | distn  4 | $0.0024 cum $52.06 | 33s
+      Decision-rule open-weight seed 300003 ok 53 rep 54 ( 90%) | nom  7.9513 | distn  6 | $0.0036 cum $52.06 | 41s
+      Quantitative  mid-tier    seed 300030 ok 49 rep 41 ( 68%) | nom  7.9397 | distn 12 | $0.0371 cum $52.10 | 97s
+      Quantitative  open-weight seed 300023 ok 51 rep 56 ( 93%) | nom  7.7287 | distn  4 | $0.0091 cum $52.11 | 82s
+      Decision-rule open-weight seed 300009 ok 47 rep 56 ( 93%) | nom  7.7287 | distn  4 | $0.0035 cum $52.11 | 41s
+      Blind         mid-tier    seed 300009 ok 47 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0073 cum $52.12 | 30s
+      Quantitative  frontier    seed 300015 ok 41 rep 26 ( 43%) | nom  7.4380 | distn 20 | $0.8270 cum $52.95 | 169s
+      Mechanism     frontier    seed 300014 ok 49 rep 27 ( 45%) | nom  8.1209 | distn 31 | $0.4100 cum $53.36 | 123s
+      Quantitative  frontier    seed 300005 ok 49 rep 27 ( 45%) | nom  7.7632 | distn 27 | $0.4999 cum $53.86 | 142s
+      Quantitative  mid-tier    seed 300025 ok 40 rep 42 ( 70%) | nom  7.9513 | distn  9 | $0.0202 cum $53.88 | 75s
+      Quantitative  frontier    seed 300012 ok 40 rep 27 ( 45%) | nom  7.9513 | distn 21 | $0.3481 cum $54.23 | 127s
+      Decision-rule open-weight seed 300010 ok 55 rep 56 ( 93%) | nom  7.7287 | distn  4 | $0.0062 cum $54.23 | 54s
+      Blind         frontier    seed 300027 ok 54 rep 34 ( 57%) | nom  8.1209 | distn 24 | $0.3377 cum $54.57 | 97s
+      Aggregated    mid-tier    seed 300022 ok 51 rep 49 ( 82%) | nom  7.7839 | distn  7 | $0.0082 cum $54.58 | 36s
+      Quantitative  mid-tier    seed 300013 ok 50 rep 44 ( 73%) | nom  7.9513 | distn 11 | $0.0197 cum $54.60 | 71s
+      Blind         mid-tier    seed 300022 ok 53 rep 51 ( 85%) | nom  7.9397 | distn  7 | $0.0185 cum $54.62 | 63s
+      Blind         open-weight seed 300030 ok 52 rep 55 ( 92%) | nom  7.7287 | distn  4 | $0.0078 cum $54.62 | 73s
+      Decision-rule open-weight seed 300011 ok 52 rep 56 ( 93%) | nom  7.7287 | distn  4 | $0.0050 cum $54.63 | 52s
+      Aggregated    open-weight seed 300022 ok 52 rep 55 ( 92%) | nom  7.9513 | distn  5 | $0.0032 cum $54.63 | 60s
+      Decision-rule mid-tier    seed 300007 ok 47 rep 57 ( 95%) | nom  7.6865 | distn  2 | $0.0097 cum $54.64 | 35s
+      Quantitative  mid-tier    seed 300037 ok 44 rep 36 ( 60%) | nom  7.9513 | distn 12 | $0.0203 cum $54.66 | 73s
+      Mechanism     mid-tier    seed 300005 ok 49 rep 48 ( 80%) | nom  7.9397 | distn 10 | $0.0249 cum $54.69 | 71s
+      Mechanism     open-weight seed 300002 ok 54 rep 55 ( 92%) | nom  7.9513 | distn  5 | $0.0034 cum $54.69 | 37s
+      Mechanism     frontier    seed 300035 ok 48 rep 28 ( 47%) | nom  7.7632 | distn 25 | $0.4482 cum $55.14 | 123s
+      Decision-rule frontier    seed 300016 ok 45 rep 31 ( 52%) | nom  7.9513 | distn 16 | $0.2575 cum $55.40 | 109s
+      Mechanism     frontier    seed 300007 ok 44 rep 33 ( 55%) | nom  7.3867 | distn 16 | $0.4400 cum $55.84 | 161s
+      Blind         open-weight seed 300009 ok 54 rep 57 ( 95%) | nom  7.7287 | distn  3 | $0.0101 cum $55.85 | 98s
+      Aggregated    open-weight seed 300031 ok 50 rep 53 ( 88%) | nom  7.9513 | distn  5 | $0.0029 cum $55.85 | 52s
+      Aggregated    frontier    seed 300032 ok 43 rep 38 ( 63%) | nom  8.0406 | distn 11 | $0.2341 cum $56.08 | 137s
+      Decision-rule mid-tier    seed 300017 ok 54 rep 50 ( 83%) | nom  7.9397 | distn  8 | $0.0103 cum $56.09 | 47s
+      Mechanism     mid-tier    seed 300004 ok 51 rep 46 ( 77%) | nom  7.9397 | distn  9 | $0.0104 cum $56.10 | 73s
+      Decision-rule open-weight seed 300023 ok 48 rep 54 ( 90%) | nom  7.7287 | distn  3 | $0.0072 cum $56.11 | 90s
+      Quantitative  frontier    seed 300033 ok 44 rep 18 ( 30%) | nom  8.5319 | distn 31 | $0.4045 cum $56.52 | 138s
+      Aggregated    mid-tier    seed 300012 ok 53 rep 52 ( 87%) | nom  7.9397 | distn  7 | $0.0066 cum $56.52 | 60s
+      Aggregated    mid-tier    seed 300033 ok 55 rep 50 ( 83%) | nom  7.9513 | distn 10 | $0.0074 cum $56.53 | 39s
+      Blind         open-weight seed 300037 ok 46 rep 52 ( 87%) | nom  7.6865 | distn  4 | $0.0065 cum $56.54 | 120s
+      Decision-rule mid-tier    seed 300032 ok 48 rep 57 ( 95%) | nom  7.6865 | distn  2 | $0.0098 cum $56.55 | 58s
+      Mechanism     frontier    seed 300023 ok 20 rep 10 ( 17%) | nom  7.3867 | distn 12 | $0.1981 cum $56.74 | 217s
+      Mechanism     frontier    seed 300011 ok 27 rep 22 ( 37%) | nom  7.4380 | distn 12 | $0.4147 cum $57.16 | 249s
+      Aggregated    mid-tier    seed 300025 ok 51 rep 52 ( 87%) | nom  7.9397 | distn  8 | $0.0080 cum $57.17 | 44s
+      Quantitative  open-weight seed 300031 ok 52 rep 53 ( 88%) | nom  7.9513 | distn  7 | $0.0046 cum $57.17 | 90s
+      Mechanism     open-weight seed 300011 ok 47 rep 48 ( 80%) | nom  7.9513 | distn  6 | $0.0040 cum $57.17 | 91s
+      Mechanism     open-weight seed 300010 ok 49 rep 51 ( 85%) | nom  7.9513 | distn  5 | $0.0035 cum $57.18 | 92s
+      Mechanism     frontier    seed 300039 ok 16 rep 10 ( 17%) | nom  7.3867 | distn  7 | $0.1920 cum $57.37 | 236s
+      Aggregated    open-weight seed 300002 ok 46 rep 52 ( 87%) | nom  7.7287 | distn  3 | $0.0045 cum $57.37 | 168s
+      Blind         frontier    seed 300013 ok  5 rep  2 (  3%) | nom  7.2332 | distn  3 | $0.0677 cum $57.44 | 231s
+      Aggregated    open-weight seed 300039 ok 47 rep 51 ( 85%) | nom  7.9513 | distn  4 | $0.0027 cum $57.45 | 117s
+      Mechanism     frontier    seed 300025 ok 10 rep  4 (  7%) | nom  7.9397 | distn  7 | $0.0937 cum $57.54 | 183s
+      Aggregated    open-weight seed 300024 ok 53 rep 52 ( 87%) | nom  7.9397 | distn  7 | $0.0036 cum $57.54 | 63s
+      Blind         open-weight seed 300004 ok 54 rep 55 ( 92%) | nom  7.7287 | distn  4 | $0.0109 cum $57.55 | 155s
+      Aggregated    frontier    seed 300029 ok  3 rep  0 (  0%) | nom  7.3720 | distn  3 | $0.0177 cum $57.57 | 164s
+      Decision-rule open-weight seed 300032 ok 52 rep 57 ( 95%) | nom  7.3720 | distn  3 | $0.0067 cum $57.58 | 93s
+      Decision-rule mid-tier    seed 300036 ok 52 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0095 cum $57.59 | 47s
+      Aggregated    frontier    seed 300008 ok  0 rep  0 (  0%) | nom  0.0000 | distn  0 | $0.0000 cum $57.59 | 151s
+      Aggregated    open-weight seed 300028 ok 51 rep 55 ( 92%) | nom  7.9397 | distn  5 | $0.0035 cum $57.59 | 69s
+      Decision-rule open-weight seed 300021 ok 52 rep 54 ( 90%) | nom  7.9513 | distn  5 | $0.0040 cum $57.59 | 77s
+      Decision-rule open-weight seed 300033 ok 43 rep 53 ( 88%) | nom  7.7287 | distn  3 | $0.0080 cum $57.60 | 122s
+      Blind         frontier    seed 300011 ok  0 rep  0 (  0%) | nom  0.0000 | distn  0 | $0.0000 cum $57.60 | 153s
+      Mechanism     mid-tier    seed 300007 ok 48 rep 39 ( 65%) | nom  8.0406 | distn 19 | $0.0212 cum $57.62 | 84s
+      Mechanism     frontier    seed 300009 ok  4 rep  1 (  2%) | nom  7.3720 | distn  3 | $0.0172 cum $57.64 | 186s
+      Aggregated    open-weight seed 300029 ok 47 rep 56 ( 93%) | nom  7.7287 | distn  4 | $0.0032 cum $57.64 | 98s
+      Decision-rule frontier    seed 300000 ok  2 rep  0 (  0%) | nom  7.2332 | distn  2 | $0.0125 cum $57.66 | 176s
+      Mechanism     mid-tier    seed 300013 ok 50 rep 45 ( 75%) | nom  7.9513 | distn  9 | $0.0126 cum $57.67 | 59s
+      Mechanism     mid-tier    seed 300010 ok 53 rep 49 ( 82%) | nom  7.9513 | distn 10 | $0.0130 cum $57.68 | 55s
+      Aggregated    mid-tier    seed 300001 ok 51 rep 52 ( 87%) | nom  7.9397 | distn  8 | $0.0071 cum $57.69 | 37s
+      Decision-rule open-weight seed 300006 ok 52 rep 54 ( 90%) | nom  7.9513 | distn  5 | $0.0047 cum $57.69 | 84s
+      Quantitative  frontier    seed 300034 ok  0 rep  0 (  0%) | nom  0.0000 | distn  0 | $0.0000 cum $57.69 | 162s
+      Decision-rule mid-tier    seed 300026 ok 51 rep 58 ( 97%) | nom  7.6865 | distn  2 | $0.0086 cum $57.70 | 37s
+      Quantitative  open-weight seed 300027 ok 54 rep 52 ( 87%) | nom  7.9513 | distn  6 | $0.0041 cum $57.71 | 76s
+      Blind         open-weight seed 300001 ok 57 rep 52 ( 87%) | nom  7.9513 | distn  8 | $0.0042 cum $57.71 | 91s
+      Quantitative  open-weight seed 300037 ok 52 rep 53 ( 88%) | nom  7.9513 | distn  7 | $0.0046 cum $57.72 | 72s
+      Mechanism     frontier    seed 300020 ok  0 rep  0 (  0%) | nom  0.0000 | distn  0 | $0.0000 cum $57.72 | 164s
+      Quantitative  frontier    seed 300006 ok  0 rep  0 (  0%) | nom  0.0000 | distn  0 | $0.0000 cum $57.72 | 164s
+      Quantitative  open-weight seed 300024 ok 51 rep 53 ( 88%) | nom  7.9513 | distn  7 | $0.0039 cum $57.72 | 88s
+      Decision-rule frontier    seed 300014 ok  0 rep  0 (  0%) | nom  0.0000 | distn  0 | $0.0000 cum $57.72 | 164s
+      Blind         open-weight seed 300000 ok 50 rep 53 ( 88%) | nom  7.9513 | distn  7 | $0.0037 cum $57.72 | 84s
+      Blind         open-weight seed 300039 ok 51 rep 53 ( 88%) | nom  7.3202 | distn  4 | $0.0056 cum $57.73 | 120s
+      Mechanism     open-weight seed 300028 ok 53 rep 56 ( 93%) | nom  7.7287 | distn  4 | $0.0038 cum $57.73 | 74s
+      Mechanism     frontier    seed 300012 ok  0 rep  0 (  0%) | nom  0.0000 | distn  0 | $0.0000 cum $57.73 | 164s
+      Decision-rule mid-tier    seed 300034 ok 29 rep 24 ( 40%) | nom  7.9513 | distn 10 | $0.0089 cum $57.74 | 138s
+      Decision-rule open-weight seed 300005 ok 53 rep 56 ( 93%) | nom  7.7287 | distn  4 | $0.0055 cum $57.75 | 102s
+      Quantitative  open-weight seed 300022 ok 47 rep 51 ( 85%) | nom  7.9513 | distn  5 | $0.0064 cum $57.75 | 119s
+      Mechanism     mid-tier    seed 300021 ok 19 rep 19 ( 32%) | nom  7.6865 | distn  2 | $0.0052 cum $57.76 | 178s
+      Blind         mid-tier    seed 300020 ok 34 rep 32 ( 53%) | nom  7.9397 | distn  9 | $0.0089 cum $57.77 | 176s
+      Blind         mid-tier    seed 300013 ok 32 rep 26 ( 43%) | nom  7.9397 | distn  7 | $0.0074 cum $57.77 | 173s
+      Aggregated    frontier    seed 300000 ok  0 rep  0 (  0%) | nom  0.0000 | distn  0 | $0.0000 cum $57.77 | 172s
+      Mechanism     mid-tier    seed 300009 ok 11 rep  6 ( 10%) | nom  7.9397 | distn  7 | $0.0029 cum $57.78 | 188s
+      Mechanism     mid-tier    seed 300029 ok  8 rep  8 ( 13%) | nom  7.6865 | distn  3 | $0.0032 cum $57.78 | 218s
+      Mechanism     mid-tier    seed 300039 ok 10 rep  5 (  8%) | nom  7.9397 | distn  7 | $0.0035 cum $57.78 | 216s
+      Aggregated    open-weight seed 300010 ok 39 rep 38 ( 63%) | nom  7.9513 | distn  4 | $0.0020 cum $57.79 | 95s
+      Blind         frontier    seed 300036 ok  0 rep  0 (  0%) | nom  0.0000 | distn  0 | $0.0000 cum $57.79 | 164s
+      Aggregated    mid-tier    seed 300037 ok  6 rep  3 (  5%) | nom  7.6865 | distn  3 | $0.0006 cum $57.79 | 168s
+      Mechanism     mid-tier    seed 300030 ok  0 rep  0 (  0%) | nom  0.0000 | distn  0 | $0.0000 cum $57.79 | 162s
+      Blind         frontier    seed 300023 ok  0 rep  0 (  0%) | nom  0.0000 | distn  0 | $0.0000 cum $57.79 | 160s
+      Blind         frontier    seed 300002 ok  0 rep  0 (  0%) | nom  0.0000 | distn  0 | $0.0000 cum $57.79 | 161s
+      Mechanism     mid-tier    seed 300026 ok  4 rep  1 (  2%) | nom  7.6865 | distn  3 | $0.0008 cum $57.79 | 190s
+      Mechanism     open-weight seed 300029 ok 49 rep 53 ( 88%) | nom  7.9513 | distn  5 | $0.0050 cum $57.79 | 82s
+      Blind         mid-tier    seed 300025 ok  0 rep  0 (  0%) | nom  0.0000 | distn  0 | $0.0000 cum $57.79 | 162s
+      Mechanism     mid-tier    seed 300025 ok  0 rep  0 (  0%) | nom  0.0000 | distn  0 | $0.0000 cum $57.79 | 162s
+      Blind         mid-tier    seed 300015 ok  0 rep  0 (  0%) | nom  0.0000 | distn  0 | $0.0000 cum $57.79 | 162s
+      Aggregated    mid-tier    seed 300007 ok  0 rep  0 (  0%) | nom  0.0000 | distn  0 | $0.0000 cum $57.79 | 162s
+      Decision-rule open-weight seed 300019 ok 23 rep 23 ( 38%) | nom  7.7287 | distn  3 | $0.0029 cum $57.80 | 162s
+      Blind         open-weight seed 300035 ok 28 rep 28 ( 47%) | nom  7.9397 | distn  5 | $0.0035 cum $57.80 | 193s
+      Blind         mid-tier    seed 300011 ok  0 rep  0 (  0%) | nom  0.0000 | distn  0 | $0.0000 cum $57.80 | 162s

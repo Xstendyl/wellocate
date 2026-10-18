@@ -1,0 +1,26 @@
+========================================================================================================
+FAIR vs POOL-SCOPE SCRIPTED REFERENCE (0ai), neighbours over the landscape's alphabet   n=1500 per k   anchor=GDIF   seeds 8200000..8201499
+========================================================================================================
+  published fair curve reproduced exactly at every k
+  published pool curve reproduced exactly at every k
+
+  POOL-SCOPE (told viability)
+    k       mean        SE    distinct   rejections       lost        n collapsed
+    0     7.8862    0.0107       51.13         0.00       0.00     1500         0
+    1     7.9993    0.0091       39.14         0.00       0.00     1500         0
+    2     7.9640    0.0089       27.24         0.00       0.00     1500         0
+    3     7.8424    0.0095       15.32         0.00       0.00     1500         0
+    4     7.3367    0.0111        3.44         0.00       0.00     1484        16
+  k* = 1   k*=7.9993  k=0=7.8862  span=0.1131  distinct at k*=39.14
+
+  FAIR (guesses viability)
+    k       mean        SE    distinct   rejections       lost        n collapsed
+    0     7.7098    0.0112       31.03       133.47      23.09     1500         0
+    1     7.8659    0.0106       28.94        83.02      11.70     1500         0
+    2     7.8186    0.0102       20.86        55.46       7.45     1500         0
+    3     7.7049    0.0095       11.93        30.33       3.89     1500         0
+    4     7.4271    0.0102        2.88         6.26       0.72     1353       147
+  k* = 1   k*=7.8659  k=0=7.7098  span=0.1561  distinct at k*=28.94
+
+  wrote results/reference_curve_alphabet.json; results/fair_reference_curve.json is left as published
+python3 -B scripts/fair_reference_curve.py  72.02s user 0.18s system 99% cpu 1:12.24 total

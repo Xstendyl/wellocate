@@ -1,0 +1,95 @@
+{
+ "lost": [],
+ "base": {
+  "smoke0an6_gb1_menu": {
+   "claude-opus-4.7|round": {
+    "calls": 30
+   },
+   "claude-opus-4.7|replacement": {
+    "calls": 56
+   },
+   "deepseek-chat-v3.1|round": {
+    "calls": 30
+   },
+   "deepseek-chat-v3.1|replacement": {
+    "calls": 25
+   },
+   "gemini-2.5-flash|round": {
+    "calls": 30
+   },
+   "gemini-2.5-flash|replacement": {
+    "calls": 53
+   }
+  },
+  "smoke0an_f3_cap": {
+   "claude-opus-4.7|round": {
+    "calls": 15,
+    "lost": 1
+   },
+   "claude-opus-4.7|replacement": {
+    "calls": 108
+   },
+   "gemini-2.5-flash|round": {
+    "calls": 15
+   },
+   "gemini-2.5-flash|replacement": {
+    "calls": 173,
+    "lost": 5
+   }
+  },
+  "smoke0an_f1_ledger": {
+   "claude-opus-4.7|round": {
+    "calls": 30
+   },
+   "claude-opus-4.7|replacement": {
+    "calls": 41
+   },
+   "deepseek-chat-v3.1|round": {
+    "calls": 30
+   },
+   "deepseek-chat-v3.1|replacement": {
+    "calls": 23
+   },
+   "gemini-2.5-flash|round": {
+    "calls": 30
+   },
+   "gemini-2.5-flash|replacement": {
+    "calls": 49
+   }
+  },
+  "smoke0an_f2_menu": {
+   "claude-opus-4.7|round": {
+    "calls": 30
+   },
+   "claude-opus-4.7|replacement": {
+    "calls": 109
+   },
+   "deepseek-chat-v3.1|round": {
+    "calls": 15
+   },
+   "deepseek-chat-v3.1|replacement": {
+    "calls": 18
+   },
+   "gemini-2.5-flash|round": {
+    "calls": 30
+   },
+   "gemini-2.5-flash|replacement": {
+    "calls": 85
+   }
+  },
+  "smoke0an_f0_control": {
+   "deepseek-chat-v3.1|round": {
+    "calls": 30
+   },
+   "deepseek-chat-v3.1|replacement": {
+    "calls": 13
+   },
+   "gemini-2.5-flash|round": {
+    "calls": 30
+   },
+   "gemini-2.5-flash|replacement": {
+    "calls": 22
+   }
+  }
+ }
+}

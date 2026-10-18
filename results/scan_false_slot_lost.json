@@ -1,0 +1,86 @@
+{
+ "gen_0an_f0_control": {
+  "calls": 4702,
+  "campaigns": 143,
+  "campaigns_with_the_cap": 0,
+  "prompts_with_cap_text": 0,
+  "false_lines": 0,
+  "examples": []
+ },
+ "gen_0an_f1_ledger": {
+  "calls": 4387,
+  "campaigns": 125,
+  "campaigns_with_the_cap": 0,
+  "prompts_with_cap_text": 0,
+  "false_lines": 0,
+  "examples": []
+ },
+ "gen_0an_f2_menu": {
+  "calls": 4669,
+  "campaigns": 79,
+  "campaigns_with_the_cap": 0,
+  "prompts_with_cap_text": 0,
+  "false_lines": 0,
+  "examples": []
+ },
+ "smoke0an_f3_cap": {
+  "calls": 313,
+  "campaigns": 2,
+  "campaigns_with_the_cap": 2,
+  "prompts_with_cap_text": 302,
+  "false_lines": 2,
+  "examples": [
+   [
+    "google/gemini-2.5-flash",
+    15000001,
+    15,
+    "QDIC"
+   ],
+   [
+    "google/gemini-2.5-flash",
+    15000001,
+    15,
+    "QDIQ"
+   ]
+  ]
+ },
+ "smoke0an1_f3_cap": {
+  "calls": 2015,
+  "campaigns": 6,
+  "campaigns_with_the_cap": 6,
+  "prompts_with_cap_text": 1988,
+  "false_lines": 28,
+  "examples": [
+   [
+    "deepseek/deepseek-chat-v3.1",
+    15000000,
+    9,
+    "GDIM"
+   ],
+   [
+    "deepseek/deepseek-chat-v3.1",
+    15000000,
+    10,
+    "GDIM"
+   ],
+   [
+    "deepseek/deepseek-chat-v3.1",
+    15000001,
+    4,
+    "GDHM"
+   ],
+   [
+    "deepseek/deepseek-chat-v3.1",
+    15000001,
+    5,
+    "GDIC"
+   ],
+   [
+    "deepseek/deepseek-chat-v3.1",
+    15000001,
+    8,
+    "GDIT"
+   ]
+  ]
+ }
+}

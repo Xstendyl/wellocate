@@ -1,0 +1,27 @@
+{
+ "tag": "tpanel",
+ "cells": 3,
+ "total_lines": 3489,
+ "source_lines": 3489,
+ "all_verified": true,
+ "files": {
+  "instructed__anthropic_claude-opus-4.7.jsonl.gz": {
+   "lines": 1350,
+   "sha256": "dc8d5243787a6ebe69b20301d56f6c433fa8988d24e83faf5b29572404888969",
+   "bytes": 193682,
+   "verified": true
+  },
+  "instructed__deepseek_deepseek-chat-v3.1.jsonl.gz": {
+   "lines": 1006,
+   "sha256": "9a215acc78c7c9c91487d184c6b3e7c9c8592c782bf6c22b293a6fe8474999d7",
+   "bytes": 186686,
+   "verified": true
+  },
+  "instructed__google_gemini-2.5-flash.jsonl.gz": {
+   "lines": 1133,
+   "sha256": "8a6e1af3c6881129f03a4944850a69b2d1ec7b1ca2e03a0304c2f52fd5af5063",
+   "bytes": 155595,
+   "verified": true
+  }
+ }
+}

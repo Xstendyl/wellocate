@@ -1,0 +1,35 @@
+{
+ "fair_k0": {
+  "mean": 7.709765114017187,
+  "top_pct_of_viable": 6.455933565496919,
+  "top_pct_of_space": 0.451875,
+  "n_viable_at_least": 723,
+  "n_space_at_least": 723
+ },
+ "fair_k1": {
+  "mean": 7.865864914893477,
+  "top_pct_of_viable": 3.6253236896151444,
+  "top_pct_of_space": 0.25375,
+  "n_viable_at_least": 406,
+  "n_space_at_least": 406
+ },
+ "pool_k0": {
+  "mean": 7.886230417105319,
+  "top_pct_of_viable": 3.37530136619341,
+  "top_pct_of_space": 0.23625,
+  "n_viable_at_least": 378,
+  "n_space_at_least": 378
+ },
+ "pool_k1": {
+  "mean": 7.999298589044483,
+  "top_pct_of_viable": 2.2412715421019733,
+  "top_pct_of_space": 0.156875,
+  "n_viable_at_least": 251,
+  "n_space_at_least": 251
+ },
+ "landscape": {
+  "candidates": 160000,
+  "viable": 11199,
+  "best": 8.762
+ }
+}

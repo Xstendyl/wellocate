@@ -1,0 +1,21 @@
+{
+ "tag": "gen_0an5_f2_menu_opus",
+ "cells": 1,
+ "total_lines": 1671,
+ "source_lines": 1671,
+ "carried_forward_lines": 0,
+ "untouched_cell_lines": 0,
+ "replaced_lines": 0,
+ "expected_total_lines": 1671,
+ "all_verified": true,
+ "empty": false,
+ "files": {
+  "blind__anthropic_claude-opus-4.7.jsonl.gz": {
+   "lines": 1671,
+   "sha256": "abad14208ec3858f7d06eee17cd547a1ae71aa95268acee6867a9483e6075d5f",
+   "bytes": 292584,
+   "verified": true,
+   "written_by_this_run": true
+  }
+ }
+}

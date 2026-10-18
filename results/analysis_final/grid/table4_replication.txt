@@ -1,0 +1,28 @@
+TABLE 4. Replication fraction under all FOUR definitions. Secondary.
+The scripted optimum k*=1 is 25% of slots. A claim must hold under every definition or be
+reported as definition dependent.
+
+condition      model                     n over slots used         over all 60 slots       excl anchor, slots used  excl anchor, all 60   
+Blind          claude-opus-4.7         695   75.4%                   75.4%                   62.8%                   62.8%               
+Blind          deepseek-chat-v3.1      181   91.0%                   91.0%                   68.6%                   68.6%               
+Blind          gemini-2.5-flash        139   93.8%                   93.8%                   69.5%                   69.5%               
+Quantitative   claude-opus-4.7         695   78.4%                   78.4%                   65.5%                   65.5%               
+Quantitative   deepseek-chat-v3.1      181   93.1%                   93.1%                   63.1%                   63.1%               
+Quantitative   gemini-2.5-flash        139   84.4%                   84.4%                   67.3%                   67.3%               
+Mechanism      claude-opus-4.7         695   81.6%                   81.6%                   68.1%                   68.1%               
+Mechanism      deepseek-chat-v3.1      181   93.7%                   93.7%                   56.9%                   56.9%               
+Mechanism      gemini-2.5-flash        139   95.2%                   95.2%                   73.3%                   73.3%               
+Aggregated     claude-opus-4.7         695   85.8%                   85.8%                   70.4%                   70.4%               
+Aggregated     deepseek-chat-v3.1      181   94.3%                   94.3%                   57.0%                   57.0%               
+Aggregated     gemini-2.5-flash        139   95.6%                   95.6%                   74.6%                   74.6%               
+Decision-rule  claude-opus-4.7         695   85.3%                   85.3%                   70.8%                   70.8%               
+Decision-rule  deepseek-chat-v3.1      180   93.4%                   93.4%                   58.8%                   58.8%               
+Decision-rule  gemini-2.5-flash        139   95.5%                   95.5%                   73.8%                   73.8%               
+
+0ag NOMINATION FALLBACKS EXCLUDED from these primary figures: 1 campaign(s) -> Decision-rule/deepseek-chat-v3.1 1.
+A fallback is a nomination that did not parse, where campaign.py substituted best_by_mean(),
+which is exactly the Decision-rule instruction. The sensitivity keeping them is in
+summary.json under contrasts_with_fallbacks.
+
+0ah UNDEFINED SHRINKAGE COMPARATOR in 4 campaign(s), NOT excluded because the
+primary outcome is unaffected. Reason recovered per cell: Decision-rule/gemini-2.5-flash 3 (fewer than two measured variants); Mechanism/gemini-2.5-flash 1 (fewer than two measured variants)

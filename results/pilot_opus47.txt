@@ -1,0 +1,42 @@
+PILOT  model=anthropic/claude-opus-4.7  GB1  unit=0.557 (top1-top2, random-calibrated)  temp=0.0  N=5
+  scripted reference: at ratio 2 the optimum is k=0; at ratio 4 it is k=1 (+12%%).
+
+  --- rung=blind  ratio=2  sigma=1.114 ---
+      seed 90000 slots 60 ok 50 rej  4 | REPLICATIONS 35 (58%) | nom 8.762 | $0.1154 | 58s
+      seed 90001 slots 58 ok 53 rej  7 | REPLICATIONS 29 (50%) | nom 8.762 | $0.1272 | 61s
+      seed 90002 slots 60 ok 48 rej  1 | REPLICATIONS 29 (48%) | nom 5.869 | $0.1023 | 53s
+      seed 90003 slots 58 ok 52 rej 11 | REPLICATIONS 20 (34%) | nom 5.430 | $0.1484 | 70s
+      seed 90004 slots 57 ok 48 rej  9 | REPLICATIONS 31 (54%) | nom 8.762 | $0.1293 | 62s
+
+  --- rung=blind  ratio=8  sigma=4.456 ---
+      seed 90000 slots 60 ok 53 rej  3 | REPLICATIONS 31 (52%) | nom 7.555 | $0.1107 | 55s
+      seed 90001 slots 59 ok 54 rej  6 | REPLICATIONS 31 (53%) | nom 5.298 | $0.1226 | 60s
+      seed 90002 slots 60 ok 54 rej  3 | REPLICATIONS 35 (58%) | nom 1.419 | $0.1077 | 55s
+      seed 90003 slots 60 ok 51 rej  5 | REPLICATIONS 43 (72%) | nom 8.762 | $0.1225 | 56s
+      seed 90004 slots 60 ok 51 rej  1 | REPLICATIONS 30 (50%) | nom 8.762 | $0.1011 | 54s
+
+  --- rung=instructed  ratio=2  sigma=1.114 ---
+      seed 90000 slots 60 ok 48 rej  4 | REPLICATIONS 38 (63%) | nom 8.762 | $0.1247 | 51s
+      seed 90001 slots 60 ok 52 rej  4 | REPLICATIONS 42 (70%) | nom 8.762 | $0.1267 | 55s
+      seed 90002 slots 60 ok 53 rej  2 | REPLICATIONS 45 (75%) | nom 1.000 | $0.1535 | 69s
+      seed 90003 slots 60 ok 50 rej  4 | REPLICATIONS 42 (70%) | nom 8.762 | $0.1242 | 53s
+      seed 90004 slots 60 ok 54 rej  2 | REPLICATIONS 38 (63%) | nom 8.762 | $0.1121 | 50s
+
+  --- rung=instructed  ratio=8  sigma=4.456 ---
+      seed 90000 slots 59 ok 52 rej  2 | REPLICATIONS 46 (78%) | nom 3.931 | $0.1118 | 49s
+      seed 90001 slots 60 ok 54 rej  4 | REPLICATIONS 43 (72%) | nom 8.762 | $0.1252 | 51s
+      seed 90002 slots 60 ok 54 rej  2 | REPLICATIONS 47 (78%) | nom 0.121 | $0.1265 | 55s
+      seed 90003 slots 59 ok 53 rej  3 | REPLICATIONS 43 (73%) | nom 1.512 | $0.1360 | 59s
+      seed 90004 slots 60 ok 52 rej  1 | REPLICATIONS 42 (70%) | nom 8.762 | $0.1082 | 50s
+
+================================================================================================
+PILOT SUMMARY  anthropic/claude-opus-4.7
+================================================================================================
+  rung         ratio | replication frac | rej/slot  malform | intents
+  blind            2 |   49.1% +- 4.1  |    0.11        1% | {'unclear': 44, 'explore': 141, 'replicate_to_confirm': 114, 'replicate_by_apparent_oversight': 30}
+  blind            8 |   56.8% +- 4.0  |    0.06        0% | {'unclear': 34, 'explore': 114, 'replicate_to_confirm': 148, 'replicate_by_apparent_oversight': 21}
+  instructed       2 |   68.3% +- 2.2  |    0.05        7% | {'unclear': 20, 'explore': 94, 'replicate_to_confirm': 99, 'replicate_by_apparent_oversight': 136}
+  instructed       8 |   74.2% +- 1.7  |    0.04        7% | {'unclear': 13, 'explore': 77, 'replicate_to_confirm': 91, 'replicate_by_apparent_oversight': 154}
+
+  TOTAL SPEND: $2.4363 over 368 calls
+  per-call log: /Users/<name>/projects/repdef/results/pilot_opus47_calls.jsonl

@@ -1,0 +1,11 @@
+{
+ "anthropic/claude-opus-4.7": {
+  "calls": 1585,
+  "empty": 0,
+  "malformed": 1,
+  "truncated": 0,
+  "mean_reasoning": 0,
+  "max_reasoning": 0,
+  "max_completion": 144
+ }
+}

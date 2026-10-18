@@ -1,0 +1,50 @@
+  key source: repdef/.env  (fingerprint 0d6f7d3f, never the key)
+  credit (launch): account $428.58, key $128.54 -> BINDING $128.54 (key), key expires 2026-10-28
+  credit check (launch): $128.54 spendable, floor $50.00 -> ok
+====================================================================================================
+GRID  NK uniform K=1 seed=1 pct=93.0  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 2 conditions x 2 models x 40 campaigns = 160 campaigns
+  ceiling $95.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    frontier     anthropic/claude-opus-4.7        released 2026-02
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+prompt facts checked: reference GDIF is viable and reads 6.8730 (stated 6.8700), pool is 7.00% of the space, example ADIF (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_panelc_manifest.json (commit 2c03d780)
+    frontier     anthropic/claude-opus-4.7        released 2026-02
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+canary: comparator live, differs from the mean rule on 24 of 60 scripted campaigns
+
+resuming: 159 campaigns already on disk, $50.0486 already spent
+
+  SHUFFLED order over 1 campaigns across 4 cells (order seed 20260928)
+      Blind         mid-tier    seed 300037 ok 51 rep 52 ( 87%) | nom  7.0273 | distn  8 | $0.2056 cum $50.25 | 476s
+
+  NOMINATION CALLS: 1, of which 1 carry a two-parser comparison, 1 agree
+
+  TWO-PARSER CHECK over 31 ROUND calls (nomination calls above)
+    GENUINE disagreement (both read, and differ)         0  0.00%
+    by design (primary refused the count, spent none)    0  0.00%
+  spot check written: /Users/<name>/projects/repdef/results/grid_panelc_spotcheck.txt
+  call log archived: 4 cells, 5852 lines (32 new, 1270 carried, 4550 untouched, 0 replaced), 0.9 MB, all verified True
+  plain call log removed after verification: grid_panelc_calls.jsonl
+
+====================================================================================================
+SUMMARY   panelc
+====================================================================================================
+  VARIANCES AND HEALTH ONLY. The primary outcome by condition is NOT printed here; see
+  scripts/stage1_variance.py for the sizing inputs and the final analysis script for means.
+  (scripted reference for later use: k*=1 at 8.0057, k=0 at 7.8856)
+  condition     role          n | sd(nominated) sd(distinct) |   distn | rep of budget | $/campaign
+  Blind         frontier     40 |        0.2662      3.2502 |    14.0 |         69.0%     0.4195
+  Blind         mid-tier     40 |        0.2792      3.3247 |    10.2 |         81.8%     0.2069
+  Mechanism     frontier     40 |        0.2918      2.6751 |    12.2 |         72.7%     0.4355
+  Mechanism     mid-tier     40 |        0.2531      1.4656 |     7.4 |         85.9%     0.1945
+
+  TOTAL SPEND $50.2543 over 32 calls, 160 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls       empty     malformed       trunc  mean rsn   max rsn
+  google/gemini-2.5-flash            32     0  0.0%      0   0.0%     0  0.0%      2439      4938
+
+  No empty and no truncated responses on any model at max_tokens=6000.

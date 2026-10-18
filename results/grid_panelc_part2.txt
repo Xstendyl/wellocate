@@ -1,0 +1,29 @@
+====================================================================================================
+GRID  NK uniform K=1 seed=1 pct=93.0  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 2 conditions x 2 models x 40 campaigns = 160 campaigns
+  ceiling $95.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    frontier     anthropic/claude-opus-4.7        released 2026-02
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+prompt facts checked: reference GDIF is viable and reads 6.8730 (stated 6.8700), pool is 7.00% of the space, example ADIF (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_panelc_manifest.json (commit 9c66a1e5)
+    frontier     anthropic/claude-opus-4.7        released 2026-02
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+canary: comparator live, differs from the mean rule on 24 of 60 scripted campaigns
+
+resuming: 5 campaigns already on disk, $1.5039 already spent
+
+  SHUFFLED order over 155 campaigns across 4 cells (order seed 20260928)
+      Mechanism     frontier    seed 300037 ok  0 rep  0 (  0%) | nom  0.0000 | distn  0 | $0.0000 cum $1.50 | 161s
+      Mechanism     mid-tier    seed 300036 ok  0 rep  0 (  0%) | nom  0.0000 | distn  0 | $0.0000 cum $1.50 | 162s
+      Blind         mid-tier    seed 300035 ok  2 rep  0 (  0%) | nom  6.8730 | distn  2 | $0.0126 cum $1.52 | 204s
+      Blind         mid-tier    seed 300029 ok  3 rep  1 (  2%) | nom  7.3867 | distn  3 | $0.0261 cum $1.54 | 238s
+      Mechanism     mid-tier    seed 300006 ok  0 rep  0 (  0%) | nom  0.0000 | distn  0 | $0.0000 cum $1.54 | 162s
+      Mechanism     frontier    seed 300034 ok  0 rep  0 (  0%) | nom  0.0000 | distn  0 | $0.0000 cum $1.54 | 162s
+      Mechanism     frontier    seed 300039 ok  0 rep  0 (  0%) | nom  0.0000 | distn  0 | $0.0000 cum $1.54 | 161s
+      Mechanism     mid-tier    seed 300000 ok  0 rep  0 (  0%) | nom  0.0000 | distn  0 | $0.0000 cum $1.54 | 162s
+      Mechanism     frontier    seed 300010 ok  0 rep  0 (  0%) | nom  0.0000 | distn  0 | $0.0000 cum $1.54 | 161s
+      Blind         frontier    seed 300037 ok  0 rep  0 (  0%) | nom  0.0000 | distn  0 | $0.0000 cum $1.54 | 160s
+      Mechanism     mid-tier    seed 300035 ok  0 rep  0 (  0%) | nom  0.0000 | distn  0 | $0.0000 cum $1.54 | 162s
+      Mechanism     mid-tier    seed 300025 ok  0 rep  0 (  0%) | nom  0.0000 | distn  0 | $0.0000 cum $1.54 | 162s

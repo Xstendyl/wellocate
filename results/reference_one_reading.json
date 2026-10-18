@@ -1,0 +1,62 @@
+{
+ "grid": {
+  "best scripted": {
+   "policy": "informed k=1",
+   "n": 1500,
+   "collapsed": 0,
+   "pick": 7.999298589044483,
+   "share_budget": 23.33111111111111,
+   "one_reading_pct": 1.7333333333333332,
+   "split": "nk:paper"
+  },
+  "guessing rule": {
+   "policy": "guessing k=1",
+   "n": 1500,
+   "collapsed": 0,
+   "pick": 7.865864914893477,
+   "share_budget": 23.778888888888886,
+   "one_reading_pct": 1.6,
+   "split": "nk:paper"
+  }
+ },
+ "GB1": {
+  "best scripted": {
+   "policy": "guessing k=0",
+   "n": 1500,
+   "collapsed": 0,
+   "pick": 6.086764857732206,
+   "share_budget": 0.888888888888889,
+   "one_reading_pct": 99.2,
+   "split": "gb1:paper"
+  },
+  "guessing rule": {
+   "policy": "guessing k=0",
+   "n": 1500,
+   "collapsed": 0,
+   "pick": 6.086764857732206,
+   "share_budget": 0.888888888888889,
+   "one_reading_pct": 99.2,
+   "split": "gb1:paper"
+  }
+ },
+ "PhoQ": {
+  "best scripted": {
+   "policy": "informed k=0",
+   "n": 1500,
+   "collapsed": 0,
+   "pick": 2.62619878168794,
+   "share_budget": 0.0,
+   "one_reading_pct": 100.0,
+   "split": "phoq:paper"
+  },
+  "guessing rule": {
+   "policy": "guessing k=0",
+   "n": 1500,
+   "collapsed": 0,
+   "pick": 2.0500042464604817,
+   "share_budget": 1.0333333333333334,
+   "one_reading_pct": 99.4,
+   "split": "phoq:paper"
+  }
+ }
+}

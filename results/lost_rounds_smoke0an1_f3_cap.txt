@@ -1,0 +1,178 @@
+Every reply that lost a round in the 0an.1 F3 re-smoke. The log keeps the LAST attempt only, written after the re-ask.
+
+### claude-opus-4.7 seed 15000000, round 9, 4 slots: status ambiguous after 2 attempts
+parser notes: ['format tier: pipe', 'asked for 4 and 15 proposals were accepted, so WHICH ones were meant is unknowable; refusing to choose', "re-asked: attempt 2 of 2 produced status 'ambiguous'", 'spending NO slots this round: 15 proposals for 4 slots after 2 attempts']
+
+GAJN gave 8.678 and 8.307, GAJF gave 8.481, GAJH gave 8.259. Position 4 letters N, F, H strong. Both GAJF and GAJN maxed. Let me explore around GAJN.
+
+HAJN | try position 1 variant of best candidate GAJN
+GBJN | try position 2 variant of GAJN
+GAIN was non-viable, try other pos3
+GAJN maxed. Explore pos1/2 and remaining pos4.
+
+HAJN | pos1 variant of top scorer GAJN (8.68)
+GAJB | pos4 B untested near GAJN region
+GCJN | pos2 C variant, GCJF/GCJH were viable
+GAJE | retry low-tested area; actually GAJE=6.028 known. 
+
+Let me redo:
+
+HAJN | pos1 H variant of best GAJN=8.678
+ICJN | no, stay close
+GCJN | pos2 variant, C was viable at GCJF=7.237
+GAJB | untried pos4 letter near strong region
+GAJD | GAJD=6.716 known, skip
+
+Final 4:
+
+HAJN | pos1 variant of top GAJN (8.678)
+GCJN | pos2 C viable elsewhere, combine with strong pos4 N
+GAJB | explore untried pos4 letter
+GDJN | pos2 D with pos4 N, both strong individually
+
+### claude-opus-4.7 seed 15000000, round 10, 4 slots: status ambiguous after 2 attempts
+parser notes: ['format tier: pipe', 'asked for 4 and 11 proposals were accepted, so WHICH ones were meant is unknowable; refusing to choose', "re-asked: attempt 2 of 2 produced status 'ambiguous'", 'spending NO slots this round: 11 proposals for 4 slots after 2 attempts']
+
+GAJN was best at 8.678 and GAJF 8.481, but both maxed. Need to explore around them.
+
+HAJN | try H at pos1, near best GAJN
+GAJN variants exhausted direction, try IAJN
+IAJN | pos1=I variant of best candidate
+GAIN | try I at pos3 with N tail (previously rejected? check - yes rejected)
+
+Let me reconsider - GAIN was rejected. Avoid.
+
+HAJN | pos1 variant of best 8.678
+IAJN | pos1 variant of best
+GAJO | already done 7.263, maxed? no only once. retry
+GAHN | pos3 variant near best
+
+HAJN | pos1=H variant of best GAJN (8.678)
+IAJN | pos1=I variant of best GAJN
+GAHN | pos3=H variant of best GAJN
+GAJO | second read of GAJO to confirm 7.263
+
+### claude-opus-4.7 seed 15000000, round 11, 4 slots: status ambiguous after 2 attempts
+parser notes: ['format tier: pipe', 'asked for 4 and 15 proposals were accepted, so WHICH ones were meant is unknowable; refusing to choose', "re-asked: attempt 2 of 2 produced status 'ambiguous'", 'spending NO slots this round: 15 proposals for 4 slots after 2 attempts']
+
+GAJN variants have been best (8.678, 8.307). GAJF=8.481, GAKF=7.535. Position 3=J, pos4=N/F/H best. Explore pos1 alternatives with GAJN base, and nearby.
+
+GBJN | try pos2=B with best suffix JN
+GAJN was best; try pos1 variants
+GAIN was rejected. Try GAJN neighbors differently.
+
+GBJN | explore pos1=B with top-scoring JN tail
+GEJN | explore pos1=E with top tail JN  
+GAJN-like: GAKN rejected, GAIN rejected
+GCJN | pos1=C with top tail
+GDJN | already tried (failed), retry
+
+GBJN | pos2=B with best tail JN (GAJN=8.678)
+GCJN | pos2=C with best tail JN
+GDJN | retry previously-failed order with top tail
+GAJN was max; try pos4 variants around N: GAJO=7.263, GAJM=6.787
+
+GBJN | vary pos2 from A, keep best tail JN
+GCJN | vary pos2 to C, keep best tail JN
+GDJN | retry GDJN (previous failed), top tail
+GAJN+pos4 shift already explored; try GAKJ no. Use GEJN
+Final:
+
+GBJN | pos2=B with top-scoring JN tail
+GCJN | pos2=C with top-scoring JN tail
+GDJN | retry previously failed, top tail
+GEJN | pos2=E with top-scoring JN tail
+
+### claude-opus-4.7 seed 15000000, round 12, 4 slots: status ambiguous after 2 attempts
+parser notes: ['format tier: pipe', 'asked for 4 and 8 proposals were accepted, so WHICH ones were meant is unknowable; refusing to choose', "re-asked: attempt 2 of 2 produced status 'ambiguous'", 'spending NO slots this round: 8 proposals for 4 slots after 2 attempts']
+
+GAJN scored 8.678 and 8.307, GAJF scored 8.481. Both maxed. Best to explore near these.
+
+GBJN | B at pos2 like GAJN, test variant
+GAJM | already 6.787, retry... no, maxed? not maxed, try again
+GAIN | was rejected before, skip
+GCJN | C at pos2, near best
+
+Let me pick 4 valid new ones:
+
+GBJN | pos2 variant of top scorer GAJN
+GCJN | pos2 variant of GAJN  
+GAJO | already measured 7.263, retry for average
+GAIM | combine GAI_ and _AJM features
+
+### claude-opus-4.7 seed 15000000, round 13, 4 slots: status alphabet_then_wrong_count after 2 attempts
+parser notes: ['format tier: pipe', "bad alphabet in 'GAJV': ['V'] not in the landscape's alphabet ABCDEFGHIJKLMNOPQRST", "bad alphabet in 'GAJU': ['U'] not in the landscape's alphabet ABCDEFGHIJKLMNOPQRST", 'asked for 4, parsed 2, and 2 line(s) were dropped by the alphabet filter, so the count is a CONSEQUENCE and not an output-format failure', "re-asked: attempt 2 of 2 produced status 'alphabet_then_wrong_count'", 'spending NO slots this round: 2 proposals for 4 slots after 2 attempts']
+
+GAJV | explore pos4 near best GAJN=8.49
+GAIN | wait, that was rejected; try GAJW
+GBJN | vary pos2 from best GAJN
+GAJU | explore pos4 near GAJN/GAJT
+
+### claude-opus-4.7 seed 15000001, round 7, 4 slots: status ambiguous after 2 attempts
+parser notes: ['format tier: pipe', "bad alphabet in 'GDKV': ['V'] not in the landscape's alphabet ABCDEFGHIJKLMNOPQRST", 'asked for 4 and 7 proposals were accepted, so WHICH ones were meant is unknowable; refusing to choose', "re-asked: attempt 2 of 2 produced status 'ambiguous'", 'spending NO slots this round: 7 proposals for 4 slots after 2 attempts']
+
+GDKL has 7.479, GDKF 7.797. Position 3 = K is good. Let me explore.
+
+FDKJ | F+K combo, J4 worked well before
+HDKJ | try H at pos1 with best K+J
+GDKE | retry with K, different pos4
+GDKV | wait, only A-T; try GDKU - also invalid. Use GEKJ
+
+Let me reconsider:
+
+FDKJ | combine F1 with best suffix KJ
+GEKJ | E2 variant with K+J
+GDNF | explore pos3=N with reference frame
+GDKC | retry K with C at pos4
+
+### claude-opus-4.7 seed 15000001, round 8, 4 slots: status ambiguous after 2 attempts
+parser notes: ['format tier: pipe', 'asked for 4 and 5 proposals were accepted, so WHICH ones were meant is unknowable; refusing to choose', "re-asked: attempt 2 of 2 produced status 'ambiguous'", 'spending NO slots this round: 5 proposals for 4 slots after 2 attempts']
+
+GDKL | best known but at limit... let me reconsider
+
+Let me think: best scores are GDKF (7.797), GDKJ (7.505), GDKL (7.479), GDJF (7.217), GDIF (7.187). Position 3=K is best. Position 1=G best. Position 2=D best. Position 4 varies: F,J,L good.
+
+GDKL, GDKF, GDKJ all at limit. Need new candidates.
+
+FDKJ | F+K combo, F worked at 7.063, J is good at pos4
+HDKJ | try H at pos1 with best K+J
+GDKE | explore pos4=E with best stem (though E often non-viable)
+GEKL | try E pos2 with K+L
+
+### claude-opus-4.7 seed 15000001, round 13, 4 slots: status ambiguous after 2 attempts
+parser notes: ['format tier: pipe', 'asked for 4 and 8 proposals were accepted, so WHICH ones were meant is unknowable; refusing to choose', "re-asked: attempt 2 of 2 produced status 'ambiguous'", 'spending NO slots this round: 8 proposals for 4 slots after 2 attempts']
+
+GDJN gave 7.861 (best). Need to explore nearby viable candidates. GDJN is maxed. Let me try position variations I haven't tested.
+
+GEJN was rejected. HDJN rejected. FDJN rejected. GDIN rejected. GDJM/O/P/Q/R/S/T/A/B/C/D/L all rejected. So GDJ_ only has N,F,N (already tested).
+
+Try: GDKJ maxed, GDKL maxed. What about new combos? GEKN rejected. GDJN variants mostly rejected.
+
+Let me try unexplored: GEJF rejected. Try positions 1,2 changes with KJ or KL endings. HDKJ rejected, HDKL rejected, FDKJ rejected, FDKL maxed.
+
+Try GEKI, GEKK, GCKL, GEKH, GEIL, etc.
+
+GEKL | second-best region, slight variation
+GEKI | explore position 4 near K
+GCKL | explore position 2
+GEJL | already rejected... try HEKL
+
+GEKL is maxed. Let me pick:
+
+GEKI | explore new pos4 near good region
+GCKL | try C at pos2 near GEKL
+HEKL | try H at pos1
+GEKH | explore pos4
+
+### claude-opus-4.7 seed 15000001, round 15, 4 slots: status wrong_count after 2 attempts
+parser notes: ['format tier: pipe', 'asked for 4, parsed 3, with no alphabet rejections', "re-asked: attempt 2 of 2 produced status 'wrong_count'", 'spending NO slots this round: 3 proposals for 4 slots after 2 attempts']
+
+NDJN | explore position 1 variant near best GDJN
+GDJN was best 7.861; try adjacent viable neighbors
+GDHN | try position 3 variant H near GDJN
+GEJN | try E at pos2 with JN
+
+### deepseek-chat-v3.1 seed 15000001, round 8, 1 slots: status bad_alphabet after 2 attempts
+parser notes: ['format tier: pipe', "bad alphabet in 'GDIV': ['V'] not in the landscape's alphabet ABCDEFGHIJKLMNOPQRST", "re-asked: attempt 2 of 2 produced status 'bad_alphabet'", 'spending NO slots this round: 0 proposals for 1 slots after 2 attempts']
+
+GDIV | exploring next letter after U at position 4

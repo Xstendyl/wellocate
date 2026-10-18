@@ -1,0 +1,92 @@
+Reason at the first re-order, one line per campaign, for checking the coding.
+
+pilot_L10n20           seed 90000    round 3   FWAA   [explicit_noise AMBIGUOUS]  best hit so far, retest for noise/confirm
+pilot_L10n20           seed 90001    round 2   FWGA   [explore_mismatch]  explore position 3 variation around strong hit FWAA
+pilot_L10n20           seed 90002    round 3   VDGF   [explicit_noise AMBIGUOUS]  best hit so far, retest to confirm and average noise
+pilot_L10n20           seed 90003    round 2   FWAA   [generic_confirm]  best hit so far, retest for reliability
+pilot_L10n20           seed 90004    round 4   FWGA   [generic_confirm]  best hit so far (9.048), reconfirm/anchor
+pilot_L10n20           seed 90005    round 2   FWAA   [explore_mismatch AMBIGUOUS]  huge hit, probe neighbors around this peak
+pilot_L10n20           seed 90006    round 3   FWAA   [generic_confirm]  best hit so far (7.467), reconfirm reading
+pilot_L10n20           seed 90007    round 4   FDGV   [explicit_noise AMBIGUOUS]  best so far (2.614), re-measure to confirm
+pilot_L10n20           seed 90008    round 6   VCGL   [explore_mismatch AMBIGUOUS]  best hit so far, probe neighbors around it
+pilot_L10n20           seed 90009    round 2   FWAA   [explore_mismatch AMBIGUOUS]  best hit so far, probe nearby space
+pilot_L10n20           seed 90010    round 2   FWAA   [explore_mismatch AMBIGUOUS]  best hit so far, probe nearby by mutating pos1
+pilot_L10n20           seed 90011    round 3   VDGV   [explicit_noise AMBIGUOUS]  re-measure parent-like top hit to confirm 4.715 signal
+pilot_L10n20           seed 90012    round 3   FWAA   [explicit_noise AMBIGUOUS]  best hit so far (11.29), reorder for noise check + local exploration base
+pilot_L10n20           seed 90013    round 3   FWAA   [generic_confirm]  best hit so far, reconfirm and anchor
+pilot_L10n20           seed 90014    round 2   FWGA   [other]  combine top hits FWAA and FDGA features at positions 2,4
+pilot_L10n20           seed 90015    round 2   FWAA   [generic_confirm]  best hit so far, reconfirm reading
+pilot_L10n20           seed 90016    round 2   FWAA   [explore_mismatch AMBIGUOUS]  best hit so far, probe neighbors
+pilot_L10n20           seed 90017    round 5   WWGG   [explore_mismatch]  explore small residue at pos4 with strong WWGA background
+pilot_L10n20           seed 90018    round 5   VEAF   [explore_mismatch AMBIGUOUS]  rejected before but retry different: try VDCF - combine best pos3=A backbone with C
+pilot_L10n20           seed 90019    round 3   FWGA   [explicit_noise AMBIGUOUS]  best hit so far, reconfirm with replicate
+pilot_L15n20           seed 90000    round 4   VEGV   [explicit_noise AMBIGUOUS]  best so far (5.825), re-measure to confirm noise level
+pilot_L15n20           seed 90001    round 3   FWAA   [generic_confirm]  best hit so far, reconfirm and anchor
+pilot_L15n20           seed 90002    round 6   VDCI   [explore_mismatch]  Explore branched hydrophobic at pos4 with strong VDC_ background
+pilot_L15n20           seed 90003    round 3   FWGA   [explore_mismatch AMBIGUOUS]  best so far (4.03), explore neighbors
+pilot_L15n20           seed 90004    round 5   VDAA   [generic_confirm AMBIGUOUS]  best hit so far (10.23), reorder to confirm and explore neighbors
+pilot_L15n20           seed 90005    round 3   FWAA   [generic_confirm]  best hit so far, retest to confirm reading
+pilot_L15n20           seed 90006    round 2   FWAA   [explore_mismatch AMBIGUOUS]  best hit so far, explore neighbors
+pilot_L15n20           seed 90007    round 2   FWAA   [explore_mismatch AMBIGUOUS]  best hit so far, probe neighbors
+pilot_L15n20           seed 90008    round 2   FWAA   [explore_mismatch AMBIGUOUS]  best hit so far, probe neighbors
+pilot_L15n20           seed 90009    round 3   FWAA   [generic_confirm]  best so far, retest neighbors around it
+pilot_L15n20           seed 90010    round 3   FDAA   [explore_mismatch AMBIGUOUS]  best hit so far, explore position 4 variants
+pilot_L15n20           seed 90011    round 2   FWAA   [explore_mismatch AMBIGUOUS]  best hit so far, explore neighbors
+pilot_L15n20           seed 90012    round 2   FWAA   [explore_mismatch AMBIGUOUS]  best hit so far, probe position 1 variants
+pilot_L15n20           seed 90013    round 3   FWAA   [generic_confirm]  best hit so far, retest to confirm reproducibility
+pilot_L15n20           seed 90014    round 3   FWAA   [generic_confirm AMBIGUOUS]  best hit so far (10.66); reconfirm and probe neighborhood anchor
+pilot_L15n20           seed 90015    round 3   FWAA   [explicit_noise AMBIGUOUS]  best hit so far, re-measure to confirm noise level
+pilot_L15n20           seed 90016    round 5   YWGV   [explicit_noise AMBIGUOUS]  best so far (11.42), reorder to confirm noise
+pilot_L15n20           seed 90017    round 5   WWGF   [explore_mismatch AMBIGUOUS]  best so far, explore position 4 neighborhood
+pilot_L15n20           seed 90018    round 4   FYGV   [generic_confirm]  best so far (8.36), reconfirm and anchor
+pilot_L15n20           seed 90019    round 4   FWGA   [generic_confirm]  best hit so far (8.97), reorder to confirm and hedge against failure
+pilot_L30n20           seed 90000    round 1   FDGV   [explore_mismatch]  try aromatic Phe at position 1, known beneficial substitution
+pilot_L30n20           seed 90001    round 2   FWAA   [generic_confirm]  best hit, retest to confirm and handle failure risk
+pilot_L30n20           seed 90002    round 4   VDGF   [explicit_noise AMBIGUOUS]  best hit so far (7.437), retest to confirm and check noise
+pilot_L30n20           seed 90003    round 4   FWAA   [explicit_noise AMBIGUOUS]  best hit so far, retest for noise confirmation
+pilot_L30n20           seed 90004    round 3   FWAA   [explicit_noise AMBIGUOUS]  best hit 8.392, re-measure to confirm noise
+pilot_L30n20           seed 90005    round 2   FWAA   [explore_mismatch AMBIGUOUS]  best hit so far, probe nearby with F→Y aromatic swap
+pilot_L30n20           seed 90006    round 2   FWAA   [generic_confirm]  best hit so far (7.467), reorder to confirm reproducibility
+pilot_L30n20           seed 90007    round 3   FWGL   [explore_mismatch AMBIGUOUS]  best so far, explore neighbors
+pilot_L30n20           seed 90008    round 4   FWGA   [generic_confirm]  best hit so far, reconfirm and anchor
+pilot_L30n20           seed 90009    round 3   FDGV   [generic_confirm]  best hit so far, retest to confirm reproducibility
+pilot_L30n20           seed 90010    round 2   FWAA   [explore_mismatch AMBIGUOUS]  best hit so far, probe neighbors
+pilot_L30n20           seed 90011    round 2   FWAA   [explore_mismatch AMBIGUOUS]  best hit so far (8.8), explore its neighborhood
+pilot_L30n20           seed 90012    round 3   FWAA   [generic_confirm]  best hit so far, retest to confirm reproducibility
+pilot_L30n20           seed 90013    round 2   FWAA   [explore_mismatch AMBIGUOUS]  best hit so far, probe neighbors
+pilot_L30n20           seed 90014    round 2   FDGV   [explore_mismatch AMBIGUOUS]  best hit so far, explore neighbors
+pilot_L30n20           seed 90015    round 3   FWAA   [generic_confirm]  best hit so far, reconfirm reliability
+pilot_L30n20           seed 90016    round 2   FWAA   [generic_confirm AMBIGUOUS]  best hit so far (6.518); reconfirm and explore neighbors next
+pilot_L30n20           seed 90017    round 5   FWAV   [generic_confirm]  best so far tied, retest region with variations
+pilot_L30n20           seed 90018    round 2   VDGF   [explore_mismatch]  improved over parent, explore position 4 hydrophobics
+pilot_L30n20           seed 90019    round 4   FWGI   [generic_confirm]  best so far tied, retest region
+pilot_slots2           seed 90000    round 10  FDGS   [other]  wait, already tested. Let me reconsider.
+pilot_slots2           seed 90001    round 2   VDGL   [generic_confirm AMBIGUOUS]  test hydrophobic substitution at position 4 to explore viable space
+pilot_slots2           seed 90002    round 5   VDAV   [generic_confirm AMBIGUOUS]  best hit so far (3.989), retest to confirm and explore neighborhood
+pilot_slots2           seed 90003    round 6   VDAV   [explore_mismatch AMBIGUOUS]  best hit so far, try position 4 variants around it
+pilot_slots2           seed 90004    round 2   VDGL   [generic_confirm]  test C-terminal variation, keep viable core
+pilot_slots2           seed 90005    round 2   WLLA   [other]  retry previously failed promising hydrophobic combo
+pilot_slots2           seed 90006    round 3   VDGI   [other]  branched aliphatic at pos4, similar to successful A/L variants
+pilot_slots2           seed 90007    round 4   FDGA   [explore_mismatch]  try small hydrophobic at pos4 to explore beyond parent V
+pilot_slots2           seed 90008    round 6   VDGF   [other]  best hit so far (4.478), retry with variations at other positions next
+pilot_slots2           seed 90009    round 4   FDGV   [generic_confirm AMBIGUOUS]  best hit so far (11.27), retest to confirm and explore neighborhood
+pilot_slots4           seed 90000    round 4   YWAA   [explicit_noise AMBIGUOUS]  best so far (12.44), reorder to confirm and get another reading
+pilot_slots4           seed 90001    round 2   VDGL   [explicit_noise AMBIGUOUS]  best hit so far, retest to check noise
+pilot_slots4           seed 90002    round 3   WWLV   [explore_mismatch AMBIGUOUS]  best so far, explore neighbors around this hit
+pilot_slots4           seed 90003    round 2   FWAA   [explore_mismatch AMBIGUOUS]  best hit so far, probe neighbors
+pilot_slots4           seed 90004    round 3   FWAA   [generic_confirm]  best hit so far, retest to confirm reproducibility
+pilot_slots4           seed 90005    round 2   FWAA   [explore_mismatch]  huge hit, explore neighbors
+pilot_slots4           seed 90006    round 3   FWAA   [generic_confirm]  best hit so far, retest to confirm reading
+pilot_slots4           seed 90007    round 2   FWAA   [explore_mismatch AMBIGUOUS]  best hit so far, probe neighborhood at pos2
+pilot_slots4           seed 90008    round 2   FWGA   [explicit_noise AMBIGUOUS]  best hit so far, retest to confirm and check noise
+pilot_slots4           seed 90009    round 3   FWAA   [explicit_noise AMBIGUOUS]  best hit so far, re-measure to confirm and check noise
+pilot_slots8           seed 90000    round 1   FDGV   [explore_mismatch]  try aromatic Phe at pos1, known beneficial substitution in GB1 landscape
+pilot_slots8           seed 90001    round 4   VNAA   [explore_mismatch AMBIGUOUS]  best so far (11.87), explore neighbors
+pilot_slots8           seed 90002    round 2   VDGW   [other]  aromatic at pos4 like F(7.4) may boost further
+pilot_slots8           seed 90003    round 2   VDAV   [explore_mismatch AMBIGUOUS]  best hit so far (7.87), explore neighbors
+pilot_slots8           seed 90004    round 2   VEGI   [explore_mismatch]  combine beneficial E at pos2 with exploring pos4=I on viable VEG scaffold
+pilot_slots8           seed 90005    round 1   FDGV   [other]  aromatic substitution at position 1, often tolerated in GB1
+pilot_slots8           seed 90006    round 2   VDGV   [generic_confirm]  reconfirm parent, high baseline
+pilot_slots8           seed 90007    round 2   VEGV   [explicit_noise]  replicate top hit for noise estimate
+pilot_slots8           seed 90008    round 1   FDGV   [other]  aromatic substitution at position 1, known beneficial region
+pilot_slots8           seed 90009    round 2   FDGV   [explore_mismatch AMBIGUOUS]  best hit so far, explore neighbors

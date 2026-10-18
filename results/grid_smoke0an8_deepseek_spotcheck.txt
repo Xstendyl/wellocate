@@ -1,0 +1,186 @@
+SPOT CHECK: raw model output beside the proposals the harness accepted.
+Sampled deterministically, 20 calls per model. Written for a human to read.
+
+====================================================================================================
+deepseek/deepseek-chat-v3.1  (open-weight)   30 calls, showing 20
+====================================================================================================
+
+--- round 1  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['EDQS', 'EDQT', 'EDRS', 'EEQS']
+SECONDARY: ['EDQS', 'EDQT', 'EDRS', 'EEQS']
+RAW:
+EDQS | reference point baseline  
+EDQT | small variation on position 4  
+EDRS | small variation on position 3  
+EEQS | small variation on position 2
+
+--- round 2  slots 4  status alphabet_then_wrong_count  tier pipe  accepted 0  tokens-anywhere 4  parsers agree False ---
+PARSED   : []
+SECONDARY: ['EDQT', 'EEQS']
+RAW:
+EDQT | retry failed order
+EEQS | retry failed order
+EDQU | explore variation near reference
+EDQV | explore variation near reference
+
+--- round 3  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['EDQS', 'EDQT', 'EDRS', 'EEQS']
+SECONDARY: ['EDQS', 'EDQT', 'EDRS', 'EEQS']
+RAW:
+EDQS | reference point, need more data
+EDQT | retry failed candidate
+EDRS | previous low score, check consistency
+EEQS | retry failed candidate
+
+--- round 4  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 9  parsers agree True ---
+PARSED   : ['EDQT', 'EDQS', 'EEQT', 'EDRS']
+SECONDARY: ['EDQT', 'EDQS', 'EEQT', 'EDRS']
+RAW:
+EDQT | best so far, explore nearby
+EDQS | reference point, monitor stability
+EEQT | mutation of best (EDQT) and common (EDQS)
+EDRS | low reading, but need to check consistency
+
+--- round 5  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 5  parsers agree True ---
+PARSED   : ['EDQT', 'EEQT', 'EDQS', 'EDRS']
+SECONDARY: ['EDQT', 'EEQT', 'EDQS', 'EDRS']
+RAW:
+EDQT | highest reading so far, promising direction
+EEQT | similar to EDQT with E at pos2, explore variant
+EDQS | reference point, baseline for comparison
+EDRS | low reading but may provide contrast for optimization
+
+--- round 6  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['EDQT', 'EEQT', 'EDQS', 'EDRS']
+SECONDARY: ['EDQT', 'EEQT', 'EDQS', 'EDRS']
+RAW:
+EDQT | current best, high readings (0.711, 0.750, 0.740)
+EEQT | promising variant (0.654 in round 5)
+EDQS | reference point, consistent readings
+EDRS | low readings but need to confirm pattern
+
+--- round 7  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['EDQT', 'EEQT', 'EDQS', 'EDRS']
+SECONDARY: ['EDQT', 'EEQT', 'EDQS', 'EDRS']
+RAW:
+EDQT | High score observed consistently (0.711, 0.750, 0.740, 0.685)
+EEQT | Promising score (0.511, 0.654, 0.608), potential improvement over EDQT
+EDQS | Reference point, stable but lower (0.388, 0.504, 0.460, failed once)
+EDRS | Low score (0.142, 0.152, 0.149), but testing viability and failure rate
+
+--- round 8  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 9  parsers agree True ---
+PARSED   : ['EDQT', 'EEQT', 'EDQS', 'EDRS']
+SECONDARY: ['EDQT', 'EEQT', 'EDQS', 'EDRS']
+RAW:
+EDQT | continue exploiting current best
+EEQT | second best so far, needs more data
+EDQS | reference point, baseline comparison
+EDRS | low performer, but may need confirmation
+
+--- round 9  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 5  parsers agree True ---
+PARSED   : ['EDQT', 'EEQT', 'EDQS', 'EDRS']
+SECONDARY: ['EDQT', 'EEQT', 'EDQS', 'EDRS']
+RAW:
+EDQT | Highest consistent performer, average ~0.716
+EEQT | Second best performer, average ~0.597
+EDQS | Reference point, average ~0.441
+EDRS | Consistently low, baseline for comparison
+
+--- round 10  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['EDQT', 'EEQT', 'EDQS', 'EDRS']
+SECONDARY: ['EDQT', 'EEQT', 'EDQS', 'EDRS']
+RAW:
+EDQT | High score observed repeatedly (0.711, 0.750, 0.740, 0.738)
+EEQT | High score observed (0.722 last round) and consistent performer
+EDQS | Reference point, baseline performance
+EDRS | Low score but included for diversity and failure rate tracking
+
+--- round 11  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 5  parsers agree True ---
+PARSED   : ['EDQT', 'EEQT', 'EDQS', 'EDRS']
+SECONDARY: ['EDQT', 'EEQT', 'EDQS', 'EDRS']
+RAW:
+EDQT | highest observed score so far (0.750)
+EEQT | second highest score (0.722) with good consistency
+EDQS | reference point for comparison
+EDRS | baseline low performer for control
+
+--- round 12  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['EDQT', 'EEQT', 'EDQS', 'EDRS']
+SECONDARY: ['EDQT', 'EEQT', 'EDQS', 'EDRS']
+RAW:
+EDQT | highest observed score, despite occasional failures
+EEQT | second highest score, consistent performer
+EDQS | reference point, reliable baseline
+EDRS | low score but may provide contrast for optimization
+
+--- round 13  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 6  parsers agree True ---
+PARSED   : ['EDQT', 'EEQT', 'EDQS', 'EDRS']
+SECONDARY: ['EDQT', 'EEQT', 'EDQS', 'EDRS']
+RAW:
+EDQT | Highest observed score (0.788), consistent performer
+EEQT | Second best performer (0.722 max), good alternative
+EDQS | Reference point, stable baseline measurement
+EDRS | Lowest score but completes position pattern for comparison
+
+--- round 14  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 5  parsers agree True ---
+PARSED   : ['EDQT', 'EEQT', 'EDQS', 'EDRS']
+SECONDARY: ['EDQT', 'EEQT', 'EDQS', 'EDRS']
+RAW:
+EDQT | highest observed score (0.788), consistent performer
+EEQT | second best performer, shows variability (0.722 max)
+EDQS | reference point, stable baseline measurement
+EDRS | worst performer, useful for comparison and viability check
+
+--- round 15  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['EDQT', 'EEQT', 'EDQS', 'EDRS']
+SECONDARY: ['EDQT', 'EEQT', 'EDQS', 'EDRS']
+RAW:
+EDQT | highest observed score (0.836) and consistent performer
+EEQT | second best performer, needs verification after recent drop
+EDQS | reference point, needs more data after recent failures
+EDRS | consistently low, but necessary for baseline comparison
+
+--- round 1  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['EDQS', 'EDQT', 'EDRS', 'EEQS']
+SECONDARY: ['EDQS', 'EDQT', 'EDRS', 'EEQS']
+RAW:
+EDQS | reference point, baseline measurement
+EDQT | first symbol variation from reference
+EDRS | second symbol variation from reference
+EEQS | third symbol variation from reference
+
+--- round 2  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 9  parsers agree True ---
+PARSED   : ['EDQT', 'EDQS', 'EDRS', 'EEQS']
+SECONDARY: ['EDQT', 'EDQS', 'EDRS', 'EEQS']
+RAW:
+EDQT | high reading from round 1
+EDQS | reference point, good baseline
+EDRS | low reading, potential for contrast
+EEQS | similar to EDQS, good for comparison
+
+--- round 3  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 6  parsers agree True ---
+PARSED   : ['EDQT', 'EDQS', 'EDRS', 'EEQS']
+SECONDARY: ['EDQT', 'EDQS', 'EDRS', 'EEQS']
+RAW:
+EDQT | Previous high performer (0.770, 0.704)
+EDQS | Reference point, consistent readings
+EDRS | Low performer, potential baseline
+EEQS | Consistent performer, similar to EDQS
+
+--- round 4  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['EDQT', 'EDQS', 'EDRS', 'EDQT']
+SECONDARY: ['EDQT', 'EDQS', 'EDRS', 'EDQT']
+RAW:
+EDQT | Retry due to previous failure
+EDQS | Retry due to previous failure
+EDRS | Retry due to previous failure
+EDQT | Second retry for highest performer
+
+--- round 5  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['EDQT', 'EDQS', 'EDRS', 'EEQS']
+SECONDARY: ['EDQT', 'EDQS', 'EDRS', 'EEQS']
+RAW:
+EDQT | High readings (0.77, 0.80) suggest strong candidate
+EDQS | Reference point, needs more data after failures
+EDRS | Consistently low (0.16), testing viability
+EEQS | Moderate scores (0.48, 0.51), worth exploring further

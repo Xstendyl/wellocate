@@ -1,0 +1,155 @@
+SPOT CHECK: raw model output beside the proposals the harness accepted.
+Sampled deterministically, 20 calls per model. Written for a human to read.
+
+====================================================================================================
+google/gemini-2.5-flash  (mid-tier)   31 calls, showing 20
+====================================================================================================
+
+--- round 1  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['ADIF', 'GEIF', 'GDJF', 'GDIE']
+SECONDARY: ['ADIF', 'GEIF', 'GDJF', 'GDIE']
+RAW:
+ADIF | Explore position 1, large change
+GEIF | Explore position 2, small change
+GDJF | Explore position 3, small change
+GDIE | Explore position 4, small change
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['HDIF']
+SECONDARY: ['HDIF']
+RAW:
+HDIF | Explore first position variation from reference point GDIF.
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['GDIF']
+SECONDARY: ['GDIF']
+RAW:
+GDIF | Test reference point for viability and score
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['GDJF']
+SECONDARY: ['GDJF']
+RAW:
+GDJF | exploring third position, keeping first two stable for viability
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['GDJF']
+SECONDARY: ['GDJF']
+RAW:
+GDJF | exploring viability and score around known good candidates
+
+--- round 2  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['FDJF', 'GCJF', 'GDKF', 'GDJG']
+SECONDARY: ['FDJF', 'GCJF', 'GDKF', 'GDJG']
+RAW:
+FDJF | Explore position 1 (F) around GDJF
+GCJF | Explore position 2 (C) around GDJF
+GDKF | Explore position 3 (K) around GDJF
+GDJG | Explore position 4 (G) around GDJF
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['GDKF']
+SECONDARY: ['GDKF']
+RAW:
+GDKF | Exploring a neighbor of GDJF in the third position, maintaining high-viability pattern.
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['GCKF']
+SECONDARY: ['GCKF']
+RAW:
+GCKF | Combine best 2nd (C) and 3rd (K) positions from high-scoring candidates.
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['GCJF']
+SECONDARY: ['GCJF']
+RAW:
+GCJF | Exploring the highest scoring candidate's neighborhood.
+
+--- round 3  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 5  parsers agree True ---
+PARSED   : ['GCIF', 'GCLF', 'GBJF', 'GCJF']
+SECONDARY: ['GCIF', 'GCLF', 'GBJF', 'GCJF']
+RAW:
+GCIF | explore I in 3rd position with C in 2nd
+GCLF | explore L in 3rd position with C in 2nd
+GBJF | explore B in 2nd position with J in 3rd
+GCJF | re-measure current best to confirm score and variability
+
+--- round 3  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 5  parsers agree True ---
+PARSED   : ['GCKF']
+SECONDARY: ['GCKF']
+RAW:
+GCKF | exploring similar high-scoring candidates, P2=C, P3=K, P4=F was non-viable, trying P3=L instead of K or I/J for P2=C.GCJF | Re-measuring current best candidate to confirm or find higher score.
+
+--- round 3  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['GCJF']
+SECONDARY: ['GCJF']
+RAW:
+GCJF | Re-evaluate best candidate for score confirmation
+
+--- round 3  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['GCJF']
+SECONDARY: ['GCJF']
+RAW:
+GCJF | Re-evaluate best candidate and explore variations
+
+--- round 3  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['GCJF']
+SECONDARY: ['GCJF']
+RAW:
+GCJF | exploring variability of best candidate
+
+--- round 4  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['GCJF']
+SECONDARY: ['GCJF']
+RAW:
+GCJF | Re-evaluate best candidate, high variance in scores
+
+--- round 5  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 6  parsers agree True ---
+PARSED   : ['GCJF', 'GDKF', 'GDIF', 'GDJF']
+SECONDARY: ['GCJF', 'GDKF', 'GDIF', 'GDJF']
+RAW:
+GCJF | Re-measure current best candidate
+GDKF | Explore other high-scoring viable candidate
+GDIF | Re-measure reference point for stability
+GDJF | Re-measure another viable candidate for stability
+
+--- round 6  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 6  parsers agree True ---
+PARSED   : ['GCJF', 'GDKF', 'GCMF', 'GCNF']
+SECONDARY: ['GCJF', 'GDKF', 'GCMF', 'GCNF']
+RAW:
+GCJF | Re-measure best performing candidate
+GDKF | Re-measure second best performing candidate
+GCMF | Explore new candidate based on viable pattern G_ _F, trying M at pos 3
+GCNF | Explore new candidate based on viable pattern G_ _F, trying N at pos 3
+
+--- round 7  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 10  parsers agree True ---
+PARSED   : ['GCJF', 'GCNF', 'GDNF', 'GDMF']
+SECONDARY: ['GCJF', 'GCNF', 'GDNF', 'GDMF']
+RAW:
+Here are 4 candidates for this round:
+GCJF | Re-measure current best candidate
+GCNF | Re-measure high-scoring candidate, confirm score
+GDNF | Explore D-N combination, N was good with C
+GDMF | Explore D-M combination, M was bad with C, D might be more permissive
+
+--- round 8  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 6  parsers agree True ---
+PARSED   : ['GCJF', 'GCNF', 'GDNF', 'GDKF']
+SECONDARY: ['GCJF', 'GCNF', 'GDNF', 'GDKF']
+RAW:
+Here are my 4 orders for this round:
+
+GCJF | Re-measure highest scoring candidate
+GCNF | Re-measure second highest scoring candidate
+GDNF | Re-measure and confirm score for promising candidate
+GDKF | Re-measure and confirm score for promising candidate
+
+--- round 9  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['GDNF', 'GCJF', 'GDQF', 'GDRF']
+SECONDARY: ['GDNF', 'GCJF', 'GDQF', 'GDRF']
+RAW:
+Here are my 4 candidates for this round:
+
+GDNF | Re-evaluate a high-scoring candidate
+GCJF | Re-evaluate the highest-scoring candidate
+GDQF | Explore new third position with 'D'
+GDRF | Explore new third position with 'D'

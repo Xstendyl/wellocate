@@ -1,0 +1,73 @@
+{
+ "design": {
+  "grid Blind": 60,
+  "GB1 Blind": 30,
+  "GB1 Menu": 30
+ },
+ "usage": {
+  "grid Blind|high (Opus 4.7 pattern)": {
+   "calls_per_campaign": 39.3,
+   "prompt_tokens": 1240.3532654792198,
+   "answer_tokens": 44.45250212044105
+  },
+  "grid Blind|low (Gemini 2.5 Flash pattern)": {
+   "calls_per_campaign": 34.416666666666664,
+   "prompt_tokens": 841.4585956416465,
+   "answer_tokens": 23.304600484261503
+  },
+  "GB1 Blind|high (Opus 4.7 pattern)": {
+   "calls_per_campaign": 36.43333333333333,
+   "prompt_tokens": 1178.3934126258005,
+   "answer_tokens": 45.896614821591946
+  },
+  "GB1 Blind|low (Gemini 2.5 Flash pattern)": {
+   "calls_per_campaign": 19.1,
+   "prompt_tokens": 787.3804537521816,
+   "answer_tokens": 34.38568935427574
+  },
+  "GB1 Menu|high (Opus 4.7 pattern)": {
+   "calls_per_campaign": 46.4,
+   "prompt_tokens": 1572.4992816091954,
+   "answer_tokens": 45.241379310344826
+  },
+  "GB1 Menu|low (Gemini 2.5 Flash pattern)": {
+   "calls_per_campaign": 45.75,
+   "prompt_tokens": 1160.463387978142,
+   "answer_tokens": 20.145719489981786
+  }
+ },
+ "models": {
+  "openai/gpt-6.1-sol": {
+   "price_in": 2e-06,
+   "price_out": 1e-05,
+   "reasoning": 0,
+   "basis": "probed at effort minimal",
+   "high (Opus 4.7 pattern)": 14.982912,
+   "low (Gemini 2.5 Flash pattern)": 8.517804
+  },
+  "google/gemini-3.1-pro-preview": {
+   "price_in": 2e-06,
+   "price_out": 1.2e-05,
+   "reasoning": 166.25,
+   "basis": "probed at effort minimal",
+   "high (Opus 4.7 pattern)": 25.080617000000004,
+   "low (Gemini 2.5 Flash pattern)": 16.7097055
+  },
+  "anthropic/claude-opus-5.5": {
+   "price_in": 4e-06,
+   "price_out": 2e-05,
+   "reasoning": 0.0,
+   "basis": "priced only; assumes reasoning off, as for Opus 4.7",
+   "high (Opus 4.7 pattern)": 29.965824,
+   "low (Gemini 2.5 Flash pattern)": 17.035608
+  },
+  "openai/gpt-6-astra": {
+   "price_in": 1e-05,
+   "price_out": 5e-05,
+   "reasoning": 0.0,
+   "basis": "priced only; assumes no reasoning tokens at minimal effort, as GPT-6.1 Sol",
+   "high (Opus 4.7 pattern)": 74.91456,
+   "low (Gemini 2.5 Flash pattern)": 42.589020000000005
+  }
+ }
+}

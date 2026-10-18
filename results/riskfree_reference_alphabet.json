@@ -1,0 +1,136 @@
+{
+ "n": 1500,
+ "seed0": 8200000,
+ "anchor": "GDIF",
+ "cap": 20,
+ "grid_rule": {
+  "curve": {
+   "0": {
+    "n": 1500,
+    "collapsed": 0,
+    "mean": 7.709765114017187,
+    "se": 0.011185197441885706,
+    "replication_share": 0.8722222222222222,
+    "distinct": 31.027333333333335,
+    "rejections": 133.47333333333333,
+    "lost": 23.094666666666665,
+    "cap_hits_total": 0,
+    "campaigns_hitting_cap": 0
+   },
+   "1": {
+    "n": 1500,
+    "collapsed": 0,
+    "mean": 7.865864914893477,
+    "se": 0.010568884765556017,
+    "replication_share": 23.778888888888886,
+    "distinct": 28.938,
+    "rejections": 83.024,
+    "lost": 11.704666666666666,
+    "cap_hits_total": 0,
+    "campaigns_hitting_cap": 0
+   },
+   "2": {
+    "n": 1500,
+    "collapsed": 0,
+    "mean": 7.818622455108223,
+    "se": 0.010158912985370559,
+    "replication_share": 46.81777777777778,
+    "distinct": 20.863333333333333,
+    "rejections": 55.458,
+    "lost": 7.451333333333333,
+    "cap_hits_total": 0,
+    "campaigns_hitting_cap": 0
+   },
+   "3": {
+    "n": 1500,
+    "collapsed": 0,
+    "mean": 7.704924531700167,
+    "se": 0.009502855686175213,
+    "replication_share": 70.03,
+    "distinct": 11.934666666666667,
+    "rejections": 30.326666666666668,
+    "lost": 3.8913333333333333,
+    "cap_hits_total": 0,
+    "campaigns_hitting_cap": 0
+   },
+   "4": {
+    "n": 1353,
+    "collapsed": 147,
+    "mean": 7.427129983397115,
+    "se": 0.01023275924876644,
+    "replication_share": 93.3370288248337,
+    "distinct": 2.8810051736881004,
+    "rejections": 6.260162601626016,
+    "lost": 0.7184035476718403,
+    "cap_hits_total": 0,
+    "campaigns_hitting_cap": 0
+   }
+  },
+  "kstar": 1
+ },
+ "riskfree": {
+  "curve": {
+   "0": {
+    "n": 1500,
+    "collapsed": 0,
+    "mean": 7.793863014525791,
+    "se": 0.011217161143840257,
+    "replication_share": 1.24,
+    "distinct": 41.672666666666665,
+    "rejections": 402.48333333333335,
+    "lost": 10.355333333333334,
+    "cap_hits_total": 15533,
+    "campaigns_hitting_cap": 1222
+   },
+   "1": {
+    "n": 1500,
+    "collapsed": 0,
+    "mean": 7.945887433833014,
+    "se": 0.010127930153910685,
+    "replication_share": 23.964444444444442,
+    "distinct": 38.23466666666667,
+    "rejections": 134.538,
+    "lost": 0.8606666666666667,
+    "cap_hits_total": 1291,
+    "campaigns_hitting_cap": 353
+   },
+   "2": {
+    "n": 1500,
+    "collapsed": 0,
+    "mean": 7.897744475419688,
+    "se": 0.010112252397360959,
+    "replication_share": 46.93111111111111,
+    "distinct": 27.038666666666668,
+    "rejections": 77.58533333333334,
+    "lost": 0.14533333333333334,
+    "cap_hits_total": 218,
+    "campaigns_hitting_cap": 122
+   },
+   "3": {
+    "n": 1500,
+    "collapsed": 0,
+    "mean": 7.764940707721235,
+    "se": 0.00957649745708221,
+    "replication_share": 70.08,
+    "distinct": 15.234666666666667,
+    "rejections": 39.54266666666667,
+    "lost": 0.015333333333333332,
+    "cap_hits_total": 23,
+    "campaigns_hitting_cap": 21
+   },
+   "4": {
+    "n": 1473,
+    "collapsed": 27,
+    "mean": 7.465802006769243,
+    "se": 0.009495616256651738,
+    "replication_share": 93.40348495134646,
+    "distinct": 3.4059742023082147,
+    "rejections": 8.124915139171758,
+    "lost": 0.0013577732518669382,
+    "cap_hits_total": 2,
+    "campaigns_hitting_cap": 2
+   }
+  },
+  "kstar": 1
+ }
+}

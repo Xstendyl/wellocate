@@ -1,0 +1,10 @@
+BASELINE green=True
+  sends the provider field always, changing the request      CAUGHT
+  allows provider fallbacks, so a pinned model is still a mi CAUGHT
+  drops the total deadline, the forty-minute silence         CAUGHT
+  hands the last attempt the full socket timeout, past the d CAUGHT
+  stops recording which provider answered                    CAUGHT
+  records the provider only on success, not on the empty-tex CAUGHT
+  shortens a healthy call by applying the deadline as the ti CAUGHT
+
+CAUGHT 7/7

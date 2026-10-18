@@ -1,0 +1,126 @@
+TABLE 2c. THE CENTRAL TEST (section 0ad): 'zeronoise' against 'stage1', paired by seed.
+Post-repeat replication uses the 0ad definition: an order for a variant that ALREADY HAS a
+successful reading, over the rounds after a second successful reading was received. This
+differs from campaign.py's replication_count, which counts a re-order of any variant already
+ATTEMPTED; both are shown. EXPLORATORY, Holm within this table only.
+
+condition      model                   pair   exP   exR    level0      diff        level0 95% CI     wild p
+Blind          claude-opus-4.7           40     0     0    0.6035   -0.2429  [ 0.5669,  0.6409]    0.00005
+Blind          deepseek-chat-v3.1        40     0     0    0.9415   -0.0257  [ 0.9266,  0.9552]    0.00700
+Blind          gemini-2.5-flash          40     0     0    0.9442   -0.0193  [ 0.9286,  0.9586]    0.03280
+Quantitative   claude-opus-4.7           40     0     0    0.5184   -0.3269  [ 0.4816,  0.5538]    0.00005
+Quantitative   deepseek-chat-v3.1        40     0     0    0.9531   -0.0227  [ 0.9387,  0.9662]    0.00995
+Quantitative   gemini-2.5-flash          40     0     0    0.7683   -0.1410  [ 0.7384,  0.7946]    0.00005
+Mechanism      claude-opus-4.7           40     0     0    0.5397   -0.3497  [ 0.5085,  0.5707]    0.00005
+Mechanism      deepseek-chat-v3.1        40     0     0    0.9461   -0.0288  [ 0.9313,  0.9601]    0.00155
+Mechanism      gemini-2.5-flash          40     0     0    0.7866   -0.1990  [ 0.7502,  0.8184]    0.00005
+Aggregated     claude-opus-4.7           40     0     0    0.7096   -0.2045  [ 0.6802,  0.7383]    0.00005
+Aggregated     deepseek-chat-v3.1        40     0     0    0.9754   -0.0091  [ 0.9673,  0.9829]    0.03480
+Aggregated     gemini-2.5-flash          40     0     0    0.9061   -0.0760  [ 0.8899,  0.9215]    0.00005
+Decision-rule  claude-opus-4.7           40     0     0    0.6702   -0.2522  [ 0.6439,  0.6974]    0.00005
+Decision-rule  deepseek-chat-v3.1        40     0     0    0.9686   -0.0091  [ 0.9583,  0.9779]    0.09265
+Decision-rule  gemini-2.5-flash          40     0     0    0.9376   -0.0513  [ 0.9203,  0.9539]    0.00005
+
+level0 is post-repeat replication IN THE PANEL with its bootstrap interval, reported
+beside the difference because 0q(a)'s reading is about the LEVEL being near zero and not
+only about the change. exP and exR count campaigns excluded for having no repeat, or
+r* = 15, in the panel and in the reference.
+
+condition      model                        raw p      Holm p reject
+Blind          claude-opus-4.7            0.00005     0.00075 YES
+Blind          deepseek-chat-v3.1         0.00700     0.03500 YES
+Blind          gemini-2.5-flash           0.03280     0.09840 no
+Quantitative   claude-opus-4.7            0.00005     0.00075 YES
+Quantitative   deepseek-chat-v3.1         0.00995     0.03980 YES
+Quantitative   gemini-2.5-flash           0.00005     0.00075 YES
+Mechanism      claude-opus-4.7            0.00005     0.00075 YES
+Mechanism      deepseek-chat-v3.1         0.00155     0.00930 YES
+Mechanism      gemini-2.5-flash           0.00005     0.00075 YES
+Aggregated     claude-opus-4.7            0.00005     0.00075 YES
+Aggregated     deepseek-chat-v3.1         0.03480     0.09840 no
+Aggregated     gemini-2.5-flash           0.00005     0.00075 YES
+Decision-rule  claude-opus-4.7            0.00005     0.00075 YES
+Decision-rule  deepseek-chat-v3.1         0.09265     0.09840 no
+Decision-rule  gemini-2.5-flash           0.00005     0.00075 YES
+
+THE FOUR WHOLE-CAMPAIGN DEFINITIONS OF 0d, AND DISTINCT VARIANTS, paired by seed.
+These use the harness's replication_count, which counts a re-order of any variant already
+ATTEMPTED, including one never successfully read. That is a DIFFERENT quantity from the one
+above, and the gap between them is the cost of that choice.
+
+condition      model                  metric                      pairs      diff    wild p
+Blind          claude-opus-4.7        over slots used                40   -0.2388   0.00005
+Blind          claude-opus-4.7        over all 60 slots              40   -0.2388   0.00005
+Blind          claude-opus-4.7        excl anchor, slots used        40   -0.2062   0.00005
+Blind          claude-opus-4.7        excl anchor, all 60            40   -0.2062   0.00005
+Blind          claude-opus-4.7        distinct variants              40   +9.9500   0.00005
+Blind          deepseek-chat-v3.1     over slots used                40   -0.0262   0.00155
+Blind          deepseek-chat-v3.1     over all 60 slots              40   -0.0262   0.00155
+Blind          deepseek-chat-v3.1     excl anchor, slots used        40   +0.0242   0.13379
+Blind          deepseek-chat-v3.1     excl anchor, all 60            40   +0.0242   0.13209
+Blind          deepseek-chat-v3.1     distinct variants              40   +1.0250   0.00470
+Blind          gemini-2.5-flash       over slots used                40   -0.0125   0.20209
+Blind          gemini-2.5-flash       over all 60 slots              40   -0.0125   0.20829
+Blind          gemini-2.5-flash       excl anchor, slots used        40   +0.0300   0.15869
+Blind          gemini-2.5-flash       excl anchor, all 60            40   +0.0300   0.15579
+Blind          gemini-2.5-flash       distinct variants              40   +0.5250   0.20924
+Quantitative   claude-opus-4.7        over slots used                40   -0.3629   0.00005
+Quantitative   claude-opus-4.7        over all 60 slots              40   -0.3629   0.00005
+Quantitative   claude-opus-4.7        excl anchor, slots used        40   -0.3117   0.00005
+Quantitative   claude-opus-4.7        excl anchor, all 60            40   -0.3117   0.00005
+Quantitative   claude-opus-4.7        distinct variants              40  +12.7500   0.00005
+Quantitative   deepseek-chat-v3.1     over slots used                40   -0.0325   0.00005
+Quantitative   deepseek-chat-v3.1     over all 60 slots              40   -0.0325   0.00015
+Quantitative   deepseek-chat-v3.1     excl anchor, slots used        40   +0.0387   0.03750
+Quantitative   deepseek-chat-v3.1     excl anchor, all 60            40   +0.0387   0.03885
+Quantitative   deepseek-chat-v3.1     distinct variants              40   +1.5500   0.00005
+Quantitative   gemini-2.5-flash       over slots used                40   -0.1729   0.00005
+Quantitative   gemini-2.5-flash       over all 60 slots              40   -0.1729   0.00005
+Quantitative   gemini-2.5-flash       excl anchor, slots used        40   -0.1362   0.00005
+Quantitative   gemini-2.5-flash       excl anchor, all 60            40   -0.1362   0.00005
+Quantitative   gemini-2.5-flash       distinct variants              40   +4.3750   0.00005
+Mechanism      claude-opus-4.7        over slots used                40   -0.3500   0.00005
+Mechanism      claude-opus-4.7        over all 60 slots              40   -0.3500   0.00005
+Mechanism      claude-opus-4.7        excl anchor, slots used        40   -0.2983   0.00005
+Mechanism      claude-opus-4.7        excl anchor, all 60            40   -0.2983   0.00005
+Mechanism      claude-opus-4.7        distinct variants              40  +15.0750   0.00005
+Mechanism      deepseek-chat-v3.1     over slots used                40   -0.0546   0.00005
+Mechanism      deepseek-chat-v3.1     over all 60 slots              40   -0.0546   0.00005
+Mechanism      deepseek-chat-v3.1     excl anchor, slots used        40   +0.1317   0.00005
+Mechanism      deepseek-chat-v3.1     excl anchor, all 60            40   +0.1317   0.00005
+Mechanism      deepseek-chat-v3.1     distinct variants              40   +2.4000   0.00005
+Mechanism      gemini-2.5-flash       over slots used                40   -0.2363   0.00005
+Mechanism      gemini-2.5-flash       over all 60 slots              40   -0.2363   0.00005
+Mechanism      gemini-2.5-flash       excl anchor, slots used        40   -0.1371   0.00005
+Mechanism      gemini-2.5-flash       excl anchor, all 60            40   -0.1371   0.00005
+Mechanism      gemini-2.5-flash       distinct variants              40   +9.6000   0.00005
+Aggregated     claude-opus-4.7        over slots used                40   -0.3017   0.00005
+Aggregated     claude-opus-4.7        over all 60 slots              40   -0.3017   0.00005
+Aggregated     claude-opus-4.7        excl anchor, slots used        40   -0.2487   0.00005
+Aggregated     claude-opus-4.7        excl anchor, all 60            40   -0.2487   0.00005
+Aggregated     claude-opus-4.7        distinct variants              40   +8.5750   0.00005
+Aggregated     deepseek-chat-v3.1     over slots used                40   -0.0300   0.00005
+Aggregated     deepseek-chat-v3.1     over all 60 slots              40   -0.0300   0.00005
+Aggregated     deepseek-chat-v3.1     excl anchor, slots used        40   +0.0708   0.00010
+Aggregated     deepseek-chat-v3.1     excl anchor, all 60            40   +0.0708   0.00005
+Aggregated     deepseek-chat-v3.1     distinct variants              40   +1.5500   0.00005
+Aggregated     gemini-2.5-flash       over slots used                40   -0.1062   0.00005
+Aggregated     gemini-2.5-flash       over all 60 slots              40   -0.1062   0.00005
+Aggregated     gemini-2.5-flash       excl anchor, slots used        40   -0.0304   0.03085
+Aggregated     gemini-2.5-flash       excl anchor, all 60            40   -0.0304   0.03000
+Aggregated     gemini-2.5-flash       distinct variants              40   +5.3500   0.00005
+Decision-rule  claude-opus-4.7        over slots used                40   -0.2762   0.00005
+Decision-rule  claude-opus-4.7        over all 60 slots              40   -0.2762   0.00005
+Decision-rule  claude-opus-4.7        excl anchor, slots used        40   -0.2400   0.00005
+Decision-rule  claude-opus-4.7        excl anchor, all 60            40   -0.2400   0.00005
+Decision-rule  claude-opus-4.7        distinct variants              40  +11.4250   0.00005
+Decision-rule  deepseek-chat-v3.1     over slots used                40   -0.0192   0.00005
+Decision-rule  deepseek-chat-v3.1     over all 60 slots              40   -0.0192   0.00005
+Decision-rule  deepseek-chat-v3.1     excl anchor, slots used        40   +0.0842   0.00005
+Decision-rule  deepseek-chat-v3.1     excl anchor, all 60            40   +0.0842   0.00005
+Decision-rule  deepseek-chat-v3.1     distinct variants              40   +0.9750   0.00005
+Decision-rule  gemini-2.5-flash       over slots used                40   -0.0358   0.00085
+Decision-rule  gemini-2.5-flash       over all 60 slots              40   -0.0358   0.00105
+Decision-rule  gemini-2.5-flash       excl anchor, slots used        40   -0.0288   0.02185
+Decision-rule  gemini-2.5-flash       excl anchor, all 60            40   -0.0288   0.02465
+Decision-rule  gemini-2.5-flash       distinct variants              40   +1.5250   0.00550

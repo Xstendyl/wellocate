@@ -1,0 +1,206 @@
+  key source: repdef/.env  (fingerprint 0d6f7d3f, never the key)
+  credit check (launch): $794.85 remaining, floor $50.00 -> ok
+====================================================================================================
+GRID  NK uniform K=1 seed=1 pct=93.0  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 2 conditions x 2 models x 40 campaigns = 160 campaigns
+  ceiling $95.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    frontier     anthropic/claude-opus-4.7        released 2026-02
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+prompt facts checked: reference GDIF is viable and reads 6.8730 (stated 6.8700), pool is 7.00% of the space, example ADIF (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_panelc_manifest.json (commit ab0ab377)
+    frontier     anthropic/claude-opus-4.7        released 2026-02
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+canary: comparator live, differs from the mean rule on 24 of 60 scripted campaigns
+
+resuming: 5 campaigns already on disk, $1.5039 already spent
+
+  SHUFFLED order over 155 campaigns across 4 cells (order seed 20260928)
+      Mechanism     frontier    seed 300037 ok 47 rep 39 ( 65%) | nom  7.1506 | distn 17 | $0.4641 cum $1.97 | 180s
+      Mechanism     mid-tier    seed 300036 ok 48 rep 48 ( 80%) | nom  7.3867 | distn 10 | $0.1690 cum $2.14 | 350s
+      Blind         mid-tier    seed 300035 ok 51 rep 48 ( 80%) | nom  7.3867 | distn 11 | $0.2019 cum $2.34 | 474s
+      Mechanism     frontier    seed 300034 ok 43 rep 47 ( 78%) | nom  7.5558 | distn  9 | $0.4091 cum $2.75 | 130s
+      Mechanism     frontier    seed 300039 ok 51 rep 47 ( 78%) | nom  7.1695 | distn 10 | $0.5075 cum $3.26 | 195s
+      Blind         mid-tier    seed 300029 ok 48 rep 49 ( 82%) | nom  7.9397 | distn 10 | $0.2491 cum $3.50 | 726s
+      Mechanism     mid-tier    seed 300006 ok 45 rep 53 ( 88%) | nom  7.2332 | distn  7 | $0.2029 cum $3.71 | 569s
+      Mechanism     mid-tier    seed 300000 ok 49 rep 51 ( 85%) | nom  8.0254 | distn  8 | $0.1548 cum $3.86 | 326s
+      Mechanism     frontier    seed 300010 ok 48 rep 47 ( 78%) | nom  7.3214 | distn 10 | $0.4397 cum $4.30 | 140s
+      Blind         frontier    seed 300037 ok 45 rep 42 ( 70%) | nom  7.3867 | distn 13 | $0.3948 cum $4.70 | 158s
+      Mechanism     frontier    seed 300030 ok 50 rep 47 ( 78%) | nom  7.3202 | distn 13 | $0.4291 cum $5.13 | 187s
+      Blind         frontier    seed 300010 ok 51 rep 43 ( 72%) | nom  7.3214 | distn 14 | $0.3562 cum $5.48 | 134s
+      Mechanism     mid-tier    seed 300035 ok 54 rep 51 ( 85%) | nom  7.3487 | distn  8 | $0.1992 cum $5.68 | 434s
+      Mechanism     mid-tier    seed 300025 ok 48 rep 49 ( 82%) | nom  7.3202 | distn  7 | $0.2058 cum $5.89 | 439s
+      Blind         frontier    seed 300033 ok 52 rep 44 ( 73%) | nom  7.9513 | distn 15 | $0.3073 cum $6.19 | 132s
+      Mechanism     frontier    seed 300015 ok 49 rep 42 ( 70%) | nom  7.3867 | distn 11 | $0.4636 cum $6.66 | 168s
+      Blind         frontier    seed 300035 ok 46 rep 30 ( 50%) | nom  7.5854 | distn 22 | $0.4306 cum $7.09 | 157s
+      Blind         mid-tier    seed 300030 ok 52 rep 50 ( 83%) | nom  7.7839 | distn  8 | $0.2420 cum $7.33 | 768s
+      Blind         mid-tier    seed 300019 ok 49 rep 48 ( 80%) | nom  7.3867 | distn 12 | $0.1920 cum $7.52 | 484s
+      Blind         frontier    seed 300004 ok 51 rep 46 ( 77%) | nom  7.6865 | distn 11 | $0.2309 cum $7.75 | 101s
+      Mechanism     frontier    seed 300018 ok 47 rep 46 ( 77%) | nom  7.2788 | distn 11 | $0.3841 cum $8.14 | 169s
+      Blind         frontier    seed 300029 ok 49 rep 46 ( 77%) | nom  7.3202 | distn 10 | $0.4446 cum $8.58 | 163s
+      Mechanism     mid-tier    seed 300004 ok 50 rep 47 ( 78%) | nom  7.9397 | distn  8 | $0.1993 cum $8.78 | 673s
+      Mechanism     frontier    seed 300007 ok 47 rep 47 ( 78%) | nom  7.2642 | distn  9 | $0.4420 cum $9.22 | 168s
+      Mechanism     mid-tier    seed 300028 ok 50 rep 51 ( 85%) | nom  7.3867 | distn  9 | $0.2419 cum $9.47 | 520s
+      Mechanism     frontier    seed 300019 ok 45 rep 46 ( 77%) | nom  7.4371 | distn  7 | $0.5079 cum $9.97 | 168s
+      Blind         frontier    seed 300017 ok 50 rep 36 ( 60%) | nom  7.9513 | distn 21 | $0.4023 cum $10.38 | 166s
+      Blind         frontier    seed 300027 ok 48 rep 43 ( 72%) | nom  7.3202 | distn 15 | $0.4328 cum $10.81 | 165s
+      Blind         mid-tier    seed 300001 ok 52 rep 53 ( 88%) | nom  7.7287 | distn  7 | $0.2073 cum $11.02 | 455s
+      Blind         frontier    seed 300036 ok 48 rep 39 ( 65%) | nom  7.3202 | distn 16 | $0.3860 cum $11.40 | 155s
+      Mechanism     mid-tier    seed 300007 ok 50 rep 51 ( 85%) | nom  7.9397 | distn  8 | $0.2131 cum $11.61 | 480s
+      Blind         mid-tier    seed 300036 ok 52 rep 52 ( 87%) | nom  7.3202 | distn  8 | $0.2453 cum $11.86 | 578s
+      Blind         mid-tier    seed 300003 ok 48 rep 47 ( 78%) | nom  7.3202 | distn 12 | $0.2155 cum $12.08 | 460s
+      Mechanism     frontier    seed 300028 ok 49 rep 46 ( 77%) | nom  7.2332 | distn 11 | $0.4397 cum $12.52 | 157s
+      Mechanism     frontier    seed 300011 ok 49 rep 48 ( 80%) | nom  7.2332 | distn  9 | $0.4572 cum $12.97 | 157s
+      Mechanism     frontier    seed 300029 ok 47 rep 41 ( 68%) | nom  7.9397 | distn 13 | $0.3595 cum $13.33 | 142s
+      Mechanism     mid-tier    seed 300033 ok 53 rep 55 ( 92%) | nom  7.6865 | distn  5 | $0.1567 cum $13.49 | 432s
+      Mechanism     mid-tier    seed 300024 ok 54 rep 50 ( 83%) | nom  7.2332 | distn 10 | $0.1787 cum $13.67 | 395s
+      Blind         frontier    seed 300038 ok 50 rep 47 ( 78%) | nom  7.7215 | distn 10 | $0.3917 cum $14.06 | 142s
+      Mechanism     mid-tier    seed 300030 ok 48 rep 52 ( 87%) | nom  7.3867 | distn  8 | $0.1498 cum $14.21 | 339s
+      Blind         mid-tier    seed 300021 ok 44 rep 42 ( 70%) | nom  7.3202 | distn 12 | $0.2709 cum $14.48 | 885s
+      Mechanism     mid-tier    seed 300016 ok 53 rep 52 ( 87%) | nom  7.3867 | distn  8 | $0.1783 cum $14.66 | 425s
+      Blind         mid-tier    seed 300025 ok 47 rep 45 ( 75%) | nom  7.3202 | distn 13 | $0.2072 cum $14.87 | 468s
+      Mechanism     mid-tier    seed 300018 ok 51 rep 50 ( 83%) | nom  7.9397 | distn  9 | $0.1884 cum $15.05 | 490s
+      Blind         mid-tier    seed 300010 ok 50 rep 46 ( 77%) | nom  7.3202 | distn 14 | $0.1933 cum $15.25 | 409s
+      Mechanism     mid-tier    seed 300039 ok 53 rep 50 ( 83%) | nom  7.3487 | distn  6 | $0.1985 cum $15.45 | 597s
+      Blind         frontier    seed 300034 ok 48 rep 42 ( 70%) | nom  7.5096 | distn 15 | $0.3821 cum $15.83 | 153s
+      Blind         frontier    seed 300003 ok 45 rep 45 ( 75%) | nom  7.5251 | distn 10 | $0.5258 cum $16.35 | 165s
+      Blind         mid-tier    seed 300039 ok 53 rep 48 ( 80%) | nom  7.2788 | distn 12 | $0.1910 cum $16.54 | 526s
+      Blind         mid-tier    seed 300038 ok 48 rep 49 ( 82%) | nom  7.3202 | distn 11 | $0.1874 cum $16.73 | 424s
+      Blind         frontier    seed 300016 ok 48 rep 41 ( 68%) | nom  7.3867 | distn 15 | $0.3785 cum $17.11 | 156s
+      Mechanism     mid-tier    seed 300010 ok 49 rep 50 ( 83%) | nom  7.3867 | distn  9 | $0.2031 cum $17.31 | 787s
+      Mechanism     mid-tier    seed 300037 ok 51 rep 50 ( 83%) | nom  7.2788 | distn  9 | $0.1733 cum $17.49 | 483s
+      Mechanism     frontier    seed 300031 ok 53 rep 44 ( 73%) | nom  8.0254 | distn 13 | $0.4213 cum $17.91 | 167s
+      Mechanism     frontier    seed 300033 ok 50 rep 43 ( 72%) | nom  7.6865 | distn 15 | $0.4510 cum $18.36 | 167s
+      Mechanism     frontier    seed 300025 ok 44 rep 44 ( 73%) | nom  7.2332 | distn  8 | $0.5136 cum $18.87 | 185s
+      Blind         mid-tier    seed 300022 ok 52 rep 47 ( 78%) | nom  7.9513 | distn 11 | $0.2397 cum $19.11 | 510s
+      Mechanism     frontier    seed 300013 ok 51 rep 40 ( 67%) | nom  7.3202 | distn 15 | $0.3826 cum $19.49 | 153s
+      Blind         frontier    seed 300012 ok 49 rep 44 ( 73%) | nom  7.6576 | distn 14 | $0.3313 cum $19.83 | 126s
+      Blind         mid-tier    seed 300015 ok 52 rep 50 ( 83%) | nom  7.3202 | distn 10 | $0.2120 cum $20.04 | 543s
+      Blind         mid-tier    seed 300037 ok 48 rep 51 ( 85%) | nom  7.3867 | distn  9 | $0.1913 cum $20.23 | 545s
+      Blind         mid-tier    seed 300023 ok 50 rep 44 ( 73%) | nom  7.1506 | distn 15 | $0.1760 cum $20.41 | 656s
+      Mechanism     frontier    seed 300036 ok 43 rep 46 ( 77%) | nom  7.3867 | distn 10 | $0.4202 cum $20.83 | 173s
+      Blind         mid-tier    seed 300012 ok 49 rep 39 ( 65%) | nom  7.4235 | distn 18 | $0.3113 cum $21.14 | 679s
+      Blind         frontier    seed 300020 ok 50 rep 44 ( 73%) | nom  7.3202 | distn 12 | $0.4953 cum $21.63 | 195s
+      Mechanism     frontier    seed 300024 ok 50 rep 44 ( 73%) | nom  7.2332 | distn 13 | $0.4125 cum $22.04 | 173s
+      Blind         frontier    seed 300015 ok 45 rep 38 ( 63%) | nom  7.3202 | distn 15 | $0.4520 cum $22.50 | 190s
+      Blind         mid-tier    seed 300020 ok 49 rep 48 ( 80%) | nom  7.9397 | distn  8 | $0.2097 cum $22.71 | 624s
+      Blind         frontier    seed 300007 ok 47 rep 40 ( 67%) | nom  7.5251 | distn 16 | $0.4105 cum $23.12 | 152s
+      Mechanism     mid-tier    seed 300034 ok 49 rep 53 ( 88%) | nom  7.2788 | distn  7 | $0.2200 cum $23.34 | 506s
+      Blind         frontier    seed 300019 ok 49 rep 37 ( 62%) | nom  7.7839 | distn 15 | $0.5481 cum $23.88 | 201s
+      Mechanism     frontier    seed 300009 ok 46 rep 47 ( 78%) | nom  7.7287 | distn 10 | $0.4318 cum $24.32 | 192s
+      Mechanism     mid-tier    seed 300014 ok 48 rep 53 ( 88%) | nom  7.3202 | distn  6 | $0.2005 cum $24.52 | 414s
+      Mechanism     frontier    seed 300016 ok 50 rep 43 ( 72%) | nom  7.2642 | distn 12 | $0.4568 cum $24.97 | 215s
+      Blind         mid-tier    seed 300013 ok 50 rep 52 ( 87%) | nom  7.5735 | distn  8 | $0.1789 cum $25.15 | 387s
+      Blind         frontier    seed 300005 ok 49 rep 40 ( 67%) | nom  7.2975 | distn 16 | $0.5400 cum $25.69 | 178s
+      Mechanism     frontier    seed 300000 ok 46 rep 47 ( 78%) | nom  8.1684 | distn 10 | $0.3734 cum $26.07 | 172s
+      Blind         mid-tier    seed 300005 ok 52 rep 48 ( 80%) | nom  7.3202 | distn 12 | $0.1871 cum $26.25 | 415s
+      Mechanism     mid-tier    seed 300026 ok 52 rep 55 ( 92%) | nom  7.3867 | distn  5 | $0.1983 cum $26.45 | 425s
+      Blind         frontier    seed 300014 ok 43 rep 40 ( 67%) | nom  7.7287 | distn 15 | $0.3342 cum $26.79 | 148s
+      Blind         frontier    seed 300009 ok 49 rep 38 ( 63%) | nom  7.7287 | distn 18 | $0.3734 cum $27.16 | 169s
+      Mechanism     mid-tier    seed 300002 ok 52 rep 52 ( 87%) | nom  7.3867 | distn  7 | $0.2422 cum $27.40 | 599s
+      Mechanism     mid-tier    seed 300015 ok 52 rep 53 ( 88%) | nom  7.2332 | distn  6 | $0.2100 cum $27.61 | 460s
+      Blind         frontier    seed 300023 ok 45 rep 42 ( 70%) | nom  7.1445 | distn 10 | $0.5504 cum $28.16 | 191s
+      Blind         mid-tier    seed 300009 ok 48 rep 53 ( 88%) | nom  6.7361 | distn  7 | $0.1797 cum $28.34 | 446s
+      Mechanism     frontier    seed 300027 ok 50 rep 43 ( 72%) | nom  7.1506 | distn 14 | $0.3938 cum $28.74 | 165s
+      Mechanism     frontier    seed 300014 ok 44 rep 42 ( 70%) | nom  7.9397 | distn 13 | $0.3384 cum $29.07 | 149s
+      Mechanism     mid-tier    seed 300029 ok 49 rep 50 ( 83%) | nom  7.2788 | distn  6 | $0.2125 cum $29.29 | 489s
+      Blind         mid-tier    seed 300031 ok 46 rep 44 ( 73%) | nom  7.1966 | distn 11 | $0.2379 cum $29.52 | 697s
+      Mechanism     mid-tier    seed 300038 ok 45 rep 52 ( 87%) | nom  7.2332 | distn  7 | $0.1783 cum $29.70 | 506s
+      Mechanism     frontier    seed 300035 ok 52 rep 42 ( 70%) | nom  7.9397 | distn 18 | $0.3459 cum $30.05 | 185s
+      Mechanism     frontier    seed 300002 ok 47 rep 43 ( 72%) | nom  7.1966 | distn 13 | $0.4319 cum $30.48 | 168s
+      Blind         mid-tier    seed 300016 ok 48 rep 46 ( 77%) | nom  7.3867 | distn  9 | $0.1729 cum $30.65 | 627s
+      Mechanism     mid-tier    seed 300003 ok 52 rep 54 ( 90%) | nom  7.2332 | distn  6 | $0.1676 cum $30.82 | 513s
+      Mechanism     mid-tier    seed 300022 ok 49 rep 50 ( 83%) | nom  7.3202 | distn  9 | $0.1758 cum $31.00 | 515s
+      Mechanism     mid-tier    seed 300013 ok 53 rep 51 ( 85%) | nom  7.3487 | distn  8 | $0.1841 cum $31.18 | 393s
+      Mechanism     mid-tier    seed 300023 ok 52 rep 53 ( 88%) | nom  7.3202 | distn  7 | $0.1797 cum $31.36 | 393s
+      Mechanism     mid-tier    seed 300017 ok 54 rep 47 ( 78%) | nom  7.7839 | distn  9 | $0.2021 cum $31.56 | 450s
+      Blind         mid-tier    seed 300024 ok 52 rep 47 ( 78%) | nom  7.2788 | distn 13 | $0.1676 cum $31.73 | 427s
+      Blind         frontier    seed 300031 ok 50 rep 43 ( 72%) | nom  7.5735 | distn 10 | $0.2702 cum $32.00 | 132s
+      Blind         mid-tier    seed 300017 ok 52 rep 48 ( 80%) | nom  7.2788 | distn 12 | $0.1961 cum $32.20 | 618s
+      Blind         mid-tier    seed 300008 ok 49 rep 46 ( 77%) | nom  7.3202 | distn 12 | $0.1852 cum $32.38 | 455s
+      Mechanism     frontier    seed 300005 ok 48 rep 46 ( 77%) | nom  7.3867 | distn 10 | $0.4859 cum $32.87 | 186s
+      Blind         frontier    seed 300013 ok 50 rep 41 ( 68%) | nom  7.7839 | distn 15 | $0.4009 cum $33.27 | 155s
+      Blind         frontier    seed 300039 ok 51 rep 47 ( 78%) | nom  7.4371 | distn 10 | $0.5024 cum $33.77 | 208s
+      Mechanism     frontier    seed 300020 ok 46 rep 42 ( 70%) | nom  7.1966 | distn 13 | $0.5053 cum $34.28 | 210s
+      Blind         frontier    seed 300000 ok 47 rep 41 ( 68%) | nom  7.6513 | distn 15 | $0.4682 cum $34.74 | 203s
+      Blind         frontier    seed 300028 ok 50 rep 45 ( 75%) | nom  7.3350 | distn 14 | $0.2877 cum $35.03 | 153s
+      Mechanism     mid-tier    seed 300021 ok 51 rep 55 ( 92%) | nom  7.9397 | distn  5 | $0.1712 cum $35.20 | 517s
+      Mechanism     mid-tier    seed 300027 ok 52 rep 54 ( 90%) | nom  7.9397 | distn  6 | $0.2099 cum $35.41 | 597s
+      Mechanism     frontier    seed 300032 ok 49 rep 40 ( 67%) | nom  7.2642 | distn 13 | $0.4280 cum $35.84 | 208s
+      Blind         frontier    seed 300002 ok 42 rep 44 ( 73%) | nom  7.1055 | distn 11 | $0.3957 cum $36.24 | 165s
+      Blind         mid-tier    seed 300006 ok 51 rep 52 ( 87%) | nom  7.7287 | distn  8 | $0.1924 cum $36.43 | 677s
+      Blind         mid-tier    seed 300034 ok 47 rep 52 ( 87%) | nom  7.1506 | distn  8 | $0.1870 cum $36.62 | 438s
+      Blind         frontier    seed 300024 ok 49 rep 32 ( 53%) | nom  7.2332 | distn 21 | $0.5886 cum $37.20 | 225s
+      Blind         mid-tier    seed 300028 ok 53 rep 40 ( 67%) | nom  7.3867 | distn 16 | $0.3109 cum $37.52 | 855s
+      Blind         frontier    seed 300018 ok 41 rep 46 ( 77%) | nom  8.0406 | distn  8 | $0.4219 cum $37.94 | 181s
+      Blind         frontier    seed 300021 ok 51 rep 46 ( 77%) | nom  7.7839 | distn 11 | $0.2889 cum $38.23 | 139s
+      Mechanism     frontier    seed 300006 ok 52 rep 43 ( 72%) | nom  7.7287 | distn 12 | $0.4037 cum $38.63 | 196s
+      Mechanism     mid-tier    seed 300008 ok 51 rep 52 ( 87%) | nom  7.7287 | distn  7 | $0.2140 cum $38.84 | 621s
+      Blind         frontier    seed 300006 ok 47 rep 44 ( 73%) | nom  7.7693 | distn 11 | $0.3299 cum $39.17 | 158s
+      Mechanism     frontier    seed 300012 ok 52 rep 45 ( 75%) | nom  7.6576 | distn 13 | $0.3690 cum $39.54 | 158s
+      Mechanism     mid-tier    seed 300012 ok 54 rep 51 ( 85%) | nom  7.7287 | distn  8 | $0.1951 cum $39.74 | 438s
+      Blind         mid-tier    seed 300002 ok 54 rep 54 ( 90%) | nom  8.0254 | distn  6 | $0.1517 cum $39.89 | 512s
+      Blind         frontier    seed 300008 ok 36 rep 40 ( 67%) | nom  7.2332 | distn 11 | $0.5704 cum $40.46 | 222s
+      Mechanism     frontier    seed 300003 ok 44 rep 46 ( 77%) | nom  7.3717 | distn 10 | $0.4375 cum $40.90 | 189s
+      Blind         frontier    seed 300025 ok 46 rep 39 ( 65%) | nom  7.3717 | distn 14 | $0.5596 cum $41.46 | 204s
+      Mechanism     frontier    seed 300022 ok 44 rep 38 ( 63%) | nom  7.4371 | distn 14 | $0.5474 cum $42.00 | 210s
+      Mechanism     frontier    seed 300004 ok 51 rep 43 ( 72%) | nom  7.9397 | distn 13 | $0.3512 cum $42.36 | 144s
+      Blind         frontier    seed 300030 ok 52 rep 44 ( 73%) | nom  7.2332 | distn 14 | $0.3311 cum $42.69 | 165s
+      Blind         mid-tier    seed 300004 ok 53 rep 55 ( 92%) | nom  7.6865 | distn  4 | $0.1793 cum $42.87 | 537s
+      Mechanism     frontier    seed 300023 ok 42 rep 45 ( 75%) | nom  7.2436 | distn  8 | $0.5318 cum $43.40 | 199s
+      Mechanism     frontier    seed 300021 ok 53 rep 42 ( 70%) | nom  7.9397 | distn 14 | $0.3969 cum $43.79 | 203s
+      Mechanism     mid-tier    seed 300032 ok 57 rep 50 ( 83%) | nom  7.2642 | distn 10 | $0.2247 cum $44.02 | 616s
+      Blind         mid-tier    seed 300032 ok 55 rep 48 ( 80%) | nom  7.1966 | distn 12 | $0.1709 cum $44.19 | 377s
+      Mechanism     mid-tier    seed 300009 ok 44 rep 51 ( 85%) | nom  7.3867 | distn  8 | $0.2288 cum $44.42 | 561s
+      Mechanism     mid-tier    seed 300031 ok 50 rep 53 ( 88%) | nom  7.3867 | distn  7 | $0.1772 cum $44.60 | 503s
+      Blind         frontier    seed 300001 ok 47 rep 39 ( 65%) | nom  8.2369 | distn 18 | $0.3603 cum $44.96 | 151s
+      Blind         mid-tier    seed 300018 ok 53 rep 52 ( 87%) | nom  7.7287 | distn  7 | $0.1805 cum $45.14 | 444s
+      Blind         mid-tier    seed 300027 ok 56 rep 52 ( 87%) | nom  7.7287 | distn  8 | $0.2407 cum $45.38 | 656s
+      Mechanism     mid-tier    seed 300019 ok 49 rep 52 ( 87%) | nom  7.3867 | distn  8 | $0.1809 cum $45.56 | 470s
+      Blind         frontier    seed 300022 ok 46 rep 38 ( 63%) | nom  7.2788 | distn 13 | $0.5742 cum $46.13 | 204s
+      Mechanism     frontier    seed 300026 ok 48 rep 40 ( 67%) | nom  7.4380 | distn 14 | $0.4266 cum $46.56 | 187s
+      Mechanism     mid-tier    seed 300005 ok 49 rep 54 ( 90%) | nom  7.3867 | distn  6 | $0.2048 cum $46.76 | 487s
+      Mechanism     mid-tier    seed 300001 ok 52 rep 55 ( 92%) | nom  7.2332 | distn  4 | $0.1566 cum $46.92 | 370s
+      Blind         mid-tier    seed 300033 ok 49 rep 42 ( 70%) | nom  7.1506 | distn 18 | $0.3343 cum $47.26 | 802s
+      Mechanism     frontier    seed 300017 ok 48 rep 40 ( 67%) | nom  7.3202 | distn 15 | $0.3653 cum $47.62 | 153s
+      Blind         mid-tier    seed 300000 ok 45 rep 51 ( 85%) | nom  7.3202 | distn  8 | $0.1784 cum $47.80 | 467s
+      Mechanism     frontier    seed 300001 ok 51 rep 43 ( 72%) | nom  7.0709 | distn 11 | $0.6122 cum $48.41 | 216s
+      Blind         frontier    seed 300011 ok 45 rep 38 ( 63%) | nom  7.2975 | distn 17 | $0.5084 cum $48.92 | 187s
+      Mechanism     frontier    seed 300038 ok 46 rep 37 ( 62%) | nom  7.3350 | distn 19 | $0.4743 cum $49.39 | 210s
+      Blind         mid-tier    seed 300014 ok 51 rep 56 ( 93%) | nom  7.6865 | distn  4 | $0.1783 cum $49.57 | 418s
+      Blind         frontier    seed 300026 ok 51 rep 45 ( 75%) | nom  7.2332 | distn 13 | $0.2983 cum $49.87 | 147s
+      Blind         mid-tier    seed 300007 ok 54 rep 51 ( 85%) | nom  7.3202 | distn  9 | $0.1601 cum $50.03 | 385s
+      Blind         mid-tier    seed 300011 ok 51 rep 49 ( 82%) | nom  7.2332 | distn 10 | $0.1858 cum $50.22 | 562s
+
+  NOMINATION CALLS: 155, of which 155 carry a two-parser comparison, 146 agree
+    9 nomination calls DISAGREE, and each one decides a campaign's primary outcome
+
+  TWO-PARSER CHECK over 5523 ROUND calls (nomination calls above)
+    GENUINE disagreement (both read, and differ)         0  0.00%
+    by design (primary refused the count, spent none)    3  0.05%
+  spot check written: /Users/<name>/projects/repdef/results/grid_panelc_spotcheck.txt
+  call log archived: 4 cells, 5858 lines, 0.9 MB, all verified True
+  plain call log removed after verification: grid_panelc_calls.jsonl
+
+====================================================================================================
+SUMMARY   panelc
+====================================================================================================
+  VARIANCES AND HEALTH ONLY. The primary outcome by condition is NOT printed here; see
+  scripts/stage1_variance.py for the sizing inputs and the final analysis script for means.
+  (scripted reference for later use: k*=1 at 8.0057, k=0 at 7.8856)
+  condition     role          n | sd(nominated) sd(distinct) |   distn | rep of budget | $/campaign
+  Blind         frontier     40 |        0.2662      3.2502 |    14.0 |         69.0%     0.4195
+  Blind         mid-tier     40 |        0.2724      3.2229 |    10.3 |         81.0%     0.2074
+  Mechanism     frontier     40 |        0.2918      2.6751 |    12.2 |         72.7%     0.4355
+  Mechanism     mid-tier     40 |        0.2632      1.4656 |     7.4 |         86.0%     0.1931
+
+  TOTAL SPEND $50.2164 over 5678 calls, 160 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls       empty     malformed       trunc  mean rsn   max rsn
+  anthropic/claude-opus-4.7        3377     0  0.0%      0   0.0%     0  0.0%        77      1085
+  google/gemini-2.5-flash          2301     0  0.0%     20   0.9%    10  0.4%      2506      4938
+
+  DO NOT LAUNCH on google/gemini-2.5-flash: empty or truncated responses present. Raise max_tokens above
+    google/gemini-2.5-flash        observed reasoning+completion peak 10934, so max_tokens >= 16401

@@ -1,0 +1,91 @@
+FINAL ANALYSIS   mode=REAL   out=results/analysis_final
+
+====================================================================================================
+1-2. MERGE AND INTEGRITY
+====================================================================================================
+  stage1                600 campaigns
+  topup_opus           3275 campaigns
+  topup_gemini          495 campaigns
+  topup_deepseek        705 campaigns
+  TOTAL                5075 campaigns merged
+  call data read: stage1: 18017 calls from the ARCHIVE; topup_opus: 111188 calls from the ARCHIVE; topup_gemini: 14729 calls from the ARCHIVE; topup_deepseek: 19052 calls from the ARCHIVE
+  campaigns touched by a transport error: 0
+  campaigns with no successful measurement: 0
+
+  condition      model                               want    have   seeds status
+  Blind          claude-opus-4.7                      695     695     695 ok
+  Quantitative   claude-opus-4.7                      695     695     695 ok
+  Mechanism      claude-opus-4.7                      695     695     695 ok
+  Aggregated     claude-opus-4.7                      695     695     695 ok
+  Decision-rule  claude-opus-4.7                      695     695     695 ok
+  Blind          deepseek-chat-v3.1                   181     181     181 ok
+  Quantitative   deepseek-chat-v3.1                   181     181     181 ok
+  Mechanism      deepseek-chat-v3.1                   181     181     181 ok
+  Aggregated     deepseek-chat-v3.1                   181     181     181 ok
+  Decision-rule  deepseek-chat-v3.1                   181     181     181 ok
+  Blind          gemini-2.5-flash                     139     139     139 ok
+  Quantitative   gemini-2.5-flash                     139     139     139 ok
+  Mechanism      gemini-2.5-flash                     139     139     139 ok
+  Aggregated     gemini-2.5-flash                     139     139     139 ok
+  Decision-rule  gemini-2.5-flash                     139     139     139 ok
+
+  INTEGRITY OK: one clean campaign per (condition, model, seed), every cell at its N,
+  and within each model every condition holds the same seed set.
+
+====================================================================================================
+3-4. CONFIRMATORY AND BEHAVIOURAL TABLES
+====================================================================================================
+  stage1+topup_opus+topup_gemini+topup_deepseek        produced its tables
+
+====================================================================================================
+5. THE PANELS
+====================================================================================================
+  Both panels are EXPLORATORY (0q). Their contrasts are not in the confirmatory family of
+  0g, and each is additionally compared against stage 1 on the seeds they share, which is
+  the question each panel exists to answer.
+  zeronoise                                            produced its tables
+  panelc                                               produced its tables
+  table 2c, the central test (0ad)                     produced
+
+====================================================================================================
+WHAT WAS WRITTEN
+====================================================================================================
+  results/analysis_final/grid/summary.json
+  results/analysis_final/grid/table1_primary.txt
+  results/analysis_final/grid/table2_confirmatory.txt
+  results/analysis_final/grid/table3_distinct.txt
+  results/analysis_final/grid/table4_replication.txt
+  results/analysis_final/grid/table5_secondary.txt
+  results/analysis_final/zeronoise/summary.json
+  results/analysis_final/zeronoise/table1_primary.txt
+  results/analysis_final/zeronoise/table2_confirmatory.txt
+  results/analysis_final/zeronoise/table2b_vs_stage1.txt
+  results/analysis_final/zeronoise/table2c_central_test.json
+  results/analysis_final/zeronoise/table2c_central_test.txt
+  results/analysis_final/zeronoise/table3_distinct.txt
+  results/analysis_final/zeronoise/table4_replication.txt
+  results/analysis_final/zeronoise/table5_secondary.txt
+  results/analysis_final/panelc/summary.json
+  results/analysis_final/panelc/table1_primary.txt
+  results/analysis_final/panelc/table2_confirmatory.txt
+  results/analysis_final/panelc/table2b_vs_stage1.txt
+  results/analysis_final/panelc/table3_distinct.txt
+  results/analysis_final/panelc/table4_replication.txt
+  results/analysis_final/panelc/table5_secondary.txt
+
+  --- results/analysis_final/grid/table2_confirmatory.txt ---
+    TABLE 2. The SIX confirmatory contrasts, Holm-corrected across the family.
+    PAIRED BY SEED, campaign level, one weight per seed. Primary p is a studentised wild cluster
+    bootstrap over seeds with Rademacher weights. Welch is a SENSITIVITY and assumes the cells are
+    independent, which the shared seed makes false.
+    Minimal effect of interest 0.06. Bootstrap draws 20000, resolution floor 0.00005.
+    
+    model                    contrast                   seeds  drop      diff       SE               95% CI      wild p
+    claude-opus-4.7          Aggregated vs Mechanism      695     0   -0.0334   0.0139  [-0.0606, -0.0061]     0.01745
+    claude-opus-4.7          Decision-rule vs Mechanism   695     0   -0.0316   0.0136  [-0.0583, -0.0049]     0.01920
+    deepseek-chat-v3.1       Aggregated vs Mechanism      181     0   -0.0332   0.0217  [-0.0757, +0.0092]     0.12404
+    deepseek-chat-v3.1       Decision-rule vs Mechanism   180     1   +0.0699   0.0218  [+0.0271, +0.1126]     0.00125
+    gemini-2.5-flash         Aggregated vs Mechanism      139     0   +0.0067   0.0101  [-0.0130, +0.0265]     0.52152
+    gemini-2.5-flash         Decision-rule vs Mechanism   139     0   -0.0044   0.0119  [-0.0278, +0.0189]     0.73371
+    
+    ...

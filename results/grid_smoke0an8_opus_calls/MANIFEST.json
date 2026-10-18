@@ -1,0 +1,21 @@
+{
+ "tag": "smoke0an8_opus",
+ "cells": 1,
+ "total_lines": 60,
+ "source_lines": 60,
+ "carried_forward_lines": 0,
+ "untouched_cell_lines": 0,
+ "replaced_lines": 0,
+ "expected_total_lines": 60,
+ "all_verified": true,
+ "empty": false,
+ "files": {
+  "blind__anthropic_claude-opus-4.7.jsonl.gz": {
+   "lines": 60,
+   "sha256": "0bd1e491075869773450c87b14de3cebb5c1b874890df59c596539170673b9f2",
+   "bytes": 10302,
+   "verified": true,
+   "written_by_this_run": true
+  }
+ }
+}

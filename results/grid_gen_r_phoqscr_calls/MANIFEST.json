@@ -1,0 +1,56 @@
+{
+ "tag": "gen_r_phoqscr",
+ "cells": 6,
+ "total_lines": 6524,
+ "source_lines": 6524,
+ "carried_forward_lines": 0,
+ "untouched_cell_lines": 0,
+ "replaced_lines": 0,
+ "expected_total_lines": 6524,
+ "all_verified": true,
+ "empty": false,
+ "files": {
+  "blind__anthropic_claude-opus-4.7.jsonl.gz": {
+   "lines": 865,
+   "sha256": "77417759eae0ef6a9ba525c54b28ca3788640f14b5aa08619c5016ef794c714c",
+   "bytes": 126228,
+   "verified": true,
+   "written_by_this_run": true
+  },
+  "blind__deepseek_deepseek-chat-v3.1.jsonl.gz": {
+   "lines": 1085,
+   "sha256": "422aa2a7fdd5a996deea5517db1fc6093f6a45752ea3a52277e198d2ad1978fc",
+   "bytes": 169241,
+   "verified": true,
+   "written_by_this_run": true
+  },
+  "blind__google_gemini-2.5-flash.jsonl.gz": {
+   "lines": 1285,
+   "sha256": "7e756e01dad5255ab5d138214b6dbba863e6d09d2e39bcd537ce5e9f26d68c1c",
+   "bytes": 188096,
+   "verified": true,
+   "written_by_this_run": true
+  },
+  "instructed__anthropic_claude-opus-4.7.jsonl.gz": {
+   "lines": 781,
+   "sha256": "c7e6094f828bccaa70cdd1cc1c131ad7d3b51a4dac9e32ef9f1e7b2b296b0e3f",
+   "bytes": 118464,
+   "verified": true,
+   "written_by_this_run": true
+  },
+  "instructed__deepseek_deepseek-chat-v3.1.jsonl.gz": {
+   "lines": 1072,
+   "sha256": "a7c90d2a93a9c3b8f15e6bafd8b05708e3849c1245be4e3015fa93a8ebcad6c8",
+   "bytes": 177489,
+   "verified": true,
+   "written_by_this_run": true
+  },
+  "instructed__google_gemini-2.5-flash.jsonl.gz": {
+   "lines": 1436,
+   "sha256": "31c8e66915ffa06cd4dc9adb18dd70813e550615fa53490f0106ffee9e9cd681",
+   "bytes": 192818,
+   "verified": true,
+   "written_by_this_run": true
+  }
+ }
+}

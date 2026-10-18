@@ -1,0 +1,4 @@
+effort=medium      3.9s ok=True  provider='SiliconFlow'  err=
+    completion=32 reasoning=32 text_len=141
+effort=None        3.3s ok=True  provider='SiliconFlow'  err=
+    completion=34 reasoning=0 text_len=136

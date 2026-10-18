@@ -1,0 +1,1889 @@
+{
+ "smoke0an_f3_cap": {
+  "calls": {
+   "claude-opus-4.7|15000000": {
+    "round": 15,
+    "replacement": 108,
+    "nomination": 1
+   },
+   "gemini-2.5-flash|15000001": {
+    "round": 15,
+    "replacement": 173,
+    "nomination": 1
+   }
+  },
+  "prompt_tokens": {
+   "claude-opus-4.7": {
+    "mean": 2741.266129032258,
+    "max": 4913
+   },
+   "gemini-2.5-flash": {
+    "mean": 2621.2380952380954,
+    "max": 4997
+   }
+  },
+  "faults": [
+   [
+    "claude-opus-4.7",
+    15000000,
+    2,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    2,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    2,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    2,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    2,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    3,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    3,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    3,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    3,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    3,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    3,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    3,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    3,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    3,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    3,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    3,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    3,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    3,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    3,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    3,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    4,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    4,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    4,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    4,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    4,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    4,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    4,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    4,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    4,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    4,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    4,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    4,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    4,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    4,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    5,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    5,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    5,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    5,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    5,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    5,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    5,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    5,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    6,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    6,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    6,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    6,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    6,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    6,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    7,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    7,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    7,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    7,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    7,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    8,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    8,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    8,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    8,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    9,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    9,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    9,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    9,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    10,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    10,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    10,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    10,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    10,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    10,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    10,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    10,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    10,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    10,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    10,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    10,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    10,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    10,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    11,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    11,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    11,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    11,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    11,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    11,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    11,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    11,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    11,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    11,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    12,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    12,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    12,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    12,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    12,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    12,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    12,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    12,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    12,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    12,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    13,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    13,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    13,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    13,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    13,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    13,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    13,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    13,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    13,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    13,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    13,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    13,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    13,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    14,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    15,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    15,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    15,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    15,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    15,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    15,
+    "a refused-order history line"
+   ],
+   [
+    "claude-opus-4.7",
+    15000000,
+    15,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    1,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    1,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    1,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    1,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    2,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    2,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    2,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    2,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    2,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    2,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    2,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    2,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    2,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    2,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    2,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    2,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    2,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    2,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    2,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    3,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    3,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    3,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    3,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    3,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    3,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    3,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    3,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    3,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    3,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    3,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    3,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    3,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    3,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    3,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    3,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    3,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    3,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    4,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    4,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    4,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    4,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    4,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    4,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    4,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    4,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    4,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    4,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    4,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    4,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    4,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    4,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    4,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    4,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    4,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    4,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    5,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    5,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    5,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    5,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    5,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    5,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    5,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    5,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    5,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    5,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    5,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    5,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    5,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    5,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    5,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    5,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    5,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    5,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    5,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    5,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    5,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    5,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    6,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    6,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    6,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    6,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    6,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    6,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    6,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    6,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    6,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    6,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    6,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    6,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    6,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    6,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    6,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    6,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    6,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    6,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    7,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    7,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    7,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    7,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    7,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    7,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    7,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    7,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    7,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    7,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    7,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    7,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    7,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    7,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    7,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    7,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    7,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    8,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    8,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    8,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    8,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    9,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    9,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    9,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    9,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    9,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    10,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    10,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    10,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    10,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    10,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    10,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    10,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    10,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    10,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    11,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    11,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    11,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    11,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    11,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    12,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    12,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    12,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    12,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    12,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    13,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    13,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    13,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    13,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    14,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    14,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    14,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    14,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    14,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    14,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    14,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    14,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    14,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    14,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    14,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    14,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    14,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    14,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    14,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    14,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    14,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    14,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    14,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    14,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    14,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    15,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    15,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    15,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    15,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    15,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    15,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    15,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    15,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    15,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    15,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    15,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    15,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    15,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    15,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    15,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    15,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    15,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    15,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    15,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    15,
+    "a refused-order history line"
+   ],
+   [
+    "gemini-2.5-flash",
+    15000001,
+    15,
+    "a refused-order history line"
+   ]
+  ]
+ },
+ "smoke0an1_f3_cap": {
+  "calls": {
+   "claude-opus-4.7|15000000": {
+    "round": 15,
+    "replacement": 50,
+    "nomination": 1
+   },
+   "claude-opus-4.7|15000001": {
+    "round": 15,
+    "replacement": 97,
+    "nomination": 1
+   },
+   "deepseek-chat-v3.1|15000001": {
+    "round": 15,
+    "replacement": 315,
+    "nomination": 1
+   },
+   "deepseek-chat-v3.1|15000000": {
+    "round": 15,
+    "replacement": 254,
+    "nomination": 1
+   },
+   "gemini-2.5-flash|15000001": {
+    "round": 15,
+    "replacement": 949,
+    "nomination": 1
+   },
+   "gemini-2.5-flash|15000000": {
+    "round": 15,
+    "replacement": 254,
+    "nomination": 1
+   }
+  },
+  "prompt_tokens": {
+   "claude-opus-4.7": {
+    "mean": 2323.2011173184355,
+    "max": 4687
+   },
+   "deepseek-chat-v3.1": {
+    "mean": 2213.116472545757,
+    "max": 4390
+   },
+   "gemini-2.5-flash": {
+    "mean": 2139.7595141700403,
+    "max": 4773
+   }
+  },
+  "faults": []
+ }
+}

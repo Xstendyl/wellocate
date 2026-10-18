@@ -1,0 +1,464 @@
+SPOT CHECK: raw model output beside the proposals the harness accepted.
+Sampled deterministically, 20 calls per model. Written for a human to read.
+
+====================================================================================================
+anthropic/claude-opus-4.7  (frontier)   76 calls, showing 20
+====================================================================================================
+
+--- round 1  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 5  parsers agree True ---
+PARSED   : ['IMLE', 'AMLE', 'INLE', 'IMLA']
+SECONDARY: ['IMLE', 'AMLE', 'INLE', 'IMLA']
+RAW:
+IMLE | reference point baseline
+AMLE | vary position 1 to probe sensitivity
+INLE | vary position 2 near reference
+IMLA | vary position 4 to probe sensitivity
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['IMLF']
+SECONDARY: ['IMLF']
+RAW:
+IMLF | small perturbation at position 4 from viable reference
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['IMLA']
+SECONDARY: ['IMLA']
+RAW:
+IMLA | try different last position to find viable neighbor
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['IMLE']
+SECONDARY: ['IMLE']
+RAW:
+IMLE | reference point known viable, re-measure to confirm baseline
+
+--- round 2  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 5  parsers agree True ---
+PARSED   : ['IMLE', 'JMLE', 'IMKE', 'IMLI']
+SECONDARY: ['IMLE', 'JMLE', 'IMKE', 'IMLI']
+RAW:
+IMLE | reference, check noise variance
+JMLE | vary position 1 toward neighbor
+IMKE | vary position 3 toward neighbor
+IMLI | vary position 4 to vowel-like
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['IMLE']
+SECONDARY: ['IMLE']
+RAW:
+IMLE | reference baseline, measurements noisy so re-sample
+
+--- round 3  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['IMLO']
+SECONDARY: ['IMLO']
+RAW:
+IMLO | explore position 4 with a new letter
+
+--- round 5  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['IMLE', 'IMLE', 'IMLE', 'IMLE']
+SECONDARY: ['IMLE', 'IMLE', 'IMLE', 'IMLE']
+RAW:
+IMLE | reference anchor, high noise so resample
+IMLE | reference anchor, resample for mean
+IMLE | reference anchor, resample for mean
+IMLE | reference anchor, resample for mean
+
+--- round 6  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 12  parsers agree True ---
+PARSED   : ['IMLE', 'IMLE', 'IMLE', 'IMLE']
+SECONDARY: ['IMLE', 'IMLE', 'IMLE', 'IMLE']
+RAW:
+IMLE | baseline, high variance, keep sampling
+IMLE | baseline, high variance, keep sampling
+IMLE | baseline, high variance, keep sampling
+IMLE | baseline, high variance, keep sampling
+
+--- round 7  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['IMLE', 'IMLE', 'IMLE', 'IMLE']
+SECONDARY: ['IMLE', 'IMLE', 'IMLE', 'IMLE']
+RAW:
+IMLE | reference baseline, noisy measurements need replication
+IMLE | continue averaging reference
+IMLE | gather more baseline data
+IMLE | reduce noise variance on known viable point
+
+--- round 8  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['IMLE', 'ILME', 'IMLE', 'IMLE']
+SECONDARY: ['IMLE', 'ILME', 'IMLE', 'IMLE']
+RAW:
+IMLE | reference baseline, noisy so keep sampling
+ILME | swap pos2/3 to explore nearby viable space
+IMLE | more replicates to reduce noise
+IMLE | more replicates to reduce noise
+
+--- round 10  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['IMLE', 'ILME', 'IMLE', 'ILME']
+SECONDARY: ['IMLE', 'ILME', 'IMLE', 'ILME']
+RAW:
+IMLE | baseline reference, high variance needs more samples
+ILME | second viable variant, needs more data
+IMLE | reduce noise on reference
+ILME | reduce noise on alternative
+
+--- round 11  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 6  parsers agree True ---
+PARSED   : ['IMLE', 'ILME', 'IMLE', 'ILME']
+SECONDARY: ['IMLE', 'ILME', 'IMLE', 'ILME']
+RAW:
+IMLE | reference, high variance but occasional high reads
+ILME | second viable variant, exploring
+IMLE | replicate to reduce noise
+ILME | replicate alternate viable
+
+--- round 14  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['ILME', 'ILME', 'IMLE', 'IMLE']
+SECONDARY: ['ILME', 'ILME', 'IMLE', 'IMLE']
+RAW:
+ILME | best mean so far, keep sampling
+ILME | reduce variance on top candidate
+IMLE | reference comparison
+IMLE | reference comparison
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['BMLE']
+SECONDARY: ['BMLE']
+RAW:
+BMLE | try another letter at position 1 to probe viability
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['IMBE']
+SECONDARY: ['IMBE']
+RAW:
+IMBE | explore position 3 with a nearby letter
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['IMLA']
+SECONDARY: ['IMLA']
+RAW:
+IMLA | vary position 4 to explore viable neighbors
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['IMLI']
+SECONDARY: ['IMLI']
+RAW:
+IMLI | try position 4 variation to explore viable neighbors
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['IMLE']
+SECONDARY: ['IMLE']
+RAW:
+IMLE | re-measure reference to reduce noise and establish baseline
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['IMLE']
+SECONDARY: ['IMLE']
+RAW:
+IMLE | reference point, average more readings to reduce noise
+
+====================================================================================================
+google/gemini-2.5-flash  (mid-tier)   49 calls, showing 20
+====================================================================================================
+
+--- round 1  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['IMLE', 'AMLE', 'IBLE', 'IMKE']
+SECONDARY: ['IMLE', 'AMLE', 'IBLE', 'IMKE']
+RAW:
+IMLE | Baseline measurement
+AMLE | Explore first position
+IBLE | Explore second position
+IMKE | Explore third position
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['CMLE']
+SECONDARY: ['CMLE']
+RAW:
+CMLE | Exploring first position variations
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['DMLE']
+SECONDARY: ['DMLE']
+RAW:
+DMLE | Exploring first position variations
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['IMLE']
+SECONDARY: ['IMLE']
+RAW:
+IMLE | Re-evaluate the reference point to reduce measurement error.
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['IMLE']
+SECONDARY: ['IMLE']
+RAW:
+IMLE | Re-measuring reference point to reduce error
+
+--- round 2  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['IMLE', 'IMLE', 'IMLE', 'IMLE']
+SECONDARY: ['IMLE', 'IMLE', 'IMLE', 'IMLE']
+RAW:
+IMLE | Re-measure reference point to reduce error
+IMLE | Re-measure reference point to reduce error
+IMLE | Re-measure reference point to reduce error
+IMLE | Re-measure reference point to reduce error
+
+--- round 4  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['IMLE', 'IMLE', 'IMLE', 'IMLE']
+SECONDARY: ['IMLE', 'IMLE', 'IMLE', 'IMLE']
+RAW:
+IMLE | Re-evaluate the reference point
+IMLE | Re-evaluate the reference point
+IMLE | Re-evaluate the reference point
+IMLE | Re-evaluate the reference point
+
+--- round 5  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['IMLE', 'IMLE', 'IMLE', 'IMLE']
+SECONDARY: ['IMLE', 'IMLE', 'IMLE', 'IMLE']
+RAW:
+IMLE | Re-measure reference point to improve precision
+IMLE | Re-measure reference point to improve precision
+IMLE | Re-measure reference point to improve precision
+IMLE | Re-measure reference point to improve precision
+
+--- round 6  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['IMLE', 'IMLE', 'IMLE', 'IMLE']
+SECONDARY: ['IMLE', 'IMLE', 'IMLE', 'IMLE']
+RAW:
+IMLE | Re-evaluate reference point
+IMLE | Re-evaluate reference point
+IMLE | Re-evaluate reference point
+IMLE | Re-evaluate reference point
+
+--- round 7  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['IMLE', 'IMLE', 'IMLE', 'IMLE']
+SECONDARY: ['IMLE', 'IMLE', 'IMLE', 'IMLE']
+RAW:
+IMLE | Re-evaluate the reference point
+IMLE | Re-evaluate the reference point
+IMLE | Re-evaluate the reference point
+IMLE | Re-evaluate the reference point
+
+--- round 8  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['IMLE', 'IMLE', 'IMLE', 'IMLE']
+SECONDARY: ['IMLE', 'IMLE', 'IMLE', 'IMLE']
+RAW:
+IMLE | Re-evaluate the reference point with more measurements
+IMLE | Re-evaluate the reference point with more measurements
+IMLE | Re-evaluate the reference point with more measurements
+IMLE | Re-evaluate the reference point with more measurements
+
+--- round 9  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['IMLE', 'IMLE', 'IMLE', 'IMLE']
+SECONDARY: ['IMLE', 'IMLE', 'IMLE', 'IMLE']
+RAW:
+IMLE | Re-evaluate the reference point
+IMLE | Re-evaluate the reference point
+IMLE | Re-evaluate the reference point
+IMLE | Re-evaluate the reference point
+
+--- round 12  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['IMLE', 'IMLE', 'IMLE', 'IMLE']
+SECONDARY: ['IMLE', 'IMLE', 'IMLE', 'IMLE']
+RAW:
+IMLE | Re-evaluate the reference point
+IMLE | Re-evaluate the reference point
+IMLE | Re-evaluate the reference point
+IMLE | Re-evaluate the reference point
+
+--- round 13  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['IMLE', 'IMLE', 'IMLE', 'IMLE']
+SECONDARY: ['IMLE', 'IMLE', 'IMLE', 'IMLE']
+RAW:
+IMLE | Re-evaluate the reference point
+IMLE | Re-evaluate the reference point
+IMLE | Re-evaluate the reference point
+IMLE | Re-evaluate the reference point
+
+--- round 15  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['IMLE', 'IMLE', 'IMLE', 'IMLE']
+SECONDARY: ['IMLE', 'IMLE', 'IMLE', 'IMLE']
+RAW:
+IMLE | Final measurement of the reference point.
+IMLE | Final measurement of the reference point.
+IMLE | Final measurement of the reference point.
+IMLE | Final measurement of the reference point.
+
+--- round 1  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['IMLE', 'AMLE', 'IBLE', 'IDLE']
+SECONDARY: ['IMLE', 'AMLE', 'IBLE', 'IDLE']
+RAW:
+IMLE | Reference point
+AMLE | Single mutation from reference
+IBLE | Single mutation from reference
+IDLE | Single mutation from reference
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['BMLE']
+SECONDARY: ['BMLE']
+RAW:
+BMLE | Exploring first position variations
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['CMLE']
+SECONDARY: ['CMLE']
+RAW:
+CMLE | Exploring variations of the first position, similar to the rejected AMLE and IBLE.
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['DMLE']
+SECONDARY: ['DMLE']
+RAW:
+DMLE | Exploring the neighborhood of IMLE
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['EMLE']
+SECONDARY: ['EMLE']
+RAW:
+EMLE | Exploring viability around the reference point
+
+====================================================================================================
+deepseek/deepseek-chat-v3.1  (open-weight)   103 calls, showing 20
+====================================================================================================
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['IMLG']
+SECONDARY: ['IMLG']
+RAW:
+IMLG | increment last letter from reference
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['IMLH']
+SECONDARY: ['IMLH']
+RAW:
+IMLH | continue sequence from IMLE, testing viability step
+
+--- round 2  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['IMLE', 'IMQE', 'IMLD', 'IMGE']
+SECONDARY: ['IMLE', 'IMQE', 'IMLD', 'IMGE']
+RAW:
+IMLE | baseline reference, more samples to reduce error  
+IMQE | small variation from baseline, test viability  
+IMLD | retry previously rejected to confirm viability pattern  
+IMGE | retry previously rejected to confirm viability pattern
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['IMLE']
+SECONDARY: ['IMLE']
+RAW:
+IMLE | measure baseline again
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['IMLE']
+SECONDARY: ['IMLE']
+RAW:
+IMLE | Continue measuring baseline for averaging
+
+--- round 3  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['IMLE']
+SECONDARY: ['IMLE']
+RAW:
+IMLE | Repeating to reduce measurement error on baseline
+
+--- round 5  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 5  parsers agree True ---
+PARSED   : ['IMLE', 'IMLE', 'IMLE', 'IMLE']
+SECONDARY: ['IMLE', 'IMLE', 'IMLE', 'IMLE']
+RAW:
+IMLE | continue averaging reference point  
+IMLE | reduce measurement error  
+IMLE | establish baseline consistency  
+IMLE | maximize data on known viable candidate
+
+--- round 6  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['IMLE', 'IMLE', 'IMLE', 'IMLE']
+SECONDARY: ['IMLE', 'IMLE', 'IMLE', 'IMLE']
+RAW:
+IMLE | Continue averaging to reduce measurement error  
+IMLE | Further refine estimate of true score  
+IMLE | Maximize precision on baseline performance  
+IMLE | Maintain focus on known viable candidate
+
+--- round 7  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 5  parsers agree True ---
+PARSED   : ['IMLE', 'IMLE', 'IMLE', 'IMLE']
+SECONDARY: ['IMLE', 'IMLE', 'IMLE', 'IMLE']
+RAW:
+IMLE | continue averaging reference point  
+IMLE | reduce measurement error  
+IMLE | establish baseline consistency  
+IMLE | maximize information from known viable candidate
+
+--- round 8  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 6  parsers agree True ---
+PARSED   : ['IMLE', 'IMLE', 'IMLE', 'IMLE']
+SECONDARY: ['IMLE', 'IMLE', 'IMLE', 'IMLE']
+RAW:
+IMLE | continue averaging reference point  
+IMLE | more measurements to reduce noise  
+IMLE | refine estimate of baseline performance  
+IMLE | maximize data for reliable comparison
+
+--- round 9  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['IMLE']
+SECONDARY: ['IMLE']
+RAW:
+IMLE | continue refining estimate of baseline performance
+
+--- round 12  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 6  parsers agree True ---
+PARSED   : ['IMLE', 'IMLE', 'IMLE', 'IMLE']
+SECONDARY: ['IMLE', 'IMLE', 'IMLE', 'IMLE']
+RAW:
+IMLE | Continue averaging to reduce measurement error  
+IMLE | More replicates for better precision  
+IMLE | High variability requires repeated sampling  
+IMLE | Maximize confidence in baseline performance
+
+--- round 13  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 6  parsers agree True ---
+PARSED   : ['IMLE', 'IMLE', 'IMLE', 'IMLE']
+SECONDARY: ['IMLE', 'IMLE', 'IMLE', 'IMLE']
+RAW:
+IMLE | continue averaging to reduce error  
+IMLE | more measurements for better precision  
+IMLE | refining estimate of baseline performance  
+IMLE | maximizing information on current best candidate
+
+--- round 14  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 6  parsers agree True ---
+PARSED   : ['IMLE', 'IMLE', 'IMLE', 'IMLE']
+SECONDARY: ['IMLE', 'IMLE', 'IMLE', 'IMLE']
+RAW:
+IMLE | continue averaging to reduce error  
+IMLE | more measurements for precision  
+IMLE | baseline reference stability check  
+IMLE | final round focus on best known candidate
+
+--- round 1  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['IMLE', 'INLE', 'IMTE', 'IMLF']
+SECONDARY: ['IMLE', 'INLE', 'IMTE', 'IMLF']
+RAW:
+IMLE | reference point baseline  
+INLE | first position variation from reference  
+IMTE | third position variation from reference  
+IMLF | fourth position variation from reference
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['IMQE']
+SECONDARY: ['IMQE']
+RAW:
+IMQE | test change at position 2 from N to Q
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['IMPE']
+SECONDARY: ['IMPE']
+RAW:
+IMPE | testing variation at position 3
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['IMPE']
+SECONDARY: ['IMPE']
+RAW:
+IMPE | testing variation at position 3
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['IMNE']
+SECONDARY: ['IMNE']
+RAW:
+IMNE | testing variation at position 3, avoiding known non-viable IMPE
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['IMLE']
+SECONDARY: ['IMLE']
+RAW:
+IMLE | Retest baseline after multiple rejections to confirm viability

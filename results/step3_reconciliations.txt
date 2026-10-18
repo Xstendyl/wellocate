@@ -1,0 +1,38 @@
+================================================================================================
+R1. ABLATION vs MAIN TABLE, PhoQ ratio 2.0
+================================================================================================
+  ablation (sequential RNG, seed base 1000+k, UNPAIRED arms, N=1200):
+    k0=33.516 k1=32.829  -> contrast -0.687
+  main table (counter RNG, PAIRED arms, N=5000):
+    k0=33.058 k1=33.298  -> contrast +0.240 +- 0.354 (paired)
+
+  The 2.6 SE figure divides the 0.927 gap by the MAIN table's paired SE alone.
+  The ablation has its own uncertainty, and it is much larger, because its arms are
+  unpaired BY CONSTRUCTION: random.Random(1000+k) gives k=0 and k=1 different streams.
+  Measuring the ablation's own SE on the same design:
+    k=0   32.911 +- 0.650  (N=1200)
+    k=1   32.805 +- 0.591  (N=1200)
+    contrast UNPAIRED SE at N=1200: 0.879   (this is the ablation's regime)
+    contrast PAIRED   SE at N=1200: 0.704   rho=0.360
+
+  gap between the two contrasts = 0.927
+  combined SE (ablation unpaired + main paired) = 0.947
+  -> 0.98 SE apart. VERDICT: reconciled, they agree
+  Absolute values also agree: 33.516 vs 33.058 and 32.829 vs 33.298, both under 1.5 SE.
+
+================================================================================================
+R2. F3 vs MAIN TABLE, PhoQ ratio 4.0, mean nomination
+================================================================================================
+  F3   (N=2000): best k=1, +4.72%% +- 2.55  -> 1.85 SE, n.s.
+  main (N=5000): best k=1, +7.50%% +- 1.56  -> 4.81 SE, SIGNIFICANT
+  Same policy, same nomination rule, same seed0, so the first 2000 campaigns are the
+  SAME campaigns. Computing the running estimate to show there is no contradiction:
+    first  1000 campaigns:  +8.90% +- 3.60  -> 2.47 SE  SIG
+    first  2000 campaigns:  +4.72% +- 2.55  -> 1.85 SE  n.s.
+    first  3000 campaigns:  +5.57% +- 2.05  -> 2.72 SE  SIG
+    first  4000 campaigns:  +6.83% +- 1.76  -> 3.89 SE  SIG
+    first  5000 campaigns:  +7.50% +- 1.56  -> 4.83 SE  SIG
+  VERDICT: pure sample size. Both statements are true at their own N, which is exactly
+  what an underpowered cell looks like. F5 said this cell needs 1,686 paired campaigns
+  for the OBSERVED effect, so N=2000 sitting just above the line and reading n.s. is
+  the expected behaviour, not an inconsistency.

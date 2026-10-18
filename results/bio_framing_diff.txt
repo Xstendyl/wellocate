@@ -1,0 +1,135 @@
+========================================================================================================
+CELL bio_role   (sigma > 0, no noise statement)
+========================================================================================================
+
+--- round ---
+  --- grid Blind / round
+  +++ bio_role / round
+  @@ -1,2 +1,2 @@
+  -You are running a numerical optimization campaign on four positions of an abstract four-position system.
+  +You are a protein engineer working in a wet lab. You are improving a protein by changing four positions, each of which can hold one of 20 building blocks. Each order is a sample submitted to the lab's assay facility.
+   
+  (2 changed lines; rendered SHA256 a1e526cdb571bd78)
+
+--- replacement ---
+  --- grid Blind / replacement
+  +++ bio_role / replacement
+  @@ -1,2 +1,2 @@
+  -You are running a numerical optimization campaign on four positions of an abstract four-position system.
+  +You are a protein engineer working in a wet lab. You are improving a protein by changing four positions, each of which can hold one of 20 building blocks. Each order is a sample submitted to the lab's assay facility.
+   
+  (2 changed lines; rendered SHA256 e2cd57690baae7c2)
+
+--- reask ---
+  --- grid Blind / reask
+  +++ bio_role / reask
+  @@ -1,2 +1,2 @@
+  -You are running a numerical optimization campaign on four positions of an abstract four-position system.
+  +You are a protein engineer working in a wet lab. You are improving a protein by changing four positions, each of which can hold one of 20 building blocks. Each order is a sample submitted to the lab's assay facility.
+   
+  (2 changed lines; rendered SHA256 0313ba8cde99368d)
+
+--- nomination ---
+  --- grid Blind / nomination
+  +++ bio_role / nomination
+  @@ -1,2 +1,2 @@
+  -You are running a numerical optimization campaign on four positions of an abstract four-position system.
+  +You are a protein engineer working in a wet lab. You are improving a protein by changing four positions, each of which can hold one of 20 building blocks. Each order is a sample submitted to the lab's assay facility.
+   
+  (2 changed lines; rendered SHA256 00d1176f43ccd6aa)
+========================================================================================================
+CELL bio_role_noisy   (sigma > 0, one qualitative noise sentence)
+========================================================================================================
+
+--- round ---
+  --- grid Blind / round
+  +++ bio_role_noisy / round
+  @@ -1,2 +1,2 @@
+  -You are running a numerical optimization campaign on four positions of an abstract four-position system.
+  +You are a protein engineer working in a wet lab. You are improving a protein by changing four positions, each of which can hold one of 20 building blocks. Each order is a sample submitted to the lab's assay facility. Assay readings can be noisy, as in any real lab: a single reading may not reflect the sample's true value.
+   
+  (2 changed lines; rendered SHA256 d017e7984c8c1a6b)
+
+--- replacement ---
+  --- grid Blind / replacement
+  +++ bio_role_noisy / replacement
+  @@ -1,2 +1,2 @@
+  -You are running a numerical optimization campaign on four positions of an abstract four-position system.
+  +You are a protein engineer working in a wet lab. You are improving a protein by changing four positions, each of which can hold one of 20 building blocks. Each order is a sample submitted to the lab's assay facility. Assay readings can be noisy, as in any real lab: a single reading may not reflect the sample's true value.
+   
+  (2 changed lines; rendered SHA256 8bf7e390a1abd2ca)
+
+--- reask ---
+  --- grid Blind / reask
+  +++ bio_role_noisy / reask
+  @@ -1,2 +1,2 @@
+  -You are running a numerical optimization campaign on four positions of an abstract four-position system.
+  +You are a protein engineer working in a wet lab. You are improving a protein by changing four positions, each of which can hold one of 20 building blocks. Each order is a sample submitted to the lab's assay facility. Assay readings can be noisy, as in any real lab: a single reading may not reflect the sample's true value.
+   
+  (2 changed lines; rendered SHA256 b62964333d6cfb2c)
+
+--- nomination ---
+  --- grid Blind / nomination
+  +++ bio_role_noisy / nomination
+  @@ -1,2 +1,2 @@
+  -You are running a numerical optimization campaign on four positions of an abstract four-position system.
+  +You are a protein engineer working in a wet lab. You are improving a protein by changing four positions, each of which can hold one of 20 building blocks. Each order is a sample submitted to the lab's assay facility. Assay readings can be noisy, as in any real lab: a single reading may not reflect the sample's true value.
+   
+  (2 changed lines; rendered SHA256 53a5e26d01e62ddc)
+========================================================================================================
+CELL bio_role_exact   (sigma = 0, failures kept at 15%, prompt identical to bio_role)
+========================================================================================================
+
+--- round ---
+  --- grid Blind / round
+  +++ bio_role_exact / round
+  @@ -1,2 +1,2 @@
+  -You are running a numerical optimization campaign on four positions of an abstract four-position system.
+  +You are a protein engineer working in a wet lab. You are improving a protein by changing four positions, each of which can hold one of 20 building blocks. Each order is a sample submitted to the lab's assay facility.
+   
+  (2 changed lines; rendered SHA256 a1e526cdb571bd78)
+
+--- replacement ---
+  --- grid Blind / replacement
+  +++ bio_role_exact / replacement
+  @@ -1,2 +1,2 @@
+  -You are running a numerical optimization campaign on four positions of an abstract four-position system.
+  +You are a protein engineer working in a wet lab. You are improving a protein by changing four positions, each of which can hold one of 20 building blocks. Each order is a sample submitted to the lab's assay facility.
+   
+  (2 changed lines; rendered SHA256 e2cd57690baae7c2)
+
+--- reask ---
+  --- grid Blind / reask
+  +++ bio_role_exact / reask
+  @@ -1,2 +1,2 @@
+  -You are running a numerical optimization campaign on four positions of an abstract four-position system.
+  +You are a protein engineer working in a wet lab. You are improving a protein by changing four positions, each of which can hold one of 20 building blocks. Each order is a sample submitted to the lab's assay facility.
+   
+  (2 changed lines; rendered SHA256 0313ba8cde99368d)
+
+--- nomination ---
+  --- grid Blind / nomination
+  +++ bio_role_exact / nomination
+  @@ -1,2 +1,2 @@
+  -You are running a numerical optimization campaign on four positions of an abstract four-position system.
+  +You are a protein engineer working in a wet lab. You are improving a protein by changing four positions, each of which can hold one of 20 building blocks. Each order is a sample submitted to the lab's assay facility.
+   
+  (2 changed lines; rendered SHA256 00d1176f43ccd6aa)
+
+========================================================================================================
+EVERY OTHER BYTE IS IDENTICAL, checked rather than asserted
+========================================================================================================
+  bio_role         round        identical outside the substitution: True
+  bio_role         replacement  identical outside the substitution: True
+  bio_role         reask        identical outside the substitution: True
+  bio_role         nomination   identical outside the substitution: True
+  bio_role_noisy   round        identical outside the substitution: True
+  bio_role_noisy   replacement  identical outside the substitution: True
+  bio_role_noisy   reask        identical outside the substitution: True
+  bio_role_noisy   nomination   identical outside the substitution: True
+  bio_role_exact   round        identical outside the substitution: True
+  bio_role_exact   replacement  identical outside the substitution: True
+  bio_role_exact   reask        identical outside the substitution: True
+  bio_role_exact   nomination   identical outside the substitution: True
+
+  wrote results/bio_framing_prompts.json

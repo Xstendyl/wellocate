@@ -1,0 +1,54 @@
+\section{Training a policy in Wellocate}
+\label{app:b11}
+
+Trained on Wellocate's reward alone, a two-parameter rule already settles on a setting that is best or tied for
+best on generated landscapes (Appendix~\ref{app:sim}). This appendix trains a full policy.
+
+\paragraph{Design.} We trained a small policy with proximal policy optimisation (PPO) through Wellocate's released
+interface. It sees what a language model agent sees: the readings, the outcomes and the remaining budget, and never a
+true value or the set of viable candidates. At each step it scores a set of candidates. The set holds re-tests of
+what it has ordered, every single-letter change to the start and to its eight best candidates, and one random untried
+candidate. A second network picks the nominee and a third estimates value. Its inputs are scaled to the campaign's own
+readings, so the same networks run on any landscape. Run A trains on generated grid landscapes only. Run B also
+trains on scrambled GB1 and is tested on PhoQ. Each run has three seeds and keeps the checkpoint with the best score
+on its validation split. The design, the test and the success criteria were registered before training. The policy had to beat both its own untrained
+initialisation and random ordering, each with a 95\% interval above zero and every seed positive. It had to do so on
+the grid test split to show the task is learnable, and on the scrambled GB1 and PhoQ test splits to show transfer.
+
+\paragraph{The registered result.} Run A meets both criteria (Table~\ref{tab:b11reg}). Run B beats its initialisation,
+and its interval against random ordering includes zero, so it fails the transfer criterion. A rerun decided after the
+test, with an exploration bonus five times the registered one, meets it on PhoQ: it beats random ordering by
+\nPolEntRandPq{} \nPolEntRandPqci{} with every seed positive (Table~\ref{tab:b11phase2}). The registered intervals
+resample episodes only. Table~\ref{tab:b11reg} gives every interval from a two-level bootstrap that resamples
+landscapes and then episodes; this check is post-hoc. Run A's criteria all hold under it, and also under an interval
+across the three seeds. Two comparisons with the guessing rule now include zero, on the grid and on PhoQ, so we make no
+claim that the policy beats the guessing rule. Five more seeds of Run A, trained and tested the same way, replicate
+this: every seed beats its initialisation and random ordering on all three test splits (Table~\ref{tab:b11phase2}).
+
+\paragraph{Robustness.} Everything from here on was decided after the registered test. Run A plays every condition without retraining, with
+the networks of the registered test. Its lead over random ordering holds when the noise is halved or doubled
+(Table~\ref{tab:b11robust}). A per-round batch effect, a noise floor fifty times larger and failed wells leave the
+scripted policies' best number of re-tests unchanged. Under each of them, three or four re-tests a round stay below
+that best (Table~\ref{tab:b11stress}). Spikes on the grid are the one exception. When 2\% of readings are three times their
+value, the informed rule with three re-tests a round becomes the best scripted rule. Its pick minus that of its best
+setting with fewer re-tests is \nPolSpikeHeavy{} \nPolSpikeHeavyci. Run A does not adapt to the spikes. It keeps
+re-testing about \nPolShare\% of its slots, and its lead over random ordering falls to \nPolRandSpike{}
+\nPolRandSpikeci{} (Table~\ref{tab:b11robust}). On GB1 and PhoQ under their real names it behaves as on the scrambled
+test splits (Table~\ref{tab:b11robust}). Its lead shrinks on rougher grids and holds at every budget we tried
+(Table~\ref{tab:b11robust}). At 4 rounds of 24 it is level with the best scripted rule, with two of its inputs beyond the range it saw in training.
+
+\paragraph{The language models' own campaigns.} We replayed Run A on each model's own campaigns: the same
+landscape, campaign seeds, noise and budget (Table~\ref{tab:b11llm}). We first checked that each of these landscapes
+is outside the training and validation splits, by name, by built content and, for the grid, by its sorted fitness values. On
+the grid Run A beats every model. On scrambled GB1 it is below GPT-6.1 Sol, and on GB1 under real names it is below
+Opus 4.7.
+
+\paragraph{What the policies learned.} We replayed every test episode and read each order back from the
+environment's record (Table~\ref{tab:b11behaviour}). Run A builds from its leaders and rarely re-tests them. On the
+grid, \nPolParentTopThree\% of its new candidates are one letter from one of its three highest readings. Re-tests of
+those three take \nPolLeadRetest\% of its orders. Most of its re-tests retry an order that failed, \nPolRetry\%, or
+repeat a candidate first read earlier the same round, \nPolSameRound\%. The seeds differ: the third seed re-tests candidates that already have a reading more often. The registered Run B re-tests from the first round, and its share climbs to about four slots in five by the
+last. Most of its re-tests go to candidates it has read. On GB1 Run A's nominee is often not its highest reading, and
+that costs it much of its gap to the best scripted rule there.
+
+\input{sections/table_b11}

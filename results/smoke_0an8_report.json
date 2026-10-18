@@ -1,0 +1,331 @@
+{
+ "models": {
+  "anthropic/claude-opus-4.7": {
+   "tag": "smoke0an8_opus",
+   "campaigns": 2,
+   "failed": [],
+   "calls": 60,
+   "empty": 0,
+   "fallback_pattern": 0,
+   "refusals": 0,
+   "truncated": 0,
+   "genuine_parser_disagreements": 0,
+   "bare_token_agreements": 0,
+   "parse_rate": 1.0,
+   "truthful_reask_fired": 5,
+   "median_reasoning": 0.0,
+   "lost_rounds": [
+    0,
+    0
+   ],
+   "lost_rejection": [
+    0,
+    0
+   ],
+   "share": [
+    65.0,
+    71.7
+   ],
+   "cost": [
+    0.1585,
+    0.25282
+   ],
+   "landscape": "phoq_scrambled_s20261004_p93.0",
+   "prompt_options": {
+    "goal_true_value": false,
+    "fix_replacement_budget": false,
+    "riskfree_rejection": false,
+    "truthful_reask": true,
+    "ledger": false,
+    "menu": false,
+    "repeat_cap": false,
+    "structure": false
+   },
+   "reasoning_effort": null,
+   "max_tokens": 6000,
+   "git_commit": "06e00bb6a2196bfe5f5a70217b0e8a608cd18d19",
+   "code_dirty": false,
+   "stray_decimals": [],
+   "scramble_problems": [],
+   "reproduction_problems": [],
+   "largest_campaign_cost": 0.25282,
+   "projected_30": 7.5846,
+   "ceiling": 40.0,
+   "checks": {
+    "complete": true,
+    "replies": true,
+    "slots": true,
+    "no_truth": true,
+    "scramble": true,
+    "reproduces": true,
+    "settings": true,
+    "cost": true
+   }
+  },
+  "google/gemini-2.5-flash": {
+   "tag": "smoke0an8_flash",
+   "campaigns": 2,
+   "failed": [],
+   "calls": 40,
+   "empty": 0,
+   "fallback_pattern": 0,
+   "refusals": 0,
+   "truncated": 0,
+   "genuine_parser_disagreements": 0,
+   "bare_token_agreements": 0,
+   "parse_rate": 0.975,
+   "truthful_reask_fired": 4,
+   "median_reasoning": 0.0,
+   "lost_rounds": [
+    0,
+    4
+   ],
+   "lost_rejection": [
+    0,
+    0
+   ],
+   "share": [
+    70.0,
+    71.7
+   ],
+   "cost": [
+    0.0061505,
+    0.006266299999999999
+   ],
+   "landscape": "phoq_scrambled_s20261004_p93.0",
+   "prompt_options": {
+    "goal_true_value": false,
+    "fix_replacement_budget": false,
+    "riskfree_rejection": false,
+    "truthful_reask": true,
+    "ledger": false,
+    "menu": false,
+    "repeat_cap": false,
+    "structure": false
+   },
+   "reasoning_effort": null,
+   "max_tokens": 6000,
+   "git_commit": "06e00bb6a2196bfe5f5a70217b0e8a608cd18d19",
+   "code_dirty": false,
+   "stray_decimals": [],
+   "scramble_problems": [],
+   "reproduction_problems": [],
+   "largest_campaign_cost": 0.006266299999999999,
+   "projected_30": 0.18798899999999996,
+   "ceiling": 15.0,
+   "checks": {
+    "complete": true,
+    "replies": true,
+    "slots": true,
+    "no_truth": true,
+    "scramble": true,
+    "reproduces": true,
+    "settings": true,
+    "cost": true
+   }
+  },
+  "deepseek/deepseek-chat-v3.1": {
+   "tag": "smoke0an8_deepseek",
+   "campaigns": 2,
+   "failed": [],
+   "calls": 32,
+   "empty": 0,
+   "fallback_pattern": 0,
+   "refusals": 0,
+   "truncated": 0,
+   "genuine_parser_disagreements": 0,
+   "bare_token_agreements": 0,
+   "parse_rate": 0.96875,
+   "truthful_reask_fired": 3,
+   "median_reasoning": 0.0,
+   "lost_rounds": [
+    4,
+    0
+   ],
+   "lost_rejection": [
+    0,
+    0
+   ],
+   "share": [
+    85.0,
+    93.3
+   ],
+   "cost": [
+    0.00336125,
+    0.00282242
+   ],
+   "landscape": "phoq_scrambled_s20261004_p93.0",
+   "prompt_options": {
+    "goal_true_value": false,
+    "fix_replacement_budget": false,
+    "riskfree_rejection": false,
+    "truthful_reask": true,
+    "ledger": false,
+    "menu": false,
+    "repeat_cap": false,
+    "structure": false
+   },
+   "reasoning_effort": null,
+   "max_tokens": 6000,
+   "git_commit": "06e00bb6a2196bfe5f5a70217b0e8a608cd18d19",
+   "code_dirty": false,
+   "stray_decimals": [],
+   "scramble_problems": [],
+   "reproduction_problems": [],
+   "largest_campaign_cost": 0.00336125,
+   "projected_30": 0.1008375,
+   "ceiling": 15.0,
+   "checks": {
+    "complete": true,
+    "replies": true,
+    "slots": true,
+    "no_truth": true,
+    "scramble": true,
+    "reproduces": true,
+    "settings": true,
+    "cost": true
+   }
+  },
+  "openai/gpt-6.1-sol": {
+   "tag": "smoke0an8_sol",
+   "campaigns": 2,
+   "failed": [],
+   "calls": 130,
+   "empty": 0,
+   "fallback_pattern": 0,
+   "refusals": 0,
+   "truncated": 0,
+   "genuine_parser_disagreements": 0,
+   "bare_token_agreements": 1,
+   "parse_rate": 1.0,
+   "truthful_reask_fired": 0,
+   "median_reasoning": 37.0,
+   "lost_rounds": [
+    0,
+    0
+   ],
+   "lost_rejection": [
+    2,
+    3
+   ],
+   "share": [
+    15.0,
+    36.7
+   ],
+   "cost": [
+    0.153925,
+    0.32877949999999995
+   ],
+   "landscape": "phoq_scrambled_s20261004_p93.0",
+   "prompt_options": {
+    "goal_true_value": false,
+    "fix_replacement_budget": false,
+    "riskfree_rejection": false,
+    "truthful_reask": true,
+    "ledger": false,
+    "menu": false,
+    "repeat_cap": false,
+    "structure": false
+   },
+   "reasoning_effort": "minimal",
+   "max_tokens": 16000,
+   "git_commit": "06e00bb6a2196bfe5f5a70217b0e8a608cd18d19",
+   "code_dirty": false,
+   "stray_decimals": [],
+   "scramble_problems": [],
+   "reproduction_problems": [],
+   "largest_campaign_cost": 0.32877949999999995,
+   "projected_30": 9.863385,
+   "ceiling": 15.0,
+   "checks": {
+    "complete": true,
+    "replies": true,
+    "slots": true,
+    "no_truth": true,
+    "scramble": true,
+    "reproduces": true,
+    "settings": true,
+    "cost": true
+   }
+  },
+  "google/gemini-3.1-pro-preview": {
+   "tag": "smoke0an8_gem",
+   "campaigns": 2,
+   "failed": [],
+   "calls": 67,
+   "empty": 0,
+   "fallback_pattern": 0,
+   "refusals": 0,
+   "truncated": 0,
+   "genuine_parser_disagreements": 0,
+   "bare_token_agreements": 0,
+   "parse_rate": 1.0,
+   "truthful_reask_fired": 0,
+   "median_reasoning": 208,
+   "lost_rounds": [
+    0,
+    0
+   ],
+   "lost_rejection": [
+    1,
+    1
+   ],
+   "share": [
+    18.3,
+    13.3
+   ],
+   "cost": [
+    0.15445599999999998,
+    0.19274799999999997
+   ],
+   "landscape": "phoq_scrambled_s20261004_p93.0",
+   "prompt_options": {
+    "goal_true_value": false,
+    "fix_replacement_budget": false,
+    "riskfree_rejection": false,
+    "truthful_reask": true,
+    "ledger": false,
+    "menu": false,
+    "repeat_cap": false,
+    "structure": false
+   },
+   "reasoning_effort": "minimal",
+   "max_tokens": 32000,
+   "git_commit": "06e00bb6a2196bfe5f5a70217b0e8a608cd18d19",
+   "code_dirty": false,
+   "stray_decimals": [],
+   "scramble_problems": [],
+   "reproduction_problems": [],
+   "largest_campaign_cost": 0.19274799999999997,
+   "projected_30": 5.782439999999999,
+   "ceiling": 30.0,
+   "checks": {
+    "complete": true,
+    "replies": true,
+    "slots": true,
+    "no_truth": true,
+    "scramble": true,
+    "reproduces": true,
+    "settings": true,
+    "cost": true
+   }
+  }
+ },
+ "projected_total": 23.519251499999996,
+ "smoke_recorded_cost": 1.25982897,
+ "balance": [
+  {
+   "t": "2026-10-05T18:15:44+1100",
+   "event": "before smoke",
+   "balance": 438.5925659300001
+  },
+  {
+   "t": "2026-10-05T18:23:35+1100",
+   "event": "after smoke",
+   "balance": 437.36504661000004
+  }
+ ],
+ "smoke_cost_by_balance": 1.2275193200000558,
+ "gate": "PASS",
+ "failures": []
+}

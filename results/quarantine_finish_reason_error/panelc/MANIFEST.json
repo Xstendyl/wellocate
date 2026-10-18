@@ -1,0 +1,90 @@
+{
+ "tag": "panelc",
+ "rule": "finish_reason_error",
+ "why": "a call returned finish_reason \"error\" with HTTP 200 and a truncated body; repdef/llm.py now raises TransportFailure on it, so any campaign outcome that depended on such a call is void",
+ "void_keys": [
+  [
+   "blind",
+   "300008",
+   "google/gemini-2.5-flash"
+  ],
+  [
+   "blind",
+   "300020",
+   "google/gemini-2.5-flash"
+  ],
+  [
+   "blind",
+   "300021",
+   "google/gemini-2.5-flash"
+  ],
+  [
+   "blind",
+   "300023",
+   "google/gemini-2.5-flash"
+  ],
+  [
+   "blind",
+   "300037",
+   "google/gemini-2.5-flash"
+  ],
+  [
+   "instructed",
+   "300021",
+   "google/gemini-2.5-flash"
+  ],
+  [
+   "instructed",
+   "300022",
+   "google/gemini-2.5-flash"
+  ],
+  [
+   "instructed",
+   "300039",
+   "google/gemini-2.5-flash"
+  ]
+ ],
+ "campaigns": {
+  "before": 160,
+  "keep": 152,
+  "moved": 8,
+  "sha256_before": "63c74af3ad9be59bf6667e471d43e2668e0f71e0d8ab3a04720d4c9d340c9a0b",
+  "sha256_after": "050265ce7e44bdfe7cdde4ec1218757469f638cd61f4cda1df6ff64e0eb7cb25"
+ },
+ "call_files": {
+  "results/grid_panelc_calls/blind__anthropic_claude-opus-4.7.jsonl.gz": {
+   "lines_before": 1845,
+   "kept": 1845,
+   "moved": 0,
+   "sha256_before": "2b9638f5de35a7196813f7fbab79bb3a9d975c14b0dd6440096e18bc6a82e0f0",
+   "sha256_after": "2b9638f5de35a7196813f7fbab79bb3a9d975c14b0dd6440096e18bc6a82e0f0"
+  },
+  "results/grid_panelc_calls/blind__google_gemini-2.5-flash.jsonl.gz": {
+   "lines_before": 1310,
+   "kept": 1142,
+   "moved": 168,
+   "sha256_before": "7e12693a0a1c3552821af8ca903d0900da88c4d26cfc23418df792e9c87fb5ac",
+   "sha256_after": "dc837f63cfa7d9fae75feaaedc91b758a72042ed41a423cdc2a64262c9a0a4fb"
+  },
+  "results/grid_panelc_calls/instructed__anthropic_claude-opus-4.7.jsonl.gz": {
+   "lines_before": 1628,
+   "kept": 1628,
+   "moved": 0,
+   "sha256_before": "16161cd9fcdca08ce16d694590d58302b5aa05a9fe04ae5515e7648912838ea7",
+   "sha256_after": "16161cd9fcdca08ce16d694590d58302b5aa05a9fe04ae5515e7648912838ea7"
+  },
+  "results/grid_panelc_calls/instructed__google_gemini-2.5-flash.jsonl.gz": {
+   "lines_before": 1075,
+   "kept": 995,
+   "moved": 80,
+   "sha256_before": "66f94f7e62e7539289b479912aac09e7f37e57f4384e4ba5f9471cc527a5ae8c",
+   "sha256_after": "417fcca68362a0fd2b0d329309d2d563426cd4796b0b1f0cbfafb7a1012f2ded"
+  }
+ },
+ "calls_moved": 248,
+ "postcondition": {
+  "rule_still_fires": 0,
+  "live_campaigns": 152,
+  "quarantined_campaigns": 8
+ }
+}

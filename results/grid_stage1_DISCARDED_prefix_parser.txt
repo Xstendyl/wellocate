@@ -1,0 +1,32 @@
+====================================================================================================
+GRID  NK uniform K=1 seed=1 pct=93.0  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 5 conditions x 3 models x 40 campaigns = 600 campaigns
+  ceiling $120.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    frontier     anthropic/claude-opus-4.7        released 2026-02
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+    open-weight  deepseek/deepseek-chat-v3.1      released 2025-08
+prompt facts checked: reference GDIF is viable and reads 6.8730 (stated 6.8700), pool is 7.00% of the space, example ADIF (not viable, as on GB1)
+    frontier     anthropic/claude-opus-4.7        released 2026-02
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+    open-weight  deepseek/deepseek-chat-v3.1      released 2025-08
+canary: comparator live, differs from the mean rule on 24 of 60 scripted campaigns
+
+
+  --- Blind          frontier     anthropic/claude-opus-4.7   (8 workers) ---
+      seed 300003 ok 42 rep 39 ( 71%) | shortfall  0.0000 | nom=GDIM MAX | $0.1785 cum $0.18 | 70s
+      seed 300002 ok 49 rep 42 ( 78%) | shortfall  0.0000 | nom=GDIS MEAN | $0.1859 cum $0.36 | 71s
+      seed 300001 ok 51 rep 43 ( 80%) | shortfall  0.1429 | nom=GABF MEAN | $0.1901 cum $0.55 | 74s
+      seed 300004 ok 47 rep 35 ( 70%) | shortfall  0.0116 | nom=GDIM OTHER | $0.2042 cum $0.76 | 78s
+      seed 300000 ok 40 rep 38 ( 78%) | shortfall  0.0000 | nom=GAIM MEAN | $0.2101 cum $0.97 | 80s
+      seed 300007 ok 49 rep 41 ( 76%) | shortfall  0.0909 | nom=GHBF MEAN | $0.2360 cum $1.20 | 86s
+      seed 300006 ok 41 rep 34 ( 74%) | shortfall  0.0000 | nom=HHAF MEAN | $0.2516 cum $1.46 | 87s
+      seed 300005 ok 40 rep 32 ( 71%) | shortfall  0.0000 | nom=HAJF MEAN | $0.2694 cum $1.73 | 91s
+      seed 300009 ok 43 rep 41 ( 77%) | shortfall  0.2226 | nom=GDIJ MAX | $0.1835 cum $1.91 | 71s
+      seed 300010 ok 43 rep 42 ( 82%) | shortfall  0.3171 | nom=GDBH OTHER | $0.2021 cum $2.11 | 76s
+      seed 300012 ok 48 rep 37 ( 67%) | shortfall  0.0000 | nom=GAJN MEAN | $0.1855 cum $2.30 | 72s
+      seed 300013 ok 45 rep 37 ( 70%) | shortfall  0.1675 | nom=GDIL MAX | $0.1679 cum $2.46 | 69s
+      seed 300015 ok 44 rep 42 ( 78%) | shortfall  0.0116 | nom=GDIM MEAN | $0.1560 cum $2.62 | 64s
+      seed 300011 ok 44 rep 38 ( 78%) | shortfall  0.0000 | nom=GDPN MEAN | $0.2136 cum $2.83 | 79s
+      seed 300008 ok 40 rep 35 ( 71%) | shortfall  0.0009 | nom=GKAF MEAN | $0.2438 cum $3.08 | 90s
+      seed 300014 ok 41 rep 35 ( 67%) | shortfall  0.0116 | nom=GDIM MEAN | $0.2003 cum $3.28 | 75s

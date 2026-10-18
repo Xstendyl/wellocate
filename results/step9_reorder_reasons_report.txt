@@ -1,0 +1,42 @@
+====================================================================================================
+REASON AT THE FIRST RE-ORDER, coded into three pre-specified classes
+====================================================================================================
+  experiment              camps  explicit_noise  generic_confirm   explore_mismatch   other
+  pilot_L10n20               32             19%              16%                25%      3%
+  pilot_L15n20               33              9%              24%                27%      0%
+  pilot_L30n20               30             10%              30%                27%      0%
+  pilot_slots2               14              0%              29%                14%     29%
+  pilot_slots4               17             24%              12%                24%      0%
+  pilot_slots8               13              8%               8%                38%     23%
+
+  ALL EXPERIMENTS POOLED, 90 campaigns with a re-order:
+    class                  n   share | of which AMBIGUOUS (matches >1 class)
+    explicit_noise        17   18.9% | 16 (94% of the class)
+    generic_confirm       29   32.2% | 6 (21% of the class)
+    explore_mismatch      36   40.0% | 27 (75% of the class)
+    other                  8    8.9% | 0 (0% of the class)
+
+  UNAMBIGUOUS ONLY, 41 campaigns:
+    explicit_noise         1    2.4%
+    generic_confirm       23   56.1%
+    explore_mismatch       9   22.0%
+    other                  8   19.5%
+
+  VERDICT ON THE METHOD, and it is negative. The headline class flips with the ambiguity rule:
+  explore_mismatch is 40.0% of all cases and 22.0% of the unambiguous ones, while generic_confirm goes
+  the other way, 32.2% to 56.1%. Ninety-four per cent of explicit_noise and seventy-five per cent of
+  explore_mismatch match more than one class's vocabulary. A coding whose leading class depends on how
+  the ambiguous cases are handled does not support a claim about what the agent says, and NO NUMBER FROM
+  THIS SCRIPT SHOULD BE QUOTED as a result. What it does establish is worth keeping: only ONE of 41
+  unambiguous reasons names measurement error explicitly, which is a low count under any handling and is
+  the one signal here robust to the coding rule.
+
+  A HAND-CODED SAMPLE IS THE FIX and is cheap for a human: 90 lines, one per campaign, in the verbatim
+  file below.
+
+  KEYWORD CODING IS CRUDE. A reason saying "replicate to reduce noise" and one saying "replicate" are
+  different claims and the second may be coded generic_confirm on its wording alone. Every coded reason
+  is written out verbatim so the coding can be checked and disputed, and a hand-coded sample would be
+  better evidence than this.
+
+  verbatim reasons: /Users/<name>/projects/repdef/results/step9_reorder_reasons.txt

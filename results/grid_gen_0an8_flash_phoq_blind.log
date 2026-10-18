@@ -1,0 +1,1379 @@
+  key source: repdef/.env  (fingerprint 0d6f7d3f, never the key)
+  credit (launch): account $431.17, key $431.13 -> BINDING $431.13 (key), key expires 2026-10-28
+  credit check (launch): $431.13 spendable, floor $50.00 -> ok
+====================================================================================================
+GRID  0am landscape phoq_scrambled (1 landscape)  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 1 conditions x 1 models, campaigns per model mid-tier 30 = 30 campaigns
+  ceiling $15.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+prompt facts checked: reference EDQS is viable and reads 0.4363 (stated 0.4400), pool is 7.00% of the space, example IDQS (viable)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_gen_0an8_flash_phoq_blind_manifest.json (commit 1a66c27e)
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+canary: comparator live, differs from the mean rule on 26 of 60 scripted campaigns
+
+comparator liveness per landscape (of 60 scripted campaigns): {'phoq_scrambled_s20261004_p93.0': 1}
+
+  SHUFFLED order over 1 campaigns across 1 cells (order seed 20261004)
+      Blind         mid-tier    seed 17000000 ok 48 rep 42 ( 70%) | nom  2.1840 | distn 16 | $0.0067 cum $0.01 | 30s
+
+  NOMINATION CALLS: 1, of which 1 carry a two-parser comparison, 1 agree
+
+  TWO-PARSER CHECK over 21 ROUND calls (nomination calls above)
+    GENUINE disagreement (both read, and differ)         0  0.00%
+    by design (primary refused the count, spent none)    0  0.00%
+  spot check written: results/grid_gen_0an8_flash_phoq_blind_spotcheck.txt
+  call log archived: 1 cells, 22 lines (22 new, 0 carried, 0 untouched, 0 replaced), 0.0 MB, all verified True
+  plain call log removed after verification: grid_gen_0an8_flash_phoq_blind_calls.jsonl
+
+====================================================================================================
+SUMMARY   gen_0an8_flash_phoq_blind
+====================================================================================================
+  VARIANCES AND HEALTH ONLY. The primary outcome by condition is NOT printed here; see
+  scripts/stage1_variance.py for the sizing inputs and the final analysis script for means.
+  (scripted reference for later use: k*=1 at 8.0057, k=0 at 7.8856)
+  condition     role          n | sd(nominated) sd(distinct) |   distn | rep of budget | $/campaign
+  Blind         mid-tier      1 |           nan         nan |    16.0 |         70.0%     0.0067
+
+  TOTAL SPEND $0.0067 over 22 calls, 1 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls       empty     malformed       trunc  mean rsn   max rsn
+  google/gemini-2.5-flash            22     0  0.0%      0   0.0%     0  0.0%         0         0
+
+  No empty and no truncated responses on any model at max_tokens=6000.
+  key source: repdef/.env  (fingerprint 0d6f7d3f, never the key)
+  credit (launch): account $431.17, key $431.13 -> BINDING $431.13 (key), key expires 2026-10-28
+  credit check (launch): $431.13 spendable, floor $50.00 -> ok
+====================================================================================================
+GRID  0am landscape phoq_scrambled (1 landscape)  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 1 conditions x 1 models, campaigns per model mid-tier 30 = 30 campaigns
+  ceiling $15.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+prompt facts checked: reference EDQS is viable and reads 0.4363 (stated 0.4400), pool is 7.00% of the space, example IDQS (viable)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_gen_0an8_flash_phoq_blind_manifest.json (commit 1a66c27e)
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+canary: comparator live, differs from the mean rule on 26 of 60 scripted campaigns
+
+comparator liveness per landscape (of 60 scripted campaigns): {'phoq_scrambled_s20261004_p93.0': 1}
+resuming: 1 campaigns already on disk, $0.0067 already spent
+
+  SHUFFLED order over 1 campaigns across 1 cells (order seed 20261004)
+      Blind         mid-tier    seed 17000001 ok 52 rep 41 ( 68%) | nom  2.1840 | distn 17 | $0.0062 cum $0.01 | 32s
+
+  NOMINATION CALLS: 1, of which 1 carry a two-parser comparison, 1 agree
+
+  TWO-PARSER CHECK over 19 ROUND calls (nomination calls above)
+    GENUINE disagreement (both read, and differ)         0  0.00%
+    by design (primary refused the count, spent none)    0  0.00%
+  spot check written: results/grid_gen_0an8_flash_phoq_blind_spotcheck.txt
+  call log archived: 1 cells, 42 lines (20 new, 22 carried, 0 untouched, 0 replaced), 0.0 MB, all verified True
+  plain call log removed after verification: grid_gen_0an8_flash_phoq_blind_calls.jsonl
+
+====================================================================================================
+SUMMARY   gen_0an8_flash_phoq_blind
+====================================================================================================
+  VARIANCES AND HEALTH ONLY. The primary outcome by condition is NOT printed here; see
+  scripts/stage1_variance.py for the sizing inputs and the final analysis script for means.
+  (scripted reference for later use: k*=1 at 8.0057, k=0 at 7.8856)
+  condition     role          n | sd(nominated) sd(distinct) |   distn | rep of budget | $/campaign
+  Blind         mid-tier      2 |        0.0000      0.7071 |    16.5 |         69.2%     0.0064
+
+  TOTAL SPEND $0.0129 over 20 calls, 2 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls       empty     malformed       trunc  mean rsn   max rsn
+  google/gemini-2.5-flash            20     0  0.0%      1   5.0%     0  0.0%         0         0
+
+  No empty and no truncated responses on any model at max_tokens=6000.
+  key source: repdef/.env  (fingerprint 0d6f7d3f, never the key)
+  credit (launch): account $431.17, key $431.13 -> BINDING $431.13 (key), key expires 2026-10-28
+  credit check (launch): $431.13 spendable, floor $50.00 -> ok
+====================================================================================================
+GRID  0am landscape phoq_scrambled (1 landscape)  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 1 conditions x 1 models, campaigns per model mid-tier 30 = 30 campaigns
+  ceiling $15.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+prompt facts checked: reference EDQS is viable and reads 0.4363 (stated 0.4400), pool is 7.00% of the space, example IDQS (viable)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_gen_0an8_flash_phoq_blind_manifest.json (commit 1a66c27e)
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+canary: comparator live, differs from the mean rule on 26 of 60 scripted campaigns
+
+comparator liveness per landscape (of 60 scripted campaigns): {'phoq_scrambled_s20261004_p93.0': 1}
+resuming: 2 campaigns already on disk, $0.0129 already spent
+
+  SHUFFLED order over 1 campaigns across 1 cells (order seed 20261004)
+      Blind         mid-tier    seed 17000002 ok 49 rep 42 ( 70%) | nom  2.1840 | distn 15 | $0.0062 cum $0.02 | 33s
+
+  NOMINATION CALLS: 1, of which 1 carry a two-parser comparison, 1 agree
+
+  TWO-PARSER CHECK over 19 ROUND calls (nomination calls above)
+    GENUINE disagreement (both read, and differ)         0  0.00%
+    by design (primary refused the count, spent none)    0  0.00%
+  spot check written: results/grid_gen_0an8_flash_phoq_blind_spotcheck.txt
+  call log archived: 1 cells, 62 lines (20 new, 42 carried, 0 untouched, 0 replaced), 0.0 MB, all verified True
+  plain call log removed after verification: grid_gen_0an8_flash_phoq_blind_calls.jsonl
+
+====================================================================================================
+SUMMARY   gen_0an8_flash_phoq_blind
+====================================================================================================
+  VARIANCES AND HEALTH ONLY. The primary outcome by condition is NOT printed here; see
+  scripts/stage1_variance.py for the sizing inputs and the final analysis script for means.
+  (scripted reference for later use: k*=1 at 8.0057, k=0 at 7.8856)
+  condition     role          n | sd(nominated) sd(distinct) |   distn | rep of budget | $/campaign
+  Blind         mid-tier      3 |        0.0000      1.0000 |    16.0 |         69.4%     0.0064
+
+  TOTAL SPEND $0.0191 over 20 calls, 3 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls       empty     malformed       trunc  mean rsn   max rsn
+  google/gemini-2.5-flash            20     0  0.0%      1   5.0%     0  0.0%         0         0
+
+  No empty and no truncated responses on any model at max_tokens=6000.
+  key source: repdef/.env  (fingerprint 0d6f7d3f, never the key)
+  credit (launch): account $431.15, key $431.11 -> BINDING $431.11 (key), key expires 2026-10-28
+  credit check (launch): $431.11 spendable, floor $50.00 -> ok
+====================================================================================================
+GRID  0am landscape phoq_scrambled (1 landscape)  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 1 conditions x 1 models, campaigns per model mid-tier 30 = 30 campaigns
+  ceiling $15.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+prompt facts checked: reference EDQS is viable and reads 0.4363 (stated 0.4400), pool is 7.00% of the space, example IDQS (viable)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_gen_0an8_flash_phoq_blind_manifest.json (commit 1a66c27e)
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+canary: comparator live, differs from the mean rule on 26 of 60 scripted campaigns
+
+comparator liveness per landscape (of 60 scripted campaigns): {'phoq_scrambled_s20261004_p93.0': 1}
+resuming: 3 campaigns already on disk, $0.0191 already spent
+
+  SHUFFLED order over 1 campaigns across 1 cells (order seed 20261004)
+      Blind         mid-tier    seed 17000003 ok 52 rep 49 ( 82%) | nom  1.1396 | distn  9 | $0.0063 cum $0.03 | 28s
+
+  NOMINATION CALLS: 1, of which 1 carry a two-parser comparison, 1 agree
+
+  TWO-PARSER CHECK over 20 ROUND calls (nomination calls above)
+    GENUINE disagreement (both read, and differ)         0  0.00%
+    by design (primary refused the count, spent none)    0  0.00%
+  spot check written: results/grid_gen_0an8_flash_phoq_blind_spotcheck.txt
+  call log archived: 1 cells, 83 lines (21 new, 62 carried, 0 untouched, 0 replaced), 0.0 MB, all verified True
+  plain call log removed after verification: grid_gen_0an8_flash_phoq_blind_calls.jsonl
+
+====================================================================================================
+SUMMARY   gen_0an8_flash_phoq_blind
+====================================================================================================
+  VARIANCES AND HEALTH ONLY. The primary outcome by condition is NOT printed here; see
+  scripts/stage1_variance.py for the sizing inputs and the final analysis script for means.
+  (scripted reference for later use: k*=1 at 8.0057, k=0 at 7.8856)
+  condition     role          n | sd(nominated) sd(distinct) |   distn | rep of budget | $/campaign
+  Blind         mid-tier      4 |        0.5222      3.5940 |    14.2 |         72.5%     0.0063
+
+  TOTAL SPEND $0.0254 over 21 calls, 4 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls       empty     malformed       trunc  mean rsn   max rsn
+  google/gemini-2.5-flash            21     0  0.0%      0   0.0%     0  0.0%         0         0
+
+  No empty and no truncated responses on any model at max_tokens=6000.
+  key source: repdef/.env  (fingerprint 0d6f7d3f, never the key)
+  credit (launch): account $431.15, key $431.11 -> BINDING $431.11 (key), key expires 2026-10-28
+  credit check (launch): $431.11 spendable, floor $50.00 -> ok
+====================================================================================================
+GRID  0am landscape phoq_scrambled (1 landscape)  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 1 conditions x 1 models, campaigns per model mid-tier 30 = 30 campaigns
+  ceiling $15.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+prompt facts checked: reference EDQS is viable and reads 0.4363 (stated 0.4400), pool is 7.00% of the space, example IDQS (viable)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_gen_0an8_flash_phoq_blind_manifest.json (commit 1a66c27e)
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+canary: comparator live, differs from the mean rule on 26 of 60 scripted campaigns
+
+comparator liveness per landscape (of 60 scripted campaigns): {'phoq_scrambled_s20261004_p93.0': 1}
+resuming: 4 campaigns already on disk, $0.0254 already spent
+
+  SHUFFLED order over 1 campaigns across 1 cells (order seed 20261004)
+      Blind         mid-tier    seed 17000004 ok 45 rep 38 ( 63%) | nom  2.1840 | distn 15 | $0.0065 cum $0.03 | 31s
+
+  NOMINATION CALLS: 1, of which 1 carry a two-parser comparison, 1 agree
+
+  TWO-PARSER CHECK over 20 ROUND calls (nomination calls above)
+    GENUINE disagreement (both read, and differ)         0  0.00%
+    by design (primary refused the count, spent none)    1  5.00%
+  spot check written: results/grid_gen_0an8_flash_phoq_blind_spotcheck.txt
+  call log archived: 1 cells, 104 lines (21 new, 83 carried, 0 untouched, 0 replaced), 0.0 MB, all verified True
+  plain call log removed after verification: grid_gen_0an8_flash_phoq_blind_calls.jsonl
+
+====================================================================================================
+SUMMARY   gen_0an8_flash_phoq_blind
+====================================================================================================
+  VARIANCES AND HEALTH ONLY. The primary outcome by condition is NOT printed here; see
+  scripts/stage1_variance.py for the sizing inputs and the final analysis script for means.
+  (scripted reference for later use: k*=1 at 8.0057, k=0 at 7.8856)
+  condition     role          n | sd(nominated) sd(distinct) |   distn | rep of budget | $/campaign
+  Blind         mid-tier      5 |        0.4671      3.1305 |    14.4 |         70.7%     0.0064
+
+  TOTAL SPEND $0.0319 over 21 calls, 5 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls       empty     malformed       trunc  mean rsn   max rsn
+  google/gemini-2.5-flash            21     0  0.0%      1   4.8%     0  0.0%         0         0
+
+  No empty and no truncated responses on any model at max_tokens=6000.
+  key source: repdef/.env  (fingerprint 0d6f7d3f, never the key)
+  credit (launch): account $431.15, key $431.11 -> BINDING $431.11 (key), key expires 2026-10-28
+  credit check (launch): $431.11 spendable, floor $50.00 -> ok
+====================================================================================================
+GRID  0am landscape phoq_scrambled (1 landscape)  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 1 conditions x 1 models, campaigns per model mid-tier 30 = 30 campaigns
+  ceiling $15.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+prompt facts checked: reference EDQS is viable and reads 0.4363 (stated 0.4400), pool is 7.00% of the space, example IDQS (viable)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_gen_0an8_flash_phoq_blind_manifest.json (commit 1a66c27e)
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+canary: comparator live, differs from the mean rule on 26 of 60 scripted campaigns
+
+comparator liveness per landscape (of 60 scripted campaigns): {'phoq_scrambled_s20261004_p93.0': 1}
+resuming: 5 campaigns already on disk, $0.0319 already spent
+
+  SHUFFLED order over 1 campaigns across 1 cells (order seed 20261004)
+      Blind         mid-tier    seed 17000005 ok 47 rep 34 ( 57%) | nom  2.1840 | distn 18 | $0.0066 cum $0.04 | 30s
+
+  NOMINATION CALLS: 1, of which 1 carry a two-parser comparison, 1 agree
+
+  TWO-PARSER CHECK over 19 ROUND calls (nomination calls above)
+    GENUINE disagreement (both read, and differ)         0  0.00%
+    by design (primary refused the count, spent none)    2  10.53%
+  spot check written: results/grid_gen_0an8_flash_phoq_blind_spotcheck.txt
+  call log archived: 1 cells, 124 lines (20 new, 104 carried, 0 untouched, 0 replaced), 0.0 MB, all verified True
+  plain call log removed after verification: grid_gen_0an8_flash_phoq_blind_calls.jsonl
+
+====================================================================================================
+SUMMARY   gen_0an8_flash_phoq_blind
+====================================================================================================
+  VARIANCES AND HEALTH ONLY. The primary outcome by condition is NOT printed here; see
+  scripts/stage1_variance.py for the sizing inputs and the final analysis script for means.
+  (scripted reference for later use: k*=1 at 8.0057, k=0 at 7.8856)
+  condition     role          n | sd(nominated) sd(distinct) |   distn | rep of budget | $/campaign
+  Blind         mid-tier      6 |        0.4264      3.1623 |    15.0 |         68.3%     0.0064
+
+  TOTAL SPEND $0.0384 over 20 calls, 6 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls       empty     malformed       trunc  mean rsn   max rsn
+  google/gemini-2.5-flash            20     0  0.0%      2  10.0%     0  0.0%         0         0
+
+  No empty and no truncated responses on any model at max_tokens=6000.
+  key source: repdef/.env  (fingerprint 0d6f7d3f, never the key)
+  credit (launch): account $431.13, key $431.09 -> BINDING $431.09 (key), key expires 2026-10-28
+  credit check (launch): $431.09 spendable, floor $50.00 -> ok
+====================================================================================================
+GRID  0am landscape phoq_scrambled (1 landscape)  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 1 conditions x 1 models, campaigns per model mid-tier 30 = 30 campaigns
+  ceiling $15.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+prompt facts checked: reference EDQS is viable and reads 0.4363 (stated 0.4400), pool is 7.00% of the space, example IDQS (viable)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_gen_0an8_flash_phoq_blind_manifest.json (commit 1a66c27e)
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+canary: comparator live, differs from the mean rule on 26 of 60 scripted campaigns
+
+comparator liveness per landscape (of 60 scripted campaigns): {'phoq_scrambled_s20261004_p93.0': 1}
+resuming: 6 campaigns already on disk, $0.0384 already spent
+
+  SHUFFLED order over 1 campaigns across 1 cells (order seed 20261004)
+      Blind         mid-tier    seed 17000006 ok 51 rep 42 ( 70%) | nom  2.1840 | distn 17 | $0.0062 cum $0.04 | 27s
+
+  NOMINATION CALLS: 1, of which 1 carry a two-parser comparison, 1 agree
+
+  TWO-PARSER CHECK over 19 ROUND calls (nomination calls above)
+    GENUINE disagreement (both read, and differ)         0  0.00%
+    by design (primary refused the count, spent none)    0  0.00%
+  spot check written: results/grid_gen_0an8_flash_phoq_blind_spotcheck.txt
+  call log archived: 1 cells, 144 lines (20 new, 124 carried, 0 untouched, 0 replaced), 0.0 MB, all verified True
+  plain call log removed after verification: grid_gen_0an8_flash_phoq_blind_calls.jsonl
+
+====================================================================================================
+SUMMARY   gen_0an8_flash_phoq_blind
+====================================================================================================
+  VARIANCES AND HEALTH ONLY. The primary outcome by condition is NOT printed here; see
+  scripts/stage1_variance.py for the sizing inputs and the final analysis script for means.
+  (scripted reference for later use: k*=1 at 8.0057, k=0 at 7.8856)
+  condition     role          n | sd(nominated) sd(distinct) |   distn | rep of budget | $/campaign
+  Blind         mid-tier      7 |        0.3948      2.9841 |    15.3 |         68.6%     0.0064
+
+  TOTAL SPEND $0.0446 over 20 calls, 7 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls       empty     malformed       trunc  mean rsn   max rsn
+  google/gemini-2.5-flash            20     0  0.0%      0   0.0%     0  0.0%         0         0
+
+  No empty and no truncated responses on any model at max_tokens=6000.
+  key source: repdef/.env  (fingerprint 0d6f7d3f, never the key)
+  credit (launch): account $431.13, key $431.09 -> BINDING $431.09 (key), key expires 2026-10-28
+  credit check (launch): $431.09 spendable, floor $50.00 -> ok
+====================================================================================================
+GRID  0am landscape phoq_scrambled (1 landscape)  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 1 conditions x 1 models, campaigns per model mid-tier 30 = 30 campaigns
+  ceiling $15.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+prompt facts checked: reference EDQS is viable and reads 0.4363 (stated 0.4400), pool is 7.00% of the space, example IDQS (viable)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_gen_0an8_flash_phoq_blind_manifest.json (commit 1a66c27e)
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+canary: comparator live, differs from the mean rule on 26 of 60 scripted campaigns
+
+comparator liveness per landscape (of 60 scripted campaigns): {'phoq_scrambled_s20261004_p93.0': 1}
+resuming: 7 campaigns already on disk, $0.0446 already spent
+
+  SHUFFLED order over 1 campaigns across 1 cells (order seed 20261004)
+      Blind         mid-tier    seed 17000007 ok 44 rep 38 ( 63%) | nom  2.1840 | distn 15 | $0.0068 cum $0.05 | 31s
+
+  NOMINATION CALLS: 1, of which 1 carry a two-parser comparison, 1 agree
+
+  TWO-PARSER CHECK over 21 ROUND calls (nomination calls above)
+    GENUINE disagreement (both read, and differ)         0  0.00%
+    by design (primary refused the count, spent none)    1  4.76%
+  spot check written: results/grid_gen_0an8_flash_phoq_blind_spotcheck.txt
+  call log archived: 1 cells, 166 lines (22 new, 144 carried, 0 untouched, 0 replaced), 0.0 MB, all verified True
+  plain call log removed after verification: grid_gen_0an8_flash_phoq_blind_calls.jsonl
+
+====================================================================================================
+SUMMARY   gen_0an8_flash_phoq_blind
+====================================================================================================
+  VARIANCES AND HEALTH ONLY. The primary outcome by condition is NOT printed here; see
+  scripts/stage1_variance.py for the sizing inputs and the final analysis script for means.
+  (scripted reference for later use: k*=1 at 8.0057, k=0 at 7.8856)
+  condition     role          n | sd(nominated) sd(distinct) |   distn | rep of budget | $/campaign
+  Blind         mid-tier      8 |        0.3693      2.7646 |    15.2 |         67.9%     0.0064
+
+  TOTAL SPEND $0.0514 over 22 calls, 8 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls       empty     malformed       trunc  mean rsn   max rsn
+  google/gemini-2.5-flash            22     0  0.0%      1   4.5%     0  0.0%         0         0
+
+  No empty and no truncated responses on any model at max_tokens=6000.
+  key source: repdef/.env  (fingerprint 0d6f7d3f, never the key)
+  credit (launch): account $431.13, key $431.09 -> BINDING $431.09 (key), key expires 2026-10-28
+  credit check (launch): $431.09 spendable, floor $50.00 -> ok
+====================================================================================================
+GRID  0am landscape phoq_scrambled (1 landscape)  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 1 conditions x 1 models, campaigns per model mid-tier 30 = 30 campaigns
+  ceiling $15.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+prompt facts checked: reference EDQS is viable and reads 0.4363 (stated 0.4400), pool is 7.00% of the space, example IDQS (viable)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_gen_0an8_flash_phoq_blind_manifest.json (commit 1a66c27e)
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+canary: comparator live, differs from the mean rule on 26 of 60 scripted campaigns
+
+comparator liveness per landscape (of 60 scripted campaigns): {'phoq_scrambled_s20261004_p93.0': 1}
+resuming: 8 campaigns already on disk, $0.0514 already spent
+
+  SHUFFLED order over 1 campaigns across 1 cells (order seed 20261004)
+      Blind         mid-tier    seed 17000008 ok 40 rep 35 ( 58%) | nom  2.1840 | distn 14 | $0.0068 cum $0.06 | 32s
+
+  NOMINATION CALLS: 1, of which 1 carry a two-parser comparison, 1 agree
+
+  TWO-PARSER CHECK over 21 ROUND calls (nomination calls above)
+    GENUINE disagreement (both read, and differ)         0  0.00%
+    by design (primary refused the count, spent none)    2  9.52%
+  spot check written: results/grid_gen_0an8_flash_phoq_blind_spotcheck.txt
+  call log archived: 1 cells, 188 lines (22 new, 166 carried, 0 untouched, 0 replaced), 0.0 MB, all verified True
+  plain call log removed after verification: grid_gen_0an8_flash_phoq_blind_calls.jsonl
+
+====================================================================================================
+SUMMARY   gen_0an8_flash_phoq_blind
+====================================================================================================
+  VARIANCES AND HEALTH ONLY. The primary outcome by condition is NOT printed here; see
+  scripts/stage1_variance.py for the sizing inputs and the final analysis script for means.
+  (scripted reference for later use: k*=1 at 8.0057, k=0 at 7.8856)
+  condition     role          n | sd(nominated) sd(distinct) |   distn | rep of budget | $/campaign
+  Blind         mid-tier      9 |        0.3481      2.6194 |    15.1 |         66.9%     0.0065
+
+  TOTAL SPEND $0.0582 over 22 calls, 9 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls       empty     malformed       trunc  mean rsn   max rsn
+  google/gemini-2.5-flash            22     0  0.0%      2   9.1%     0  0.0%         0         0
+
+  No empty and no truncated responses on any model at max_tokens=6000.
+  key source: repdef/.env  (fingerprint 0d6f7d3f, never the key)
+  credit (launch): account $431.13, key $431.07 -> BINDING $431.07 (key), key expires 2026-10-28
+  credit check (launch): $431.07 spendable, floor $50.00 -> ok
+====================================================================================================
+GRID  0am landscape phoq_scrambled (1 landscape)  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 1 conditions x 1 models, campaigns per model mid-tier 30 = 30 campaigns
+  ceiling $15.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+prompt facts checked: reference EDQS is viable and reads 0.4363 (stated 0.4400), pool is 7.00% of the space, example IDQS (viable)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_gen_0an8_flash_phoq_blind_manifest.json (commit 1a66c27e)
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+canary: comparator live, differs from the mean rule on 26 of 60 scripted campaigns
+
+comparator liveness per landscape (of 60 scripted campaigns): {'phoq_scrambled_s20261004_p93.0': 1}
+resuming: 9 campaigns already on disk, $0.0582 already spent
+
+  SHUFFLED order over 1 campaigns across 1 cells (order seed 20261004)
+      Blind         mid-tier    seed 17000009 ok 50 rep 43 ( 72%) | nom  2.1840 | distn 13 | $0.0070 cum $0.07 | 31s
+
+  NOMINATION CALLS: 1, of which 1 carry a two-parser comparison, 1 agree
+
+  TWO-PARSER CHECK over 21 ROUND calls (nomination calls above)
+    GENUINE disagreement (both read, and differ)         0  0.00%
+    by design (primary refused the count, spent none)    0  0.00%
+  spot check written: results/grid_gen_0an8_flash_phoq_blind_spotcheck.txt
+  call log archived: 1 cells, 210 lines (22 new, 188 carried, 0 untouched, 0 replaced), 0.0 MB, all verified True
+  plain call log removed after verification: grid_gen_0an8_flash_phoq_blind_calls.jsonl
+
+====================================================================================================
+SUMMARY   gen_0an8_flash_phoq_blind
+====================================================================================================
+  VARIANCES AND HEALTH ONLY. The primary outcome by condition is NOT printed here; see
+  scripts/stage1_variance.py for the sizing inputs and the final analysis script for means.
+  (scripted reference for later use: k*=1 at 8.0057, k=0 at 7.8856)
+  condition     role          n | sd(nominated) sd(distinct) |   distn | rep of budget | $/campaign
+  Blind         mid-tier     10 |        0.3303      2.5582 |    14.9 |         67.3%     0.0065
+
+  TOTAL SPEND $0.0652 over 22 calls, 10 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls       empty     malformed       trunc  mean rsn   max rsn
+  google/gemini-2.5-flash            22     0  0.0%      1   4.5%     0  0.0%         0         0
+
+  No empty and no truncated responses on any model at max_tokens=6000.
+  key source: repdef/.env  (fingerprint 0d6f7d3f, never the key)
+  credit (launch): account $431.11, key $431.07 -> BINDING $431.07 (key), key expires 2026-10-28
+  credit check (launch): $431.07 spendable, floor $50.00 -> ok
+====================================================================================================
+GRID  0am landscape phoq_scrambled (1 landscape)  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 1 conditions x 1 models, campaigns per model mid-tier 30 = 30 campaigns
+  ceiling $15.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+prompt facts checked: reference EDQS is viable and reads 0.4363 (stated 0.4400), pool is 7.00% of the space, example IDQS (viable)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_gen_0an8_flash_phoq_blind_manifest.json (commit 1a66c27e)
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+canary: comparator live, differs from the mean rule on 26 of 60 scripted campaigns
+
+comparator liveness per landscape (of 60 scripted campaigns): {'phoq_scrambled_s20261004_p93.0': 1}
+resuming: 10 campaigns already on disk, $0.0652 already spent
+
+  SHUFFLED order over 1 campaigns across 1 cells (order seed 20261004)
+      Blind         mid-tier    seed 17000010 ok 45 rep 34 ( 57%) | nom  2.1840 | distn 15 | $0.0063 cum $0.07 | 28s
+
+  NOMINATION CALLS: 1, of which 1 carry a two-parser comparison, 1 agree
+
+  TWO-PARSER CHECK over 19 ROUND calls (nomination calls above)
+    GENUINE disagreement (both read, and differ)         0  0.00%
+    by design (primary refused the count, spent none)    2  10.53%
+  spot check written: results/grid_gen_0an8_flash_phoq_blind_spotcheck.txt
+  call log archived: 1 cells, 230 lines (20 new, 210 carried, 0 untouched, 0 replaced), 0.0 MB, all verified True
+  plain call log removed after verification: grid_gen_0an8_flash_phoq_blind_calls.jsonl
+
+====================================================================================================
+SUMMARY   gen_0an8_flash_phoq_blind
+====================================================================================================
+  VARIANCES AND HEALTH ONLY. The primary outcome by condition is NOT printed here; see
+  scripts/stage1_variance.py for the sizing inputs and the final analysis script for means.
+  (scripted reference for later use: k*=1 at 8.0057, k=0 at 7.8856)
+  condition     role          n | sd(nominated) sd(distinct) |   distn | rep of budget | $/campaign
+  Blind         mid-tier     11 |        0.3149      2.4271 |    14.9 |         66.4%     0.0065
+
+  TOTAL SPEND $0.0715 over 20 calls, 11 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls       empty     malformed       trunc  mean rsn   max rsn
+  google/gemini-2.5-flash            20     0  0.0%      2  10.0%     0  0.0%         0         0
+
+  No empty and no truncated responses on any model at max_tokens=6000.
+  key source: repdef/.env  (fingerprint 0d6f7d3f, never the key)
+  credit (launch): account $431.11, key $431.07 -> BINDING $431.07 (key), key expires 2026-10-28
+  credit check (launch): $431.07 spendable, floor $50.00 -> ok
+====================================================================================================
+GRID  0am landscape phoq_scrambled (1 landscape)  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 1 conditions x 1 models, campaigns per model mid-tier 30 = 30 campaigns
+  ceiling $15.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+prompt facts checked: reference EDQS is viable and reads 0.4363 (stated 0.4400), pool is 7.00% of the space, example IDQS (viable)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_gen_0an8_flash_phoq_blind_manifest.json (commit 1a66c27e)
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+canary: comparator live, differs from the mean rule on 26 of 60 scripted campaigns
+
+comparator liveness per landscape (of 60 scripted campaigns): {'phoq_scrambled_s20261004_p93.0': 1}
+resuming: 11 campaigns already on disk, $0.0715 already spent
+
+  SHUFFLED order over 1 campaigns across 1 cells (order seed 20261004)
+      Blind         mid-tier    seed 17000011 ok 39 rep 26 ( 43%) | nom  2.1840 | distn 18 | $0.0063 cum $0.08 | 31s
+
+  NOMINATION CALLS: 1, of which 1 carry a two-parser comparison, 1 agree
+
+  TWO-PARSER CHECK over 19 ROUND calls (nomination calls above)
+    GENUINE disagreement (both read, and differ)         0  0.00%
+    by design (primary refused the count, spent none)    4  21.05%
+  spot check written: results/grid_gen_0an8_flash_phoq_blind_spotcheck.txt
+  call log archived: 1 cells, 250 lines (20 new, 230 carried, 0 untouched, 0 replaced), 0.0 MB, all verified True
+  plain call log removed after verification: grid_gen_0an8_flash_phoq_blind_calls.jsonl
+
+====================================================================================================
+SUMMARY   gen_0an8_flash_phoq_blind
+====================================================================================================
+  VARIANCES AND HEALTH ONLY. The primary outcome by condition is NOT printed here; see
+  scripts/stage1_variance.py for the sizing inputs and the final analysis script for means.
+  (scripted reference for later use: k*=1 at 8.0057, k=0 at 7.8856)
+  condition     role          n | sd(nominated) sd(distinct) |   distn | rep of budget | $/campaign
+  Blind         mid-tier     12 |        0.3015      2.4802 |    15.2 |         64.4%     0.0065
+
+  TOTAL SPEND $0.0778 over 20 calls, 12 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls       empty     malformed       trunc  mean rsn   max rsn
+  google/gemini-2.5-flash            20     0  0.0%      4  20.0%     0  0.0%         0         0
+
+  No empty and no truncated responses on any model at max_tokens=6000.
+  key source: repdef/.env  (fingerprint 0d6f7d3f, never the key)
+  credit (launch): account $431.09, key $431.04 -> BINDING $431.04 (key), key expires 2026-10-28
+  credit check (launch): $431.04 spendable, floor $50.00 -> ok
+====================================================================================================
+GRID  0am landscape phoq_scrambled (1 landscape)  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 1 conditions x 1 models, campaigns per model mid-tier 30 = 30 campaigns
+  ceiling $15.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+prompt facts checked: reference EDQS is viable and reads 0.4363 (stated 0.4400), pool is 7.00% of the space, example IDQS (viable)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_gen_0an8_flash_phoq_blind_manifest.json (commit 1a66c27e)
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+canary: comparator live, differs from the mean rule on 26 of 60 scripted campaigns
+
+comparator liveness per landscape (of 60 scripted campaigns): {'phoq_scrambled_s20261004_p93.0': 1}
+resuming: 12 campaigns already on disk, $0.0778 already spent
+
+  SHUFFLED order over 1 campaigns across 1 cells (order seed 20261004)
+      Blind         mid-tier    seed 17000012 ok 54 rep 46 ( 77%) | nom  2.1840 | distn 13 | $0.0062 cum $0.08 | 29s
+
+  NOMINATION CALLS: 1, of which 1 carry a two-parser comparison, 1 agree
+
+  TWO-PARSER CHECK over 19 ROUND calls (nomination calls above)
+    GENUINE disagreement (both read, and differ)         0  0.00%
+    by design (primary refused the count, spent none)    0  0.00%
+  spot check written: results/grid_gen_0an8_flash_phoq_blind_spotcheck.txt
+  call log archived: 1 cells, 270 lines (20 new, 250 carried, 0 untouched, 0 replaced), 0.0 MB, all verified True
+  plain call log removed after verification: grid_gen_0an8_flash_phoq_blind_calls.jsonl
+
+====================================================================================================
+SUMMARY   gen_0an8_flash_phoq_blind
+====================================================================================================
+  VARIANCES AND HEALTH ONLY. The primary outcome by condition is NOT printed here; see
+  scripts/stage1_variance.py for the sizing inputs and the final analysis script for means.
+  (scripted reference for later use: k*=1 at 8.0057, k=0 at 7.8856)
+  condition     role          n | sd(nominated) sd(distinct) |   distn | rep of budget | $/campaign
+  Blind         mid-tier     13 |        0.2897      2.4495 |    15.0 |         65.4%     0.0065
+
+  TOTAL SPEND $0.0840 over 20 calls, 13 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls       empty     malformed       trunc  mean rsn   max rsn
+  google/gemini-2.5-flash            20     0  0.0%      0   0.0%     0  0.0%         0         0
+
+  No empty and no truncated responses on any model at max_tokens=6000.
+  key source: repdef/.env  (fingerprint 0d6f7d3f, never the key)
+  credit (launch): account $431.09, key $431.04 -> BINDING $431.04 (key), key expires 2026-10-28
+  credit check (launch): $431.04 spendable, floor $50.00 -> ok
+====================================================================================================
+GRID  0am landscape phoq_scrambled (1 landscape)  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 1 conditions x 1 models, campaigns per model mid-tier 30 = 30 campaigns
+  ceiling $15.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+prompt facts checked: reference EDQS is viable and reads 0.4363 (stated 0.4400), pool is 7.00% of the space, example IDQS (viable)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_gen_0an8_flash_phoq_blind_manifest.json (commit 1a66c27e)
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+canary: comparator live, differs from the mean rule on 26 of 60 scripted campaigns
+
+comparator liveness per landscape (of 60 scripted campaigns): {'phoq_scrambled_s20261004_p93.0': 1}
+resuming: 13 campaigns already on disk, $0.0840 already spent
+
+  SHUFFLED order over 1 campaigns across 1 cells (order seed 20261004)
+      Blind         mid-tier    seed 17000013 ok 38 rep 27 ( 45%) | nom  2.1840 | distn 16 | $0.0063 cum $0.09 | 32s
+
+  NOMINATION CALLS: 1, of which 1 carry a two-parser comparison, 1 agree
+
+  TWO-PARSER CHECK over 19 ROUND calls (nomination calls above)
+    GENUINE disagreement (both read, and differ)         0  0.00%
+    by design (primary refused the count, spent none)    4  21.05%
+  spot check written: results/grid_gen_0an8_flash_phoq_blind_spotcheck.txt
+  call log archived: 1 cells, 290 lines (20 new, 270 carried, 0 untouched, 0 replaced), 0.0 MB, all verified True
+  plain call log removed after verification: grid_gen_0an8_flash_phoq_blind_calls.jsonl
+
+====================================================================================================
+SUMMARY   gen_0an8_flash_phoq_blind
+====================================================================================================
+  VARIANCES AND HEALTH ONLY. The primary outcome by condition is NOT printed here; see
+  scripts/stage1_variance.py for the sizing inputs and the final analysis script for means.
+  (scripted reference for later use: k*=1 at 8.0057, k=0 at 7.8856)
+  condition     role          n | sd(nominated) sd(distinct) |   distn | rep of budget | $/campaign
+  Blind         mid-tier     14 |        0.2791      2.3685 |    15.1 |         63.9%     0.0064
+
+  TOTAL SPEND $0.0903 over 20 calls, 14 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls       empty     malformed       trunc  mean rsn   max rsn
+  google/gemini-2.5-flash            20     0  0.0%      4  20.0%     0  0.0%         0         0
+
+  No empty and no truncated responses on any model at max_tokens=6000.
+  key source: repdef/.env  (fingerprint 0d6f7d3f, never the key)
+  credit (launch): account $431.09, key $431.04 -> BINDING $431.04 (key), key expires 2026-10-28
+  credit check (launch): $431.04 spendable, floor $50.00 -> ok
+====================================================================================================
+GRID  0am landscape phoq_scrambled (1 landscape)  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 1 conditions x 1 models, campaigns per model mid-tier 30 = 30 campaigns
+  ceiling $15.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+prompt facts checked: reference EDQS is viable and reads 0.4363 (stated 0.4400), pool is 7.00% of the space, example IDQS (viable)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_gen_0an8_flash_phoq_blind_manifest.json (commit 1a66c27e)
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+canary: comparator live, differs from the mean rule on 26 of 60 scripted campaigns
+
+comparator liveness per landscape (of 60 scripted campaigns): {'phoq_scrambled_s20261004_p93.0': 1}
+resuming: 14 campaigns already on disk, $0.0903 already spent
+
+  SHUFFLED order over 1 campaigns across 1 cells (order seed 20261004)
+      Blind         mid-tier    seed 17000014 ok 48 rep 42 ( 70%) | nom  2.1840 | distn 16 | $0.0062 cum $0.10 | 31s
+
+  NOMINATION CALLS: 1, of which 1 carry a two-parser comparison, 1 agree
+
+  TWO-PARSER CHECK over 19 ROUND calls (nomination calls above)
+    GENUINE disagreement (both read, and differ)         0  0.00%
+    by design (primary refused the count, spent none)    0  0.00%
+  spot check written: results/grid_gen_0an8_flash_phoq_blind_spotcheck.txt
+  call log archived: 1 cells, 310 lines (20 new, 290 carried, 0 untouched, 0 replaced), 0.0 MB, all verified True
+  plain call log removed after verification: grid_gen_0an8_flash_phoq_blind_calls.jsonl
+
+====================================================================================================
+SUMMARY   gen_0an8_flash_phoq_blind
+====================================================================================================
+  VARIANCES AND HEALTH ONLY. The primary outcome by condition is NOT printed here; see
+  scripts/stage1_variance.py for the sizing inputs and the final analysis script for means.
+  (scripted reference for later use: k*=1 at 8.0057, k=0 at 7.8856)
+  condition     role          n | sd(nominated) sd(distinct) |   distn | rep of budget | $/campaign
+  Blind         mid-tier     15 |        0.2697      2.2949 |    15.1 |         64.3%     0.0064
+
+  TOTAL SPEND $0.0965 over 20 calls, 15 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls       empty     malformed       trunc  mean rsn   max rsn
+  google/gemini-2.5-flash            20     0  0.0%      0   0.0%     0  0.0%         0         0
+
+  No empty and no truncated responses on any model at max_tokens=6000.
+  key source: repdef/.env  (fingerprint 0d6f7d3f, never the key)
+  credit (launch): account $431.06, key $431.04 -> BINDING $431.04 (key), key expires 2026-10-28
+  credit check (launch): $431.04 spendable, floor $50.00 -> ok
+====================================================================================================
+GRID  0am landscape phoq_scrambled (1 landscape)  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 1 conditions x 1 models, campaigns per model mid-tier 30 = 30 campaigns
+  ceiling $15.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+prompt facts checked: reference EDQS is viable and reads 0.4363 (stated 0.4400), pool is 7.00% of the space, example IDQS (viable)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_gen_0an8_flash_phoq_blind_manifest.json (commit 1a66c27e)
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+canary: comparator live, differs from the mean rule on 26 of 60 scripted campaigns
+
+comparator liveness per landscape (of 60 scripted campaigns): {'phoq_scrambled_s20261004_p93.0': 1}
+resuming: 15 campaigns already on disk, $0.0965 already spent
+
+  SHUFFLED order over 1 campaigns across 1 cells (order seed 20261004)
+      Blind         mid-tier    seed 17000015 ok 42 rep 33 ( 55%) | nom  2.1840 | distn 17 | $0.0065 cum $0.10 | 31s
+
+  NOMINATION CALLS: 1, of which 1 carry a two-parser comparison, 1 agree
+
+  TWO-PARSER CHECK over 20 ROUND calls (nomination calls above)
+    GENUINE disagreement (both read, and differ)         0  0.00%
+    by design (primary refused the count, spent none)    2  10.00%
+  spot check written: results/grid_gen_0an8_flash_phoq_blind_spotcheck.txt
+  call log archived: 1 cells, 331 lines (21 new, 310 carried, 0 untouched, 0 replaced), 0.1 MB, all verified True
+  plain call log removed after verification: grid_gen_0an8_flash_phoq_blind_calls.jsonl
+
+====================================================================================================
+SUMMARY   gen_0an8_flash_phoq_blind
+====================================================================================================
+  VARIANCES AND HEALTH ONLY. The primary outcome by condition is NOT printed here; see
+  scripts/stage1_variance.py for the sizing inputs and the final analysis script for means.
+  (scripted reference for later use: k*=1 at 8.0057, k=0 at 7.8856)
+  condition     role          n | sd(nominated) sd(distinct) |   distn | rep of budget | $/campaign
+  Blind         mid-tier     16 |        0.2611      2.2657 |    15.2 |         63.7%     0.0064
+
+  TOTAL SPEND $0.1030 over 21 calls, 16 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls       empty     malformed       trunc  mean rsn   max rsn
+  google/gemini-2.5-flash            21     0  0.0%      2   9.5%     0  0.0%         0         0
+
+  No empty and no truncated responses on any model at max_tokens=6000.
+  key source: repdef/.env  (fingerprint 0d6f7d3f, never the key)
+  credit (launch): account $431.06, key $431.02 -> BINDING $431.02 (key), key expires 2026-10-28
+  credit check (launch): $431.02 spendable, floor $50.00 -> ok
+====================================================================================================
+GRID  0am landscape phoq_scrambled (1 landscape)  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 1 conditions x 1 models, campaigns per model mid-tier 30 = 30 campaigns
+  ceiling $15.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+prompt facts checked: reference EDQS is viable and reads 0.4363 (stated 0.4400), pool is 7.00% of the space, example IDQS (viable)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_gen_0an8_flash_phoq_blind_manifest.json (commit 1a66c27e)
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+canary: comparator live, differs from the mean rule on 26 of 60 scripted campaigns
+
+comparator liveness per landscape (of 60 scripted campaigns): {'phoq_scrambled_s20261004_p93.0': 1}
+resuming: 16 campaigns already on disk, $0.1030 already spent
+
+  SHUFFLED order over 1 campaigns across 1 cells (order seed 20261004)
+      Blind         mid-tier    seed 17000016 ok 53 rep 38 ( 63%) | nom  2.1840 | distn 22 | $0.0077 cum $0.11 | 36s
+
+  NOMINATION CALLS: 1, of which 1 carry a two-parser comparison, 1 agree
+
+  TWO-PARSER CHECK over 24 ROUND calls (nomination calls above)
+    GENUINE disagreement (both read, and differ)         0  0.00%
+    by design (primary refused the count, spent none)    0  0.00%
+  spot check written: results/grid_gen_0an8_flash_phoq_blind_spotcheck.txt
+  call log archived: 1 cells, 356 lines (25 new, 331 carried, 0 untouched, 0 replaced), 0.1 MB, all verified True
+  plain call log removed after verification: grid_gen_0an8_flash_phoq_blind_calls.jsonl
+
+====================================================================================================
+SUMMARY   gen_0an8_flash_phoq_blind
+====================================================================================================
+  VARIANCES AND HEALTH ONLY. The primary outcome by condition is NOT printed here; see
+  scripts/stage1_variance.py for the sizing inputs and the final analysis script for means.
+  (scripted reference for later use: k*=1 at 8.0057, k=0 at 7.8856)
+  condition     role          n | sd(nominated) sd(distinct) |   distn | rep of budget | $/campaign
+  Blind         mid-tier     17 |        0.2533      2.7373 |    15.6 |         63.7%     0.0065
+
+  TOTAL SPEND $0.1107 over 25 calls, 17 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls       empty     malformed       trunc  mean rsn   max rsn
+  google/gemini-2.5-flash            25     0  0.0%      0   0.0%     0  0.0%         0         0
+
+  No empty and no truncated responses on any model at max_tokens=6000.
+  key source: repdef/.env  (fingerprint 0d6f7d3f, never the key)
+  credit (launch): account $431.06, key $431.00 -> BINDING $431.00 (key), key expires 2026-10-28
+  credit check (launch): $431.00 spendable, floor $50.00 -> ok
+====================================================================================================
+GRID  0am landscape phoq_scrambled (1 landscape)  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 1 conditions x 1 models, campaigns per model mid-tier 30 = 30 campaigns
+  ceiling $15.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+prompt facts checked: reference EDQS is viable and reads 0.4363 (stated 0.4400), pool is 7.00% of the space, example IDQS (viable)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_gen_0an8_flash_phoq_blind_manifest.json (commit 1a66c27e)
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+canary: comparator live, differs from the mean rule on 26 of 60 scripted campaigns
+
+comparator liveness per landscape (of 60 scripted campaigns): {'phoq_scrambled_s20261004_p93.0': 1}
+resuming: 17 campaigns already on disk, $0.1107 already spent
+
+  SHUFFLED order over 1 campaigns across 1 cells (order seed 20261004)
+      Blind         mid-tier    seed 17000017 ok 43 rep 34 ( 57%) | nom  2.1840 | distn 15 | $0.0068 cum $0.12 | 37s
+
+  NOMINATION CALLS: 1, of which 1 carry a two-parser comparison, 1 agree
+
+  TWO-PARSER CHECK over 20 ROUND calls (nomination calls above)
+    GENUINE disagreement (both read, and differ)         0  0.00%
+    by design (primary refused the count, spent none)    1  5.00%
+  spot check written: results/grid_gen_0an8_flash_phoq_blind_spotcheck.txt
+  call log archived: 1 cells, 377 lines (21 new, 356 carried, 0 untouched, 0 replaced), 0.1 MB, all verified True
+  plain call log removed after verification: grid_gen_0an8_flash_phoq_blind_calls.jsonl
+
+====================================================================================================
+SUMMARY   gen_0an8_flash_phoq_blind
+====================================================================================================
+  VARIANCES AND HEALTH ONLY. The primary outcome by condition is NOT printed here; see
+  scripts/stage1_variance.py for the sizing inputs and the final analysis script for means.
+  (scripted reference for later use: k*=1 at 8.0057, k=0 at 7.8856)
+  condition     role          n | sd(nominated) sd(distinct) |   distn | rep of budget | $/campaign
+  Blind         mid-tier     18 |        0.2462      2.6599 |    15.6 |         63.3%     0.0065
+
+  TOTAL SPEND $0.1175 over 21 calls, 18 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls       empty     malformed       trunc  mean rsn   max rsn
+  google/gemini-2.5-flash            21     0  0.0%      2   9.5%     0  0.0%         0         0
+
+  No empty and no truncated responses on any model at max_tokens=6000.
+  key source: repdef/.env  (fingerprint 0d6f7d3f, never the key)
+  credit (launch): account $431.04, key $431.00 -> BINDING $431.00 (key), key expires 2026-10-28
+  credit check (launch): $431.00 spendable, floor $50.00 -> ok
+====================================================================================================
+GRID  0am landscape phoq_scrambled (1 landscape)  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 1 conditions x 1 models, campaigns per model mid-tier 30 = 30 campaigns
+  ceiling $15.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+prompt facts checked: reference EDQS is viable and reads 0.4363 (stated 0.4400), pool is 7.00% of the space, example IDQS (viable)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_gen_0an8_flash_phoq_blind_manifest.json (commit 1a66c27e)
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+canary: comparator live, differs from the mean rule on 26 of 60 scripted campaigns
+
+comparator liveness per landscape (of 60 scripted campaigns): {'phoq_scrambled_s20261004_p93.0': 1}
+resuming: 18 campaigns already on disk, $0.1175 already spent
+
+  SHUFFLED order over 1 campaigns across 1 cells (order seed 20261004)
+      Blind         mid-tier    seed 17000018 ok 46 rep 33 ( 55%) | nom  2.1840 | distn 18 | $0.0065 cum $0.12 | 33s
+
+  NOMINATION CALLS: 1, of which 1 carry a two-parser comparison, 1 agree
+
+  TWO-PARSER CHECK over 19 ROUND calls (nomination calls above)
+    GENUINE disagreement (both read, and differ)         0  0.00%
+    by design (primary refused the count, spent none)    2  10.53%
+  spot check written: results/grid_gen_0an8_flash_phoq_blind_spotcheck.txt
+  call log archived: 1 cells, 397 lines (20 new, 377 carried, 0 untouched, 0 replaced), 0.1 MB, all verified True
+  plain call log removed after verification: grid_gen_0an8_flash_phoq_blind_calls.jsonl
+
+====================================================================================================
+SUMMARY   gen_0an8_flash_phoq_blind
+====================================================================================================
+  VARIANCES AND HEALTH ONLY. The primary outcome by condition is NOT printed here; see
+  scripts/stage1_variance.py for the sizing inputs and the final analysis script for means.
+  (scripted reference for later use: k*=1 at 8.0057, k=0 at 7.8856)
+  condition     role          n | sd(nominated) sd(distinct) |   distn | rep of budget | $/campaign
+  Blind         mid-tier     19 |        0.2396      2.6424 |    15.7 |         62.9%     0.0065
+
+  TOTAL SPEND $0.1240 over 20 calls, 19 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls       empty     malformed       trunc  mean rsn   max rsn
+  google/gemini-2.5-flash            20     0  0.0%      3  15.0%     0  0.0%         0         0
+
+  No empty and no truncated responses on any model at max_tokens=6000.
+  key source: repdef/.env  (fingerprint 0d6f7d3f, never the key)
+  credit (launch): account $431.04, key $431.00 -> BINDING $431.00 (key), key expires 2026-10-28
+  credit check (launch): $431.00 spendable, floor $50.00 -> ok
+====================================================================================================
+GRID  0am landscape phoq_scrambled (1 landscape)  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 1 conditions x 1 models, campaigns per model mid-tier 30 = 30 campaigns
+  ceiling $15.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+prompt facts checked: reference EDQS is viable and reads 0.4363 (stated 0.4400), pool is 7.00% of the space, example IDQS (viable)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_gen_0an8_flash_phoq_blind_manifest.json (commit 1a66c27e)
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+canary: comparator live, differs from the mean rule on 26 of 60 scripted campaigns
+
+comparator liveness per landscape (of 60 scripted campaigns): {'phoq_scrambled_s20261004_p93.0': 1}
+resuming: 19 campaigns already on disk, $0.1240 already spent
+
+  SHUFFLED order over 1 campaigns across 1 cells (order seed 20261004)
+      Blind         mid-tier    seed 17000019 ok 49 rep 38 ( 63%) | nom  1.8936 | distn 14 | $0.0062 cum $0.13 | 30s
+
+  NOMINATION CALLS: 1, of which 1 carry a two-parser comparison, 1 agree
+
+  TWO-PARSER CHECK over 19 ROUND calls (nomination calls above)
+    GENUINE disagreement (both read, and differ)         0  0.00%
+    by design (primary refused the count, spent none)    1  5.26%
+  spot check written: results/grid_gen_0an8_flash_phoq_blind_spotcheck.txt
+  call log archived: 1 cells, 417 lines (20 new, 397 carried, 0 untouched, 0 replaced), 0.1 MB, all verified True
+  plain call log removed after verification: grid_gen_0an8_flash_phoq_blind_calls.jsonl
+
+====================================================================================================
+SUMMARY   gen_0an8_flash_phoq_blind
+====================================================================================================
+  VARIANCES AND HEALTH ONLY. The primary outcome by condition is NOT printed here; see
+  scripts/stage1_variance.py for the sizing inputs and the final analysis script for means.
+  (scripted reference for later use: k*=1 at 8.0057, k=0 at 7.8856)
+  condition     role          n | sd(nominated) sd(distinct) |   distn | rep of budget | $/campaign
+  Blind         mid-tier     20 |        0.2391      2.6011 |    15.7 |         62.9%     0.0065
+
+  TOTAL SPEND $0.1302 over 20 calls, 20 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls       empty     malformed       trunc  mean rsn   max rsn
+  google/gemini-2.5-flash            20     0  0.0%      1   5.0%     0  0.0%         0         0
+
+  No empty and no truncated responses on any model at max_tokens=6000.
+  key source: repdef/.env  (fingerprint 0d6f7d3f, never the key)
+  credit (launch): account $431.02, key $430.98 -> BINDING $430.98 (key), key expires 2026-10-28
+  credit check (launch): $430.98 spendable, floor $50.00 -> ok
+====================================================================================================
+GRID  0am landscape phoq_scrambled (1 landscape)  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 1 conditions x 1 models, campaigns per model mid-tier 30 = 30 campaigns
+  ceiling $15.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+prompt facts checked: reference EDQS is viable and reads 0.4363 (stated 0.4400), pool is 7.00% of the space, example IDQS (viable)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_gen_0an8_flash_phoq_blind_manifest.json (commit 1a66c27e)
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+canary: comparator live, differs from the mean rule on 26 of 60 scripted campaigns
+
+comparator liveness per landscape (of 60 scripted campaigns): {'phoq_scrambled_s20261004_p93.0': 1}
+resuming: 20 campaigns already on disk, $0.1302 already spent
+
+  SHUFFLED order over 1 campaigns across 1 cells (order seed 20261004)
+      Blind         mid-tier    seed 17000020 ok 47 rep 37 ( 62%) | nom  2.1840 | distn 14 | $0.0061 cum $0.14 | 25s
+
+  NOMINATION CALLS: 1, of which 1 carry a two-parser comparison, 1 agree
+
+  TWO-PARSER CHECK over 19 ROUND calls (nomination calls above)
+    GENUINE disagreement (both read, and differ)         0  0.00%
+    by design (primary refused the count, spent none)    1  5.26%
+  spot check written: results/grid_gen_0an8_flash_phoq_blind_spotcheck.txt
+  call log archived: 1 cells, 437 lines (20 new, 417 carried, 0 untouched, 0 replaced), 0.1 MB, all verified True
+  plain call log removed after verification: grid_gen_0an8_flash_phoq_blind_calls.jsonl
+
+====================================================================================================
+SUMMARY   gen_0an8_flash_phoq_blind
+====================================================================================================
+  VARIANCES AND HEALTH ONLY. The primary outcome by condition is NOT printed here; see
+  scripts/stage1_variance.py for the sizing inputs and the final analysis script for means.
+  (scripted reference for later use: k*=1 at 8.0057, k=0 at 7.8856)
+  condition     role          n | sd(nominated) sd(distinct) |   distn | rep of budget | $/campaign
+  Blind         mid-tier     21 |        0.2335      2.5607 |    15.6 |         62.9%     0.0065
+
+  TOTAL SPEND $0.1363 over 20 calls, 21 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls       empty     malformed       trunc  mean rsn   max rsn
+  google/gemini-2.5-flash            20     0  0.0%      1   5.0%     0  0.0%         0         0
+
+  No empty and no truncated responses on any model at max_tokens=6000.
+  key source: repdef/.env  (fingerprint 0d6f7d3f, never the key)
+  credit (launch): account $431.02, key $430.98 -> BINDING $430.98 (key), key expires 2026-10-28
+  credit check (launch): $430.98 spendable, floor $50.00 -> ok
+====================================================================================================
+GRID  0am landscape phoq_scrambled (1 landscape)  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 1 conditions x 1 models, campaigns per model mid-tier 30 = 30 campaigns
+  ceiling $15.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+prompt facts checked: reference EDQS is viable and reads 0.4363 (stated 0.4400), pool is 7.00% of the space, example IDQS (viable)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_gen_0an8_flash_phoq_blind_manifest.json (commit 1a66c27e)
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+canary: comparator live, differs from the mean rule on 26 of 60 scripted campaigns
+
+comparator liveness per landscape (of 60 scripted campaigns): {'phoq_scrambled_s20261004_p93.0': 1}
+resuming: 21 campaigns already on disk, $0.1363 already spent
+
+  SHUFFLED order over 1 campaigns across 1 cells (order seed 20261004)
+      Blind         mid-tier    seed 17000021 ok 49 rep 42 ( 70%) | nom  1.8936 | distn 15 | $0.0067 cum $0.14 | 28s
+
+  NOMINATION CALLS: 1, of which 1 carry a two-parser comparison, 1 agree
+
+  TWO-PARSER CHECK over 22 ROUND calls (nomination calls above)
+    GENUINE disagreement (both read, and differ)         0  0.00%
+    by design (primary refused the count, spent none)    0  0.00%
+  spot check written: results/grid_gen_0an8_flash_phoq_blind_spotcheck.txt
+  call log archived: 1 cells, 460 lines (23 new, 437 carried, 0 untouched, 0 replaced), 0.1 MB, all verified True
+  plain call log removed after verification: grid_gen_0an8_flash_phoq_blind_calls.jsonl
+
+====================================================================================================
+SUMMARY   gen_0an8_flash_phoq_blind
+====================================================================================================
+  VARIANCES AND HEALTH ONLY. The primary outcome by condition is NOT printed here; see
+  scripts/stage1_variance.py for the sizing inputs and the final analysis script for means.
+  (scripted reference for later use: k*=1 at 8.0057, k=0 at 7.8856)
+  condition     role          n | sd(nominated) sd(distinct) |   distn | rep of budget | $/campaign
+  Blind         mid-tier     22 |        0.2329      2.5019 |    15.5 |         63.2%     0.0065
+
+  TOTAL SPEND $0.1430 over 23 calls, 22 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls       empty     malformed       trunc  mean rsn   max rsn
+  google/gemini-2.5-flash            23     0  0.0%      0   0.0%     0  0.0%         0         0
+
+  No empty and no truncated responses on any model at max_tokens=6000.
+  key source: repdef/.env  (fingerprint 0d6f7d3f, never the key)
+  credit (launch): account $431.02, key $430.98 -> BINDING $430.98 (key), key expires 2026-10-28
+  credit check (launch): $430.98 spendable, floor $50.00 -> ok
+====================================================================================================
+GRID  0am landscape phoq_scrambled (1 landscape)  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 1 conditions x 1 models, campaigns per model mid-tier 30 = 30 campaigns
+  ceiling $15.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+prompt facts checked: reference EDQS is viable and reads 0.4363 (stated 0.4400), pool is 7.00% of the space, example IDQS (viable)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_gen_0an8_flash_phoq_blind_manifest.json (commit 1a66c27e)
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+canary: comparator live, differs from the mean rule on 26 of 60 scripted campaigns
+
+comparator liveness per landscape (of 60 scripted campaigns): {'phoq_scrambled_s20261004_p93.0': 1}
+resuming: 22 campaigns already on disk, $0.1430 already spent
+
+  SHUFFLED order over 1 campaigns across 1 cells (order seed 20261004)
+      Blind         mid-tier    seed 17000022 ok 52 rep 42 ( 70%) | nom  2.1840 | distn 16 | $0.0062 cum $0.15 | 29s
+
+  NOMINATION CALLS: 1, of which 1 carry a two-parser comparison, 1 agree
+
+  TWO-PARSER CHECK over 19 ROUND calls (nomination calls above)
+    GENUINE disagreement (both read, and differ)         0  0.00%
+    by design (primary refused the count, spent none)    0  0.00%
+  spot check written: results/grid_gen_0an8_flash_phoq_blind_spotcheck.txt
+  call log archived: 1 cells, 480 lines (20 new, 460 carried, 0 untouched, 0 replaced), 0.1 MB, all verified True
+  plain call log removed after verification: grid_gen_0an8_flash_phoq_blind_calls.jsonl
+
+====================================================================================================
+SUMMARY   gen_0an8_flash_phoq_blind
+====================================================================================================
+  VARIANCES AND HEALTH ONLY. The primary outcome by condition is NOT printed here; see
+  scripts/stage1_variance.py for the sizing inputs and the final analysis script for means.
+  (scripted reference for later use: k*=1 at 8.0057, k=0 at 7.8856)
+  condition     role          n | sd(nominated) sd(distinct) |   distn | rep of budget | $/campaign
+  Blind         mid-tier     23 |        0.2281      2.4463 |    15.6 |         63.5%     0.0065
+
+  TOTAL SPEND $0.1493 over 20 calls, 23 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls       empty     malformed       trunc  mean rsn   max rsn
+  google/gemini-2.5-flash            20     0  0.0%      0   0.0%     0  0.0%         0         0
+
+  No empty and no truncated responses on any model at max_tokens=6000.
+  key source: repdef/.env  (fingerprint 0d6f7d3f, never the key)
+  credit (launch): account $431.02, key $430.98 -> BINDING $430.98 (key), key expires 2026-10-28
+  credit check (launch): $430.98 spendable, floor $50.00 -> ok
+====================================================================================================
+GRID  0am landscape phoq_scrambled (1 landscape)  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 1 conditions x 1 models, campaigns per model mid-tier 30 = 30 campaigns
+  ceiling $15.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+prompt facts checked: reference EDQS is viable and reads 0.4363 (stated 0.4400), pool is 7.00% of the space, example IDQS (viable)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_gen_0an8_flash_phoq_blind_manifest.json (commit 1a66c27e)
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+canary: comparator live, differs from the mean rule on 26 of 60 scripted campaigns
+
+comparator liveness per landscape (of 60 scripted campaigns): {'phoq_scrambled_s20261004_p93.0': 1}
+resuming: 23 campaigns already on disk, $0.1493 already spent
+
+  SHUFFLED order over 1 campaigns across 1 cells (order seed 20261004)
+      Blind         mid-tier    seed 17000023 ok 53 rep 40 ( 67%) | nom  2.1840 | distn 18 | $0.0071 cum $0.16 | 31s
+
+  NOMINATION CALLS: 1, of which 1 carry a two-parser comparison, 1 agree
+
+  TWO-PARSER CHECK over 22 ROUND calls (nomination calls above)
+    GENUINE disagreement (both read, and differ)         0  0.00%
+    by design (primary refused the count, spent none)    0  0.00%
+  spot check written: results/grid_gen_0an8_flash_phoq_blind_spotcheck.txt
+  call log archived: 1 cells, 503 lines (23 new, 480 carried, 0 untouched, 0 replaced), 0.1 MB, all verified True
+  plain call log removed after verification: grid_gen_0an8_flash_phoq_blind_calls.jsonl
+
+====================================================================================================
+SUMMARY   gen_0an8_flash_phoq_blind
+====================================================================================================
+  VARIANCES AND HEALTH ONLY. The primary outcome by condition is NOT printed here; see
+  scripts/stage1_variance.py for the sizing inputs and the final analysis script for means.
+  (scripted reference for later use: k*=1 at 8.0057, k=0 at 7.8856)
+  condition     role          n | sd(nominated) sd(distinct) |   distn | rep of budget | $/campaign
+  Blind         mid-tier     24 |        0.2235      2.4436 |    15.7 |         63.6%     0.0065
+
+  TOTAL SPEND $0.1563 over 23 calls, 24 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls       empty     malformed       trunc  mean rsn   max rsn
+  google/gemini-2.5-flash            23     0  0.0%      0   0.0%     0  0.0%         0         0
+
+  No empty and no truncated responses on any model at max_tokens=6000.
+  key source: repdef/.env  (fingerprint 0d6f7d3f, never the key)
+  credit (launch): account $431.00, key $430.96 -> BINDING $430.96 (key), key expires 2026-10-28
+  credit check (launch): $430.96 spendable, floor $50.00 -> ok
+====================================================================================================
+GRID  0am landscape phoq_scrambled (1 landscape)  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 1 conditions x 1 models, campaigns per model mid-tier 30 = 30 campaigns
+  ceiling $15.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+prompt facts checked: reference EDQS is viable and reads 0.4363 (stated 0.4400), pool is 7.00% of the space, example IDQS (viable)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_gen_0an8_flash_phoq_blind_manifest.json (commit 1a66c27e)
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+canary: comparator live, differs from the mean rule on 26 of 60 scripted campaigns
+
+comparator liveness per landscape (of 60 scripted campaigns): {'phoq_scrambled_s20261004_p93.0': 1}
+resuming: 24 campaigns already on disk, $0.1563 already spent
+
+  SHUFFLED order over 1 campaigns across 1 cells (order seed 20261004)
+      Blind         mid-tier    seed 17000024 ok 58 rep 41 ( 68%) | nom  2.1840 | distn 18 | $0.0065 cum $0.16 | 31s
+
+  NOMINATION CALLS: 1, of which 1 carry a two-parser comparison, 1 agree
+
+  TWO-PARSER CHECK over 20 ROUND calls (nomination calls above)
+    GENUINE disagreement (both read, and differ)         0  0.00%
+    by design (primary refused the count, spent none)    0  0.00%
+  spot check written: results/grid_gen_0an8_flash_phoq_blind_spotcheck.txt
+  call log archived: 1 cells, 524 lines (21 new, 503 carried, 0 untouched, 0 replaced), 0.1 MB, all verified True
+  plain call log removed after verification: grid_gen_0an8_flash_phoq_blind_calls.jsonl
+
+====================================================================================================
+SUMMARY   gen_0an8_flash_phoq_blind
+====================================================================================================
+  VARIANCES AND HEALTH ONLY. The primary outcome by condition is NOT printed here; see
+  scripts/stage1_variance.py for the sizing inputs and the final analysis script for means.
+  (scripted reference for later use: k*=1 at 8.0057, k=0 at 7.8856)
+  condition     role          n | sd(nominated) sd(distinct) |   distn | rep of budget | $/campaign
+  Blind         mid-tier     25 |        0.2193      2.4372 |    15.8 |         63.8%     0.0065
+
+  TOTAL SPEND $0.1629 over 21 calls, 25 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls       empty     malformed       trunc  mean rsn   max rsn
+  google/gemini-2.5-flash            21     0  0.0%      0   0.0%     0  0.0%         0         0
+
+  No empty and no truncated responses on any model at max_tokens=6000.
+  key source: repdef/.env  (fingerprint 0d6f7d3f, never the key)
+  credit (launch): account $431.00, key $430.96 -> BINDING $430.96 (key), key expires 2026-10-28
+  credit check (launch): $430.96 spendable, floor $50.00 -> ok
+====================================================================================================
+GRID  0am landscape phoq_scrambled (1 landscape)  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 1 conditions x 1 models, campaigns per model mid-tier 30 = 30 campaigns
+  ceiling $15.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+prompt facts checked: reference EDQS is viable and reads 0.4363 (stated 0.4400), pool is 7.00% of the space, example IDQS (viable)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_gen_0an8_flash_phoq_blind_manifest.json (commit 1a66c27e)
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+canary: comparator live, differs from the mean rule on 26 of 60 scripted campaigns
+
+comparator liveness per landscape (of 60 scripted campaigns): {'phoq_scrambled_s20261004_p93.0': 1}
+resuming: 25 campaigns already on disk, $0.1629 already spent
+
+  SHUFFLED order over 1 campaigns across 1 cells (order seed 20261004)
+      Blind         mid-tier    seed 17000025 ok 42 rep 34 ( 57%) | nom  2.1840 | distn 18 | $0.0069 cum $0.17 | 37s
+
+  NOMINATION CALLS: 1, of which 1 carry a two-parser comparison, 1 agree
+
+  TWO-PARSER CHECK over 21 ROUND calls (nomination calls above)
+    GENUINE disagreement (both read, and differ)         0  0.00%
+    by design (primary refused the count, spent none)    2  9.52%
+  spot check written: results/grid_gen_0an8_flash_phoq_blind_spotcheck.txt
+  call log archived: 1 cells, 546 lines (22 new, 524 carried, 0 untouched, 0 replaced), 0.1 MB, all verified True
+  plain call log removed after verification: grid_gen_0an8_flash_phoq_blind_calls.jsonl
+
+====================================================================================================
+SUMMARY   gen_0an8_flash_phoq_blind
+====================================================================================================
+  VARIANCES AND HEALTH ONLY. The primary outcome by condition is NOT printed here; see
+  scripts/stage1_variance.py for the sizing inputs and the final analysis script for means.
+  (scripted reference for later use: k*=1 at 8.0057, k=0 at 7.8856)
+  condition     role          n | sd(nominated) sd(distinct) |   distn | rep of budget | $/campaign
+  Blind         mid-tier     26 |        0.2152      2.4280 |    15.8 |         63.5%     0.0065
+
+  TOTAL SPEND $0.1698 over 22 calls, 26 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls       empty     malformed       trunc  mean rsn   max rsn
+  google/gemini-2.5-flash            22     0  0.0%      2   9.1%     0  0.0%         0         0
+
+  No empty and no truncated responses on any model at max_tokens=6000.
+  key source: repdef/.env  (fingerprint 0d6f7d3f, never the key)
+  credit (launch): account $431.00, key $430.96 -> BINDING $430.96 (key), key expires 2026-10-28
+  credit check (launch): $430.96 spendable, floor $50.00 -> ok
+====================================================================================================
+GRID  0am landscape phoq_scrambled (1 landscape)  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 1 conditions x 1 models, campaigns per model mid-tier 30 = 30 campaigns
+  ceiling $15.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+prompt facts checked: reference EDQS is viable and reads 0.4363 (stated 0.4400), pool is 7.00% of the space, example IDQS (viable)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_gen_0an8_flash_phoq_blind_manifest.json (commit 1a66c27e)
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+canary: comparator live, differs from the mean rule on 26 of 60 scripted campaigns
+
+comparator liveness per landscape (of 60 scripted campaigns): {'phoq_scrambled_s20261004_p93.0': 1}
+resuming: 26 campaigns already on disk, $0.1698 already spent
+
+  SHUFFLED order over 1 campaigns across 1 cells (order seed 20261004)
+      Blind         mid-tier    seed 17000026 ok 49 rep 38 ( 63%) | nom  2.1840 | distn 15 | $0.0064 cum $0.18 | 30s
+
+  NOMINATION CALLS: 1, of which 1 carry a two-parser comparison, 1 agree
+
+  TWO-PARSER CHECK over 20 ROUND calls (nomination calls above)
+    GENUINE disagreement (both read, and differ)         0  0.00%
+    by design (primary refused the count, spent none)    1  5.00%
+  spot check written: results/grid_gen_0an8_flash_phoq_blind_spotcheck.txt
+  call log archived: 1 cells, 567 lines (21 new, 546 carried, 0 untouched, 0 replaced), 0.1 MB, all verified True
+  plain call log removed after verification: grid_gen_0an8_flash_phoq_blind_calls.jsonl
+
+====================================================================================================
+SUMMARY   gen_0an8_flash_phoq_blind
+====================================================================================================
+  VARIANCES AND HEALTH ONLY. The primary outcome by condition is NOT printed here; see
+  scripts/stage1_variance.py for the sizing inputs and the final analysis script for means.
+  (scripted reference for later use: k*=1 at 8.0057, k=0 at 7.8856)
+  condition     role          n | sd(nominated) sd(distinct) |   distn | rep of budget | $/campaign
+  Blind         mid-tier     27 |        0.2114      2.3865 |    15.8 |         63.5%     0.0065
+
+  TOTAL SPEND $0.1762 over 21 calls, 27 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls       empty     malformed       trunc  mean rsn   max rsn
+  google/gemini-2.5-flash            21     0  0.0%      1   4.8%     0  0.0%         0         0
+
+  No empty and no truncated responses on any model at max_tokens=6000.
+  key source: repdef/.env  (fingerprint 0d6f7d3f, never the key)
+  credit (launch): account $430.98, key $430.96 -> BINDING $430.96 (key), key expires 2026-10-28
+  credit check (launch): $430.96 spendable, floor $50.00 -> ok
+====================================================================================================
+GRID  0am landscape phoq_scrambled (1 landscape)  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 1 conditions x 1 models, campaigns per model mid-tier 30 = 30 campaigns
+  ceiling $15.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+prompt facts checked: reference EDQS is viable and reads 0.4363 (stated 0.4400), pool is 7.00% of the space, example IDQS (viable)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_gen_0an8_flash_phoq_blind_manifest.json (commit 1a66c27e)
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+canary: comparator live, differs from the mean rule on 26 of 60 scripted campaigns
+
+comparator liveness per landscape (of 60 scripted campaigns): {'phoq_scrambled_s20261004_p93.0': 1}
+resuming: 27 campaigns already on disk, $0.1762 already spent
+
+  SHUFFLED order over 1 campaigns across 1 cells (order seed 20261004)
+      Blind         mid-tier    seed 17000027 ok 49 rep 41 ( 68%) | nom  2.1840 | distn 17 | $0.0070 cum $0.18 | 31s
+
+  NOMINATION CALLS: 1, of which 1 carry a two-parser comparison, 1 agree
+
+  TWO-PARSER CHECK over 22 ROUND calls (nomination calls above)
+    GENUINE disagreement (both read, and differ)         0  0.00%
+    by design (primary refused the count, spent none)    0  0.00%
+  spot check written: results/grid_gen_0an8_flash_phoq_blind_spotcheck.txt
+  call log archived: 1 cells, 590 lines (23 new, 567 carried, 0 untouched, 0 replaced), 0.1 MB, all verified True
+  plain call log removed after verification: grid_gen_0an8_flash_phoq_blind_calls.jsonl
+
+====================================================================================================
+SUMMARY   gen_0an8_flash_phoq_blind
+====================================================================================================
+  VARIANCES AND HEALTH ONLY. The primary outcome by condition is NOT printed here; see
+  scripts/stage1_variance.py for the sizing inputs and the final analysis script for means.
+  (scripted reference for later use: k*=1 at 8.0057, k=0 at 7.8856)
+  condition     role          n | sd(nominated) sd(distinct) |   distn | rep of budget | $/campaign
+  Blind         mid-tier     28 |        0.2077      2.3525 |    15.9 |         63.7%     0.0065
+
+  TOTAL SPEND $0.1832 over 23 calls, 28 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls       empty     malformed       trunc  mean rsn   max rsn
+  google/gemini-2.5-flash            23     0  0.0%      0   0.0%     0  0.0%         0         0
+
+  No empty and no truncated responses on any model at max_tokens=6000.
+  key source: repdef/.env  (fingerprint 0d6f7d3f, never the key)
+  credit (launch): account $430.98, key $430.94 -> BINDING $430.94 (key), key expires 2026-10-28
+  credit check (launch): $430.94 spendable, floor $50.00 -> ok
+====================================================================================================
+GRID  0am landscape phoq_scrambled (1 landscape)  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 1 conditions x 1 models, campaigns per model mid-tier 30 = 30 campaigns
+  ceiling $15.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+prompt facts checked: reference EDQS is viable and reads 0.4363 (stated 0.4400), pool is 7.00% of the space, example IDQS (viable)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_gen_0an8_flash_phoq_blind_manifest.json (commit 1a66c27e)
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+canary: comparator live, differs from the mean rule on 26 of 60 scripted campaigns
+
+comparator liveness per landscape (of 60 scripted campaigns): {'phoq_scrambled_s20261004_p93.0': 1}
+resuming: 28 campaigns already on disk, $0.1832 already spent
+
+  SHUFFLED order over 1 campaigns across 1 cells (order seed 20261004)
+      Blind         mid-tier    seed 17000028 ok 46 rep 34 ( 57%) | nom  2.1840 | distn 21 | $0.0077 cum $0.19 | 34s
+
+  NOMINATION CALLS: 1, of which 1 carry a two-parser comparison, 1 agree
+
+  TWO-PARSER CHECK over 24 ROUND calls (nomination calls above)
+    GENUINE disagreement (both read, and differ)         0  0.00%
+    by design (primary refused the count, spent none)    1  4.17%
+  spot check written: results/grid_gen_0an8_flash_phoq_blind_spotcheck.txt
+  call log archived: 1 cells, 615 lines (25 new, 590 carried, 0 untouched, 0 replaced), 0.1 MB, all verified True
+  plain call log removed after verification: grid_gen_0an8_flash_phoq_blind_calls.jsonl
+
+====================================================================================================
+SUMMARY   gen_0an8_flash_phoq_blind
+====================================================================================================
+  VARIANCES AND HEALTH ONLY. The primary outcome by condition is NOT printed here; see
+  scripts/stage1_variance.py for the sizing inputs and the final analysis script for means.
+  (scripted reference for later use: k*=1 at 8.0057, k=0 at 7.8856)
+  condition     role          n | sd(nominated) sd(distinct) |   distn | rep of budget | $/campaign
+  Blind         mid-tier     29 |        0.2043      2.4998 |    16.0 |         63.4%     0.0066
+
+  TOTAL SPEND $0.1908 over 25 calls, 29 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls       empty     malformed       trunc  mean rsn   max rsn
+  google/gemini-2.5-flash            25     0  0.0%      1   4.0%     0  0.0%         0         0
+
+  No empty and no truncated responses on any model at max_tokens=6000.
+  key source: repdef/.env  (fingerprint 0d6f7d3f, never the key)
+  credit (launch): account $430.98, key $430.94 -> BINDING $430.94 (key), key expires 2026-10-28
+  credit check (launch): $430.94 spendable, floor $50.00 -> ok
+====================================================================================================
+GRID  0am landscape phoq_scrambled (1 landscape)  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 1 conditions x 1 models, campaigns per model mid-tier 30 = 30 campaigns
+  ceiling $15.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+prompt facts checked: reference EDQS is viable and reads 0.4363 (stated 0.4400), pool is 7.00% of the space, example IDQS (viable)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_gen_0an8_flash_phoq_blind_manifest.json (commit 1a66c27e)
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+canary: comparator live, differs from the mean rule on 26 of 60 scripted campaigns
+
+comparator liveness per landscape (of 60 scripted campaigns): {'phoq_scrambled_s20261004_p93.0': 1}
+resuming: 29 campaigns already on disk, $0.1908 already spent
+
+  SHUFFLED order over 1 campaigns across 1 cells (order seed 20261004)
+      Blind         mid-tier    seed 17000029 ok 51 rep 42 ( 70%) | nom  2.1840 | distn 17 | $0.0061 cum $0.20 | 26s
+
+  NOMINATION CALLS: 1, of which 1 carry a two-parser comparison, 1 agree
+
+  TWO-PARSER CHECK over 19 ROUND calls (nomination calls above)
+    GENUINE disagreement (both read, and differ)         0  0.00%
+    by design (primary refused the count, spent none)    0  0.00%
+  spot check written: results/grid_gen_0an8_flash_phoq_blind_spotcheck.txt
+  call log archived: 1 cells, 635 lines (20 new, 615 carried, 0 untouched, 0 replaced), 0.1 MB, all verified True
+  plain call log removed after verification: grid_gen_0an8_flash_phoq_blind_calls.jsonl
+
+====================================================================================================
+SUMMARY   gen_0an8_flash_phoq_blind
+====================================================================================================
+  VARIANCES AND HEALTH ONLY. The primary outcome by condition is NOT printed here; see
+  scripts/stage1_variance.py for the sizing inputs and the final analysis script for means.
+  (scripted reference for later use: k*=1 at 8.0057, k=0 at 7.8856)
+  condition     role          n | sd(nominated) sd(distinct) |   distn | rep of budget | $/campaign
+  Blind         mid-tier     30 |        0.2010      2.4626 |    16.1 |         63.7%     0.0066
+
+  TOTAL SPEND $0.1969 over 20 calls, 30 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls       empty     malformed       trunc  mean rsn   max rsn
+  google/gemini-2.5-flash            20     0  0.0%      0   0.0%     0  0.0%         0         0
+
+  No empty and no truncated responses on any model at max_tokens=6000.

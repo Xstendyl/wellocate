@@ -1,0 +1,51 @@
+==============================================================================================
+IS THE PLUG-IN SHRINKAGE ESTIMATOR MONOTONE IN THE OBSERVED MEAN?
+==============================================================================================
+  sigma(m) = sqrt(0.003509^2 + (m * 0.073)^2), evaluated at the variant's OWN observed mean
+
+NK uniform, GB1-scaled
+  prior mean 6.9723  prior var 0.1650  pool max 8.762  largest observed reading 9.812
+    n=1  post stops increasing at m = NEVER on [0, 1.5x max]
+    n=2  post stops increasing at m = NEVER on [0, 1.5x max]
+    n=4  post stops increasing at m = NEVER on [0, 1.5x max]
+
+GB1
+  prior mean 0.9623  prior var 1.1822  pool max 8.762  largest observed reading 9.844
+    n=1  post stops increasing at m = NEVER on [0, 1.5x max]
+    n=2  post stops increasing at m = NEVER on [0, 1.5x max]
+    n=4  post stops increasing at m = NEVER on [0, 1.5x max]
+
+PhoQ, UNSCALED
+  prior mean 8.3659  prior var 53.5165  pool max 133.594  largest observed reading 136.421
+    n=1  post stops increasing at m = 108.927  REACHABLE, inside observed data
+    n=2  post stops increasing at m = 150.334  above the largest observed reading
+    n=4  post stops increasing at m = NEVER on [0, 1.5x max]
+
+PhoQ, GB1-scaled
+  prior mean 0.5487  prior var 0.2302  pool max 8.762  largest observed reading 8.947
+    n=1  post stops increasing at m = 7.144  REACHABLE, inside observed data
+    n=2  post stops increasing at m = 9.860  above the largest observed reading
+    n=4  post stops increasing at m = NEVER on [0, 1.5x max]
+
+==============================================================================================
+VERDICT
+==============================================================================================
+NON-MONOTONE INSIDE THE DATA on 2 of 12 (landscape, n) combinations:
+  PhoQ, UNSCALED           n=1 turns at 108.927, largest observed 136.421
+  PhoQ, GB1-scaled         n=1 turns at 7.144, largest observed 8.947
+
+So a variant with a HIGHER observed mean can receive a LOWER posterior, the k=0
+equivalence is not guaranteed, and every margin on the affected scale needs restating.
+
+==============================================================================================
+DOES ANY REPORTED MARGIN DEPEND ON READINGS PAST THE PEAK?
+==============================================================================================
+  NK uniform, GB1-scaled   monotone everywhere, so no margin on it can be affected.
+  GB1                      monotone everywhere, so no margin on it can be affected.
+  PhoQ, UNSCALED           peak 108.927 | campaigns with a SINGLETON reading past it   0.0% | such readings  0.00% of all singletons
+  PhoQ, GB1-scaled         peak 7.144 | campaigns with a SINGLETON reading past it   0.0% | such readings  0.00% of all singletons
+
+  The GRID landscape is NK uniform, which is monotone everywhere, so no grid margin
+  depends on this. PhoQ margins do, at n=1, and any PhoQ margin must carry the peak.
+
+saved results/step6_shrinkage_monotonicity.json

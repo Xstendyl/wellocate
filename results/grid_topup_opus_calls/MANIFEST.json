@@ -1,0 +1,41 @@
+{
+ "tag": "topup_opus",
+ "cells": 5,
+ "total_lines": 111188,
+ "source_lines": 111188,
+ "all_verified": true,
+ "empty": false,
+ "unlisted_preexisting_files": [],
+ "files": {
+  "aggregated__anthropic_claude-opus-4.7.jsonl.gz": {
+   "lines": 20744,
+   "sha256": "119361339581ca483e11ccf5a8beec7368418f197340ee2a805bd6539d341090",
+   "bytes": 2662251,
+   "verified": true
+  },
+  "blind__anthropic_claude-opus-4.7.jsonl.gz": {
+   "lines": 25496,
+   "sha256": "ad2aee9b467db03d3b4d9a42689b0aafd83c86387844f5270473c797378cff89",
+   "bytes": 3453593,
+   "verified": true
+  },
+  "decision_rule__anthropic_claude-opus-4.7.jsonl.gz": {
+   "lines": 19834,
+   "sha256": "a0743dfffffbdaff8fb321838c467850fcac0d3a1e370e584318e079c2af7010",
+   "bytes": 2830830,
+   "verified": true
+  },
+  "informed__anthropic_claude-opus-4.7.jsonl.gz": {
+   "lines": 23319,
+   "sha256": "8cef75302689d283521f8611aa5bd1cf459befe7c70c7989c96abb7b7ac77e9d",
+   "bytes": 3189806,
+   "verified": true
+  },
+  "instructed__anthropic_claude-opus-4.7.jsonl.gz": {
+   "lines": 21795,
+   "sha256": "d745dbd64307e94034b1afb20124f8103ecf348102c4c5573c8ff2a0d78e79ca",
+   "bytes": 3132066,
+   "verified": true
+  }
+ }
+}

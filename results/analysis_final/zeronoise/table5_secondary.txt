@@ -1,0 +1,29 @@
+TABLE 5. Secondary outcomes: the shortfall decomposition, lost slots, proposal viability.
+global best minus nominated = exploration shortfall + selection shortfall (an identity).
+Lost slots measure PROPOSAL VIABILITY and are not a simple function of exploration:
+within model, r(lost, distinct) was +0.016 opus, +0.260 deepseek, +0.331 gemini on stage 0.
+
+condition      model                     n    explor    select      lost  abandon rnd lost rej/order
+Blind          claude-opus-4.7          40    0.8764    0.0000      5.08     3.08     2.00      0.64
+Blind          deepseek-chat-v3.1       40    0.8780    0.0000      0.40     0.10     0.30      0.22
+Blind          gemini-2.5-flash         40    1.0245    0.0000      0.50     0.50     0.00      0.29
+Quantitative   claude-opus-4.7          40    0.9629    0.0000      8.38     4.47     3.90      0.78
+Quantitative   deepseek-chat-v3.1       40    0.8585    0.0000      0.33     0.12     0.20      0.19
+Quantitative   gemini-2.5-flash         40    0.7821    0.0000      6.85     5.25     1.60      0.71
+Mechanism      claude-opus-4.7          40    0.9970    0.0000      5.03     3.83     1.20      0.71
+Mechanism      deepseek-chat-v3.1       40    0.8343    0.0000      0.68     0.17     0.50      0.12
+Mechanism      gemini-2.5-flash         40    0.7854    0.0000      3.77     2.58     1.20      0.52
+Aggregated     claude-opus-4.7          40    1.0515    0.0000      8.65     2.95     5.70      0.56
+Aggregated     deepseek-chat-v3.1       40    0.9132    0.0520      0.05     0.05     0.00      0.10
+Aggregated     gemini-2.5-flash         40    0.8274    0.0000      0.35     0.25     0.10      0.23
+Decision-rule  claude-opus-4.7          40    0.9673    0.0000      3.95     2.95     1.00      0.58
+Decision-rule  deepseek-chat-v3.1       40    0.9114    0.0000      0.07     0.07     0.00      0.15
+Decision-rule  gemini-2.5-flash         40    1.0047    0.0000      0.53     0.53     0.00      0.31
+
+0ag NOMINATION FALLBACKS EXCLUDED from these primary figures: 0 campaign(s).
+A fallback is a nomination that did not parse, where campaign.py substituted best_by_mean(),
+which is exactly the Decision-rule instruction. The sensitivity keeping them is in
+summary.json under contrasts_with_fallbacks.
+
+0ah UNDEFINED SHRINKAGE COMPARATOR in 600 campaign(s), NOT excluded because the
+primary outcome is unaffected. Reason recovered per cell: Aggregated/claude-opus-4.7 40 (no noise: undefined by design); Aggregated/deepseek-chat-v3.1 40 (no noise: undefined by design); Aggregated/gemini-2.5-flash 40 (no noise: undefined by design); Blind/claude-opus-4.7 40 (no noise: undefined by design); Blind/deepseek-chat-v3.1 40 (no noise: undefined by design); Blind/gemini-2.5-flash 40 (no noise: undefined by design); Decision-rule/claude-opus-4.7 40 (no noise: undefined by design); Decision-rule/deepseek-chat-v3.1 40 (no noise: undefined by design); Decision-rule/gemini-2.5-flash 40 (no noise: undefined by design); Mechanism/claude-opus-4.7 40 (no noise: undefined by design); Mechanism/deepseek-chat-v3.1 40 (no noise: undefined by design); Mechanism/gemini-2.5-flash 40 (no noise: undefined by design); Quantitative/claude-opus-4.7 40 (no noise: undefined by design); Quantitative/deepseek-chat-v3.1 40 (no noise: undefined by design); Quantitative/gemini-2.5-flash 40 (no noise: undefined by design)

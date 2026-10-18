@@ -1,0 +1,18 @@
+  key source: repdef/.env  (fingerprint 0d6f7d3f, never the key)
+  credit (launch): account $756.40, key $756.36 -> BINDING $756.36 (key), key expires 2026-10-28
+  credit check (launch): $756.36 spendable, floor $50.00 -> ok
+====================================================================================================
+GRID  0am landscape gb1_real (1 landscape)  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 2 conditions x 3 models, campaigns per model frontier 1, mid-tier 1, open-weight 1 = 6 campaigns
+  ceiling $0.75 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    frontier     anthropic/claude-opus-4.7        released 2026-02
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+    open-weight  deepseek/deepseek-chat-v3.1      released 2025-08
+prompt facts checked: reference FFCM is viable and reads 0.5339 (stated 0.5300), pool is 7.00% of the space, example AFCM (viable)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_smoke0am_gb1real_manifest.json (commit 3700a60d)
+    frontier     anthropic/claude-opus-4.7        released 2026-02
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+    open-weight  deepseek/deepseek-chat-v3.1      released 2025-08
+ABORT: the shrinkage comparator matched the mean rule on all 60 campaigns, so no comparison below would mean anything.

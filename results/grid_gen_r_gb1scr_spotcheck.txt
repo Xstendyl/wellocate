@@ -1,0 +1,482 @@
+SPOT CHECK: raw model output beside the proposals the harness accepted.
+Sampled deterministically, 20 calls per model. Written for a human to read.
+
+====================================================================================================
+anthropic/claude-opus-4.7  (frontier)   2008 calls, showing 20
+====================================================================================================
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['DLTL']
+SECONDARY: ['DLTL']
+RAW:
+DLTL | try another substitution at position 1 near reference
+
+--- round 14  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['FITJ', 'FITJ', 'FITJ', 'FITJ']
+SECONDARY: ['FITJ', 'FITJ', 'FITJ', 'FITJ']
+RAW:
+FITJ | best candidate, replicate for noise reduction
+FITJ | best candidate, replicate for noise reduction
+FITJ | best candidate, replicate for noise reduction
+FITJ | best candidate, replicate for noise reduction
+
+--- round 4  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['FLTF']
+SECONDARY: ['FLTF']
+RAW:
+FLTF | explore pos4 variation around best FLTL
+
+--- round 14  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['FKTD', 'FKTD', 'FKTD', 'FKTD']
+SECONDARY: ['FKTD', 'FKTD', 'FKTD', 'FKTD']
+RAW:
+FKTD | best known candidate, replicate for noise averaging
+FKTD | best known candidate, replicate for noise averaging
+FKTD | best known candidate, replicate for noise averaging
+FKTD | best known candidate, replicate for noise averaging
+
+--- round 3  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['CLTJ']
+SECONDARY: ['CLTJ']
+RAW:
+CLTJ | reconfirm best-known high score and explore neighborhood later
+
+--- round 4  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['FLTL', 'HLTL', 'FLTF', 'FLSL']
+SECONDARY: ['FLTL', 'HLTL', 'FLTF', 'FLSL']
+RAW:
+FLTL | best so far ~1.45, confirm with another replicate
+HLTL | explore position 1 further, H near F in alphabet
+FLTF | vary position 4 with best P1
+FLSL | vary position 3 with best P1
+
+--- round 3  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['FLTJ']
+SECONDARY: ['FLTJ']
+RAW:
+FLTJ | best so far (4.749), reconfirm or extend around it
+
+--- round 10  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 11  parsers agree True ---
+PARSED   : ['FITJ', 'FITJ', 'FHTJ', 'FITK']
+SECONDARY: ['FITJ', 'FITJ', 'FHTJ', 'FITK']
+RAW:
+FITJ | best mean around 6.1, resample to confirm
+FITJ | reduce noise on current best
+FHTJ | second best candidate, gather more data
+FITK | explore neighbor of best in position 4
+
+--- round 11  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['FLTJ', 'FLTJ', 'JLTJ', 'FLTJ']
+SECONDARY: ['FLTJ', 'FLTJ', 'JLTJ', 'FLTJ']
+RAW:
+FLTJ | best known, refine mean estimate
+FLTJ | reduce SE on top candidate
+JLTJ | second best, refine estimate
+FLTJ | more replicates on champion
+
+--- round 12  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 12  parsers agree True ---
+PARSED   : ['FLTJ', 'FLTJ', 'FLTJ', 'FLTJ']
+SECONDARY: ['FLTJ', 'FLTJ', 'FLTJ', 'FLTJ']
+RAW:
+FLTJ | best known, keep averaging to reduce SE
+FLTJ | best known, keep averaging to reduce SE
+FLTJ | best known, keep averaging to reduce SE
+FLTJ | best known, keep averaging to reduce SE
+
+--- round 13  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 12  parsers agree True ---
+PARSED   : ['FLTJ', 'FLTJ', 'FLTJ', 'FLTJ']
+SECONDARY: ['FLTJ', 'FLTJ', 'FLTJ', 'FLTJ']
+RAW:
+FLTJ | best known, keep averaging to reduce SE
+FLTJ | best known, keep averaging to reduce SE
+FLTJ | best known, keep averaging to reduce SE
+FLTJ | best known, keep averaging to reduce SE
+
+--- round 5  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['FITN']
+SECONDARY: ['FITN']
+RAW:
+FITN | explore position 4 variants around strong FITL/FITM
+
+--- round 2  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['CLTC', 'CLTD', 'DLTL', 'CMTL']
+SECONDARY: ['CLTC', 'CLTD', 'DLTL', 'CMTL']
+RAW:
+CLTC | vary position 4 near reference with safe letter
+CLTD | probe position 4 further
+DLTL | vary position 1, keep LTL backbone
+CMTL | vary position 2, keep C_TL frame
+
+--- round 12  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 12  parsers agree True ---
+PARSED   : ['FLTJ', 'FLTJ', 'FLTJ', 'FLTJ']
+SECONDARY: ['FLTJ', 'FLTJ', 'FLTJ', 'FLTJ']
+RAW:
+FLTJ | best known, keep averaging to reduce SE
+FLTJ | best known, keep averaging to reduce SE
+FLTJ | best known, keep averaging to reduce SE
+FLTJ | best known, keep averaging to reduce SE
+
+--- round 4  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['ILTL']
+SECONDARY: ['ILTL']
+RAW:
+ILTL | continue exploring position 1 since F gave best score
+
+--- round 6  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['FMTJ']
+SECONDARY: ['FMTJ']
+RAW:
+FMTJ | try other P2 letters near K to improve on FKTJ=5.755
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['BLTL']
+SECONDARY: ['BLTL']
+RAW:
+BLTL | test position-1 variant near reference
+
+--- round 6  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['FLTL', 'FLSL', 'FLTL', 'KLTL']
+SECONDARY: ['FLTL', 'FLSL', 'FLTL', 'KLTL']
+RAW:
+FLTL | best known, keep averaging to reduce noise
+FLSL | explore position 3 neighbor of best
+FLTL | more averaging on champion
+KLTL | explore position 1, F>D>B>C>A trend
+
+--- round 10  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['FLTL', 'FCTL', 'FDTL', 'FLTL']
+SECONDARY: ['FLTL', 'FCTL', 'FDTL', 'FLTL']
+RAW:
+FLTL | best known, keep averaging to reduce error
+FCTL | explore position 2 with new letter
+FDTL | explore position 2 with new letter
+FLTL | extra replicate given 15% failure rate
+
+--- round 4  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['FKTL']
+SECONDARY: ['FKTL']
+RAW:
+FKTL | explore position 2 near strong FLTL
+
+====================================================================================================
+google/gemini-2.5-flash  (mid-tier)   2585 calls, showing 20
+====================================================================================================
+
+--- round 6  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['CSTL', 'CSTL', 'CSTL', 'CSTL']
+SECONDARY: ['CSTL', 'CSTL', 'CSTL', 'CSTL']
+RAW:
+CSTL | Continue exploring around the best known candidate
+CSTL | Continue exploring around the best known candidate
+CSTL | Continue exploring around the best known candidate
+CSTL | Continue exploring around the best known candidate
+
+--- round 8  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['DKTL', 'CKTL', 'DLTL', 'EKTL']
+SECONDARY: ['DKTL', 'CKTL', 'DLTL', 'EKTL']
+RAW:
+DKTL | Explore around the current best
+CKTL | Explore around the current best
+DLTL | Explore around the current best
+EKTL | Explore around the current best
+
+--- round 11  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['IKTL']
+SECONDARY: ['IKTL']
+RAW:
+IKTL | Exploring the next letter in the first position, following the pattern of FKTL
+
+--- round 3  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['CLTL']
+SECONDARY: ['CLTL']
+RAW:
+CLTL | Re-measure reference point to improve estimate
+
+--- round 2  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['CLTM', 'CLTK', 'CLTJ', 'CLTH']
+SECONDARY: ['CLTM', 'CLTK', 'CLTJ', 'CLTH']
+RAW:
+CLTM | explore position 4
+CLTK | explore position 4
+CLTJ | explore position 4
+CLTH | explore position 4
+
+--- round 5  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 6  parsers agree True ---
+PARSED   : ['CLTL', 'CKTL', 'CLTL', 'CKTL']
+SECONDARY: ['CLTL', 'CKTL', 'CLTL', 'CKTL']
+RAW:
+CLTL | Baseline measurement
+CKTL | Explore around the best known score
+CLTL | Baseline measurement
+CKTL | Explore around the best known score
+
+--- round 9  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['CLTJ', 'CLTJ', 'CLTJ', 'CLTJ']
+SECONDARY: ['CLTJ', 'CLTJ', 'CLTJ', 'CLTJ']
+RAW:
+CLTJ | Re-evaluate the best candidate
+CLTJ | Re-evaluate the best candidate
+CLTJ | Re-evaluate the best candidate
+CLTJ | Re-evaluate the best candidate
+
+--- round 14  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['CKTL', 'CLTL', 'CLQL', 'CKTL']
+SECONDARY: ['CKTL', 'CLTL', 'CLQL', 'CKTL']
+RAW:
+CKTL | Best performing candidate so far, continue to refine its score
+CLTL | Reference point, continue to refine its score
+CLQL | Third best candidate, continue to refine its score
+CKTL | Best performing candidate so far, continue to refine its score
+
+--- round 3  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['CSTL', 'CSTL', 'CSTL', 'CSTL']
+SECONDARY: ['CSTL', 'CSTL', 'CSTL', 'CSTL']
+RAW:
+CSTL | Best performing candidate so far, re-evaluate
+CSTL | Best performing candidate so far, re-evaluate
+CSTL | Best performing candidate so far, re-evaluate
+CSTL | Best performing candidate so far, re-evaluate
+
+--- round 2  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['CLTL', 'CRTL', 'CSTL', 'CDTL']
+SECONDARY: ['CLTL', 'CRTL', 'CSTL', 'CDTL']
+RAW:
+CLTL | Re-evaluate reference point due to previous failures
+CRTL | Re-evaluate CRTL due to previous failures
+CSTL | Re-evaluate CSTL due to previous failures
+CDTL | Re-evaluate CDTL due to previous failures
+
+--- round 8  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 5  parsers agree True ---
+PARSED   : ['CKTL', 'CLTL', 'CKTM', 'CLTM']
+SECONDARY: ['CKTL', 'CLTL', 'CKTM', 'CLTM']
+RAW:
+CKTL | Re-evaluate best candidate
+CLTL | Re-evaluate reference candidate
+CKTM | Re-evaluate promising candidate
+CLTM | Re-evaluate promising candidate
+
+--- round 11  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['CSTL', 'CSTL', 'CSTL', 'CSTL']
+SECONDARY: ['CSTL', 'CSTL', 'CSTL', 'CSTL']
+RAW:
+CSTL | Continue exploiting best candidate
+CSTL | Continue exploiting best candidate
+CSTL | Continue exploiting best candidate
+CSTL | Continue exploiting best candidate
+
+--- round 8  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['CSTL', 'CSTL', 'CSTL', 'CSTL']
+SECONDARY: ['CSTL', 'CSTL', 'CSTL', 'CSTL']
+RAW:
+CSTL | Continue exploiting the best known candidate
+CSTL | Continue exploiting the best known candidate
+CSTL | Continue exploiting the best known candidate
+CSTL | Continue exploiting the best known candidate
+
+--- round 6  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['CKTL']
+SECONDARY: ['CKTL']
+RAW:
+CKTL | explore around best known
+
+--- round 1  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 10  parsers agree True ---
+PARSED   : ['CLTL', 'CLTS', 'CLTM', 'CLTJ']
+SECONDARY: ['CLTL', 'CLTS', 'CLTM', 'CLTJ']
+RAW:
+CLTL | Reference point, establish baseline
+CLTS | Test effect of changing last character
+CLTM | Test effect of changing last character
+CLTJ | Test effect of changing last character
+
+--- round 4  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 6  parsers agree True ---
+PARSED   : ['CLTD', 'CLTP', 'CLTE', 'CLTH']
+SECONDARY: ['CLTD', 'CLTP', 'CLTE', 'CLTH']
+RAW:
+CLTD | Re-measure best candidate
+CLTP | Re-measure second best candidate
+CLTE | Explore new symbol in 4th position
+CLTH | Explore new symbol in 4th position
+
+--- round 15  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['CKTL', 'CKTL', 'CKTL', 'CKTL']
+SECONDARY: ['CKTL', 'CKTL', 'CKTL', 'CKTL']
+RAW:
+CKTL | Best performing candidate so far
+CKTL | Best performing candidate so far
+CKTL | Best performing candidate so far
+CKTL | Best performing candidate so far
+
+--- round 5  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['CSTL', 'CSTL', 'CSTL', 'CSTL']
+SECONDARY: ['CSTL', 'CSTL', 'CSTL', 'CSTL']
+RAW:
+CSTL | Continue exploiting the best known candidate
+CSTL | Continue exploiting the best known candidate
+CSTL | Continue exploiting the best known candidate
+CSTL | Continue exploiting the best known candidate
+
+--- round 13  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['CSTL', 'CSTL', 'CSTL', 'CSTL']
+SECONDARY: ['CSTL', 'CSTL', 'CSTL', 'CSTL']
+RAW:
+CSTL | Continue exploring around the best performing candidate
+CSTL | Continue exploring around the best performing candidate
+CSTL | Continue exploring around the best performing candidate
+CSTL | Continue exploring around the best performing candidate
+
+--- round 14  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['CSTL', 'CSTL', 'CSTL', 'CSTL']
+SECONDARY: ['CSTL', 'CSTL', 'CSTL', 'CSTL']
+RAW:
+CSTL | Continue exploiting the best known candidate
+CSTL | Continue exploiting the best known candidate
+CSTL | Continue exploiting the best known candidate
+CSTL | Continue exploiting the best known candidate
+
+====================================================================================================
+deepseek/deepseek-chat-v3.1  (open-weight)   3670 calls, showing 20
+====================================================================================================
+
+--- round 10  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 6  parsers agree True ---
+PARSED   : ['CLTP', 'CLTL', 'CLTP', 'CLTP']
+SECONDARY: ['CLTP', 'CLTL', 'CLTP', 'CLTP']
+RAW:
+CLTP | Continue exploiting current best
+CLTL | Baseline reference for comparison
+CLTP | Further exploitation of high scorer
+CLTP | Maximize measurements on top performer
+
+--- round 9  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['CLTM']
+SECONDARY: ['CLTM']
+RAW:
+CLTM | continue testing known viable candidate
+
+--- round 11  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['CSTP']
+SECONDARY: ['CSTP']
+RAW:
+CSTP | Continuing with best performer despite recent failure
+
+--- round 13  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 5  parsers agree True ---
+PARSED   : ['CLTL', 'CLTL', 'CLTL', 'CLTL']
+SECONDARY: ['CLTL', 'CLTL', 'CLTL', 'CLTL']
+RAW:
+CLTL | continue averaging to reduce error
+CLTL | further refine mean estimate
+CLTL | maximize measurement precision
+CLTL | finalize baseline reading
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['CLTL']
+SECONDARY: ['CLTL']
+RAW:
+CLTL | Re-measure reference to reduce error
+
+--- round 8  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 5  parsers agree True ---
+PARSED   : ['CLTL', 'CLTL', 'CLTL', 'CLTL']
+SECONDARY: ['CLTL', 'CLTL', 'CLTL', 'CLTL']
+RAW:
+CLTL | continue baseline measurement for error reduction  
+CLTL | additional replicate to refine mean estimate  
+CLTL | further averaging to lower standard error  
+CLTL | maximize precision of reference point before exploring
+
+--- round 3  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 5  parsers agree True ---
+PARSED   : ['CLTL', 'CLTS', 'CLTR', 'CLTM']
+SECONDARY: ['CLTL', 'CLTS', 'CLTR', 'CLTM']
+RAW:
+CLTL | reference point, more samples to reduce error
+CLTS | explore nearby viable symbol at position 4
+CLTR | explore nearby viable symbol at position 4
+CLTM | explore nearby viable symbol at position 4
+
+--- round 5  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['CLTL']
+SECONDARY: ['CLTL']
+RAW:
+CLTL | continue reference point measurement for stability
+
+--- round 7  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 11  parsers agree True ---
+PARSED   : ['CLTL', 'CCTL', 'CLTA', 'CLAL']
+SECONDARY: ['CLTL', 'CCTL', 'CLTA', 'CLAL']
+RAW:
+CLTL | more samples to refine mean and reduce error  
+CCTL | check consistency and compare with CLTL  
+CLTA | explore viability boundary near CLTL  
+CLAL | explore viability boundary near CLTL
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['CLTL']
+SECONDARY: ['CLTL']
+RAW:
+CLTL | Repeating to reduce measurement error on baseline
+
+--- round 8  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['CLTL']
+SECONDARY: ['CLTL']
+RAW:
+CLTL | Continue testing reference point for baseline
+
+--- round 3  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 11  parsers agree True ---
+PARSED   : ['CLTL', 'CLTP', 'CLSL', 'CCTL']
+SECONDARY: ['CLTL', 'CLTP', 'CLSL', 'CCTL']
+RAW:
+CLTL | Reference point, more replications to reduce error  
+CLTP | Small variation at position 4 from CLTL (L→P)  
+CLSL | Small variation at position 3 from CLTL (T→S)  
+CCTL | Small variation at position 2 from CLTL (L→C)
+
+--- round 14  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 6  parsers agree True ---
+PARSED   : ['CLTP', 'CLTL', 'CLTP', 'CLTP']
+SECONDARY: ['CLTP', 'CLTL', 'CLTP', 'CLTP']
+RAW:
+CLTP | continue measuring best candidate  
+CLTL | baseline reference  
+CLTP | more replication for accuracy  
+CLTP | reduce measurement error via averaging
+
+--- round 12  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 7  parsers agree True ---
+PARSED   : ['CLTP', 'CLTP', 'CLTP', 'CLTM']
+SECONDARY: ['CLTP', 'CLTP', 'CLTP', 'CLTM']
+RAW:
+CLTP | continue exploiting current best  
+CLTP | high scores around 0.9, consistent performer  
+CLTP | maximize chance of high reading  
+CLTM | explore viability and score variation
+
+--- round 8  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['CLTL']
+SECONDARY: ['CLTL']
+RAW:
+CLTL | Continue measuring reference to reduce noise
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['CLTL']
+SECONDARY: ['CLTL']
+RAW:
+CLTL | baseline remeasurement to reduce error
+
+--- round 4  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['CLTL']
+SECONDARY: ['CLTL']
+RAW:
+CLTL | reference point, stable readings
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['CLTL']
+SECONDARY: ['CLTL']
+RAW:
+CLTL | reference point, known viable
+
+--- round 5  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['CLTL']
+SECONDARY: ['CLTL']
+RAW:
+CLTL | Continuing baseline measurement for stability
+
+--- round 11  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['CLTL']
+SECONDARY: ['CLTL']
+RAW:
+CLTL | Continue exploring reference point for stability

@@ -1,0 +1,2 @@
+AtlasCloud    effort=medium     48.8s ok=True  served='AtlasCloud'  rsn=0 err=
+AtlasCloud    effort=None        2.1s ok=True  served='AtlasCloud'  rsn=0 err=

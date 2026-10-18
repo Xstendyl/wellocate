@@ -1,0 +1,143 @@
+{
+ "prompt_chars": {
+  "round1": 1425,
+  "round8": 2101
+ },
+ "probes": [
+  {
+   "http": 400,
+   "error": "{\"error\":{\"message\":\"Reasoning is mandatory for this endpoint and cannot be disabled.\",\"code\":400,\"metadata\":{\"provider_name\":null}}}",
+   "seconds": 0.10488605499267578,
+   "model": "openai/gpt-6.1-sol",
+   "setting": "reasoning enabled false",
+   "reasoning_param": {
+    "enabled": false
+   },
+   "temperature_sent": true
+  },
+  {
+   "http": 400,
+   "error": "{\"error\":{\"message\":\"Reasoning is mandatory for this endpoint and cannot be disabled.\",\"code\":400,\"metadata\":{\"provider_name\":null}}}",
+   "seconds": 0.0737159252166748,
+   "model": "openai/gpt-6.1-sol",
+   "setting": "effort none",
+   "reasoning_param": {
+    "effort": "none"
+   },
+   "temperature_sent": true
+  },
+  {
+   "http": 200,
+   "model_returned": "openai/gpt-6.1-sol",
+   "provider": "OpenAI",
+   "finish_reason": "stop",
+   "prompt_tokens": 340,
+   "completion_tokens": 44,
+   "reasoning_tokens": 0,
+   "cost": 0.00112,
+   "answer_arrived": true,
+   "answer_chars": 201,
+   "reasoning_text_chars": 0,
+   "parsed": [
+    "ADIF",
+    "GAIF",
+    "GDAF",
+    "GDIA"
+   ],
+   "parse_status": "ok",
+   "answer": "ADIF | Probe first-position effect near reference\nGAIF | Probe second-position effect near reference\nGDAF | Probe third-position effect near reference\nGDIA | Probe fourth-position effect near reference",
+   "seconds": 2.1728739738464355,
+   "model": "openai/gpt-6.1-sol",
+   "setting": "effort minimal",
+   "reasoning_param": {
+    "effort": "minimal"
+   },
+   "temperature_sent": true
+  },
+  {
+   "http": 200,
+   "model_returned": "google/gemini-3.1-pro-preview",
+   "provider": "Google",
+   "finish_reason": "stop",
+   "prompt_tokens": 692,
+   "completion_tokens": 198,
+   "reasoning_tokens": 156,
+   "cost": 0.00376,
+   "answer_arrived": true,
+   "answer_chars": 132,
+   "reasoning_text_chars": 331,
+   "parsed": [
+    "FDIC",
+    "EDIM",
+    "EDBC",
+    "FDBM"
+   ],
+   "parse_status": "ok",
+   "answer": "FDIC | variation of best candidate EDIC\nEDIM | combining EDIC and DDIM\nEDBC | combining EDIC and FDBF\nFDBM | combining FDBF and DDIM",
+   "seconds": 3.5300629138946533,
+   "model": "google/gemini-3.1-pro-preview",
+   "setting": "effort minimal, round 8 with history, repeat 1",
+   "reasoning_param": {
+    "effort": "minimal"
+   },
+   "temperature_sent": true
+  },
+  {
+   "http": 200,
+   "model_returned": "google/gemini-3.1-pro-preview",
+   "provider": "Google",
+   "finish_reason": "stop",
+   "prompt_tokens": 692,
+   "completion_tokens": 198,
+   "reasoning_tokens": 156,
+   "cost": 0.00376,
+   "answer_arrived": true,
+   "answer_chars": 132,
+   "reasoning_text_chars": 280,
+   "parsed": [
+    "FDIC",
+    "EDIM",
+    "EDBC",
+    "FDBM"
+   ],
+   "parse_status": "ok",
+   "answer": "FDIC | variation of best candidate EDIC\nEDIM | combining EDIC and DDIM\nEDBC | combining EDIC and FDBF\nFDBM | combining FDBF and DDIM",
+   "seconds": 3.68451189994812,
+   "model": "google/gemini-3.1-pro-preview",
+   "setting": "effort minimal, round 8 with history, repeat 2",
+   "reasoning_param": {
+    "effort": "minimal"
+   },
+   "temperature_sent": true
+  },
+  {
+   "http": 200,
+   "model_returned": "google/gemini-3.1-pro-preview",
+   "provider": "Google",
+   "finish_reason": "stop",
+   "prompt_tokens": 692,
+   "completion_tokens": 224,
+   "reasoning_tokens": 185,
+   "cost": 0.004072,
+   "answer_arrived": true,
+   "answer_chars": 159,
+   "reasoning_text_chars": 280,
+   "parsed": [
+    "FDIC",
+    "GDIC",
+    "HDIC",
+    "IDIC"
+   ],
+   "parse_status": "ok",
+   "answer": "FDIC | variation of best candidate EDIC\nGDIC | variation of best candidate EDIC\nHDIC | variation of best candidate EDIC\nIDIC | variation of best candidate EDIC",
+   "seconds": 3.772247076034546,
+   "model": "google/gemini-3.1-pro-preview",
+   "setting": "effort minimal, round 8 with history, repeat 3",
+   "reasoning_param": {
+    "effort": "minimal"
+   },
+   "temperature_sent": true
+  }
+ ],
+ "total_cost": 0.012712000000000001
+}

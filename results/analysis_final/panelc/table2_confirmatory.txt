@@ -1,0 +1,26 @@
+TABLE 2. EXPLORATORY contrasts within the 'panelc' panel. NOT the confirmatory family of section 0g; Holm is applied across this panel's own contrasts only.
+PAIRED BY SEED, campaign level, one weight per seed. Primary p is a studentised wild cluster
+bootstrap over seeds with Rademacher weights. Welch is a SENSITIVITY and assumes the cells are
+independent, which the shared seed makes false.
+Minimal effect of interest 0.06. Bootstrap draws 20000, resolution floor 0.00005.
+
+model                    contrast                   seeds  drop      diff       SE               95% CI      wild p
+
+HOLM across this panel's own family of 0, on the primary paired bootstrap p:
+model                    contrast                         raw p      Holm p reject at .05
+
+SENSITIVITY. Paired bootstrap (primary) against the paired t and Welch.
+corr is the within-seed correlation between the two cells. Where it is NEGATIVE the Welch SE
+is SMALLER than the truth, so an unpaired p is anti-conservative; where POSITIVE, Welch is
+conservative and loses power. The direction is not known in advance, which is why the
+paired estimator is the primary one.
+
+model                    contrast                      corr  SE pair SE Welch    ratio      wild p  paired t p     welch p reject w/pt/we
+
+The paired and unpaired POINT ESTIMATES agree to floating point when the seed sets match,
+since mean(b - a) equals mean(b) - mean(a). Only the standard error differs.
+
+0ag NOMINATION FALLBACKS EXCLUDED from these primary figures: 9 campaign(s) -> Blind/gemini-2.5-flash 5, Mechanism/gemini-2.5-flash 4.
+A fallback is a nomination that did not parse, where campaign.py substituted best_by_mean(),
+which is exactly the Decision-rule instruction. The sensitivity keeping them is in
+summary.json under contrasts_with_fallbacks.

@@ -1,0 +1,147 @@
+SPOT CHECK: raw model output beside the proposals the harness accepted.
+Sampled deterministically, 20 calls per model. Written for a human to read.
+
+====================================================================================================
+google/gemini-3.1-pro-preview  (frontier-google)   48 calls, showing 20
+====================================================================================================
+
+--- round 1  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['CLDL', 'CSTL', 'CFTL', 'ILTL']
+SECONDARY: ['CLDL', 'CSTL', 'CFTL', 'ILTL']
+RAW:
+CLDL | exploring position 3
+CSTL | exploring position 2
+CFTL | exploring position 2
+ILTL | exploring position 1
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['CSTL']
+SECONDARY: ['CSTL']
+RAW:
+CSTL | testing mutation at position 2 from reference CLTL
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['GSTL']
+SECONDARY: ['GSTL']
+RAW:
+GSTL | exploring position 1 based on high-scoring CSTL
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['CSTP']
+SECONDARY: ['CSTP']
+RAW:
+CSTP | explore position 4 based on high-scoring CSTL
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['CQTP']
+SECONDARY: ['CQTP']
+RAW:
+CQTP | exploring variation of best candidate CSTP
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['JSEP']
+SECONDARY: ['JSEP']
+RAW:
+JSEP | exploring variation of best candidate JSTP
+
+--- round 2  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['JSHP']
+SECONDARY: ['JSHP']
+RAW:
+JSHP | exploring variations of the highest scoring candidate JSTP
+
+--- round 3  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['JIHP', 'JDHP', 'JTHP', 'JRHP']
+SECONDARY: ['JIHP', 'JDHP', 'JTHP', 'JRHP']
+RAW:
+JIHP | exploring second position based on JSHP
+JDHP | exploring second position based on JSHP
+JTHP | exploring second position based on JSHP
+JRHP | exploring second position based on JSHP
+
+--- round 4  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 12  parsers agree True ---
+PARSED   : ['JSHT', 'JSHN', 'JSHK', 'JSHH']
+SECONDARY: ['JSHT', 'JSHN', 'JSHK', 'JSHH']
+RAW:
+JSHT | explore position 4 from best candidate
+JSHN | explore position 4 from best candidate
+JSHK | explore position 4 from best candidate
+JSHH | explore position 4 from best candidate
+
+--- round 4  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['JSHN']
+SECONDARY: ['JSHN']
+RAW:
+JSHN | top suggested candidate based on JSHP
+
+--- round 4  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['JSHK']
+SECONDARY: ['JSHK']
+RAW:
+JSHK | exploring the fourth position based on the highest reading JSHP
+
+--- round 4  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['JSHH']
+SECONDARY: ['JSHH']
+RAW:
+JSHH | exploring 4th position based on best candidate JSHP
+
+--- round 4  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['JSHR']
+SECONDARY: ['JSHR']
+RAW:
+JSHR | exploring the fourth position of the best candidate JSHP
+
+--- round 4  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['JCHP']
+SECONDARY: ['JCHP']
+RAW:
+JCHP | exploring second position variations of JSHP
+
+--- round 5  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 12  parsers agree True ---
+PARSED   : ['ASHP', 'BSHP', 'DSHP', 'ESHP']
+SECONDARY: ['ASHP', 'BSHP', 'DSHP', 'ESHP']
+RAW:
+ASHP | explore 1st position of best candidate JSHP
+BSHP | explore 1st position of best candidate JSHP
+DSHP | explore 1st position of best candidate JSHP
+ESHP | explore 1st position of best candidate JSHP
+
+--- round 6  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 12  parsers agree True ---
+PARSED   : ['DLHP', 'DCHP', 'DGHP', 'DKHP']
+SECONDARY: ['DLHP', 'DCHP', 'DGHP', 'DKHP']
+RAW:
+DLHP | exploring pos 2 from DSHP
+DCHP | exploring pos 2 from DSHP
+DGHP | exploring pos 2 from DSHP
+DKHP | exploring pos 2 from DSHP
+
+--- round 7  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['DKDP', 'DKIP', 'DKAP', 'DKJP']
+SECONDARY: ['DKDP', 'DKIP', 'DKAP', 'DKJP']
+RAW:
+DKDP | suggested candidate
+DKIP | suggested candidate
+DKAP | suggested candidate
+DKJP | suggested candidate
+
+--- round 7  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['DKIP']
+SECONDARY: ['DKIP']
+RAW:
+DKIP | exploring around DKHP based on additive model suggestions
+
+--- round 7  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['DNHP']
+SECONDARY: ['DNHP']
+RAW:
+DNHP | exploring second position of DSHP family
+
+--- round 8  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 12  parsers agree True ---
+PARSED   : ['DSHI', 'DSHC', 'DSHM', 'DSHQ']
+SECONDARY: ['DSHI', 'DSHC', 'DSHM', 'DSHQ']
+RAW:
+DSHI | mutate pos 4 of best DSHP
+DSHC | mutate pos 4 of best DSHP
+DSHM | mutate pos 4 of best DSHP
+DSHQ | mutate pos 4 of best DSHP

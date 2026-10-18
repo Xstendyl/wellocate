@@ -1,0 +1,15 @@
+{
+ "z_unadjusted": 2.801585218112968,
+ "z_holm_step1": 3.4798785070496656,
+ "mei": 0.06,
+ "family": 6,
+ "chosen_n": 374,
+ "per_model_required": {
+  "anthropic/claude-opus-4.7": 506,
+  "deepseek/deepseek-chat-v3.1": 527,
+  "google/gemini-2.5-flash": 829
+ },
+ "uniform_required": 829,
+ "cost_per_model": 542.8085000000001,
+ "cost_uniform": 872.9370000000001
+}

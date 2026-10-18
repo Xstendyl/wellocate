@@ -1,0 +1,43 @@
+{
+ "grid": {
+  "instance": "nk/K1/seed1",
+  "best": 8.762,
+  "tenth_best": 8.557022450818458,
+  "viable_p90": 7.55987581307666,
+  "noise_cv": 0.073,
+  "sd_at_top": 0.639626,
+  "sd_at_top_with_floor": 0.639635623895711,
+  "ten_best_in_sd": 0.32046469215063556,
+  "top_tenth_in_sd": 1.8794173265679324,
+  "ten_best_in_sd_with_floor": 0.3204598704698831,
+  "top_tenth_in_sd_with_floor": 1.8793890490366745
+ },
+ "GB1": {
+  "instance": "gb1/scramble:20261003",
+  "best": 8.762,
+  "tenth_best": 6.877976002097239,
+  "viable_p90": 2.549600560947996,
+  "noise_cv": 0.073,
+  "sd_at_top": 0.639626,
+  "sd_at_top_with_floor": 0.639635623895711,
+  "ten_best_in_sd": 2.945508778415451,
+  "top_tenth_in_sd": 9.71254989486357,
+  "ten_best_in_sd_with_floor": 2.945464460575355,
+  "top_tenth_in_sd_with_floor": 9.71240376077756,
+  "same_values_as": "gb1/real"
+ },
+ "PhoQ": {
+  "instance": "phoq/scramble:20261004",
+  "best": 8.762,
+  "tenth_best": 4.41372871980213,
+  "viable_p90": 1.0723254236739266,
+  "noise_cv": 0.073,
+  "sd_at_top": 0.639626,
+  "sd_at_top_with_floor": 0.639635623895711,
+  "ten_best_in_sd": 6.798146542194767,
+  "top_tenth_in_sd": 12.022141964720124,
+  "ten_best_in_sd_with_floor": 6.798044257939629,
+  "top_tenth_in_sd_with_floor": 12.02196108073529,
+  "same_values_as": "phoq/real"
+ }
+}

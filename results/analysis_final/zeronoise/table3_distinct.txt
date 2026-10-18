@@ -1,0 +1,28 @@
+TABLE 3. Distinct variants measured per campaign, the headline behavioural metric.
+Pool-scope scripted k*=1 reference: 39.2 distinct per campaign. Counts, with medians.
+Reference bracket (0ai), both at k*=1 on the same 1500 seeds: distinct variants 25.65 fair (97.6 rejections/campaign) and 39.13 pool-scope (0 rejections). Agents sit below both.
+
+condition      model                             n     mean       SE   median               95% CI      vs k*
+Blind          claude-opus-4.7                  40    20.25    0.845     20.0  [  18.60,   21.90]     -18.95
+Blind          deepseek-chat-v3.1               40     6.25    0.281      6.0  [   5.70,    6.80]     -32.95
+Blind          gemini-2.5-flash                 40     3.50    0.353      2.0  [   2.85,    4.22]     -35.70
+Quantitative   claude-opus-4.7                  40    23.20    0.944     22.0  [  21.43,   25.12]     -16.00
+Quantitative   deepseek-chat-v3.1               40     5.97    0.249      6.0  [   5.50,    6.45]     -33.23
+Quantitative   gemini-2.5-flash                 40    12.40    0.485     11.0  [  11.50,   13.38]     -26.80
+Mechanism      claude-opus-4.7                  40    23.48    0.787     24.0  [  21.98,   25.00]     -15.73
+Mechanism      deepseek-chat-v3.1               40     6.20    0.259      6.0  [   5.70,    6.70]     -33.00
+Mechanism      gemini-2.5-flash                 40    12.32    0.632     10.0  [  11.15,   13.60]     -26.88
+Aggregated     claude-opus-4.7                  40    15.47    0.686     15.5  [  14.18,   16.80]     -23.73
+Aggregated     deepseek-chat-v3.1               40     4.80    0.140      5.0  [   4.55,    5.08]     -34.40
+Aggregated     gemini-2.5-flash                 40     8.30    0.306      8.0  [   7.75,    8.95]     -30.90
+Decision-rule  claude-opus-4.7                  40    18.12    0.691     18.0  [  16.77,   19.45]     -21.08
+Decision-rule  deepseek-chat-v3.1               40     4.75    0.159      5.0  [   4.45,    5.05]     -34.45
+Decision-rule  gemini-2.5-flash                 40     3.92    0.452      2.0  [   3.10,    4.85]     -35.28
+
+0ag NOMINATION FALLBACKS EXCLUDED from these primary figures: 0 campaign(s).
+A fallback is a nomination that did not parse, where campaign.py substituted best_by_mean(),
+which is exactly the Decision-rule instruction. The sensitivity keeping them is in
+summary.json under contrasts_with_fallbacks.
+
+0ah UNDEFINED SHRINKAGE COMPARATOR in 600 campaign(s), NOT excluded because the
+primary outcome is unaffected. Reason recovered per cell: Aggregated/claude-opus-4.7 40 (no noise: undefined by design); Aggregated/deepseek-chat-v3.1 40 (no noise: undefined by design); Aggregated/gemini-2.5-flash 40 (no noise: undefined by design); Blind/claude-opus-4.7 40 (no noise: undefined by design); Blind/deepseek-chat-v3.1 40 (no noise: undefined by design); Blind/gemini-2.5-flash 40 (no noise: undefined by design); Decision-rule/claude-opus-4.7 40 (no noise: undefined by design); Decision-rule/deepseek-chat-v3.1 40 (no noise: undefined by design); Decision-rule/gemini-2.5-flash 40 (no noise: undefined by design); Mechanism/claude-opus-4.7 40 (no noise: undefined by design); Mechanism/deepseek-chat-v3.1 40 (no noise: undefined by design); Mechanism/gemini-2.5-flash 40 (no noise: undefined by design); Quantitative/claude-opus-4.7 40 (no noise: undefined by design); Quantitative/deepseek-chat-v3.1 40 (no noise: undefined by design); Quantitative/gemini-2.5-flash 40 (no noise: undefined by design)

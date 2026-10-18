@@ -1,0 +1,136 @@
+SPOT CHECK: raw model output beside the proposals the harness accepted.
+Sampled deterministically, 20 calls per model. Written for a human to read.
+
+====================================================================================================
+openai/gpt-6.1-sol  (frontier-openai)   74 calls, showing 20
+====================================================================================================
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['FDQS']
+SECONDARY: ['FDQS']
+RAW:
+FDQS | Probe a nearby single-position change from the viable reference.
+
+
+--- round 1  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 1  parsers agree True ---
+PARSED   : ['EDQT']
+SECONDARY: ['EDQT']
+RAW:
+EDQT | Probe a nearby variant at the fourth position
+
+--- round 3  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['GDQT']
+SECONDARY: ['GDQT']
+RAW:
+GDQT | Test first-position variation while preserving the best Q–T combination
+
+--- round 4  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 8  parsers agree True ---
+PARSED   : ['CDQT', 'JDQT', 'EDNT', 'EDTT']
+SECONDARY: ['CDQT', 'JDQT', 'EDNT', 'EDTT']
+RAW:
+CDQT | Test a new first symbol on the best background
+JDQT | Explore a distant first-symbol alternative
+EDNT | Explore third-position improvement while retaining T
+EDTT | Test T at both final positions
+
+--- round 4  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['HDQT']
+SECONDARY: ['HDQT']
+RAW:
+HDQT | Explore first-position change while retaining the best DQT combination
+
+--- round 4  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['EDTT']
+SECONDARY: ['EDTT']
+RAW:
+EDTT | Test whether T at the third position improves the best candidate EDQT
+
+--- round 4  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['EGQT']
+SECONDARY: ['EGQT']
+RAW:
+EGQT | Explore a new second-position symbol while retaining the strongest QT pair.
+
+--- round 4  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['EDOT']
+SECONDARY: ['EDOT']
+RAW:
+EDOT | Explore an untested third-position variant near the best candidate EDQT
+
+--- round 4  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['EDMT']
+SECONDARY: ['EDMT']
+RAW:
+EDMT | Test a new third-position symbol while retaining the best ED–T context
+
+--- round 6  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 9  parsers agree True ---
+PARSED   : ['EDLT', 'EDKT', 'EAMT', 'IDMT']
+SECONDARY: ['EDLT', 'EDKT', 'EAMT', 'IDMT']
+RAW:
+EDLT | Explore the third-position neighbor of the best candidate
+EDKT | Test whether the high-scoring region extends below M
+EAMT | Check second-position interaction with M
+IDMT | Explore a new first-position symbol near the best candidate
+
+--- round 6  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['EDKT']
+SECONDARY: ['EDKT']
+RAW:
+EDKT | Probe another third-position symbol near the high-scoring M variant
+
+--- round 7  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['KDMT']
+SECONDARY: ['KDMT']
+RAW:
+KDMT | Test a new first-position symbol on the strongest DMT background
+
+--- round 7  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['EDJT']
+SECONDARY: ['EDJT']
+RAW:
+EDJT | Explore an untested third-position change near the best candidate EDMT
+
+--- round 7  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['NDMT']
+SECONDARY: ['NDMT']
+RAW:
+NDMT | Explore a new first-position symbol while retaining the best DMT combination.
+
+--- round 8  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['RDMT']
+SECONDARY: ['RDMT']
+RAW:
+RDMT | Explore first-position variation near the new best ODMT.
+
+--- round 8  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 3  parsers agree True ---
+PARSED   : ['ODMP']
+SECONDARY: ['ODMP']
+RAW:
+ODMP | Test the viable P ending on the highest-scoring ODMT background.
+
+--- round 9  slots 4  status ok  tier pipe  accepted 4  tokens-anywhere 9  parsers agree True ---
+PARSED   : ['ODQT', 'OEMT', 'OBMT', 'SDMT']
+SECONDARY: ['ODQT', 'OEMT', 'OBMT', 'SDMT']
+RAW:
+ODQT | Test whether O also improves the Q background
+OEMT | Explore a new second position near the best candidate
+OBMT | Test a previously viable second-position alternative
+SDMT | Explore another first-position symbol on the strongest background
+
+--- round 9  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['OBMT']
+SECONDARY: ['OBMT']
+RAW:
+OBMT | Probe second-position variation near best-scoring ODMT
+
+--- round 9  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 4  parsers agree True ---
+PARSED   : ['SDMT']
+SECONDARY: ['SDMT']
+RAW:
+SDMT | Explore a new first-position symbol near the best-performing ODMT motif.
+
+--- round 9  slots 1  status ok  tier pipe  accepted 1  tokens-anywhere 2  parsers agree True ---
+PARSED   : ['TDMT']
+SECONDARY: ['TDMT']
+RAW:
+TDMT | Test an untried first-position symbol on the strongest DMT background.

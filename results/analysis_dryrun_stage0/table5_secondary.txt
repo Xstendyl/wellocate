@@ -1,0 +1,24 @@
+*** PILOT (stage 0). Ran on the pre-2026-09-28 environment, which misreported the
+*** budget. NO NUMBER BELOW IS QUOTABLE. It exists to exercise this script.
+
+TABLE 5. Secondary outcomes: the shortfall decomposition, lost slots, proposal viability.
+global best minus nominated = exploration shortfall + selection shortfall (an identity).
+Lost slots measure PROPOSAL VIABILITY and are not a simple function of exploration:
+within model, r(lost, distinct) was +0.016 opus, +0.260 deepseek, +0.331 gemini on stage 0.
+
+condition      model                     n    explor    select      lost  abandon rnd lost rej/order
+Blind          claude-opus-4.7          40    1.0672    0.1229        na       na       na      0.51
+Blind          deepseek-chat-v3.1       40    0.9052    0.0371        na       na       na      0.16
+Blind          gemini-2.5-flash         40    0.8433    0.0727        na       na       na      0.26
+Quantitative   claude-opus-4.7          40    1.0169    0.0838        na       na       na      0.43
+Quantitative   deepseek-chat-v3.1       40    0.9796    0.0191        na       na       na      0.18
+Quantitative   gemini-2.5-flash         40    0.9083    0.1220        na       na       na      0.17
+Mechanism      claude-opus-4.7          40    0.9696    0.1146        na       na       na      0.36
+Mechanism      deepseek-chat-v3.1       40    1.0638    0.0375        na       na       na      0.12
+Mechanism      gemini-2.5-flash         40    1.6790    0.0000        na       na       na      0.02
+Aggregated     claude-opus-4.7          40    1.0521    0.0714        na       na       na      0.34
+Aggregated     deepseek-chat-v3.1       40    1.0419    0.0211        na       na       na      0.09
+Aggregated     gemini-2.5-flash         40    1.2154    0.0011        na       na       na      0.13
+Decision-rule  claude-opus-4.7          40    0.9258    0.0720        na       na       na      0.30
+Decision-rule  deepseek-chat-v3.1       40    1.0015    0.0424        na       na       na      0.11
+Decision-rule  gemini-2.5-flash         40    1.0335    0.0605        na       na       na      0.09

@@ -1,0 +1,14 @@
+TABLE 3. Distinct variants measured per campaign, the headline behavioural metric.
+Pool-scope scripted k*=1 reference: 39.2 distinct per campaign. Counts, with medians.
+Reference bracket (0ai), both at k*=1 on the same 1500 seeds: distinct variants 25.65 fair (97.6 rejections/campaign) and 39.13 pool-scope (0 rejections). Agents sit below both.
+
+condition      model                             n     mean       SE   median               95% CI      vs k*
+Blind          claude-opus-4.7                  40    14.00    0.514     14.0  [  13.03,   15.00]     -25.20
+Blind          gemini-2.5-flash                 35    10.09    0.582     10.0  [   9.00,   11.23]     -29.11
+Mechanism      claude-opus-4.7                  40    12.15    0.423     13.0  [  11.35,   13.00]     -27.05
+Mechanism      gemini-2.5-flash                 36     7.42    0.240      8.0  [   6.94,    7.86]     -31.78
+
+0ag NOMINATION FALLBACKS EXCLUDED from these primary figures: 9 campaign(s) -> Blind/gemini-2.5-flash 5, Mechanism/gemini-2.5-flash 4.
+A fallback is a nomination that did not parse, where campaign.py substituted best_by_mean(),
+which is exactly the Decision-rule instruction. The sensitivity keeping them is in
+summary.json under contrasts_with_fallbacks.

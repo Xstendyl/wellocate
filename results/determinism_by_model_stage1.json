@@ -1,0 +1,77 @@
+{
+ "claude-opus-4.7|aggregated": {
+  "n": 40,
+  "distinct": 20,
+  "modal": 9
+ },
+ "deepseek-chat-v3.1|aggregated": {
+  "n": 39,
+  "distinct": 22,
+  "modal": 7
+ },
+ "gemini-2.5-flash|aggregated": {
+  "n": 40,
+  "distinct": 2,
+  "modal": 39
+ },
+ "claude-opus-4.7|blind": {
+  "n": 40,
+  "distinct": 18,
+  "modal": 8
+ },
+ "deepseek-chat-v3.1|blind": {
+  "n": 40,
+  "distinct": 29,
+  "modal": 5
+ },
+ "gemini-2.5-flash|blind": {
+  "n": 40,
+  "distinct": 4,
+  "modal": 37
+ },
+ "claude-opus-4.7|decision_rule": {
+  "n": 40,
+  "distinct": 20,
+  "modal": 6
+ },
+ "deepseek-chat-v3.1|decision_rule": {
+  "n": 40,
+  "distinct": 25,
+  "modal": 9
+ },
+ "gemini-2.5-flash|decision_rule": {
+  "n": 40,
+  "distinct": 2,
+  "modal": 39
+ },
+ "claude-opus-4.7|informed": {
+  "n": 40,
+  "distinct": 16,
+  "modal": 15
+ },
+ "deepseek-chat-v3.1|informed": {
+  "n": 40,
+  "distinct": 21,
+  "modal": 7
+ },
+ "gemini-2.5-flash|informed": {
+  "n": 40,
+  "distinct": 1,
+  "modal": 40
+ },
+ "claude-opus-4.7|instructed": {
+  "n": 40,
+  "distinct": 23,
+  "modal": 7
+ },
+ "deepseek-chat-v3.1|instructed": {
+  "n": 40,
+  "distinct": 25,
+  "modal": 7
+ },
+ "gemini-2.5-flash|instructed": {
+  "n": 40,
+  "distinct": 3,
+  "modal": 38
+ }
+}

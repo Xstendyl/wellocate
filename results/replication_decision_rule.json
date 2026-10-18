@@ -1,0 +1,52 @@
+{
+ "arm_means": {
+  "Decision-rule": 7.736474466011765,
+  "Mechanism": 7.728236160157263
+ },
+ "campaigns": {
+  "Decision-rule": 120,
+  "Mechanism": 120
+ },
+ "ci95_boot": [
+  -0.035953732664396214,
+  0.05231574774437237
+ ],
+ "ci95_normal": [
+  -0.03591876786199083,
+  0.05239537957099312
+ ],
+ "fallbacks_excluded": {
+  "Decision-rule": 1,
+  "Mechanism": 0
+ },
+ "improved": 37,
+ "label": "direction holds, not significant",
+ "mean": 0.008238305854501145,
+ "model": "deepseek/deepseek-chat-v3.1",
+ "pairs": 119,
+ "planned_per_arm": 120,
+ "provider_calls": {
+  "Decision-rule": {
+   "AtlasCloud": 2744,
+   "CoreWeave": 3,
+   "DeepInfra": 43,
+   "Mara": 6,
+   "SambaNova": 1,
+   "SiliconFlow": 8
+  },
+  "Mechanism": {
+   "AtlasCloud": 2828,
+   "CoreWeave": 9,
+   "DeepInfra": 49,
+   "Mara": 6,
+   "SambaNova": 2,
+   "SiliconFlow": 18
+  }
+ },
+ "se": 0.022529119243108152,
+ "spend_usd": 1.3655374500000002,
+ "tag": "replication_dsdr",
+ "unchanged": 49,
+ "wild_p": 0.7164141792910355,
+ "worse": 33
+}

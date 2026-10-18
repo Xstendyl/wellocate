@@ -1,0 +1,42 @@
+================================================================================================================
+MODEL BREADTH CANDIDATES.  cost projected on OUR measured profile: 29501 prompt + 1162 completion tokens/campaign
+================================================================================================================
+
+THE THREE ALREADY IN THE GRID, for calibration:
+  model                              weights   $/Mtok in $/Mtok out $/campaign released
+  claude-opus-4.7                    closed         5.00     25.00     0.1765        ?
+  gemini-2.5-flash                   closed         0.30      2.50     0.0118 2025-01-31
+  deepseek-chat-v3.1                 open           0.25      0.95     0.0085 2025-03-31
+
+CANDIDATES, newest first within each vendor family not already in the grid.
+Excluded: :free variants, anything with an expiration date, and non-text output.
+  model id                                 vendor        weights $/Mtok in $/Mtok out $/campaign   ctx k
+  openai/gpt-6-luna-pro                    OpenAI        closed       0.10      0.50     0.0035    1050
+  openai/gpt-6-luna                        OpenAI        closed       0.10      0.50     0.0035    1050
+  meta-llama/llama-4-maverick              Meta          open         0.19      0.65     0.0063    1048
+  meta-llama/llama-4-scout                 Meta          open         0.10      0.30     0.0033    1310
+  qwen/qwen3.8-max-prime                   Alibaba Qwen  closed       4.00     12.00     0.1319    1000
+  qwen/qwen3.8-omni-flash                  Alibaba Qwen  closed       0.15      0.47     0.0050    1000
+  mistralai/mistral-medium-3-5             Mistral       closed       1.50      7.50     0.0530     262
+  mistralai/mistral-small-2603             Mistral       open         0.15      0.60     0.0051     262
+  x-ai/grok-4.7                            xAI           closed       1.60      4.80     0.0528     500
+  x-ai/grok-4.6                            xAI           closed       2.00      6.00     0.0660     500
+  moonshotai/kimi-k3                       Moonshot      open         3.00     15.00     0.1059    1048
+  moonshotai/kimi-k2.7-code                Moonshot      open         0.66      3.30     0.0232     262
+  z-ai/glm-5.3-prime                       Z.ai          closed       2.80      8.80     0.0928    1000
+  z-ai/glm-5.3-flashx                      Z.ai          closed       0.37      1.25     0.0124    1048
+  microsoft/phi-4                          Microsoft     open         0.07      0.14     0.0022      16
+  microsoft/wizardlm-2-8x22b               Microsoft     open         0.62      0.62     0.0190      65
+
+  A panel of five candidates x 2 conditions x 40 seeds = 400 campaigns.
+  Open-weight candidates need ONE PINNED PROVIDER each. Their endpoints:
+    meta-llama/llama-4-maverick            DigitalOcean, DeepInfra, Novita, Parasail, Google
+    meta-llama/llama-4-scout               DeepInfra, Novita, Google
+    mistralai/mistral-small-2603           Mistral, Mistral, Mistral, Mistral
+    moonshotai/kimi-k3                     InferenceNet, Wafer, Sail Research, Morph, Makora, Phala
+    moonshotai/kimi-k2.7-code              Inceptron, DeepInfra, CoreWeave, StreamLake, Venice, ModelRun
+    microsoft/phi-4                        DeepInfra
+    microsoft/wizardlm-2-8x22b             Novita
+  Five cheapest of the above: $1.40 for the panel. Five dearest: $35.97.
+
+  wrote results/model_breadth_candidates.json

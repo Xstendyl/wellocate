@@ -1,0 +1,36 @@
+==============================================================================================
+ROUND-1 FITNESS PERCENTILE AGAINST THE ANCHOR'S OWN NEIGHBOURHOOD
+==============================================================================================
+
+GB1, anchor VDGV   39 in-pool non-anchor proposals
+  in-pool shell sizes by distance      {1: 40, 2: 694, 3: 4222, 4: 6565}
+  the model's own proposal distances   {1: 21, 2: 3, 3: 2, 4: 13}
+  model round-1 percentile             0.729 +- 0.043
+  H1 null (all in-pool H1 neighbours)  0.607 +- 0.042   over 40 sequences
+  DISTANCE-MATCHED null                0.558 +- 0.004   over 3998 draws
+  model vs H1 null                     +0.122 +- 0.061  (2.0 SE)
+  model vs DISTANCE-MATCHED null       +0.171 +- 0.044  (3.9 SE)
+  (the old, wrong comparison vs 0.500  5.3 SE)
+
+PhoQ, anchor AVST   27 in-pool non-anchor proposals
+  in-pool shell sizes by distance      {1: 35, 2: 481, 3: 2977, 4: 7652}
+  the model's own proposal distances   {1: 22, 2: 5}
+  model round-1 percentile             0.535 +- 0.029
+  H1 null (all in-pool H1 neighbours)  0.561 +- 0.041   over 35 sequences
+  DISTANCE-MATCHED null                0.561 +- 0.004   over 3999 draws
+  model vs H1 null                     -0.026 +- 0.050  (0.5 SE)
+  model vs DISTANCE-MATCHED null       -0.026 +- 0.029  (0.9 SE)
+  (the old, wrong comparison vs 0.500  1.2 SE)
+
+==============================================================================================
+WHAT THE RIGHT NULL DOES TO THE CLAIM
+==============================================================================================
+  GB1  model minus matched null   +0.171 +- 0.044  (3.9 SE)
+  PhoQ model minus matched null   -0.026 +- 0.029  (0.9 SE)
+  difference of the two excesses  +0.197 +- 0.052  (3.8 SE)
+
+  The excess over the anchor's OWN neighbourhood is what memory would produce, because
+  geometry is held fixed inside each distance shell. PhoQ's raw 0.414 sitting below 0.5
+  is geometry: AVST is a low-reading anchor, so its neighbours are expected low.
+
+saved /Users/<name>/projects/repdef/results/step6_anchor_neighbourhood_null.json

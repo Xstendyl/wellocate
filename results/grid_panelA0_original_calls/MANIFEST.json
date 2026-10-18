@@ -1,0 +1,56 @@
+{
+ "tag": "panelA0_original",
+ "cells": 6,
+ "total_lines": 11113,
+ "source_lines": 26,
+ "carried_forward_lines": 1577,
+ "untouched_cell_lines": 9510,
+ "replaced_lines": 0,
+ "expected_total_lines": 11113,
+ "all_verified": true,
+ "empty": false,
+ "files": {
+  "blind__anthropic_claude-opus-4.7.jsonl.gz": {
+   "lines": 2358,
+   "sha256": "f54972a7f800dc2507c0390e37ccf91270340fd3909aaa0ea226c140d8d9c607",
+   "bytes": 322426,
+   "verified": true,
+   "written_by_this_run": false
+  },
+  "blind__deepseek_deepseek-chat-v3.1.jsonl.gz": {
+   "lines": 1531,
+   "sha256": "4e636804c7111f2f41212afd41b21d2c2fd6c28f4c3b9259e21cda9c2b6a909d",
+   "bytes": 215290,
+   "verified": true,
+   "written_by_this_run": false
+  },
+  "blind__google_gemini-2.5-flash.jsonl.gz": {
+   "lines": 2065,
+   "sha256": "9447d64288508e324b55e211135501ccd79ed78eb2ddb39715a6fdfc2536aea6",
+   "bytes": 219366,
+   "verified": true,
+   "written_by_this_run": false
+  },
+  "instructed__anthropic_claude-opus-4.7.jsonl.gz": {
+   "lines": 2040,
+   "sha256": "043bd3765686319dd94583f30cacc6279068c4196ac356463c1d9a72443ccb59",
+   "bytes": 292865,
+   "verified": true,
+   "written_by_this_run": false
+  },
+  "instructed__deepseek_deepseek-chat-v3.1.jsonl.gz": {
+   "lines": 1516,
+   "sha256": "5cb35e2570de269b80964c0352b1f6c269fe0a14d3961a24ad6923b7e99b756e",
+   "bytes": 223612,
+   "verified": true,
+   "written_by_this_run": false
+  },
+  "instructed__google_gemini-2.5-flash.jsonl.gz": {
+   "lines": 1603,
+   "sha256": "a0549b5e62f0771c3f30e801f3220c4e6a41b62ed205a1abdeb72509f931d377",
+   "bytes": 193652,
+   "verified": true,
+   "written_by_this_run": true
+  }
+ }
+}

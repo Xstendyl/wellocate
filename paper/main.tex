@@ -1,0 +1,74 @@
+% Explore or Confirm? LLM Agents Misallocate Measurements Under Noise
+% Build: tectonic paper/main.tex   (or pdflatex + bibtex + pdflatex x2)
+% Self-contained: every figure is a file in paper/figures/, the bibliography is paper/refs.bib,
+% and no path in this document is absolute.
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{microtype}
+\usepackage{caption}
+% Every \section starts with a \FloatBarrier, so no float drifts past the end of its section.
+\usepackage[section]{placeins}
+% Let a large figure or table share a page with text, so floats interleave with the text that cites them.
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\bottomfraction}{0.8}
+\renewcommand{\textfraction}{0.07}
+\renewcommand{\floatpagefraction}{0.6}
+\setcounter{topnumber}{3}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{4}
+
+\usepackage[hidelinks]{hyperref}
+\usepackage{natbib}
+\bibliographystyle{plainnat}
+
+\graphicspath{{figures/}}
+\captionsetup{font=small}
+\setlength{\parskip}{2pt}
+
+\title{Explore or Confirm?\\
+LLM Agents Misallocate Measurements Under Noise}
+
+\author{
+  Abdul Karim\thanks{Corresponding author.} \\ Xstendyl \\ \texttt{abdul.karim@xstendyl.com}
+  \and
+  Matt Keon \\ Xstendyl \\ \texttt{matt.keon@xstendyl.com}
+}
+\date{}
+
+% Every number the main text quotes from results/findings.json, one macro each (scripts/make_paper_numbers.py).
+\input{sections/numbers}
+
+\begin{document}
+\maketitle
+
+\input{sections/abstract}
+\input{sections/introduction}
+\input{sections/environment}
+\input{sections/results}
+\input{sections/benchmark}
+\input{sections/discussion}
+
+\input{sections/related}
+
+\section*{Acknowledgements}
+
+We used AI coding assistants for implementation, analysis and drafting. The authors checked all results and take full responsibility for the content.
+
+\bibliography{refs}
+
+\clearpage
+\appendix
+\section*{Appendices}
+\input{sections/appendix}
+\input{sections/appendix_new}
+\input{sections/appendix_grid}
+\input{sections/appendix_gridmore}
+\input{sections/appendix_b11}
+
+\end{document}

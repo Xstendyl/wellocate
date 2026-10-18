@@ -1,0 +1,44 @@
+{
+ "tag": "rprobe20k",
+ "max_tokens": 20000,
+ "half": 10000,
+ "effort": "medium",
+ "rows": [
+  {
+   "model": "anthropic/claude-opus-4.7",
+   "kind": "round",
+   "n": 45,
+   "median": 244,
+   "p90": 414,
+   "max": 523,
+   "mean": 238,
+   "share_at_half": 0.0,
+   "share_at_cap": 0.0,
+   "share_zero": 0.044444444444444446
+  },
+  {
+   "model": "anthropic/claude-opus-4.7",
+   "kind": "nomination",
+   "n": 3,
+   "median": 0,
+   "p90": 0,
+   "max": 0,
+   "mean": 0,
+   "share_at_half": 0.0,
+   "share_at_cap": 0.0,
+   "share_zero": 1.0
+  },
+  {
+   "model": "anthropic/claude-opus-4.7",
+   "kind": "replacement",
+   "n": 64,
+   "median": 0.0,
+   "p90": 0,
+   "max": 295,
+   "mean": 4.609375,
+   "share_at_half": 0.0,
+   "share_at_cap": 0.0,
+   "share_zero": 0.984375
+  }
+ ]
+}

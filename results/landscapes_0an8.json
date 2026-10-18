@@ -1,0 +1,585 @@
+{
+ "cells": {
+  "grid": {
+   "Opus 4.7": {
+    "tags": [
+     "panelA0_original"
+    ],
+    "n": 60,
+    "share": 74.91666666666667,
+    "share_ci": [
+     73.47222222222223,
+     76.30555555555556
+    ],
+    "pick": 7.62119689719785,
+    "pick_ci": [
+     7.54227053184471,
+     7.696687173028701
+    ],
+    "one_reading_pct": 0.0,
+    "without_history": 0
+   },
+   "Gemini 2.5 Flash": {
+    "tags": [
+     "gen_0an_f0_control"
+    ],
+    "n": 120,
+    "share": 94.0,
+    "share_ci": [
+     93.08333333333334,
+     94.86111111111111
+    ],
+    "pick": 7.701341594622921,
+    "pick_ci": [
+     7.6802212034611665,
+     7.720226114840684
+    ],
+    "one_reading_pct": 0.0,
+    "without_history": 0
+   },
+   "DeepSeek V3.1": {
+    "tags": [
+     "gen_0an_f0_control"
+    ],
+    "n": 120,
+    "share": 90.97222222222223,
+    "share_ci": [
+     90.29166666666667,
+     91.59722222222223
+    ],
+    "pick": 7.760026260434459,
+    "pick_ci": [
+     7.716083845477959,
+     7.798641069623545
+    ],
+    "one_reading_pct": 0.0,
+    "without_history": 0
+   },
+   "GPT-6.1 Sol": {
+    "tags": [
+     "gen_0an7_sol_grid_blind",
+     "gen_0an7_sol_grid_blind_rerun",
+     "gen_0an7_sol_grid_blind_cont"
+    ],
+    "n": 60,
+    "share": 44.111111111111114,
+    "share_ci": [
+     41.47222222222222,
+     46.72222222222222
+    ],
+    "pick": 7.672178161220893,
+    "pick_ci": [
+     7.5815433312439175,
+     7.7634584099564465
+    ],
+    "one_reading_pct": 1.6666666666666667,
+    "without_history": 0
+   },
+   "Gemini 3.1 Pro": {
+    "tags": [
+     "gen_0an7_gem_grid_blind",
+     "gen_0an7_gem_grid_blind_rerun",
+     "gen_0an7_gem_grid_blind_cont"
+    ],
+    "n": 60,
+    "share": 13.972222222222221,
+    "share_ci": [
+     12.61111111111111,
+     15.333333333333334
+    ],
+    "pick": 7.688163469286484,
+    "pick_ci": [
+     7.579904245585288,
+     7.800915831692849
+    ],
+    "one_reading_pct": 78.33333333333333,
+    "without_history": 0
+   }
+  },
+  "GB1": {
+   "Opus 4.7": {
+    "tags": [
+     "gen_r_gb1scr",
+     "gen_r_gb1scr_top"
+    ],
+    "n": 60,
+    "share": 63.30555555555556,
+    "share_ci": [
+     61.22222222222222,
+     65.38888888888889
+    ],
+    "pick": 4.775322704844743,
+    "pick_ci": [
+     4.4062372319553615,
+     5.120674639564769
+    ],
+    "one_reading_pct": 0.0,
+    "without_history": 0
+   },
+   "Gemini 2.5 Flash": {
+    "tags": [
+     "gen_0an6_gb1_control"
+    ],
+    "n": 60,
+    "share": 91.94444444444444,
+    "share_ci": [
+     90.08333333333333,
+     93.13888888888889
+    ],
+    "pick": 1.1150320031139602,
+    "pick_ci": [
+     0.9938335953020236,
+     1.2867585717811454
+    ],
+    "one_reading_pct": 0.0,
+    "without_history": 0
+   },
+   "DeepSeek V3.1": {
+    "tags": [
+     "gen_0an6_gb1_control"
+    ],
+    "n": 60,
+    "share": 95.97222222222223,
+    "share_ci": [
+     95.55555555555556,
+     96.38888888888889
+    ],
+    "pick": 0.8397401828313098,
+    "pick_ci": [
+     0.6954397566923121,
+     1.0255419243876385
+    ],
+    "one_reading_pct": 0.0,
+    "without_history": 0
+   },
+   "GPT-6.1 Sol": {
+    "tags": [
+     "gen_0an7_sol_gb1_blind",
+     "gen_0an7_sol_gb1_blind_rerun",
+     "gen_0an7_sol_gb1_blind_cont"
+    ],
+    "n": 30,
+    "share": 19.444444444444443,
+    "share_ci": [
+     17.555555555555557,
+     21.61111111111111
+    ],
+    "pick": 6.3624120153632235,
+    "pick_ci": [
+     6.158447954678121,
+     6.606372224200007
+    ],
+    "one_reading_pct": 50.0,
+    "without_history": 0
+   },
+   "Gemini 3.1 Pro": {
+    "tags": [
+     "gen_0an7_gem_gb1_blind",
+     "gen_0an7_gem_gb1_blind_rerun",
+     "gen_0an7_gem_gb1_blind_cont"
+    ],
+    "n": 30,
+    "share": 11.11111111111111,
+    "share_ci": [
+     9.5,
+     12.722222222222223
+    ],
+    "pick": 4.903924702411044,
+    "pick_ci": [
+     4.359166746882833,
+     5.465497121543342
+    ],
+    "one_reading_pct": 93.33333333333333,
+    "without_history": 0
+   }
+  },
+  "PhoQ": {
+   "Opus 4.7": {
+    "tags": [
+     "gen_0an8_opus_phoq_blind",
+     "gen_0an8_opus_phoq_blind_rerun",
+     "gen_0an8_opus_phoq_blind_cont",
+     "gen_0an8_opus_phoq_blind_cont_rerun",
+     "gen_0an8_opus_phoq_blind_fin"
+    ],
+    "n": 30,
+    "share": 62.77777777777778,
+    "share_ci": [
+     61.0,
+     64.55555555555556
+    ],
+    "pick": 1.892534325883252,
+    "pick_ci": [
+     1.752799579908585,
+     2.0248952968556804
+    ],
+    "one_reading_pct": 0.0,
+    "without_history": 0
+   },
+   "Gemini 2.5 Flash": {
+    "tags": [
+     "gen_0an8_flash_phoq_blind",
+     "gen_0an8_flash_phoq_blind_rerun",
+     "gen_0an8_flash_phoq_blind_cont",
+     "gen_0an8_flash_phoq_blind_cont_rerun",
+     "gen_0an8_flash_phoq_blind_fin"
+    ],
+    "n": 30,
+    "share": 63.666666666666664,
+    "share_ci": [
+     60.611111111111114,
+     66.61111111111111
+    ],
+    "pick": 2.1298067415147157,
+    "pick_ci": [
+     2.0447218788764268,
+     2.1839784465783945
+    ],
+    "one_reading_pct": 0.0,
+    "without_history": 0
+   },
+   "DeepSeek V3.1": {
+    "tags": [
+     "gen_0an8_deepseek_phoq_blind",
+     "gen_0an8_deepseek_phoq_blind_rerun",
+     "gen_0an8_deepseek_phoq_blind_cont",
+     "gen_0an8_deepseek_phoq_blind_cont_rerun",
+     "gen_0an8_deepseek_phoq_blind_fin"
+    ],
+    "n": 30,
+    "share": 89.94444444444444,
+    "share_ci": [
+     87.5,
+     91.94444444444444
+    ],
+    "pick": 0.8293989294204305,
+    "pick_ci": [
+     0.7568246756473889,
+     0.9406586424439569
+    ],
+    "one_reading_pct": 0.0,
+    "without_history": 0
+   },
+   "GPT-6.1 Sol": {
+    "tags": [
+     "gen_0an8_sol_phoq_blind",
+     "gen_0an8_sol_phoq_blind_rerun",
+     "gen_0an8_sol_phoq_blind_cont",
+     "gen_0an8_sol_phoq_blind_cont_rerun",
+     "gen_0an8_sol_phoq_blind_fin"
+    ],
+    "n": 30,
+    "share": 23.944444444444443,
+    "share_ci": [
+     20.72222222222222,
+     27.333333333333332
+    ],
+    "pick": 2.3679339783357016,
+    "pick_ci": [
+     2.162631679225399,
+     2.5841985488537706
+    ],
+    "one_reading_pct": 13.333333333333334,
+    "without_history": 0
+   },
+   "Gemini 3.1 Pro": {
+    "tags": [
+     "gen_0an8_gem_phoq_blind",
+     "gen_0an8_gem_phoq_blind_rerun",
+     "gen_0an8_gem_phoq_blind_cont",
+     "gen_0an8_gem_phoq_blind_cont_rerun",
+     "gen_0an8_gem_phoq_blind_fin"
+    ],
+    "n": 30,
+    "share": 14.722222222222221,
+    "share_ci": [
+     13.11111111111111,
+     16.333333333333332
+    ],
+    "pick": 1.7245181268472227,
+    "pick_ci": [
+     1.6019724730262344,
+     1.8557625765216434
+    ],
+    "one_reading_pct": 96.66666666666667,
+    "without_history": 0
+   }
+  }
+ },
+ "references": {
+  "grid": {
+   "best": {
+    "policy": "informed k=1",
+    "pick": 7.999298589044483,
+    "share_budget": 23.33111111111111
+   },
+   "guessing": {
+    "k": 1,
+    "share": 23.778888888888886,
+    "pick": 7.865864914893477
+   }
+  },
+  "GB1": {
+   "best": {
+    "policy": "guessing k=0",
+    "pick": 6.086764857732206,
+    "share_budget": 0.888888888888889
+   },
+   "guessing": {
+    "k": 0,
+    "share": 0.888888888888889,
+    "pick": 6.086764857732206
+   }
+  },
+  "PhoQ": {
+   "best": {
+    "policy": "informed k=0",
+    "pick": 2.62619878168794,
+    "share_budget": 0.0
+   },
+   "guessing": {
+    "k": 0,
+    "share": 1.0333333333333334,
+    "pick": 2.0500042464604817
+   }
+  }
+ },
+ "paired_with_guessing": {
+  "PhoQ": {
+   "k": 0,
+   "Opus 4.7": {
+    "pairs": 30,
+    "diff": -0.25609879626631105,
+    "ci": [
+     -0.6034668309469675,
+     0.06556182203202779
+    ],
+    "agent_mean": 1.892534325883252,
+    "guessing_mean": 2.148633122149563
+   },
+   "Gemini 2.5 Flash": {
+    "pairs": 30,
+    "diff": -0.018826380634847286,
+    "ci": [
+     -0.3479228110975011,
+     0.2763907754914606
+    ],
+    "agent_mean": 2.1298067415147157,
+    "guessing_mean": 2.148633122149563
+   },
+   "DeepSeek V3.1": {
+    "pairs": 30,
+    "diff": -1.3192341927291327,
+    "ci": [
+     -1.6830376358740187,
+     -0.9765774644295523
+    ],
+    "agent_mean": 0.8293989294204305,
+    "guessing_mean": 2.148633122149563
+   },
+   "GPT-6.1 Sol": {
+    "pairs": 30,
+    "diff": 0.21930085618613843,
+    "ci": [
+     -0.21439345835209447,
+     0.62056585479993
+    ],
+    "agent_mean": 2.3679339783357016,
+    "guessing_mean": 2.148633122149563
+   },
+   "Gemini 3.1 Pro": {
+    "pairs": 30,
+    "diff": -0.4241149953023404,
+    "ci": [
+     -0.784772770544341,
+     -0.09985453883449354
+    ],
+    "agent_mean": 1.7245181268472227,
+    "guessing_mean": 2.148633122149563
+   }
+  },
+  "GB1": {
+   "k": 0,
+   "Opus 4.7": {
+    "pairs": 60,
+    "diff": -1.4095046899663375,
+    "ci": [
+     -1.9200245242705252,
+     -0.8925267615381143
+    ],
+    "agent_mean": 4.775322704844743,
+    "guessing_mean": 6.18482739481108
+   },
+   "Gemini 2.5 Flash": {
+    "pairs": 60,
+    "diff": -5.06979539169712,
+    "ci": [
+     -5.468866462819018,
+     -4.678045015826299
+    ],
+    "agent_mean": 1.1150320031139602,
+    "guessing_mean": 6.18482739481108
+   },
+   "DeepSeek V3.1": {
+    "pairs": 60,
+    "diff": -5.345087211979771,
+    "ci": [
+     -5.754919359025809,
+     -4.940073466026519
+    ],
+    "agent_mean": 0.8397401828313098,
+    "guessing_mean": 6.18482739481108
+   },
+   "GPT-6.1 Sol": {
+    "pairs": 30,
+    "diff": -0.06376043726356935,
+    "ci": [
+     -0.6456163061806236,
+     0.5217564479458531
+    ],
+    "agent_mean": 6.3624120153632235,
+    "guessing_mean": 6.426172452626793
+   },
+   "Gemini 3.1 Pro": {
+    "pairs": 30,
+    "diff": -1.5222477502157488,
+    "ci": [
+     -2.4441628870404037,
+     -0.5502478095670487
+    ],
+    "agent_mean": 4.903924702411044,
+    "guessing_mean": 6.426172452626793
+   }
+  }
+ },
+ "checks": {
+  "grid and PhoQ cells equal the published numbers": true,
+  "GB1 Wellocate canary seeds": 20
+ },
+ "sol_phoq_by_nominee": {
+  "top_nominee": "IAQT",
+  "top_nominee_campaigns": 14,
+  "top_nominee_true": 2.516490714010414,
+  "campaigns": 30,
+  "distinct_nominees": 13,
+  "guessing": 2.0500042464604817,
+  "guessing_se": 0.022866490390623526,
+  "versions": {
+   "as registered (seed bootstrap)": {
+    "n": 30,
+    "pick": 2.3679339783357016,
+    "pick_ci": [
+     2.1590292969123976,
+     2.5820237678410822
+    ],
+    "lead": 0.3179297318752199,
+    "lead_ci": [
+     0.10427148178251466,
+     0.5366604336126829
+    ],
+    "above": true
+   },
+   "cluster bootstrap by nominee": {
+    "n": 30,
+    "pick": 2.3679339783357016,
+    "pick_ci": [
+     1.9586716083687465,
+     2.5997307927074105
+    ],
+    "lead": 0.3179297318752199,
+    "lead_ci": [
+     -0.09377935156000583,
+     0.554019640734064
+    ],
+    "above": false
+   },
+   "IAQT collapsed to one (seed bootstrap)": {
+    "n": 17,
+    "pick": 2.2543317687020976,
+    "pick_ci": [
+     1.9116097441383002,
+     2.6217027351644675
+    ],
+    "lead": 0.20432752224161588,
+    "lead_ci": [
+     -0.14131256228738232,
+     0.5744222518874196
+    ],
+    "above": false
+   },
+   "IAQT collapsed, cluster bootstrap": {
+    "n": 17,
+    "pick": 2.2543317687020976,
+    "pick_ci": [
+     1.8885908251150783,
+     2.6590384971629026
+    ],
+    "lead": 0.20432752224161588,
+    "lead_ci": [
+     -0.16414923377974855,
+     0.6115083395372648
+    ],
+    "above": false
+   }
+  },
+  "survives_every_version": false,
+  "by_role": {
+   "registered": {
+    "n": 30,
+    "pick": 2.3679339783357016,
+    "pick_ci": [
+     2.1590292969123976,
+     2.5820237678410822
+    ],
+    "lead": 0.3179297318752199,
+    "lead_ci": [
+     0.10427148178251466,
+     0.5366604336126829
+    ],
+    "above": true
+   },
+   "by_nominee": {
+    "n": 30,
+    "pick": 2.3679339783357016,
+    "pick_ci": [
+     1.9586716083687465,
+     2.5997307927074105
+    ],
+    "lead": 0.3179297318752199,
+    "lead_ci": [
+     -0.09377935156000583,
+     0.554019640734064
+    ],
+    "above": false
+   },
+   "top_once": {
+    "n": 17,
+    "pick": 2.2543317687020976,
+    "pick_ci": [
+     1.9116097441383002,
+     2.6217027351644675
+    ],
+    "lead": 0.20432752224161588,
+    "lead_ci": [
+     -0.14131256228738232,
+     0.5744222518874196
+    ],
+    "above": false
+   },
+   "top_once_by_nominee": {
+    "n": 17,
+    "pick": 2.2543317687020976,
+    "pick_ci": [
+     1.8885908251150783,
+     2.6590384971629026
+    ],
+    "lead": 0.20432752224161588,
+    "lead_ci": [
+     -0.16414923377974855,
+     0.6115083395372648
+    ],
+    "above": false
+   }
+  }
+ }
+}

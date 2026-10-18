@@ -1,0 +1,57 @@
+  key source: repdef/.env  (fingerprint 0d6f7d3f, never the key)
+  credit (launch): account $642.23, key $642.19 -> BINDING $642.19 (key), key expires 2026-10-28
+  credit check (launch): $642.19 spendable, floor $50.00 -> ok
+====================================================================================================
+GRID  NK uniform K=1 seed=1 pct=93.0  multiplicative cv=0.073 floor=0.00351
+====================================================================================================
+  pool 11199 of 160000 | 1 conditions x 3 models, campaigns per model frontier 2, mid-tier 2, open-weight 2 = 6 campaigns
+  ceiling $1.00 | 15 rounds x 4 slots | agent nominates, shrinkage recorded
+    frontier     anthropic/claude-opus-4.7        released 2026-02
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+    open-weight  deepseek/deepseek-chat-v3.1      released 2025-08
+prompt facts checked: reference GDIF is viable and reads 6.8730 (stated 6.8700), pool is 7.00% of the space, example ADIF (not viable, as on GB1)
+prompt canary: all five rungs carry their blocks in both the round and nomination prompts
+manifest saved: results/grid_smoke0an_f2_menu_manifest.json (commit bb6e57b3)
+    frontier     anthropic/claude-opus-4.7        released 2026-02
+    mid-tier     google/gemini-2.5-flash          released 2025-06
+    open-weight  deepseek/deepseek-chat-v3.1      released 2025-08
+canary: comparator live, differs from the mean rule on 26 of 60 scripted campaigns
+
+
+  SHUFFLED order over 6 campaigns across 3 cells (order seed 20261004)
+      Blind         mid-tier    seed 15000001 ok 45 rep 45 ( 75%) | nom  7.7597 | distn 10 | $0.0182 cum $0.02 | 53s
+      Blind         open-weight seed 15000001 ok 47 rep 52 ( 87%) | nom  7.7839 | distn  7 | $0.0095 cum $0.03 | 169s
+      Blind         frontier    seed 15000000 ok 41 rep 33 ( 55%) | nom  7.2448 | distn 16 | $0.8637 cum $0.89 | 172s
+      Blind         mid-tier    seed 15000000 ok 42 rep 42 ( 70%) | nom  6.7899 | distn  7 | $0.0336 cum $0.93 | 74s
+      Blind         frontier    seed 15000001 ok 44 rep 35 ( 58%) | nom  7.6372 | distn 18 | $0.6715 cum $1.60 | 141s
+      CEILING STOP at $1.60
+
+  NOMINATION CALLS: 5, of which 5 carry a two-parser comparison, 5 agree
+
+  TWO-PARSER CHECK over 287 ROUND calls (nomination calls above)
+    GENUINE disagreement (both read, and differ)         0  0.00%
+    by design (primary refused the count, spent none)    0  0.00%
+  spot check written: results/grid_smoke0an_f2_menu_spotcheck.txt
+  call log archived: 3 cells, 292 lines (292 new, 0 carried, 0 untouched, 0 replaced), 0.1 MB, all verified True
+  plain call log removed after verification: grid_smoke0an_f2_menu_calls.jsonl
+
+====================================================================================================
+SUMMARY   smoke0an_f2_menu
+====================================================================================================
+  VARIANCES AND HEALTH ONLY. The primary outcome by condition is NOT printed here; see
+  scripts/stage1_variance.py for the sizing inputs and the final analysis script for means.
+  (scripted reference for later use: k*=1 at 8.0057, k=0 at 7.8856)
+  condition     role          n | sd(nominated) sd(distinct) |   distn | rep of budget | $/campaign
+  Blind         frontier      2 |        0.2775      1.4142 |    17.0 |         56.7%     0.7676
+  Blind         mid-tier      2 |        0.6858      2.1213 |     8.5 |         72.5%     0.0259
+  Blind         open-weight   1 |           nan         nan |     7.0 |         86.7%     0.0095
+
+  TOTAL SPEND $1.5965 over 292 calls, 5 campaigns
+
+  RESPONSE HEALTH PER MODEL
+  model                           calls       empty     malformed       trunc  mean rsn   max rsn
+  anthropic/claude-opus-4.7         141     0  0.0%      0   0.0%     0  0.0%         0         0
+  google/gemini-2.5-flash           117     0  0.0%      0   0.0%     0  0.0%         0         0
+  deepseek/deepseek-chat-v3.1        34     0  0.0%      0   0.0%     0  0.0%         0         0
+
+  No empty and no truncated responses on any model at max_tokens=6000.

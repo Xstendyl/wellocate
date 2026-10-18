@@ -1,0 +1,34 @@
+============================================================================================
+GRID POWER on the selection shortfall   NK uniform K=1 seed=1 pct=93.0  n=1500
+============================================================================================
+  shortfall under max        mean 0.2478  sample sd 0.2781  SE 0.0072  zero in  30.3% of campaigns
+  shortfall under mean       mean 0.2539  sample sd 0.3027  SE 0.0078  zero in  32.8% of campaigns
+  shortfall under shrinkage  mean 0.2084  sample sd 0.2390  SE 0.0062  zero in  33.2% of campaigns
+
+  max-single minus shrinkage, paired   +0.0395  paired sd 0.2240  (unpaired arm sd 0.2781)
+  pairing reduces the sd by            1.24x
+
+============================================================================================
+CAMPAIGNS PER CELL, at 2.8 SE which is two-sided 0.005, paired within campaign
+============================================================================================
+  difference to detect             uninflated         x1.25 sd    count x1.57
+  shortfall difference 0.005         15,735           24,585          1.56x
+  shortfall difference 0.010          3,934            6,147          1.56x
+  shortfall difference 0.020            984            1,537          1.56x
+  shortfall difference 0.030            438              683          1.56x
+  shortfall difference 0.050            158              246          1.56x
+
+  The landscape's own max-minus-shrinkage gap is 0.0395, so an intervention that closes the
+  shortfall must move at least that far. Sized on it, at 2.8 SE with the 1.25x sd
+  inflation: 395 campaigns per cell.
+
+  GRID SHAPE   5 conditions x 3 models = 15 cells
+  at 395 campaigns per cell that is 5,925 campaigns, 94,800 LLM calls at 16 per campaign
+  which is far beyond the $600 stage ceiling, so the count must be set by BUDGET and the
+  detectable effect REPORTED, not the reverse. See the spec's sample-size section.
+     20 campaigns/cell ->  300 campaigns,  4800 calls, detectable shortfall difference 0.1753
+     30 campaigns/cell ->  450 campaigns,  7200 calls, detectable shortfall difference 0.1431
+     40 campaigns/cell ->  600 campaigns,  9600 calls, detectable shortfall difference 0.1240
+     60 campaigns/cell ->  900 campaigns, 14400 calls, detectable shortfall difference 0.1012
+
+saved results/step6_grid_power.json

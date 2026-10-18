@@ -1,0 +1,11 @@
+{
+ "google/gemini-3.1-pro-preview": {
+  "calls": 1412,
+  "empty": 0,
+  "malformed": 0,
+  "truncated": 0,
+  "mean_reasoning": 409.6749291784703,
+  "max_reasoning": 30721,
+  "max_completion": 30735
+ }
+}

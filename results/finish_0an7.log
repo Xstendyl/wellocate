@@ -1,0 +1,38 @@
+before gen_0an7_gem_grid_blind_rerun seed 300022: balance $442.1026, Gemini by balance $68.2681, largest gen_0an7_gem_grid_blind campaign $1.9272
+gen_0an7_gem_grid_blind_rerun seed 300022: written
+before gen_0an7_gem_grid_blind_rerun seed 300040: balance $441.2966, Gemini by balance $69.0741, largest gen_0an7_gem_grid_blind campaign $1.9272
+gen_0an7_gem_grid_blind_rerun seed 300040: abandoned
+seed 300040 abandoned twice: dropped from both sides of every pairing that uses it
+before gen_0an7_gem_grid_blind_rerun seed 300044: balance $441.2966, Gemini by balance $69.0741, largest gen_0an7_gem_grid_blind campaign $1.9272
+gen_0an7_gem_grid_blind_rerun seed 300044: abandoned
+seed 300044 abandoned twice: dropped from both sides of every pairing that uses it
+before gen_0an7_gem_gb1_menu_cont seed 11000000: balance $441.2966, Gemini by balance $69.0741, largest gen_0an7_gem_gb1_menu campaign $0.8344
+gen_0an7_gem_gb1_menu_cont seed 11000000: abandoned
+before gen_0an7_gem_gb1_menu_cont seed 11000000: balance $441.2966, Gemini by balance $69.0741, largest gen_0an7_gem_gb1_menu campaign $0.8344
+gen_0an7_gem_gb1_menu_cont seed 11000000: abandoned
+seed 11000000 abandoned twice: dropped from both sides of every pairing that uses it
+before gen_0an7_gem_gb1_menu_cont seed 11000002: balance $441.2966, Gemini by balance $69.0741, largest gen_0an7_gem_gb1_menu campaign $0.8344
+gen_0an7_gem_gb1_menu_cont seed 11000002: abandoned
+before gen_0an7_gem_gb1_menu_cont seed 11000002: balance $441.2966, Gemini by balance $69.0741, largest gen_0an7_gem_gb1_menu campaign $0.8344
+gen_0an7_gem_gb1_menu_cont seed 11000002: abandoned
+seed 11000002 abandoned twice: dropped from both sides of every pairing that uses it
+before gen_0an7_gem_gb1_menu_cont seed 11000011: balance $441.2966, Gemini by balance $69.0741, largest gen_0an7_gem_gb1_menu campaign $0.8344
+gen_0an7_gem_gb1_menu_cont seed 11000011: abandoned
+before gen_0an7_gem_gb1_menu_cont seed 11000011: balance $441.2966, Gemini by balance $69.0741, largest gen_0an7_gem_gb1_menu campaign $0.8344
+gen_0an7_gem_gb1_menu_cont seed 11000011: abandoned
+seed 11000011 abandoned twice: dropped from both sides of every pairing that uses it
+done: balance $441.2966, Gemini by balance $69.0741; dropped seeds [300040, 300044, 11000000, 11000002, 11000011]
+CORRECTION: the five seeds marked "abandoned twice" above (300040, 300044, 11000000, 11000002, 11000011) never ran. grid.py refused each launch at its clean-tree gate, because scripts/analyse_0an7.py had an uncommitted edit; the credit balance did not move. They are not abandoned and are not dropped. They run again with the fixed script.
+seed 300022 already written under gen_0an7_gem_grid_blind_rerun
+before gen_0an7_gem_grid_blind_rerun seed 300040: balance $441.1652, Gemini by balance $69.2055, largest gen_0an7_gem_grid_blind campaign $1.9272
+gen_0an7_gem_grid_blind_rerun seed 300040: written
+before gen_0an7_gem_grid_blind_rerun seed 300044: balance $440.7692, Gemini by balance $69.6015, largest gen_0an7_gem_grid_blind campaign $1.9272
+gen_0an7_gem_grid_blind_rerun seed 300044: written
+before gen_0an7_gem_gb1_menu_cont seed 11000000: balance $439.4266, Gemini by balance $70.9441, largest gen_0an7_gem_gb1_menu campaign $0.8344
+gen_0an7_gem_gb1_menu_cont seed 11000000: written
+before gen_0an7_gem_gb1_menu_cont seed 11000002: balance $439.2298, Gemini by balance $71.1410, largest gen_0an7_gem_gb1_menu campaign $0.8344
+gen_0an7_gem_gb1_menu_cont seed 11000002: written
+before gen_0an7_gem_gb1_menu_cont seed 11000011: balance $439.0196, Gemini by balance $71.3511, largest gen_0an7_gem_gb1_menu campaign $0.8344
+gen_0an7_gem_gb1_menu_cont seed 11000011: written
+done: balance $438.8195, Gemini by balance $71.5513; dropped seeds []
+final balance, re-read after every arm completed: balance $438.8195

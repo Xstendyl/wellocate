@@ -1,0 +1,21 @@
+{
+ "tag": "gen_0an7_gem_grid_blind_rerun",
+ "cells": 1,
+ "total_lines": 256,
+ "source_lines": 79,
+ "carried_forward_lines": 177,
+ "untouched_cell_lines": 0,
+ "replaced_lines": 0,
+ "expected_total_lines": 256,
+ "all_verified": true,
+ "empty": false,
+ "files": {
+  "blind__google_gemini-3.1-pro-preview.jsonl.gz": {
+   "lines": 256,
+   "sha256": "20dfbec318c99dd092bc888b632e8ba758bcf25145cb7d0a890d43856bfd5c61",
+   "bytes": 68219,
+   "verified": true,
+   "written_by_this_run": true
+  }
+ }
+}

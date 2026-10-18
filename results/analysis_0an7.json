@@ -1,0 +1,4682 @@
+{
+ "references": {
+  "grid": {
+   "guessing": {
+    "n": 1500,
+    "collapsed": 0,
+    "pick": 7.865864914893477,
+    "pick_se": 0.010568884765556017,
+    "share_budget": 23.778888888888886,
+    "share_nonlost": 29.796400546233773,
+    "lost": 11.704666666666666,
+    "kstar": 1
+   },
+   "informed": {
+    "n": 1500,
+    "collapsed": 0,
+    "pick": 7.999298589044483,
+    "pick_se": 0.00907902459227919,
+    "share_budget": 23.33111111111111,
+    "share_nonlost": 23.33111111111111,
+    "lost": 0,
+    "kstar": 1
+   }
+  },
+  "gb1_scrambled": {
+   "guessing": {
+    "n": 1500,
+    "collapsed": 0,
+    "pick": 6.086764857732206,
+    "pick_se": 0.037651206418461175,
+    "share_budget": 0.888888888888889,
+    "share_nonlost": 0.951701035686176,
+    "lost": 3.5833333333333335,
+    "kstar": 0
+   },
+   "informed": {
+    "n": 1500,
+    "collapsed": 0,
+    "pick": 6.018240655379692,
+    "pick_se": 0.0343666750092054,
+    "share_budget": 0.0,
+    "share_nonlost": 0.0,
+    "lost": 0,
+    "kstar": 0
+   }
+  }
+ },
+ "band_grid": {
+  "lower": {
+   "policy": "guessing yardstick",
+   "share_budget": 23.778888888888886,
+   "share_nonlost": 29.796400546233773
+  },
+  "upper": {
+   "policy": "model-guided, k = 1 with confirmation (0an.4)",
+   "share_budget": 37.60777777777778,
+   "share_nonlost": 44.101893553695355
+  }
+ },
+ "gb1_informed_note": {
+  "guessing": 6.086764857732206,
+  "informed": 6.018240655379692,
+  "gap": 0.06852420235251344,
+  "gap_in_se": 1.3442110004737178,
+  "label": "on scrambled GB1 the informed reference sits 0.07 below guessing (1.3 unpaired standard errors), within noise; there it is a reference point only, with no claim to bound the agents' picks"
+ },
+ "cells": {
+  "sol|grid_blind": {
+   "n": 60,
+   "share_budget": 44.111111111111114,
+   "share_budget_ci": [
+    41.44444444444444,
+    46.75
+   ],
+   "share_nonlost": 45.720277337046284,
+   "share_nonlost_ci": [
+    43.03227719897078,
+    48.37897594286594
+   ],
+   "pick": 7.672178161220893,
+   "pick_ci": [
+    7.582133986737311,
+    7.764448114167905
+   ],
+   "exploration_shortfall": 0.9299935180060173,
+   "selection_shortfall": 0.1598283207730902,
+   "distinct": 30.766666666666666,
+   "lost_rejection": 2.033333333333333,
+   "lost_rounds": 0.13333333333333333,
+   "lost_cap": 0,
+   "campaigns_over_lost_round_limit": 0,
+   "nominee_one_reading": 0.016666666666666666,
+   "nominee_highest_single": 0.6333333333333333,
+   "top_nominee": "GQKF",
+   "top_nominee_count": 5,
+   "distinct_nominees": 36,
+   "pick_minus_informed": -0.32712042782358974,
+   "pick_minus_guessing": -0.19368675367258348,
+   "abandoned": [],
+   "comparators": {
+    "0an F0 control|deepseek-chat-v3.1": {
+     "n": 120,
+     "share_budget": 90.97222222222223,
+     "share_budget_ci": [
+      90.27777777777777,
+      91.61111111111111
+     ],
+     "share_nonlost": 91.21106636231656,
+     "share_nonlost_ci": [
+      90.65275008308409,
+      91.74715254820335
+     ],
+     "pick": 7.760026260434459,
+     "pick_ci": [
+      7.714800521447897,
+      7.799163416394771
+     ],
+     "exploration_shortfall": 0.9388703876368841,
+     "selection_shortfall": 0.06310335192865772,
+     "distinct": 4.9,
+     "lost_rejection": 0.1,
+     "lost_rounds": 0.06666666666666667,
+     "lost_cap": 0,
+     "campaigns_over_lost_round_limit": 0,
+     "nominee_one_reading": 0.0,
+     "nominee_highest_single": 0.75,
+     "top_nominee": "GDIJ",
+     "top_nominee_count": 44,
+     "distinct_nominees": 9,
+     "label": "same prompt options",
+     "count_of_our_top_nominee": 0,
+     "paired": {
+      "pairs": 60,
+      "d_share_budget": -46.638888888888886,
+      "d_share_budget_ci": [
+       -49.583333333333336,
+       -43.666666666666664
+      ],
+      "d_share_nonlost": -45.42925651753034,
+      "d_share_nonlost_ci": [
+       -48.31262980502331,
+       -42.45093753764256
+      ],
+      "d_pick": -0.09486656381343032,
+      "d_pick_ci": [
+       -0.2021438655506961,
+       0.014850869004854047
+      ],
+      "d_exploration_shortfall": 0.0016303118440479825,
+      "d_exploration_shortfall_ci": [
+       -0.09415349550560441,
+       0.0942887038716549
+      ],
+      "d_selection_shortfall": 0.09323625196938234,
+      "d_selection_shortfall_ci": [
+       0.031992260316452886,
+       0.15843843640862937
+      ]
+     }
+    },
+    "0an F0 control|gemini-2.5-flash": {
+     "n": 120,
+     "share_budget": 94.0,
+     "share_budget_ci": [
+      93.05555555555556,
+      94.84722222222223
+     ],
+     "share_nonlost": 94.61711257790047,
+     "share_nonlost_ci": [
+      93.83446449971873,
+      95.30527545219246
+     ],
+     "pick": 7.701341594622921,
+     "pick_ci": [
+      7.680100276267506,
+      7.720126549087
+     ],
+     "exploration_shortfall": 1.044052701755752,
+     "selection_shortfall": 0.016605703621327777,
+     "distinct": 3.0416666666666665,
+     "lost_rejection": 0.14166666666666666,
+     "lost_rounds": 0.26666666666666666,
+     "lost_cap": 0,
+     "campaigns_over_lost_round_limit": 0,
+     "nominee_one_reading": 0.0,
+     "nominee_highest_single": 0.9416666666666667,
+     "top_nominee": "GDIC",
+     "top_nominee_count": 105,
+     "distinct_nominees": 8,
+     "label": "same prompt options",
+     "count_of_our_top_nominee": 0,
+     "paired": {
+      "pairs": 60,
+      "d_share_budget": -50.47222222222223,
+      "d_share_budget_ci": [
+       -53.05555555555556,
+       -47.97222222222222
+      ],
+      "d_share_nonlost": -49.22207218303556,
+      "d_share_nonlost_ci": [
+       -51.87883085537966,
+       -46.60949590553316
+      ],
+      "d_pick": -0.020984549908644925,
+      "d_pick_ci": [
+       -0.11202278747265502,
+       0.07049876674745856
+      ],
+      "d_exploration_shortfall": -0.12159665205135872,
+      "d_exploration_shortfall_ci": [
+       -0.2014461240567115,
+       -0.046109454571808164
+      ],
+      "d_selection_shortfall": 0.14258120196000365,
+      "d_selection_shortfall_ci": [
+       0.08121883321400337,
+       0.2024769596397469
+      ]
+     }
+    },
+    "Panel A0|claude-opus-4.7": {
+     "n": 60,
+     "share_budget": 74.91666666666667,
+     "share_budget_ci": [
+      73.5,
+      76.30555555555556
+     ],
+     "share_nonlost": 77.38046785534404,
+     "share_nonlost_ci": [
+      76.03430456398866,
+      78.72649403293225
+     ],
+     "pick": 7.62119689719785,
+     "pick_ci": [
+      7.544237604264555,
+      7.6981507918289775
+     ],
+     "exploration_shortfall": 1.0239061824457185,
+     "selection_shortfall": 0.11689692035643251,
+     "distinct": 11.35,
+     "lost_rejection": 1.9166666666666667,
+     "lost_rounds": 0,
+     "lost_cap": 0,
+     "campaigns_over_lost_round_limit": 0,
+     "nominee_one_reading": 0.0,
+     "nominee_highest_single": 0.8666666666666667,
+     "top_nominee": "GDIM",
+     "top_nominee_count": 13,
+     "distinct_nominees": 26,
+     "label": "prompt differs only by the truthful re-ask line",
+     "count_of_our_top_nominee": 0,
+     "paired": {
+      "pairs": 60,
+      "d_share_budget": -30.805555555555557,
+      "d_share_budget_ci": [
+       -33.72222222222222,
+       -27.77777777777778
+      ],
+      "d_share_nonlost": -31.66019051829776,
+      "d_share_nonlost_ci": [
+       -34.55104308924789,
+       -28.7566552018755
+      ],
+      "d_pick": 0.05098126402304359,
+      "d_pick_ci": [
+       -0.05149705764155012,
+       0.1579891778251528
+      ],
+      "d_exploration_shortfall": -0.09391266443970127,
+      "d_exploration_shortfall_ci": [
+       -0.18666296790746284,
+       -0.0017461784049618216
+      ],
+      "d_selection_shortfall": 0.042931400416657675,
+      "d_selection_shortfall_ci": [
+       -0.02339418464600683,
+       0.1105395146571969
+      ]
+     }
+    },
+    "Panel A0|deepseek-chat-v3.1": {
+     "n": 60,
+     "share_budget": 89.80555555555556,
+     "share_budget_ci": [
+      89.0,
+      90.58333333333333
+     ],
+     "share_nonlost": 90.4000752072786,
+     "share_nonlost_ci": [
+      89.81072223445105,
+      91.00059309805073
+     ],
+     "pick": 7.765345930862732,
+     "pick_ci": [
+      7.7034415212173055,
+      7.823248253624601
+     ],
+     "exploration_shortfall": 0.9089825859705807,
+     "selection_shortfall": 0.08767148316668835,
+     "distinct": 5.333333333333333,
+     "lost_rejection": 0.13333333333333333,
+     "lost_rounds": 0.26666666666666666,
+     "lost_cap": 0,
+     "campaigns_over_lost_round_limit": 0,
+     "nominee_one_reading": 0.0,
+     "nominee_highest_single": 0.8333333333333334,
+     "top_nominee": "GDIS",
+     "top_nominee_count": 25,
+     "distinct_nominees": 10,
+     "label": "prompt differs only by the truthful re-ask line",
+     "count_of_our_top_nominee": 0,
+     "paired": {
+      "pairs": 60,
+      "d_share_budget": -45.69444444444444,
+      "d_share_budget_ci": [
+       -48.666666666666664,
+       -42.69444444444444
+      ],
+      "d_share_nonlost": -44.67979787023231,
+      "d_share_nonlost_ci": [
+       -47.52210512474208,
+       -41.820471743489215
+      ],
+      "d_pick": -0.09316776964183848,
+      "d_pick_ci": [
+       -0.20354454676580114,
+       0.02226357035587956
+      ],
+      "d_exploration_shortfall": 0.021010932035436653,
+      "d_exploration_shortfall_ci": [
+       -0.09136788977946254,
+       0.12519361715687458
+      ],
+      "d_selection_shortfall": 0.07215683760640183,
+      "d_selection_shortfall_ci": [
+       0.004064951293516087,
+       0.14050625277184092
+      ]
+     }
+    },
+    "Panel A0|gemini-2.5-flash": {
+     "n": 60,
+     "share_budget": 94.27777777777779,
+     "share_budget_ci": [
+      93.05555555555556,
+      95.33333333333334
+     ],
+     "share_nonlost": 94.62327402108694,
+     "share_nonlost_ci": [
+      93.56104890611489,
+      95.54370421431082
+     ],
+     "pick": 7.704719905966513,
+     "pick_ci": [
+      7.684173313902752,
+      7.726137921584677
+     ],
+     "exploration_shortfall": 1.047058591574449,
+     "selection_shortfall": 0.01022150245903779,
+     "distinct": 3.05,
+     "lost_rejection": 0.16666666666666666,
+     "lost_rounds": 0.06666666666666667,
+     "lost_cap": 0,
+     "campaigns_over_lost_round_limit": 0,
+     "nominee_one_reading": 0.0,
+     "nominee_highest_single": 0.95,
+     "top_nominee": "GDIC",
+     "top_nominee_count": 52,
+     "distinct_nominees": 5,
+     "label": "prompt differs only by the truthful re-ask line",
+     "count_of_our_top_nominee": 0,
+     "paired": {
+      "pairs": 60,
+      "d_share_budget": -50.16666666666667,
+      "d_share_budget_ci": [
+       -52.77777777777778,
+       -47.611111111111114
+      ],
+      "d_share_nonlost": -48.90299668404065,
+      "d_share_nonlost_ci": [
+       -51.55347212643526,
+       -46.27500087941812
+      ],
+      "d_pick": -0.03254174474562057,
+      "d_pick_ci": [
+       -0.12311117626296574,
+       0.05815239387255982
+      ],
+      "d_exploration_shortfall": -0.11706507356843182,
+      "d_exploration_shortfall_ci": [
+       -0.19617503813901005,
+       -0.041958963936416405
+      ],
+      "d_selection_shortfall": 0.1496068183140524,
+      "d_selection_shortfall_ci": [
+       0.09860091739340045,
+       0.20398859687291934
+      ]
+     }
+    },
+    "Panel c|claude-opus-4.7": {
+     "n": 40,
+     "share_budget": 69.04166666666667,
+     "share_budget_ci": [
+      67.0,
+      70.95833333333333
+     ],
+     "share_nonlost": 72.31494476763712,
+     "share_nonlost_ci": [
+      70.33527036862858,
+      74.19062585027409
+     ],
+     "pick": 7.5157167266589155,
+     "pick_ci": [
+      7.436407245085422,
+      7.600160289035051
+     ],
+     "exploration_shortfall": 1.136709201545968,
+     "selection_shortfall": 0.10957407179511706,
+     "distinct": 14,
+     "lost_rejection": 2.725,
+     "lost_rounds": 0,
+     "lost_cap": 0,
+     "campaigns_over_lost_round_limit": 0,
+     "nominee_one_reading": 0.0,
+     "nominee_highest_single": 0.95,
+     "top_nominee": "GDKF",
+     "top_nominee_count": 5,
+     "distinct_nominees": 26,
+     "label": "prompt differs only by the truthful re-ask line; medium effort",
+     "count_of_our_top_nominee": 0,
+     "paired": {
+      "pairs": 40,
+      "d_share_budget": -24.875,
+      "d_share_budget_ci": [
+       -28.083333333333336,
+       -21.708333333333336
+      ],
+      "d_share_nonlost": -26.69179348145982,
+      "d_share_nonlost_ci": [
+       -30.02825935212402,
+       -23.444192938414275
+      ],
+      "d_pick": 0.10684215024228647,
+      "d_pick_ci": [
+       0.001667541104393555,
+       0.21506705899765904
+      ],
+      "d_exploration_shortfall": -0.15430373296357497,
+      "d_exploration_shortfall_ci": [
+       -0.2602046713688561,
+       -0.05689100351606213
+      ],
+      "d_selection_shortfall": 0.04746158272128851,
+      "d_selection_shortfall_ci": [
+       -0.02514687786463643,
+       0.1232093654481408
+      ]
+     }
+    },
+    "Panel c|gemini-2.5-flash": {
+     "n": 35,
+     "share_budget": 81.80952380952381,
+     "share_budget_ci": [
+      79.57142857142857,
+      84.0
+     ],
+     "share_nonlost": 82.4943323910511,
+     "share_nonlost_ci": [
+      80.40197680474878,
+      84.52646143203044
+     ],
+     "pick": 7.4261288455089645,
+     "pick_ci": [
+      7.336993705019565,
+      7.5178777513430335
+     ],
+     "exploration_shortfall": 1.2317991924392522,
+     "selection_shortfall": 0.10407196205178393,
+     "distinct": 10.085714285714285,
+     "lost_rejection": 0.2857142857142857,
+     "lost_rounds": 0.22857142857142856,
+     "lost_cap": 0,
+     "campaigns_over_lost_round_limit": 0,
+     "nominee_one_reading": 0.02857142857142857,
+     "nominee_highest_single": 0.6857142857142857,
+     "top_nominee": "GDKF",
+     "top_nominee_count": 10,
+     "distinct_nominees": 16,
+     "label": "prompt differs only by the truthful re-ask line; medium effort",
+     "count_of_our_top_nominee": 0,
+     "paired": {
+      "pairs": 35,
+      "d_share_budget": -37.333333333333336,
+      "d_share_budget_ci": [
+       -41.142857142857146,
+       -33.66666666666667
+      ],
+      "d_share_nonlost": -36.459955677941466,
+      "d_share_nonlost_ci": [
+       -40.09210421211933,
+       -33.0483850977912
+      ],
+      "d_pick": 0.15891563238897666,
+      "d_pick_ci": [
+       0.010300444692583862,
+       0.303880737740518
+      ],
+      "d_exploration_shortfall": -0.21567249800254554,
+      "d_exploration_shortfall_ci": [
+       -0.31873536810627906,
+       -0.11095316351590576
+      ],
+      "d_selection_shortfall": 0.056756865613568866,
+      "d_selection_shortfall_ci": [
+       -0.03536202467628277,
+       0.14472830520871588
+      ]
+     }
+    }
+   },
+   "campaigns": [
+    {
+     "seed": 300000,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 55.0,
+     "share_nonlost": 56.89655172413793,
+     "pick": 8.168353863289436,
+     "nominee": "HAJF",
+     "lost": 2
+    },
+    {
+     "seed": 300001,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 21.666666666666668,
+     "share_nonlost": 22.80701754385965,
+     "pick": 8.40119255053439,
+     "nominee": "GAJN",
+     "lost": 3
+    },
+    {
+     "seed": 300002,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 46.666666666666664,
+     "share_nonlost": 47.45762711864407,
+     "pick": 7.169482211687616,
+     "nominee": "GDAN",
+     "lost": 1
+    },
+    {
+     "seed": 300003,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 41.666666666666664,
+     "share_nonlost": 42.3728813559322,
+     "pick": 7.6372291549083355,
+     "nominee": "MBAF",
+     "lost": 1
+    },
+    {
+     "seed": 300004,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 60.0,
+     "share_nonlost": 62.06896551724138,
+     "pick": 8.025438853837349,
+     "nominee": "GAJF",
+     "lost": 2
+    },
+    {
+     "seed": 300005,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 43.333333333333336,
+     "share_nonlost": 47.27272727272727,
+     "pick": 7.320150931559056,
+     "nominee": "GDKF",
+     "lost": 5
+    },
+    {
+     "seed": 300006,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 51.666666666666664,
+     "share_nonlost": 53.44827586206897,
+     "pick": 7.320150931559056,
+     "nominee": "GDKF",
+     "lost": 2
+    },
+    {
+     "seed": 300007,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 60.0,
+     "share_nonlost": 61.016949152542374,
+     "pick": 7.750779972812642,
+     "nominee": "GQKF",
+     "lost": 1
+    },
+    {
+     "seed": 300008,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 46.666666666666664,
+     "share_nonlost": 47.45762711864407,
+     "pick": 7.750779972812642,
+     "nominee": "GQKF",
+     "lost": 1
+    },
+    {
+     "seed": 300009,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 41.666666666666664,
+     "share_nonlost": 44.642857142857146,
+     "pick": 7.651343532822101,
+     "nominee": "GDON",
+     "lost": 4
+    },
+    {
+     "seed": 300010,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 35.0,
+     "share_nonlost": 36.206896551724135,
+     "pick": 7.763182334921698,
+     "nominee": "GNBF",
+     "lost": 2
+    },
+    {
+     "seed": 300011,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 46.666666666666664,
+     "share_nonlost": 49.12280701754386,
+     "pick": 7.233209456903531,
+     "nominee": "GDAF",
+     "lost": 3
+    },
+    {
+     "seed": 300012,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 38.333333333333336,
+     "share_nonlost": 38.983050847457626,
+     "pick": 8.40119255053439,
+     "nominee": "GAJN",
+     "lost": 1
+    },
+    {
+     "seed": 300013,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 36.666666666666664,
+     "share_nonlost": 37.93103448275862,
+     "pick": 7.750779972812642,
+     "nominee": "GQKF",
+     "lost": 2
+    },
+    {
+     "seed": 300014,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 51.666666666666664,
+     "share_nonlost": 54.3859649122807,
+     "pick": 7.144529393201546,
+     "nominee": "GADF",
+     "lost": 3
+    },
+    {
+     "seed": 300015,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 46.666666666666664,
+     "share_nonlost": 47.45762711864407,
+     "pick": 7.4585934268310465,
+     "nominee": "MDKF",
+     "lost": 1
+    },
+    {
+     "seed": 300016,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 55.0,
+     "share_nonlost": 55.0,
+     "pick": 7.43799960789275,
+     "nominee": "GHAF",
+     "lost": 0
+    },
+    {
+     "seed": 300017,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 33.333333333333336,
+     "share_nonlost": 33.898305084745765,
+     "pick": 8.040579943148877,
+     "nominee": "GDHS",
+     "lost": 1
+    },
+    {
+     "seed": 300018,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 41.666666666666664,
+     "share_nonlost": 43.85964912280702,
+     "pick": 7.610227090073895,
+     "nominee": "GKON",
+     "lost": 3
+    },
+    {
+     "seed": 300019,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 50.0,
+     "share_nonlost": 51.724137931034484,
+     "pick": 7.585385326956738,
+     "nominee": "GPBF",
+     "lost": 2
+    },
+    {
+     "seed": 300020,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 38.333333333333336,
+     "share_nonlost": 40.35087719298246,
+     "pick": 7.278835393118603,
+     "nominee": "GDDF",
+     "lost": 3
+    },
+    {
+     "seed": 300021,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 50.0,
+     "share_nonlost": 50.0,
+     "pick": 7.816394221379916,
+     "nominee": "GKMF",
+     "lost": 0
+    },
+    {
+     "seed": 300022,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 46.666666666666664,
+     "share_nonlost": 47.45762711864407,
+     "pick": 7.320150931559056,
+     "nominee": "GDKF",
+     "lost": 1
+    },
+    {
+     "seed": 300023,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 28.333333333333332,
+     "share_nonlost": 29.82456140350877,
+     "pick": 8.204321405171946,
+     "nominee": "RRIM",
+     "lost": 3
+    },
+    {
+     "seed": 300024,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 50.0,
+     "share_nonlost": 50.847457627118644,
+     "pick": 7.196595596396586,
+     "nominee": "GDPF",
+     "lost": 1
+    },
+    {
+     "seed": 300025,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 38.333333333333336,
+     "share_nonlost": 41.81818181818182,
+     "pick": 6.806696486912701,
+     "nominee": "TDAF",
+     "lost": 5
+    },
+    {
+     "seed": 300026,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 43.333333333333336,
+     "share_nonlost": 44.827586206896555,
+     "pick": 7.43799960789275,
+     "nominee": "GHAF",
+     "lost": 2
+    },
+    {
+     "seed": 300027,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 58.333333333333336,
+     "share_nonlost": 59.32203389830509,
+     "pick": 7.651343532822101,
+     "nominee": "GDON",
+     "lost": 1
+    },
+    {
+     "seed": 300028,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 43.333333333333336,
+     "share_nonlost": 46.42857142857143,
+     "pick": 7.386663845521595,
+     "nominee": "GDBF",
+     "lost": 4
+    },
+    {
+     "seed": 300029,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 51.666666666666664,
+     "share_nonlost": 52.54237288135593,
+     "pick": 7.750779972812642,
+     "nominee": "GQKF",
+     "lost": 1
+    },
+    {
+     "seed": 300030,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 56.666666666666664,
+     "share_nonlost": 59.64912280701754,
+     "pick": 7.750779972812642,
+     "nominee": "GQKF",
+     "lost": 3
+    },
+    {
+     "seed": 300031,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 53.333333333333336,
+     "share_nonlost": 54.23728813559322,
+     "pick": 8.040579943148877,
+     "nominee": "GDHS",
+     "lost": 1
+    },
+    {
+     "seed": 300032,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 31.666666666666668,
+     "share_nonlost": 32.758620689655174,
+     "pick": 7.320150931559056,
+     "nominee": "GDKF",
+     "lost": 2
+    },
+    {
+     "seed": 300033,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 50.0,
+     "share_nonlost": 50.847457627118644,
+     "pick": 7.733217092483528,
+     "nominee": "GDTE",
+     "lost": 1
+    },
+    {
+     "seed": 300034,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 40.0,
+     "share_nonlost": 40.67796610169491,
+     "pick": 8.168353863289436,
+     "nominee": "HAJF",
+     "lost": 1
+    },
+    {
+     "seed": 300035,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 33.333333333333336,
+     "share_nonlost": 33.898305084745765,
+     "pick": 7.585385326956738,
+     "nominee": "GPBF",
+     "lost": 1
+    },
+    {
+     "seed": 300036,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 41.666666666666664,
+     "share_nonlost": 42.3728813559322,
+     "pick": 7.423478460480312,
+     "nominee": "GDPL",
+     "lost": 1
+    },
+    {
+     "seed": 300037,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 28.333333333333332,
+     "share_nonlost": 29.310344827586206,
+     "pick": 7.278835393118603,
+     "nominee": "GDDF",
+     "lost": 2
+    },
+    {
+     "seed": 300038,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 26.666666666666668,
+     "share_nonlost": 28.571428571428573,
+     "pick": 7.713934131120659,
+     "nominee": "THAF",
+     "lost": 4
+    },
+    {
+     "seed": 300039,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 53.333333333333336,
+     "share_nonlost": 55.172413793103445,
+     "pick": 7.4172778883905925,
+     "nominee": "MDDF",
+     "lost": 2
+    },
+    {
+     "seed": 300040,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 36.666666666666664,
+     "share_nonlost": 37.93103448275862,
+     "pick": 8.120854599550789,
+     "nominee": "GCHS",
+     "lost": 2
+    },
+    {
+     "seed": 300041,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 43.333333333333336,
+     "share_nonlost": 46.42857142857143,
+     "pick": 8.168353863289436,
+     "nominee": "HAJF",
+     "lost": 4
+    },
+    {
+     "seed": 300042,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 20.0,
+     "share_nonlost": 22.22222222222222,
+     "pick": 8.366358432864248,
+     "nominee": "MQKF",
+     "lost": 6
+    },
+    {
+     "seed": 300043,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 51.666666666666664,
+     "share_nonlost": 57.407407407407405,
+     "pick": 7.278835393118603,
+     "nominee": "GDDF",
+     "lost": 6
+    },
+    {
+     "seed": 300044,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 41.666666666666664,
+     "share_nonlost": 42.3728813559322,
+     "pick": 7.619165487434239,
+     "nominee": "MNBF",
+     "lost": 1
+    },
+    {
+     "seed": 300045,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 40.0,
+     "share_nonlost": 42.10526315789474,
+     "pick": 7.825047864223072,
+     "nominee": "LGBF",
+     "lost": 3
+    },
+    {
+     "seed": 300046,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 33.333333333333336,
+     "share_nonlost": 34.48275862068966,
+     "pick": 8.40119255053439,
+     "nominee": "GAJN",
+     "lost": 2
+    },
+    {
+     "seed": 300047,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 50.0,
+     "share_nonlost": 50.0,
+     "pick": 7.585385326956738,
+     "nominee": "GPBF",
+     "lost": 0
+    },
+    {
+     "seed": 300048,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 40.0,
+     "share_nonlost": 41.37931034482759,
+     "pick": 8.040579943148877,
+     "nominee": "GDHS",
+     "lost": 2
+    },
+    {
+     "seed": 300049,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 60.0,
+     "share_nonlost": 62.06896551724138,
+     "pick": 7.520872656023177,
+     "nominee": "GKPN",
+     "lost": 2
+    },
+    {
+     "seed": 300050,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 31.666666666666668,
+     "share_nonlost": 32.20338983050848,
+     "pick": 7.951326909604183,
+     "nominee": "GDIS",
+     "lost": 1
+    },
+    {
+     "seed": 300051,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 73.33333333333333,
+     "share_nonlost": 74.57627118644068,
+     "pick": 7.939702193330109,
+     "nominee": "GDIM",
+     "lost": 1
+    },
+    {
+     "seed": 300052,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 60.0,
+     "share_nonlost": 61.016949152542374,
+     "pick": 7.386663845521595,
+     "nominee": "GDBF",
+     "lost": 1
+    },
+    {
+     "seed": 300053,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 36.666666666666664,
+     "share_nonlost": 37.93103448275862,
+     "pick": 7.289024651109434,
+     "nominee": "MDOF",
+     "lost": 2
+    },
+    {
+     "seed": 300054,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 50.0,
+     "share_nonlost": 51.724137931034484,
+     "pick": 7.951326909604183,
+     "nominee": "GDIS",
+     "lost": 2
+    },
+    {
+     "seed": 300055,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 55.0,
+     "share_nonlost": 57.89473684210526,
+     "pick": 7.686542013164922,
+     "nominee": "GDIC",
+     "lost": 3
+    },
+    {
+     "seed": 300056,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 28.333333333333332,
+     "share_nonlost": 28.8135593220339,
+     "pick": 8.025438853837349,
+     "nominee": "GAJF",
+     "lost": 1
+    },
+    {
+     "seed": 300057,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 40.0,
+     "share_nonlost": 41.37931034482759,
+     "pick": 7.4172778883905925,
+     "nominee": "MDDF",
+     "lost": 2
+    },
+    {
+     "seed": 300058,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 41.666666666666664,
+     "share_nonlost": 48.07692307692308,
+     "pick": 7.437107327108975,
+     "nominee": "GKAF",
+     "lost": 8
+    },
+    {
+     "seed": 300059,
+     "source": "gen_0an7_sol_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 46.666666666666664,
+     "share_nonlost": 48.275862068965516,
+     "pick": 7.4172778883905925,
+     "nominee": "MDDF",
+     "lost": 2
+    }
+   ],
+   "seeds_distinct": true
+  },
+  "sol|gb1_blind": {
+   "n": 30,
+   "share_budget": 19.444444444444443,
+   "share_budget_ci": [
+    17.555555555555557,
+    21.555555555555557
+   ],
+   "share_nonlost": 19.83116592377105,
+   "share_nonlost_ci": [
+    17.87760312528838,
+    21.949523379850366
+   ],
+   "pick": 6.3624120153632235,
+   "pick_ci": [
+    6.158674874605576,
+    6.606871827553295
+   ],
+   "exploration_shortfall": 2.326485435681062,
+   "selection_shortfall": 0.07310254895571498,
+   "distinct": 45.8,
+   "lost_rejection": 1.2333333333333334,
+   "lost_rounds": 0,
+   "lost_cap": 0,
+   "campaigns_over_lost_round_limit": 0,
+   "nominee_one_reading": 0.5,
+   "nominee_highest_single": 0.9666666666666667,
+   "top_nominee": "FSRM",
+   "top_nominee_count": 12,
+   "distinct_nominees": 10,
+   "pick_minus_informed": 0.3441713599835312,
+   "pick_minus_guessing": 0.27564715763101777,
+   "abandoned": [],
+   "comparators": {
+    "0am Panel R|claude-opus-4.7": {
+     "n": 60,
+     "share_budget": 63.30555555555556,
+     "share_budget_ci": [
+      61.166666666666664,
+      65.38888888888889
+     ],
+     "share_nonlost": 64.11833855799372,
+     "share_nonlost_ci": [
+      62.04779531138386,
+      66.12620949412299
+     ],
+     "pick": 4.775322704844743,
+     "pick_ci": [
+      4.413072440952069,
+      5.121963499935864
+     ],
+     "exploration_shortfall": 3.9741741964443684,
+     "selection_shortfall": 0.012503098710889468,
+     "distinct": 18.6,
+     "lost_rejection": 0.65,
+     "lost_rounds": 0.13333333333333333,
+     "lost_cap": 0,
+     "campaigns_over_lost_round_limit": 0,
+     "nominee_one_reading": 0.0,
+     "nominee_highest_single": 0.95,
+     "top_nominee": "FITJ",
+     "top_nominee_count": 14,
+     "distinct_nominees": 24,
+     "label": "same prompt options",
+     "count_of_our_top_nominee": 0,
+     "paired": {
+      "pairs": 30,
+      "d_share_budget": -42.22222222222222,
+      "d_share_budget_ci": [
+       -46.166666666666664,
+       -38.11111111111111
+      ],
+      "d_share_nonlost": -42.70031339306771,
+      "d_share_nonlost_ci": [
+       -46.5898196933987,
+       -38.6987561930347
+      ],
+      "d_pick": 1.6135725568739947,
+      "d_pick_ci": [
+       1.037038091258171,
+       2.21551404946139
+      ],
+      "d_exploration_shortfall": -1.6616689084079306,
+      "d_exploration_shortfall_ci": [
+       -2.2433922263634267,
+       -1.1075992161183013
+      ],
+      "d_selection_shortfall": 0.04809635153393606,
+      "d_selection_shortfall_ci": [
+       -0.019114668187833347,
+       0.13165155654278213
+      ]
+     }
+    },
+    "0am Panel R|deepseek-chat-v3.1": {
+     "n": 60,
+     "share_budget": 95.75,
+     "share_budget_ci": [
+      95.30555555555556,
+      96.16666666666667
+     ],
+     "share_nonlost": 95.75,
+     "share_nonlost_ci": [
+      95.30555555555556,
+      96.16666666666667
+     ],
+     "pick": 0.9022408122945611,
+     "pick_ci": [
+      0.7586443639896356,
+      1.0967817877938273
+     ],
+     "exploration_shortfall": 7.859670817236221,
+     "selection_shortfall": 8.837046921783553e-05,
+     "distinct": 2.4833333333333334,
+     "lost_rejection": 0,
+     "lost_rounds": 0,
+     "lost_cap": 0,
+     "campaigns_over_lost_round_limit": 0,
+     "nominee_one_reading": 0.0,
+     "nominee_highest_single": 1.0,
+     "top_nominee": "CLTP",
+     "top_nominee_count": 33,
+     "distinct_nominees": 6,
+     "label": "same prompt options",
+     "count_of_our_top_nominee": 0,
+     "paired": {
+      "pairs": 30,
+      "d_share_budget": -76.11111111111111,
+      "d_share_budget_ci": [
+       -78.27777777777777,
+       -73.72222222222223
+      ],
+      "d_share_nonlost": -75.7243896317845,
+      "d_share_nonlost_ci": [
+       -77.91877047967668,
+       -73.3887983156801
+      ],
+      "d_pick": 5.449568004968537,
+      "d_pick_ci": [
+       5.096810753536326,
+       5.766288167754205
+      ],
+      "d_exploration_shortfall": -5.522493812985816,
+      "d_exploration_shortfall_ci": [
+       -5.828199070635812,
+       -5.186895878311009
+      ],
+      "d_selection_shortfall": 0.07292580801727931,
+      "d_selection_shortfall_ci": [
+       0.017262666587568424,
+       0.14784078038479184
+      ]
+     }
+    },
+    "0am Panel R|gemini-2.5-flash": {
+     "n": 60,
+     "share_budget": 92.19444444444444,
+     "share_budget_ci": [
+      91.25,
+      92.94444444444444
+     ],
+     "share_nonlost": 92.3829365079365,
+     "share_nonlost_ci": [
+      91.64682539682539,
+      92.98015873015872
+     ],
+     "pick": 1.2172166501365886,
+     "pick_ci": [
+      1.0352504082740484,
+      1.447800477925357
+     ],
+     "exploration_shortfall": 7.543439950335874,
+     "selection_shortfall": 0.0013433995275378586,
+     "distinct": 4,
+     "lost_rejection": 0.13333333333333333,
+     "lost_rounds": 0,
+     "lost_cap": 0,
+     "campaigns_over_lost_round_limit": 0,
+     "nominee_one_reading": 0.0,
+     "nominee_highest_single": 1.0,
+     "top_nominee": "CSTL",
+     "top_nominee_count": 53,
+     "distinct_nominees": 6,
+     "label": "same prompt options",
+     "count_of_our_top_nominee": 0,
+     "paired": {
+      "pairs": 30,
+      "d_share_budget": -73.11111111111111,
+      "d_share_budget_ci": [
+       -75.33333333333333,
+       -70.72222222222221
+      ],
+      "d_share_nonlost": -72.7243896317845,
+      "d_share_nonlost_ci": [
+       -74.868085370254,
+       -70.36343830548512
+      ],
+      "d_pick": 5.157604014425862,
+      "d_pick_ci": [
+       4.810746041976674,
+       5.482596699973556
+      ],
+      "d_exploration_shortfall": -5.228019764326501,
+      "d_exploration_shortfall_ci": [
+       -5.552449116620872,
+       -4.8711924108161675
+      ],
+      "d_selection_shortfall": 0.07041574990063927,
+      "d_selection_shortfall_ci": [
+       0.01389311983366932,
+       0.14638582907517267
+      ]
+     }
+    }
+   },
+   "campaigns": [
+    {
+     "seed": 11000000,
+     "source": "gen_0an7_sol_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 21.666666666666668,
+     "share_nonlost": 22.80701754385965,
+     "pick": 5.890949769144189,
+     "nominee": "JKTJ",
+     "lost": 3
+    },
+    {
+     "seed": 11000001,
+     "source": "gen_0an7_sol_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 15.0,
+     "share_nonlost": 15.517241379310345,
+     "pick": 7.228688387169715,
+     "nominee": "JSTJ",
+     "lost": 2
+    },
+    {
+     "seed": 11000002,
+     "source": "gen_0an7_sol_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 21.666666666666668,
+     "share_nonlost": 22.033898305084747,
+     "pick": 6.274971091147244,
+     "nominee": "FSRM",
+     "lost": 1
+    },
+    {
+     "seed": 11000003,
+     "source": "gen_0an7_sol_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 18.333333333333332,
+     "share_nonlost": 18.333333333333332,
+     "pick": 6.274971091147244,
+     "nominee": "FSRM",
+     "lost": 0
+    },
+    {
+     "seed": 11000004,
+     "source": "gen_0an7_sol_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 15.0,
+     "share_nonlost": 15.254237288135593,
+     "pick": 5.841606206682911,
+     "nominee": "FSRJ",
+     "lost": 1
+    },
+    {
+     "seed": 11000005,
+     "source": "gen_0an7_sol_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 11.666666666666666,
+     "share_nonlost": 11.864406779661017,
+     "pick": 6.274971091147244,
+     "nominee": "FSRM",
+     "lost": 1
+    },
+    {
+     "seed": 11000006,
+     "source": "gen_0an7_sol_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 25.0,
+     "share_nonlost": 25.0,
+     "pick": 6.274971091147244,
+     "nominee": "FSRM",
+     "lost": 0
+    },
+    {
+     "seed": 11000007,
+     "source": "gen_0an7_sol_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 20.0,
+     "share_nonlost": 20.338983050847457,
+     "pick": 6.0442608363054555,
+     "nominee": "FITJ",
+     "lost": 1
+    },
+    {
+     "seed": 11000008,
+     "source": "gen_0an7_sol_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 13.333333333333334,
+     "share_nonlost": 14.035087719298245,
+     "pick": 5.890949769144189,
+     "nominee": "JKTJ",
+     "lost": 3
+    },
+    {
+     "seed": 11000009,
+     "source": "gen_0an7_sol_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 23.333333333333332,
+     "share_nonlost": 24.137931034482758,
+     "pick": 7.282361314610745,
+     "nominee": "FSTJ",
+     "lost": 2
+    },
+    {
+     "seed": 11000010,
+     "source": "gen_0an7_sol_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 25.0,
+     "share_nonlost": 25.0,
+     "pick": 5.593401146646976,
+     "nominee": "FKRM",
+     "lost": 0
+    },
+    {
+     "seed": 11000011,
+     "source": "gen_0an7_sol_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 18.333333333333332,
+     "share_nonlost": 18.64406779661017,
+     "pick": 7.228688387169715,
+     "nominee": "JSTJ",
+     "lost": 1
+    },
+    {
+     "seed": 11000012,
+     "source": "gen_0an7_sol_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 16.666666666666668,
+     "share_nonlost": 16.666666666666668,
+     "pick": 5.890949769144189,
+     "nominee": "JKTJ",
+     "lost": 0
+    },
+    {
+     "seed": 11000013,
+     "source": "gen_0an7_sol_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 16.666666666666668,
+     "share_nonlost": 16.666666666666668,
+     "pick": 6.274971091147244,
+     "nominee": "FSRM",
+     "lost": 0
+    },
+    {
+     "seed": 11000014,
+     "source": "gen_0an7_sol_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 21.666666666666668,
+     "share_nonlost": 21.666666666666668,
+     "pick": 6.495800496519205,
+     "nominee": "BITJ",
+     "lost": 0
+    },
+    {
+     "seed": 11000015,
+     "source": "gen_0an7_sol_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 31.666666666666668,
+     "share_nonlost": 31.666666666666668,
+     "pick": 6.0442608363054555,
+     "nominee": "FITJ",
+     "lost": 0
+    },
+    {
+     "seed": 11000016,
+     "source": "gen_0an7_sol_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 15.0,
+     "share_nonlost": 15.517241379310345,
+     "pick": 6.274971091147244,
+     "nominee": "FSRM",
+     "lost": 2
+    },
+    {
+     "seed": 11000017,
+     "source": "gen_0an7_sol_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 18.333333333333332,
+     "share_nonlost": 18.64406779661017,
+     "pick": 6.274971091147244,
+     "nominee": "FSRM",
+     "lost": 1
+    },
+    {
+     "seed": 11000018,
+     "source": "gen_0an7_sol_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 25.0,
+     "share_nonlost": 25.862068965517242,
+     "pick": 6.274971091147244,
+     "nominee": "FSRM",
+     "lost": 2
+    },
+    {
+     "seed": 11000019,
+     "source": "gen_0an7_sol_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 16.666666666666668,
+     "share_nonlost": 17.857142857142858,
+     "pick": 6.0442608363054555,
+     "nominee": "FITJ",
+     "lost": 4
+    },
+    {
+     "seed": 11000020,
+     "source": "gen_0an7_sol_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 36.666666666666664,
+     "share_nonlost": 37.28813559322034,
+     "pick": 6.0442608363054555,
+     "nominee": "FITJ",
+     "lost": 1
+    },
+    {
+     "seed": 11000021,
+     "source": "gen_0an7_sol_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 13.333333333333334,
+     "share_nonlost": 13.559322033898304,
+     "pick": 6.274971091147244,
+     "nominee": "FSRM",
+     "lost": 1
+    },
+    {
+     "seed": 11000022,
+     "source": "gen_0an7_sol_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 18.333333333333332,
+     "share_nonlost": 18.96551724137931,
+     "pick": 6.274971091147244,
+     "nominee": "FSRM",
+     "lost": 2
+    },
+    {
+     "seed": 11000023,
+     "source": "gen_0an7_sol_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 21.666666666666668,
+     "share_nonlost": 22.033898305084747,
+     "pick": 6.274971091147244,
+     "nominee": "FSRM",
+     "lost": 1
+    },
+    {
+     "seed": 11000024,
+     "source": "gen_0an7_sol_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 8.333333333333334,
+     "share_nonlost": 8.620689655172415,
+     "pick": 8.762,
+     "nominee": "CSQJ",
+     "lost": 2
+    },
+    {
+     "seed": 11000025,
+     "source": "gen_0an7_sol_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 20.0,
+     "share_nonlost": 20.689655172413794,
+     "pick": 7.282361314610745,
+     "nominee": "FSTJ",
+     "lost": 2
+    },
+    {
+     "seed": 11000026,
+     "source": "gen_0an7_sol_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 15.0,
+     "share_nonlost": 15.0,
+     "pick": 5.46784612824071,
+     "nominee": "FNRJ",
+     "lost": 0
+    },
+    {
+     "seed": 11000027,
+     "source": "gen_0an7_sol_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 23.333333333333332,
+     "share_nonlost": 23.333333333333332,
+     "pick": 6.0442608363054555,
+     "nominee": "FITJ",
+     "lost": 0
+    },
+    {
+     "seed": 11000028,
+     "source": "gen_0an7_sol_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 18.333333333333332,
+     "share_nonlost": 18.96551724137931,
+     "pick": 6.274971091147244,
+     "nominee": "FSRM",
+     "lost": 2
+    },
+    {
+     "seed": 11000029,
+     "source": "gen_0an7_sol_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 18.333333333333332,
+     "share_nonlost": 18.96551724137931,
+     "pick": 6.495800496519205,
+     "nominee": "BITJ",
+     "lost": 2
+    }
+   ],
+   "seeds_distinct": true
+  },
+  "sol|gb1_menu": {
+   "n": 30,
+   "share_budget": 17.27777777777778,
+   "share_budget_ci": [
+    15.38888888888889,
+    19.27777777777778
+   ],
+   "share_nonlost": 17.831462628258233,
+   "share_nonlost_ci": [
+    15.891933888704013,
+    19.848685209355434
+   ],
+   "pick": 6.116617017117974,
+   "pick_ci": [
+    5.572397385655825,
+    6.656109584119181
+   ],
+   "exploration_shortfall": 2.5529834351601326,
+   "selection_shortfall": 0.09239954772189364,
+   "distinct": 45.833333333333336,
+   "lost_rejection": 1.8666666666666667,
+   "lost_rounds": 0,
+   "lost_cap": 0,
+   "campaigns_over_lost_round_limit": 0,
+   "nominee_one_reading": 0.7333333333333333,
+   "nominee_highest_single": 1.0,
+   "top_nominee": "FSTJ",
+   "top_nominee_count": 3,
+   "distinct_nominees": 21,
+   "pick_minus_informed": 0.09837636173828201,
+   "pick_minus_guessing": 0.029852159385768573,
+   "abandoned": [],
+   "comparators": {
+    "0an.6 Menu|claude-opus-4.7": {
+     "n": 30,
+     "share_budget": 47.166666666666664,
+     "share_budget_ci": [
+      44.111111111111114,
+      50.5
+     ],
+     "share_nonlost": 49.331126983628856,
+     "share_nonlost_ci": [
+      46.41322775662036,
+      52.56114562826038
+     ],
+     "pick": 5.0350813059971,
+     "pick_ci": [
+      4.54744445994471,
+      5.541016382402475
+     ],
+     "exploration_shortfall": 3.6967924158593464,
+     "selection_shortfall": 0.03012627814355507,
+     "distinct": 24.633333333333333,
+     "lost_rejection": 2.7333333333333334,
+     "lost_rounds": 0,
+     "lost_cap": 0,
+     "campaigns_over_lost_round_limit": 0,
+     "nominee_one_reading": 0.0,
+     "nominee_highest_single": 0.9333333333333333,
+     "top_nominee": "FSHD",
+     "top_nominee_count": 2,
+     "distinct_nominees": 29,
+     "label": "same prompt options",
+     "count_of_our_top_nominee": 1,
+     "paired": {
+      "pairs": 30,
+      "d_share_budget": -29.88888888888889,
+      "d_share_budget_ci": [
+       -33.77777777777778,
+       -26.055555555555557
+      ],
+      "d_share_nonlost": -31.499664355370623,
+      "d_share_nonlost_ci": [
+       -35.35449988953121,
+       -27.701952671079944
+      ],
+      "d_pick": 1.0815357111208752,
+      "d_pick_ci": [
+       0.32362957443402557,
+       1.783646791492949
+      ],
+      "d_exploration_shortfall": -1.1438089806992138,
+      "d_exploration_shortfall_ci": [
+       -1.870865886201093,
+       -0.3953301972526301
+      ],
+      "d_selection_shortfall": 0.062273269578338564,
+      "d_selection_shortfall_ci": [
+       -0.005989486814241948,
+       0.14138154340327666
+      ]
+     }
+    },
+    "0an.6 Menu|deepseek-chat-v3.1": {
+     "n": 60,
+     "share_budget": 59.25,
+     "share_budget_ci": [
+      57.05555555555556,
+      61.44444444444444
+     ],
+     "share_nonlost": 60.845321784660236,
+     "share_nonlost_ci": [
+      58.64052975836955,
+      62.94291610164303
+     ],
+     "pick": 4.49037658384188,
+     "pick_ci": [
+      4.08045823454144,
+      4.917226872443876
+     ],
+     "exploration_shortfall": 4.208763986706385,
+     "selection_shortfall": 0.0628594294517347,
+     "distinct": 19.7,
+     "lost_rejection": 1.6,
+     "lost_rounds": 0,
+     "lost_cap": 0,
+     "campaigns_over_lost_round_limit": 0,
+     "nominee_one_reading": 0.05,
+     "nominee_highest_single": 0.9,
+     "top_nominee": "CLOP",
+     "top_nominee_count": 3,
+     "distinct_nominees": 53,
+     "label": "same prompt options",
+     "count_of_our_top_nominee": 1,
+     "paired": {
+      "pairs": 30,
+      "d_share_budget": -41.666666666666664,
+      "d_share_budget_ci": [
+       -45.38888888888889,
+       -37.72222222222222
+      ],
+      "d_share_nonlost": -42.91323967795627,
+      "d_share_nonlost_ci": [
+       -46.538916806565766,
+       -39.11492441409388
+      ],
+      "d_pick": 1.3828537349756251,
+      "d_pick_ci": [
+       0.5508828451105219,
+       2.2078315436160447
+      ],
+      "d_exploration_shortfall": -1.4328409558978423,
+      "d_exploration_shortfall_ci": [
+       -2.243605133533623,
+       -0.6096747636693906
+      ],
+      "d_selection_shortfall": 0.04998722092221723,
+      "d_selection_shortfall_ci": [
+       -0.033149199965793234,
+       0.13493095982634695
+      ]
+     }
+    },
+    "0an.6 Menu|gemini-2.5-flash": {
+     "n": 60,
+     "share_budget": 54.083333333333336,
+     "share_budget_ci": [
+      51.52777777777778,
+      56.611111111111114
+     ],
+     "share_nonlost": 55.98334437576616,
+     "share_nonlost_ci": [
+      53.39235012005629,
+      58.49783343680607
+     ],
+     "pick": 4.830745543515375,
+     "pick_ci": [
+      4.419948091736129,
+      5.2544629344108955
+     ],
+     "exploration_shortfall": 3.907568735781367,
+     "selection_shortfall": 0.023685720703257983,
+     "distinct": 22.216666666666665,
+     "lost_rejection": 1.9333333333333333,
+     "lost_rounds": 0.13333333333333333,
+     "lost_cap": 0,
+     "campaigns_over_lost_round_limit": 0,
+     "nominee_one_reading": 0.03333333333333333,
+     "nominee_highest_single": 0.9,
+     "top_nominee": "LSQJ",
+     "top_nominee_count": 3,
+     "distinct_nominees": 52,
+     "label": "same prompt options",
+     "count_of_our_top_nominee": 1,
+     "paired": {
+      "pairs": 30,
+      "d_share_budget": -36.72222222222222,
+      "d_share_budget_ci": [
+       -40.333333333333336,
+       -32.94444444444444
+      ],
+      "d_share_nonlost": -37.83821087292216,
+      "d_share_nonlost_ci": [
+       -41.68518409943005,
+       -33.867456440190146
+      ],
+      "d_pick": 1.08726697903398,
+      "d_pick_ci": [
+       0.3330556555719719,
+       1.8739256929652417
+      ],
+      "d_exploration_shortfall": -1.160211398623544,
+      "d_exploration_shortfall_ci": [
+       -1.9223041072231082,
+       -0.41266560520832163
+      ],
+      "d_selection_shortfall": 0.07294441958956407,
+      "d_selection_shortfall_ci": [
+       0.00482872882443477,
+       0.15123741125251877
+      ]
+     }
+    }
+   },
+   "campaigns": [
+    {
+     "seed": 11000000,
+     "source": "gen_0an7_sol_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 16.666666666666668,
+     "share_nonlost": 18.181818181818183,
+     "pick": 7.312685060250311,
+     "nominee": "CSHD",
+     "lost": 5
+    },
+    {
+     "seed": 11000001,
+     "source": "gen_0an7_sol_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 18.333333333333332,
+     "share_nonlost": 18.64406779661017,
+     "pick": 5.242742800396315,
+     "nominee": "IIOL",
+     "lost": 1
+    },
+    {
+     "seed": 11000002,
+     "source": "gen_0an7_sol_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 15.0,
+     "share_nonlost": 15.254237288135593,
+     "pick": 3.755697173834176,
+     "nominee": "DSOP",
+     "lost": 1
+    },
+    {
+     "seed": 11000003,
+     "source": "gen_0an7_sol_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 13.333333333333334,
+     "share_nonlost": 13.559322033898304,
+     "pick": 7.282361314610745,
+     "nominee": "FSTJ",
+     "lost": 1
+    },
+    {
+     "seed": 11000004,
+     "source": "gen_0an7_sol_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 11.666666666666666,
+     "share_nonlost": 12.068965517241379,
+     "pick": 7.228688387169715,
+     "nominee": "JSTJ",
+     "lost": 2
+    },
+    {
+     "seed": 11000005,
+     "source": "gen_0an7_sol_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 8.333333333333334,
+     "share_nonlost": 8.771929824561404,
+     "pick": 8.762,
+     "nominee": "CSQJ",
+     "lost": 3
+    },
+    {
+     "seed": 11000006,
+     "source": "gen_0an7_sol_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 13.333333333333334,
+     "share_nonlost": 13.559322033898304,
+     "pick": 6.877976002097239,
+     "nominee": "FSHD",
+     "lost": 1
+    },
+    {
+     "seed": 11000007,
+     "source": "gen_0an7_sol_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 10.0,
+     "share_nonlost": 10.526315789473685,
+     "pick": 4.91631973553035,
+     "nominee": "FSID",
+     "lost": 3
+    },
+    {
+     "seed": 11000008,
+     "source": "gen_0an7_sol_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 15.0,
+     "share_nonlost": 15.517241379310345,
+     "pick": 8.762,
+     "nominee": "CSQJ",
+     "lost": 2
+    },
+    {
+     "seed": 11000009,
+     "source": "gen_0an7_sol_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 15.0,
+     "share_nonlost": 16.363636363636363,
+     "pick": 3.884366532107677,
+     "nominee": "JKTD",
+     "lost": 5
+    },
+    {
+     "seed": 11000010,
+     "source": "gen_0an7_sol_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 18.333333333333332,
+     "share_nonlost": 18.96551724137931,
+     "pick": 6.877976002097239,
+     "nominee": "FSHD",
+     "lost": 2
+    },
+    {
+     "seed": 11000011,
+     "source": "gen_0an7_sol_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 21.666666666666668,
+     "share_nonlost": 22.033898305084747,
+     "pick": 2.858424681077618,
+     "nominee": "JSTP",
+     "lost": 1
+    },
+    {
+     "seed": 11000012,
+     "source": "gen_0an7_sol_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 15.0,
+     "share_nonlost": 15.517241379310345,
+     "pick": 5.242742800396315,
+     "nominee": "IIOL",
+     "lost": 2
+    },
+    {
+     "seed": 11000013,
+     "source": "gen_0an7_sol_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 18.333333333333332,
+     "share_nonlost": 19.29824561403509,
+     "pick": 7.228688387169715,
+     "nominee": "JSTJ",
+     "lost": 3
+    },
+    {
+     "seed": 11000014,
+     "source": "gen_0an7_sol_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 20.0,
+     "share_nonlost": 22.641509433962263,
+     "pick": 6.274971091147244,
+     "nominee": "FSRM",
+     "lost": 7
+    },
+    {
+     "seed": 11000015,
+     "source": "gen_0an7_sol_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 23.333333333333332,
+     "share_nonlost": 23.728813559322035,
+     "pick": 8.762,
+     "nominee": "CSQJ",
+     "lost": 1
+    },
+    {
+     "seed": 11000016,
+     "source": "gen_0an7_sol_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 15.0,
+     "share_nonlost": 15.0,
+     "pick": 6.343522343596638,
+     "nominee": "FSRD",
+     "lost": 0
+    },
+    {
+     "seed": 11000017,
+     "source": "gen_0an7_sol_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 15.0,
+     "share_nonlost": 15.254237288135593,
+     "pick": 5.806677564453596,
+     "nominee": "TSTJ",
+     "lost": 1
+    },
+    {
+     "seed": 11000018,
+     "source": "gen_0an7_sol_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 10.0,
+     "share_nonlost": 10.169491525423728,
+     "pick": 4.952292269181392,
+     "nominee": "CSOJ",
+     "lost": 1
+    },
+    {
+     "seed": 11000019,
+     "source": "gen_0an7_sol_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 10.0,
+     "share_nonlost": 10.169491525423728,
+     "pick": 6.343522343596638,
+     "nominee": "FSRD",
+     "lost": 1
+    },
+    {
+     "seed": 11000020,
+     "source": "gen_0an7_sol_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 15.0,
+     "share_nonlost": 15.517241379310345,
+     "pick": 5.114360502227999,
+     "nominee": "FKHP",
+     "lost": 2
+    },
+    {
+     "seed": 11000021,
+     "source": "gen_0an7_sol_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 13.333333333333334,
+     "share_nonlost": 13.559322033898304,
+     "pick": 4.463660377357736,
+     "nominee": "NITD",
+     "lost": 1
+    },
+    {
+     "seed": 11000022,
+     "source": "gen_0an7_sol_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 21.666666666666668,
+     "share_nonlost": 23.636363636363637,
+     "pick": 7.282361314610745,
+     "nominee": "FSTJ",
+     "lost": 5
+    },
+    {
+     "seed": 11000023,
+     "source": "gen_0an7_sol_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 20.0,
+     "share_nonlost": 20.338983050847457,
+     "pick": 3.6960094842971665,
+     "nominee": "FITD",
+     "lost": 1
+    },
+    {
+     "seed": 11000024,
+     "source": "gen_0an7_sol_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 18.333333333333332,
+     "share_nonlost": 18.333333333333332,
+     "pick": 7.312685060250311,
+     "nominee": "CSHD",
+     "lost": 0
+    },
+    {
+     "seed": 11000025,
+     "source": "gen_0an7_sol_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 20.0,
+     "share_nonlost": 20.338983050847457,
+     "pick": 6.689755916073576,
+     "nominee": "FSHB",
+     "lost": 1
+    },
+    {
+     "seed": 11000026,
+     "source": "gen_0an7_sol_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 28.333333333333332,
+     "share_nonlost": 28.333333333333332,
+     "pick": 7.282361314610745,
+     "nominee": "FSTJ",
+     "lost": 0
+    },
+    {
+     "seed": 11000027,
+     "source": "gen_0an7_sol_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 26.666666666666668,
+     "share_nonlost": 27.11864406779661,
+     "pick": 5.0812639126097565,
+     "nominee": "DETJ",
+     "lost": 1
+    },
+    {
+     "seed": 11000028,
+     "source": "gen_0an7_sol_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 20.0,
+     "share_nonlost": 20.338983050847457,
+     "pick": 6.857570077182418,
+     "nominee": "FSHP",
+     "lost": 1
+    },
+    {
+     "seed": 11000029,
+     "source": "gen_0an7_sol_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 31.666666666666668,
+     "share_nonlost": 32.20338983050848,
+     "pick": 5.002828065605853,
+     "nominee": "NSOL",
+     "lost": 1
+    }
+   ],
+   "seeds_distinct": true
+  },
+  "gem|grid_blind": {
+   "n": 60,
+   "share_budget": 13.972222222222221,
+   "share_budget_ci": [
+    12.61111111111111,
+    15.333333333333334
+   ],
+   "share_nonlost": 17.484053233756754,
+   "share_nonlost_ci": [
+    15.851526713790472,
+    19.078913090001567
+   ],
+   "pick": 7.688163469286484,
+   "pick_ci": [
+    7.579706273226728,
+    7.802680618137678
+   ],
+   "exploration_shortfall": 0.6980499265580786,
+   "selection_shortfall": 0.37578660415543813,
+   "distinct": 36.5,
+   "lost_rejection": 12.25,
+   "lost_rounds": 0,
+   "lost_cap": 0,
+   "campaigns_over_lost_round_limit": 0,
+   "nominee_one_reading": 0.7833333333333333,
+   "nominee_highest_single": 0.9166666666666666,
+   "top_nominee": "GKAF",
+   "top_nominee_count": 3,
+   "distinct_nominees": 49,
+   "pick_minus_informed": -0.31113511975799923,
+   "pick_minus_guessing": -0.17770144560699297,
+   "abandoned": [
+    "Blind google/gemini-3.1-pro-preview seed 300040 FAILED: transport failure on the round call to google/gemini-3.1-pro-preview, campaign abandoned unwritten: provider reported finish_reason=error with HTTP 200 after 0 completion tokens; the call did not complete",
+    "Blind google/gemini-3.1-pro-preview seed 300044 FAILED: transport failure on the round call to google/gemini-3.1-pro-preview, campaign abandoned unwritten: provider reported finish_reason=error with HTTP 200 after 0 completion tokens; the call did not complete",
+    "Blind google/gemini-3.1-pro-preview seed 300022 FAILED: transport failure on the round call to google/gemini-3.1-pro-preview, campaign abandoned unwritten: empty content after 32019 completion tokens, reasoning text present (finish_reason=length): raise max_tokens or lower reasoning effort"
+   ],
+   "comparators": {
+    "0an F0 control|deepseek-chat-v3.1": {
+     "n": 120,
+     "share_budget": 90.97222222222223,
+     "share_budget_ci": [
+      90.29166666666667,
+      91.59722222222223
+     ],
+     "share_nonlost": 91.21106636231656,
+     "share_nonlost_ci": [
+      90.66327916834292,
+      91.7458938972556
+     ],
+     "pick": 7.760026260434459,
+     "pick_ci": [
+      7.715643593415874,
+      7.7989008304185266
+     ],
+     "exploration_shortfall": 0.9388703876368841,
+     "selection_shortfall": 0.06310335192865772,
+     "distinct": 4.9,
+     "lost_rejection": 0.1,
+     "lost_rounds": 0.06666666666666667,
+     "lost_cap": 0,
+     "campaigns_over_lost_round_limit": 0,
+     "nominee_one_reading": 0.0,
+     "nominee_highest_single": 0.75,
+     "top_nominee": "GDIJ",
+     "top_nominee_count": 44,
+     "distinct_nominees": 9,
+     "label": "same prompt options",
+     "count_of_our_top_nominee": 0,
+     "paired": {
+      "pairs": 60,
+      "d_share_budget": -76.77777777777777,
+      "d_share_budget_ci": [
+       -78.44444444444444,
+       -75.02777777777777
+      ],
+      "d_share_nonlost": -73.66548062081986,
+      "d_share_nonlost_ci": [
+       -75.46245602189178,
+       -71.88025680027697
+      ],
+      "d_pick": -0.07888125574783961,
+      "d_pick_ci": [
+       -0.21057616729234213,
+       0.05692022752318619
+      ],
+      "d_exploration_shortfall": -0.23031327960389064,
+      "d_exploration_shortfall_ci": [
+       -0.3442693157254605,
+       -0.11762704084488278
+      ],
+      "d_selection_shortfall": 0.30919453535173025,
+      "d_selection_shortfall_ci": [
+       0.21967457738838142,
+       0.4022767089162225
+      ]
+     }
+    },
+    "0an F0 control|gemini-2.5-flash": {
+     "n": 120,
+     "share_budget": 94.0,
+     "share_budget_ci": [
+      93.06944444444444,
+      94.86111111111111
+     ],
+     "share_nonlost": 94.61711257790047,
+     "share_nonlost_ci": [
+      93.83332721892045,
+      95.31205687559901
+     ],
+     "pick": 7.701341594622921,
+     "pick_ci": [
+      7.679961843869992,
+      7.720046933854755
+     ],
+     "exploration_shortfall": 1.044052701755752,
+     "selection_shortfall": 0.016605703621327777,
+     "distinct": 3.0416666666666665,
+     "lost_rejection": 0.14166666666666666,
+     "lost_rounds": 0.26666666666666666,
+     "lost_cap": 0,
+     "campaigns_over_lost_round_limit": 0,
+     "nominee_one_reading": 0.0,
+     "nominee_highest_single": 0.9416666666666667,
+     "top_nominee": "GDIC",
+     "top_nominee_count": 105,
+     "distinct_nominees": 8,
+     "label": "same prompt options",
+     "count_of_our_top_nominee": 0,
+     "paired": {
+      "pairs": 60,
+      "d_share_budget": -80.61111111111111,
+      "d_share_budget_ci": [
+       -82.25,
+       -78.94444444444444
+      ],
+      "d_share_nonlost": -77.4582962863251,
+      "d_share_nonlost_ci": [
+       -79.32271666678585,
+       -75.58733851969228
+      ],
+      "d_pick": -0.00499924184305421,
+      "d_pick_ci": [
+       -0.11433097431153089,
+       0.11031229673839639
+      ],
+      "d_exploration_shortfall": -0.35354024349929736,
+      "d_exploration_shortfall_ci": [
+       -0.45185110842498927,
+       -0.2552620336115494
+      ],
+      "d_selection_shortfall": 0.3585394853423516,
+      "d_selection_shortfall_ci": [
+       0.277089010816482,
+       0.44491120829460934
+      ]
+     }
+    },
+    "Panel A0|claude-opus-4.7": {
+     "n": 60,
+     "share_budget": 74.91666666666667,
+     "share_budget_ci": [
+      73.44444444444444,
+      76.30555555555556
+     ],
+     "share_nonlost": 77.38046785534404,
+     "share_nonlost_ci": [
+      76.04855736031718,
+      78.72093161503017
+     ],
+     "pick": 7.62119689719785,
+     "pick_ci": [
+      7.544155087096228,
+      7.695820706514429
+     ],
+     "exploration_shortfall": 1.0239061824457185,
+     "selection_shortfall": 0.11689692035643251,
+     "distinct": 11.35,
+     "lost_rejection": 1.9166666666666667,
+     "lost_rounds": 0,
+     "lost_cap": 0,
+     "campaigns_over_lost_round_limit": 0,
+     "nominee_one_reading": 0.0,
+     "nominee_highest_single": 0.8666666666666667,
+     "top_nominee": "GDIM",
+     "top_nominee_count": 13,
+     "distinct_nominees": 26,
+     "label": "prompt differs only by the truthful re-ask line",
+     "count_of_our_top_nominee": 0,
+     "paired": {
+      "pairs": 60,
+      "d_share_budget": -60.94444444444444,
+      "d_share_budget_ci": [
+       -62.888888888888886,
+       -58.94444444444444
+      ],
+      "d_share_nonlost": -59.89641462158729,
+      "d_share_nonlost_ci": [
+       -62.08517686579569,
+       -57.76731752126053
+      ],
+      "d_pick": 0.06696657208863431,
+      "d_pick_ci": [
+       -0.06438576274316633,
+       0.19977970740048392
+      ],
+      "d_exploration_shortfall": -0.3258562558876399,
+      "d_exploration_shortfall_ci": [
+       -0.45061763618480843,
+       -0.20170387452993993
+      ],
+      "d_selection_shortfall": 0.2588896837990056,
+      "d_selection_shortfall_ci": [
+       0.17685067878721902,
+       0.3461578552726587
+      ]
+     }
+    },
+    "Panel A0|deepseek-chat-v3.1": {
+     "n": 60,
+     "share_budget": 89.80555555555556,
+     "share_budget_ci": [
+      89.0,
+      90.58333333333333
+     ],
+     "share_nonlost": 90.4000752072786,
+     "share_nonlost_ci": [
+      89.80604776579352,
+      90.99031476997578
+     ],
+     "pick": 7.765345930862732,
+     "pick_ci": [
+      7.701552687143954,
+      7.823848941538406
+     ],
+     "exploration_shortfall": 0.9089825859705807,
+     "selection_shortfall": 0.08767148316668835,
+     "distinct": 5.333333333333333,
+     "lost_rejection": 0.13333333333333333,
+     "lost_rounds": 0.26666666666666666,
+     "lost_cap": 0,
+     "campaigns_over_lost_round_limit": 0,
+     "nominee_one_reading": 0.0,
+     "nominee_highest_single": 0.8333333333333334,
+     "top_nominee": "GDIS",
+     "top_nominee_count": 25,
+     "distinct_nominees": 10,
+     "label": "prompt differs only by the truthful re-ask line",
+     "count_of_our_top_nominee": 0,
+     "paired": {
+      "pairs": 60,
+      "d_share_budget": -75.83333333333333,
+      "d_share_budget_ci": [
+       -77.38888888888889,
+       -74.22222222222221
+      ],
+      "d_share_nonlost": -72.91602197352185,
+      "d_share_nonlost_ci": [
+       -74.60712680121188,
+       -71.21443812260362
+      ],
+      "d_pick": -0.07718246157624777,
+      "d_pick_ci": [
+       -0.2057827811670177,
+       0.05551242758701128
+      ],
+      "d_exploration_shortfall": -0.21093265941250197,
+      "d_exploration_shortfall_ci": [
+       -0.3188951065693561,
+       -0.10464775609384012
+      ],
+      "d_selection_shortfall": 0.28811512098874975,
+      "d_selection_shortfall_ci": [
+       0.19288695169482567,
+       0.3847793044857019
+      ]
+     }
+    },
+    "Panel A0|gemini-2.5-flash": {
+     "n": 60,
+     "share_budget": 94.27777777777779,
+     "share_budget_ci": [
+      93.0,
+      95.33333333333334
+     ],
+     "share_nonlost": 94.62327402108694,
+     "share_nonlost_ci": [
+      93.56566984869147,
+      95.54222676797195
+     ],
+     "pick": 7.704719905966513,
+     "pick_ci": [
+      7.684173313902752,
+      7.726137921584677
+     ],
+     "exploration_shortfall": 1.047058591574449,
+     "selection_shortfall": 0.01022150245903779,
+     "distinct": 3.05,
+     "lost_rejection": 0.16666666666666666,
+     "lost_rounds": 0.06666666666666667,
+     "lost_cap": 0,
+     "campaigns_over_lost_round_limit": 0,
+     "nominee_one_reading": 0.0,
+     "nominee_highest_single": 0.95,
+     "top_nominee": "GDIC",
+     "top_nominee_count": 52,
+     "distinct_nominees": 5,
+     "label": "prompt differs only by the truthful re-ask line",
+     "count_of_our_top_nominee": 0,
+     "paired": {
+      "pairs": 60,
+      "d_share_budget": -80.30555555555556,
+      "d_share_budget_ci": [
+       -81.88888888888889,
+       -78.69444444444444
+      ],
+      "d_share_nonlost": -77.13922078733019,
+      "d_share_nonlost_ci": [
+       -78.8795132378735,
+       -75.40543971620914
+      ],
+      "d_pick": -0.016556436680029856,
+      "d_pick_ci": [
+       -0.1306572798834172,
+       0.10160796035338152
+      ],
+      "d_exploration_shortfall": -0.34900866501637046,
+      "d_exploration_shortfall_ci": [
+       -0.45116182465173865,
+       -0.24660832720917975
+      ],
+      "d_selection_shortfall": 0.36556510169640033,
+      "d_selection_shortfall_ci": [
+       0.2882998515475591,
+       0.4477342136490144
+      ]
+     }
+    },
+    "Panel c|claude-opus-4.7": {
+     "n": 40,
+     "share_budget": 69.04166666666667,
+     "share_budget_ci": [
+      67.0,
+      70.95833333333333
+     ],
+     "share_nonlost": 72.31494476763712,
+     "share_nonlost_ci": [
+      70.30565176998705,
+      74.15826511316853
+     ],
+     "pick": 7.5157167266589155,
+     "pick_ci": [
+      7.435431491876169,
+      7.598774114600876
+     ],
+     "exploration_shortfall": 1.136709201545968,
+     "selection_shortfall": 0.10957407179511706,
+     "distinct": 14,
+     "lost_rejection": 2.725,
+     "lost_rounds": 0,
+     "lost_cap": 0,
+     "campaigns_over_lost_round_limit": 0,
+     "nominee_one_reading": 0.0,
+     "nominee_highest_single": 0.95,
+     "top_nominee": "GDKF",
+     "top_nominee_count": 5,
+     "distinct_nominees": 26,
+     "label": "prompt differs only by the truthful re-ask line; medium effort",
+     "count_of_our_top_nominee": 1,
+     "paired": {
+      "pairs": 40,
+      "d_share_budget": -56.208333333333336,
+      "d_share_budget_ci": [
+       -58.25,
+       -54.166666666666664
+      ],
+      "d_share_nonlost": -56.168125150884016,
+      "d_share_nonlost_ci": [
+       -58.45709689880427,
+       -53.9584061964535
+      ],
+      "d_pick": 0.19769521070837565,
+      "d_pick_ci": [
+       0.02165852799098076,
+       0.37230698013439045
+      ],
+      "d_exploration_shortfall": -0.4860171122867502,
+      "d_exploration_shortfall_ci": [
+       -0.6315250902294214,
+       -0.3354198836392343
+      ],
+      "d_selection_shortfall": 0.28832190157837456,
+      "d_selection_shortfall_ci": [
+       0.17877914957990965,
+       0.40172994294560554
+      ]
+     }
+    },
+    "Panel c|gemini-2.5-flash": {
+     "n": 35,
+     "share_budget": 81.80952380952381,
+     "share_budget_ci": [
+      79.57142857142857,
+      83.95238095238095
+     ],
+     "share_nonlost": 82.4943323910511,
+     "share_nonlost_ci": [
+      80.3786861325477,
+      84.52807563703448
+     ],
+     "pick": 7.4261288455089645,
+     "pick_ci": [
+      7.337514807248596,
+      7.517896607860375
+     ],
+     "exploration_shortfall": 1.2317991924392522,
+     "selection_shortfall": 0.10407196205178393,
+     "distinct": 10.085714285714285,
+     "lost_rejection": 0.2857142857142857,
+     "lost_rounds": 0.22857142857142856,
+     "lost_cap": 0,
+     "campaigns_over_lost_round_limit": 0,
+     "nominee_one_reading": 0.02857142857142857,
+     "nominee_highest_single": 0.6857142857142857,
+     "top_nominee": "GDKF",
+     "top_nominee_count": 10,
+     "distinct_nominees": 16,
+     "label": "prompt differs only by the truthful re-ask line; medium effort",
+     "count_of_our_top_nominee": 0,
+     "paired": {
+      "pairs": 35,
+      "d_share_budget": -68.80952380952381,
+      "d_share_budget_ci": [
+       -71.85714285714286,
+       -65.66666666666667
+      ],
+      "d_share_nonlost": -66.04355473559349,
+      "d_share_nonlost_ci": [
+       -69.05046594780781,
+       -62.92625993664768
+      ],
+      "d_pick": 0.2408616551655293,
+      "d_pick_ci": [
+       0.06842330977728783,
+       0.4236653698707456
+      ],
+      "d_exploration_shortfall": -0.5311355035313661,
+      "d_exploration_shortfall_ci": [
+       -0.6765935571714037,
+       -0.382990343078255
+      ],
+      "d_selection_shortfall": 0.2902738483658368,
+      "d_selection_shortfall_ci": [
+       0.15521503154075286,
+       0.4228162041953048
+      ]
+     }
+    }
+   },
+   "campaigns": [
+    {
+     "seed": 300000,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 16.666666666666668,
+     "share_nonlost": 19.607843137254903,
+     "pick": 7.3928246150612775,
+     "nominee": "GAIC",
+     "lost": 9
+    },
+    {
+     "seed": 300001,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 5.0,
+     "share_nonlost": 6.818181818181818,
+     "pick": 7.352565752572406,
+     "nominee": "MLKF",
+     "lost": 16
+    },
+    {
+     "seed": 300002,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 13.333333333333334,
+     "share_nonlost": 16.0,
+     "pick": 7.783854896863525,
+     "nominee": "GDIL",
+     "lost": 10
+    },
+    {
+     "seed": 300003,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 11.666666666666666,
+     "share_nonlost": 14.285714285714286,
+     "pick": 7.686542013164922,
+     "nominee": "GDIC",
+     "lost": 11
+    },
+    {
+     "seed": 300004,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 20.0,
+     "share_nonlost": 23.529411764705884,
+     "pick": 7.769340307171072,
+     "nominee": "GHIM",
+     "lost": 9
+    },
+    {
+     "seed": 300005,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 11.666666666666666,
+     "share_nonlost": 15.217391304347826,
+     "pick": 8.617076080274487,
+     "nominee": "MDIM",
+     "lost": 14
+    },
+    {
+     "seed": 300006,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 11.666666666666666,
+     "share_nonlost": 16.27906976744186,
+     "pick": 7.437107327108975,
+     "nominee": "GKAF",
+     "lost": 17
+    },
+    {
+     "seed": 300007,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 11.666666666666666,
+     "share_nonlost": 17.073170731707318,
+     "pick": 7.2671929299780045,
+     "nominee": "GHDF",
+     "lost": 19
+    },
+    {
+     "seed": 300008,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 8.333333333333334,
+     "share_nonlost": 11.363636363636363,
+     "pick": 8.231727539695692,
+     "nominee": "GDQN",
+     "lost": 16
+    },
+    {
+     "seed": 300009,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 11.666666666666666,
+     "share_nonlost": 14.285714285714286,
+     "pick": 8.379847679364975,
+     "nominee": "QDIC",
+     "lost": 11
+    },
+    {
+     "seed": 300010,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 13.333333333333334,
+     "share_nonlost": 16.0,
+     "pick": 7.6406843907808755,
+     "nominee": "GNBN",
+     "lost": 10
+    },
+    {
+     "seed": 300011,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 5.0,
+     "share_nonlost": 6.976744186046512,
+     "pick": 7.143987760656145,
+     "nominee": "DGBF",
+     "lost": 17
+    },
+    {
+     "seed": 300012,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 18.333333333333332,
+     "share_nonlost": 22.916666666666668,
+     "pick": 7.348734595372887,
+     "nominee": "GABF",
+     "lost": 12
+    },
+    {
+     "seed": 300013,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 16.666666666666668,
+     "share_nonlost": 22.727272727272727,
+     "pick": 8.550730087665487,
+     "nominee": "AMAF",
+     "lost": 16
+    },
+    {
+     "seed": 300014,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 10.0,
+     "share_nonlost": 12.76595744680851,
+     "pick": 7.2671929299780045,
+     "nominee": "GHDF",
+     "lost": 13
+    },
+    {
+     "seed": 300015,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 21.666666666666668,
+     "share_nonlost": 27.083333333333332,
+     "pick": 7.523403420644366,
+     "nominee": "TAJN",
+     "lost": 12
+    },
+    {
+     "seed": 300016,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 20.0,
+     "share_nonlost": 25.0,
+     "pick": 7.233209456903531,
+     "nominee": "GDAF",
+     "lost": 12
+    },
+    {
+     "seed": 300017,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 15.0,
+     "share_nonlost": 19.148936170212767,
+     "pick": 8.033688251077242,
+     "nominee": "HQKF",
+     "lost": 13
+    },
+    {
+     "seed": 300018,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 3.3333333333333335,
+     "share_nonlost": 5.128205128205129,
+     "pick": 6.863673882460148,
+     "nominee": "GDOJ",
+     "lost": 21
+    },
+    {
+     "seed": 300019,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 15.0,
+     "share_nonlost": 18.75,
+     "pick": 7.923866578513677,
+     "nominee": "HBBF",
+     "lost": 12
+    },
+    {
+     "seed": 300020,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 11.666666666666666,
+     "share_nonlost": 16.27906976744186,
+     "pick": 7.278835393118603,
+     "nominee": "GDDF",
+     "lost": 17
+    },
+    {
+     "seed": 300021,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 16.666666666666668,
+     "share_nonlost": 18.51851851851852,
+     "pick": 8.331364558300876,
+     "nominee": "TQKF",
+     "lost": 6
+    },
+    {
+     "seed": 300022,
+     "source": "gen_0an7_gem_grid_blind_rerun",
+     "continuation": false,
+     "rerun": true,
+     "share_budget": 10.0,
+     "share_nonlost": 12.0,
+     "pick": 8.379847679364975,
+     "nominee": "QDIC",
+     "lost": 10
+    },
+    {
+     "seed": 300023,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 13.333333333333334,
+     "share_nonlost": 16.666666666666668,
+     "pick": 7.678179633441876,
+     "nominee": "FDIL",
+     "lost": 12
+    },
+    {
+     "seed": 300024,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 8.333333333333334,
+     "share_nonlost": 11.363636363636363,
+     "pick": 7.4172778883905925,
+     "nominee": "MDDF",
+     "lost": 16
+    },
+    {
+     "seed": 300025,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 16.666666666666668,
+     "share_nonlost": 18.51851851851852,
+     "pick": 7.371651952175521,
+     "nominee": "MDAF",
+     "lost": 6
+    },
+    {
+     "seed": 300026,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 10.0,
+     "share_nonlost": 14.634146341463415,
+     "pick": 7.37338008189306,
+     "nominee": "GKAN",
+     "lost": 19
+    },
+    {
+     "seed": 300027,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 18.333333333333332,
+     "share_nonlost": 22.0,
+     "pick": 8.331364558300876,
+     "nominee": "TQKF",
+     "lost": 10
+    },
+    {
+     "seed": 300028,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 11.666666666666666,
+     "share_nonlost": 12.280701754385966,
+     "pick": 8.557022450818458,
+     "nominee": "AGBF",
+     "lost": 3
+    },
+    {
+     "seed": 300029,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 16.666666666666668,
+     "share_nonlost": 20.0,
+     "pick": 8.379847679364975,
+     "nominee": "QDIC",
+     "lost": 10
+    },
+    {
+     "seed": 300030,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 5.0,
+     "share_nonlost": 6.122448979591836,
+     "pick": 7.5251063407935845,
+     "nominee": "MDBF",
+     "lost": 11
+    },
+    {
+     "seed": 300031,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 23.333333333333332,
+     "share_nonlost": 29.166666666666668,
+     "pick": 7.5994079922718045,
+     "nominee": "SDIR",
+     "lost": 12
+    },
+    {
+     "seed": 300032,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 5.0,
+     "share_nonlost": 6.521739130434782,
+     "pick": 7.305091971503503,
+     "nominee": "FPBL",
+     "lost": 14
+    },
+    {
+     "seed": 300033,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 10.0,
+     "share_nonlost": 16.666666666666668,
+     "pick": 7.374272362676836,
+     "nominee": "GHAN",
+     "lost": 24
+    },
+    {
+     "seed": 300034,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 8.333333333333334,
+     "share_nonlost": 10.869565217391305,
+     "pick": 7.911199027710625,
+     "nominee": "AMJD",
+     "lost": 14
+    },
+    {
+     "seed": 300035,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 1.6666666666666667,
+     "share_nonlost": 2.0408163265306123,
+     "pick": 7.939702193330109,
+     "nominee": "GDIM",
+     "lost": 11
+    },
+    {
+     "seed": 300036,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 11.666666666666666,
+     "share_nonlost": 14.0,
+     "pick": 8.40119255053439,
+     "nominee": "GAJN",
+     "lost": 10
+    },
+    {
+     "seed": 300037,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 13.333333333333334,
+     "share_nonlost": 17.02127659574468,
+     "pick": 7.233209456903531,
+     "nominee": "GDAF",
+     "lost": 13
+    },
+    {
+     "seed": 300038,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 16.666666666666668,
+     "share_nonlost": 20.833333333333332,
+     "pick": 7.264165901380773,
+     "nominee": "GDBN",
+     "lost": 12
+    },
+    {
+     "seed": 300039,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 25.0,
+     "share_nonlost": 29.41176470588235,
+     "pick": 7.437107327108975,
+     "nominee": "GKAF",
+     "lost": 9
+    },
+    {
+     "seed": 300040,
+     "source": "gen_0an7_gem_grid_blind_rerun",
+     "continuation": false,
+     "rerun": true,
+     "share_budget": 11.666666666666666,
+     "share_nonlost": 14.583333333333334,
+     "pick": 7.573477156220622,
+     "nominee": "GDIR",
+     "lost": 12
+    },
+    {
+     "seed": 300041,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 23.333333333333332,
+     "share_nonlost": 28.0,
+     "pick": 7.783854896863525,
+     "nominee": "GDIL",
+     "lost": 10
+    },
+    {
+     "seed": 300042,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 11.666666666666666,
+     "share_nonlost": 13.72549019607843,
+     "pick": 7.386663845521595,
+     "nominee": "GDBF",
+     "lost": 9
+    },
+    {
+     "seed": 300043,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 18.333333333333332,
+     "share_nonlost": 26.829268292682926,
+     "pick": 7.595718661154883,
+     "nominee": "GGBL",
+     "lost": 19
+    },
+    {
+     "seed": 300044,
+     "source": "gen_0an7_gem_grid_blind_rerun",
+     "continuation": false,
+     "rerun": true,
+     "share_budget": 15.0,
+     "share_nonlost": 18.367346938775512,
+     "pick": 7.2957602388377305,
+     "nominee": "GHBF",
+     "lost": 11
+    },
+    {
+     "seed": 300045,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 15.0,
+     "share_nonlost": 18.75,
+     "pick": 7.36698583013865,
+     "nominee": "MHAF",
+     "lost": 12
+    },
+    {
+     "seed": 300046,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 18.333333333333332,
+     "share_nonlost": 25.0,
+     "pick": 8.025438853837349,
+     "nominee": "GAJF",
+     "lost": 16
+    },
+    {
+     "seed": 300047,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 13.333333333333334,
+     "share_nonlost": 19.51219512195122,
+     "pick": 7.721526361175987,
+     "nominee": "GDPN",
+     "lost": 19
+    },
+    {
+     "seed": 300048,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 23.333333333333332,
+     "share_nonlost": 27.45098039215686,
+     "pick": 7.721526361175987,
+     "nominee": "GDPN",
+     "lost": 9
+    },
+    {
+     "seed": 300049,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 20.0,
+     "share_nonlost": 27.272727272727273,
+     "pick": 7.348734595372887,
+     "nominee": "GABF",
+     "lost": 16
+    },
+    {
+     "seed": 300050,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 10.0,
+     "share_nonlost": 13.953488372093023,
+     "pick": 7.8186454967380286,
+     "nominee": "GKJN",
+     "lost": 17
+    },
+    {
+     "seed": 300051,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 13.333333333333334,
+     "share_nonlost": 14.285714285714286,
+     "pick": 8.350088063466798,
+     "nominee": "RDIM",
+     "lost": 4
+    },
+    {
+     "seed": 300052,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 23.333333333333332,
+     "share_nonlost": 26.41509433962264,
+     "pick": 8.126575632065848,
+     "nominee": "PDIM",
+     "lost": 7
+    },
+    {
+     "seed": 300053,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 16.666666666666668,
+     "share_nonlost": 18.181818181818183,
+     "pick": 7.6372291549083355,
+     "nominee": "MBAF",
+     "lost": 5
+    },
+    {
+     "seed": 300054,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 15.0,
+     "share_nonlost": 15.789473684210526,
+     "pick": 8.531948111066631,
+     "nominee": "HGBF",
+     "lost": 3
+    },
+    {
+     "seed": 300055,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 16.666666666666668,
+     "share_nonlost": 19.23076923076923,
+     "pick": 7.386663845521595,
+     "nominee": "GDBF",
+     "lost": 8
+    },
+    {
+     "seed": 300056,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 8.333333333333334,
+     "share_nonlost": 9.803921568627452,
+     "pick": 7.110647635219353,
+     "nominee": "PAJF",
+     "lost": 9
+    },
+    {
+     "seed": 300057,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 11.666666666666666,
+     "share_nonlost": 15.909090909090908,
+     "pick": 7.226236651232065,
+     "nominee": "GABN",
+     "lost": 16
+    },
+    {
+     "seed": 300058,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 21.666666666666668,
+     "share_nonlost": 24.528301886792452,
+     "pick": 7.308501944870537,
+     "nominee": "GAFF",
+     "lost": 7
+    },
+    {
+     "seed": 300059,
+     "source": "gen_0an7_gem_grid_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 18.333333333333332,
+     "share_nonlost": 25.58139534883721,
+     "pick": 7.437107327108975,
+     "nominee": "GKAF",
+     "lost": 17
+    }
+   ],
+   "seeds_distinct": true
+  },
+  "gem|gb1_blind": {
+   "n": 30,
+   "share_budget": 11.11111111111111,
+   "share_budget_ci": [
+    9.5,
+    12.722222222222223
+   ],
+   "share_nonlost": 11.415326167640911,
+   "share_nonlost_ci": [
+    9.76188847159963,
+    13.067666886963082
+   ],
+   "pick": 4.903924702411044,
+   "pick_ci": [
+    4.350241648385582,
+    5.459284904746068
+   ],
+   "exploration_shortfall": 3.755244751365489,
+   "selection_shortfall": 0.10283054622346724,
+   "distinct": 46.86666666666667,
+   "lost_rejection": 1.8,
+   "lost_rounds": 0,
+   "lost_cap": 0,
+   "campaigns_over_lost_round_limit": 0,
+   "nominee_one_reading": 0.9333333333333333,
+   "nominee_highest_single": 1.0,
+   "top_nominee": "BITJ",
+   "top_nominee_count": 3,
+   "distinct_nominees": 23,
+   "pick_minus_informed": -1.1143159529686484,
+   "pick_minus_guessing": -1.1828401553211618,
+   "abandoned": [],
+   "comparators": {
+    "0am Panel R|claude-opus-4.7": {
+     "n": 60,
+     "share_budget": 63.30555555555556,
+     "share_budget_ci": [
+      61.22222222222222,
+      65.36111111111111
+     ],
+     "share_nonlost": 64.11833855799372,
+     "share_nonlost_ci": [
+      62.02142774914546,
+      66.15725858822002
+     ],
+     "pick": 4.775322704844743,
+     "pick_ci": [
+      4.411539976970792,
+      5.123577876681715
+     ],
+     "exploration_shortfall": 3.9741741964443684,
+     "selection_shortfall": 0.012503098710889468,
+     "distinct": 18.6,
+     "lost_rejection": 0.65,
+     "lost_rounds": 0.13333333333333333,
+     "lost_cap": 0,
+     "campaigns_over_lost_round_limit": 0,
+     "nominee_one_reading": 0.0,
+     "nominee_highest_single": 0.95,
+     "top_nominee": "FITJ",
+     "top_nominee_count": 14,
+     "distinct_nominees": 24,
+     "label": "same prompt options",
+     "count_of_our_top_nominee": 1,
+     "paired": {
+      "pairs": 30,
+      "d_share_budget": -50.55555555555556,
+      "d_share_budget_ci": [
+       -54.61111111111111,
+       -46.44444444444444
+      ],
+      "d_share_nonlost": -51.11615314919784,
+      "d_share_nonlost_ci": [
+       -55.16190745624133,
+       -46.955041898265314
+      ],
+      "d_pick": 0.15508524392181514,
+      "d_pick_ci": [
+       -0.4865640867355093,
+       0.7915951534238883
+      ],
+      "d_exploration_shortfall": -0.23290959272350342,
+      "d_exploration_shortfall_ci": [
+       -0.8471469609568719,
+       0.3755770401901209
+      ],
+      "d_selection_shortfall": 0.0778243488016883,
+      "d_selection_shortfall_ci": [
+       0.009034197021216838,
+       0.15186633983372136
+      ]
+     }
+    },
+    "0am Panel R|deepseek-chat-v3.1": {
+     "n": 60,
+     "share_budget": 95.75,
+     "share_budget_ci": [
+      95.30555555555556,
+      96.16666666666667
+     ],
+     "share_nonlost": 95.75,
+     "share_nonlost_ci": [
+      95.30555555555556,
+      96.16666666666667
+     ],
+     "pick": 0.9022408122945611,
+     "pick_ci": [
+      0.7596398089016839,
+      1.0972160127400028
+     ],
+     "exploration_shortfall": 7.859670817236221,
+     "selection_shortfall": 8.837046921783553e-05,
+     "distinct": 2.4833333333333334,
+     "lost_rejection": 0,
+     "lost_rounds": 0,
+     "lost_cap": 0,
+     "campaigns_over_lost_round_limit": 0,
+     "nominee_one_reading": 0.0,
+     "nominee_highest_single": 1.0,
+     "top_nominee": "CLTP",
+     "top_nominee_count": 33,
+     "distinct_nominees": 6,
+     "label": "same prompt options",
+     "count_of_our_top_nominee": 0,
+     "paired": {
+      "pairs": 30,
+      "d_share_budget": -84.44444444444444,
+      "d_share_budget_ci": [
+       -86.05555555555556,
+       -82.83333333333333
+      ],
+      "d_share_nonlost": -84.14022938791464,
+      "d_share_nonlost_ci": [
+       -85.79550293920161,
+       -82.50089330351719
+      ],
+      "d_pick": 3.9910806920163577,
+      "d_pick_ci": [
+       3.3506415798157763,
+       4.6096527082577525
+      ],
+      "d_exploration_shortfall": -4.093734497301389,
+      "d_exploration_shortfall_ci": [
+       -4.692601138190997,
+       -3.475329131622412
+      ],
+      "d_selection_shortfall": 0.10265380528503157,
+      "d_selection_shortfall_ci": [
+       0.046006040307238795,
+       0.16782519579142802
+      ]
+     }
+    },
+    "0am Panel R|gemini-2.5-flash": {
+     "n": 60,
+     "share_budget": 92.19444444444444,
+     "share_budget_ci": [
+      91.27777777777777,
+      92.94444444444444
+     ],
+     "share_nonlost": 92.3829365079365,
+     "share_nonlost_ci": [
+      91.63492063492063,
+      92.9861111111111
+     ],
+     "pick": 1.2172166501365886,
+     "pick_ci": [
+      1.0354792590747883,
+      1.4489304114463417
+     ],
+     "exploration_shortfall": 7.543439950335874,
+     "selection_shortfall": 0.0013433995275378586,
+     "distinct": 4,
+     "lost_rejection": 0.13333333333333333,
+     "lost_rounds": 0,
+     "lost_cap": 0,
+     "campaigns_over_lost_round_limit": 0,
+     "nominee_one_reading": 0.0,
+     "nominee_highest_single": 1.0,
+     "top_nominee": "CSTL",
+     "top_nominee_count": 53,
+     "distinct_nominees": 6,
+     "label": "same prompt options",
+     "count_of_our_top_nominee": 0,
+     "paired": {
+      "pairs": 30,
+      "d_share_budget": -81.44444444444444,
+      "d_share_budget_ci": [
+       -83.0,
+       -79.94444444444444
+      ],
+      "d_share_nonlost": -81.14022938791464,
+      "d_share_nonlost_ci": [
+       -82.73083848419908,
+       -79.58095178615649
+      ],
+      "d_pick": 3.6991167014736828,
+      "d_pick_ci": [
+       3.111772599699178,
+       4.286676170015824
+      ],
+      "d_exploration_shortfall": -3.799260448642074,
+      "d_exploration_shortfall_ci": [
+       -4.381529097962831,
+       -3.2283798257714396
+      ],
+      "d_selection_shortfall": 0.10014374716839151,
+      "d_selection_shortfall_ci": [
+       0.04297025378990844,
+       0.16722425588826534
+      ]
+     }
+    }
+   },
+   "campaigns": [
+    {
+     "seed": 11000000,
+     "source": "gen_0an7_gem_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 6.666666666666667,
+     "share_nonlost": 6.779661016949152,
+     "pick": 5.183634414609995,
+     "nominee": "NSTD",
+     "lost": 1
+    },
+    {
+     "seed": 11000001,
+     "source": "gen_0an7_gem_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 6.666666666666667,
+     "share_nonlost": 6.896551724137931,
+     "pick": 5.0411999120414475,
+     "nominee": "JKHD",
+     "lost": 2
+    },
+    {
+     "seed": 11000002,
+     "source": "gen_0an7_gem_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 15.0,
+     "share_nonlost": 15.517241379310345,
+     "pick": 3.9078515755516765,
+     "nominee": "LITD",
+     "lost": 2
+    },
+    {
+     "seed": 11000003,
+     "source": "gen_0an7_gem_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 10.0,
+     "share_nonlost": 10.344827586206897,
+     "pick": 7.228688387169715,
+     "nominee": "JSTJ",
+     "lost": 2
+    },
+    {
+     "seed": 11000004,
+     "source": "gen_0an7_gem_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 8.333333333333334,
+     "share_nonlost": 8.620689655172415,
+     "pick": 7.282361314610745,
+     "nominee": "FSTJ",
+     "lost": 2
+    },
+    {
+     "seed": 11000005,
+     "source": "gen_0an7_gem_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 16.666666666666668,
+     "share_nonlost": 16.666666666666668,
+     "pick": 3.9078515755516765,
+     "nominee": "LITD",
+     "lost": 0
+    },
+    {
+     "seed": 11000006,
+     "source": "gen_0an7_gem_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 11.666666666666666,
+     "share_nonlost": 12.280701754385966,
+     "pick": 5.144112722107363,
+     "nominee": "FKHB",
+     "lost": 3
+    },
+    {
+     "seed": 11000007,
+     "source": "gen_0an7_gem_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 10.0,
+     "share_nonlost": 10.0,
+     "pick": 2.3982385799425336,
+     "nominee": "GITP",
+     "lost": 0
+    },
+    {
+     "seed": 11000008,
+     "source": "gen_0an7_gem_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 10.0,
+     "share_nonlost": 10.169491525423728,
+     "pick": 7.554692798294689,
+     "nominee": "CSTJ",
+     "lost": 1
+    },
+    {
+     "seed": 11000009,
+     "source": "gen_0an7_gem_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 16.666666666666668,
+     "share_nonlost": 16.949152542372882,
+     "pick": 5.183634414609995,
+     "nominee": "NSTD",
+     "lost": 1
+    },
+    {
+     "seed": 11000010,
+     "source": "gen_0an7_gem_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 6.666666666666667,
+     "share_nonlost": 6.896551724137931,
+     "pick": 5.0812639126097565,
+     "nominee": "DETJ",
+     "lost": 2
+    },
+    {
+     "seed": 11000011,
+     "source": "gen_0an7_gem_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 11.666666666666666,
+     "share_nonlost": 11.864406779661017,
+     "pick": 3.022613110094728,
+     "nominee": "FSTR",
+     "lost": 1
+    },
+    {
+     "seed": 11000012,
+     "source": "gen_0an7_gem_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 13.333333333333334,
+     "share_nonlost": 13.793103448275861,
+     "pick": 3.774808033042746,
+     "nominee": "JETD",
+     "lost": 2
+    },
+    {
+     "seed": 11000013,
+     "source": "gen_0an7_gem_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 13.333333333333334,
+     "share_nonlost": 13.793103448275861,
+     "pick": 6.857570077182418,
+     "nominee": "FSHP",
+     "lost": 2
+    },
+    {
+     "seed": 11000014,
+     "source": "gen_0an7_gem_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 5.0,
+     "share_nonlost": 5.172413793103448,
+     "pick": 6.495800496519205,
+     "nominee": "BITJ",
+     "lost": 2
+    },
+    {
+     "seed": 11000015,
+     "source": "gen_0an7_gem_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 11.666666666666666,
+     "share_nonlost": 11.864406779661017,
+     "pick": 6.0442608363054555,
+     "nominee": "FITJ",
+     "lost": 1
+    },
+    {
+     "seed": 11000016,
+     "source": "gen_0an7_gem_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 15.0,
+     "share_nonlost": 16.363636363636363,
+     "pick": 6.495800496519205,
+     "nominee": "BITJ",
+     "lost": 5
+    },
+    {
+     "seed": 11000017,
+     "source": "gen_0an7_gem_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 15.0,
+     "share_nonlost": 15.517241379310345,
+     "pick": 3.022613110094728,
+     "nominee": "FSTR",
+     "lost": 2
+    },
+    {
+     "seed": 11000018,
+     "source": "gen_0an7_gem_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 18.333333333333332,
+     "share_nonlost": 18.96551724137931,
+     "pick": 6.495800496519205,
+     "nominee": "BITJ",
+     "lost": 2
+    },
+    {
+     "seed": 11000019,
+     "source": "gen_0an7_gem_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 11.666666666666666,
+     "share_nonlost": 11.864406779661017,
+     "pick": 2.858424681077618,
+     "nominee": "JSTP",
+     "lost": 1
+    },
+    {
+     "seed": 11000020,
+     "source": "gen_0an7_gem_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 8.333333333333334,
+     "share_nonlost": 8.620689655172415,
+     "pick": 4.463660377357736,
+     "nominee": "NITD",
+     "lost": 2
+    },
+    {
+     "seed": 11000021,
+     "source": "gen_0an7_gem_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 8.333333333333334,
+     "share_nonlost": 9.090909090909092,
+     "pick": 3.608581153905551,
+     "nominee": "NIOL",
+     "lost": 5
+    },
+    {
+     "seed": 11000022,
+     "source": "gen_0an7_gem_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 11.666666666666666,
+     "share_nonlost": 12.068965517241379,
+     "pick": 3.884366532107677,
+     "nominee": "JKTD",
+     "lost": 2
+    },
+    {
+     "seed": 11000023,
+     "source": "gen_0an7_gem_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 21.666666666666668,
+     "share_nonlost": 21.666666666666668,
+     "pick": 7.282361314610745,
+     "nominee": "FSTJ",
+     "lost": 0
+    },
+    {
+     "seed": 11000024,
+     "source": "gen_0an7_gem_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 11.666666666666666,
+     "share_nonlost": 11.666666666666666,
+     "pick": 5.515702255071707,
+     "nominee": "JSTD",
+     "lost": 0
+    },
+    {
+     "seed": 11000025,
+     "source": "gen_0an7_gem_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 16.666666666666668,
+     "share_nonlost": 16.666666666666668,
+     "pick": 5.242742800396315,
+     "nominee": "IIOL",
+     "lost": 0
+    },
+    {
+     "seed": 11000026,
+     "source": "gen_0an7_gem_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 6.666666666666667,
+     "share_nonlost": 7.017543859649122,
+     "pick": 4.02818430051819,
+     "nominee": "JEHB",
+     "lost": 3
+    },
+    {
+     "seed": 11000027,
+     "source": "gen_0an7_gem_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 5.0,
+     "share_nonlost": 5.172413793103448,
+     "pick": 2.858424681077618,
+     "nominee": "JSTP",
+     "lost": 2
+    },
+    {
+     "seed": 11000028,
+     "source": "gen_0an7_gem_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 10.0,
+     "share_nonlost": 10.169491525423728,
+     "pick": 2.590290683526503,
+     "nominee": "LSTP",
+     "lost": 1
+    },
+    {
+     "seed": 11000029,
+     "source": "gen_0an7_gem_gb1_blind",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 0.0,
+     "share_nonlost": 0.0,
+     "pick": 4.662206029304376,
+     "nominee": "JEHD",
+     "lost": 5
+    }
+   ],
+   "seeds_distinct": true
+  },
+  "gem|gb1_menu": {
+   "n": 30,
+   "share_budget": 7.222222222222222,
+   "share_budget_ci": [
+    6.166666666666667,
+    8.38888888888889
+   ],
+   "share_nonlost": 7.735655072212033,
+   "share_nonlost_ci": [
+    6.603239778739143,
+    8.943053019451256
+   ],
+   "pick": 5.3107919407479205,
+   "pick_ci": [
+    4.876354084253874,
+    5.74130475832238
+   ],
+   "exploration_shortfall": 3.3331086248863633,
+   "selection_shortfall": 0.11809943436571652,
+   "distinct": 44.63333333333333,
+   "lost_rejection": 4.066666666666666,
+   "lost_rounds": 0,
+   "lost_cap": 0,
+   "campaigns_over_lost_round_limit": 0,
+   "nominee_one_reading": 0.9333333333333333,
+   "nominee_highest_single": 1.0,
+   "top_nominee": "FSHP",
+   "top_nominee_count": 3,
+   "distinct_nominees": 27,
+   "pick_minus_informed": -0.7074487146317718,
+   "pick_minus_guessing": -0.7759729169842853,
+   "abandoned": [],
+   "comparators": {
+    "0an.6 Menu|claude-opus-4.7": {
+     "n": 30,
+     "share_budget": 47.166666666666664,
+     "share_budget_ci": [
+      44.111111111111114,
+      50.5
+     ],
+     "share_nonlost": 49.331126983628856,
+     "share_nonlost_ci": [
+      46.40079209845531,
+      52.508693208145665
+     ],
+     "pick": 5.0350813059971,
+     "pick_ci": [
+      4.541809498210428,
+      5.542177070665342
+     ],
+     "exploration_shortfall": 3.6967924158593464,
+     "selection_shortfall": 0.03012627814355507,
+     "distinct": 24.633333333333333,
+     "lost_rejection": 2.7333333333333334,
+     "lost_rounds": 0,
+     "lost_cap": 0,
+     "campaigns_over_lost_round_limit": 0,
+     "nominee_one_reading": 0.0,
+     "nominee_highest_single": 0.9333333333333333,
+     "top_nominee": "FSHD",
+     "top_nominee_count": 2,
+     "distinct_nominees": 29,
+     "label": "same prompt options",
+     "count_of_our_top_nominee": 0,
+     "paired": {
+      "pairs": 30,
+      "d_share_budget": -39.94444444444444,
+      "d_share_budget_ci": [
+       -43.333333333333336,
+       -36.833333333333336
+      ],
+      "d_share_nonlost": -41.59547191141682,
+      "d_share_nonlost_ci": [
+       -44.939030588208986,
+       -38.53266666331673
+      ],
+      "d_pick": 0.2757106347508216,
+      "d_pick_ci": [
+       -0.44075210787859703,
+       0.9558831567976324
+      ],
+      "d_exploration_shortfall": -0.36368379097298303,
+      "d_exploration_shortfall_ci": [
+       -1.0386740991051415,
+       0.3361791655028174
+      ],
+      "d_selection_shortfall": 0.08797315622216145,
+      "d_selection_shortfall_ci": [
+       0.02307046003129581,
+       0.15936737731443404
+      ]
+     }
+    },
+    "0an.6 Menu|deepseek-chat-v3.1": {
+     "n": 60,
+     "share_budget": 59.25,
+     "share_budget_ci": [
+      57.0,
+      61.416666666666664
+     ],
+     "share_nonlost": 60.845321784660236,
+     "share_nonlost_ci": [
+      58.69534197367567,
+      62.97877266710513
+     ],
+     "pick": 4.49037658384188,
+     "pick_ci": [
+      4.078384374234225,
+      4.913061294488451
+     ],
+     "exploration_shortfall": 4.208763986706385,
+     "selection_shortfall": 0.0628594294517347,
+     "distinct": 19.7,
+     "lost_rejection": 1.6,
+     "lost_rounds": 0,
+     "lost_cap": 0,
+     "campaigns_over_lost_round_limit": 0,
+     "nominee_one_reading": 0.05,
+     "nominee_highest_single": 0.9,
+     "top_nominee": "CLOP",
+     "top_nominee_count": 3,
+     "distinct_nominees": 53,
+     "label": "same prompt options",
+     "count_of_our_top_nominee": 0,
+     "paired": {
+      "pairs": 30,
+      "d_share_budget": -51.72222222222222,
+      "d_share_budget_ci": [
+       -55.05555555555556,
+       -48.111111111111114
+      ],
+      "d_share_nonlost": -53.00904723400247,
+      "d_share_nonlost_ci": [
+       -56.34138102080454,
+       -49.42897907327369
+      ],
+      "d_pick": 0.5770286586055715,
+      "d_pick_ci": [
+       -0.08608307272962744,
+       1.2563762150341091
+      ],
+      "d_exploration_shortfall": -0.6527157661716115,
+      "d_exploration_shortfall_ci": [
+       -1.3097176047969488,
+       0.013399256682214252
+      ],
+      "d_selection_shortfall": 0.07568710756604012,
+      "d_selection_shortfall_ci": [
+       -0.009348158895849073,
+       0.16082554600333107
+      ]
+     }
+    },
+    "0an.6 Menu|gemini-2.5-flash": {
+     "n": 60,
+     "share_budget": 54.083333333333336,
+     "share_budget_ci": [
+      51.52777777777778,
+      56.666666666666664
+     ],
+     "share_nonlost": 55.98334437576616,
+     "share_nonlost_ci": [
+      53.40154054377552,
+      58.48583178091613
+     ],
+     "pick": 4.830745543515375,
+     "pick_ci": [
+      4.407930704864411,
+      5.253641225541387
+     ],
+     "exploration_shortfall": 3.907568735781367,
+     "selection_shortfall": 0.023685720703257983,
+     "distinct": 22.216666666666665,
+     "lost_rejection": 1.9333333333333333,
+     "lost_rounds": 0.13333333333333333,
+     "lost_cap": 0,
+     "campaigns_over_lost_round_limit": 0,
+     "nominee_one_reading": 0.03333333333333333,
+     "nominee_highest_single": 0.9,
+     "top_nominee": "LSQJ",
+     "top_nominee_count": 3,
+     "distinct_nominees": 52,
+     "label": "same prompt options",
+     "count_of_our_top_nominee": 0,
+     "paired": {
+      "pairs": 30,
+      "d_share_budget": -46.77777777777778,
+      "d_share_budget_ci": [
+       -50.55555555555556,
+       -42.833333333333336
+      ],
+      "d_share_nonlost": -47.93401842896836,
+      "d_share_nonlost_ci": [
+       -51.83486790712136,
+       -43.82396770557302
+      ],
+      "d_pick": 0.28144190266392627,
+      "d_pick_ci": [
+       -0.4920877098943786,
+       1.0468789034290662
+      ],
+      "d_exploration_shortfall": -0.38008620889731326,
+      "d_exploration_shortfall_ci": [
+       -1.1312922036037092,
+       0.3767261001254087
+      ],
+      "d_selection_shortfall": 0.09864430623338696,
+      "d_selection_shortfall_ci": [
+       0.03134470091805652,
+       0.17064772213917873
+      ]
+     }
+    }
+   },
+   "campaigns": [
+    {
+     "seed": 11000000,
+     "source": "gen_0an7_gem_gb1_menu_cont",
+     "continuation": true,
+     "rerun": false,
+     "share_budget": 8.333333333333334,
+     "share_nonlost": 9.090909090909092,
+     "pick": 4.662206029304376,
+     "nominee": "JEHD",
+     "lost": 5
+    },
+    {
+     "seed": 11000001,
+     "source": "gen_0an7_gem_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 6.666666666666667,
+     "share_nonlost": 6.779661016949152,
+     "pick": 6.877976002097239,
+     "nominee": "FSHD",
+     "lost": 1
+    },
+    {
+     "seed": 11000002,
+     "source": "gen_0an7_gem_gb1_menu_cont",
+     "continuation": true,
+     "rerun": false,
+     "share_budget": 5.0,
+     "share_nonlost": 5.172413793103448,
+     "pick": 5.4852477204994905,
+     "nominee": "FKRD",
+     "lost": 2
+    },
+    {
+     "seed": 11000003,
+     "source": "gen_0an7_gem_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 6.666666666666667,
+     "share_nonlost": 7.142857142857143,
+     "pick": 4.503296705849704,
+     "nominee": "CLOI",
+     "lost": 4
+    },
+    {
+     "seed": 11000004,
+     "source": "gen_0an7_gem_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 8.333333333333334,
+     "share_nonlost": 8.620689655172415,
+     "pick": 5.440635892365125,
+     "nominee": "CIOJ",
+     "lost": 2
+    },
+    {
+     "seed": 11000005,
+     "source": "gen_0an7_gem_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 5.0,
+     "share_nonlost": 5.084745762711864,
+     "pick": 4.166463691660005,
+     "nominee": "CIHD",
+     "lost": 1
+    },
+    {
+     "seed": 11000006,
+     "source": "gen_0an7_gem_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 8.333333333333334,
+     "share_nonlost": 10.0,
+     "pick": 4.5013508374425095,
+     "nominee": "TSTD",
+     "lost": 10
+    },
+    {
+     "seed": 11000007,
+     "source": "gen_0an7_gem_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 6.666666666666667,
+     "share_nonlost": 6.896551724137931,
+     "pick": 5.141284793352771,
+     "nominee": "FHRD",
+     "lost": 2
+    },
+    {
+     "seed": 11000008,
+     "source": "gen_0an7_gem_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 8.333333333333334,
+     "share_nonlost": 8.928571428571429,
+     "pick": 3.7742294784549935,
+     "nominee": "LIOL",
+     "lost": 4
+    },
+    {
+     "seed": 11000009,
+     "source": "gen_0an7_gem_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 5.0,
+     "share_nonlost": 5.357142857142857,
+     "pick": 5.075319331048862,
+     "nominee": "JIOM",
+     "lost": 4
+    },
+    {
+     "seed": 11000010,
+     "source": "gen_0an7_gem_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 16.666666666666668,
+     "share_nonlost": 17.54385964912281,
+     "pick": 5.515702255071707,
+     "nominee": "JSTD",
+     "lost": 3
+    },
+    {
+     "seed": 11000011,
+     "source": "gen_0an7_gem_gb1_menu_cont",
+     "continuation": true,
+     "rerun": false,
+     "share_budget": 10.0,
+     "share_nonlost": 10.169491525423728,
+     "pick": 6.857570077182418,
+     "nominee": "FSHP",
+     "lost": 1
+    },
+    {
+     "seed": 11000012,
+     "source": "gen_0an7_gem_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 3.3333333333333335,
+     "share_nonlost": 3.6363636363636362,
+     "pick": 6.857570077182418,
+     "nominee": "FSHP",
+     "lost": 5
+    },
+    {
+     "seed": 11000013,
+     "source": "gen_0an7_gem_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 5.0,
+     "share_nonlost": 5.555555555555555,
+     "pick": 5.390753635762335,
+     "nominee": "NSOF",
+     "lost": 6
+    },
+    {
+     "seed": 11000014,
+     "source": "gen_0an7_gem_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 6.666666666666667,
+     "share_nonlost": 8.16326530612245,
+     "pick": 6.877976002097239,
+     "nominee": "FSHD",
+     "lost": 11
+    },
+    {
+     "seed": 11000015,
+     "source": "gen_0an7_gem_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 5.0,
+     "share_nonlost": 5.454545454545454,
+     "pick": 7.282361314610745,
+     "nominee": "FSTJ",
+     "lost": 5
+    },
+    {
+     "seed": 11000016,
+     "source": "gen_0an7_gem_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 11.666666666666666,
+     "share_nonlost": 12.280701754385966,
+     "pick": 7.312685060250311,
+     "nominee": "CSHD",
+     "lost": 3
+    },
+    {
+     "seed": 11000017,
+     "source": "gen_0an7_gem_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 6.666666666666667,
+     "share_nonlost": 7.017543859649122,
+     "pick": 5.494897069901912,
+     "nominee": "CIOI",
+     "lost": 3
+    },
+    {
+     "seed": 11000018,
+     "source": "gen_0an7_gem_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 6.666666666666667,
+     "share_nonlost": 7.142857142857143,
+     "pick": 4.4857673119999815,
+     "nominee": "LIOP",
+     "lost": 4
+    },
+    {
+     "seed": 11000019,
+     "source": "gen_0an7_gem_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 6.666666666666667,
+     "share_nonlost": 6.779661016949152,
+     "pick": 3.755697173834176,
+     "nominee": "DSOP",
+     "lost": 1
+    },
+    {
+     "seed": 11000020,
+     "source": "gen_0an7_gem_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 13.333333333333334,
+     "share_nonlost": 13.793103448275861,
+     "pick": 2.6047647125801543,
+     "nominee": "LKOP",
+     "lost": 2
+    },
+    {
+     "seed": 11000021,
+     "source": "gen_0an7_gem_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 5.0,
+     "share_nonlost": 5.2631578947368425,
+     "pick": 5.46784612824071,
+     "nominee": "FNRJ",
+     "lost": 3
+    },
+    {
+     "seed": 11000022,
+     "source": "gen_0an7_gem_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 1.6666666666666667,
+     "share_nonlost": 1.9607843137254901,
+     "pick": 4.323058635013035,
+     "nominee": "ISOL",
+     "lost": 9
+    },
+    {
+     "seed": 11000023,
+     "source": "gen_0an7_gem_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 8.333333333333334,
+     "share_nonlost": 9.615384615384615,
+     "pick": 4.9226105322382985,
+     "nominee": "CIQG",
+     "lost": 8
+    },
+    {
+     "seed": 11000024,
+     "source": "gen_0an7_gem_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 10.0,
+     "share_nonlost": 10.909090909090908,
+     "pick": 6.291107533057032,
+     "nominee": "FSHJ",
+     "lost": 5
+    },
+    {
+     "seed": 11000025,
+     "source": "gen_0an7_gem_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 5.0,
+     "share_nonlost": 5.2631578947368425,
+     "pick": 3.358861544453058,
+     "nominee": "JLOP",
+     "lost": 3
+    },
+    {
+     "seed": 11000026,
+     "source": "gen_0an7_gem_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 1.6666666666666667,
+     "share_nonlost": 1.7543859649122806,
+     "pick": 6.857570077182418,
+     "nominee": "FSHP",
+     "lost": 3
+    },
+    {
+     "seed": 11000027,
+     "source": "gen_0an7_gem_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 10.0,
+     "share_nonlost": 10.526315789473685,
+     "pick": 6.274971091147244,
+     "nominee": "FSRM",
+     "lost": 3
+    },
+    {
+     "seed": 11000028,
+     "source": "gen_0an7_gem_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 8.333333333333334,
+     "share_nonlost": 8.474576271186441,
+     "pick": 4.649617006329358,
+     "nominee": "NQHD",
+     "lost": 1
+    },
+    {
+     "seed": 11000029,
+     "source": "gen_0an7_gem_gb1_menu",
+     "continuation": false,
+     "rerun": false,
+     "share_budget": 6.666666666666667,
+     "share_nonlost": 7.6923076923076925,
+     "pick": 5.114360502227999,
+     "nominee": "FKHP",
+     "lost": 8
+    }
+   ],
+   "seeds_distinct": true
+  }
+ },
+ "menu_minus_blind": {
+  "sol": {
+   "pairs": 30,
+   "d_share_budget": -2.1666666666666665,
+   "d_share_budget_ci": [
+    -4.888888888888888,
+    0.49999999999999983
+   ],
+   "d_share_nonlost": -1.999703295512816,
+   "d_share_nonlost_ci": [
+    -4.726391258535333,
+    0.6843301735024027
+   ],
+   "d_pick": -0.24579499824524909,
+   "d_pick_ci": [
+    -0.8858207307162449,
+    0.3759081249885359
+   ],
+   "d_exploration_shortfall": 0.22649799947907046,
+   "d_exploration_shortfall_ci": [
+    -0.37766164149977005,
+    0.8568371965455543
+   ],
+   "d_selection_shortfall": 0.019296998766178644,
+   "d_selection_shortfall_ci": [
+    -0.0715846890141805,
+    0.11119050992456779
+   ],
+   "label": "no effect"
+  },
+  "gem": {
+   "pairs": 30,
+   "d_share_budget": -3.888888888888889,
+   "d_share_budget_ci": [
+    -6.0,
+    -1.7222222222222219
+   ],
+   "d_share_nonlost": -3.6796710954288776,
+   "d_share_nonlost_ci": [
+    -5.835957041190706,
+    -1.4842907895714732
+   ],
+   "d_pick": 0.4068672383368767,
+   "d_pick_ci": [
+    -0.29817470600626395,
+    1.1031398357289297
+   ],
+   "d_exploration_shortfall": -0.422136126479126,
+   "d_exploration_shortfall_ci": [
+    -1.0832345715215415,
+    0.2444709435730371
+   ],
+   "d_selection_shortfall": 0.015268888142249285,
+   "d_selection_shortfall_ci": [
+    -0.0822416564074811,
+    0.11488889270173434
+   ],
+   "label": "no effect"
+  }
+ },
+ "reasoning_heavy_calls": {
+  "sol": {
+   "logged_calls": 6229,
+   "logged_above_16000": 0,
+   "logged_max": 416,
+   "abandonment_errors_completion_tokens": []
+  },
+  "gem": {
+   "logged_calls": 8541,
+   "logged_above_16000": 35,
+   "logged_max": 30721,
+   "abandonment_errors_completion_tokens": [
+    32019
+   ]
+  }
+ },
+ "spend_reconciliation": {
+  "launch_balance": 530.76110143,
+  "final_balance": 438.8195,
+  "spent_by_balance": 91.94160143000005,
+  "recorded": {
+   "sol": 20.3903555,
+   "gem": 67.665558
+  },
+  "gem_by_balance": 71.55124593000005,
+  "gem_unrecorded": 3.8856879300000458,
+  "assumption": "Sol cancelled and abandoned nothing, so its balance spend equals its recorded spend"
+ },
+ "sensitivity_gem_grid_without_rerun_seeds": {
+  "n": 57,
+  "share_budget": 14.064327485380117,
+  "share_budget_ci": [
+   12.660818713450292,
+   15.467836257309942
+  ],
+  "share_nonlost": 17.615658136022745,
+  "share_nonlost_ci": [
+   15.903015853786956,
+   19.294660827886798
+  ],
+  "pick": 7.68492496636431,
+  "pick_ci": [
+   7.574210195661606,
+   7.801432546202677
+  ],
+  "exploration_shortfall": 0.6963395178486943,
+  "selection_shortfall": 0.38073551578699577,
+  "distinct": 36.43859649122807,
+  "lost_rejection": 12.31578947368421,
+  "lost_rounds": 0,
+  "lost_cap": 0,
+  "campaigns_over_lost_round_limit": 0,
+  "nominee_one_reading": 0.0,
+  "nominee_highest_single": 0.9122807017543859,
+  "top_nominee": "GKAF",
+  "top_nominee_count": 3,
+  "distinct_nominees": 47,
+  "seeds_left_out": [
+   300022,
+   300040,
+   300044
+  ],
+  "paired_vs_F0": {
+   "deepseek-chat-v3.1": {
+    "pairs": 57,
+    "d_share_budget": -76.54970760233918,
+    "d_share_budget_ci": [
+     -78.33333333333333,
+     -74.76608187134502
+    ],
+    "d_share_nonlost": -73.41893890388248,
+    "d_share_nonlost_ci": [
+     -75.27511763553393,
+     -71.53365394989396
+    ],
+    "d_pick": -0.08413880016475478,
+    "d_pick_ci": [
+     -0.2180481263222413,
+     0.052440639753529784
+    ],
+    "d_exploration_shortfall": -0.2264998010920222,
+    "d_exploration_shortfall_ci": [
+     -0.34889456511527595,
+     -0.10953851894167273
+    ],
+    "d_selection_shortfall": 0.31063860125677695,
+    "d_selection_shortfall_ci": [
+     0.21698971401700132,
+     0.4086538956009663
+    ]
+   },
+   "gemini-2.5-flash": {
+    "pairs": 57,
+    "d_share_budget": -80.70175438596492,
+    "d_share_budget_ci": [
+     -82.39766081871345,
+     -78.9766081871345
+    ],
+    "d_share_nonlost": -77.52833551084703,
+    "d_share_nonlost_ci": [
+     -79.40708874351256,
+     -75.57892072143123
+    ],
+    "d_pick": -0.0068789589791791485,
+    "d_pick_ci": [
+     -0.11697646396972228,
+     0.11004919534611267
+    ],
+    "d_exploration_shortfall": -0.3586398003859827,
+    "d_exploration_shortfall_ci": [
+     -0.46068763508418764,
+     -0.2573162868665159
+    ],
+    "d_selection_shortfall": 0.3655187593651618,
+    "d_selection_shortfall_ci": [
+     0.2807664941730108,
+     0.45571159537702544
+    ]
+   }
+  }
+ }
+}
