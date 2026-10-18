@@ -10,7 +10,7 @@ one candidate measured twice gives two different numbers. \citet{wang2026agentno
 what tools return in existing agent benchmarks, and measure how well agents hold up.
 
 \citet{krishnamurthy2024explore} placed GPT-3.5, GPT-4 and Llama2 in multi-armed bandits, where an agent repeatedly
-picks one of several options with random payoffs. The prompt held the task and the history of past picks, either raw
+picks one of a fixed set of options with random payoffs. The prompt held the task and the history of past picks, either raw
 or summarised. Only GPT-4, reasoning step by step with a summarised history, explored well. Our ledger gives the same
 kind of summary, and in our study it changed re-testing little (Section~\ref{sec:why}). Their payoffs are coin flips,
 so the noise level is tied to the payoff and cannot be set on its own.
@@ -29,8 +29,7 @@ conditions. One can test more new conditions with fewer repeats each, or fewer c
 method sets the number of repeats for each chosen condition from the data so far. Our scripted rules are simpler: each
 re-tests its current best a fixed number of times per round. A rule that sets its re-testing from the data would be a
 stronger yardstick. In bandit terms, a Wellocate campaign is close to best-arm identification on a fixed budget. The
-task is to find the best option with a set number of noisy tries, here made four at a time, and the score is the true
-value of the final pick. In Wellocate, candidates that share letters have related values, so one
+task is to find the best option with a set number of noisy tries, here made four at a time. The score is the true value of the final pick. In Wellocate, candidates that share letters have related values, so one
 reading says something about other candidates, and the agent may nominate a candidate it never measured.
 
 \citet{wu2016adaptation} measured the fitness of nearly every variant at four sites of the protein GB1 and mapped its

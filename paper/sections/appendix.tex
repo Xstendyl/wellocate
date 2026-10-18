@@ -12,8 +12,7 @@ the number of positions, here four, and $K$ is how many other positions each pos
 depends on. A landscape is rugged when it has local peaks, candidates that no single-letter change can
 improve, and a larger $K$ makes it more rugged. We set $K=1$, so each position's contribution depends on the
 next position along the string, wrapping round at the end. Each position has its own table of
-contributions, one for every pair of letters at that position and the next, drawn uniformly between 0 and 1
-when the landscape is generated. A candidate's fitness is the mean of its four contributions. The whole
+contributions, one for every pair of letters at that position and the next. The entries are drawn uniformly between 0 and 1 when the landscape is generated. A candidate's fitness is the mean of its four contributions. The whole
 landscape is then multiplied by one constant so its maximum is 8.762, the highest value measured in the
 published data. This only sets the units, and beyond that value and its share of working candidates the
 landscape is a standard NK landscape. At $K=1$ position interactions are weak, so the search itself is simple, and an
@@ -40,7 +39,7 @@ campaigns of the prompt study (Appendix~\ref{app:grid}), 14.97\% of 300{,}898 me
 Each measurement of a viable candidate returns its true fitness plus independent Gaussian error, whose
 standard deviation grows with the true fitness $f$:
 \[ \sigma(f) = \sqrt{0.00351^2 + (0.073 f)^2}. \]
-Both constants in $\sigma(f)$ are sized from the read counts of \citet{wu2016adaptation}, who screened a library
+Both constants in $\sigma(f)$ are sized from the read counts of \citet{wu2016adaptation}. They screened a library
 spanning all 160{,}000 variants in one deep mutational scan and got a usable reading for 93.4\% of them. In such an experiment every variant is mixed into one
 pool, and the pool goes through a selection step that keeps variants binding a target. A variant that binds
 better is kept in larger numbers. Each protein stays physically linked to the DNA that encodes it, so
@@ -68,11 +67,9 @@ noisy than a real lab, and which of the two holds is not known.
 fitness, 6.8730, is stated to the agent to two decimals, and Table~\ref{tab:cells} gives the re-testing
 share with and without re-orders of it. We also checked that the scripted results do not depend on this
 start. On each landscape we drew \nStartsRandom{} viable starts at random and ran the three scripted rules from each,
-on our campaign seeds. The guessing and informed rules keep \texttt{GDIF}'s best number of re-tests from
-every start on all three landscapes, and on the grid the guessing rule's re-testing share at that setting stays
+on our campaign seeds. The guessing and informed rules keep \texttt{GDIF}'s best number of re-tests from every start on all three landscapes. On the grid the guessing rule's re-testing share at that setting stays
 between \nStartGuessShareMinGrid\% and \nStartGuessShareMaxGrid\%. On the grid the model-guided rule's best setting moves
-between no re-test and one a round, which score almost the same: at our setting of one re-test its share stays
-between \nStartMgShareMinGrid\% and \nStartMgShareMaxGrid\%, and keeping that setting costs a median of
+between no re-test and one a round, which score almost the same. At our setting of one re-test its share stays between \nStartMgShareMinGrid\% and \nStartMgShareMaxGrid\%. Keeping that setting costs a median of
 \nStartMgPickLostMedGrid{} in final pick, at most \nStartMgPickLostMaxGrid. On GB1 and PhoQ it keeps \texttt{GDIF}'s setting from \nStartSameKGbMg{} and \nStartSameKPqMg{} of the \nStartsRandom{} starts.
 
 \paragraph{What the simulation leaves out.} A non-viable order is caught and replaced. In a lab, finding out would
@@ -95,8 +92,7 @@ which candidates are viable, so the informed rule has an easier task than theirs
 replacements and lost slots, in the same code. Both ran on the same 1{,}500 seeds per setting.
 
 The model-guided rule spends its first four rounds trying one-letter changes of the start, one at each position. From
-the fifth round it orders three new candidates a round, ranked by its letter scores, and re-tests one leading
-candidate: its best, or the next best once the best has two readings. In its last three rounds it re-tests its four
+the fifth round it orders three new candidates a round, ranked by its letter scores. It also re-tests one leading candidate: its best, or the next best once the best has two readings. In its last three rounds it re-tests its four
 best candidates by mean reading. It picks with the registered selection rule of Section~\ref{sec:under}.
 
 \begin{table}[h]
@@ -129,9 +125,7 @@ On the grid both do best at one re-test a round. Every comparison between the ag
 \paragraph{Interface.} An episode is one campaign. A call to \texttt{step} orders up to four candidates, or one
 replacement after a rejection, and \texttt{nominate} ends the episode. Observations hold readings, outcomes and the
 remaining budget, and no true value; the reward is the nominee's true value. A text mode returns the exact prompts our agents received and reads replies the same way, asking again when a reply cannot be read. A language model and a policy trained by reinforcement learning thus face the same task. The environment runs the same code as our experiments. Through it the
-guessing rule reproduces our reference pick of 7.8659 and re-testing share of 23.78\% exactly, the informed rule its
-pick of 7.9993, and one core
-runs about \nEpisodesPerSec{} episodes a second.
+guessing rule reproduces our reference pick of 7.8659 and re-testing share of 23.78\% exactly, and the informed rule its pick of 7.9993. One core runs about \nEpisodesPerSec{} episodes a second.
 
 \paragraph{Tracks and splits.} The protein track uses scrambled GB1 and PhoQ, with fresh scrambles for training,
 validation and testing and the real amino-acid names held out (Table~\ref{tab:splits}). A scramble changes only the names, so a protein test split asks for unseen names of the same protein. Training on one protein and testing on the other asks for transfer. The grid track gives fresh NK landscapes and holds out rougher ones. Every split is fixed and public. A hidden test server is future work.

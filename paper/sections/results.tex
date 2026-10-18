@@ -13,21 +13,16 @@ best scripted rule hardly re-tests at all: \nGbBestShare\% of slots on GB1 and n
 re-testing pays there too (Section~\ref{sec:bench}).
 
 Three models, Opus 4.7, Gemini 2.5 Flash and DeepSeek V3.1, over-confirm. On the grid they spend
-\nShareOpusint\% to \nShareFlashint\% of their slots re-testing, far above the scripted band (Figure~\ref{fig:headline}),
-and with every reading exact they still re-test half to nearly all of their slots, far more than exact readings
+\nShareOpusint\% to \nShareFlashint\% of their slots re-testing, far above the scripted band (Figure~\ref{fig:headline}). With every reading exact they still re-test half to nearly all of their slots, far more than exact readings
 need (Appendix~\ref{app:grid}). Gemini 3.1 Pro under-confirms. It re-tests only \nShareProint\% of its slots, below the
 band, so on the grid its pick is usually a candidate it measured only once. GPT-6.1 Sol sits just above the band.
-On GB1 and PhoQ, where the best scripted rule re-tests at most 1\% of its slots, some models re-test less than on the grid, and every model still re-tests more than that rule, Gemini 3.1 Pro included (Table~\ref{tab:landscapes}). On the grid every model's final pick falls below the guessing rule's 7.87, and re-testing less did
-not help Gemini 3.1 Pro or Sol pick better (Figure~\ref{fig:headline}). On GB1 Sol's lead over the guessing rule is uncertain,
-and on PhoQ, a hard landscape for every strategy, three models are about level with it, and DeepSeek V3.1 and
-Gemini 3.1 Pro pick worse (Appendices~\ref{app:atwo} and \ref{app:phoq}).
+On GB1 and PhoQ the best scripted rule re-tests at most 1\% of its slots. Some models re-test less there than on the grid, and every model still re-tests more than that rule, Gemini 3.1 Pro included (Table~\ref{tab:landscapes}). On the grid every model's final pick falls below the guessing rule's 7.87, and re-testing less did
+not help Gemini 3.1 Pro or Sol pick better (Figure~\ref{fig:headline}). On GB1 Sol's lead over the guessing rule is uncertain (Appendix~\ref{app:atwo}). On PhoQ, a hard landscape for every strategy, three models are about level with it, and DeepSeek V3.1 and Gemini 3.1 Pro pick worse (Appendix~\ref{app:phoq}).
 
 
 \input{sections/table_landscapes}
 
-The over-confirmers lose through exploration (Figure~\ref{fig:loss}):
-the best candidate they ever measured falls \nExplDeep{} to \nExplFlash{} short of the landscape's best, against 0.67
-for the guessing rule, and among what they tested they pick almost perfectly. Gemini 3.1 Pro loses through selection. It explores about as well as the guessing rule and loses \nSelPro{} at
+The over-confirmers lose through exploration (Figure~\ref{fig:loss}). The best candidate they ever measured falls \nExplDeep{} to \nExplFlash{} short of the landscape's best, against 0.67 for the guessing rule. Among what they tested they pick almost perfectly. Gemini 3.1 Pro loses through selection. It explores about as well as the guessing rule and loses \nSelPro{} at
 selection, against 0.23 for the guessing rule, because it often picks a candidate it measured only once. Sol loses about as much as the over-confirmers through exploration and less than the
 guessing rule at selection.
 
@@ -72,8 +67,7 @@ over-confirmers re-test because they run short of candidates worth testing.
 \emph{Over-confirmation.} (a) The three aids on the grid, given to the three over-confirming models: change in re-testing
 share. (b, c) The Menu on scrambled GB1, given to all five models: change in re-testing share and in final pick. It cuts
 re-testing in the over-confirming models and lifts two of their picks by more than three units. It moves the re-testing of
-Gemini 3.1 Pro and Sol by at most four points. \emph{Under-confirmation.} (d) The grid campaigns of Gemini 3.1 Pro and Sol, replayed with the last round spent re-testing the top $m$ candidates:
-$m = 1$ re-tests the top one four times, and $m = 4$ re-tests each of the top four once. The y-axis is the change in the
+Gemini 3.1 Pro and Sol by at most four points. \emph{Under-confirmation.} (d) The grid campaigns of Gemini 3.1 Pro and Sol, replayed with the last round spent re-testing the top $m$ candidates. With $m = 1$ the top one is re-tested four times, and with $m = 4$ each of the top four once. The y-axis is the change in the
 true value of the final pick against the agent's own pick. Each dotted line is that model's selection loss, the most better checking could win back. Gemini 3.1 Pro
 recovers about a quarter of it; Sol gains nothing.}
 \label{fig:fixes}
@@ -90,16 +84,14 @@ came from finding better candidates, that is, from a smaller exploration loss.
 
 
 For Gemini 3.1 Pro and Sol the Menu moved re-testing by at most four points and did not change their picks detectably
-(Figure~\ref{fig:fixes}b and c), so they do not lack candidates. Gemini 3.1 Pro loses in how it picks, on single readings
+(Figure~\ref{fig:fixes}b and c). They do not lack candidates. Gemini 3.1 Pro loses in how it picks, on single readings
 (Section~\ref{sec:under}).
 
 \subsection{Under-confirmation}
 \label{sec:under}
 
 Gemini 3.1 Pro under-confirms: it re-tests too little, so it often picks a candidate it measured only once and loses at selection (Figure~\ref{fig:loss}). If that is the cause, re-testing its top candidates before it picks should win back part
-of the loss. Under-confirmation shows only on the grid, where re-testing pays, so we ran this test there. We asked one question:
-had the agent spent its last round re-checking its best candidates, would its final pick have been better? To answer it
-without calling the model again, we rebuilt each grid campaign of Gemini 3.1 Pro, and of Sol for comparison, from its log,
+of the loss. Under-confirmation shows only on the grid, where re-testing pays, so we ran this test there. We asked whether the agent's final pick would have been better had it spent its last round re-checking its best candidates. To answer this without calling the model again, we rebuilt each grid campaign of Gemini 3.1 Pro, and of Sol for comparison, from its log,
 which reproduces every reading exactly. We then replaced the final round's four orders with re-tests of the top $m$
 candidates by mean reading, under the same noise and failure rate. A fixed rule made the pick, the study's registered selection rule. It ranks
 candidates by average reading, and pulls the average of a candidate with few readings toward the campaign's overall
@@ -110,6 +102,6 @@ Gemini 3.1 Pro's pick improves as the re-tests are spread over more candidates, 
 a candidate with one lucky reading, so a second reading lets it overtake. The same rule applied to its unchanged readings gains almost nothing (Appendix~\ref{app:aone}), so the gain comes
 from the extra readings. The gain stays small because Pro ends a campaign with
 dozens of candidates measured only once, and four slots can re-check only a few. Sol gains nothing, since its top
-candidates already have several readings each. Its curve dips slightly below zero because the replay gives up the new
+candidates already have more than one reading each. Its curve dips slightly below zero because the replay gives up the new
 candidates its real final round would have tried. In an exploratory run, re-testing over the last two rounds
 recovered about as much as the last round alone.

@@ -62,8 +62,7 @@ cells the re-testing share runs from 75\% to 96\% of used slots; both scripted r
 quarter (Table~\ref{tab:cells}, Figure~\ref{fig:gridheadline}). The count includes re-orders of the reference
 candidate, whose score the agent is given at the start. On this count every cell re-tests more than a
 scripted protocol that measures each candidate three times. Without those re-orders the share is 57\% to
-75\%, and six cells fall below that protocol. Counting only slots spent on a candidate that already has a successful
-reading, which leaves out re-orders after a failed order, gives 74.7\% to 95.1\%, within 1.4 points of the headline
+75\%, and six cells fall below that protocol. Counting only slots spent on a candidate that already has a successful reading leaves out re-orders after a failed order. That count gives 74.7\% to 95.1\%, within 1.4 points of the headline
 in every cell.
 
 \paragraph{The scripted lab protocols.} Three scripted protocols spend the same 60 slots the way a wet lab
@@ -113,20 +112,18 @@ At $\sigma=0$, re-testing after the first repeat runs from 51.8\% to 97.5\% acro
 the 15 cells, with a median of 90.6\%. The lowest cell is Quantitative with Opus 4.7, at 51.8\%, 95\%
 interval [48.2\%, 55.4\%]. The highest is Aggregated with DeepSeek V3.1, at 97.5\%, [96.7\%, 98.3\%]. By
 model, Opus 4.7 runs 51.8\% to 71.0\%, Gemini 2.5 Flash 76.8\% to 94.4\% and DeepSeek V3.1 94.1\% to
-97.5\%. All 15 paired differences from the same cells with noise are negative, from $-35.0$ to $-0.9$ percentage
-points, and 12 of 15 are significant at 0.05 after Holm correction within that run. Every cell pairs all 40 seeds. The size of the drop tracks the level a model starts from. Opus 4.7 falls furthest. DeepSeek V3.1 falls least, from levels of 96.7\% to 98.5\% under noise. Elsewhere in these appendices, zero-noise numbers count all used slots.
+97.5\%. All 15 paired differences from the same cells with noise are negative, from $-35.0$ to $-0.9$ percentage points. Of these, 12 are significant at 0.05 after Holm correction within that run. Every cell pairs all 40 seeds. The size of the drop tracks the level a model starts from. Opus 4.7 falls furthest. DeepSeek V3.1 falls least, from levels of 96.7\% to 98.5\% under noise. Elsewhere in these appendices, zero-noise numbers count all used slots.
 
 
 \subsection{Independent check}
 \label{sec:indep}
 \label{app:indep}
 
-In a separate one-round test with exact readings, the models still spent from about a quarter to over half
-of the round re-testing, and adding noise raised re-testing sharply, so the models do respond to noise. The test was
+In a separate one-round test with exact readings, the models still spent from about a quarter to over half of the round re-testing. Adding noise raised re-testing sharply, so the models do respond to noise. The test was
 written separately from Wellocate, with its own world generator, prompt and scorer, and shares no code with it.
 
 Each call shows one fixed round of an optimisation task. Every candidate is valid, so nothing is ever rejected. A
-seven-round history is already measured, and the best candidate has already been measured twice. Three versions vary only what is true and what is said about measurement error: exact readings with exactness stated, exact
+seven-round history is already measured, and the best candidate has already been measured twice. Three versions vary only what is true and what is said about measurement error. They are exact readings with exactness stated, exact
 readings with nothing said, and noisy readings with the noise stated. Thirty paired histories per version, three
 models, temperature 0, 270 calls. Each reply is scored over four slots. A missing line counts as a new candidate, and so does a name with letters outside the alphabet.
 
@@ -150,11 +147,8 @@ the behaviour; 5\% or less attributes it to our environment; anything between is
 Gemini 2.5 Flash and DeepSeek V3.1 clear the 25\% line. Opus 4.7 at 24.2\% falls just
 below it, so two models give a clear reproduction and one is partial.
 
-Stating that readings are exact made no detectable difference. The paired difference between saying
-nothing and stating it is $+0.0$ pp (SE 2.4) for Opus 4.7, $+5.8$ (SE 7.1) for Gemini 2.5 Flash and $-6.7$
-(SE 6.9) for DeepSeek V3.1. In the zero-noise run the noise effect looks small for Gemini 2.5 Flash and
-DeepSeek V3.1 because their re-testing is already high with exact readings, at 81.6\% and 89.6\% of all
-used slots against 51.4\% for Opus 4.7, each a mean over the five conditions.
+Stating that readings are exact made no detectable difference. Paired by history, nothing said minus exactness stated is $+0.0$ pp (SE 2.4) for Opus 4.7, $+5.8$ (SE 7.1) for Gemini 2.5 Flash and $-6.7$
+(SE 6.9) for DeepSeek V3.1. In the zero-noise run the noise effect looks small for Gemini 2.5 Flash and DeepSeek V3.1, because their re-testing is already high with exact readings. Averaged over the five conditions, they re-test 81.6\% and 89.6\% of all used slots there, against 51.4\% for Opus 4.7.
 
 \subsection{Pre-registered contrasts}
 
@@ -163,14 +157,13 @@ it. Six contrasts were fixed before the prompt study ran, comparing Aggregated a
 each model, with Holm correction across the six (Table~\ref{tab:confirm}). One survives the correction: giving the selection rule outright improved the final pick for DeepSeek V3.1,
 by $+0.0699$. It did not hold up: a pre-registered replication on 120 new seeds gave $+0.008$
 $[-0.036, +0.052]$ (Appendix~\ref{app:replication}). In the original run the gain came through what DeepSeek V3.1 measured. Against the guessing rule, its
-shortfall in the best candidate tested fell from 0.38 to 0.31, and its selection gain stayed at 0.18: it picked
-among what it tested as well as before (Table~\ref{tab:cells}). It
+shortfall in the best candidate tested fell from 0.38 to 0.31, and its selection gain stayed at 0.18. It picked among what it tested as well as before (Table~\ref{tab:cells}). It
 picked the highest-average candidate about as often with the rule as without it (86\% against 90\%; an exact
 McNemar test for paired choices gives $p = 0.36$). Its re-testing share moved by less than half a point (93.7\% against 93.4\%), and it tried
 about as many candidates (3.7 against 3.8). Opus 4.7 responded differently. The rule raised its
 highest-average picks from 74\% to 86\% ($p < 0.001$), and it also re-tested more and tried about two fewer
 candidates. Opus 4.7 was nominally worse under both interventions; its unadjusted intervals exclude zero, and both differences lose significance after correction for the six contrasts. Gemini 2.5 Flash showed no detectable change.
-Arithmetic alone does not explain the habit either: the Aggregated condition shows each candidate's count, mean and
+Arithmetic alone does not explain the habit either. The Aggregated condition shows each candidate's count, mean and
 standard error already computed, and re-testing was slightly higher under it than under Mechanism for all three
 models. We do not read any of this as evidence that stating a decision rule helps agents.
 
@@ -205,7 +198,7 @@ scored on its true value. The replacement prompt also stated one order per round
 wrong guess about viability could cost a slot, so rejection risk might also push agents toward re-testing
 candidates known to work.
 
-Three prompt changes were tested, each absent from the original prompts. The \emph{goal} option adds one sentence to the goal in the round and replacement prompts, the same in all five conditions: ``At the
+Three prompt changes were tested, each absent from the original prompts. The \emph{goal} option adds one sentence to the goal in the round and replacement prompts, the same in all five conditions. It reads ``At the
 end you will nominate one candidate, and your score is that candidate's true value.'' It says nothing about
 readings, because the Blind condition withholds that readings carry error. The nomination prompt was left as it
 was, since it already asks for the highest true score. The \emph{budget} option makes the replacement prompt's budget line
@@ -217,8 +210,7 @@ non-viable order.'' The agent may then be asked again up to 20 times for one slo
 is lost and counted, and no slot in check B reached it. The guessing rule reached it in 353 of
 its 1{,}500 campaigns at one re-test per round, and still lost 0.86 slots per campaign.
 
-Check A used the goal and budget options and check B all three, each on Blind and Mechanism for all three models, on
-60 seeds, each paired with the original campaign on the same seed (Table~\ref{tab:prompt}). A rerun of the original prompts ran on the same day as check A. The registered statement for check B reads ``rejection risk does not produce the habit''. Intervals are 95\% percentile bootstraps over the paired
+Check A used the goal and budget options and check B all three, each on Blind and Mechanism for all three models. Both ran on 60 seeds, each paired with the original campaign on the same seed (Table~\ref{tab:prompt}). A rerun of the original prompts ran on the same day as check A. The registered statement for check B reads ``rejection risk does not produce the habit''. Intervals are 95\% percentile bootstraps over the paired
 campaigns.
 
 Check A fixes both flaws. With it, the re-testing share moved by less than 1.1 points in five of six cells. For Gemini 2.5 Flash under Blind it fell by 4.6 points [$-6.6$, $-2.6$],

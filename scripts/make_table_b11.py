@@ -108,8 +108,8 @@ def robustness():
                  "1{,}500 episodes per row, at assay noise unless the row changes it. Rows that would repeat "
                  "Table~\\ref{tab:b11reg} are left out. The last two columns are Run A's pick minus random ordering and "
                  "minus the best scripted rule at its best number of re-tests, on the same episodes. Stress: each round's "
-                 "readings share one multiplicative factor with this standard deviation (batch), an additive noise floor of 2\\% of the "
-                 "landscape maximum (floor), or 2\\% of readings replaced by a near-zero value (failed wells) or by three "
+                 "readings share one multiplicative factor with this standard deviation (batch), or get an additive noise floor of 2\\% of the "
+                 "landscape maximum (floor). In the other two, 2\\% of readings are replaced by a near-zero value (failed wells) or by three "
                  "times the reading (spikes). Real names: GB1 and PhoQ under their amino-acid names. At 4 rounds of 24 the "
                  "scripted rules' re-tests scale with the slots per round, and two of Run A's input features exceed the "
                  "range seen in training. Intervals as in Table~\\ref{tab:b11reg}; under real names, one landscape each, "
@@ -143,7 +143,7 @@ def stress():
                  "The guessing and informed rules under the stress conditions of Table~\\ref{tab:b11robust} "
                  "that keep their best number of re-tests, 1{,}500 episodes per landscape and condition, at assay "
                  "noise. Without stress their best is %s re-test a round on the grid and %s on GB1. Best k is the best "
-                 "number of re-tests a round, with its re-testing share; three minus best is the pick of three re-tests "
+                 "number of re-tests a round, with its re-testing share. Three minus best is the pick of three re-tests "
                  "a round minus that of the best, with intervals as in Table~\\ref{tab:b11reg}. Four re-tests a round "
                  "are lower still in every row."
                  % (base["grid"]["guessing"], base["GB1"]["guessing"]),
@@ -220,7 +220,7 @@ def phase2():
             lab, num(data["b11_replication_A.json"]["end_of_training"]["training_curves"][f]),
             num(end("B", f)), num(data["b11_B_ent05.json"]["end_of_training"]["training_curves"][f])))
     return table("tab:b11phase2",
-                 "Five more seeds of Run A (three to seven), trained and tested as registered, and Run B "
+                 "Five more seeds of Run A (three to seven), trained and tested as registered. Beside them, Run B "
                  "retrained with an entropy bonus five times the registered one, tested with the registered code on all "
                  "three test splits. Run B trains on the grid and GB1, so only PhoQ tests its transfer. Differences in final "
                  "pick against random ordering, with intervals as in "

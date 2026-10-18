@@ -206,7 +206,7 @@ def figA2_simulation():
                     color=FS.OKABE["blue"], capsize=1.5, elinewidth=0.6)
         ax.scatter([r["kstar"]], [r["sweep"][str(r["kstar"])]["mean"]], marker="*", s=42,
                    color=FS.OKABE["vermillion"], zorder=4)
-        ax.set_title("K=%d, cv x%.1f\n%s%s" % (r["K"], r["cv_mult"], FS.REF_SHORT[r["scope"]],
+        ax.set_title("K=%d, noise x%.1f\n%s%s" % (r["K"], r["cv_mult"], FS.REF_SHORT[r["scope"]],
                                                ", tie" if r["gap_is_a_tie"] else ""),
                      fontsize=FS.MIN_PT - 1)
         ax.set_xticks([int(k) for k in ks])          # k is a count of repeats, so the ticks are integers
@@ -216,7 +216,7 @@ def figA2_simulation():
         ax.axis("off")
     for ax in axes[-1]:
         ax.set_xlabel("$k$", fontsize=FS.MIN_PT)
-    axes[0][0].set_ylabel("mean outcome", fontsize=FS.MIN_PT)
+    axes[0][0].set_ylabel("mean final pick", fontsize=FS.MIN_PT)
     fig.tight_layout()
     return FS.save(fig, "figA2_simulation")
 

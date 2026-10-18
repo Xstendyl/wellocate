@@ -2,7 +2,7 @@
 \label{app:amendments}
 
 The prompt study's design, outcome, confirmatory contrasts and analysis were registered before it ran
-(Appendix~\ref{app:grid}). Every later change was registered, with its date, before the data it governs. These changes added the aids experiment on the grid, with labels for a large, a small or no change in re-testing fixed in advance. They also added the landscape note, the model-guided rule and the Menu on scrambled GB1. Later changes added GPT-6.1 Sol and Gemini 3.1 Pro on the grid and on GB1, and the PhoQ runs for all five models with a named test. The last added the replication of the Decision-rule result, the learnability simulation and the test of the trained policy. A cap on repeat orders was also registered and then withdrawn before its main run: in trial runs the agents met the
+(Appendix~\ref{app:grid}). Every later change was registered, with its date, before the data it governs. These changes added the aids experiment on the grid, with labels for a large, a small or no change in re-testing fixed in advance. They also added the landscape note, the model-guided rule and the Menu on scrambled GB1. Later changes added GPT-6.1 Sol and Gemini 3.1 Pro on the grid and on GB1, and the PhoQ runs for all five models with a named test. The last added the replication of the Decision-rule result, the learnability simulation and the test of the trained policy. A cap on repeat orders was also registered and then withdrawn before its main run. In trial runs the agents met the
 cap by proposing new names, most of them non-viable. No seed was dropped from the GPT-6.1 Sol, Gemini 3.1 Pro or PhoQ runs. Exclusions in other runs are reported where they occur.
 Every other analysis in these appendices was decided after the registered ones. It describes, checks or explores
 the results and tests no claim, and so does the noise sweep of Section~\ref{sec:bench}.
@@ -10,7 +10,7 @@ the results and tests no claim, and so does the noise sweep of Section~\ref{sec:
 \section{The five models}
 \label{app:comparators}
 All five models ran at temperature 0 (Table~\ref{tab:models}). OpenRouter sends each call for an open-weight
-model to one of several hosting companies, so in every run DeepSeek V3.1's calls went to several hosts, and its
+model to one of its hosting companies. In every run DeepSeek V3.1's calls went to five or six hosts, and its
 results average over them. Opus 4.7, Gemini 2.5 Flash and DeepSeek V3.1 ran with
 reasoning off. GPT-6.1 Sol and Gemini 3.1 Pro ran at their lowest reasoning setting. Even so, Gemini 3.1 Pro used more than 16{,}000 reasoning tokens on each of \nProHeavyCalls{} calls, up to \nProMaxReasoning{} on one. All five saw the Blind prompt of Appendix~\ref{app:grid}, which says nothing about measurement error or repeats.
 
@@ -19,8 +19,7 @@ reasoning off. GPT-6.1 Sol and Gemini 3.1 Pro ran at their lowest reasoning sett
 \subsection{Results on the grid}
 
 Table~\ref{tab:fivegrid} gives each model's re-testing share, final pick and losses.
-The scripted band runs from \nGuessShare\% to \nBandHi\% of slots, or \nBandNonlostLo\% to \nBandNonlostHi\% counted
-over slots not lost, and the guessing rule's exploration and selection losses are 0.67 and 0.23. Every model's pick
+The scripted band runs from \nGuessShare\% to \nBandHi\% of slots, or \nBandNonlostLo\% to \nBandNonlostHi\% counted over slots not lost. The guessing rule's exploration and selection losses are 0.67 and 0.23. Every model's pick
 interval lies below the guessing rule's 7.87. Gemini 3.1 Pro's final pick had a single reading in
 \nGridOneReadingPro\% of its campaigns, against \nGridOneReadingInf\% for the informed rule and
 \nGridOneReadingGuess\% for the guessing rule. With reasoning on (Appendix~\ref{app:reasoning}), Opus 4.7 re-tests
@@ -61,9 +60,7 @@ selection.
 \label{app:atwo}
 
 Sol nominated the same candidate, true value \nFsrmTrue, in 12 of its 30 GB1 campaigns without the Menu. Its registered lead over the
-guessing rule resamples campaigns by seed, so it counts those twelve campaigns as independent. Two checks that count
-them as one leave the estimate about the same and widen its interval to include zero (Table~\ref{tab:sollead}): one
-resamples whole nominees, and the other counts the repeated nominee once. Sol's lead on GB1 is therefore uncertain. The Menu's effect on its pick stays undetectable under both checks: \nSolGbMenuClu{} \nSolGbMenuCluci{} and \nSolGbMenuCol{}
+guessing rule resamples campaigns by seed, so it counts those twelve campaigns as independent. Two checks count them as one: one resamples whole nominees, and the other counts the repeated nominee once. Both leave the estimate about the same and widen its interval to include zero (Table~\ref{tab:sollead}). Sol's lead on GB1 is therefore uncertain. The Menu's effect on its pick stays undetectable under both checks: \nSolGbMenuClu{} \nSolGbMenuCluci{} and \nSolGbMenuCol{}
 \nSolGbMenuColci.
 
 \begin{table}[tbp]
@@ -130,9 +127,7 @@ every model except Sol picks worse. In the registered comparison DeepSeek V3.1, 
 \begin{table}[tbp]
 \centering
 \small
-\caption{The five models on scrambled PhoQ, with 95\% intervals. The last three columns are each model's pick minus
-the guessing rule's: against its mean over 1{,}500 reference seeds (the registered comparison), and paired with the
-guessing rule on the model's own seeds, on PhoQ and on GB1.}
+\caption{The five models on scrambled PhoQ, with 95\% intervals. The last three columns are each model's pick minus the guessing rule's. The first sets it against that rule's mean over 1{,}500 reference seeds (the registered comparison). The other two pair it with the guessing rule on the model's own seeds, on PhoQ and on GB1.}
 \label{tab:phoq}
 \begin{tabular}{lccccc}
 \toprule
@@ -195,6 +190,5 @@ GPT-6.1 Sol & last two rounds, $m = 1$ & \estci{\nAtwoSolKone}{\nAtwoSolKoneci} 
 \end{table}
 
 \paragraph{The last two rounds.} Replacing the last two rounds, with the top $m$ chosen after the round before them,
-recovers about \nAtwoProRecoveredOwn\% of Gemini 3.1 Pro's selection loss at $m = 3$, close to one round's
-\nAoneProRecoveredKthree\% at the same $m$. Sol's pick falls slightly at $m = 1$, with an interval that includes zero. This run was not planned in advance.
+recovers about \nAtwoProRecoveredOwn\% of Gemini 3.1 Pro's selection loss at $m = 3$. One round recovers \nAoneProRecoveredKthree\% at the same $m$. Sol's pick falls slightly at $m = 1$, with an interval that includes zero. This run was not planned in advance.
 

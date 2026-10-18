@@ -20,8 +20,7 @@ descriptive across conditions and is not one of the pre-registered contrasts.
 7.6308 to 7.8501. At $k^\ast$ the guessing rule reaches 7.8659 and the informed rule 7.9993. Against the scripted rules with no re-tests, the answer depends on the rule. Five of the 15 cells sit above the guessing
 rule's $k{=}0$ mean of 7.7098, two with intervals entirely above, and every cell sits below the informed
 rule's 7.8862. The most exploratory cell reaches 39.2\% of the guessing rule's count of distinct candidates. Split
-against the global best, exploration accounts for 0.8428 to 1.0928 of the shortfall and selection for 0.0087 to
-0.1148, so in every cell exploration is 88.9\% to 99.2\% of the total and selection 0.8\% to 11.1\% (Figure~\ref{fig:shortfall_global}).
+against the global best, exploration accounts for 0.8428 to 1.0928 of the shortfall and selection for 0.0087 to 0.1148. In every cell exploration is thus 88.9\% to 99.2\% of the total and selection 0.8\% to 11.1\% (Figure~\ref{fig:shortfall_global}).
 
 \paragraph{Rejections.} Cell means run 2.57 to 11.34 distinct candidates, against 28.94 for the guessing rule and
 39.14 for the informed rule. Over all 5{,}075 prompt-study campaigns the agents were rejected 16.75 times per campaign and
@@ -38,21 +37,19 @@ Flash in every condition except Quantitative, and DeepSeek V3.1 in every conditi
 
 
 \paragraph{Temperature.} Three models under Mechanism at temperature 1.0, on the grid's own seeds. Re-testing moves by $-0.3$
-percentage points (SE 0.8) for Opus 4.7 and $-1.0$ (SE 0.3) for DeepSeek V3.1, and falls
-5.5 (SE 1.0) for Gemini 2.5 Flash, which leaves it at 89.9\% of slots. The final pick
+percentage points (SE 0.8) for Opus 4.7 and $-1.0$ (SE 0.3) for DeepSeek V3.1. It falls 5.5 (SE 1.0) for Gemini 2.5 Flash, which leaves it at 89.9\% of slots. The final pick
 moves by at most 0.07 in either direction, with standard errors of 0.04 to 0.06.
 
 \paragraph{Reasoning.}
 \label{app:reasoning}
-This experiment runs two of the five conditions on two of the three models, at reasoning effort
-medium, paired by seed against the prompt study with 35 to 40 seeds per cell after exclusions. Holm correction runs across
+This experiment runs two of the five conditions on two of the three models, at reasoning effort medium. It is paired by seed against the prompt study, with 35 to 40 seeds per cell after exclusions. Holm correction runs across
 its four cells only.
 
 Reasoning shifted agents from re-testing toward exploration and their picks worsened, mainly because they
 found worse candidates. The re-testing share falls by 7.5 to 12.4 percentage points and distinct candidates
 rise by 3.7 to 7.1 per campaign in all four cells. The final pick's true value falls by 0.099 to 0.263,
 and all four cells reject at 0.05 after Holm. The true value of the best candidate the agent measured drops
-from 7.6854--7.7387 in the prompt study to 7.5302--7.6253 under reasoning, so exploration loss rises by $+0.06$ to $+0.19$, and selection loss by only $+0.007$ to $+0.085$. In 9 of 80 Gemini 2.5 Flash reasoning campaigns the model returned no final answer, eight of them at the 6{,}000-token output limit, and these are excluded. Keeping the nine excluded campaigns
+from 7.6854--7.7387 in the prompt study to 7.5302--7.6253 under reasoning. Exploration loss rises by $+0.06$ to $+0.19$, and selection loss by only $+0.007$ to $+0.085$. In 9 of 80 Gemini 2.5 Flash reasoning campaigns the model returned no final answer, eight of them at the 6{,}000-token output limit, and these are excluded. Keeping the nine excluded campaigns
 leaves the comparison unchanged: with all 40 paired seeds the differences are $-0.0987$, $-0.2528$,
 $-0.2016$ and $-0.2338$, and all four still reject.
 
@@ -62,10 +59,10 @@ $-0.2016$ and $-0.2338$, and all four still reject.
 \label{app:bio}
 Each of the three models ran three cells of 40 campaigns on the Blind prompt, each with one added sentence that gives the agent a wet-lab role. The cells hold the role alone, the role with exact readings, and the role with one more sentence saying readings are noisy. The result covers only what one sentence of lab context does to the behaviour. The candidates are four letters from A to T. Seventeen of the twenty letters are amino-acid codes. The landscape is generated, so a biochemical intuition the framing evokes has nothing to attach to.
 
-The role lowers re-testing in all three models against the same prompt without it: $-6.5$ percentage points
+The role lowers re-testing in all three models against the same prompt without it. The changes are $-6.5$ percentage points
 for Opus 4.7 $[-8.5, -4.5]$, $-9.8$ for Gemini 2.5 Flash $[-12.7, -7.0]$ and $-2.9$ for
 DeepSeek V3.1 $[-4.7, -1.2]$. Re-testing persists under the role with exact readings, at 49.1\% to
-86.4\% of slots. The same persistence appears with no role at all: the zero-noise run's own Blind cells, which carry the
+86.4\% of slots. The same persistence appears with no role at all. The zero-noise run's own Blind cells, which carry the
 prompt these role cells are built on, sit at 52.6\%, 92.9\% and 88.0\% of all used slots. Within this experiment, exact readings lower re-testing against the role cell by 19.8, 8.3 and 1.8 percentage points, paired by
 seed, with DeepSeek V3.1's interval including zero. Saying that readings are noisy raised re-testing a little against the role cell, in all three models.
 
@@ -104,14 +101,12 @@ selection rule settles on $k=1$ with the registered selection rule of Section~\r
 simulated settings. Sweeping $k$ gives $k^\ast = 1$ in 13 settings, $k^\ast = 2$ in 3 and $k^\ast = 0$ in 2. In 16 of the 18 the
 gap between $k^\ast$ and its runner-up sits inside two standard errors, so most settings are ties. Raw paired
 differences between the policy at $k^\ast$ with the registered selection rule and the rule that never re-tests run $-0.0077$ to $+0.2231$
-on the held-out landscapes, and both negative values are at half noise.
+on the held-out landscapes. Both negative values are at half noise.
 
 \begin{figure}[tbp]
 \centering
 \includegraphics[width=\textwidth]{figA2_simulation.pdf}
-\caption{The learnability simulation: mean final pick against $k$, the slots per round spent re-testing
-the current best, one panel per setting of ruggedness $K$, noise and rule, over 200 generated landscapes per
-setting, with standard errors. The star marks the best $k$. A panel marked \emph{tie} is one where the paired gap
+\caption{The learnability simulation: mean final pick against $k$, the slots per round spent re-testing the current best, with standard errors. Each panel is one setting of ruggedness $K$, noise (as a multiple of assay noise) and rule, over 200 generated landscapes. The star marks the best $k$. A panel marked \emph{tie} is one where the paired gap
 to the runner-up is inside two of its own standard errors.}
 \label{fig:sim}
 \end{figure}
@@ -121,13 +116,11 @@ or tied in all 18 settings. At half noise, never re-testing ties with one repeat
 landscapes, and at 1{,}500 landscapes the best is never zero. 
 
 \paragraph{The registered score and collapsed campaigns.} The pre-registered score rescales each result between those of
-two scripted endpoints. Across landscapes those endpoints move by more than the gap between them, so a held-out score
-rescaled with training endpoints is unstable: 0.122 to 7.765 across the 16 cells where it is defined.
+two scripted endpoints. Across landscapes those endpoints move by more than the gap between them. A held-out score rescaled with training endpoints is therefore unstable: 0.122 to 7.765 across the 16 cells where it is defined.
 Rescored with endpoints from the same held-out landscapes it runs 0.784 to 1.000. It is exactly 1.000 in the 11 cells
-where $k^\ast = 1$ and the score is defined, because the learner selects that policy, and undefined in four cells at
+where $k^\ast = 1$ and the score is defined, because the learner selects that policy. It is undefined in four cells at
 half noise, where the held-out span is zero or negative. No claim in this paper depends on it. The guessing rule's
-means at high re-testing are over surviving campaigns, since a campaign collapses when fewer than two candidates are
-measured: at $K=3$, 138 of 200 campaigns collapse at $k=4$ and 12 of 200 at $k=3$.
+means at high re-testing are over surviving campaigns, since a campaign collapses when fewer than two candidates are measured. At $K=3$, 138 of 200 campaigns collapse at $k=4$ and 12 of 200 at $k=3$.
 
 \paragraph{The larger run.} At 1{,}500 landscapes per setting the picture holds: one
 re-test a round is best or tied in all 18 settings. The three settings where two came out ahead

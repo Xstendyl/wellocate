@@ -10,8 +10,8 @@ slot over the whole campaign: an agent that re-tests everything rarely backs a l
 The failures sit at the level of the campaign, and more thought about each experiment did not fix them. Gemini 3.1 Pro
 sometimes reasoned for over 16{,}000 tokens before one round of orders, and its final pick still had a single reading in
 \nProOneReading\% of grid campaigns. Opus 4.7 and Gemini 2.5 Flash still re-test most of
-their slots with reasoning switched on (Appendix~\ref{app:panels}). Prompt wording did not fix them either: the one wording change that passed our registered test shrank to almost
-nothing on fresh seeds (Appendix~\ref{app:replication}), and a one-sentence lab role lowered re-testing by at most
+their slots with reasoning switched on (Appendix~\ref{app:panels}). Prompt wording did not fix them either. The one wording change that passed our registered test shrank to almost
+nothing on fresh seeds (Appendix~\ref{app:replication}). A one-sentence lab role lowered re-testing by at most
 ten points (Appendix~\ref{app:bio}). What helped the over-confirmers was a cheap supply of
 candidates worth testing (Section~\ref{sec:why}). For the under-confirmer, one final round of checks recovered about a
 quarter of its loss, which suggests confirmation has to run through the whole campaign (Section~\ref{sec:under}).
@@ -26,8 +26,7 @@ slots on new candidates.
 few at the end, as the scripted model-guided rule does.
 \end{enumerate}
 
-The main limits of our study concern the range of landscapes and models we tested, the simple agent we used, and the
-parts of a real lab that Wellocate leaves out, which Appendix~\ref{app:env} lists. We compared five models on three landscapes, one
+The main limits of our study are the range of landscapes and models we tested and the simple agent we used. Appendix~\ref{app:env} lists the parts of a real lab that Wellocate leaves out. We compared five models on three landscapes, one
 generated and two real proteins under scrambled names, so other real landscapes may behave differently. Among the
 proteins the Menu was tested on GB1 only, and under-confirmation appeared in one model, Gemini 3.1 Pro, on the grid
 alone. Our agent was deliberately simple: each round it made one fresh call with the full history in its prompt, with no
