@@ -1,0 +1,4 @@
+# The environment, the baselines and the paper's checks use only the Python standard library (3.9 or later).
+# The PPO example in wellocate/examples/ and its tests need these two:
+numpy
+torch

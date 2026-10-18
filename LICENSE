@@ -3,7 +3,7 @@ MIT License
 Copyright (c) 2026 Abdul Karim and Matt Keon
 
 This licence covers the source code in this repository: repdef/, wellocate/, examples/, scripts/, tests/,
-training/, the Python files under independent_check/, and every other source file. The results, the paper,
+the Python files under independent_check/, and every other source file. The results, the paper,
 the pre-registrations and the logged replies of the independent check are under CC BY 4.0; see LICENSE-DATA.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy

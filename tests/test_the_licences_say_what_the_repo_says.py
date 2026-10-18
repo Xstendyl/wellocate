@@ -112,7 +112,7 @@ class Licences(unittest.TestCase):
         self.assertEqual([], unclaimed,
                          "source files sit outside every directory the MIT licence names:\n  " +
                          "\n  ".join(unclaimed))
-        for d in ("wellocate/", "examples/", "training/", "independent_check/"):
+        for d in ("wellocate/", "examples/", "independent_check/"):
             self.assertIn(d, named, "%s is not named in either licence" % d)
 
     def test_no_licence_file_is_empty(self):

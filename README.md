@@ -54,18 +54,34 @@ python3 scripts/download_data.py      # the two protein landscapes
 python3 scripts/quickstart.py         # two scripted strategies on one campaign
 ```
 
-```python
-from wellocate import Wellocate, evaluate, baselines
+Python 3.9 or later. The environment needs only the standard library; the PPO example in `wellocate/examples/`
+needs `numpy` and `torch` (`pip install -r requirements.txt`).
 
-env = Wellocate("gb1", "gb1:test", seed=0)   # also "phoq" and "nk"; step(), nominate()
+```python
+from wellocate import Wellocate, evaluate, baselines, splits
+
+env = Wellocate("gb1", "gb1:test", seed=0)   # also "phoq" and "nk"
+obs = env.observation                       # obs.history, obs.alphabet, obs.anchor, obs.n_slots
+while obs.phase in ("round", "replacement"):
+    obs, reward, done, info = env.step([obs.anchor] * obs.n_slots)
+obs, reward, done, info = env.nominate(obs.anchor)   # reward is the nominee's true value
+
 print(evaluate(baselines.guessing(0), "bio:test", n=100))
 ```
+
+`evaluate` also runs every scripted reference on the same episodes, so `n=100` takes about two minutes on one
+core; at small `n` the best scripted setting it reports can differ from the table below. A split's episodes
+cycle through its landscapes, and building one takes about half a second, so a training loop should visit
+episodes grouped by landscape: `for inst, cseed in sorted(splits.episodes("nk:train", 1000)): env = Wellocate(inst, seed=cseed)`.
+
+A fair agent sees what the language models saw: the history of orders, outcomes and readings. `obs.view` exists
+for the scripted baselines and includes the set of viable candidates, which only the informed rule may use.
 
 Language models get the exact prompts from the paper through `env.prompt()` and `env.act_text(reply)`. The splits
 are fixed: train, validation and test sets of scrambled proteins and generated landscapes, with the real protein
 names and rougher landscapes held out.
 
-Reference results on the test splits, mean final pick with the re-testing share in brackets:
+Reference results on the test splits (1,500 episodes each), mean final pick with the re-testing share in brackets:
 
 | split | random | guessing rule | informed rule | model-guided rule | best scripted share |
 |---|---|---|---|---|---|

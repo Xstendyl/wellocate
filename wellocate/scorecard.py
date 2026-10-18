@@ -22,6 +22,7 @@ factory that takes the landscape (repdef.envs.Env) and returns one. Without nomi
 rule nominates. An episode where that rule is undefined (fewer than two measured candidates) is counted as
 collapsed and left out, the paper's convention for its references.
 """
+import functools
 import collections
 import statistics as st
 
@@ -88,11 +89,20 @@ def _boot(cols, reps, tag):
     return out
 
 
+@functools.lru_cache(maxsize=None)
 def references(split, n=None, noise="assay"):
-    """The guessing curve (k = 0 to 4), informed curve and model-guided policy on the same episodes."""
-    return refs_from({k: run(B.guessing(k), split, n, noise) for k in KS},
-                     {k: run(B.informed(k), split, n, noise) for k in KS},
-                     run(B.model_guided(1, True), split, n, noise))
+    """The guessing curve (k = 0 to 4), informed curve and model-guided policy on the same episodes. Computed once
+    per (split, n, noise) in a session, since every evaluate() call on that split reuses them. All eleven rules play
+    one landscape before the next is built, so each landscape is built once."""
+    pols = [("guessing", k, B.guessing(k)) for k in KS] + [("informed", k, B.informed(k)) for k in KS]
+    pols.append(("model_guided", None, B.model_guided(1, True)))
+    eps = SP.episodes(split, n)
+    rows = {(kind, k): [None] * len(eps) for kind, k, _p in pols}
+    for i in sorted(range(len(eps)), key=lambda i: (eps[i][0], i)):
+        for kind, k, pol in pols:
+            rows[(kind, k)][i] = run_episode(pol, eps[i][0], eps[i][1], noise)
+    return refs_from({k: rows[("guessing", k)] for k in KS}, {k: rows[("informed", k)] for k in KS},
+                     rows[("model_guided", None)])
 
 
 def refs_from(guessing, informed, model_guided):

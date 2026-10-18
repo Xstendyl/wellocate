@@ -14,7 +14,7 @@ WHAT THIS COVERS
 WHAT THIS DOES NOT COVER
 
   The source code, which is under the MIT Licence. See LICENSE. That covers repdef/, wellocate/,
-  examples/, scripts/, tests/, training/, the Python files under independent_check/, and every other
+  examples/, scripts/, tests/, the Python files under independent_check/, and every other
   source file in this repository. A .py file inside independent_check/ is code and is under MIT.
 
   The two published fitness landscapes that scripts/download_data.py fetches into data/. They are

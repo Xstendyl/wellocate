@@ -52,7 +52,9 @@ class Observation:
     anchor: str                       # the reference point
     anchor_reading: str               # its value as the prompt states it, two decimals
     example: str                      # the prompt's format example, a neighbour of the reference point
-    view: object                      # repdef.view.CampaignView, for policies written against the harness
+    view: object                      # repdef.view.CampaignView, for the scripted baselines. It carries the viable
+                                      # set (view.pool, view.pool_sorted), which only the informed rule may use;
+                                      # a fair agent reads history, alphabet and anchor and never view.pool.
 
 
 def noise_cv_of(noise):
@@ -112,6 +114,8 @@ class Wellocate(object):
             return lan, int(seed)                      # a repdef.envs.Env passed directly
         if "/" in lan:
             return LS.instance(lan), int(seed)
+        if int(seed) < 0:
+            raise ValueError("seed is an episode index and must be 0 or more, got %r" % (seed,))
         if not self.split.startswith(lan + ":"):
             raise ValueError("split %r is not a %s split" % (self.split, lan))
         inst, cseed = SP.episodes(self.split, int(seed) + 1)[int(seed)]
@@ -208,6 +212,10 @@ class Wellocate(object):
         candidates = list(candidates)
         if len(candidates) > n:
             raise ValueError("%d candidates sent for %d slot(s)" % (len(candidates), n))
+        width, alphabet = len(self.env.anchor), set(self.env.alphabet)
+        for c in candidates:
+            if not isinstance(c, str) or len(c) != width or not set(c) <= alphabet:
+                raise ValueError("candidate %r is not a %d-letter string over %s" % (c, width, self.env.alphabet))
         if kind == "replacement" and not candidates:
             pass                                           # declining a replacement loses the slot, as in the paper
         self._req = self._gen.send(candidates)
