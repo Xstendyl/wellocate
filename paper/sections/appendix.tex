@@ -49,7 +49,7 @@ reads DNA in short pieces. Each piece is one read, a variant's count is how many
 reads per variant is the \emph{read depth}.
 
 In that study a variant's fitness is its after-to-before read ratio, divided by the same ratio for the
-unmodified protein the study started from. That protein is unrelated to \texttt{GDIF}. The study's
+unmodified protein the study started from. It has nothing to do with \texttt{GDIF}, the grid's reference candidate. The study's
 published read totals average 557 reads per variant before selection and 285 after. Treating each count as Poisson, the variance
 of the log ratio is about $1/285 + 1/557$, so its standard deviation, the relative error, is about 7.3\%. We apply this
 average depth to every candidate, which gives the constant 0.073. Real counts are often more spread out than Poisson, so this is a
@@ -91,8 +91,7 @@ The guessing and informed rules of Section~\ref{sec:env} were the prompt study's
 rule was added later under a registered change. The guessing and informed rules spend $k$ of the four slots a round
 re-testing their current best, and $k^\ast$ is the best setting. The informed rule is told which candidates are
 viable. It is never rejected, so it loses no slots to rejections, and it still has to find out how good each candidate is. The agents are not told
-which candidates are viable, so the informed rule has an easier task than theirs. The guessing rule was pre-registered and run before any result was
-written. It tries every candidate one letter away from its current best, and follows the agents' rules for rejections,
+which candidates are viable, so the informed rule has an easier task than theirs. The guessing rule was pre-registered. It tries every candidate one letter away from its current best, and follows the agents' rules for rejections,
 replacements and lost slots, in the same code. Both ran on the same 1{,}500 seeds per setting.
 
 The model-guided rule spends its first four rounds trying one-letter changes of the start, one at each position. From
@@ -119,7 +118,7 @@ campaigns collapsing at $k{=}4$     & 16 of 1{,}500 & 147 of 1{,}500 \\
 \end{tabular}
 \end{table}
 
-On the grid both do best at one re-test a round, and every grid comparison with the agents holds against either.
+On the grid both do best at one re-test a round. Every comparison between the agents and the scripted rules there reaches the same conclusion with either rule.
 
 
 
@@ -138,17 +137,16 @@ runs about \nEpisodesPerSec{} episodes a second.
 validation and testing and the real amino-acid names held out (Table~\ref{tab:splits}). A scramble changes only the names, so a protein test split asks for unseen names of the same protein. Training on one protein and testing on the other asks for transfer. The grid track gives fresh NK landscapes and holds out rougher ones. Every split is fixed and public. A hidden test server is future work.
 
 \paragraph{Scoring and baselines.} The scorecard gives each policy's mean pick and its regret against the informed rule on the same episodes. It adds the re-testing share, the exploration and selection losses, the candidates measured and the slots lost, each with a 95\% interval. Beside them it names the best scripted share for that landscape and noise.
-The baselines are random ordering, the guessing rule, the informed rule and the model-guided rule. A fifth, a simple untuned confirmation policy, explores without repeats and re-tests its top candidates at the end. Our language-model results
-sit beside them as read-only rows.
+The baselines are random ordering, the guessing rule, the informed rule and the model-guided rule. A fifth, a simple untuned confirmation policy, explores without repeats and re-tests its top candidates at the end. The scorecard also lists our language-model results for comparison.
 
-\paragraph{Noise and the best split.} On the grid the guessing rule that never re-tests loses \nGridSelLow{},
-\nGridSelAssay{} and \nGridSelHigh{} at selection at low, assay and high noise. On PhoQ one re-test a round ties with
+\paragraph{Noise and the best number of re-tests.} On the grid the guessing rule that never re-tests loses \nGridSelLow{},
+\nGridSelAssay{} and \nGridSelHigh{} at selection at half, one and two times assay noise. On PhoQ one re-test a round ties with
 no re-tests at about \nPhoqTimesLow{} times assay noise, and wins clearly at \nPhoqTimesHigh{} times. On GB1 it wins
 only at \nGbTimesHigh{} times (Table~\ref{tab:onevszero}). Part of re-testing's value on the grid is avoiding
 rejections: the rule that never re-tests loses \nGridLostKzero{} slots to rejections, against \nGridLostKone{} for one
 re-test a round. With free rejections, one re-test a round still beats no re-tests on the grid at assay noise
 (Table~\ref{tab:onevszero}), so there re-testing also pays because of the noise. With free rejections the best number
-of re-tests also rises with noise sooner on the grid, and GB1 and PhoQ keep the best settings of
+of re-tests also rises at lower noise on the grid, and GB1 and PhoQ keep the best settings of
 Figure~\ref{fig:noise} (Figure~\ref{fig:noisefree}).
 
 \begin{table}[tbp]

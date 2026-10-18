@@ -17,8 +17,7 @@ under Aggregated, and its re-testing share rises from 75.4\% to 81.6\% and then 
 descriptive across conditions and is not one of the pre-registered contrasts.
 
 \paragraph{Final picks against the scripted rules.} Cell means of the final pick's true value run from
-7.6308 to 7.8501. At $k^\ast$ the guessing rule reaches 7.8659 and the informed rule 7.9993. Against a
-rule that never re-tests, the comparison depends on the reference. Five of the 15 cells sit above the guessing
+7.6308 to 7.8501. At $k^\ast$ the guessing rule reaches 7.8659 and the informed rule 7.9993. Against the scripted rules with no re-tests, the answer depends on the rule. Five of the 15 cells sit above the guessing
 rule's $k{=}0$ mean of 7.7098, two with intervals entirely above, and every cell sits below the informed
 rule's 7.8862. The most exploratory cell reaches 39.2\% of the guessing rule's count of distinct candidates. Split
 against the global best, exploration accounts for 0.8428 to 1.0928 of the shortfall and selection for 0.0087 to
@@ -53,25 +52,22 @@ Reasoning shifted agents from re-testing toward exploration and their picks wors
 found worse candidates. The re-testing share falls by 7.5 to 12.4 percentage points and distinct candidates
 rise by 3.7 to 7.1 per campaign in all four cells. The final pick's true value falls by 0.099 to 0.263,
 and all four cells reject at 0.05 after Holm. The true value of the best candidate the agent measured drops
-from 7.6854--7.7387 in the prompt study to 7.5302--7.6253 under reasoning, so exploration loss rises by $+0.06$ to $+0.19$, and selection loss by only $+0.007$ to $+0.085$. Keeping the nine excluded campaigns
+from 7.6854--7.7387 in the prompt study to 7.5302--7.6253 under reasoning, so exploration loss rises by $+0.06$ to $+0.19$, and selection loss by only $+0.007$ to $+0.085$. In 9 of 80 Gemini 2.5 Flash reasoning campaigns the model returned no final answer, eight of them at the 6{,}000-token output limit, and these are excluded. Keeping the nine excluded campaigns
 leaves the comparison unchanged: with all 40 paired seeds the differences are $-0.0987$, $-0.2528$,
 $-0.2016$ and $-0.2338$, and all four still reject.
 
-In 9 of 80 Gemini 2.5 Flash reasoning campaigns the model returned no final answer, eight of them at the 6{,}000-token
-output limit. These are excluded, and the check above includes them.
+
 
 \paragraph{Biology framing.}
 \label{app:bio}
-Three cells of 40 campaigns on three models, all under the Blind condition, differing in one sentence
-of the prompt and in $\sigma$. The added sentence gives the agent a wet-lab role, so the result covers only what one sentence of lab
-context does to the behaviour. The candidates are four letters from A to T. Seventeen of the twenty letters are amino-acid codes. The landscape is generated, so a biochemical intuition the framing evokes has nothing to attach to.
+Each of the three models ran three cells of 40 campaigns on the Blind prompt, each with one added sentence that gives the agent a wet-lab role. The cells hold the role alone, the role with exact readings, and the role with one more sentence saying readings are noisy. The result covers only what one sentence of lab context does to the behaviour. The candidates are four letters from A to T. Seventeen of the twenty letters are amino-acid codes. The landscape is generated, so a biochemical intuition the framing evokes has nothing to attach to.
 
 The role lowers re-testing in all three models against the same prompt without it: $-6.5$ percentage points
 for Opus 4.7 $[-8.5, -4.5]$, $-9.8$ for Gemini 2.5 Flash $[-12.7, -7.0]$ and $-2.9$ for
 DeepSeek V3.1 $[-4.7, -1.2]$. Re-testing persists under the role with exact readings, at 49.1\% to
 86.4\% of slots. The same persistence appears with no role at all: the zero-noise run's own Blind cells, which carry the
 prompt these role cells are built on, sit at 52.6\%, 92.9\% and 88.0\% of all used slots. Within this experiment, exact readings lower re-testing against the role cell by 19.8, 8.3 and 1.8 percentage points, paired by
-seed, with DeepSeek V3.1's interval including zero.
+seed, with DeepSeek V3.1's interval including zero. Saying that readings are noisy raised re-testing a little against the role cell, in all three models.
 
 \section{A pre-registered replication of the Decision-rule result}
 \label{app:replication}
@@ -99,7 +95,7 @@ original gap coming mostly from a Mechanism sample that happened to score low.
 \section{The learnability simulation}
 \label{app:sim}
 
-This simulation makes no model calls. It runs the informed and the guessing rule at $K \in \{1,2,3\}$ and at
+This simulation asks whether the best number of re-tests can be learned from the environment's reward alone. It makes no model calls. It runs the informed and the guessing rule at $K \in \{1,2,3\}$ and at
 noise of 0.5, 1 and 2 times ours, 18 settings in all. Each uses 200 fresh landscapes, one per seed, and training and
 held-out landscapes come from separate seed ranges.
 
@@ -124,7 +120,7 @@ The right rate depends on the noise. It is zero when readings are exact. In the 
 or tied in all 18 settings. At half noise, never re-testing ties with one repeat in two settings at 200
 landscapes, and at 1{,}500 landscapes the best is never zero. 
 
-\paragraph{The normalised score and collapses.} The pre-registered score rescales each result between those of
+\paragraph{The registered score and collapsed campaigns.} The pre-registered score rescales each result between those of
 two scripted endpoints. Across landscapes those endpoints move by more than the gap between them, so a held-out score
 rescaled with training endpoints is unstable: 0.122 to 7.765 across the 16 cells where it is defined.
 Rescored with endpoints from the same held-out landscapes it runs 0.784 to 1.000. It is exactly 1.000 in the 11 cells

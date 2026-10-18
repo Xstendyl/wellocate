@@ -104,7 +104,7 @@ def robustness():
             row(group if i == 0 else "", name, b["policies"]["Run A"]["pick"]["mean"],
                 b["policies"]["Run A"]["share"]["mean"], b["run_a_minus_random"]["pick"], b["run_a_minus_best"]["pick"])
     return table("tab:b11robust",
-                 "The trained policy (Run A, zero-shot) under every change after the registered test, "
+                 "The trained policy (Run A, without retraining) under every change after the registered test, "
                  "1{,}500 episodes per row, at assay noise unless the row changes it. Rows that would repeat "
                  "Table~\\ref{tab:b11reg} are left out. The last two columns are Run A's pick minus random ordering and "
                  "minus the best scripted rule at its best number of re-tests, on the same episodes. Stress: each round's "
@@ -163,7 +163,7 @@ def llm():
                 ci(cl["b11_robustness_llm.json | %s, %s, Run A minus the LLM, pick" % (arm, label)])))
         rows.append("\\midrule")
     return table("tab:b11llm",
-                 "The trained policy (Run A, zero-shot) on each language model's own campaigns, the same "
+                 "The trained policy (Run A, without retraining) on each language model's own campaigns, the same "
                  "landscape, campaign seeds, noise and budget. Pick, with re-testing share; the last column is Run A's "
                  "pick minus the model's, paired by campaign, with a 95\\% bootstrap interval over campaigns. Each of "
                  "these landscapes is outside the training and validation splits.",

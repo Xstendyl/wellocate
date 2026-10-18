@@ -2,12 +2,8 @@
 \label{app:amendments}
 
 The prompt study's design, outcome, confirmatory contrasts and analysis were registered before it ran
-(Appendix~\ref{app:grid}). Every later change was registered, with its date, before the data it governs. These changes
-added the aids experiment on the grid, with labels for a large, a small or no change in re-testing fixed in
-advance; the structure note; the model-guided rule; the Menu on scrambled GB1; GPT-6.1 Sol and Gemini 3.1 Pro on the
-grid and on GB1; the PhoQ runs for all five models, with its named test; the replication of the Decision-rule result; the
-learnability simulation; and the test of the trained policy. A cap on repeat orders was also registered and then withdrawn before its main run: in trial runs the agents met the
-cap by proposing new names, most of them non-viable. No seed was dropped from the GPT-6.1 Sol, Gemini 3.1 Pro or PhoQ runs.
+(Appendix~\ref{app:grid}). Every later change was registered, with its date, before the data it governs. These changes added the aids experiment on the grid, with labels for a large, a small or no change in re-testing fixed in advance. They also added the landscape note, the model-guided rule and the Menu on scrambled GB1. Later changes added GPT-6.1 Sol and Gemini 3.1 Pro on the grid and on GB1, and the PhoQ runs for all five models with a named test. The last added the replication of the Decision-rule result, the learnability simulation and the test of the trained policy. A cap on repeat orders was also registered and then withdrawn before its main run: in trial runs the agents met the
+cap by proposing new names, most of them non-viable. No seed was dropped from the GPT-6.1 Sol, Gemini 3.1 Pro or PhoQ runs. Exclusions in other runs are reported where they occur.
 Every other analysis in these appendices was decided after the registered ones. It describes, checks or explores
 the results and tests no claim, and so does the noise sweep of Section~\ref{sec:bench}.
 
@@ -16,8 +12,7 @@ the results and tests no claim, and so does the noise sweep of Section~\ref{sec:
 All five models ran at temperature 0 (Table~\ref{tab:models}). OpenRouter sends each call for an open-weight
 model to one of several hosting companies, so in every run DeepSeek V3.1's calls went to several hosts, and its
 results average over them. Opus 4.7, Gemini 2.5 Flash and DeepSeek V3.1 ran with
-reasoning off. GPT-6.1 Sol and Gemini 3.1 Pro ran at their lowest reasoning setting. Even so, Gemini 3.1 Pro used over 16{,}000
-reasoning tokens on \nProHeavyCalls{} calls, up to \nProMaxReasoning{} on one. All five saw the Blind prompt of Appendix~\ref{app:grid}, which says nothing about measurement error or repeats.
+reasoning off. GPT-6.1 Sol and Gemini 3.1 Pro ran at their lowest reasoning setting. Even so, Gemini 3.1 Pro used more than 16{,}000 reasoning tokens on each of \nProHeavyCalls{} calls, up to \nProMaxReasoning{} on one. All five saw the Blind prompt of Appendix~\ref{app:grid}, which says nothing about measurement error or repeats.
 
 \input{sections/table_models}
 
@@ -53,16 +48,12 @@ Gemini 3.1 Pro & \estci{\nSharePro}{\nShareProci} & \estci{\nNonlostPro}{\nNonlo
 
 \input{sections/table_fixes}
 
-Each model's numbers come from the runs its registered comparison uses. Gemini 2.5 Flash and DeepSeek V3.1 come from the control runs of the aids experiment, whose prompt options match those of the GPT-6.1 Sol and Gemini 3.1 Pro runs. Opus 4.7 comes from a same-day rerun of the original
-prompts, which differs only in the message sent back when a reply cannot be read. Counting re-testing over slots not lost leaves the conclusions unchanged. The GPT-6.1 Sol and Gemini 3.1 Pro runs cost about \$\nSolSpend{} and \$\nGemSpend, and the PhoQ runs about \$\nPqSpend. The scripted rules and Wellocate cost nothing to rerun.
+Each model's numbers come from the runs that its registered comparison with the scripted rules uses. Gemini 2.5 Flash and DeepSeek V3.1 come from the control runs of the aids experiment, whose prompt options match those of the GPT-6.1 Sol and Gemini 3.1 Pro runs. Opus 4.7 comes from a rerun of the original prompts made on the same day as prompt check A (Appendix~\ref{app:prompt}). That rerun differs only in the message sent back when a reply cannot be read. Counting re-testing over slots not lost leaves the conclusions unchanged. The GPT-6.1 Sol and Gemini 3.1 Pro runs cost \$\nSolSpend{} and \$\nGemSpend, and the PhoQ runs \$\nPqSpend. The scripted rules and Wellocate cost nothing to rerun.
 
 \subsection{Results on scrambled GB1}
 
-These runs used different landscapes and seeds from the grid's, so the
-comparison is not paired; Table~\ref{tab:landscapes} gives their shares. Gemini 2.5 Flash measures \nGbDistinctFlash{}
-distinct candidates and DeepSeek V3.1 \nGbDistinctDeep, both in the control runs of the GB1 Menu experiment. Opus 4.7 measures
-\nGbDistinctOpus{} and re-tests \nGbShareOpus\% in an earlier control run, its first \nPqNOpus{} campaigns;
-Table~\ref{tab:landscapes} uses all \nGbNOpus{}. Sol measures \nGbDistinctSol{} and Gemini
+These runs used different landscapes and seeds from the grid runs, so they do not pair with them; Table~\ref{tab:landscapes} gives their shares. Gemini 2.5 Flash measures \nGbDistinctFlash{}
+distinct candidates and DeepSeek V3.1 \nGbDistinctDeep, both in the control runs of the GB1 Menu experiment. For Opus 4.7, the first \nPqNOpus{} campaigns of an earlier control run measure \nGbDistinctOpus{} and re-test \nGbShareOpus\%; Table~\ref{tab:landscapes} uses all \nGbNOpus{} campaigns of that run. Sol measures \nGbDistinctSol{} and Gemini
 3.1 Pro \nGbDistinctPro. On GB1 Gemini 3.1 Pro loses mostly through exploration, \nGbExplPro, against \nGbSelPro{} at
 selection.
 
@@ -94,12 +85,11 @@ both checks together & -- & \estci{\nPqSolLeadOnceNom}{\nPqSolLeadOnceNomci} \\
 \end{tabular}
 \end{table}
 
-\subsection{The Menu's pick split on the grid}
+\subsection{How the Menu changed exploration and selection on the grid}
 \label{app:split}
 
 On the grid the Menu raised the best value Gemini 2.5 Flash and DeepSeek V3.1 measured, and it worsened the selection
-of all three over-confirming models (Table~\ref{tab:split}). A simple selection rule applied to the agents' own
-readings recovers part of the selection loss for two of the three models.
+of all three over-confirming models (Table~\ref{tab:split}). When a simple rule picks from the agents' own readings, the Menu improves the final pick of Opus 4.7 and Gemini 2.5 Flash. For DeepSeek V3.1 it makes no detectable difference.
 
 \begin{table}[tbp]
 \centering
@@ -118,14 +108,14 @@ Opus 4.7 & -- & \estci{\nSplitOpusSel}{\nSplitOpusSelci} \\
 \end{tabular}
 \end{table}
 
-\section{PhoQ, five models}
+\section{The five models on PhoQ}
 \label{app:phoq}
 
-The PhoQ runs repeat the GB1 runs without the Menu on scrambled PhoQ, for all five models. Each model ran at the settings of its GB1 runs, and only the landscape changed. The scramble is our own and differs from all of Wellocate's frozen
+The PhoQ runs repeat the GB1 control runs, those without the Menu, on scrambled PhoQ, for all five models. Each model ran at the settings of its GB1 runs, and only the landscape changed. The scramble is our own and differs from all of Wellocate's frozen
 training, validation and test scrambles. Every model ran \nPqNOpus{} campaigns on the same seeds, so the models pair by
 seed. The design, the outcomes and a named test were registered before the first call.
 
-\paragraph{The named test.} On GB1 every model re-tests more than the best scripted rule. The registered test
+\paragraph{Re-testing on PhoQ.} On GB1 every model re-tests more than the best scripted rule. The registered test
 extends that claim to PhoQ only if each model's 95\% interval lies above PhoQ's best scripted share. On PhoQ that
 rule is the informed rule with no re-tests, so its share is zero. Every interval lies above it, and also above the
 guessing rule's \nPqGuessShare\% (Table~\ref{tab:phoq}). Gemini 2.5 Flash lost \nPqFlashLostRounds{} slots a campaign
@@ -135,8 +125,7 @@ to rounds it could not complete, and a lost slot is never a re-test.
 over its 1{,}500 reference seeds, \nPqGuessPick, and adds that rule's own uncertainty. A second, descriptive comparison
 runs the guessing rule on each model's own seeds and pairs the two picks seed by seed. Paired this way, DeepSeek V3.1
 and Gemini 3.1 Pro pick worse than the guessing rule on PhoQ, and the other three are about level with it. On GB1
-every model except Sol picks worse. In the registered comparison Opus 4.7 is slightly worse and Sol better, and Sol's
-lead rests on one repeated nominee.
+every model except Sol picks worse. In the registered comparison DeepSeek V3.1, Gemini 3.1 Pro and Opus 4.7 pick worse, Gemini 2.5 Flash is level and Sol is better.
 
 \begin{table}[tbp]
 \centering
@@ -169,7 +158,7 @@ therefore rests partly on that one candidate. Under the checks of Appendix~\ref{
 under the same Blind prompt, on other seeds. Its shares were
 \nPqOamShareOpus\% \nPqOamShareOpusci{} for Opus 4.7, \nPqOamShareFlash\% \nPqOamShareFlashci{} for Gemini 2.5 Flash
 and \nPqOamShareDeep\% \nPqOamShareDeepci{} for DeepSeek V3.1, close to the shares above. Its picks were
-\nPqOamPickOpus, \nPqOamPickFlash{} and \nPqOamPickDeep, close to those in Table~\ref{tab:landscapes}.
+\nPqOamPickOpus, \nPqOamPickFlash{} and \nPqOamPickDeep, close to those above.
 
 \section{The confirmation simulation}
 \label{app:aone}
@@ -180,8 +169,7 @@ logged outcome and reading was reproduced and the rebuilt registered pick and re
 We rebuilt the grid campaigns of Gemini 3.1 Pro and Sol, and as a check those of Gemini 2.5 Flash and DeepSeek V3.1.
 Every campaign passed.
 
-\paragraph{Results.} With the final round replaced, Gemini 3.1 Pro gains against its own pick at $m = 3$ and
-$m = 4$, and its re-testing share rises to \nAoneProShareAfter\% (Table~\ref{tab:aone}). The registered rule applied
+\paragraph{Replacing the last round.} With the last round replaced, Gemini 3.1 Pro gains against its own pick at $m = 3$. It gains about as much at $m = 4$, where the interval just includes zero. At $m = 3$ its re-testing share rises to \nAoneProShareAfter\% (Table~\ref{tab:aone}). The registered rule applied
 to its unchanged readings gains almost nothing, so the gain comes from the extra readings. Gemini 2.5 Flash and
 DeepSeek V3.1 gain a little at $m = 1$. The simulation drops the agent's own final-round orders, so it gives up
 whatever those would have found.
@@ -208,5 +196,5 @@ GPT-6.1 Sol & last two rounds, $m = 1$ & \estci{\nAtwoSolKone}{\nAtwoSolKoneci} 
 
 \paragraph{The last two rounds.} Replacing the last two rounds, with the top $m$ chosen after the round before them,
 recovers about \nAtwoProRecoveredOwn\% of Gemini 3.1 Pro's selection loss at $m = 3$, close to one round's
-\nAoneProRecoveredKthree\% at the same $m$. Sol loses ground at $m = 1$. This run was not planned in advance.
+\nAoneProRecoveredKthree\% at the same $m$. Sol's pick falls slightly at $m = 1$, with an interval that includes zero. This run was not planned in advance.
 

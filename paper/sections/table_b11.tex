@@ -26,7 +26,7 @@ minus model-guided & $-$0.06 [$-$0.11, $-$0.01] & $-$0.56 [$-$0.67, $-$0.45] & $
 \centering
 \scriptsize
 \setlength{\tabcolsep}{3pt}
-\caption{The trained policy (Run A, zero-shot) under every change after the registered test, 1{,}500 episodes per row, at assay noise unless the row changes it. Rows that would repeat Table~\ref{tab:b11reg} are left out. The last two columns are Run A's pick minus random ordering and minus the best scripted rule at its best number of re-tests, on the same episodes. Stress: each round's readings share one multiplicative factor with this standard deviation (batch), an additive noise floor of 2\% of the landscape maximum (floor), or 2\% of readings replaced by a near-zero value (failed wells) or by three times the reading (spikes). Real names: GB1 and PhoQ under their amino-acid names. At 4 rounds of 24 the scripted rules' re-tests scale with the slots per round, and two of Run A's input features exceed the range seen in training. Intervals as in Table~\ref{tab:b11reg}; under real names, one landscape each, they resample episodes only.}
+\caption{The trained policy (Run A, without retraining) under every change after the registered test, 1{,}500 episodes per row, at assay noise unless the row changes it. Rows that would repeat Table~\ref{tab:b11reg} are left out. The last two columns are Run A's pick minus random ordering and minus the best scripted rule at its best number of re-tests, on the same episodes. Stress: each round's readings share one multiplicative factor with this standard deviation (batch), an additive noise floor of 2\% of the landscape maximum (floor), or 2\% of readings replaced by a near-zero value (failed wells) or by three times the reading (spikes). Real names: GB1 and PhoQ under their amino-acid names. At 4 rounds of 24 the scripted rules' re-tests scale with the slots per round, and two of Run A's input features exceed the range seen in training. Intervals as in Table~\ref{tab:b11reg}; under real names, one landscape each, they resample episodes only.}
 \label{tab:b11robust}
 \begin{tabular}{llrrrr}
 \toprule
@@ -110,7 +110,7 @@ nominate-head entropy, nats & 0.04 & 0.03 & 0.34 \\
 \centering
 \scriptsize
 \setlength{\tabcolsep}{3pt}
-\caption{The trained policy (Run A, zero-shot) on each language model's own campaigns, the same landscape, campaign seeds, noise and budget. Pick, with re-testing share; the last column is Run A's pick minus the model's, paired by campaign, with a 95\% bootstrap interval over campaigns. Each of these landscapes is outside the training and validation splits.}
+\caption{The trained policy (Run A, without retraining) on each language model's own campaigns, the same landscape, campaign seeds, noise and budget. Pick, with re-testing share; the last column is Run A's pick minus the model's, paired by campaign, with a 95\% bootstrap interval over campaigns. Each of these landscapes is outside the training and validation splits.}
 \label{tab:b11llm}
 \begin{tabular}{llrrrr}
 \toprule

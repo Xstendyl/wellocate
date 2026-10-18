@@ -33,8 +33,7 @@ condition ever instructs the agent to re-test, because that would measure instru
 throughout this paper and requested from OpenRouter as \texttt{anthropic/claude-opus-4.7},
 \texttt{google/gemini-2.5-flash} and \texttt{deepseek/deepseek-chat-v3.1}, at temperature 0. We call one
 model under one prompt condition a \emph{cell}, so the prompt study has 15 cells. It holds
-5{,}075 campaigns and 162{,}986 model calls. Cells are sized per model, so $N$ is 695, 139 and 181
-campaigns per cell respectively.
+5{,}075 campaigns and 162{,}986 model calls. Cells are sized per model: 695, 139 and 181 campaigns per cell.
 \end{sloppypar}
 
 \paragraph{Pre-registration.} The design, the outcome, the six confirmatory contrasts and the analysis were
@@ -75,7 +74,7 @@ experimenters is future work.
 
 \input{sections/table_cells}
 
-Re-testing buys something. Agents picked well among the candidates they had measured, closer to the best of
+The re-tests pay off in selection. Agents picked well among the candidates they had measured, closer to the best of
 what they tested than the guessing rule. The best candidate they tested was much worse than that rule's best, because they tested so few (Figure~\ref{fig:gridsplit}). In every cell the shortfall from testing too few outweighs
 the gain from picking well, so the agents end up behind (Table~\ref{tab:cells}, Figure~\ref{fig:shortfall_global}; Appendix~\ref{app:further}).
 Their stated reasons show that they climb from their current best one letter at a time, as the scripted rules do,
@@ -115,8 +114,7 @@ the 15 cells, with a median of 90.6\%. The lowest cell is Quantitative with Opus
 interval [48.2\%, 55.4\%]. The highest is Aggregated with DeepSeek V3.1, at 97.5\%, [96.7\%, 98.3\%]. By
 model, Opus 4.7 runs 51.8\% to 71.0\%, Gemini 2.5 Flash 76.8\% to 94.4\% and DeepSeek V3.1 94.1\% to
 97.5\%. All 15 paired differences from the same cells with noise are negative, from $-35.0$ to $-0.9$ percentage
-points, and 12 of 15 are significant at 0.05 after Holm correction within that run. Every cell pairs all 40 seeds. The size of the drop tracks the level a model starts from. Opus 4.7 falls furthest, and DeepSeek V3.1
-falls least, from implied levels of 96.7\% to 98.5\%. Elsewhere in these appendices, zero-noise numbers count all used slots.
+points, and 12 of 15 are significant at 0.05 after Holm correction within that run. Every cell pairs all 40 seeds. The size of the drop tracks the level a model starts from. Opus 4.7 falls furthest. DeepSeek V3.1 falls least, from levels of 96.7\% to 98.5\% under noise. Elsewhere in these appendices, zero-noise numbers count all used slots.
 
 
 \subsection{Independent check}
@@ -130,8 +128,7 @@ written separately from Wellocate, with its own world generator, prompt and scor
 Each call shows one fixed round of an optimisation task. Every candidate is valid, so nothing is ever rejected. A
 seven-round history is already measured, and the best candidate has already been measured twice. Three versions vary only what is true and what is said about measurement error: exact readings with exactness stated, exact
 readings with nothing said, and noisy readings with the noise stated. Thirty paired histories per version, three
-models, temperature 0, 270 calls. Scoring counts every proposal line the reply contains against four slots,
-so a short reply is charged the shortfall, and a token outside the alphabet cannot count as a repeat.
+models, temperature 0, 270 calls. Each reply is scored over four slots. A missing line counts as a new candidate, and so does a name with letters outside the alphabet.
 
 \begin{table}[h]
 \centering
@@ -224,8 +221,7 @@ Check A used the goal and budget options and check B all three, each on Blind an
 60 seeds, each paired with the original campaign on the same seed (Table~\ref{tab:prompt}). A rerun of the original prompts ran on the same day as check A. The registered statement for check B reads ``rejection risk does not produce the habit''. Intervals are 95\% percentile bootstraps over the paired
 campaigns.
 
-Check A fixed the two flaws. In five of six cells the re-testing
-share moved by less than 1.1 points. For Gemini 2.5 Flash under Blind it fell by 4.6 points [$-6.6$, $-2.6$],
+Check A fixes both flaws. With it, the re-testing share moved by less than 1.1 points in five of six cells. For Gemini 2.5 Flash under Blind it fell by 4.6 points [$-6.6$, $-2.6$],
 and under Mechanism Gemini's final pick fell by 0.160 [$-0.256$, $-0.070$]. The registered margin for final picks,
 $\pm 0.06$, could not be met with 60 pairs in four cells even with no true change. The re-testing share is
 therefore the informative outcome. The same-day rerun of the original prompts moved the re-testing share by at most 1.1 points from the original campaigns in every cell. The two Gemini shifts remain against this

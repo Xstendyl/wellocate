@@ -21,13 +21,13 @@ test, with an exploration bonus five times the registered one, meets it on PhoQ:
 \nPolEntRandPq{} \nPolEntRandPqci{} with every seed positive (Table~\ref{tab:b11phase2}). The registered intervals
 resample episodes only. Table~\ref{tab:b11reg} gives every interval from a two-level bootstrap that resamples
 landscapes and then episodes; this check is post-hoc. Run A's criteria all hold under it, and also under an interval
-across the three seeds. Two comparisons with the guessing rule now include zero, on the grid and on PhoQ, so we make no
+across the three seeds. Under the two-level bootstrap, two comparisons with the guessing rule include zero, on the grid and on PhoQ, so we make no
 claim that the policy beats the guessing rule. Five more seeds of Run A, trained and tested the same way, replicate
 this: every seed beats its initialisation and random ordering on all three test splits (Table~\ref{tab:b11phase2}).
 
 \paragraph{Robustness.} Everything from here on was decided after the registered test. Run A plays every condition without retraining, with
 the networks of the registered test. Its lead over random ordering holds when the noise is halved or doubled
-(Table~\ref{tab:b11robust}). A per-round batch effect, a noise floor fifty times larger and failed wells leave the
+(Table~\ref{tab:b11robust}). A per-round batch effect, a noise floor fifty times the smallest spread of Appendix~\ref{app:env} and failed wells leave the
 scripted policies' best number of re-tests unchanged. Under each of them, three or four re-tests a round stay below
 that best (Table~\ref{tab:b11stress}). Spikes on the grid are the one exception. When 2\% of readings are three times their
 value, the informed rule with three re-tests a round becomes the best scripted rule. Its pick minus that of its best
