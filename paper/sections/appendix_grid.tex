@@ -46,7 +46,7 @@ of a candidate is the same in every condition.
 \paragraph{The scripted rules.} The guessing and informed rules of Appendix~\ref{app:refs} are the grid's
 references. Both do best at $k^\ast = 1$, one slot in four.
 
-\subsection{Results}
+\subsection{Re-testing share}
 \label{sec:results}
 
 \begin{figure}[tbp]
@@ -58,22 +58,26 @@ four slots each round re-testing their current best, with 95\% intervals.}
 \label{fig:gridheadline}
 \end{figure}
 
-\subsubsection{Re-testing share}
-
 Agents spend most of their measurements re-testing candidates they have already measured. Across the 15
 cells the re-testing share runs from 75\% to 96\% of used slots; both scripted rules spend a
 quarter (Table~\ref{tab:cells}, Figure~\ref{fig:gridheadline}). The count includes re-orders of the reference
 candidate, whose score the agent is given at the start. On this count every cell re-tests more than a
-scripted protocol that measures each candidate three times (Appendix~\ref{app:further}). Without those re-orders the share is 57\% to
+scripted protocol that measures each candidate three times. Without those re-orders the share is 57\% to
 75\%, and six cells fall below that protocol. Counting only slots spent on a candidate that already has a successful
 reading, which leaves out re-orders after a failed order, gives 74.7\% to 95.1\%, within 1.4 points of the headline
 in every cell.
+
+\paragraph{The scripted lab protocols.} Three scripted protocols spend the same 60 slots the way a wet lab
+is often run, searching around their current best as the scripted rules do. Triplicate-everything measures 20 candidates three times,
+66.7\% of slots on repeats. Duplicate-everything measures 30 twice, 50.0\%. Screen-then-confirm takes 48
+single readings and then confirms the leaders, 20.0\%. These protocols are simulated, and a study with human
+experimenters is future work.
 
 \input{sections/table_cells}
 
 Re-testing buys something. Agents picked well among the candidates they had measured, closer to the best of
 what they tested than the guessing rule. The best candidate they tested was much worse than that rule's best, because they tested so few (Figure~\ref{fig:gridsplit}). In every cell the shortfall from testing too few outweighs
-the gain from picking well, so the agents end up behind (Table~\ref{tab:cells}, Figure~\ref{fig:shortfall_global}).
+the gain from picking well, so the agents end up behind (Table~\ref{tab:cells}, Figure~\ref{fig:shortfall_global}; Appendix~\ref{app:further}).
 Their stated reasons show that they climb from their current best one letter at a time, as the scripted rules do,
 in lines such as \emph{``vary pos4, C works
 so try neighbor''}. They climb a few steps and then spend most of the budget confirming the same few candidates, so
@@ -84,20 +88,19 @@ the climb stalls.
 \centering
 \includegraphics[width=\textwidth]{fig3_replication_vs_exploration.pdf}
 \caption{Re-testing share against distinct candidates measured, one point per cell, with the informed and
-guessing rules at their best setting and the three scripted lab protocols of Appendix~\ref{app:further}.}
+guessing rules at their best setting and the three scripted lab protocols.}
 \label{fig:gridsplit}
 \end{figure}
 
 
-\subsubsection{Exact readings}
+\subsection{Exact readings}
 
 Removing the noise lowers re-testing in every cell, significantly in 12 of 15. Re-testing still takes roughly half
 to nearly all of the slots, and with exact readings no re-test is needed. The zero-noise run sets $\sigma$ to zero and changes nothing
-else, so the agent is not told its readings are exact; Section~\ref{sec:indep} tests the case where it is
+else, so the agent is not told its readings are exact; Appendix~\ref{sec:indep} tests the case where it is
 told. Here re-testing is counted after the first repeat an agent sees, as the share of slots spent on a candidate
 that already has a successful reading. This is a stricter count than the headline share, and it is compared with the
-same count under noise at the same seeds (Figure~\ref{fig:zero}; Appendix~\ref{app:further} gives the ranges and
-intervals).
+same count under noise at the same seeds (Figure~\ref{fig:zero}).
 
 \begin{figure}[tbp]
 \centering
@@ -107,17 +110,56 @@ noise (the bar), one row per cell. A repeat of an exactly known value returns no
 \label{fig:zero}
 \end{figure}
 
-\subsubsection{Independent check}
+At $\sigma=0$, re-testing after the first repeat runs from 51.8\% to 97.5\% across
+the 15 cells, with a median of 90.6\%. The lowest cell is Quantitative with Opus 4.7, at 51.8\%, 95\%
+interval [48.2\%, 55.4\%]. The highest is Aggregated with DeepSeek V3.1, at 97.5\%, [96.7\%, 98.3\%]. By
+model, Opus 4.7 runs 51.8\% to 71.0\%, Gemini 2.5 Flash 76.8\% to 94.4\% and DeepSeek V3.1 94.1\% to
+97.5\%. All 15 paired differences from the same cells with noise are negative, from $-35.0$ to $-0.9$ percentage
+points, and 12 of 15 are significant at 0.05 after Holm correction within that run. Every cell pairs all 40 seeds. The size of the drop tracks the level a model starts from. Opus 4.7 falls furthest, and DeepSeek V3.1
+falls least, from implied levels of 96.7\% to 98.5\%. Elsewhere in these appendices, zero-noise numbers count all used slots.
+
+
+\subsection{Independent check}
 \label{sec:indep}
+\label{app:indep}
 
 In a separate one-round test with exact readings, the models still spent from about a quarter to over half
-of the round re-testing. Saying the readings were exact made no detectable difference, and adding noise
-raised re-testing sharply, so the models do respond to noise. The test was written separately from
-Wellocate, with its own world generator, prompt and scorer, and shares no code with it. By a reading rule
-fixed before any call, it confirms the behaviour in two of the three models and partly in Opus 4.7
-(Appendix~\ref{app:indep}).
+of the round re-testing, and adding noise raised re-testing sharply, so the models do respond to noise. The test was
+written separately from Wellocate, with its own world generator, prompt and scorer, and shares no code with it.
 
-\subsubsection{Pre-registered contrasts}
+Each call shows one fixed round of an optimisation task. Every candidate is valid, so nothing is ever rejected. A
+seven-round history is already measured, and the best candidate has already been measured twice. Three versions vary only what is true and what is said about measurement error: exact readings with exactness stated, exact
+readings with nothing said, and noisy readings with the noise stated. Thirty paired histories per version, three
+models, temperature 0, 270 calls. Scoring counts every proposal line the reply contains against four slots,
+so a short reply is charged the shortfall, and a token outside the alphabet cannot count as a repeat.
+
+\begin{table}[h]
+\centering
+\small
+\caption{Share of the four chosen measurements that repeat an already-measured candidate.}
+\begin{tabular}{lrrrr}
+\toprule
+model & exact, stated & exact, unstated & noisy, stated & noise effect (paired) \\
+\midrule
+Opus 4.7         & 24.2\% & 24.2\% & 61.7\% & $+37.5$ pp (SE 5.3) \\
+Gemini 2.5 Flash & 45.0\% & 50.8\% & 95.0\% & $+50.0$ pp (SE 7.0) \\
+DeepSeek V3.1    & 55.8\% & 49.2\% & 94.2\% & $+38.3$ pp (SE 8.3) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+A reading rule was fixed before any call. A repeat share of 25\% or more in the exact-stated version confirms
+the behaviour; 5\% or less attributes it to our environment; anything between is partial.
+Gemini 2.5 Flash and DeepSeek V3.1 clear the 25\% line. Opus 4.7 at 24.2\% falls just
+below it, so two models give a clear reproduction and one is partial.
+
+Stating that readings are exact made no detectable difference. The paired difference between saying
+nothing and stating it is $+0.0$ pp (SE 2.4) for Opus 4.7, $+5.8$ (SE 7.1) for Gemini 2.5 Flash and $-6.7$
+(SE 6.9) for DeepSeek V3.1. In the zero-noise run the noise effect looks small for Gemini 2.5 Flash and
+DeepSeek V3.1 because their re-testing is already high with exact readings, at 81.6\% and 89.6\% of all
+used slots against 51.4\% for Opus 4.7, each a mean over the five conditions.
+
+\subsection{Pre-registered contrasts}
 
 If the behaviour came from a history that is hard to read, or from a missing rule, fixing those should reduce
 it. Six contrasts were fixed before the prompt study ran, comparing Aggregated and Decision-rule with Mechanism for
@@ -157,22 +199,41 @@ Gemini 2.5 Flash & Decision-rule & 139 & $-0.0044$ & $[-0.0278, +0.0189]$ & 1.00
 \end{tabular}
 \end{table}
 
-\subsubsection{Prompt checks}
+\subsection{Prompt checks}
 \label{sec:prompt}
+\label{app:prompt}
 
 A review of the prompts found two flaws. The round and replacement prompts did not say that the final pick is
 scored on its true value. The replacement prompt also stated one order per round, where a round has four. A
 wrong guess about viability could cost a slot, so rejection risk might also push agents toward re-testing
-candidates known to work. We reran Blind and Mechanism for all three models on 60 seeds, each paired with the
-original campaign on the same seed (Table~\ref{tab:prompt}, Appendix~\ref{app:prompt}). Prompt check A fixed the two flaws. In five of six cells the re-testing
+candidates known to work.
+
+Three prompt changes were tested, each absent from the original prompts. The \emph{goal} option adds one sentence to the goal in the round and replacement prompts, the same in all five conditions: ``At the
+end you will nominate one candidate, and your score is that candidate's true value.'' It says nothing about
+readings, because the Blind condition withholds that readings carry error. The nomination prompt was left as it
+was, since it already asks for the highest true score. The \emph{budget} option makes the replacement prompt's budget line
+read ``15 rounds, 4 orders per round, 60 measurements in total.'' It had stated one order per round.
+
+The \emph{free-rejection} option makes a rejected order free. In every prompt, the sentence on replacements and lost slots becomes
+``An order for a non-viable candidate is rejected at no cost and you choose again. No slot is ever lost to a
+non-viable order.'' The agent may then be asked again up to 20 times for one slot. A slot that reaches that cap
+is lost and counted, and no slot in check B reached it. The guessing rule reached it in 353 of
+its 1{,}500 campaigns at one re-test per round, and still lost 0.86 slots per campaign.
+
+Check A used the goal and budget options and check B all three, each on Blind and Mechanism for all three models, on
+60 seeds, each paired with the original campaign on the same seed (Table~\ref{tab:prompt}). A rerun of the original prompts ran on the same day as check A. The registered statement for check B reads ``rejection risk does not produce the habit''. Intervals are 95\% percentile bootstraps over the paired
+campaigns.
+
+Check A fixed the two flaws. In five of six cells the re-testing
 share moved by less than 1.1 points. For Gemini 2.5 Flash under Blind it fell by 4.6 points [$-6.6$, $-2.6$],
 and under Mechanism Gemini's final pick fell by 0.160 [$-0.256$, $-0.070$]. The registered margin for final picks,
 $\pm 0.06$, could not be met with 60 pairs in four cells even with no true change. The re-testing share is
-therefore the informative outcome. A rerun of the original prompts on the same day moved the re-testing share by at most 1.1 points from the original campaigns in every cell. The two Gemini shifts remain against this
+therefore the informative outcome. The same-day rerun of the original prompts moved the re-testing share by at most 1.1 points from the original campaigns in every cell. The two Gemini shifts remain against this
 control, so they come from the wording.
 
 \input{sections/table_prompt}
 
-Prompt check B also made a rejected order free, so the agent simply chose again. Every cell still spent 74.8\% or more of its slots on re-tests, against 23.96\% for
+
+In check B every cell still spent 74.8\% or more of its slots on re-tests, against 23.96\% for
 the guessing rule at its best setting under the same rule. Gemini 2.5 Flash re-tested 6 to 11 points less and picked better, and it stayed far above the
-guessing rule.
+guessing rule. The final pick of Opus 4.7 under Mechanism fell by 0.1340 [$-0.2324$, $-0.0347$].

@@ -11,7 +11,7 @@ cap by proposing new names, most of them non-viable. No seed was dropped from th
 Every other analysis in these appendices was decided after the registered ones. It describes, checks or explores
 the results and tests no claim, and so does the noise sweep of Section~\ref{sec:bench}.
 
-\section{The five models: settings and further results}
+\section{The five models}
 \label{app:comparators}
 All five models ran at temperature 0 (Table~\ref{tab:models}). OpenRouter sends each call for an open-weight
 model to one of several hosting companies, so in every run DeepSeek V3.1's calls went to several hosts, and its
@@ -21,7 +21,9 @@ reasoning tokens on \nProHeavyCalls{} calls, up to \nProMaxReasoning{} on one. A
 
 \input{sections/table_models}
 
-\paragraph{Results on the grid.} Table~\ref{tab:fivegrid} gives each model's re-testing share, final pick and losses.
+\subsection{Results on the grid}
+
+Table~\ref{tab:fivegrid} gives each model's re-testing share, final pick and losses.
 The scripted band runs from \nGuessShare\% to \nBandHi\% of slots, or \nBandNonlostLo\% to \nBandNonlostHi\% counted
 over slots not lost, and the guessing rule's exploration and selection losses are 0.67 and 0.23. Every model's pick
 interval lies below the guessing rule's 7.87. Gemini 3.1 Pro's final pick had a single reading in
@@ -54,7 +56,9 @@ Gemini 3.1 Pro & \estci{\nSharePro}{\nShareProci} & \estci{\nNonlostPro}{\nNonlo
 Each model's numbers come from the runs its registered comparison uses. Gemini 2.5 Flash and DeepSeek V3.1 come from the control runs of the aids experiment, whose prompt options match those of the GPT-6.1 Sol and Gemini 3.1 Pro runs. Opus 4.7 comes from a same-day rerun of the original
 prompts, which differs only in the message sent back when a reply cannot be read. Counting re-testing over slots not lost leaves the conclusions unchanged. The GPT-6.1 Sol and Gemini 3.1 Pro runs cost about \$\nSolSpend{} and \$\nGemSpend, and the PhoQ runs about \$\nPqSpend. The scripted rules and Wellocate cost nothing to rerun.
 
-\paragraph{On scrambled GB1, descriptive.} These runs used different landscapes and seeds from the grid's, so the
+\subsection{Results on scrambled GB1}
+
+These runs used different landscapes and seeds from the grid's, so the
 comparison is not paired; Table~\ref{tab:landscapes} gives their shares. Gemini 2.5 Flash measures \nGbDistinctFlash{}
 distinct candidates and DeepSeek V3.1 \nGbDistinctDeep, both in the control runs of the GB1 Menu experiment. Opus 4.7 measures
 \nGbDistinctOpus{} and re-tests \nGbShareOpus\% in an earlier control run, its first \nPqNOpus{} campaigns;
@@ -202,7 +206,7 @@ GPT-6.1 Sol & last two rounds, $m = 1$ & \estci{\nAtwoSolKone}{\nAtwoSolKoneci} 
 \end{tabular}
 \end{table}
 
-\paragraph{Two final rounds.} Replacing the last two rounds, with the top $m$ chosen after the round before them,
+\paragraph{The last two rounds.} Replacing the last two rounds, with the top $m$ chosen after the round before them,
 recovers about \nAtwoProRecoveredOwn\% of Gemini 3.1 Pro's selection loss at $m = 3$, close to one round's
 \nAoneProRecoveredKthree\% at the same $m$. Sol loses ground at $m = 1$. This run was not planned in advance.
 

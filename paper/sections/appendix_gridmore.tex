@@ -1,5 +1,5 @@
 % lint-scope: appendix
-\subsection{Further results}
+\subsection{Exploration, final picks and rejections}
 \label{app:further}
 
 \begin{figure}[tbp]
@@ -10,12 +10,6 @@ sum to the whole. The guessing rule's own split, 0.67 to exploration and 0.23 to
 Figure~\ref{fig:loss}.}
 \label{fig:shortfall_global}
 \end{figure}
-
-\paragraph{The scripted lab protocols.} Three scripted protocols spend the same 60 slots the way a wet lab
-is often run, searching around their current best as the scripted rules do. Triplicate-everything measures 20 candidates three times,
-66.7\% of slots on repeats. Duplicate-everything measures 30 twice, 50.0\%. Screen-then-confirm takes 48
-single readings and then confirms the leaders, 20.0\%. These protocols are simulated, and a study with human
-experimenters is future work.
 
 \paragraph{Prompt conditions and exploration.} The explanatory conditions raise re-testing and cut
 exploration. For Opus 4.7, distinct candidates fall from 11.34 under Blind to 9.02 under Mechanism and 6.99
@@ -40,72 +34,7 @@ well as the guessing rule's neighbour sampling. Across the 15 cells the rate run
 of the 15 cells are rejected more often than the guessing rule and seven less often. The eight are Gemini 2.5
 Flash in every condition except Quantitative, and DeepSeek V3.1 in every condition except Decision-rule.
 
-
-\paragraph{The zero-noise run.} Here re-testing is counted after an agent's first repeat, as in
-Figure~\ref{fig:zero}; the other zero-noise numbers in these appendices count all used slots. Re-testing after the first repeat at $\sigma=0$ runs from 51.8\% to 97.5\% across
-the 15 cells, with a median of 90.6\%. The lowest cell is Quantitative with Opus 4.7, at 51.8\%, 95\%
-interval [48.2\%, 55.4\%]. The highest is Aggregated with DeepSeek V3.1, at 97.5\%, [96.7\%, 98.3\%]. By
-model, Opus 4.7 runs 51.8\% to 71.0\%, Gemini 2.5 Flash 76.8\% to 94.4\% and DeepSeek V3.1 94.1\% to
-97.5\%. All 15 paired differences from the same cells with noise are negative, from $-35.0$ to $-0.9$ percentage
-points, and 12 of 15 are significant at 0.05 after Holm correction within that run. Every cell pairs all 40 seeds. The size of the drop tracks the level a model starts from. Opus 4.7 falls furthest, and DeepSeek V3.1
-falls least, from implied levels of 96.7\% to 98.5\%.
-
-\subsection{The independent check}
-\label{app:indep}
-
-Each call shows one fixed round of an optimisation task. Every candidate is valid, so nothing is ever rejected. A
-seven-round history is already measured, and the best candidate has already been measured twice. Three versions vary only what is true and what is said about measurement error: exact readings with exactness stated, exact
-readings with nothing said, and noisy readings with the noise stated. Thirty paired histories per version, three
-models, temperature 0, 270 calls. Scoring counts every proposal line the reply contains against four slots,
-so a short reply is charged the shortfall, and a token outside the alphabet cannot count as a repeat.
-
-\begin{table}[h]
-\centering
-\small
-\caption{Share of the four chosen measurements that repeat an already-measured candidate.}
-\begin{tabular}{lrrrr}
-\toprule
-model & exact, stated & exact, unstated & noisy, stated & noise effect (paired) \\
-\midrule
-Opus 4.7         & 24.2\% & 24.2\% & 61.7\% & $+37.5$ pp (SE 5.3) \\
-Gemini 2.5 Flash & 45.0\% & 50.8\% & 95.0\% & $+50.0$ pp (SE 7.0) \\
-DeepSeek V3.1    & 55.8\% & 49.2\% & 94.2\% & $+38.3$ pp (SE 8.3) \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-A reading rule was fixed before any call. A repeat share of 25\% or more in the exact-stated version confirms
-the behaviour; 5\% or less attributes it to our environment; anything between is partial.
-Gemini 2.5 Flash and DeepSeek V3.1 clear the 25\% line. Opus 4.7 at 24.2\% falls just
-below it, so two models give a clear reproduction and one is partial.
-
-Stating that readings are exact made no detectable difference. The paired difference between saying
-nothing and stating it is $+0.0$ pp (SE 2.4) for Opus 4.7, $+5.8$ (SE 7.1) for Gemini 2.5 Flash and $-6.7$
-(SE 6.9) for DeepSeek V3.1. In the zero-noise run the noise effect looks small for Gemini 2.5 Flash and
-DeepSeek V3.1 because their re-testing is already high with exact readings, at 81.6\% and 89.6\% of all
-used slots against 51.4\% for Opus 4.7, each a mean over the five conditions.
-
-\subsection{The prompt checks}
-\label{app:prompt}
-
-Three prompt changes were tested, each absent from the original prompts. The \emph{goal} option adds one sentence to the goal in the round and replacement prompts, the same in all five conditions: ``At the
-end you will nominate one candidate, and your score is that candidate's true value.'' It says nothing about
-readings, because the Blind condition withholds that readings carry error. The nomination prompt was left as it
-was, since it already asks for the highest true score. The \emph{budget} option makes the replacement prompt's budget line
-read ``15 rounds, 4 orders per round, 60 measurements in total.'' It had stated one order per round.
-
-The \emph{free-rejection} option makes a rejected order free. In every prompt, the sentence on replacements and lost slots becomes
-``An order for a non-viable candidate is rejected at no cost and you choose again. No slot is ever lost to a
-non-viable order.'' The agent may then be asked again up to 20 times for one slot. A slot that reaches that cap
-is lost and counted, and no slot in check B reached it. The guessing rule reached it in 353 of
-its 1{,}500 campaigns at one re-test per round, and still lost 0.86 slots per campaign.
-
-Check A used the goal and budget options and check B all three, each on Blind and Mechanism for all three models, on
-the same 60 seeds. A rerun of the original prompts ran on the same day as check A. The registered statement for check B reads ``rejection risk does not produce the habit''. Intervals are 95\% percentile bootstraps over the paired
-campaigns. In check B the final pick of Opus 4.7 under Mechanism fell by 0.1340 [$-0.2324$, $-0.0347$].
-
-
-\section{Three exploratory experiments}
+\section{Temperature, reasoning and a biology framing}
 \label{app:panels}
 
 
