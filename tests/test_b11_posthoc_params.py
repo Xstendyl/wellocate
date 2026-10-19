@@ -6,6 +6,11 @@ the registered type, changes only its key and refuses an unknown key.
 """
 import importlib.util, inspect, os, sys, unittest
 
+try:
+    import torch  # noqa: F401
+except ImportError:
+    raise unittest.SkipTest("needs torch: pip install -r requirements.txt")
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 spec = importlib.util.spec_from_file_location("ppo", os.path.join(ROOT, "wellocate", "examples", "ppo.py"))

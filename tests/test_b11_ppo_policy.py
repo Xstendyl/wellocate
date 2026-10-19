@@ -6,8 +6,11 @@ episode, and two one-update training runs with the same seed give identical weig
 """
 import collections, dataclasses, importlib.util, os, sys, tempfile, unittest
 
-import numpy as np
-import torch
+try:
+    import numpy as np
+    import torch
+except ImportError:
+    raise unittest.SkipTest("needs numpy and torch: pip install -r requirements.txt")
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)

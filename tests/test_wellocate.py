@@ -7,6 +7,9 @@ the splits manifest is frozen and disjoint, and an observation carries no true v
 import hashlib, json, os, re, sys, unittest
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+NEEDS_DATA = unittest.skipUnless(
+    all(os.path.exists(os.path.join(ROOT, "data", f)) for f in ("gb1.csv", "phoq.csv")),
+    "needs the protein data: python3 scripts/download_data.py")
 sys.path.insert(0, ROOT)
 import wellocate as W                                        # noqa: E402
 from wellocate import baselines as B, scorecard as S, splits as SP, landscapes as LS   # noqa: E402
@@ -33,6 +36,7 @@ def env_run(factory, instance, seed, riskfree=False, cv=0.073):
     return env, reward, info
 
 
+@NEEDS_DATA
 class SameAsTheHarness(unittest.TestCase):
 
     def test_scripted_policies_match_campaign_run(self):
@@ -106,6 +110,7 @@ def fake_model(prompt):
     return "\n".join(lines)
 
 
+@NEEDS_DATA
 class TextMode(unittest.TestCase):
 
     def test_act_text_plays_like_llmpolicy(self):
@@ -140,6 +145,7 @@ class TextMode(unittest.TestCase):
             llm.complete = real
 
 
+@NEEDS_DATA
 class Splits(unittest.TestCase):
 
     def test_manifest_is_frozen_and_disjoint(self):

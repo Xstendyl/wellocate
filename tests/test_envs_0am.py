@@ -7,6 +7,9 @@ end to end on every new landscape with a prompt that says what the landscape is.
 import json, os, re, sys, unittest
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+NEEDS_DATA = unittest.skipUnless(
+    all(os.path.exists(os.path.join(ROOT, "data", f)) for f in ("gb1.csv", "phoq.csv")),
+    "needs the protein data: python3 scripts/download_data.py")
 sys.path.insert(0, ROOT)
 sys.path.insert(0, os.path.join(ROOT, "scripts"))
 
@@ -20,6 +23,7 @@ def h1(seq, alphabet):
     return {seq[:i] + a + seq[i + 1:] for i in range(4) for a in alphabet if a != seq[i]}
 
 
+@NEEDS_DATA
 class Relabelling(unittest.TestCase):
 
     def test_each_position_is_an_independent_bijection(self):
@@ -62,6 +66,7 @@ class Relabelling(unittest.TestCase):
         self.assertEqual(real.top10[0], "FWAA")
 
 
+@NEEDS_DATA
 class GridRulesCarryOver(unittest.TestCase):
 
     def test_the_viability_rule_is_the_grids(self):
@@ -96,6 +101,7 @@ class GridRulesCarryOver(unittest.TestCase):
         self.assertEqual(E.panel_k_env(2, 23).meta["nk_seed"], E.PANEL_K_SEEDS[2][3])
 
 
+@NEEDS_DATA
 class DrawsPairBySeed(unittest.TestCase):
 
     def test_the_same_variant_draws_the_same_failures_and_noise_under_either_name(self):
@@ -120,6 +126,7 @@ class DrawsPairBySeed(unittest.TestCase):
 
 
 @unittest.skipUnless(os.path.exists(YARD), "results/yardsticks_0am.json is not built yet")
+@NEEDS_DATA
 class Yardsticks(unittest.TestCase):
 
     def test_the_committed_policy_reproduces_the_published_curve(self):
@@ -172,6 +179,7 @@ def stub(prompt, model, **kw):
     return llm.Call(text="\n".join("%s | stub" % s for s in lines), model=model)
 
 
+@NEEDS_DATA
 class StubEndToEnd(unittest.TestCase):
     """One campaign per new landscape through grid.one_campaign, with a stub in place of the model."""
 
@@ -324,6 +332,7 @@ class TruthfulReask(unittest.TestCase):
         self.assertEqual(p.calls[-1]["out_of_alphabet"], ["ABCU", "ABCV"])
 
 
+@NEEDS_DATA
 class CanaryTestsTheInstrument(unittest.TestCase):
 
     def test_shrinkage_is_inert_on_real_gb1_and_live_on_the_grid(self):
@@ -336,6 +345,7 @@ class CanaryTestsTheInstrument(unittest.TestCase):
         self.assertGreater(grid.comparator_liveness(fit, pool, (st.mean(v), st.variance(v))), 0)
 
 
+@NEEDS_DATA
 class OutOfAlphabetPerCampaign(unittest.TestCase):
 
     def setUp(self):
