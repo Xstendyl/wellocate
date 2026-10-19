@@ -1,2 +1,0 @@
-SPOT CHECK: raw model output beside the proposals the harness accepted.
-Sampled deterministically, 20 calls per model. Written for a human to read.

@@ -1,8 +1,0 @@
-BASELINE green=True
-  THE ORIGINAL BUG: an empty list on a transport error       CAUGHT
-  a 402 is treated as an ordinary transport failure, so the  CAUGHT
-  the nomination call keeps returning a campaign after a fai CAUGHT
-  a PARSE failure is raised too, which would discard real me CAUGHT
-  the failure no longer names the call kind                  CAUGHT
-
-CAUGHT 5/5
