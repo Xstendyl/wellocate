@@ -1,6 +1,6 @@
 # Wellocate examples
 
-## B11: a policy trained with PPO through the released interface
+## A policy trained with PPO through the released interface
 
 `ppo.py` trains a small neural policy (not a language model) with PPO, on CPU. It acts only through
 `Wellocate.step` and `Wellocate.nominate`, and reads the observation with its `view` removed. The design, the

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Index of every result: one row per experiment, with its numbers read from its sources by code.
 
-Writes results/findings.json and results/FINDINGS.md. Each row gives the question, data tags, analysis files,
+Writes results/findings.json. Each row gives the question, data tags, analysis files,
 commits, n per cell, headline numbers, outcome, paper status and limits. Headline numbers are either keys of
 verify_paper_numbers.computed() or paths into an analysis JSON; a row's paper status is where its first verifier
 key is printed (main text, appendix only, or nowhere).
@@ -1148,30 +1148,6 @@ def build():
     return rows, problems
 
 
-def write_md(rows):
-    L = ["# Findings", "",
-         "One row per experiment or panel, from the first grid to 0an. Rebuilt by `python3 scripts/findings.py`",
-         "from the analysis files; every headline number is read by code, and `--check` (in the test suite) fails",
-         "if one no longer matches its source. Every new panel or analysis adds its row in the same commit as its",
-         "analysis.", "",
-         "| id | amendment | question | tags | analysis | launch / analysis commit | n per cell | headline | "
-         "label or outcome | paper | limits |", "|---|---|---|---|---|---|---|---|---|---|---|"]
-    for r in rows:
-        n = r["n_per_cell"]
-        ntxt = "" if not n else ("%d" % n["min"] if n["min"] == n["max"] else "%d to %d" % (n["min"], n["max"])) + \
-            " (%d cells)" % n["cells"]
-        heads = "; ".join("%s %s%s" % (h["name"], "%g" % h["value"],
-                                       " [%g, %g]" % tuple(h["ci"]) if h.get("ci") else "")
-                          for h in r["headline"]) or "none"
-        L.append("| %s | %s | %s | %s | %s | %s / %s | %s | %s | %s | %s | %s |" % (
-            r["id"], r["amendment"], r["question"], ", ".join("`%s`" % t for t in r["tags"]) or "none",
-            ", ".join("`%s`" % os.path.basename(f) for f in r["analysis_files"]) or "none",
-            r["launch_commit"] or "none", r["analysis_commit"] or "none", ntxt or "none",
-            heads + (" (pending)" if r["pending"] else ""), r["outcome"], r["paper_status"], r["limits"]))
-    counts = collections.Counter(r["paper_status"] for r in rows)
-    L += ["", "Rows: %d. Paper status: %s." % (len(rows), ", ".join("%s %d" % kv for kv in sorted(counts.items())))]
-    open(os.path.join(RES, "FINDINGS.md"), "w").write("\n".join(L) + "\n")
-
 
 def compare(rows, old):
     bad = []
@@ -1210,7 +1186,6 @@ def main():
     rows, problems = build()
     json.dump(dict(generated_by="scripts/findings.py", rows=rows), open(os.path.join(RES, "findings.json"), "w"),
               indent=1)
-    write_md(rows)
     counts = collections.Counter(r["paper_status"] for r in rows)
     print("%d rows; %s" % (len(rows), dict(counts)))
     for p in problems:

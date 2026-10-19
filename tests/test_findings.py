@@ -1,4 +1,4 @@
-"""Tests that the findings table (results/FINDINGS.md, results/findings.json) still matches its sources.
+"""Tests that the findings table (results/findings.json) still matches its sources.
 
 scripts/findings.py --check rebuilds every row from the analysis files and the paper's verifier, and fails if
 a headline number, an n per cell or a paper status has moved, or if an analysis file or campaign tag belongs
