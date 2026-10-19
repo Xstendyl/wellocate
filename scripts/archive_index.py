@@ -204,9 +204,8 @@ def main():
             if live:
                 f.write("Mid-run when this index was written (a plain log is still on disk and the "
                         "archive is therefore not yet final): %s.\n\n" % ", ".join("`%s`" % t for t in live))
-            f.write("Raw plain logs are gitignored by `results/grid_*_calls.jsonl`, because stage 1's\n"
-                    "reached 55 MB at 406 of 600 campaigns and the top-up would pass GitHub's 100 MB hard\n"
-                    "limit. The release copy of the archive goes to Zenodo with the paper.\n\n")
+            f.write("Raw plain logs are gitignored by `results/grid_*_calls.jsonl`; the per-cell gzip archives\n"
+                    "are the committed copy.\n\n")
             f.write("## Verification\n\n")
             if bad:
                 f.write("**%d problem(s) found by the last run of this script:**\n\n" % len(bad))
