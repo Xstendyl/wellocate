@@ -102,6 +102,13 @@ class Licences(unittest.TestCase):
         import subprocess
         tracked = subprocess.run(["git", "ls-files"], cwd=ROOT, capture_output=True,
                                  text=True).stdout.split()
+        if not tracked:
+            # Not a git checkout (a downloaded copy): check every file on disk instead.
+            for d, subdirs, files in os.walk(ROOT):
+                subdirs[:] = [s for s in subdirs if s == ".githooks" or
+                              not (s.startswith(".") or s == "__pycache__")]
+                tracked += [os.path.relpath(os.path.join(d, f), ROOT).replace(os.sep, "/")
+                            for f in files]
         code = [f for f in tracked if f.endswith((".py", ".sh"))]
         self.assertTrue(code, "no source files found; the check is not testing anything")
         named = read("LICENSE") + read("LICENSE-DATA")

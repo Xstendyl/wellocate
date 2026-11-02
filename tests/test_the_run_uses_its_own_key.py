@@ -86,6 +86,10 @@ class TheRunUsesItsOwnKey(unittest.TestCase):
     def test_the_real_repdef_env_is_ignored_by_git(self):
         """The real repdef/.env is ignored by git and not tracked."""
         import subprocess
+        inside = subprocess.run(["git", "rev-parse", "--is-inside-work-tree"], cwd=ROOT,
+                                capture_output=True, text=True)
+        if inside.returncode != 0:
+            self.skipTest("not a git checkout")
         r = subprocess.run(["git", "check-ignore", ".env"], cwd=ROOT, capture_output=True, text=True)
         self.assertEqual(r.returncode, 0, "repdef/.env is NOT gitignored")
         r2 = subprocess.run(["git", "ls-files", "--error-unmatch", ".env"], cwd=ROOT,
